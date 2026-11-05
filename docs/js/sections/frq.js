@@ -10,7 +10,7 @@ export function render(sec, ctx) {
     <div class="frq-parts">${sec.parts.map(tex).join('<br>')}</div>
     <div class="frq-box">
       <div class="frq-tools"><span class="lab">Symbols</span><div class="frq-keys">${keys}</div></div>
-      <textarea class="input" data-frq placeholder="Type your response in plain text. Insert statistical symbols from the menu above."></textarea>
+      <textarea class="input" data-frq placeholder="Type your response in plain text. Insert symbols from the menu above."></textarea>
     </div>
     <div class="small-note">${tex(sec.note || ctx.site.frqNote || '')}</div>
     <div><button class="btn btn-primary" data-frq-toggle>Reveal sample response and scoring checklist</button></div>

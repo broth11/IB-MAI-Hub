@@ -1,0 +1,362 @@
+{
+ "n": 209,
+ "unit": 2,
+ "topic": "SL 2.2",
+ "title": "Domain & Range, Composite, Inverse",
+ "videoId": "7cr7jeivCsA",
+ "videoTitle": "Domain & Range, Composite, Inverse [IB Math AI HL]",
+ "syllabus": [
+  "SL 2.2",
+  "AHL 2.7"
+ ],
+ "intro": "After this lesson you can evaluate a function, state its domain and range, build the composites $f\\circ g$ and $g\\circ f$, and find an inverse function, restricting the domain first when the function is not one-to-one.",
+ "moments": [
+  {
+   "t": 16,
+   "type": "Concept",
+   "title": "Three ways to write a function",
+   "text": "$f(x)=x^2-2$, $f: x\\mapsto x^2-2$ and $y=x^2-2$ all describe the same rule. Use whichever your textbook uses."
+  },
+  {
+   "t": 76,
+   "type": "Worked example",
+   "title": "Evaluate by substitution",
+   "text": "$f(3)=7$, $g(-2)=1$ and $h(24)=5$. Find the function, then substitute the input for $x$."
+  },
+  {
+   "t": 164,
+   "type": "Definition",
+   "title": "Domain and range",
+   "text": "The domain is the set of possible inputs ($x$ values). The range is the set of possible outputs ($y$ values)."
+  },
+  {
+   "t": 208,
+   "type": "Worked example",
+   "title": "Domain and range of a quadratic",
+   "text": "$f(x)=x^2-2$ goes left and right forever, so $x\\in\\mathbb{R}$. It bottoms out at $-2$, so $y\\ge-2$."
+  },
+  {
+   "t": 321,
+   "type": "Worked example",
+   "title": "A straight line",
+   "text": "$g(x)=x+3$ goes on forever in every direction, so both domain and range are all real numbers."
+  },
+  {
+   "t": 366,
+   "type": "Worked example",
+   "title": "A square root function",
+   "text": "$h(x)=\\sqrt{x+1}$ starts at $x=-1$ and only gives non-negative outputs: domain $x\\ge-1$, range $y\\ge0$."
+  },
+  {
+   "t": 454,
+   "type": "Definition",
+   "title": "A composite is a function of a function",
+   "text": "In $f\\circ g$, the output of $g$ becomes the input of $f$."
+  },
+  {
+   "t": 491,
+   "type": "Worked example",
+   "title": "Find $f\\circ g$",
+   "text": "Write $f$, and where it has $x$, put in $g(x)=x+3$. The result is $(x+3)^2-2$."
+  },
+  {
+   "t": 532,
+   "type": "Worked example",
+   "title": "Find $g\\circ f$",
+   "text": "Start with $g$ and put $f(x)$ where $x$ was: $x^2-2+3=x^2+1$. A different order gives a different function."
+  },
+  {
+   "t": 567,
+   "type": "Procedure",
+   "title": "Inverse functions and their notation",
+   "text": "The inverse of $f$ is written $f^{-1}$. Start from $y=f(x)$."
+  },
+  {
+   "t": 596,
+   "type": "Procedure",
+   "title": "Swap $x$ and $y$, then solve for $y$",
+   "text": "The first step is always to swap $x$ and $y$. Then use algebra to make $y$ the subject.",
+   "correction": "restrict"
+  },
+  {
+   "t": 635,
+   "type": "Worked example",
+   "title": "The inverse of $h$",
+   "text": "From $y=\\sqrt{x+1}$: swap, square both sides, subtract 1. $h^{-1}(x)=x^2-1$.",
+   "correction": "inv-domain"
+  },
+  {
+   "t": 691,
+   "type": "Key idea",
+   "title": "The inverse is a reflection",
+   "text": "The graph of $f^{-1}$ is the graph of $f$ reflected in the line $y=x$."
+  }
+ ],
+ "corrections": [
+  {
+   "id": "restrict",
+   "seek": 596,
+   "kind": "omission",
+   "section": "inverse-check",
+   "title": "The video inverts $x^2-2$ without restricting the domain",
+   "text": "It swaps and solves to get $\\sqrt{x+2}$, but $f(x)=x^2-2$ on all real numbers is not one-to-one, so it has no inverse there.",
+   "write": "$f(x)=x^2-2$ is not one-to-one on $\\mathbb{R}$, so restrict to $x\\ge0$ first. Then $f^{-1}(x)=\\sqrt{x+2}$."
+  },
+  {
+   "id": "inv-domain",
+   "seek": 635,
+   "kind": "omission",
+   "section": "wording",
+   "title": "The video does not give the domain of an inverse",
+   "text": "It finds $h^{-1}(x)=x^2-1$ but does not say where that function is defined.",
+   "write": "$h^{-1}(x)=x^2-1$ for $x\\ge0$, because the domain of $h^{-1}$ is the range of $h$."
+  }
+ ],
+ "sections": [
+  {
+   "id": "inverse-check",
+   "type": "decision",
+   "tab": "Inverse?",
+   "kicker": "Decision check",
+   "title": "Does the function have an inverse?",
+   "cards": [
+    {
+     "letter": "1",
+     "name": "Test",
+     "text": "Does every output come from only one input? A horizontal line crosses the graph at most once."
+    },
+    {
+     "letter": "2",
+     "name": "Restrict",
+     "text": "If not, keep one side of the turning point so the function is one-to-one."
+    },
+    {
+     "letter": "3",
+     "name": "Swap and solve",
+     "text": "Write $y=f(x)$, swap $x$ and $y$, then solve for $y$."
+    },
+    {
+     "letter": "4",
+     "name": "Domains swap",
+     "text": "The domain of $f^{-1}$ is the range of $f$. The range of $f^{-1}$ is the domain of $f$."
+    }
+   ],
+   "columns": [
+    "Function and domain",
+    "One-to-one?",
+    "Inverse",
+    "Domain of the inverse"
+   ],
+   "verdictColumn": 2,
+   "rows": [
+    {
+     "cells": [
+      "$f(x)=x^2-2$, $x\\in\\mathbb{R}$",
+      "No: $f(2)=f(-2)=2$",
+      "None until the domain is restricted",
+      "Not applicable"
+     ],
+     "seek": 596
+    },
+    {
+     "cells": [
+      "$f(x)=x^2-2$, $x\\ge0$",
+      "Yes",
+      "$f^{-1}(x)=\\sqrt{x+2}$",
+      "$x\\ge-2$"
+     ],
+     "seek": 596
+    },
+    {
+     "cells": [
+      "$f(x)=x^2-2$, $x\\le0$",
+      "Yes",
+      "$f^{-1}(x)=-\\sqrt{x+2}$",
+      "$x\\ge-2$"
+     ]
+    },
+    {
+     "cells": [
+      "$g(x)=x+3$, $x\\in\\mathbb{R}$",
+      "Yes",
+      "$g^{-1}(x)=x-3$",
+      "$x\\in\\mathbb{R}$"
+     ]
+    },
+    {
+     "cells": [
+      "$h(x)=\\sqrt{x+1}$, $x\\ge-1$",
+      "Yes",
+      "$h^{-1}(x)=x^2-1$",
+      "$x\\ge0$"
+     ],
+     "seek": 635
+    },
+    {
+     "cells": [
+      "$p(x)=(x-1)^2+4$, $x\\ge1$",
+      "Yes",
+      "$p^{-1}(x)=1+\\sqrt{x-4}$",
+      "$x\\ge4$"
+     ]
+    }
+   ],
+   "notes": [
+    {
+     "label": "Wording check.",
+     "text": "The video finds $f^{-1}(x)=\\sqrt{x+2}$ for $f(x)=x^2-2$ without restricting the domain first. A function needs an inverse to be one-to-one, so on an exam write $x\\ge0$ before you swap. The syllabus lists domain restriction for inverse functions."
+    }
+   ]
+  },
+  {
+   "id": "method",
+   "type": "procedure",
+   "tab": "Method",
+   "kicker": "Procedure",
+   "title": "Composite and inverse functions: the method",
+   "intro": "A composite function feeds the output of one function into another. An inverse undoes a function. Both come from substitution and rearranging.",
+   "steps": [
+    "To find $(f\\circ g)(x)=f(g(x))$, write $f$, then replace every $x$ in it with the whole expression for $g(x)$.",
+    "Simplify if the question asks. Check the order: $f\\circ g$ and $g\\circ f$ are usually different functions.",
+    "To find $f^{-1}$, first check that $f$ is one-to-one on its domain. If it is not, restrict the domain.",
+    "Write $y=f(x)$, swap $x$ and $y$, then solve for $y$. That $y$ is $f^{-1}(x)$.",
+    "State the domain of $f^{-1}$. It is the range of $f$."
+   ],
+   "parts": [
+    {
+     "label": "Composite: f then g",
+     "tex": "$f\\circ g=(x+3)^2-2$",
+     "text": "With $f(x)=x^2-2$ and $g(x)=x+3$, replace the $x$ in $f$ with $x+3$. Expanded, $(f\\circ g)(x)=x^2+6x+7$."
+    },
+    {
+     "label": "Composite: g then f",
+     "tex": "$g\\circ f=x^2+1$",
+     "text": "Start with $g$ and replace its $x$ with $x^2-2$: $(g\\circ f)(x)=(x^2-2)+3=x^2+1$. A different order gives a different function."
+    },
+    {
+     "label": "Inverse, with the restriction",
+     "tex": "$f^{-1}(x)=\\sqrt{x+2}$",
+     "text": "For $f(x)=x^2-2$ with $x\\ge0$: write $y=x^2-2$, swap to $x=y^2-2$, so $y^2=x+2$ and $y=\\sqrt{x+2}$ (positive root, because $y\\ge0$). The domain is $x\\ge-2$."
+    }
+   ],
+   "line": "$\\left(f\\circ f^{-1}\\right)(x)=\\left(f^{-1}\\circ f\\right)(x)=x$",
+   "buttons": [
+    {
+     "label": "Watch composite functions (7:34)",
+     "seek": 454
+    },
+    {
+     "label": "Watch inverse functions (9:27)",
+     "seek": 567
+    }
+   ]
+  },
+  {
+   "id": "wording",
+   "type": "wording",
+   "tab": "Wording",
+   "kicker": "Exam wording",
+   "title": "Write it so it earns credit",
+   "traps": [
+    {
+     "kind": "Common trap",
+     "title": "The order of a composite",
+     "weak": "$(f\\circ g)(x)$ means apply $f$ first, then $g$.",
+     "better": "$(f\\circ g)(x)=f(g(x))$, so $g$ acts first and then $f$. In practice, replace the $x$ in $f$ with $g(x)$.",
+     "seek": 491
+    },
+    {
+     "kind": "Exam wording",
+     "title": "An inverse needs a restricted domain",
+     "weak": "$f^{-1}(x)=\\sqrt{x+2}$",
+     "better": "$f(x)=x^2-2$ is not one-to-one on $\\mathbb{R}$, so restrict to $x\\ge0$. Then $f^{-1}(x)=\\sqrt{x+2}$ for $x\\ge-2$.",
+     "seek": 596
+    },
+    {
+     "kind": "Common trap",
+     "title": "The inverse is not a reciprocal",
+     "weak": "$f^{-1}(x)=\\dfrac{1}{x^2-2}$",
+     "better": "$f^{-1}$ is the inverse function, found by swapping $x$ and $y$. The reciprocal $\\dfrac{1}{f(x)}$ is a different function.",
+     "seek": 567
+    },
+    {
+     "kind": "Exam wording",
+     "title": "Include the end point of a domain",
+     "weak": "The domain of $h$ is $x>-1$.",
+     "better": "Domain: $x\\ge-1$, because $h(-1)=\\sqrt{0}=0$ is defined. Range: $y\\ge0$.",
+     "seek": 366
+    },
+    {
+     "kind": "Exam wording",
+     "title": "State the domain of the inverse",
+     "weak": "$h^{-1}(x)=x^2-1$",
+     "better": "$h^{-1}(x)=x^2-1$ for $x\\ge0$, because the domain of $h^{-1}$ is the range of $h$.",
+     "seek": 635
+    }
+   ]
+  },
+  {
+   "id": "frq",
+   "type": "frq",
+   "tab": "Written",
+   "kicker": "Written response",
+   "title": "Write a full response",
+   "prompt": "The functions $f$ and $g$ are defined by $f(x)=(x+1)^2-3$ and $g(x)=2x-5$, for $x\\in\\mathbb{R}$.",
+   "note": "Give exact answers unless the question says otherwise. Show your working.",
+   "parts": [
+    "(a) Find $(g\\circ f)(x)$, giving your answer in the form $ax^2+bx+c$.",
+    "(b) Explain why $f$ has no inverse on $\\mathbb{R}$, and give the largest domain of the form $x\\ge k$ on which $f$ does have an inverse.",
+    "(c) For this restricted domain, find $f^{-1}(x)$ and state its domain.",
+    "(d) Solve $(f\\circ g)(x)=13$."
+   ],
+   "sample": [
+    "(a) $(g\\circ f)(x)=2\\left((x+1)^2-3\\right)-5=2x^2+4x-9$.",
+    "(b) $f(0)=f(-2)=-2$, so two different inputs give the same output. $f$ is not one-to-one, so it has no inverse on $\\mathbb{R}$. The vertex is at $x=-1$, so $f$ is one-to-one for $x\\ge-1$.",
+    "(c) Let $y=(x+1)^2-3$ and swap: $x=(y+1)^2-3$, so $(y+1)^2=x+3$. On $x\\ge-1$ the inverse has $y\\ge-1$, so $y+1=\\sqrt{x+3}$ and $f^{-1}(x)=-1+\\sqrt{x+3}$. The domain is $x\\ge-3$, the range of $f$.",
+    "(d) $(f\\circ g)(x)=(2x-5+1)^2-3=(2x-4)^2-3$. Setting this equal to 13 gives $(2x-4)^2=16$, so $2x-4=\\pm4$ and $x=0$ or $x=4$."
+   ],
+   "checklist": [
+    "(a) Puts $f(x)$ inside $g$, not the other way round, and simplifies to $2x^2+4x-9$.",
+    "(b) Gives two inputs with the same output (or uses the horizontal line test) and says $f$ is not one-to-one.",
+    "(b) States $x\\ge-1$ from the vertex.",
+    "(c) Swaps $x$ and $y$, solves for $y$, and chooses the positive root because $y\\ge-1$.",
+    "(c) States the domain $x\\ge-3$ using the range of $f$.",
+    "(d) Puts $g$ inside $f$ and finds both solutions, $x=0$ and $x=4$."
+   ]
+  }
+ ],
+ "footer": "Built from the video's auto-generated captions. Practice questions are newly written.",
+ "review": {
+  "status": "approved",
+  "flags": [
+   {
+    "kind": "wording",
+    "text": "The video inverts f(x)=x^2-2 on all real numbers and gives sqrt(x+2) without saying f must be one-to-one first. The page adds the domain restriction (the syllabus lists it for AHL 2.7) and shows it in the decision table and a wording trap."
+   },
+   {
+    "kind": "wording",
+    "text": "The video does not state the domain of an inverse function. The page adds that the domain of the inverse is the range of the original (rows and traps for f and h)."
+   },
+   {
+    "kind": "placement",
+    "text": "Syllabus codes SL 2.2 and AHL 2.7. The video covers function notation, domain and range (SL 2.2) as well as composite and inverse functions (AHL 2.7). The identity (f o f^-1)(x)=x and the rows for g, p, and the x<=0 branch of f are not in the video; they come from the syllabus guidance."
+   },
+   {
+    "kind": "caption",
+    "text": "Captions at about 0:45 ('a little pole in here as X with a little arrow') mean the maps-to notation f: x -> x^2-2, and at 2:10 ('my is positive one') means 'my output is 1'. Notation was rebuilt from context."
+   },
+   {
+    "kind": "values",
+    "text": "Every value on the page was computed and checked with sympy. Domain and range statements and the inverse domains were worked out from the function definitions, not read off graphs."
+   },
+   {
+    "kind": "calculator",
+    "text": "No GDC section: no emulator captures exist yet for this topic. The video suggests graphing h on a calculator (about 6:15), which would suit a later GDC section."
+   },
+   {
+    "kind": "timestamps",
+    "text": "Decision rows for g, p and the x<=0 branch have no video link because the video does not cover them."
+   }
+  ]
+ }
+}

@@ -121,6 +121,18 @@ a.vid.is-live .status { background: var(--color-accent); color: var(--color-bg);
 .video-frame { position: relative; aspect-ratio: 16 / 9; background: #201e1d; }
 .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video-note { margin-top: 8px; font-size: 12px; opacity: 0.7; }
+.corrections { margin-top: 16px; border: 2px solid var(--color-divider); background: var(--color-bg); }
+.corr-head { padding: 8px 12px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 800; background: var(--color-surface); border-bottom: 1px solid var(--color-divider); }
+.corr { padding: 12px; border-bottom: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.corr:last-child { border-bottom: 0; }
+.corr-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; }
+.corr-badge { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800; padding: 2px 8px; border: 1px solid; white-space: nowrap; }
+.corr-badge.corr-omission { color: #7a4f00; background: color-mix(in srgb, #e0a800 18%, transparent); border-color: #c99100; }
+.corr-badge.corr-error { color: var(--bad); background: var(--bad-bg); border-color: var(--bad); }
+.corr-title { font-weight: 700; font-size: 15px; line-height: 1.35; }
+.corr-text, .corr-write { font-size: 14px; line-height: 1.5; }
+.corr-write { background: var(--color-surface); padding: 8px 10px; width: 100%; box-sizing: border-box; }
+.moment .corr-badge { align-self: flex-start; margin: 2px 0; }
 .moments-col { flex: 2 1 320px; min-width: 0; }
 .moments-col h2 { margin: 0 0 8px; font-size: 22px; }
 .moments-box { border-top: 2px solid var(--color-divider); max-height: calc(100dvh - 250px); overflow-y: auto; }
