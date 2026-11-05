@@ -1,0 +1,137 @@
+{
+ "siteTitle": "IB Math AI HL / Video Study Guide",
+ "course": "IB Math Applications and Interpretation HL",
+ "playlist": "https://www.youtube.com/playlist?list=PLrVxQwkfAdPSwF2r5p0keFQqVIfwis0q7",
+ "videoCredit": "Revision Village, IB Math AI HL (five topic playlists; this link is Topic 4)",
+ "home": {
+  "headline": "Study each lesson, then jump back to the moment that explains it.",
+  "lede": "Every study page pairs the video with its key moments, a method checklist, exam wording, common traps, an interactive visual and practice questions.",
+  "pilot": "No study pages are live yet. Every video is listed with its transcript; study pages are added as they are built."
+ },
+ "units": [
+  {
+   "id": 1,
+   "tab": "Topic 1",
+   "kicker": "Topic 1",
+   "name": "Number and algebra",
+   "topicPrefix": "1"
+  },
+  {
+   "id": 2,
+   "tab": "Topic 2",
+   "kicker": "Topic 2",
+   "name": "Functions",
+   "topicPrefix": "2"
+  },
+  {
+   "id": 3,
+   "tab": "Topic 3",
+   "kicker": "Topic 3",
+   "name": "Geometry and trigonometry",
+   "topicPrefix": "3"
+  },
+  {
+   "id": 4,
+   "tab": "Topic 4",
+   "kicker": "Topic 4",
+   "name": "Statistics and probability",
+   "topicPrefix": "4"
+  },
+  {
+   "id": 5,
+   "tab": "Topic 5",
+   "kicker": "Topic 5",
+   "name": "Calculus",
+   "topicPrefix": "5"
+  }
+ ],
+ "titleCleanup": {
+  "stripPrefixes": [],
+  "cutAt": [
+   " [IB Math AI"
+  ]
+ },
+ "calculator": {
+  "name": "GDC",
+  "examNote": "Use your approved GDC (Casio fx-CG50 in class). Show the GDC result in your working."
+ },
+ "frqSymbols": [
+  [
+   "mu",
+   "μ"
+  ],
+  [
+   "sigma",
+   "σ"
+  ],
+  [
+   "x-bar",
+   "x̄"
+  ],
+  [
+   "pi",
+   "π"
+  ],
+  [
+   "theta",
+   "θ"
+  ],
+  [
+   "alpha",
+   "α"
+  ],
+  [
+   "beta",
+   "β"
+  ],
+  [
+   "chi-square",
+   "χ²"
+  ],
+  [
+   "Less than or equal",
+   "≤"
+  ],
+  [
+   "Greater than or equal",
+   "≥"
+  ],
+  [
+   "Not equal",
+   "≠"
+  ],
+  [
+   "Plus or minus",
+   "±"
+  ],
+  [
+   "Times",
+   "×"
+  ],
+  [
+   "Square root",
+   "√"
+  ],
+  [
+   "Squared",
+   "²"
+  ],
+  [
+   "Sum",
+   "Σ"
+  ],
+  [
+   "Integral",
+   "∫"
+  ],
+  [
+   "Null hypothesis",
+   "H₀"
+  ],
+  [
+   "Alternative hypothesis",
+   "H₁"
+  ]
+ ],
+ "frqNote": "Practice box for typed written responses. Typing shortcuts: x-bar, mu, sigma, sqrt(), x^2, >=, <=. Show your working, state the GDC result, and give the final answer to 3 significant figures unless the question says otherwise."
+}
