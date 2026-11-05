@@ -287,6 +287,9 @@ a.vid.is-live .status { background: var(--color-accent); color: var(--color-bg);
 .ex-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 .ex-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 .ex-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+.ex-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+.ex-note { flex: none; min-height: 44px; font-size: 14px; line-height: 1.45; text-align: center; display: flex; align-items: center; justify-content: center; }
+.ex-mode:disabled { opacity: 0.4; cursor: default; }
 .ex-actions { display: grid; gap: 8px; flex: none; }
 .ex-actions .btn { font-size: 13px; justify-content: center; text-align: center; width: 100%; }
 .ex-actions .ex-mode { border-color: var(--color-divider); }
@@ -296,6 +299,7 @@ a.vid.is-live .status { background: var(--color-accent); color: var(--color-bg);
 
 .table th .katex { text-transform: none; letter-spacing: 0; font-size: 1.1em; }
 @media (max-width: 760px) {
+  .ex-actions.ex-cols-5 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   .ex-presets.ex-cols-4, .ex-presets.ex-cols-3, .ex-actions.ex-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   .ex-presets .btn { white-space: normal; }
   .ex-sliders { grid-template-columns: 1fr !important; gap: 12px; }
