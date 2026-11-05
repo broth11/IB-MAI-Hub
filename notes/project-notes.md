@@ -10,6 +10,10 @@ Set up on 2026-11-05 from the AP Statistics Hub template.
 - Multiple choice removed (engine section, styles, validator, skill text). The IB does not use it. Core sections are `wording` and `frq`.
 - New `gdc` section (Casio fx-CG50): steps beside the real emulator body with the pressed keys ringed, screens from real captures. Tested in a browser on a throwaway page using the eight angle-unit captures (deleted afterwards). Only those eight captures exist so far; every other GDC step needs a new capture from the emulator.
 
+## Home page is organized by syllabus code
+
+The home page lists the 78 codes in `docs/data/syllabus.json` (short titles written by Claude, not IB text), each with the videos whose `syllabus` list includes it. A video that covers several codes appears under each (marked "also covers this" where the code is not its first). A code with no video shows a red "No video yet" row, and the Gaps tab lists them all (11 of 78 on 5 Nov 2026). To fill a gap: add the video to the playlist data, give it a `syllabus` list, and the row updates.
+
 ## Syllabus mapping (needs Ben's check)
 
 Videos were matched to codes in `IB MAI SYLLABUS.html` (RIS Secondary Math Content/01-sources/syllabi) by title, 5 Nov 2026. All codes exist in the syllabus. Judgment calls worth a look:
@@ -17,9 +21,10 @@ Videos were matched to codes in `IB MAI SYLLABUS.html` (RIS Secondary Math Conte
 - 204 Perpendicular Bisectors is SL 3.5 (the syllabus puts it in Geometry, not Functions).
 - 208 GDC Tips: nSolve is SL 1.8 (technology for solving equations).
 - 302 Pythagoras is SL 3.3. 309 Graphs of Trig Functions is AHL 3.8 and AHL 2.9. 315 Graph Theory is AHL 3.14 only, though 3.15 and 3.16 may also be partly covered.
+- 315 Graph Theory also covers AHL 3.15 and 3.16 (transcript has adjacency matrices, Kruskal, Prim, Chinese postman, travelling salesman; found by keyword search, not a full read).
 - 406 Correlation is SL 4.4 and SL 4.10. 418 Hypothesis Testing is SL 4.11 and AHL 4.18. 419 Estimation and Confidence Intervals is AHL 4.16.
 
-Syllabus codes with no video in the five playlists: SL 1.5, AHL 1.9, 1.10, 1.11, SL 2.6, AHL 2.10, 3.12, 3.15, 3.16, SL 4.5, AHL 4.12, 5.17, 5.18.
+Syllabus codes with no video (11): SL 1.5, AHL 1.9, 1.10, 1.11, SL 2.6, AHL 2.10, 3.12, SL 4.5, AHL 4.12, 5.17, 5.18. Keyword search of the transcripts found only passing mentions of SL 1.5, AHL 2.10 and SL 4.5, so they are still listed as gaps.
 
 ## Open items
 

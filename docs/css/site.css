@@ -89,6 +89,22 @@ a.lesson-row.is-live:hover { background: color-mix(in srgb, var(--color-text) 6%
 .lesson-row.is-live .status { background: var(--color-accent); color: var(--color-bg); border-color: var(--color-accent); }
 .lesson-row.is-off { cursor: default; opacity: 0.6; }
 
+/* Syllabus view */
+.unit-count { margin-top: 6px; font-size: 13px; color: var(--color-neutral-700); }
+.level-head { padding: 16px 8px 6px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 800; color: var(--color-accent-700); }
+.syl-row { display: grid; grid-template-columns: 76px minmax(0, 1fr) minmax(0, 1.2fr); gap: 4px 16px; align-items: baseline; padding: 10px 8px; border-bottom: 1px solid var(--color-divider); }
+.syl-row .code { font-size: 13px; font-weight: 700; white-space: nowrap; }
+.syl-row .name { font-size: 15px; }
+.syl-row .vids { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.vid { display: flex; gap: 8px; align-items: baseline; flex-wrap: nowrap; font-size: 14px; color: var(--color-text); text-decoration: none; }
+.vid .vname { flex: 1 1 auto; min-width: 0; }
+.vid .also { font-size: 11px; color: var(--color-neutral-700); font-style: italic; }
+.vid .status { flex: none; white-space: nowrap; font-size: 11px; padding: 2px 8px; border: 1px solid var(--color-divider); opacity: 0.75; }
+a.vid.is-live .status { background: var(--color-accent); color: var(--color-bg); border-color: var(--color-accent); opacity: 1; }
+.syl-row.is-gap { background: var(--color-accent-100); border-left: 3px solid var(--color-accent); }
+.gap-tag { font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-accent-700); }
+@media (max-width: 760px) { .syl-row { grid-template-columns: 64px minmax(0, 1fr); } .syl-row .vids { grid-column: 1 / -1; padding-left: 80px; } }
+
 /* Lesson page */
 .lesson { max-width: 1200px; margin: 0 auto; padding: 32px 32px 96px; }
 /* Title card: title and intro each span the full width, stacked */
