@@ -170,7 +170,7 @@ a.vid.is-live .status { background: var(--color-accent); color: var(--color-bg);
 .bits-card .letter { font-family: var(--font-heading); font-weight: 800; font-size: 40px; color: var(--color-accent-700); }
 .bits-card .name { font-weight: 700; }
 .bits-card .text { font-size: 13px; opacity: 0.85; margin-top: 4px; }
-.table-wrap { overflow-x: auto; }
+.table-wrap { overflow-x: auto; position: relative; }
 .table-wrap .table { min-width: 560px; }
 .table .verdict { font-weight: 700; }
 .table .btn-ghost { font-size: 13px; }
@@ -287,6 +287,9 @@ a.vid.is-live .status { background: var(--color-accent); color: var(--color-bg);
 .ex-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 .ex-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 .ex-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+.ex-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+.ex-note { flex: none; min-height: 44px; font-size: 14px; line-height: 1.45; text-align: center; display: flex; align-items: center; justify-content: center; }
+.ex-mode:disabled { opacity: 0.4; cursor: default; }
 .ex-actions { display: grid; gap: 8px; flex: none; }
 .ex-actions .btn { font-size: 13px; justify-content: center; text-align: center; width: 100%; }
 .ex-actions .ex-mode { border-color: var(--color-divider); }
@@ -296,6 +299,7 @@ a.vid.is-live .status { background: var(--color-accent); color: var(--color-bg);
 
 .table th .katex { text-transform: none; letter-spacing: 0; font-size: 1.1em; }
 @media (max-width: 760px) {
+  .ex-actions.ex-cols-5 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   .ex-presets.ex-cols-4, .ex-presets.ex-cols-3, .ex-actions.ex-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   .ex-presets .btn { white-space: normal; }
   .ex-sliders { grid-template-columns: 1fr !important; gap: 12px; }
@@ -309,3 +313,35 @@ a.vid.is-live .status { background: var(--color-accent); color: var(--color-bg);
 
 /* A math expression is one object: it never breaks across lines */
 .katex { white-space: nowrap; }
+
+/* In the exam (IB MAI Hub) */
+.exam { display: flex; flex-direction: column; gap: 28px; margin-top: 20px; }
+.exam-block h3 { margin: 0 0 10px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700); }
+.exam-code { border: 2px solid var(--color-divider); padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px; }
+.exam-codehead { font-size: 15px; }
+.exam-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--color-divider); border-left: 1px solid var(--color-divider); }
+.exam-fact { padding: 8px 12px; border-right: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider); }
+.exam-fact .k { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.7; }
+.exam-fact .v { font-size: 14px; font-weight: 700; margin-top: 2px; }
+.exam-terms { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; }
+.exam-terms .lab, .exam-mark .lab { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800; margin-right: 4px; }
+.exam-term { font-size: 13px; padding: 2px 10px; border: 1px solid var(--color-divider); background: var(--color-surface); }
+.exam-term i { font-style: normal; font-weight: 800; margin-left: 4px; color: var(--color-accent-700); }
+.exam-also { font-size: 13px; opacity: 0.8; }
+.exam-deflab { margin-top: 14px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800; }
+.exam-defs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 24px; font-size: 14px; line-height: 1.45; }
+.exam-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.5; }
+.exam-marks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.exam-mark { border: 1px solid var(--color-divider); padding: 10px 14px; font-size: 14px; line-height: 1.5; display: flex; flex-direction: column; gap: 4px; }
+.exam .traps { display: flex; flex-direction: column; }
+@media (max-width: 760px) { .exam-facts, .exam-defs, .exam-marks { grid-template-columns: minmax(0, 1fr); } }
+/* Exam-style question */
+.q-head { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; padding-bottom: 8px; border-bottom: 2px solid var(--color-divider); }
+.q-parts { display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.55; }
+.q-marks { font-weight: 800; white-space: nowrap; margin-left: 6px; }
+.q-reveal { display: flex; flex-direction: column; gap: 14px; }
+.q-ms { display: flex; flex-direction: column; }
+.q-mshead { font-weight: 800; padding: 6px 0; border-bottom: 2px solid var(--color-divider); display: flex; justify-content: space-between; }
+.q-line { text-align: left; }
+.q-line .q-text { flex: 1; }
+.q-code { flex: none; font-weight: 800; font-size: 13px; padding: 1px 8px; border: 1px solid var(--color-divider); background: var(--color-surface); align-self: center; }

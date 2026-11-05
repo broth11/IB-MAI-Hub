@@ -11,9 +11,11 @@ import * as desmos from './sections/desmos.js';
 import * as gdc from './sections/gdc.js';
 import * as wording from './sections/wording.js';
 import * as frq from './sections/frq.js';
+import * as exam from './sections/exam.js';
+import * as question from './sections/question.js';
 
-const TYPES = { decision, procedure, explorer, desmos, gdc, wording, frq };
-const STACKED = new Set(['desmos', 'gdc']); // header above the content instead of a side column
+const TYPES = { decision, procedure, explorer, desmos, gdc, wording, frq, exam, question };
+const STACKED = new Set(['desmos', 'gdc', 'exam']); // header above the content instead of a side column
 const TIGHT = new Set(['explorer']);
 
 function scrollToId(id) {
@@ -185,7 +187,8 @@ async function main() {
     });
     for (const sec of L.sections) if (!TYPES[sec.type]) throw new Error(`Unknown section type "${sec.type}"`);
     const unit = site.units.find((u) => u.id === L.unit);
-    const ctx = { site, explorers: await loadExplorers(L), unitLabel: unit ? unit.kicker : 'Unit ' + L.unit };
+    const ctx = { site, explorers: await loadExplorers(L), unitLabel: unit ? unit.kicker : 'Unit ' + L.unit,
+      exam: L.sections.some((s) => s.type === 'exam') ? await getJSON('data/exam.json') : null };
     document.title = `${L.topic} ${L.title} | ${site.course}`;
     const sections = [{ id: 'video', label: 'Video' }, ...L.sections.map((s) => ({ id: s.id, label: s.tab }))];
     bar.innerHTML = renderTopbar({ site, activeUnit: L.unit, crumb: `${unit ? unit.tab : 'Unit ' + L.unit} › ${L.topic} ${L.title}`, sections });
