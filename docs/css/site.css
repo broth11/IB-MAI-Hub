@@ -102,6 +102,7 @@ a.lesson-row.is-live:hover { background: color-mix(in srgb, var(--color-text) 6%
 .vid .status { flex: none; white-space: nowrap; font-size: 11px; padding: 2px 8px; border: 1px solid var(--color-divider); opacity: 0.75; }
 a.vid.is-live .status { background: var(--color-accent); color: var(--color-bg); border-color: var(--color-accent); opacity: 1; }
 .syl-row.is-gap { background: var(--color-accent-100); border-left: 3px solid var(--color-accent); }
+.syl-row.is-brief { background: color-mix(in srgb, #e0a800 12%, transparent); border-left: 3px solid #e0a800; }
 .gap-tag { font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-accent-700); }
 @media (max-width: 760px) { .syl-row { grid-template-columns: 64px minmax(0, 1fr); } .syl-row .vids { grid-column: 1 / -1; padding-left: 80px; } }
 

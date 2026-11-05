@@ -12,7 +12,7 @@ Set up on 2026-11-05 from the AP Statistics Hub template.
 
 ## Home page is organized by syllabus code
 
-The home page lists the 78 codes in `docs/data/syllabus.json` (short titles written by Claude, not IB text), each with the videos whose `syllabus` list includes it. A video that covers several codes appears under each (marked "also covers this" where the code is not its first). A code with no video shows a red "No video yet" row, and the Gaps tab lists them all (11 of 78 on 5 Nov 2026). To fill a gap: add the video to the playlist data, give it a `syllabus` list, and the row updates.
+The home page lists the 78 codes in `docs/data/syllabus.json` (short titles written by Claude, not IB text), each with the videos whose `syllabus` list includes it. A video that covers several codes appears under each (marked "also covers this" where the code is not its first). A code with no video shows a red "No video yet" row; a code that a video only mentions briefly (a lesson's `syllabusPartial` list) shows an amber row. The Gaps tab lists both (12 of 78 on 5 Nov 2026: 11 with no video, 1 brief). To fill a gap: add the video to the playlist data, give it a `syllabus` list, and the row updates.
 
 ## Syllabus mapping (needs Ben's check)
 
@@ -24,12 +24,22 @@ Videos were matched to codes in `IB MAI SYLLABUS.html` (RIS Secondary Math Conte
 - 315 Graph Theory also covers AHL 3.15 and 3.16 (transcript has adjacency matrices, Kruskal, Prim, Chinese postman, travelling salesman; found by keyword search, not a full read).
 - 406 Correlation is SL 4.4 and SL 4.10. 418 Hypothesis Testing is SL 4.11 and AHL 4.18. 419 Estimation and Confidence Intervals is AHL 4.16.
 
-Syllabus codes with no video (11): SL 1.5, AHL 1.9, 1.10, 1.11, SL 2.6, AHL 2.10, 3.12, SL 4.5, AHL 4.12, 5.17, 5.18. Keyword search of the transcripts found only passing mentions of SL 1.5, AHL 2.10 and SL 4.5, so they are still listed as gaps.
+## Syllabus-first transcript search (5 Nov 2026)
+
+For each of the 78 codes, a keyword list was searched in all 82 transcripts and every video scored on how many of the code's terms it uses; passages were then read for the doubtful cases. Results:
+
+- Added: AHL 1.11 to lesson 105 (it teaches the sum of an infinite geometric sequence).
+- Brief mention only (amber): AHL 2.10 in 409 (says exam questions "linearize the data"); AHL 2.9 logistic functions are also only mentioned in 206, but 309 covers the sinusoidal model so AHL 2.9 stays covered.
+- Corrected: 309 Graphs of Trig Functions is SL 2.5 and AHL 2.9, not AHL 3.8 (no unit circle in it). 417 no longer claims AHL 4.15 (the phrase "central limit" appears in none of the 82 transcripts). 502 no longer claims SL 5.2 (no increasing or decreasing discussion found; it may be taught only implicitly through gradient, so check before treating it as a true gap).
+- Confirmed gaps, nothing relevant in any transcript: AHL 1.9, AHL 1.10, SL 2.6, AHL 4.12 (lesson 407 is about the reliability of a regression estimate, not survey reliability and validity), AHL 5.17, AHL 5.18. False leads: "Euler" in the complex-number videos is Euler form, not Euler's method; lesson 516 Kinematics is calculus kinematics (AHL 5.13), with no vector content, so AHL 3.12 stays a gap.
+- Weak or only incidental: SL 1.5 (logs mentioned in passing), SL 4.5 ("expected number" appears inside the Poisson video).
+
+Syllabus codes with no video (11): SL 1.5, AHL 1.9, 1.10, SL 2.6, AHL 3.12, SL 4.5, AHL 4.12, AHL 4.15, SL 5.2, AHL 5.17, 5.18. The search is keyword based; a skilled reader of a few of these videos could find more coverage.
 
 ## Open items
 
 - **GDC captures.** Build them on Ben's Mac with computer use (see the `gdc-online-deck` skill). The key-sequence log `gdc/menu_paths_verified.md` covers many menus already. Ben's `Calculator Skills (Haese MAI HL Casio).md` is a candidate source for steps.
 - **Explorers.** The explorer library (binomial, sampling distribution, and so on) is AP Statistics material. Reuse where it fits MAI Topic 4; build new ones for functions, trigonometry, and calculus.
 - **Transcript quality.** Raw YouTube captions, except two Whisper transcripts. The Whisper plus adjudication prompt used for the AP hub could be reused.
-- **Transcripts submodule.** The private repo `broth11/IB-MAI-Hub-transcripts` must exist before the submodule is added (`git submodule add https://github.com/broth11/IB-MAI-Hub-transcripts.git transcripts`).
+- **Transcripts submodule.** Done 5 Nov 2026: the private repo `broth11/IB-MAI-Hub-transcripts` holds the 82 transcripts and is linked at `transcripts/`.
 - **GitHub Pages.** Settings > Pages > Source = GitHub Actions.

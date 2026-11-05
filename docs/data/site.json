@@ -6,7 +6,7 @@
  "home": {
   "headline": "Study by IB syllabus code, then jump back to the moment that explains it.",
   "lede": "Every study page pairs the video with its key moments, a method checklist, exam wording, common traps, an interactive visual and practice questions.",
-  "pilot": "Rows are IB syllabus codes. A row marked No video yet means none of the videos covers that code. No study pages are built yet."
+  "pilot": "Rows are IB syllabus codes. Red rows have no video; amber rows are mentioned only briefly in a video. No study pages are built yet."
  },
  "units": [
   {
@@ -48,7 +48,7 @@
    "id": 6,
    "tab": "Gaps",
    "kicker": "Gaps",
-   "name": "Syllabus codes with no video yet",
+   "name": "Gaps: no video, or a brief mention only",
    "special": "gaps"
   }
  ],

@@ -125,7 +125,7 @@ Steps list on the left; the calculator on the right shows the real screen after 
 ```json
 { "n": 13, "unit": 1, "topic": "1.13", "title": "Experimental Design", "videoId": "2Yn1235uFzE",
   "transcript": "13-2Yn1235uFzE.txt", "status": "live" }
-// IB MAI Hub entries also carry a syllabus list, for example "syllabus": ["SL 4.4", "SL 4.10"] ("topic" is the first code)
+// IB MAI Hub entries also carry a syllabus list, for example "syllabus": ["SL 4.4", "SL 4.10"] ("topic" is the first code); optional "syllabusPartial": ["AHL 2.10"] for codes the video only mentions briefly
 ```
 
 `status`: `transcript` (listed only), `next` (planned), `draft` (page exists, held back, not linked), `live` (linked from the home page). A PR sets its lessons to `live`, so they publish when it is merged.

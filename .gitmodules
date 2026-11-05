@@ -1,0 +1,3 @@
+[submodule "transcripts"]
+	path = transcripts
+	url = https://github.com/broth11/IB-MAI-Hub-transcripts.git

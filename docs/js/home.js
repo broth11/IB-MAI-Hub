@@ -10,16 +10,23 @@ function unitFromHash() {
   return m ? Number(m[1]) : null;
 }
 
-// Lessons are listed under every syllabus code they cover. A code with no lesson is a gap.
+// Lessons are listed under every syllabus code they cover. A code with no lesson is a gap; a code that
+// only appears in a lesson's syllabusPartial list gets a "brief mention only" row.
 function byCode(index) {
   const m = {};
-  index.lessons.forEach((l) => (l.syllabus || []).forEach((c) => { (m[c] = m[c] || []).push(l); }));
+  index.lessons.forEach((l) => {
+    (l.syllabus || []).forEach((c) => { (m[c] = m[c] || []).push({ l, partial: false }); });
+    (l.syllabusPartial || []).forEach((c) => { (m[c] = m[c] || []).push({ l, partial: true }); });
+  });
   return m;
 }
 
-function videoItem(l, code) {
-  const also = (l.syllabus || [])[0] !== code ? '<span class="also">also covers this</span>' : '';
-  const inner = `<span class="vname">${esc(l.title)}</span>${also}<span class="status">${STATUS[l.status] || ''}</span>`;
+const hasFull = (map, code) => (map[code] || []).some((v) => !v.partial);
+
+function videoItem({ l, partial }, code) {
+  const note = partial ? '<span class="also">brief mention only</span>'
+    : (l.syllabus || [])[0] !== code ? '<span class="also">also covers this</span>' : '';
+  const inner = `<span class="vname">${esc(l.title)}</span>${note}<span class="status">${STATUS[l.status] || ''}</span>`;
   return l.status === 'live'
     ? `<a class="vid is-live" href="lesson.html?v=${l.n}">${inner}</a>`
     : `<div class="vid">${inner}</div>`;
@@ -27,11 +34,13 @@ function videoItem(l, code) {
 
 function codeRow(c, map) {
   const vids = map[c.code] || [];
+  const cls = !vids.length ? ' is-gap' : hasFull(map, c.code) ? '' : ' is-brief';
+  const tag = !vids.length ? '<span class="gap-tag">No video yet</span>' : '';
   return `
-    <div class="syl-row${vids.length ? '' : ' is-gap'}">
+    <div class="syl-row${cls}">
       <span class="code">${esc(c.code)}</span>
       <span class="name">${esc(c.title)}</span>
-      <div class="vids">${vids.length ? vids.map((l) => videoItem(l, c.code)).join('') : '<span class="gap-tag">No video yet</span>'}</div>
+      <div class="vids">${vids.map((v) => videoItem(v, c.code)).join('')}${tag}</div>
     </div>`;
 }
 
@@ -41,7 +50,7 @@ function levelBlock(label, codes, map) {
 
 function unitPane(u, syl, map) {
   if (u.special === 'gaps') {
-    const gaps = syl.codes.filter((c) => !(map[c.code] || []).length);
+    const gaps = syl.codes.filter((c) => !hasFull(map, c.code));
     const body = [1, 2, 3, 4, 5].map((t) => {
       const g = gaps.filter((c) => c.topic === t);
       return g.length ? `<div class="level-head">Topic ${t}</div>${g.map((c) => codeRow(c, map)).join('')}` : '';
@@ -51,19 +60,19 @@ function unitPane(u, syl, map) {
         <div class="unit-head">
           <div class="kicker">${esc(u.kicker)}</div>
           <h2>${esc(u.name)}</h2>
-          <div class="unit-count">${gaps.length} of ${syl.codes.length} syllabus codes have no video</div>
+          <div class="unit-count">${gaps.length} of ${syl.codes.length} syllabus codes have no full video</div>
         </div>
         <div class="lesson-rows">${body}</div>
       </div>`;
   }
   const codes = syl.codes.filter((c) => c.topic === u.id);
-  const gaps = codes.filter((c) => !(map[c.code] || []).length).length;
+  const gaps = codes.filter((c) => !hasFull(map, c.code)).length;
   return `
     <div class="unit-pane">
       <div class="unit-head">
         <div class="kicker">${esc(u.kicker)}</div>
         <h2>${esc(u.name)}</h2>
-        <div class="unit-count">${codes.length} syllabus codes, ${gaps} with no video</div>
+        <div class="unit-count">${codes.length} syllabus codes, ${gaps} with no full video</div>
       </div>
       <div class="lesson-rows">
         ${levelBlock('Standard level (SL)', codes.filter((c) => c.level === 'SL'), map)}
