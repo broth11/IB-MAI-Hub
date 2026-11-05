@@ -8,12 +8,12 @@ import * as decision from './sections/decision.js';
 import * as procedure from './sections/procedure.js';
 import * as explorer from './sections/explorer.js';
 import * as desmos from './sections/desmos.js';
+import * as gdc from './sections/gdc.js';
 import * as wording from './sections/wording.js';
-import * as mcq from './sections/mcq.js';
 import * as frq from './sections/frq.js';
 
-const TYPES = { decision, procedure, explorer, desmos, wording, mcq, frq };
-const STACKED = new Set(['desmos']); // header above the content instead of a side column
+const TYPES = { decision, procedure, explorer, desmos, gdc, wording, frq };
+const STACKED = new Set(['desmos', 'gdc']); // header above the content instead of a side column
 const TIGHT = new Set(['explorer']);
 
 function scrollToId(id) {
@@ -61,7 +61,7 @@ function lessonHtml(L, ctx) {
       <a class="link-btn" href="index.html#unit-${L.unit}">All lessons</a>
       <div class="lesson-head">
         <div>
-          <div class="kicker">${esc(ctx.unitLabel)}${L.topic ? ' · Topic ' + esc(L.topic) : ''}</div>
+          <div class="kicker">${esc(ctx.unitLabel)}${L.syllabus && L.syllabus.length ? ' · ' + esc(L.syllabus.join(', ')) : L.topic ? ' · Topic ' + esc(L.topic) : ''}</div>
           <h1>${tex(L.title)}</h1>
         </div>
         <div class="intro">${tex(L.intro)}</div>

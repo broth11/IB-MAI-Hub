@@ -19,6 +19,9 @@ from find import parse, window, fmt  # noqa: E402
 
 errors, warnings = [], []
 
+GDC_KEYS = set("F1 F2 F3 F4 F5 F6 SHIFT OPTN VARS MENU ALPHA SQR POW EXIT XTT LOG LN SIN COS TAN FRAC SD LP RP COMMA STO DEL AC MUL DIV ADD SUB DOT EXP NEG EXE UP DOWN LEFT RIGHT 0 1 2 3 4 5 6 7 8 9".split())
+GDC_TOKEN = re.compile(r"\[([A-Z0-9]+)\]")
+
 
 def err(msg):
     errors.append(msg)
@@ -85,22 +88,28 @@ def check_section(s, i, repo):
     elif t == "wording":
         for j, tr in enumerate(s.get("traps", [])):
             need(tr, ["kind", "title", "weak", "better", "seek"], f"{where}.traps[{j}]")
-    elif t == "mcq":
-        for j, q in enumerate(s.get("questions", [])):
-            w = f"{where}.questions[{j}]"
-            need(q, ["stem", "opts", "why", "seek"], w)
-            if not isinstance(q.get("ok"), int) or not 0 <= q["ok"] < len(q.get("opts", [])):
-                err(f"{w}: 'ok' is not a valid option index")
-            if len(q.get("why", [])) != len(q.get("opts", [])):
-                err(f"{w}: 'why' needs one explanation per option")
-            if not 2 <= len(q.get("opts", [])) <= 4:
-                err(f"{w}: 2 to 4 options allowed")
-        n = len(s.get("questions", []))
-        if not 3 <= n <= 5:
-            warn(f"{where}: {n} questions (house rule is 3 to 5)")
-        oks = [q.get("ok") for q in s.get("questions", [])]
-        if len(oks) >= 3 and len(set(oks)) == 1:
-            warn(f"{where}: every correct answer is option {oks[0]}; vary the position")
+    elif t == "gdc":
+        need(s, ["intro"], where)
+        steps = s.get("steps", [])
+        if not steps:
+            err(f"{where}: no steps")
+        if not 2 <= len(steps) <= 8:
+            warn(f"{where}: {len(steps)} steps (aim for about 5 to 6 per section; split a long procedure)")
+        screens = [("start", s.get("start"))] + [(f"steps[{j}].s", st.get("s")) for j, st in enumerate(steps)]
+        for j, st in enumerate(steps):
+            w = f"{where}.steps[{j}]"
+            need(st, ["t"], w)
+            text = st.get("t", "") or ""
+            for k in GDC_TOKEN.findall(text):
+                if k not in GDC_KEYS:
+                    err(f"{w}: unknown key [{k}]")
+            if not GDC_TOKEN.search(text) and not re.search(r"\{[^}]+\}", text):
+                warn(f"{w}: presses no key and types no entry")
+        for name, scr in screens:
+            if not scr or not scr.get("src"):
+                warn(f"{where}.{name}: no capture; the page shows 'Screen not captured yet'")
+            elif not (repo / "docs" / scr["src"]).exists():
+                err(f"{where}.{name}: docs/{scr['src']} does not exist")
     elif t == "frq":
         need(s, ["prompt", "parts", "sample", "checklist"], where)
     else:
@@ -156,7 +165,7 @@ def main():
         err("section ids are not unique")
     for i, s in enumerate(L.get("sections", [])):
         check_section(s, i, repo)
-    for core in ("wording", "mcq", "frq"):
+    for core in ("wording", "frq"):
         if core not in {s.get("type") for s in L.get("sections", [])}:
             warn(f"core section '{core}' is missing")
 

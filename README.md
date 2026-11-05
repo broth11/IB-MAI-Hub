@@ -1,6 +1,6 @@
 # IB MAI Hub
 
-A study site for IB Mathematics: Applications and Interpretation HL students: a video study guide organized by topic and lesson. It uses the same engine as the [AP Statistics Hub](https://github.com/broth11/AP-Statistics-Hub). Each lesson page pairs a video with key moments and the sections the topic needs: a decision check, a procedure, an interactive explorer, exam wording and traps, and a free-response practice box.
+A study site for IB Mathematics: Applications and Interpretation HL students: a video study guide organized by topic and lesson. It uses the same engine as the [AP Statistics Hub](https://github.com/broth11/AP-Statistics-Hub). Each lesson page pairs a video with key moments and the sections the topic needs: a decision check, a procedure, an interactive explorer, a Casio fx-CG50 (GDC) walkthrough, exam wording and traps, and a free-response practice box. There are no multiple-choice questions, because the IB does not set them.
 
 Live site (after enabling GitHub Pages, see below): https://broth11.github.io/IB-MAI-Hub/
 
@@ -29,10 +29,11 @@ Then open http://localhost:8000.
 .
 ├── docs/                      the site (this is what GitHub Pages serves)
 │   ├── index.html, lesson.html
-│   ├── css/, js/              engine, sections, explorers (shared with the AP Statistics Hub)
+│   ├── css/, js/              engine, sections (including the GDC section), explorers
+│   ├── img/gdc/               fx-CG50 emulator body and captured screens
 │   └── data/
 │       ├── site.json          course config: titles, topics, GDC, response-box symbols
-│       ├── lessons.json       all 82 videos: n = topic*100 + position, unit, title, status
+│       ├── lessons.json       all 82 videos: n = topic*100 + position, unit, title, syllabus codes, status
 │       └── lessons/<n>.json   one study page per video (none built yet)
 ├── .claude/skills/video-study-site/   the skill that builds lesson pages
 ├── transcripts/               private submodule (see below)

@@ -1,0 +1,54 @@
+/* GDC section: fx-CG50 walkthrough. Body capture is 629 x 1333 px; the screen and key boxes are placed on it in %. */
+.gdc { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: start; --bl: #4b3fd0; }
+.gdc-left { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.gdc-stem { font-size: 16px; font-weight: 700; }
+.gdc-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.gdc-step { display: grid; grid-template-columns: 28px 1fr; align-items: baseline; padding: 8px 10px; border: 2px solid transparent; cursor: pointer;
+  font-size: 15px; line-height: 1.5; color: var(--color-neutral-700); }
+.gdc-step:hover { background: color-mix(in srgb, var(--color-text) 5%, transparent); }
+.gdc-step:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.gdc-step .n { font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.gdc-step.now { border-color: var(--color-accent); background: var(--color-bg); color: var(--color-text); }
+.gdc-step.done { color: var(--color-text); }
+.gdc .kc { display: inline-block; padding: 0 .4em; margin: 0 .06em; border: 1.5px solid #888; border-radius: .3em; background: #1e1e1e; color: #fff;
+  font-size: .82em; line-height: 1.35; font-weight: 600; letter-spacing: .02em; white-space: nowrap; }
+.gdc-step:not(.now):not(.done) .kc { color: #a0a0a0; border-color: #555; }
+.gdc .entry { font-weight: 700; white-space: nowrap; }
+.gdc-ctl { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.gdc-ctl .gdc-pos { font-size: 13px; color: var(--color-neutral-700); min-width: 110px; }
+.gdc-ctl .btn[disabled] { opacity: .4; cursor: default; }
+
+/* calculator */
+.calc { width: clamp(250px, 28vw, 330px); aspect-ratio: 629 / 1333; container-type: inline-size; position: relative; }
+.calc .body { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; user-select: none;
+  filter: drop-shadow(0 .6cqw 1.8cqw rgba(0, 0, 0, .22)); }
+.calc .bezel { position: absolute; left: 7.949%; top: 11.403%; width: 83.943%; height: 22.506%; }
+.calc .keys { position: absolute; left: 5.405%; top: 36.009%; width: 89.03%; height: 58.215%; }
+.kimg { position: relative; width: 100%; height: 100%; }
+.hk { position: absolute; transform: translate(-50%, -50%); border-radius: 1.6cqw; box-sizing: border-box; }
+.hk.lit { outline: .9cqw solid #fff; box-shadow: 0 0 0 1.6cqw rgba(0, 0, 0, .35); outline-offset: .3cqw; z-index: 1; }
+.hk .badge { position: absolute; top: -3.4cqw; right: -2.6cqw; background: #fff; color: #111; font-size: 3cqw; font-weight: 700; border-radius: 999px;
+  min-width: 4.6cqw; height: 4.6cqw; padding: 0 .9cqw; box-sizing: border-box; display: grid; place-items: center; }
+.lcd { width: 100%; height: 100%; background: #fcfcf9; overflow: hidden; container-type: inline-size; }
+.lcd .shot { position: relative; width: 100%; height: 100%; }
+.lcd .shot img { display: block; width: 100%; height: 100%; object-fit: fill; }
+.lcd .shot .lbl { position: absolute; display: grid; place-items: center; background: #fff; color: #333; font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+  font-size: 3.7cqw; line-height: 1; white-space: nowrap; letter-spacing: -.03em; overflow: hidden; }
+.lcd .shot .hl { position: absolute; box-sizing: border-box; border: .9cqw solid var(--bl); border-radius: 1.2cqw; }
+.gdc-nocap { height: 100%; display: grid; place-items: center; text-align: center; padding: 8px; font-size: 3.6cqw; color: #666; background: #eceae6; }
+
+/* Screen only: larger screen in a plain bezel */
+.gdc.nokeys .calc { aspect-ratio: auto; width: clamp(300px, 36vw, 440px); }
+.gdc.nokeys .calc .body, .gdc.nokeys .calc .keys { display: none; }
+.gdc.nokeys .calc .bezel { position: static; width: auto; height: auto; background: #2a2d33; border-radius: 2.4cqw; padding: 2.4cqw; }
+.gdc.nokeys .calc .bezel .lcd { height: auto; aspect-ratio: 384 / 216; border-radius: 3px; }
+
+/* narrow screens: the screen alone, above the steps */
+@media (max-width: 760px) {
+  .gdc { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .gdc .calc { order: -1; aspect-ratio: auto; width: 100%; }
+  .gdc .calc .body, .gdc .calc .keys { display: none; }
+  .gdc .calc .bezel { position: static; width: auto; height: auto; background: #2a2d33; border-radius: 2.4cqw; padding: 2.4cqw; }
+  .gdc .calc .bezel .lcd { height: auto; aspect-ratio: 384 / 216; border-radius: 3px; }
+  .gdc-ctl button[data-gdc-keys] { display: none; }
+}

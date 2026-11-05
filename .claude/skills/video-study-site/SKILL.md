@@ -5,7 +5,7 @@ description: Build study pages for a video study-guide site (one page per video,
 
 # Video study site
 
-Turns lecture videos into study pages. Each page pairs the embedded video with key moments that seek the player, plus sections chosen for the topic: decision check, procedure, explorer, calculator walkthrough, exam wording and traps, multiple choice, and free response. The site is static (HTML, CSS, JavaScript modules, JSON) and publishes with GitHub Pages.
+Turns lecture videos into study pages. Each page pairs the embedded video with key moments that seek the player, plus sections chosen for the topic: decision check, procedure, explorer, calculator walkthrough, exam wording and traps, and free response. The site is static (HTML, CSS, JavaScript modules, JSON) and publishes with GitHub Pages.
 
 The engine is already built. Your job is mostly **content**: read a transcript, write one lesson JSON file, reuse or add an explorer, check it, and open a pull request. You rarely touch the page code.
 
@@ -79,12 +79,12 @@ For each lesson `n`:
    ```
    Read enough to know every definition, worked example, calculator procedure, and wording choice the video makes. A 50-minute video needs most of its windows read. Do not write from the outline alone.
 2. **Pick 8 to 20 key moments** at the points where an idea starts. Take `t` from the transcript line where it begins (seconds). Paraphrase in your own words, at most about 25 words each.
-3. **Choose sections.** Always: `wording`, `mcq`, `frq`. Add `decision`, `procedure`, `explorer`, or `desmos` only when the topic calls for it:
+3. **Choose sections.** Always: `wording`, `frq`. Add `decision`, `procedure`, `explorer`, `gdc`, or `desmos` (AP only) only when the topic calls for it:
    - `decision` when students must choose (which design, which test, is it binomial, reject or not).
    - `procedure` when there is a method to follow or a formula to build.
    - `explorer` when a picture that changes with inputs makes the idea click.
-   - `desmos` (or the site's calculator) when the video shows calculator steps the exam expects.
-   Order: decision, procedure, explorer, desmos, wording, mcq, frq.
+   - `gdc` (or `desmos` on the AP site) when the video shows calculator steps the exam expects.
+   Order: decision, procedure, explorer, gdc, desmos, wording, frq.
 4. **Explorer.** Check the catalog in `references/explorers.md`. Reuse an explorer if one fits; add config options to it if it nearly fits; build a new library module only when nothing fits. New explorers follow the layout and interface rules there and get added to the catalog.
 5. **Write the content** (rules below) into `docs/data/lessons/<n>.json`. Generate it with a short script when it contains numbers, so every value is **computed in code**, never typed from memory. Re-run the computation after any edit to the inputs.
 6. **Flags.** Add `review.flags` for: weak video wording you strengthened, apparent caption errors (wrong sign, misspoken number), values that depend on what is on screen, calculator menu names taken from the captions, any new explorer.
@@ -105,7 +105,7 @@ python3 .claude/skills/video-study-site/scripts/check_pages.py . <n> [<n> ...] -
 
 It fails on unrendered math or raw LaTeX anywhere on the page, KaTeX errors, page errors, an explorer taller than the screen, stat results that do not share one top edge, a title card that is not full width, or horizontal scroll at 390px. If the KaTeX CDN is blocked (common in cloud workspaces), `npm i katex@0.16.11` in a scratch folder and set `KATEX_DIR` to its `node_modules/katex/dist`. Look at the screenshots it saves.
 
-Read the report's timestamp table. Every row should show transcript text that matches its claim; move any timestamp that lands before or after its idea. Finally, click through the explorer presets and confirm they give the values your script computed, and that MCQ marks and the FRQ reveal work.
+Read the report's timestamp table. Every row should show transcript text that matches its claim; move any timestamp that lands before or after its idea. Finally, click through the explorer presets and confirm they give the values your script computed, and that the FRQ reveal works.
 
 ### 6. Pull request
 
@@ -118,10 +118,11 @@ Merging the PR is the approval; nothing else is needed to publish. Remove flags 
 ## This repo: IB MAI Hub (course notes)
 
 - Course: IB Mathematics Applications and Interpretation HL. Videos are Revision Village's five topic playlists (Number and Algebra, Functions, Geometry and Trigonometry, Statistics and Probability, Calculus). Units 1 to 5 are the five topics; there is no Reviews unit yet.
-- Video titles carry no syllabus code, so `build_index.py` cannot place them. Use `scripts/build_index_topics.py`, which reads the per-topic playlist indexes and numbers lessons `n = topic*100 + position` (for example 4.06 is lesson 406). The `topic` label shown on the home page is the playlist position inside the topic, not a syllabus code. Add syllabus codes by hand once Ben supplies a mapping.
+- Video titles carry no syllabus code, so `build_index.py` cannot place them. `scripts/build_index_topics.py` reads the per-topic playlist indexes and numbers lessons `n = topic*100 + position` (for example 4.06 is lesson 406). Each lesson in `lessons.json` has a `syllabus` list (for example `["SL 4.4", "SL 4.10"]`, checked against Ben's `IB MAI SYLLABUS.html` in `RIS Secondary Math Content/01-sources/syllabi`); the first code is the home-page label. The mapping was made from video titles on 5 Nov 2026 and is **not yet confirmed by Ben**; it is a judgment call for videos that span two codes. Thirteen syllabus codes have no video (SL 1.5, AHL 1.9, 1.10, 1.11, SL 2.6, AHL 2.10, 3.12, 3.15, 3.16, SL 4.5, AHL 4.12, 5.17, 5.18). New videos get `topic` = playlist position until a `syllabus` list is added by hand.
 - Transcripts live in the private submodule in the topic-folder layout (`Topic N - .../transcripts/NN-<id>.txt`). `lessons.json` `transcript` holds that relative path, so `find.py` and `validate.py` work unchanged. Two transcripts (Topic 4, positions 6 and 7) were made with Whisper `medium.en` because YouTube had no English captions; the rest are raw YouTube captions.
-- Calculator: the GDC (Casio fx-CG50), not Desmos. Skip the `desmos` section. Put keystrokes in a `procedure` section, GDC first, before any hand method.
-- Ben's standing rules for his MAI material: GDC first, exam tips without citations, no em dashes. He has also said no multiple-choice questions in MAI lessons; whether the `mcq` section stays on this site is **an open question for Ben**, so ask before building the first page.
+- **No multiple choice.** The IB does not set multiple-choice questions, so this site has no `mcq` section. Core sections are `wording` and `frq`. Do not add a multiple-choice check.
+- **GDC.** The calculator is the Casio fx-CG50, not Desmos. Do not use the `desmos` section (it stays in the engine only so the template matches the AP Statistics Hub). Use the `gdc` section: numbered steps beside the real fx-CG50 emulator with the pressed keys ringed. Rules: GDC first, before any hand method; screens are real emulator captures, never drawn; every step names the keys actually pressed, in order, verified on the emulator; a section that changes a setting other than the angle unit ends with a "put it back" line. Key sequences already verified are in `gdc/menu_paths_verified.md`; capture and crop with `gdc/cap.py`. The maintained kit and the capture workflow are in the `gdc-online-deck` skill (master: `MAI HL/_tools/skills_sync/masters/gdc-online-deck.skill`). Ben's calculator references: `MAI HL/Calculator Skills (Haese MAI HL Casio).md`. Captures need the emulator on Ben's Mac (computer use), so a step without a capture shows "Screen not captured yet" and the validator warns.
+- Ben's standing rules for his MAI material: GDC first, exam tips without citations, no em dashes.
 
 ## Page formatting (house rules, set in `docs/css/site.css`)
 
@@ -133,13 +134,12 @@ Merging the PR is the approval; nothing else is needed to publish. Remove flags 
 
 ## Content rules
 
-- **Original practice.** Write every MCQ and FRQ fresh. Do not copy the video's questions, a textbook's, or the exam board's or a publisher's. Reuse the video's scenarios only in worked examples and explorers, where they help students connect back to the video.
+- **Original practice.** Write every FRQ fresh. Do not copy the video's questions, a textbook's, or the exam board's or a publisher's. Reuse the video's scenarios only in worked examples and explorers, where they help students connect back to the video.
 - **Quotes.** Keep any transcript quote to a short phrase inside a wording note or flag. Explanations are in your own words.
 - **Math.** All math goes in `$...$` for KaTeX, including simple expressions like `$p=0.12$` and `$P(X=2)$`. Write formulas as `$\text{Mean}=np$`. Plain-text exceptions: decimals inside prose answers, and the `weak` strings in traps that show a bare number on purpose. Never write a LaTeX command (`\hat`, `\frac`, `\alpha`) outside `$...$`. These fields are shown as plain text, so they must contain no math at all: `tab`, `kicker`, moment `type`, card `letter`, part `label`, trap `kind`, and preset `label` (put the math in the preset's `sub`). The validator rejects both mistakes.
 - **Exam wording.** Conclusions in context, about the alternative, with non-definitive language. Interpretations name the variable, the context, and the condition. When the video's wording is weaker, the page uses the exam wording and says so in a note.
 - **Traps.** `weak` is the realistic wrong answer (shown in quotes), `better` is the full-credit version. 4 to 5 per lesson, each with the moment in the video that teaches it.
-- **Multiple choice.** 3 to 5 questions, 4 options each, one explanation per option (why it is right, or the specific mistake it reflects), a video link, and the correct position varied across questions. Distractors are real misconceptions, not nonsense.
 - **Free response.** A new scenario, 3 or 4 parts, a sample response that would earn full credit, and a 5 or 6 item scoring checklist.
-- **Calculator.** Steps follow "Suppose ... To do that ... Observe ...", with the menu path the video shows. The calculator starts empty and no button loads an answer: students practice the keystrokes. Expected values are computed. Menu names from captions are flagged as unconfirmed.
+- **Calculator (Desmos, AP site only).** Steps follow "Suppose ... To do that ... Observe ...", with the menu path the video shows. The calculator starts empty and no button loads an answer: students practice the keystrokes. Expected values are computed. Menu names from captions are flagged as unconfirmed.
 - **Voice.** Plain and matter-of-fact, varied sentence length, no filler sections. No em dashes. Oxford commas.
 - **Scope.** Build what the topic needs and nothing extra. Keep text the teacher wrote verbatim. A small request changes only what was asked.

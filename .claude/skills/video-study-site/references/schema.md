@@ -35,7 +35,7 @@ Any string may contain `$...$` math. Times (`t`, `seek`) are whole seconds into 
 ## Every section
 
 ```json
-{ "id": "mcq", "type": "mcq", "tab": "Multiple choice", "kicker": "Check your understanding", "title": "Multiple choice",
+{ "id": "wording", "type": "wording", "tab": "Wording", "kicker": "Exam wording", "title": "Exam wording and traps",
   "notes": [ { "label": "Wording check.", "text": "..." } ] }
 ```
 
@@ -94,14 +94,22 @@ Each step renders as "Suppose ... To do that, ... Observe." with a "Show expecte
 
 `kind` is "Common trap" or "Exam wording". `weak` is shown in quotes, so do not add quote marks.
 
-## `mcq`
+## `gdc` (Casio fx-CG50 walkthrough; IB MAI Hub)
 
 ```json
-{ "type": "mcq",
-  "questions": [ { "stem": "...", "opts": ["A", "B", "C", "D"], "ok": 1, "why": ["...", "...", "...", "..."], "seek": 236 } ] }
+{ "type": "gdc", "intro": "Check the angle unit before any trig question.", "stem": "Switch the calculator to degrees.",
+  "start": { "src": "img/gdc/angle_deg_1.jpg", "alt": "Start screen" },
+  "steps": [ { "t": "Press [SHIFT] [MENU] to open SET UP.", "s": { "src": "img/gdc/angle_deg_1.jpg", "alt": "SET UP list" } },
+             { "t": "Press [F1] for Deg.", "s": { "src": "img/gdc/angle_deg_3.jpg", "alt": "Angle Deg", "hl": [0, 80, 100, 12] } } ],
+  "restore": "Leave the calculator in the angle unit your teacher asks for." }
 ```
 
-`ok` is the zero-based index of the correct option. `why` has one entry per option. On a wrong pick the page shows that option's `why` and then the correct one.
+Steps list on the left; the calculator on the right shows the real screen after the chosen step and rings the keys that step presses, in order (badges give the order when there is more than one). Students click a step, or use Back and Next step. "Screen only" shows a larger screen without the keypad; on a phone only the screen shows.
+
+- Step text: `[KEY]` is a key chip and lights that key; `{-2.5}` is a typed entry and lights its digits, DOT, and NEG (leading minus) or SUB. Key ids: `F1`-`F6 SHIFT OPTN VARS MENU ALPHA SQR POW EXIT XTT LOG LN SIN COS TAN FRAC SD LP RP COMMA STO DEL AC MUL DIV ADD SUB DOT EXP NEG EXE UP DOWN LEFT RIGHT 0-9`. `$math$` works in the text around a chip, not across one.
+- `s.src` is a path under `docs/` (put captures in `docs/img/gdc/`). `s.hl` is a highlight box `[left%, top%, w%, h%]`; `s.labels` are white boxes `[left%, top%, w%, h%, text, bg?]` that relabel the F-key row. A step with `"s": null` shows "Screen not captured yet" and the validator warns.
+- About 5 to 6 steps per section; split a longer procedure. `restore` is optional: say how to put back any setting other than the angle unit. `intro` is required.
+- Captures are real emulator screens (computer use on the Mac), never drawn. See `gdc/menu_paths_verified.md` before planning a menu already in it.
 
 ## `frq`
 
@@ -117,6 +125,7 @@ Each step renders as "Suppose ... To do that, ... Observe." with a "Show expecte
 ```json
 { "n": 13, "unit": 1, "topic": "1.13", "title": "Experimental Design", "videoId": "2Yn1235uFzE",
   "transcript": "13-2Yn1235uFzE.txt", "status": "live" }
+// IB MAI Hub entries also carry a syllabus list, for example "syllabus": ["SL 4.4", "SL 4.10"] ("topic" is the first code)
 ```
 
 `status`: `transcript` (listed only), `next` (planned), `draft` (page exists, held back, not linked), `live` (linked from the home page). A PR sets its lessons to `live`, so they publish when it is merged.

@@ -6,7 +6,7 @@
 Reads  <repo>/transcripts/playlist-index.json  ({"playlists": [{"topic": N, "videos": [...]}]})
 and    <repo>/docs/data/site.json  (titleCleanup).
 Lesson number n = topic * 100 + playlist position. Unit id = topic. The "topic" label is the
-playlist position inside the topic (not a syllabus code). Existing lessons keep their title,
+playlist position inside the topic (not a syllabus code); add a "syllabus" list and set "topic" to its first code by hand. Existing lessons keep their title,
 unit and status; only new videos are added. Videos without a saved transcript are skipped and listed.
 """
 import argparse, json, sys
