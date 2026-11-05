@@ -6,7 +6,7 @@
  "home": {
   "headline": "Study by IB syllabus code, then jump back to the moment that explains it.",
   "lede": "Every study page pairs the video with its key moments, a method checklist, exam wording, common traps, an interactive visual and practice questions.",
-  "pilot": "Rows are IB syllabus codes. Red rows have no video; amber rows are mentioned only briefly in a video. No study pages are built yet."
+  "pilot": "Rows are IB syllabus codes. Red rows have no video; amber rows are mentioned only briefly in a video. One study page is live so far: Domain & Range, Composite, Inverse (AHL 2.7). Every other video is listed with its transcript only."
  },
  "units": [
   {

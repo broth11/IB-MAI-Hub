@@ -10,6 +10,12 @@ Set up on 2026-11-05 from the AP Statistics Hub template.
 - Multiple choice removed (engine section, styles, validator, skill text). The IB does not use it. Core sections are `wording` and `frq`.
 - New `gdc` section (Casio fx-CG50): steps beside the real emulator body with the pressed keys ringed, screens from real captures. Tested in a browser on a throwaway page using the eight angle-unit captures (deleted afterwards). Only those eight captures exist so far; every other GDC step needs a new capture from the emulator.
 
+## First study page: lesson 209 (AHL 2.7)
+
+`docs/data/lessons/209.json`, Domain & Range, Composite, Inverse (SL 2.2 and AHL 2.7). Sections: a decision check (does the function have an inverse?), the composite and inverse method, exam wording traps, and a written response. No GDC section yet (no captures for this topic). The video inverts f(x)=x^2-2 without restricting the domain; the page adds the restriction and the domain of the inverse, and says so in the flags. Values were computed with sympy; the page check passes. On the branch `lesson/ahl-2-7`; merging the pull request publishes it.
+
+Engine fixes made while building it: the response box placeholder no longer says "statistical symbols"; a `frq` section can set its own `note`.
+
 ## Home page is organized by syllabus code
 
 The home page lists the 78 codes in `docs/data/syllabus.json` (short titles written by Claude, not IB text), each with the videos whose `syllabus` list includes it. A video that covers several codes appears under each (marked "also covers this" where the code is not its first). A code with no video shows a red "No video yet" row; a code that a video only mentions briefly (a lesson's `syllabusPartial` list) shows an amber row. The Gaps tab lists both (12 of 78 on 5 Nov 2026: 11 with no video, 1 brief). To fill a gap: add the video to the playlist data, give it a `syllabus` list, and the row updates.
