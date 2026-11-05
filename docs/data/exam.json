@@ -1,0 +1,5971 @@
+{
+ "source": "IB question bank, applications and interpretation, HL-level questions",
+ "years": [
+  2021,
+  2025
+ ],
+ "codes": {
+  "SL 1.1": {
+   "label": "Standard Form",
+   "n": 1,
+   "formulas": [],
+   "papers": {
+    "1": 1,
+    "2": 0,
+    "3": 0
+   },
+   "calculator": 1,
+   "marks": {
+    "median": 5,
+    "min": 5,
+    "max": 5
+   },
+   "commandTerms": [
+    [
+     "Calculate",
+     1
+    ],
+    [
+     "Determine",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 1,
+    "A": 1,
+    "R": 0,
+    "AG": 0
+   },
+   "alsoWith": [
+    [
+     "AHL 1.9",
+     1
+    ],
+    [
+     "AHL 2.10",
+     1
+    ],
+    [
+     "SL 1.5",
+     1
+    ],
+    [
+     "SL 2.5",
+     1
+    ],
+    [
+     "SL 2.6",
+     1
+    ]
+   ],
+   "tags": [
+    "Logarithms",
+    "Logarithm Laws",
+    "Modelling",
+    "Standard Form"
+   ]
+  },
+  "SL 1.2": {
+   "label": "Arithmetic Sequence",
+   "n": 9,
+   "formulas": [
+    "The $n$th term of an arithmetic sequence",
+    "The sum of $n$ terms of an arithmetic sequence"
+   ],
+   "papers": {
+    "1": 4,
+    "2": 3,
+    "3": 2
+   },
+   "calculator": 9,
+   "marks": {
+    "median": 13,
+    "min": 5,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     9
+    ],
+    [
+     "Calculate",
+     4
+    ],
+    [
+     "Write down",
+     4
+    ],
+    [
+     "Determine",
+     3
+    ],
+    [
+     "Show that",
+     3
+    ],
+    [
+     "Hence",
+     2
+    ]
+   ],
+   "markTypes": {
+    "M": 9,
+    "A": 9,
+    "R": 3,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 2.5",
+     4
+    ],
+    [
+     "SL 2.6",
+     4
+    ],
+    [
+     "SL 1.3",
+     3
+    ],
+    [
+     "SL 1.4",
+     2
+    ],
+    [
+     "SL 4.5",
+     2
+    ]
+   ],
+   "tags": [
+    "Arithmetic Sequence",
+    "Modelling",
+    "Arithmetic Series",
+    "Geometric Sequence",
+    "Geometric Series",
+    "Financial Applications"
+   ]
+  },
+  "SL 1.3": {
+   "label": "Geometric Sequence",
+   "n": 15,
+   "formulas": [
+    "The $n$th term of a geometric sequence",
+    "The sum of $n$ terms of a finite geometric sequence"
+   ],
+   "papers": {
+    "1": 10,
+    "2": 3,
+    "3": 2
+   },
+   "calculator": 15,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     15
+    ],
+    [
+     "Show that",
+     5
+    ],
+    [
+     "Calculate",
+     4
+    ],
+    [
+     "Determine",
+     4
+    ],
+    [
+     "Suggest",
+     3
+    ],
+    [
+     "Write down",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 15,
+    "A": 15,
+    "R": 7,
+    "AG": 5
+   },
+   "alsoWith": [
+    [
+     "AHL 2.9",
+     4
+    ],
+    [
+     "SL 2.5",
+     4
+    ],
+    [
+     "SL 2.6",
+     4
+    ],
+    [
+     "SL 1.2",
+     3
+    ],
+    [
+     "SL 1.8",
+     2
+    ]
+   ],
+   "tags": [
+    "Geometric Series",
+    "Geometric Sequence",
+    "Exponential Models",
+    "Modelling",
+    "Arithmetic Sequence",
+    "Equation"
+   ]
+  },
+  "SL 1.4": {
+   "label": "Financial Applications",
+   "n": 18,
+   "formulas": [
+    "Compound interest"
+   ],
+   "papers": {
+    "1": 14,
+    "2": 4,
+    "3": 0
+   },
+   "calculator": 18,
+   "marks": {
+    "median": 7.0,
+    "min": 5,
+    "max": 19
+   },
+   "commandTerms": [
+    [
+     "Find",
+     13
+    ],
+    [
+     "Calculate",
+     10
+    ],
+    [
+     "Determine",
+     4
+    ],
+    [
+     "Write down",
+     3
+    ],
+    [
+     "Comment on",
+     2
+    ],
+    [
+     "Describe",
+     2
+    ]
+   ],
+   "markTypes": {
+    "M": 18,
+    "A": 18,
+    "R": 5,
+    "AG": 1
+   },
+   "alsoWith": [
+    [
+     "SL 1.7",
+     12
+    ],
+    [
+     "AHL 2.9",
+     3
+    ],
+    [
+     "AHL 1.9",
+     2
+    ],
+    [
+     "SL 1.3",
+     2
+    ],
+    [
+     "SL 1.2",
+     2
+    ]
+   ],
+   "tags": [
+    "Financial Applications",
+    "Amortization & Annuities",
+    "Percentages",
+    "Exponential Models",
+    "Logarithm Laws",
+    "Geometric Series"
+   ]
+  },
+  "SL 1.5": {
+   "label": "Exponentials",
+   "n": 36,
+   "formulas": [
+    "Exponents and logarithms"
+   ],
+   "papers": {
+    "1": 22,
+    "2": 9,
+    "3": 5
+   },
+   "calculator": 36,
+   "marks": {
+    "median": 8.0,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     33
+    ],
+    [
+     "Write down",
+     11
+    ],
+    [
+     "Use",
+     8
+    ],
+    [
+     "Calculate",
+     8
+    ],
+    [
+     "Show that",
+     8
+    ],
+    [
+     "State",
+     6
+    ]
+   ],
+   "markTypes": {
+    "M": 36,
+    "A": 36,
+    "R": 9,
+    "AG": 8
+   },
+   "alsoWith": [
+    [
+     "AHL 1.10",
+     25
+    ],
+    [
+     "AHL 2.10",
+     25
+    ],
+    [
+     "SL 2.5",
+     19
+    ],
+    [
+     "SL 2.6",
+     19
+    ],
+    [
+     "AHL 2.9",
+     16
+    ]
+   ],
+   "tags": [
+    "Exponentials",
+    "Logarithms",
+    "Modelling",
+    "Exponential Models",
+    "Logarithm Laws",
+    "Differentiation"
+   ]
+  },
+  "SL 1.6": {
+   "label": "Approximation",
+   "n": 11,
+   "formulas": [
+    "Percentage error"
+   ],
+   "papers": {
+    "1": 9,
+    "2": 2,
+    "3": 0
+   },
+   "calculator": 11,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 17
+   },
+   "commandTerms": [
+    [
+     "Find",
+     8
+    ],
+    [
+     "Calculate",
+     5
+    ],
+    [
+     "Use",
+     5
+    ],
+    [
+     "Write down",
+     3
+    ],
+    [
+     "Determine",
+     1
+    ],
+    [
+     "Justify",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 11,
+    "A": 11,
+    "R": 0,
+    "AG": 0
+   },
+   "alsoWith": [
+    [
+     "SL 3.1",
+     5
+    ],
+    [
+     "AHL 5.11",
+     4
+    ],
+    [
+     "SL 5.5",
+     4
+    ],
+    [
+     "AHL 5.12",
+     4
+    ],
+    [
+     "SL 5.8",
+     4
+    ]
+   ],
+   "tags": [
+    "Percentage Error",
+    "Measurement",
+    "Upper & Lower Bounds",
+    "Integration",
+    "Trapezoidal Rule",
+    "Area Under a Curve"
+   ]
+  },
+  "SL 1.7": {
+   "label": "Amortization & Annuities",
+   "n": 12,
+   "formulas": [],
+   "papers": {
+    "1": 10,
+    "2": 2,
+    "3": 0
+   },
+   "calculator": 12,
+   "marks": {
+    "median": 7.5,
+    "min": 5,
+    "max": 19
+   },
+   "commandTerms": [
+    [
+     "Find",
+     9
+    ],
+    [
+     "Calculate",
+     8
+    ],
+    [
+     "Write down",
+     2
+    ],
+    [
+     "Determine",
+     2
+    ],
+    [
+     "State",
+     1
+    ],
+    [
+     "Express",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 12,
+    "A": 12,
+    "R": 1,
+    "AG": 0
+   },
+   "alsoWith": [
+    [
+     "SL 1.4",
+     12
+    ],
+    [
+     "AHL 1.10",
+     1
+    ],
+    [
+     "AHL 2.10",
+     1
+    ],
+    [
+     "AHL 2.9",
+     1
+    ],
+    [
+     "SL 1.5",
+     1
+    ]
+   ],
+   "tags": [
+    "Financial Applications",
+    "Amortization & Annuities",
+    "Percentages",
+    "Exponentials",
+    "Logarithms",
+    "Exponential Models"
+   ]
+  },
+  "SL 1.8": {
+   "label": "Systems of Linear Equations",
+   "n": 35,
+   "formulas": [],
+   "papers": {
+    "1": 23,
+    "2": 10,
+    "3": 2
+   },
+   "calculator": 35,
+   "marks": {
+    "median": 7,
+    "min": 4,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     33
+    ],
+    [
+     "Write down",
+     17
+    ],
+    [
+     "Determine",
+     9
+    ],
+    [
+     "Use",
+     8
+    ],
+    [
+     "Show that",
+     6
+    ],
+    [
+     "Hence",
+     6
+    ]
+   ],
+   "markTypes": {
+    "M": 33,
+    "A": 35,
+    "R": 7,
+    "AG": 5
+   },
+   "alsoWith": [
+    [
+     "SL 2.5",
+     15
+    ],
+    [
+     "SL 2.6",
+     14
+    ],
+    [
+     "SL 1.5",
+     5
+    ],
+    [
+     "SL 2.1",
+     5
+    ],
+    [
+     "SL 3.5",
+     5
+    ]
+   ],
+   "tags": [
+    "Equation",
+    "Modelling",
+    "Systems of Linear Equations",
+    "Coordinate Geometry",
+    "Graph",
+    "Logarithms"
+   ]
+  },
+  "AHL 1.9": {
+   "label": "Logarithm Laws",
+   "n": 20,
+   "formulas": [
+    "Laws of logarithms"
+   ],
+   "papers": {
+    "1": 17,
+    "2": 3,
+    "3": 0
+   },
+   "calculator": 20,
+   "marks": {
+    "median": 7.0,
+    "min": 5,
+    "max": 16
+   },
+   "commandTerms": [
+    [
+     "Find",
+     16
+    ],
+    [
+     "Write down",
+     5
+    ],
+    [
+     "Show that",
+     4
+    ],
+    [
+     "Use",
+     3
+    ],
+    [
+     "State",
+     3
+    ],
+    [
+     "Calculate",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 20,
+    "A": 20,
+    "R": 5,
+    "AG": 4
+   },
+   "alsoWith": [
+    [
+     "SL 1.5",
+     12
+    ],
+    [
+     "AHL 2.10",
+     10
+    ],
+    [
+     "SL 2.5",
+     9
+    ],
+    [
+     "AHL 2.9",
+     8
+    ],
+    [
+     "SL 2.6",
+     8
+    ]
+   ],
+   "tags": [
+    "Logarithm Laws",
+    "Logarithms",
+    "Exponential Models",
+    "Modelling",
+    "Exponentials",
+    "Equation"
+   ]
+  },
+  "AHL 1.10": {
+   "label": "Exponentials",
+   "n": 26,
+   "formulas": [],
+   "papers": {
+    "1": 13,
+    "2": 10,
+    "3": 3
+   },
+   "calculator": 26,
+   "marks": {
+    "median": 10.5,
+    "min": 5,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     25
+    ],
+    [
+     "Write down",
+     10
+    ],
+    [
+     "Show that",
+     7
+    ],
+    [
+     "Use",
+     6
+    ],
+    [
+     "Calculate",
+     5
+    ],
+    [
+     "Hence",
+     5
+    ]
+   ],
+   "markTypes": {
+    "M": 26,
+    "A": 26,
+    "R": 7,
+    "AG": 7
+   },
+   "alsoWith": [
+    [
+     "SL 1.5",
+     25
+    ],
+    [
+     "AHL 2.9",
+     15
+    ],
+    [
+     "SL 2.5",
+     14
+    ],
+    [
+     "AHL 2.10",
+     14
+    ],
+    [
+     "SL 2.6",
+     13
+    ]
+   ],
+   "tags": [
+    "Exponentials",
+    "Logarithms",
+    "Modelling",
+    "Exponential Models",
+    "Differentiation",
+    "Logarithm Laws"
+   ]
+  },
+  "AHL 1.11": {
+   "label": "Infinite Geometric Series",
+   "n": 0,
+   "formulas": [
+    "The sum of an infinite geometric sequence"
+   ]
+  },
+  "AHL 1.12": {
+   "label": "Complex Numbers",
+   "n": 20,
+   "formulas": [
+    "Complex numbers",
+    "Discriminant"
+   ],
+   "papers": {
+    "1": 16,
+    "2": 3,
+    "3": 1
+   },
+   "calculator": 20,
+   "marks": {
+    "median": 7.0,
+    "min": 5,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     18
+    ],
+    [
+     "Write down",
+     6
+    ],
+    [
+     "Describe",
+     3
+    ],
+    [
+     "Hence",
+     3
+    ],
+    [
+     "Show that",
+     3
+    ],
+    [
+     "Plot",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 16,
+    "A": 20,
+    "R": 2,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "AHL 1.13",
+     20
+    ],
+    [
+     "AHL 3.8",
+     8
+    ],
+    [
+     "AHL 2.9",
+     6
+    ],
+    [
+     "AHL 3.9",
+     3
+    ],
+    [
+     "SL 2.5",
+     3
+    ]
+   ],
+   "tags": [
+    "Complex Numbers",
+    "Trigonometric Functions",
+    "Sinusoidal Models",
+    "Matrix Transformations",
+    "Modelling",
+    "Vectors (2D)"
+   ]
+  },
+  "AHL 1.13": {
+   "label": "Complex Numbers",
+   "n": 20,
+   "formulas": [
+    "Modulus-argument (polar) and exponential (Euler) form"
+   ],
+   "papers": {
+    "1": 16,
+    "2": 3,
+    "3": 1
+   },
+   "calculator": 20,
+   "marks": {
+    "median": 7.0,
+    "min": 5,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     18
+    ],
+    [
+     "Write down",
+     6
+    ],
+    [
+     "Describe",
+     3
+    ],
+    [
+     "Hence",
+     3
+    ],
+    [
+     "Show that",
+     3
+    ],
+    [
+     "Plot",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 16,
+    "A": 20,
+    "R": 2,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "AHL 1.12",
+     20
+    ],
+    [
+     "AHL 3.8",
+     8
+    ],
+    [
+     "AHL 2.9",
+     6
+    ],
+    [
+     "AHL 3.9",
+     3
+    ],
+    [
+     "SL 2.5",
+     3
+    ]
+   ],
+   "tags": [
+    "Complex Numbers",
+    "Trigonometric Functions",
+    "Sinusoidal Models",
+    "Matrix Transformations",
+    "Modelling",
+    "Vectors (2D)"
+   ]
+  },
+  "AHL 1.14": {
+   "label": "Matrices",
+   "n": 45,
+   "formulas": [
+    "Determinant of a 2 × 2 matrix",
+    "Inverse of a $2 \\times 2$ matrix"
+   ],
+   "papers": {
+    "1": 20,
+    "2": 20,
+    "3": 5
+   },
+   "calculator": 45,
+   "marks": {
+    "median": 13,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     40
+    ],
+    [
+     "Write down",
+     24
+    ],
+    [
+     "Show that",
+     14
+    ],
+    [
+     "Use",
+     12
+    ],
+    [
+     "Determine",
+     11
+    ],
+    [
+     "Hence",
+     11
+    ]
+   ],
+   "markTypes": {
+    "M": 44,
+    "A": 45,
+    "R": 15,
+    "AG": 14
+   },
+   "alsoWith": [
+    [
+     "AHL 1.15",
+     45
+    ],
+    [
+     "AHL 3.15",
+     23
+    ],
+    [
+     "AHL 4.19",
+     17
+    ],
+    [
+     "AHL 3.9",
+     13
+    ],
+    [
+     "AHL 3.14",
+     9
+    ]
+   ],
+   "tags": [
+    "Matrices",
+    "Eigenvalues & Eigenvectors",
+    "Transition Matrices & Markov Chains",
+    "Matrix Transformations",
+    "Graph Theory",
+    "Adjacency Matrices"
+   ]
+  },
+  "AHL 1.15": {
+   "label": "Eigenvalues & Eigenvectors",
+   "n": 51,
+   "formulas": [
+    "Power formula for a matrix"
+   ],
+   "papers": {
+    "1": 24,
+    "2": 22,
+    "3": 5
+   },
+   "calculator": 51,
+   "marks": {
+    "median": 13,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     44
+    ],
+    [
+     "Write down",
+     28
+    ],
+    [
+     "Show that",
+     15
+    ],
+    [
+     "Use",
+     14
+    ],
+    [
+     "Hence",
+     13
+    ],
+    [
+     "Determine",
+     12
+    ]
+   ],
+   "markTypes": {
+    "M": 49,
+    "A": 51,
+    "R": 17,
+    "AG": 15
+   },
+   "alsoWith": [
+    [
+     "AHL 1.14",
+     45
+    ],
+    [
+     "AHL 3.15",
+     23
+    ],
+    [
+     "AHL 4.19",
+     17
+    ],
+    [
+     "AHL 3.9",
+     13
+    ],
+    [
+     "AHL 5.16",
+     13
+    ]
+   ],
+   "tags": [
+    "Matrices",
+    "Eigenvalues & Eigenvectors",
+    "Transition Matrices & Markov Chains",
+    "Matrix Transformations",
+    "Coupled Differential Equations",
+    "Differential Equation"
+   ]
+  },
+  "SL 2.1": {
+   "label": "Coordinate Geometry",
+   "n": 17,
+   "formulas": [
+    "Equations of a straight line",
+    "Gradient formula"
+   ],
+   "papers": {
+    "1": 10,
+    "2": 6,
+    "3": 1
+   },
+   "calculator": 17,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     15
+    ],
+    [
+     "Write down",
+     9
+    ],
+    [
+     "Determine",
+     4
+    ],
+    [
+     "Hence",
+     4
+    ],
+    [
+     "Calculate",
+     4
+    ],
+    [
+     "Show that",
+     4
+    ]
+   ],
+   "markTypes": {
+    "M": 16,
+    "A": 17,
+    "R": 5,
+    "AG": 4
+   },
+   "alsoWith": [
+    [
+     "SL 3.5",
+     17
+    ],
+    [
+     "SL 3.6",
+     11
+    ],
+    [
+     "SL 3.1",
+     8
+    ],
+    [
+     "SL 1.8",
+     5
+    ],
+    [
+     "SL 3.2",
+     5
+    ]
+   ],
+   "tags": [
+    "Coordinate Geometry",
+    "Voronoi Diagrams",
+    "Measurement",
+    "Equation",
+    "Right Angle Triangle Trigonometry",
+    "Scalar (Dot) Product"
+   ]
+  },
+  "SL 2.2": {
+   "label": "Domain & Range",
+   "n": 15,
+   "formulas": [],
+   "papers": {
+    "1": 13,
+    "2": 1,
+    "3": 1
+   },
+   "calculator": 15,
+   "marks": {
+    "median": 7,
+    "min": 4,
+    "max": 30
+   },
+   "commandTerms": [
+    [
+     "Find",
+     13
+    ],
+    [
+     "Write down",
+     8
+    ],
+    [
+     "Use",
+     3
+    ],
+    [
+     "State",
+     2
+    ],
+    [
+     "Solve",
+     2
+    ],
+    [
+     "Interpret",
+     2
+    ]
+   ],
+   "markTypes": {
+    "M": 12,
+    "A": 15,
+    "R": 1,
+    "AG": 1
+   },
+   "alsoWith": [
+    [
+     "AHL 2.7",
+     11
+    ],
+    [
+     "SL 2.5",
+     6
+    ],
+    [
+     "SL 2.6",
+     5
+    ],
+    [
+     "AHL 1.10",
+     4
+    ],
+    [
+     "SL 1.5",
+     4
+    ]
+   ],
+   "tags": [
+    "Inverse",
+    "Domain & Range",
+    "Modelling",
+    "Exponentials",
+    "Graph",
+    "Logarithm Laws"
+   ]
+  },
+  "SL 2.3": {
+   "label": "Graph",
+   "n": 29,
+   "formulas": [],
+   "papers": {
+    "1": 19,
+    "2": 9,
+    "3": 1
+   },
+   "calculator": 29,
+   "marks": {
+    "median": 8,
+    "min": 4,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     27
+    ],
+    [
+     "Write down",
+     16
+    ],
+    [
+     "Sketch",
+     16
+    ],
+    [
+     "Use",
+     9
+    ],
+    [
+     "Show that",
+     7
+    ],
+    [
+     "Hence",
+     6
+    ]
+   ],
+   "markTypes": {
+    "M": 26,
+    "A": 29,
+    "R": 7,
+    "AG": 6
+   },
+   "alsoWith": [
+    [
+     "SL 2.5",
+     12
+    ],
+    [
+     "SL 2.6",
+     9
+    ],
+    [
+     "SL 5.5",
+     9
+    ],
+    [
+     "SL 5.6",
+     8
+    ],
+    [
+     "AHL 5.9",
+     7
+    ]
+   ],
+   "tags": [
+    "Graph",
+    "Modelling",
+    "Differentiation",
+    "Integration",
+    "Definite Integral",
+    "Function Transformation"
+   ]
+  },
+  "SL 2.4": {
+   "label": "Properties of Curves",
+   "n": 20,
+   "formulas": [],
+   "papers": {
+    "1": 11,
+    "2": 8,
+    "3": 1
+   },
+   "calculator": 20,
+   "marks": {
+    "median": 8.5,
+    "min": 4,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     18
+    ],
+    [
+     "Write down",
+     9
+    ],
+    [
+     "Sketch",
+     6
+    ],
+    [
+     "Use",
+     5
+    ],
+    [
+     "Determine",
+     4
+    ],
+    [
+     "Interpret",
+     4
+    ]
+   ],
+   "markTypes": {
+    "M": 17,
+    "A": 20,
+    "R": 4,
+    "AG": 2
+   },
+   "alsoWith": [
+    [
+     "SL 5.6",
+     16
+    ],
+    [
+     "SL 5.2",
+     15
+    ],
+    [
+     "AHL 5.9",
+     13
+    ],
+    [
+     "SL 5.3",
+     13
+    ],
+    [
+     "SL 2.5",
+     9
+    ]
+   ],
+   "tags": [
+    "Properties of Curves",
+    "Differentiation",
+    "Modelling",
+    "Rate of Change",
+    "Optimisation",
+    "Graph"
+   ]
+  },
+  "SL 2.5": {
+   "label": "Linear Models",
+   "n": 100,
+   "formulas": [
+    "Axis of symmetry of the graph of a quadratic function"
+   ],
+   "papers": {
+    "1": 55,
+    "2": 30,
+    "3": 15
+   },
+   "calculator": 100,
+   "marks": {
+    "median": 8.0,
+    "min": 4,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     94
+    ],
+    [
+     "Write down",
+     42
+    ],
+    [
+     "Show that",
+     33
+    ],
+    [
+     "Use",
+     29
+    ],
+    [
+     "Hence",
+     24
+    ],
+    [
+     "Determine",
+     22
+    ]
+   ],
+   "markTypes": {
+    "M": 99,
+    "A": 100,
+    "R": 32,
+    "AG": 32
+   },
+   "alsoWith": [
+    [
+     "SL 2.6",
+     87
+    ],
+    [
+     "AHL 5.9",
+     34
+    ],
+    [
+     "SL 5.3",
+     34
+    ],
+    [
+     "AHL 2.9",
+     30
+    ],
+    [
+     "SL 5.6",
+     26
+    ]
+   ],
+   "tags": [
+    "Modelling",
+    "Differentiation",
+    "Optimisation",
+    "Quadratic Equation",
+    "Rate of Change",
+    "Integration"
+   ]
+  },
+  "SL 2.6": {
+   "label": "Modelling",
+   "n": 92,
+   "formulas": [],
+   "papers": {
+    "1": 48,
+    "2": 30,
+    "3": 14
+   },
+   "calculator": 92,
+   "marks": {
+    "median": 9.0,
+    "min": 4,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     88
+    ],
+    [
+     "Write down",
+     38
+    ],
+    [
+     "Show that",
+     30
+    ],
+    [
+     "Use",
+     27
+    ],
+    [
+     "Hence",
+     21
+    ],
+    [
+     "Determine",
+     20
+    ]
+   ],
+   "markTypes": {
+    "M": 91,
+    "A": 92,
+    "R": 29,
+    "AG": 28
+   },
+   "alsoWith": [
+    [
+     "SL 2.5",
+     87
+    ],
+    [
+     "AHL 5.9",
+     35
+    ],
+    [
+     "SL 5.3",
+     35
+    ],
+    [
+     "AHL 2.9",
+     30
+    ],
+    [
+     "SL 5.6",
+     25
+    ]
+   ],
+   "tags": [
+    "Modelling",
+    "Differentiation",
+    "Optimisation",
+    "Rate of Change",
+    "Integration",
+    "Exponential Models"
+   ]
+  },
+  "AHL 2.7": {
+   "label": "Function Composition",
+   "n": 14,
+   "formulas": [],
+   "papers": {
+    "1": 12,
+    "2": 2,
+    "3": 0
+   },
+   "calculator": 14,
+   "marks": {
+    "median": 7.0,
+    "min": 5,
+    "max": 14
+   },
+   "commandTerms": [
+    [
+     "Find",
+     12
+    ],
+    [
+     "Write down",
+     6
+    ],
+    [
+     "Solve",
+     3
+    ],
+    [
+     "Describe",
+     2
+    ],
+    [
+     "Use",
+     1
+    ],
+    [
+     "Express",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 12,
+    "A": 14,
+    "R": 1,
+    "AG": 0
+   },
+   "alsoWith": [
+    [
+     "SL 2.2",
+     11
+    ],
+    [
+     "SL 1.5",
+     5
+    ],
+    [
+     "SL 2.5",
+     5
+    ],
+    [
+     "AHL 1.10",
+     4
+    ],
+    [
+     "AHL 2.10",
+     4
+    ]
+   ],
+   "tags": [
+    "Inverse",
+    "Domain & Range",
+    "Exponentials",
+    "Logarithms",
+    "Modelling",
+    "Graph"
+   ]
+  },
+  "AHL 2.8": {
+   "label": "Function Transformation",
+   "n": 13,
+   "formulas": [],
+   "papers": {
+    "1": 10,
+    "2": 2,
+    "3": 1
+   },
+   "calculator": 13,
+   "marks": {
+    "median": 7,
+    "min": 4,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     12
+    ],
+    [
+     "Write down",
+     6
+    ],
+    [
+     "Sketch",
+     4
+    ],
+    [
+     "Show that",
+     2
+    ],
+    [
+     "Hence",
+     2
+    ],
+    [
+     "Calculate",
+     2
+    ]
+   ],
+   "markTypes": {
+    "M": 12,
+    "A": 13,
+    "R": 1,
+    "AG": 2
+   },
+   "alsoWith": [
+    [
+     "SL 2.6",
+     7
+    ],
+    [
+     "SL 2.5",
+     6
+    ],
+    [
+     "SL 2.3",
+     6
+    ],
+    [
+     "AHL 3.8",
+     4
+    ],
+    [
+     "AHL 5.11",
+     4
+    ]
+   ],
+   "tags": [
+    "Function Transformation",
+    "Modelling",
+    "Graph",
+    "Trigonometric Functions",
+    "Integration",
+    "Definite Integral"
+   ]
+  },
+  "AHL 2.9": {
+   "label": "Exponential Models",
+   "n": 43,
+   "formulas": [
+    "Logistic function"
+   ],
+   "papers": {
+    "1": 23,
+    "2": 12,
+    "3": 8
+   },
+   "calculator": 43,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     42
+    ],
+    [
+     "Write down",
+     18
+    ],
+    [
+     "Use",
+     13
+    ],
+    [
+     "Show that",
+     11
+    ],
+    [
+     "Hence",
+     9
+    ],
+    [
+     "Determine",
+     9
+    ]
+   ],
+   "markTypes": {
+    "M": 41,
+    "A": 43,
+    "R": 14,
+    "AG": 10
+   },
+   "alsoWith": [
+    [
+     "SL 2.5",
+     30
+    ],
+    [
+     "SL 2.6",
+     30
+    ],
+    [
+     "SL 1.5",
+     16
+    ],
+    [
+     "AHL 1.10",
+     15
+    ],
+    [
+     "AHL 3.8",
+     14
+    ]
+   ],
+   "tags": [
+    "Modelling",
+    "Exponential Models",
+    "Exponentials",
+    "Trigonometric Functions",
+    "Sinusoidal Models",
+    "Differentiation"
+   ]
+  },
+  "AHL 2.10": {
+   "label": "Logarithms",
+   "n": 27,
+   "formulas": [],
+   "papers": {
+    "1": 18,
+    "2": 4,
+    "3": 5
+   },
+   "calculator": 27,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     24
+    ],
+    [
+     "Show that",
+     8
+    ],
+    [
+     "Write down",
+     7
+    ],
+    [
+     "Calculate",
+     6
+    ],
+    [
+     "Use",
+     6
+    ],
+    [
+     "Hence",
+     5
+    ]
+   ],
+   "markTypes": {
+    "M": 27,
+    "A": 27,
+    "R": 7,
+    "AG": 8
+   },
+   "alsoWith": [
+    [
+     "SL 1.5",
+     25
+    ],
+    [
+     "AHL 1.10",
+     14
+    ],
+    [
+     "SL 2.5",
+     13
+    ],
+    [
+     "SL 2.6",
+     13
+    ],
+    [
+     "AHL 1.9",
+     10
+    ]
+   ],
+   "tags": [
+    "Logarithms",
+    "Exponentials",
+    "Modelling",
+    "Logarithm Laws",
+    "Exponential Models",
+    "Linearisation"
+   ]
+  },
+  "SL 3.1": {
+   "label": "3D",
+   "n": 53,
+   "formulas": [
+    "Distance between two points ( $x_{1}, y_{1}, z_{1}$ ) and ( $x_{2}, y_{2}, z_{2}$ )",
+    "Coordinates of the midpoint of a line segment with endpoints $\\left(x_{1}, y_{1}, z_{1}\\right)$ and $\\left(x_{2}, y_{2}, z_{2}\\right)$",
+    "Volume of a right-pyramid"
+   ],
+   "papers": {
+    "1": 29,
+    "2": 22,
+    "3": 2
+   },
+   "calculator": 53,
+   "marks": {
+    "median": 9,
+    "min": 4,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     45
+    ],
+    [
+     "Show that",
+     14
+    ],
+    [
+     "Calculate",
+     12
+    ],
+    [
+     "Write down",
+     11
+    ],
+    [
+     "Use",
+     9
+    ],
+    [
+     "Determine",
+     9
+    ]
+   ],
+   "markTypes": {
+    "M": 53,
+    "A": 53,
+    "R": 10,
+    "AG": 14
+   },
+   "alsoWith": [
+    [
+     "SL 3.2",
+     22
+    ],
+    [
+     "AHL 3.10",
+     12
+    ],
+    [
+     "SL 3.3",
+     12
+    ],
+    [
+     "AHL 5.9",
+     11
+    ],
+    [
+     "SL 5.6",
+     11
+    ]
+   ],
+   "tags": [
+    "Measurement",
+    "3D",
+    "Right Angle Triangle Trigonometry",
+    "Vectors (3D)",
+    "Non-Right Angle Triangle Trigonometry",
+    "Differentiation"
+   ]
+  },
+  "SL 3.2": {
+   "label": "Right Angle Triangle Trigonometry",
+   "n": 35,
+   "formulas": [
+    "Sine rule",
+    "Cosine rule",
+    "Area of a triangle"
+   ],
+   "papers": {
+    "1": 20,
+    "2": 12,
+    "3": 3
+   },
+   "calculator": 35,
+   "marks": {
+    "median": 9,
+    "min": 5,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     29
+    ],
+    [
+     "Calculate",
+     9
+    ],
+    [
+     "Show that",
+     8
+    ],
+    [
+     "Determine",
+     8
+    ],
+    [
+     "Hence",
+     7
+    ],
+    [
+     "Write down",
+     5
+    ]
+   ],
+   "markTypes": {
+    "M": 35,
+    "A": 35,
+    "R": 7,
+    "AG": 8
+   },
+   "alsoWith": [
+    [
+     "SL 3.1",
+     22
+    ],
+    [
+     "SL 3.3",
+     15
+    ],
+    [
+     "AHL 3.10",
+     9
+    ],
+    [
+     "AHL 5.9",
+     7
+    ],
+    [
+     "SL 5.3",
+     7
+    ]
+   ],
+   "tags": [
+    "Non-Right Angle Triangle Trigonometry",
+    "Right Angle Triangle Trigonometry",
+    "Measurement",
+    "3D",
+    "Pythagoras",
+    "Differentiation"
+   ]
+  },
+  "SL 3.3": {
+   "label": "Pythagoras",
+   "n": 19,
+   "formulas": [],
+   "papers": {
+    "1": 10,
+    "2": 6,
+    "3": 3
+   },
+   "calculator": 19,
+   "marks": {
+    "median": 9,
+    "min": 5,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     16
+    ],
+    [
+     "Calculate",
+     7
+    ],
+    [
+     "Determine",
+     6
+    ],
+    [
+     "Show that",
+     5
+    ],
+    [
+     "Write down",
+     4
+    ],
+    [
+     "Hence",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 19,
+    "A": 19,
+    "R": 4,
+    "AG": 5
+   },
+   "alsoWith": [
+    [
+     "SL 3.2",
+     15
+    ],
+    [
+     "SL 3.1",
+     12
+    ],
+    [
+     "AHL 3.10",
+     7
+    ],
+    [
+     "SL 2.5",
+     4
+    ],
+    [
+     "SL 1.8",
+     3
+    ]
+   ],
+   "tags": [
+    "Right Angle Triangle Trigonometry",
+    "Pythagoras",
+    "Measurement",
+    "3D",
+    "Bearings",
+    "Non-Right Angle Triangle Trigonometry"
+   ]
+  },
+  "SL 3.4": {
+   "label": "Arc Length",
+   "n": 10,
+   "formulas": [
+    "Length of an arc",
+    "Area of a sector"
+   ],
+   "papers": {
+    "1": 6,
+    "2": 3,
+    "3": 1
+   },
+   "calculator": 10,
+   "marks": {
+    "median": 8.5,
+    "min": 5,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     8
+    ],
+    [
+     "Calculate",
+     4
+    ],
+    [
+     "Show that",
+     3
+    ],
+    [
+     "Use",
+     2
+    ],
+    [
+     "Determine",
+     1
+    ],
+    [
+     "State",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 10,
+    "A": 10,
+    "R": 1,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "AHL 3.7",
+     10
+    ],
+    [
+     "SL 3.1",
+     8
+    ],
+    [
+     "SL 3.2",
+     7
+    ],
+    [
+     "SL 3.3",
+     3
+    ],
+    [
+     "AHL 5.9",
+     2
+    ]
+   ],
+   "tags": [
+    "Sector",
+    "Measurement",
+    "Non-Right Angle Triangle Trigonometry",
+    "Arc Length",
+    "Right Angle Triangle Trigonometry",
+    "Pythagoras"
+   ]
+  },
+  "SL 3.5": {
+   "label": "Coordinate Geometry",
+   "n": 17,
+   "formulas": [],
+   "papers": {
+    "1": 10,
+    "2": 6,
+    "3": 1
+   },
+   "calculator": 17,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     15
+    ],
+    [
+     "Write down",
+     9
+    ],
+    [
+     "Determine",
+     4
+    ],
+    [
+     "Hence",
+     4
+    ],
+    [
+     "Calculate",
+     4
+    ],
+    [
+     "Show that",
+     4
+    ]
+   ],
+   "markTypes": {
+    "M": 16,
+    "A": 17,
+    "R": 5,
+    "AG": 4
+   },
+   "alsoWith": [
+    [
+     "SL 2.1",
+     17
+    ],
+    [
+     "SL 3.6",
+     11
+    ],
+    [
+     "SL 3.1",
+     8
+    ],
+    [
+     "SL 1.8",
+     5
+    ],
+    [
+     "SL 3.2",
+     5
+    ]
+   ],
+   "tags": [
+    "Coordinate Geometry",
+    "Voronoi Diagrams",
+    "Measurement",
+    "Equation",
+    "Right Angle Triangle Trigonometry",
+    "Scalar (Dot) Product"
+   ]
+  },
+  "SL 3.6": {
+   "label": "Voronoi Diagrams",
+   "n": 13,
+   "formulas": [],
+   "papers": {
+    "1": 7,
+    "2": 4,
+    "3": 2
+   },
+   "calculator": 13,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     11
+    ],
+    [
+     "Write down",
+     9
+    ],
+    [
+     "Hence",
+     4
+    ],
+    [
+     "Determine",
+     3
+    ],
+    [
+     "Draw",
+     3
+    ],
+    [
+     "Show that",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 11,
+    "A": 13,
+    "R": 6,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 2.1",
+     11
+    ],
+    [
+     "SL 3.5",
+     11
+    ],
+    [
+     "SL 3.1",
+     6
+    ],
+    [
+     "SL 1.8",
+     3
+    ],
+    [
+     "SL 3.2",
+     2
+    ]
+   ],
+   "tags": [
+    "Voronoi Diagrams",
+    "Coordinate Geometry",
+    "Measurement",
+    "Equation",
+    "Matrices",
+    "Graph Theory"
+   ]
+  },
+  "AHL 3.7": {
+   "label": "Arc Length",
+   "n": 10,
+   "formulas": [
+    "Length of an arc",
+    "Area of a sector"
+   ],
+   "papers": {
+    "1": 6,
+    "2": 3,
+    "3": 1
+   },
+   "calculator": 10,
+   "marks": {
+    "median": 8.5,
+    "min": 5,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     8
+    ],
+    [
+     "Calculate",
+     4
+    ],
+    [
+     "Show that",
+     3
+    ],
+    [
+     "Use",
+     2
+    ],
+    [
+     "Determine",
+     1
+    ],
+    [
+     "State",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 10,
+    "A": 10,
+    "R": 1,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 3.4",
+     10
+    ],
+    [
+     "SL 3.1",
+     8
+    ],
+    [
+     "SL 3.2",
+     7
+    ],
+    [
+     "SL 3.3",
+     3
+    ],
+    [
+     "AHL 5.9",
+     2
+    ]
+   ],
+   "tags": [
+    "Sector",
+    "Measurement",
+    "Non-Right Angle Triangle Trigonometry",
+    "Arc Length",
+    "Right Angle Triangle Trigonometry",
+    "Pythagoras"
+   ]
+  },
+  "AHL 3.8": {
+   "label": "Trigonometric Functions",
+   "n": 30,
+   "formulas": [
+    "Identities"
+   ],
+   "papers": {
+    "1": 18,
+    "2": 11,
+    "3": 1
+   },
+   "calculator": 30,
+   "marks": {
+    "median": 8.0,
+    "min": 5,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     28
+    ],
+    [
+     "Write down",
+     11
+    ],
+    [
+     "Show that",
+     7
+    ],
+    [
+     "Hence",
+     5
+    ],
+    [
+     "Determine",
+     5
+    ],
+    [
+     "Use",
+     4
+    ]
+   ],
+   "markTypes": {
+    "M": 29,
+    "A": 30,
+    "R": 5,
+    "AG": 7
+   },
+   "alsoWith": [
+    [
+     "SL 2.5",
+     14
+    ],
+    [
+     "SL 2.6",
+     14
+    ],
+    [
+     "AHL 2.9",
+     14
+    ],
+    [
+     "AHL 5.9",
+     9
+    ],
+    [
+     "SL 5.3",
+     9
+    ]
+   ],
+   "tags": [
+    "Trigonometric Functions",
+    "Modelling",
+    "Sinusoidal Models",
+    "Differentiation",
+    "Complex Numbers",
+    "Vectors (2D)"
+   ]
+  },
+  "AHL 3.9": {
+   "label": "Matrix Transformations",
+   "n": 15,
+   "formulas": [
+    "Transformation matrices"
+   ],
+   "papers": {
+    "1": 10,
+    "2": 5,
+    "3": 0
+   },
+   "calculator": 15,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 18
+   },
+   "commandTerms": [
+    [
+     "Find",
+     14
+    ],
+    [
+     "Write down",
+     6
+    ],
+    [
+     "Describe",
+     5
+    ],
+    [
+     "Show that",
+     5
+    ],
+    [
+     "Hence",
+     3
+    ],
+    [
+     "Use",
+     2
+    ]
+   ],
+   "markTypes": {
+    "M": 13,
+    "A": 15,
+    "R": 2,
+    "AG": 5
+   },
+   "alsoWith": [
+    [
+     "AHL 1.14",
+     13
+    ],
+    [
+     "AHL 1.15",
+     13
+    ],
+    [
+     "AHL 3.8",
+     4
+    ],
+    [
+     "AHL 1.12",
+     3
+    ],
+    [
+     "AHL 1.13",
+     3
+    ]
+   ],
+   "tags": [
+    "Matrix Transformations",
+    "Matrices",
+    "Composition of Transformations",
+    "Complex Numbers",
+    "Systems of Linear Equations",
+    "Double Angle Identities"
+   ]
+  },
+  "AHL 3.10": {
+   "label": "Vectors (2D)",
+   "n": 35,
+   "formulas": [
+    "Magnitude of a vector"
+   ],
+   "papers": {
+    "1": 22,
+    "2": 10,
+    "3": 3
+   },
+   "calculator": 35,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     33
+    ],
+    [
+     "Show that",
+     10
+    ],
+    [
+     "Write down",
+     9
+    ],
+    [
+     "Hence",
+     8
+    ],
+    [
+     "Determine",
+     6
+    ],
+    [
+     "Calculate",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 35,
+    "A": 35,
+    "R": 10,
+    "AG": 10
+   },
+   "alsoWith": [
+    [
+     "AHL 3.13",
+     17
+    ],
+    [
+     "SL 3.1",
+     12
+    ],
+    [
+     "AHL 3.12",
+     10
+    ],
+    [
+     "AHL 5.13",
+     10
+    ],
+    [
+     "SL 3.2",
+     9
+    ]
+   ],
+   "tags": [
+    "Vectors (3D)",
+    "Vectors (2D)",
+    "Scalar (Dot) Product",
+    "3D",
+    "Kinematics",
+    "Trigonometric Functions"
+   ]
+  },
+  "AHL 3.11": {
+   "label": "Cartesian Equation of Line",
+   "n": 0,
+   "formulas": [
+    "Vector equation of a line",
+    "Parametric form of the equation of a line"
+   ]
+  },
+  "AHL 3.12": {
+   "label": "Kinematics",
+   "n": 22,
+   "formulas": [],
+   "papers": {
+    "1": 12,
+    "2": 8,
+    "3": 2
+   },
+   "calculator": 22,
+   "marks": {
+    "median": 9.0,
+    "min": 4,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     22
+    ],
+    [
+     "Show that",
+     11
+    ],
+    [
+     "Hence",
+     7
+    ],
+    [
+     "Write down",
+     5
+    ],
+    [
+     "Determine",
+     4
+    ],
+    [
+     "Use",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 21,
+    "A": 22,
+    "R": 8,
+    "AG": 10
+   },
+   "alsoWith": [
+    [
+     "AHL 5.13",
+     22
+    ],
+    [
+     "SL 5.5",
+     12
+    ],
+    [
+     "AHL 5.9",
+     11
+    ],
+    [
+     "SL 5.3",
+     11
+    ],
+    [
+     "AHL 5.11",
+     11
+    ]
+   ],
+   "tags": [
+    "Kinematics",
+    "Differentiation",
+    "Integration",
+    "Rate of Change",
+    "Modelling",
+    "Vectors (2D)"
+   ]
+  },
+  "AHL 3.13": {
+   "label": "Scalar (Dot) Product",
+   "n": 17,
+   "formulas": [
+    "Scalar product",
+    "Angle between two vectors",
+    "Vector product",
+    "Area of a parallelogram"
+   ],
+   "papers": {
+    "1": 11,
+    "2": 4,
+    "3": 2
+   },
+   "calculator": 17,
+   "marks": {
+    "median": 9,
+    "min": 6,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     16
+    ],
+    [
+     "Show that",
+     5
+    ],
+    [
+     "Hence",
+     4
+    ],
+    [
+     "Write down",
+     4
+    ],
+    [
+     "Determine",
+     3
+    ],
+    [
+     "Calculate",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 17,
+    "A": 17,
+    "R": 6,
+    "AG": 4
+   },
+   "alsoWith": [
+    [
+     "AHL 3.10",
+     17
+    ],
+    [
+     "SL 3.1",
+     10
+    ],
+    [
+     "SL 3.2",
+     6
+    ],
+    [
+     "SL 2.1",
+     3
+    ],
+    [
+     "SL 3.3",
+     3
+    ]
+   ],
+   "tags": [
+    "Scalar (Dot) Product",
+    "Vectors (3D)",
+    "3D",
+    "Vector Product",
+    "Measurement",
+    "Vectors (2D)"
+   ]
+  },
+  "AHL 3.14": {
+   "label": "Graph Theory",
+   "n": 23,
+   "formulas": [],
+   "papers": {
+    "1": 10,
+    "2": 8,
+    "3": 5
+   },
+   "calculator": 23,
+   "marks": {
+    "median": 13,
+    "min": 5,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     17
+    ],
+    [
+     "Write down",
+     12
+    ],
+    [
+     "Determine",
+     11
+    ],
+    [
+     "Use",
+     10
+    ],
+    [
+     "State",
+     9
+    ],
+    [
+     "Hence",
+     7
+    ]
+   ],
+   "markTypes": {
+    "M": 23,
+    "A": 23,
+    "R": 11,
+    "AG": 2
+   },
+   "alsoWith": [
+    [
+     "AHL 3.16",
+     15
+    ],
+    [
+     "AHL 3.15",
+     13
+    ],
+    [
+     "AHL 1.14",
+     9
+    ],
+    [
+     "AHL 1.15",
+     9
+    ],
+    [
+     "AHL 4.19",
+     3
+    ]
+   ],
+   "tags": [
+    "Graph Theory",
+    "Tree & Cycle Algorithms",
+    "Travelling Salesman Problem",
+    "Deleted Vertex Algorithm",
+    "Adjacency Matrices",
+    "Nearest Neighbour Algorithm"
+   ]
+  },
+  "AHL 3.15": {
+   "label": "Adjacency Matrices",
+   "n": 27,
+   "formulas": [],
+   "papers": {
+    "1": 13,
+    "2": 10,
+    "3": 4
+   },
+   "calculator": 27,
+   "marks": {
+    "median": 12,
+    "min": 5,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     22
+    ],
+    [
+     "Write down",
+     16
+    ],
+    [
+     "Determine",
+     11
+    ],
+    [
+     "Use",
+     7
+    ],
+    [
+     "State",
+     7
+    ],
+    [
+     "Hence",
+     5
+    ]
+   ],
+   "markTypes": {
+    "M": 27,
+    "A": 27,
+    "R": 10,
+    "AG": 4
+   },
+   "alsoWith": [
+    [
+     "AHL 1.14",
+     23
+    ],
+    [
+     "AHL 1.15",
+     23
+    ],
+    [
+     "AHL 4.19",
+     17
+    ],
+    [
+     "AHL 3.14",
+     13
+    ],
+    [
+     "AHL 3.16",
+     5
+    ]
+   ],
+   "tags": [
+    "Matrices",
+    "Transition Matrices & Markov Chains",
+    "Graph Theory",
+    "Adjacency Matrices",
+    "Eigenvalues & Eigenvectors",
+    "Simple Probability"
+   ]
+  },
+  "AHL 3.16": {
+   "label": "Tree & Cycle Algorithms",
+   "n": 15,
+   "formulas": [],
+   "papers": {
+    "1": 3,
+    "2": 7,
+    "3": 5
+   },
+   "calculator": 15,
+   "marks": {
+    "median": 17,
+    "min": 5,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     14
+    ],
+    [
+     "Use",
+     9
+    ],
+    [
+     "Write down",
+     9
+    ],
+    [
+     "Hence",
+     7
+    ],
+    [
+     "State",
+     7
+    ],
+    [
+     "Determine",
+     6
+    ]
+   ],
+   "markTypes": {
+    "M": 15,
+    "A": 15,
+    "R": 8,
+    "AG": 2
+   },
+   "alsoWith": [
+    [
+     "AHL 3.14",
+     15
+    ],
+    [
+     "AHL 3.15",
+     5
+    ],
+    [
+     "AHL 1.14",
+     3
+    ],
+    [
+     "AHL 1.15",
+     3
+    ],
+    [
+     "SL 4.7",
+     2
+    ]
+   ],
+   "tags": [
+    "Graph Theory",
+    "Tree & Cycle Algorithms",
+    "Travelling Salesman Problem",
+    "Deleted Vertex Algorithm",
+    "Nearest Neighbour Algorithm",
+    "Chinese Postman Problem"
+   ]
+  },
+  "SL 4.1": {
+   "label": "Sampling Techniques",
+   "n": 14,
+   "formulas": [],
+   "papers": {
+    "1": 5,
+    "2": 6,
+    "3": 3
+   },
+   "calculator": 14,
+   "marks": {
+    "median": 14.5,
+    "min": 6,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     14
+    ],
+    [
+     "State",
+     11
+    ],
+    [
+     "Write down",
+     10
+    ],
+    [
+     "Show that",
+     4
+    ],
+    [
+     "Explain",
+     4
+    ],
+    [
+     "Justify",
+     4
+    ]
+   ],
+   "markTypes": {
+    "M": 11,
+    "A": 14,
+    "R": 12,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 4.11",
+     8
+    ],
+    [
+     "SL 4.3",
+     8
+    ],
+    [
+     "AHL 4.18",
+     7
+    ],
+    [
+     "SL 4.2",
+     5
+    ],
+    [
+     "SL 4.10",
+     4
+    ]
+   ],
+   "tags": [
+    "Sampling Techniques",
+    "Hypothesis Testing",
+    "Outliers",
+    "Standard Deviation",
+    "Population Mean Tests",
+    "Quartiles & Interquartile Range"
+   ]
+  },
+  "SL 4.2": {
+   "label": "Cumulative Frequency",
+   "n": 10,
+   "formulas": [
+    "Interquartile range"
+   ],
+   "papers": {
+    "1": 3,
+    "2": 6,
+    "3": 1
+   },
+   "calculator": 10,
+   "marks": {
+    "median": 15.0,
+    "min": 7,
+    "max": 24
+   },
+   "commandTerms": [
+    [
+     "Find",
+     9
+    ],
+    [
+     "Write down",
+     7
+    ],
+    [
+     "State",
+     6
+    ],
+    [
+     "Justify",
+     4
+    ],
+    [
+     "Determine",
+     3
+    ],
+    [
+     "Calculate",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 8,
+    "A": 10,
+    "R": 7,
+    "AG": 1
+   },
+   "alsoWith": [
+    [
+     "SL 4.3",
+     8
+    ],
+    [
+     "SL 4.1",
+     5
+    ],
+    [
+     "SL 4.11",
+     4
+    ],
+    [
+     "SL 4.10",
+     2
+    ],
+    [
+     "SL 4.5",
+     2
+    ]
+   ],
+   "tags": [
+    "Quartiles & Interquartile Range",
+    "Median",
+    "Outliers",
+    "Mean",
+    "Hypothesis Testing",
+    "Box-and-Whiskers Diagram"
+   ]
+  },
+  "SL 4.3": {
+   "label": "Mean",
+   "n": 34,
+   "formulas": [
+    "Mean, $\\bar{x}$, of a set of data"
+   ],
+   "papers": {
+    "1": 13,
+    "2": 13,
+    "3": 8
+   },
+   "calculator": 34,
+   "marks": {
+    "median": 15.0,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     31
+    ],
+    [
+     "State",
+     20
+    ],
+    [
+     "Write down",
+     15
+    ],
+    [
+     "Calculate",
+     11
+    ],
+    [
+     "Use",
+     8
+    ],
+    [
+     "Determine",
+     8
+    ]
+   ],
+   "markTypes": {
+    "M": 31,
+    "A": 34,
+    "R": 24,
+    "AG": 6
+   },
+   "alsoWith": [
+    [
+     "SL 4.9",
+     17
+    ],
+    [
+     "SL 4.11",
+     17
+    ],
+    [
+     "SL 4.7",
+     13
+    ],
+    [
+     "AHL 4.18",
+     13
+    ],
+    [
+     "SL 4.1",
+     8
+    ]
+   ],
+   "tags": [
+    "Variance",
+    "Hypothesis Testing",
+    "Normal Distribution",
+    "Mean",
+    "Expected Value",
+    "Standard Deviation"
+   ]
+  },
+  "SL 4.4": {
+   "label": "Bivariate Statistics",
+   "n": 20,
+   "formulas": [],
+   "papers": {
+    "1": 10,
+    "2": 5,
+    "3": 5
+   },
+   "calculator": 20,
+   "marks": {
+    "median": 11.0,
+    "min": 5,
+    "max": 30
+   },
+   "commandTerms": [
+    [
+     "Find",
+     18
+    ],
+    [
+     "State",
+     9
+    ],
+    [
+     "Use",
+     9
+    ],
+    [
+     "Write down",
+     8
+    ],
+    [
+     "Interpret",
+     6
+    ],
+    [
+     "Explain",
+     5
+    ]
+   ],
+   "markTypes": {
+    "M": 17,
+    "A": 20,
+    "R": 11,
+    "AG": 4
+   },
+   "alsoWith": [
+    [
+     "SL 2.5",
+     11
+    ],
+    [
+     "SL 2.6",
+     10
+    ],
+    [
+     "AHL 4.13",
+     8
+    ],
+    [
+     "AHL 2.10",
+     5
+    ],
+    [
+     "AHL 5.9",
+     4
+    ]
+   ],
+   "tags": [
+    "Regression",
+    "Bivariate Statistics",
+    "Modelling",
+    "Non-linear Regression",
+    "Linear Models",
+    "Linearisation"
+   ]
+  },
+  "SL 4.5": {
+   "label": "Simple Probability",
+   "n": 29,
+   "formulas": [
+    "Probability of an event $A$",
+    "Complementary events"
+   ],
+   "papers": {
+    "1": 15,
+    "2": 12,
+    "3": 2
+   },
+   "calculator": 29,
+   "marks": {
+    "median": 8,
+    "min": 6,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     24
+    ],
+    [
+     "State",
+     9
+    ],
+    [
+     "Determine",
+     7
+    ],
+    [
+     "Write down",
+     7
+    ],
+    [
+     "Calculate",
+     7
+    ],
+    [
+     "Complete",
+     5
+    ]
+   ],
+   "markTypes": {
+    "M": 29,
+    "A": 29,
+    "R": 7,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 4.6",
+     20
+    ],
+    [
+     "SL 4.7",
+     12
+    ],
+    [
+     "SL 4.8",
+     11
+    ],
+    [
+     "AHL 1.14",
+     4
+    ],
+    [
+     "AHL 1.15",
+     4
+    ]
+   ],
+   "tags": [
+    "Simple Probability",
+    "Independent Events",
+    "Expected Value",
+    "Binomial Distribution",
+    "Conditional Probability",
+    "Discrete Random Variable"
+   ]
+  },
+  "SL 4.6": {
+   "label": "Venn Diagram",
+   "n": 29,
+   "formulas": [
+    "Combined events",
+    "Mutually exclusive events",
+    "Conditional probability",
+    "Independent events"
+   ],
+   "papers": {
+    "1": 14,
+    "2": 13,
+    "3": 2
+   },
+   "calculator": 29,
+   "marks": {
+    "median": 12,
+    "min": 6,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     24
+    ],
+    [
+     "Calculate",
+     9
+    ],
+    [
+     "State",
+     9
+    ],
+    [
+     "Determine",
+     6
+    ],
+    [
+     "Complete",
+     4
+    ],
+    [
+     "Use",
+     4
+    ]
+   ],
+   "markTypes": {
+    "M": 29,
+    "A": 29,
+    "R": 6,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 4.5",
+     20
+    ],
+    [
+     "SL 4.7",
+     14
+    ],
+    [
+     "SL 4.8",
+     12
+    ],
+    [
+     "SL 4.9",
+     9
+    ],
+    [
+     "SL 4.3",
+     7
+    ]
+   ],
+   "tags": [
+    "Independent Events",
+    "Simple Probability",
+    "Expected Value",
+    "Conditional Probability",
+    "Binomial Distribution",
+    "Normal Distribution"
+   ]
+  },
+  "SL 4.7": {
+   "label": "Discrete Random Variable",
+   "n": 31,
+   "formulas": [
+    "Expected value of a discrete random variable $X$"
+   ],
+   "papers": {
+    "1": 13,
+    "2": 12,
+    "3": 6
+   },
+   "calculator": 31,
+   "marks": {
+    "median": 13,
+    "min": 6,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     28
+    ],
+    [
+     "Write down",
+     9
+    ],
+    [
+     "State",
+     8
+    ],
+    [
+     "Calculate",
+     8
+    ],
+    [
+     "Hence",
+     7
+    ],
+    [
+     "Determine",
+     6
+    ]
+   ],
+   "markTypes": {
+    "M": 31,
+    "A": 31,
+    "R": 9,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 4.6",
+     14
+    ],
+    [
+     "SL 4.3",
+     13
+    ],
+    [
+     "SL 4.9",
+     13
+    ],
+    [
+     "SL 4.5",
+     12
+    ],
+    [
+     "SL 4.8",
+     12
+    ]
+   ],
+   "tags": [
+    "Expected Value",
+    "Normal Distribution",
+    "Simple Probability",
+    "Binomial Distribution",
+    "Independent Events",
+    "Discrete Random Variable"
+   ]
+  },
+  "SL 4.8": {
+   "label": "Binomial Distribution",
+   "n": 25,
+   "formulas": [
+    "Binomial distribution $X \\sim \\mathrm{~B}(n, p)$",
+    "Mean",
+    "Variance"
+   ],
+   "papers": {
+    "1": 10,
+    "2": 11,
+    "3": 4
+   },
+   "calculator": 25,
+   "marks": {
+    "median": 15,
+    "min": 6,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     21
+    ],
+    [
+     "State",
+     11
+    ],
+    [
+     "Write down",
+     8
+    ],
+    [
+     "Determine",
+     7
+    ],
+    [
+     "Calculate",
+     5
+    ],
+    [
+     "Perform",
+     5
+    ]
+   ],
+   "markTypes": {
+    "M": 25,
+    "A": 25,
+    "R": 9,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 4.6",
+     12
+    ],
+    [
+     "SL 4.7",
+     12
+    ],
+    [
+     "SL 4.5",
+     11
+    ],
+    [
+     "SL 4.11",
+     9
+    ],
+    [
+     "SL 4.9",
+     7
+    ]
+   ],
+   "tags": [
+    "Binomial Distribution",
+    "Simple Probability",
+    "Expected Value",
+    "Hypothesis Testing",
+    "Independent Events",
+    "Normal Distribution"
+   ]
+  },
+  "SL 4.9": {
+   "label": "Normal Distribution",
+   "n": 29,
+   "formulas": [],
+   "papers": {
+    "1": 14,
+    "2": 11,
+    "3": 4
+   },
+   "calculator": 29,
+   "marks": {
+    "median": 13,
+    "min": 5,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     28
+    ],
+    [
+     "State",
+     11
+    ],
+    [
+     "Calculate",
+     8
+    ],
+    [
+     "Use",
+     7
+    ],
+    [
+     "Perform",
+     5
+    ],
+    [
+     "Write down",
+     5
+    ]
+   ],
+   "markTypes": {
+    "M": 28,
+    "A": 29,
+    "R": 13,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 4.3",
+     17
+    ],
+    [
+     "SL 4.7",
+     13
+    ],
+    [
+     "SL 4.11",
+     9
+    ],
+    [
+     "AHL 4.18",
+     9
+    ],
+    [
+     "SL 4.6",
+     9
+    ]
+   ],
+   "tags": [
+    "Normal Distribution",
+    "Standardization (z-values)",
+    "Variance",
+    "Expected Value",
+    "Hypothesis Testing",
+    "Standard Deviation"
+   ]
+  },
+  "SL 4.10": {
+   "label": "Spearman's Rank Correlation",
+   "n": 6,
+   "formulas": [],
+   "papers": {
+    "1": 2,
+    "2": 2,
+    "3": 2
+   },
+   "calculator": 6,
+   "marks": {
+    "median": 15.0,
+    "min": 6,
+    "max": 28
+   },
+   "commandTerms": [
+    [
+     "Find",
+     5
+    ],
+    [
+     "Write down",
+     5
+    ],
+    [
+     "Explain",
+     4
+    ],
+    [
+     "State",
+     4
+    ],
+    [
+     "Show that",
+     3
+    ],
+    [
+     "Interpret",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 3,
+    "A": 6,
+    "R": 5,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 4.1",
+     4
+    ],
+    [
+     "SL 4.4",
+     3
+    ],
+    [
+     "AHL 4.18",
+     2
+    ],
+    [
+     "SL 4.11",
+     2
+    ],
+    [
+     "SL 4.2",
+     2
+    ]
+   ],
+   "tags": [
+    "Spearman's Rank Correlation",
+    "Bivariate Statistics",
+    "Regression",
+    "Hypothesis Testing",
+    "Sampling Techniques",
+    "Quartiles & Interquartile Range"
+   ]
+  },
+  "SL 4.11": {
+   "label": "Hypothesis Testing",
+   "n": 40,
+   "formulas": [],
+   "papers": {
+    "1": 17,
+    "2": 12,
+    "3": 11
+   },
+   "calculator": 40,
+   "marks": {
+    "median": 13.5,
+    "min": 4,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     36
+    ],
+    [
+     "State",
+     32
+    ],
+    [
+     "Write down",
+     23
+    ],
+    [
+     "Perform",
+     12
+    ],
+    [
+     "Justify",
+     8
+    ],
+    [
+     "Show that",
+     7
+    ]
+   ],
+   "markTypes": {
+    "M": 29,
+    "A": 40,
+    "R": 37,
+    "AG": 7
+   },
+   "alsoWith": [
+    [
+     "AHL 4.18",
+     23
+    ],
+    [
+     "SL 4.3",
+     17
+    ],
+    [
+     "SL 4.8",
+     9
+    ],
+    [
+     "SL 4.9",
+     9
+    ],
+    [
+     "SL 4.1",
+     8
+    ]
+   ],
+   "tags": [
+    "Hypothesis Testing",
+    "Chi-Squared Test",
+    "t-Test",
+    "Population Mean Tests",
+    "Type I and Type II Errors",
+    "Mean"
+   ]
+  },
+  "AHL 4.12": {
+   "label": "Data Collection Design",
+   "n": 0,
+   "formulas": []
+  },
+  "AHL 4.13": {
+   "label": "Non-linear Regression",
+   "n": 14,
+   "formulas": [],
+   "papers": {
+    "1": 9,
+    "2": 1,
+    "3": 4
+   },
+   "calculator": 14,
+   "marks": {
+    "median": 7.5,
+    "min": 5,
+    "max": 30
+   },
+   "commandTerms": [
+    [
+     "Find",
+     14
+    ],
+    [
+     "Use",
+     6
+    ],
+    [
+     "Calculate",
+     4
+    ],
+    [
+     "State",
+     4
+    ],
+    [
+     "Hence",
+     4
+    ],
+    [
+     "Suggest",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 12,
+    "A": 14,
+    "R": 8,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "SL 2.5",
+     12
+    ],
+    [
+     "SL 2.6",
+     12
+    ],
+    [
+     "SL 4.4",
+     8
+    ],
+    [
+     "AHL 2.9",
+     7
+    ],
+    [
+     "AHL 1.10",
+     4
+    ]
+   ],
+   "tags": [
+    "Modelling",
+    "Non-linear Regression",
+    "Regression",
+    "Coefficient of Determination",
+    "Exponential Models",
+    "Sum of Squared Residuals"
+   ]
+  },
+  "AHL 4.14": {
+   "label": "Linear Combination of Random Variables",
+   "n": 8,
+   "formulas": [
+    "Linear transformation of a single random variable",
+    "Linear combinations of $n$ independent random variables, $X_{1}, X_{2}, \\ldots, X_{n}$",
+    "Sample statistics",
+    "Unbiased estimate of population variance $s_{n-1}^{2}$"
+   ],
+   "papers": {
+    "1": 4,
+    "2": 4,
+    "3": 0
+   },
+   "calculator": 8,
+   "marks": {
+    "median": 10.5,
+    "min": 6,
+    "max": 18
+   },
+   "commandTerms": [
+    [
+     "Find",
+     7
+    ],
+    [
+     "Calculate",
+     4
+    ],
+    [
+     "State",
+     2
+    ],
+    [
+     "Use",
+     2
+    ],
+    [
+     "Complete",
+     1
+    ],
+    [
+     "Hence",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 8,
+    "A": 8,
+    "R": 2,
+    "AG": 0
+   },
+   "alsoWith": [
+    [
+     "AHL 4.15",
+     8
+    ],
+    [
+     "SL 4.9",
+     7
+    ],
+    [
+     "SL 4.7",
+     7
+    ],
+    [
+     "SL 4.3",
+     6
+    ],
+    [
+     "SL 4.6",
+     5
+    ]
+   ],
+   "tags": [
+    "Linear Combination of Random Variables",
+    "Normal Distribution",
+    "Expected Value",
+    "Variance",
+    "Standardization (z-values)",
+    "Independent Events"
+   ]
+  },
+  "AHL 4.15": {
+   "label": "Linear Combination of Random Variables",
+   "n": 9,
+   "formulas": [],
+   "papers": {
+    "1": 4,
+    "2": 4,
+    "3": 1
+   },
+   "calculator": 9,
+   "marks": {
+    "median": 13,
+    "min": 6,
+    "max": 27
+   },
+   "commandTerms": [
+    [
+     "Find",
+     8
+    ],
+    [
+     "Calculate",
+     4
+    ],
+    [
+     "State",
+     3
+    ],
+    [
+     "Hence",
+     2
+    ],
+    [
+     "Perform",
+     2
+    ],
+    [
+     "Use",
+     2
+    ]
+   ],
+   "markTypes": {
+    "M": 9,
+    "A": 9,
+    "R": 3,
+    "AG": 0
+   },
+   "alsoWith": [
+    [
+     "AHL 4.14",
+     8
+    ],
+    [
+     "SL 4.7",
+     8
+    ],
+    [
+     "SL 4.9",
+     7
+    ],
+    [
+     "SL 4.3",
+     7
+    ],
+    [
+     "SL 4.6",
+     5
+    ]
+   ],
+   "tags": [
+    "Linear Combination of Random Variables",
+    "Expected Value",
+    "Normal Distribution",
+    "Variance",
+    "Standardization (z-values)",
+    "Independent Events"
+   ]
+  },
+  "AHL 4.16": {
+   "label": "Confidence Interval",
+   "n": 4,
+   "formulas": [],
+   "papers": {
+    "1": 3,
+    "2": 0,
+    "3": 1
+   },
+   "calculator": 4,
+   "marks": {
+    "median": 6.0,
+    "min": 5,
+    "max": 26
+   },
+   "commandTerms": [
+    [
+     "Find",
+     4
+    ],
+    [
+     "Calculate",
+     2
+    ],
+    [
+     "State",
+     2
+    ],
+    [
+     "Determine",
+     2
+    ],
+    [
+     "Use",
+     1
+    ],
+    [
+     "Suggest",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 3,
+    "A": 4,
+    "R": 4,
+    "AG": 0
+   },
+   "alsoWith": [
+    [
+     "AHL 4.18",
+     4
+    ],
+    [
+     "SL 4.3",
+     4
+    ],
+    [
+     "SL 4.9",
+     4
+    ],
+    [
+     "SL 4.1",
+     2
+    ],
+    [
+     "SL 4.11",
+     1
+    ]
+   ],
+   "tags": [
+    "Variance",
+    "Confidence Interval",
+    "Standard Deviation",
+    "Population Mean Tests",
+    "Normal Distribution",
+    "Mean"
+   ]
+  },
+  "AHL 4.17": {
+   "label": "Poisson Distribution",
+   "n": 16,
+   "formulas": [
+    "Poisson distribution $X \\sim \\operatorname{Po}(m)$",
+    "Mean",
+    "Variance"
+   ],
+   "papers": {
+    "1": 9,
+    "2": 5,
+    "3": 2
+   },
+   "calculator": 16,
+   "marks": {
+    "median": 8.5,
+    "min": 4,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     14
+    ],
+    [
+     "State",
+     9
+    ],
+    [
+     "Write down",
+     5
+    ],
+    [
+     "Calculate",
+     3
+    ],
+    [
+     "Hence",
+     2
+    ],
+    [
+     "Perform",
+     2
+    ]
+   ],
+   "markTypes": {
+    "M": 16,
+    "A": 16,
+    "R": 8,
+    "AG": 1
+   },
+   "alsoWith": [
+    [
+     "SL 4.11",
+     8
+    ],
+    [
+     "AHL 4.18",
+     6
+    ],
+    [
+     "SL 4.7",
+     6
+    ],
+    [
+     "SL 4.6",
+     5
+    ],
+    [
+     "SL 4.8",
+     5
+    ]
+   ],
+   "tags": [
+    "Poisson Distribution",
+    "Hypothesis Testing",
+    "Type I and Type II Errors",
+    "Independent Events",
+    "Binomial Distribution",
+    "Simple Probability"
+   ]
+  },
+  "AHL 4.18": {
+   "label": "Population Mean Tests",
+   "n": 26,
+   "formulas": [],
+   "papers": {
+    "1": 12,
+    "2": 4,
+    "3": 10
+   },
+   "calculator": 26,
+   "marks": {
+    "median": 15.0,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     25
+    ],
+    [
+     "State",
+     20
+    ],
+    [
+     "Write down",
+     11
+    ],
+    [
+     "Perform",
+     8
+    ],
+    [
+     "Show that",
+     6
+    ],
+    [
+     "Explain",
+     6
+    ]
+   ],
+   "markTypes": {
+    "M": 22,
+    "A": 26,
+    "R": 23,
+    "AG": 6
+   },
+   "alsoWith": [
+    [
+     "SL 4.11",
+     23
+    ],
+    [
+     "SL 4.3",
+     13
+    ],
+    [
+     "SL 4.9",
+     9
+    ],
+    [
+     "SL 4.1",
+     7
+    ],
+    [
+     "AHL 4.17",
+     6
+    ]
+   ],
+   "tags": [
+    "Hypothesis Testing",
+    "t-Test",
+    "Population Mean Tests",
+    "Type I and Type II Errors",
+    "Variance",
+    "Normal Distribution"
+   ]
+  },
+  "AHL 4.19": {
+   "label": "Transition Matrices & Markov Chains",
+   "n": 17,
+   "formulas": [
+    "Transition matrices"
+   ],
+   "papers": {
+    "1": 7,
+    "2": 7,
+    "3": 3
+   },
+   "calculator": 17,
+   "marks": {
+    "median": 13,
+    "min": 5,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     16
+    ],
+    [
+     "Write down",
+     11
+    ],
+    [
+     "Determine",
+     5
+    ],
+    [
+     "Use",
+     5
+    ],
+    [
+     "Hence",
+     4
+    ],
+    [
+     "State",
+     4
+    ]
+   ],
+   "markTypes": {
+    "M": 17,
+    "A": 17,
+    "R": 5,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "AHL 1.14",
+     17
+    ],
+    [
+     "AHL 1.15",
+     17
+    ],
+    [
+     "AHL 3.15",
+     17
+    ],
+    [
+     "SL 4.5",
+     4
+    ],
+    [
+     "AHL 3.14",
+     3
+    ]
+   ],
+   "tags": [
+    "Matrices",
+    "Transition Matrices & Markov Chains",
+    "Eigenvalues & Eigenvectors",
+    "Simple Probability",
+    "Graph Theory",
+    "Adjacency Matrices"
+   ]
+  },
+  "SL 5.1": {
+   "label": "Limits",
+   "n": 36,
+   "formulas": [],
+   "papers": {
+    "1": 13,
+    "2": 19,
+    "3": 4
+   },
+   "calculator": 36,
+   "marks": {
+    "median": 14.5,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     35
+    ],
+    [
+     "Show that",
+     13
+    ],
+    [
+     "Write down",
+     12
+    ],
+    [
+     "Hence",
+     9
+    ],
+    [
+     "Sketch",
+     8
+    ],
+    [
+     "Use",
+     7
+    ]
+   ],
+   "markTypes": {
+    "M": 34,
+    "A": 36,
+    "R": 9,
+    "AG": 11
+   },
+   "alsoWith": [
+    [
+     "AHL 5.9",
+     30
+    ],
+    [
+     "SL 5.3",
+     29
+    ],
+    [
+     "SL 2.6",
+     20
+    ],
+    [
+     "SL 2.5",
+     19
+    ],
+    [
+     "SL 5.5",
+     14
+    ]
+   ],
+   "tags": [
+    "Rate of Change",
+    "Differentiation",
+    "Modelling",
+    "Integration",
+    "Definite Integral",
+    "Optimisation"
+   ]
+  },
+  "SL 5.2": {
+   "label": "Properties of Curves",
+   "n": 15,
+   "formulas": [],
+   "papers": {
+    "1": 8,
+    "2": 7,
+    "3": 0
+   },
+   "calculator": 15,
+   "marks": {
+    "median": 9,
+    "min": 4,
+    "max": 16
+   },
+   "commandTerms": [
+    [
+     "Find",
+     13
+    ],
+    [
+     "Write down",
+     6
+    ],
+    [
+     "Sketch",
+     5
+    ],
+    [
+     "Use",
+     3
+    ],
+    [
+     "Determine",
+     3
+    ],
+    [
+     "Show that",
+     2
+    ]
+   ],
+   "markTypes": {
+    "M": 13,
+    "A": 15,
+    "R": 2,
+    "AG": 1
+   },
+   "alsoWith": [
+    [
+     "SL 2.4",
+     15
+    ],
+    [
+     "SL 5.6",
+     15
+    ],
+    [
+     "AHL 5.9",
+     11
+    ],
+    [
+     "SL 5.3",
+     11
+    ],
+    [
+     "SL 2.5",
+     7
+    ]
+   ],
+   "tags": [
+    "Properties of Curves",
+    "Differentiation",
+    "Modelling",
+    "Rate of Change",
+    "Optimisation",
+    "Graph"
+   ]
+  },
+  "SL 5.3": {
+   "label": "Differentiation",
+   "n": 61,
+   "formulas": [
+    "Derivative of $x^{n}$"
+   ],
+   "papers": {
+    "1": 27,
+    "2": 26,
+    "3": 8
+   },
+   "calculator": 61,
+   "marks": {
+    "median": 13,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     59
+    ],
+    [
+     "Show that",
+     28
+    ],
+    [
+     "Write down",
+     17
+    ],
+    [
+     "Hence",
+     17
+    ],
+    [
+     "Use",
+     15
+    ],
+    [
+     "Determine",
+     9
+    ]
+   ],
+   "markTypes": {
+    "M": 60,
+    "A": 61,
+    "R": 18,
+    "AG": 25
+   },
+   "alsoWith": [
+    [
+     "AHL 5.9",
+     61
+    ],
+    [
+     "SL 2.6",
+     35
+    ],
+    [
+     "SL 2.5",
+     34
+    ],
+    [
+     "SL 5.6",
+     34
+    ],
+    [
+     "SL 5.1",
+     29
+    ]
+   ],
+   "tags": [
+    "Differentiation",
+    "Modelling",
+    "Optimisation",
+    "Rate of Change",
+    "Integration",
+    "Chain Rule"
+   ]
+  },
+  "SL 5.4": {
+   "label": "Tangent",
+   "n": 8,
+   "formulas": [],
+   "papers": {
+    "1": 6,
+    "2": 2,
+    "3": 0
+   },
+   "calculator": 8,
+   "marks": {
+    "median": 8.0,
+    "min": 4,
+    "max": 18
+   },
+   "commandTerms": [
+    [
+     "Find",
+     7
+    ],
+    [
+     "Show that",
+     3
+    ],
+    [
+     "Calculate",
+     3
+    ],
+    [
+     "Hence",
+     1
+    ],
+    [
+     "Solve",
+     1
+    ],
+    [
+     "Write down",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 7,
+    "A": 8,
+    "R": 0,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "AHL 5.9",
+     7
+    ],
+    [
+     "SL 5.3",
+     7
+    ],
+    [
+     "AHL 5.11",
+     3
+    ],
+    [
+     "AHL 5.12",
+     3
+    ],
+    [
+     "SL 5.5",
+     3
+    ]
+   ],
+   "tags": [
+    "Differentiation",
+    "Tangent",
+    "Integration",
+    "Definite Integral",
+    "Normal to a Curve",
+    "Area Between Curves"
+   ]
+  },
+  "SL 5.5": {
+   "label": "Indefinite Integral",
+   "n": 48,
+   "formulas": [
+    "Integral of $x^{n}$"
+   ],
+   "papers": {
+    "1": 27,
+    "2": 16,
+    "3": 5
+   },
+   "calculator": 48,
+   "marks": {
+    "median": 9.0,
+    "min": 6,
+    "max": 30
+   },
+   "commandTerms": [
+    [
+     "Find",
+     45
+    ],
+    [
+     "Show that",
+     18
+    ],
+    [
+     "Write down",
+     18
+    ],
+    [
+     "Use",
+     13
+    ],
+    [
+     "Hence",
+     12
+    ],
+    [
+     "Calculate",
+     8
+    ]
+   ],
+   "markTypes": {
+    "M": 47,
+    "A": 48,
+    "R": 10,
+    "AG": 16
+   },
+   "alsoWith": [
+    [
+     "AHL 5.11",
+     42
+    ],
+    [
+     "AHL 5.12",
+     23
+    ],
+    [
+     "SL 2.5",
+     21
+    ],
+    [
+     "SL 2.6",
+     21
+    ],
+    [
+     "AHL 5.9",
+     20
+    ]
+   ],
+   "tags": [
+    "Integration",
+    "Definite Integral",
+    "Differentiation",
+    "Modelling",
+    "Rate of Change",
+    "Volume of Revolution"
+   ]
+  },
+  "SL 5.6": {
+   "label": "Optimisation",
+   "n": 42,
+   "formulas": [],
+   "papers": {
+    "1": 17,
+    "2": 21,
+    "3": 4
+   },
+   "calculator": 42,
+   "marks": {
+    "median": 14.5,
+    "min": 4,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     40
+    ],
+    [
+     "Show that",
+     17
+    ],
+    [
+     "Write down",
+     14
+    ],
+    [
+     "Hence",
+     11
+    ],
+    [
+     "Use",
+     10
+    ],
+    [
+     "Sketch",
+     9
+    ]
+   ],
+   "markTypes": {
+    "M": 40,
+    "A": 42,
+    "R": 13,
+    "AG": 15
+   },
+   "alsoWith": [
+    [
+     "AHL 5.9",
+     34
+    ],
+    [
+     "SL 5.3",
+     34
+    ],
+    [
+     "SL 5.7",
+     33
+    ],
+    [
+     "SL 2.5",
+     26
+    ],
+    [
+     "SL 2.6",
+     25
+    ]
+   ],
+   "tags": [
+    "Differentiation",
+    "Optimisation",
+    "Modelling",
+    "Properties of Curves",
+    "Integration",
+    "Rate of Change"
+   ]
+  },
+  "SL 5.7": {
+   "label": "Optimisation",
+   "n": 33,
+   "formulas": [],
+   "papers": {
+    "1": 12,
+    "2": 17,
+    "3": 4
+   },
+   "calculator": 33,
+   "marks": {
+    "median": 15,
+    "min": 4,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     32
+    ],
+    [
+     "Show that",
+     16
+    ],
+    [
+     "Write down",
+     11
+    ],
+    [
+     "Hence",
+     11
+    ],
+    [
+     "Use",
+     9
+    ],
+    [
+     "Sketch",
+     6
+    ]
+   ],
+   "markTypes": {
+    "M": 32,
+    "A": 33,
+    "R": 12,
+    "AG": 15
+   },
+   "alsoWith": [
+    [
+     "SL 5.6",
+     33
+    ],
+    [
+     "AHL 5.9",
+     28
+    ],
+    [
+     "SL 5.3",
+     28
+    ],
+    [
+     "SL 2.5",
+     23
+    ],
+    [
+     "SL 2.6",
+     22
+    ]
+   ],
+   "tags": [
+    "Optimisation",
+    "Differentiation",
+    "Modelling",
+    "Integration",
+    "Rate of Change",
+    "Measurement"
+   ]
+  },
+  "SL 5.8": {
+   "label": "Trapezoidal Rule",
+   "n": 8,
+   "formulas": [
+    "The trapezoidal rule"
+   ],
+   "papers": {
+    "1": 3,
+    "2": 5,
+    "3": 0
+   },
+   "calculator": 8,
+   "marks": {
+    "median": 13.5,
+    "min": 4,
+    "max": 18
+   },
+   "commandTerms": [
+    [
+     "Find",
+     7
+    ],
+    [
+     "Use",
+     7
+    ],
+    [
+     "Write down",
+     4
+    ],
+    [
+     "Calculate",
+     3
+    ],
+    [
+     "Determine",
+     1
+    ],
+    [
+     "Hence",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 8,
+    "A": 8,
+    "R": 1,
+    "AG": 0
+   },
+   "alsoWith": [
+    [
+     "AHL 5.12",
+     6
+    ],
+    [
+     "AHL 5.11",
+     5
+    ],
+    [
+     "SL 2.6",
+     5
+    ],
+    [
+     "SL 5.5",
+     5
+    ],
+    [
+     "SL 2.5",
+     4
+    ]
+   ],
+   "tags": [
+    "Trapezoidal Rule",
+    "Numerical Integration",
+    "Integration",
+    "Definite Integral",
+    "Area Under a Curve",
+    "Modelling"
+   ]
+  },
+  "AHL 5.9": {
+   "label": "Differentiation",
+   "n": 62,
+   "formulas": [
+    "Derivative of $\\sin x$",
+    "Derivative of $\\cos x$",
+    "Derivative of $\\tan x$",
+    "Derivative of $\\mathrm{e}^{x}$",
+    "Derivative of $\\ln x$",
+    "Chain rule",
+    "Product rule",
+    "Quotient rule"
+   ],
+   "papers": {
+    "1": 27,
+    "2": 27,
+    "3": 8
+   },
+   "calculator": 62,
+   "marks": {
+    "median": 13.5,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     60
+    ],
+    [
+     "Show that",
+     28
+    ],
+    [
+     "Write down",
+     17
+    ],
+    [
+     "Hence",
+     17
+    ],
+    [
+     "Use",
+     15
+    ],
+    [
+     "Determine",
+     9
+    ]
+   ],
+   "markTypes": {
+    "M": 61,
+    "A": 62,
+    "R": 18,
+    "AG": 25
+   },
+   "alsoWith": [
+    [
+     "SL 5.3",
+     61
+    ],
+    [
+     "SL 2.6",
+     35
+    ],
+    [
+     "SL 2.5",
+     34
+    ],
+    [
+     "SL 5.6",
+     34
+    ],
+    [
+     "SL 5.1",
+     30
+    ]
+   ],
+   "tags": [
+    "Differentiation",
+    "Modelling",
+    "Rate of Change",
+    "Optimisation",
+    "Integration",
+    "Chain Rule"
+   ]
+  },
+  "AHL 5.10": {
+   "label": "Second Derivative",
+   "n": 3,
+   "formulas": [],
+   "papers": {
+    "1": 2,
+    "2": 1,
+    "3": 0
+   },
+   "calculator": 3,
+   "marks": {
+    "median": 8,
+    "min": 5,
+    "max": 20
+   },
+   "commandTerms": [
+    [
+     "Find",
+     3
+    ],
+    [
+     "Write down",
+     1
+    ],
+    [
+     "Calculate",
+     1
+    ],
+    [
+     "Show that",
+     1
+    ],
+    [
+     "Determine",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 3,
+    "A": 3,
+    "R": 1,
+    "AG": 1
+   },
+   "alsoWith": [
+    [
+     "AHL 5.9",
+     3
+    ],
+    [
+     "SL 5.3",
+     3
+    ],
+    [
+     "SL 5.6",
+     2
+    ],
+    [
+     "SL 5.7",
+     2
+    ],
+    [
+     "SL 3.1",
+     1
+    ]
+   ],
+   "tags": [
+    "Differentiation",
+    "Second Derivative",
+    "Optimisation",
+    "Concavity & Points of Inflexion",
+    "Chain Rule",
+    "3D"
+   ]
+  },
+  "AHL 5.11": {
+   "label": "Definite Integral",
+   "n": 43,
+   "formulas": [
+    "Standard integrals"
+   ],
+   "papers": {
+    "1": 26,
+    "2": 14,
+    "3": 3
+   },
+   "calculator": 43,
+   "marks": {
+    "median": 9,
+    "min": 6,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     40
+    ],
+    [
+     "Show that",
+     14
+    ],
+    [
+     "Write down",
+     14
+    ],
+    [
+     "Use",
+     9
+    ],
+    [
+     "Hence",
+     9
+    ],
+    [
+     "Calculate",
+     8
+    ]
+   ],
+   "markTypes": {
+    "M": 42,
+    "A": 43,
+    "R": 9,
+    "AG": 12
+   },
+   "alsoWith": [
+    [
+     "SL 5.5",
+     42
+    ],
+    [
+     "AHL 5.12",
+     24
+    ],
+    [
+     "SL 2.6",
+     19
+    ],
+    [
+     "AHL 5.9",
+     18
+    ],
+    [
+     "SL 2.5",
+     17
+    ]
+   ],
+   "tags": [
+    "Integration",
+    "Definite Integral",
+    "Differentiation",
+    "Modelling",
+    "Volume of Revolution",
+    "Rate of Change"
+   ]
+  },
+  "AHL 5.12": {
+   "label": "Area Under a Curve",
+   "n": 26,
+   "formulas": [
+    "Area of region enclosed by a curve and $x$ or $y$-axes",
+    "Volume of revolution about $x$ or $y$-axes"
+   ],
+   "papers": {
+    "1": 17,
+    "2": 8,
+    "3": 1
+   },
+   "calculator": 26,
+   "marks": {
+    "median": 8.0,
+    "min": 4,
+    "max": 26
+   },
+   "commandTerms": [
+    [
+     "Find",
+     23
+    ],
+    [
+     "Write down",
+     9
+    ],
+    [
+     "Calculate",
+     8
+    ],
+    [
+     "Use",
+     8
+    ],
+    [
+     "Show that",
+     5
+    ],
+    [
+     "Hence",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 26,
+    "A": 26,
+    "R": 3,
+    "AG": 4
+   },
+   "alsoWith": [
+    [
+     "AHL 5.11",
+     24
+    ],
+    [
+     "SL 5.5",
+     23
+    ],
+    [
+     "SL 2.6",
+     10
+    ],
+    [
+     "SL 2.5",
+     8
+    ],
+    [
+     "SL 3.1",
+     8
+    ]
+   ],
+   "tags": [
+    "Definite Integral",
+    "Integration",
+    "Volume of Revolution",
+    "Area Under a Curve",
+    "Modelling",
+    "Differentiation"
+   ]
+  },
+  "AHL 5.13": {
+   "label": "Kinematics",
+   "n": 22,
+   "formulas": [
+    "Acceleration",
+    "Distance travelled from $t_{1}$ to $t_{2}$",
+    "Displacement from $t_{1}$ to $t_{2}$"
+   ],
+   "papers": {
+    "1": 12,
+    "2": 8,
+    "3": 2
+   },
+   "calculator": 22,
+   "marks": {
+    "median": 9.0,
+    "min": 4,
+    "max": 29
+   },
+   "commandTerms": [
+    [
+     "Find",
+     22
+    ],
+    [
+     "Show that",
+     11
+    ],
+    [
+     "Hence",
+     7
+    ],
+    [
+     "Write down",
+     5
+    ],
+    [
+     "Determine",
+     4
+    ],
+    [
+     "Use",
+     3
+    ]
+   ],
+   "markTypes": {
+    "M": 21,
+    "A": 22,
+    "R": 8,
+    "AG": 10
+   },
+   "alsoWith": [
+    [
+     "AHL 3.12",
+     22
+    ],
+    [
+     "SL 5.5",
+     12
+    ],
+    [
+     "AHL 5.9",
+     11
+    ],
+    [
+     "SL 5.3",
+     11
+    ],
+    [
+     "AHL 5.11",
+     11
+    ]
+   ],
+   "tags": [
+    "Kinematics",
+    "Differentiation",
+    "Integration",
+    "Rate of Change",
+    "Modelling",
+    "Vectors (2D)"
+   ]
+  },
+  "AHL 5.14": {
+   "label": "Differential Equation",
+   "n": 36,
+   "formulas": [],
+   "papers": {
+    "1": 17,
+    "2": 11,
+    "3": 8
+   },
+   "calculator": 36,
+   "marks": {
+    "median": 13.0,
+    "min": 4,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     31
+    ],
+    [
+     "Show that",
+     15
+    ],
+    [
+     "Use",
+     15
+    ],
+    [
+     "Sketch",
+     14
+    ],
+    [
+     "Hence",
+     13
+    ],
+    [
+     "Write down",
+     12
+    ]
+   ],
+   "markTypes": {
+    "M": 31,
+    "A": 36,
+    "R": 13,
+    "AG": 16
+   },
+   "alsoWith": [
+    [
+     "AHL 5.18",
+     36
+    ],
+    [
+     "AHL 5.16",
+     22
+    ],
+    [
+     "SL 2.5",
+     12
+    ],
+    [
+     "SL 5.5",
+     11
+    ],
+    [
+     "SL 2.6",
+     10
+    ]
+   ],
+   "tags": [
+    "Differential Equation",
+    "Separation of Variables",
+    "Euler's Method",
+    "Coupled Differential Equations",
+    "Modelling",
+    "Eigenvalues & Eigenvectors"
+   ]
+  },
+  "AHL 5.15": {
+   "label": "Slope Fields",
+   "n": 8,
+   "formulas": [],
+   "papers": {
+    "1": 7,
+    "2": 1,
+    "3": 0
+   },
+   "calculator": 8,
+   "marks": {
+    "median": 5.5,
+    "min": 4,
+    "max": 13
+   },
+   "commandTerms": [
+    [
+     "Find",
+     5
+    ],
+    [
+     "Sketch",
+     5
+    ],
+    [
+     "Write down",
+     2
+    ],
+    [
+     "Use",
+     2
+    ],
+    [
+     "Identify",
+     1
+    ],
+    [
+     "Hence",
+     1
+    ]
+   ],
+   "markTypes": {
+    "M": 4,
+    "A": 8,
+    "R": 1,
+    "AG": 1
+   },
+   "alsoWith": [
+    [
+     "AHL 5.18",
+     8
+    ],
+    [
+     "AHL 5.14",
+     7
+    ],
+    [
+     "AHL 5.9",
+     2
+    ],
+    [
+     "SL 2.4",
+     2
+    ],
+    [
+     "SL 5.2",
+     2
+    ]
+   ],
+   "tags": [
+    "Slope Fields",
+    "Differential Equation",
+    "Differentiation",
+    "Properties of Curves",
+    "Graph",
+    "Optimisation"
+   ]
+  },
+  "AHL 5.16": {
+   "label": "Euler's Method",
+   "n": 26,
+   "formulas": [
+    "Euler's method",
+    "Euler's method for coupled systems"
+   ],
+   "papers": {
+    "1": 12,
+    "2": 9,
+    "3": 5
+   },
+   "calculator": 26,
+   "marks": {
+    "median": 14.0,
+    "min": 4,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     21
+    ],
+    [
+     "Use",
+     15
+    ],
+    [
+     "Write down",
+     10
+    ],
+    [
+     "Sketch",
+     10
+    ],
+    [
+     "Show that",
+     10
+    ],
+    [
+     "Hence",
+     9
+    ]
+   ],
+   "markTypes": {
+    "M": 24,
+    "A": 26,
+    "R": 10,
+    "AG": 10
+   },
+   "alsoWith": [
+    [
+     "AHL 5.18",
+     24
+    ],
+    [
+     "AHL 5.14",
+     22
+    ],
+    [
+     "AHL 1.15",
+     13
+    ],
+    [
+     "AHL 5.17",
+     11
+    ],
+    [
+     "SL 2.5",
+     8
+    ]
+   ],
+   "tags": [
+    "Differential Equation",
+    "Coupled Differential Equations",
+    "Euler's Method",
+    "Eigenvalues & Eigenvectors",
+    "Phase Portraits",
+    "Separation of Variables"
+   ]
+  },
+  "AHL 5.17": {
+   "label": "Phase Portraits",
+   "n": 11,
+   "formulas": [
+    "Exact solution for coupled linear differential equations"
+   ],
+   "papers": {
+    "1": 4,
+    "2": 5,
+    "3": 2
+   },
+   "calculator": 11,
+   "marks": {
+    "median": 17,
+    "min": 5,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     9
+    ],
+    [
+     "Sketch",
+     8
+    ],
+    [
+     "Write down",
+     6
+    ],
+    [
+     "Use",
+     4
+    ],
+    [
+     "Hence",
+     4
+    ],
+    [
+     "Determine",
+     4
+    ]
+   ],
+   "markTypes": {
+    "M": 10,
+    "A": 11,
+    "R": 5,
+    "AG": 3
+   },
+   "alsoWith": [
+    [
+     "AHL 5.16",
+     11
+    ],
+    [
+     "AHL 5.18",
+     9
+    ],
+    [
+     "AHL 1.15",
+     9
+    ],
+    [
+     "AHL 5.14",
+     8
+    ],
+    [
+     "SL 5.1",
+     5
+    ]
+   ],
+   "tags": [
+    "Coupled Differential Equations",
+    "Phase Portraits",
+    "Eigenvalues & Eigenvectors",
+    "Differential Equation",
+    "Rate of Change",
+    "Matrices"
+   ]
+  },
+  "AHL 5.18": {
+   "label": "Euler's Method",
+   "n": 38,
+   "formulas": [],
+   "papers": {
+    "1": 19,
+    "2": 11,
+    "3": 8
+   },
+   "calculator": 38,
+   "marks": {
+    "median": 11.0,
+    "min": 4,
+    "max": 31
+   },
+   "commandTerms": [
+    [
+     "Find",
+     32
+    ],
+    [
+     "Use",
+     17
+    ],
+    [
+     "Show that",
+     15
+    ],
+    [
+     "Sketch",
+     14
+    ],
+    [
+     "Hence",
+     13
+    ],
+    [
+     "Write down",
+     13
+    ]
+   ],
+   "markTypes": {
+    "M": 33,
+    "A": 38,
+    "R": 14,
+    "AG": 16
+   },
+   "alsoWith": [
+    [
+     "AHL 5.14",
+     36
+    ],
+    [
+     "AHL 5.16",
+     24
+    ],
+    [
+     "SL 2.5",
+     12
+    ],
+    [
+     "SL 5.5",
+     11
+    ],
+    [
+     "AHL 1.15",
+     11
+    ]
+   ],
+   "tags": [
+    "Differential Equation",
+    "Separation of Variables",
+    "Euler's Method",
+    "Coupled Differential Equations",
+    "Eigenvalues & Eigenvectors",
+    "Modelling"
+   ]
+  }
+ }
+}

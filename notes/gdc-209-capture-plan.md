@@ -1,6 +1,6 @@
 # GDC section for lesson 209 (AHL 2.7): capture plan
 
-Goal: students graph a function and its inverse and check that the two are reflections in the line y = x. They also learn Zoom Square, because in the Standard window the picture is stretched and the reflection looks wrong.
+Goal: students graph a function and its inverse and check that the two are reflections in the line y = x. The question bank says this is also a real exam skill: questions ask to find f^-1(a) by solving f(x) = a, or to solve f(x) = f^-1(x), and the markscheme gives the method mark for a sketch that shows the intersection. So the section should also show the intersection step (G-Solv, ISCT), not only the reflection. They also learn Zoom Square, because in the Standard window the picture is stretched and the reflection looks wrong.
 
 Not built yet. The emulator could not be read in the session that wrote this (no computer-use tools), and no key sequence below is verified. Do not publish a `gdc` section from this until every step has been run on the emulator and each screen captured. Rules are in `.claude/skills/video-study-site/SKILL.md` (GDC) and the `gdc-online-deck` skill.
 
@@ -26,7 +26,8 @@ Good because h(x) = sqrt(x + 1) is one-to-one, so no restriction is needed on Y1
 | 6 | Zoom menu | [SHIFT] [F2] ZOOM. Verified: F1 BOX, F3 IN, F4 OUT |
 | 7 | Square option | Probably [F6] (next page) then SQR. Not verified: find the real key |
 | 8 | Graph after Zoom Square: the curves mirror in y = x | [F6] DRAW if needed |
-| 9 | Optional: check one point | [F5] G-SOLV or trace to confirm (4, ?) matches the mirror (?, 4) |
+| 9 | Intersection of f and f^-1 (or of f and y = a) | [F5] G-SOLV, then the intersection option; confirm the key names on the emulator (the verified log has INTSECT as [F5] G-SOLV, [F5] INTSECT) |
+| 10 | Optional: check one point | [F5] G-SOLV or trace to confirm (4, ?) matches the mirror (?, 4) |
 
 ## Things to find out on the emulator
 

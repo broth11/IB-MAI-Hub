@@ -123,6 +123,30 @@ Steps list on the left; the calculator on the right shows the real screen after 
 - About 5 to 6 steps per section; split a longer procedure. `restore` is optional: say how to put back any setting other than the angle unit. `intro` is required.
 - Captures are real emulator screens (computer use on the Mac), never drawn. See `gdc/menu_paths_verified.md` before planning a menu already in it.
 
+## `exam` (IB MAI Hub: "In the exam")
+
+```json
+{ "type": "exam", "codes": ["AHL 2.7", "SL 2.2"],
+  "asks":  ["Find an expression for $f^{-1}(x)$ ...", "..."],
+  "marks": [ { "label": "Finding an inverse", "text": "Usually 3 marks: (M1) for isolating $x$ ..." } ],
+  "gdc": "The GDC is allowed on every paper. To find $f^{-1}(a)$ ...",
+  "traps": [ { "kind": "Exam wording", "title": "...", "weak": "...", "better": "...", "seek": 596 } ] }
+```
+
+`codes` must be in `docs/data/exam.json`. For each code the page prints counts from the question bank (how many HL questions, the papers, marks, GDC use, mark types, command terms with plain meanings, codes asked together) and the booklet formula names. `asks` and `marks` are required; `marks[].label` is plain text (no math). `traps` are shown as "Loses marks" and "Earns marks"; `seek` is optional because some traps come from markscheme notes, not the video. See SKILL.md for how to write them from the markschemes (no citations, no copied text).
+
+## `question` (IB MAI Hub: "Exam-style question")
+
+```json
+{ "type": "question", "paper": "Paper 1 style", "gdc": true, "total": 9,
+  "prompt": "A function is defined by $f(x)=4+\\dfrac{6}{x-1}$ for $x>1$.",
+  "parts": [ { "text": "(a) Find the range of $f$.", "marks": 2 } ],
+  "markscheme": [ { "part": "(a)", "lines": [ { "text": "recognizes the asymptote $y=4$", "mark": "(M1)" }, { "text": "$f(x)>4$", "mark": "A1" } ] } ],
+  "note": "Work it on paper first." }
+```
+
+Mark codes are `M1`, `(M1)`, `A1`, `R1`, `A2` and so on; the digits are the marks. The validator checks that the part marks and the markscheme marks both add to `total`, and that there is one markscheme block per part. The student ticks each mark earned and sees a running total.
+
 ## `frq`
 
 ```json

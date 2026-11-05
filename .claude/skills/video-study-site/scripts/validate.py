@@ -20,6 +20,7 @@ from find import parse, window, fmt  # noqa: E402
 errors, warnings = [], []
 
 GDC_KEYS = set("F1 F2 F3 F4 F5 F6 SHIFT OPTN VARS MENU ALPHA SQR POW EXIT XTT LOG LN SIN COS TAN FRAC SD LP RP COMMA STO DEL AC MUL DIV ADD SUB DOT EXP NEG EXE UP DOWN LEFT RIGHT 0 1 2 3 4 5 6 7 8 9".split())
+EXAM_CODES = set()
 GDC_TOKEN = re.compile(r"\[([A-Z0-9]+)\]")
 
 
@@ -110,6 +111,28 @@ def check_section(s, i, repo):
                 warn(f"{where}.{name}: no capture; the page shows 'Screen not captured yet'")
             elif not (repo / "docs" / scr["src"]).exists():
                 err(f"{where}.{name}: docs/{scr['src']} does not exist")
+    elif t == "exam":
+        need(s, ["codes", "asks", "marks"], where)
+        for c in s.get("codes", []):
+            if c not in EXAM_CODES:
+                err(f"{where}: code '{c}' is not in docs/data/exam.json")
+        for j, m in enumerate(s.get("marks", [])):
+            need(m, ["label", "text"], f"{where}.marks[{j}]")
+        for j, tr in enumerate(s.get("traps", [])):
+            need(tr, ["kind", "title", "weak", "better"], f"{where}.traps[{j}]")
+        if not s.get("gdc"):
+            warn(f"{where}: no GDC guidance (say when the GDC is useful, or that it is not needed)")
+    elif t == "question":
+        need(s, ["paper", "total", "prompt", "parts", "markscheme"], where)
+        val = lambda code: int((re.search(r"(\d+)", code) or [0, "0"])[1]) if re.search(r"(\d+)", code or "") else 0
+        pm = sum(int(p.get("marks", 0)) for p in s.get("parts", []))
+        mm = sum(val(l.get("mark", "")) for b in s.get("markscheme", []) for l in b.get("lines", []))
+        if pm != s.get("total"):
+            err(f"{where}: part marks add to {pm} but total is {s.get('total')}")
+        if mm != s.get("total"):
+            err(f"{where}: markscheme marks add to {mm} but total is {s.get('total')}")
+        if len(s.get("markscheme", [])) != len(s.get("parts", [])):
+            err(f"{where}: markscheme needs one block per part")
     elif t == "frq":
         need(s, ["prompt", "parts", "sample", "checklist"], where)
     else:
@@ -129,6 +152,9 @@ def main():
     except Exception as e:  # noqa: BLE001
         sys.exit(f"ERROR {path}: {e}")
     site = json.loads((repo / "docs/data/site.json").read_text(encoding="utf-8"))
+    ex = repo / "docs/data/exam.json"
+    if ex.is_file():
+        EXAM_CODES.update(json.loads(ex.read_text(encoding="utf-8"))["codes"])
     index = {l["n"]: l for l in json.loads((repo / "docs/data/lessons.json").read_text(encoding="utf-8"))["lessons"]}
 
     need(L, ["n", "unit", "title", "videoId", "videoTitle", "intro", "moments", "sections", "review"], "lesson")
@@ -185,9 +211,11 @@ def main():
         err("section ids are not unique")
     for i, s in enumerate(L.get("sections", [])):
         check_section(s, i, repo)
-    for core in ("wording", "frq"):
-        if core not in {s.get("type") for s in L.get("sections", [])}:
-            warn(f"core section '{core}' is missing")
+    types = {s.get("type") for s in L.get("sections", [])}
+    if not types & {"wording", "exam"}:
+        warn("core section missing: 'exam' (IB) or 'wording' (AP)")
+    if not types & {"frq", "question"}:
+        warn("core section missing: 'question' (IB) or 'frq' (AP)")
 
     for p, v in seeks(L):
         if v < 0 or (end is not None and v > end + 15):

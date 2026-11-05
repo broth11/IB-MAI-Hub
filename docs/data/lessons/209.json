@@ -69,7 +69,8 @@
    "t": 567,
    "type": "Procedure",
    "title": "Inverse functions and their notation",
-   "text": "The inverse of $f$ is written $f^{-1}$. Start from $y=f(x)$."
+   "text": "The inverse of $f$ is written $f^{-1}$. Start from $y=f(x)$.",
+   "correction": "types"
   },
   {
    "t": 596,
@@ -94,22 +95,31 @@
  ],
  "corrections": [
   {
+   "id": "types",
+   "seek": 567,
+   "kind": "omission",
+   "section": "question",
+   "title": "The video only inverts a quadratic and a square root",
+   "text": "The exam often asks for the inverse of rational, exponential, or logarithmic functions too. The method is the same.",
+   "write": "Switch $x$ and $y$, then solve for $y$. Use $\\ln$ to undo $\\mathrm{e}^{y}$ and $\\mathrm{e}$ to undo $\\ln y$. For $y=4+\\dfrac{6}{x-1}$ the inverse is $1+\\dfrac{6}{x-4}$."
+  },
+  {
    "id": "restrict",
    "seek": 596,
    "kind": "omission",
    "section": "inverse-check",
    "title": "The video inverts $x^2-2$ without restricting the domain",
    "text": "It swaps and solves to get $\\sqrt{x+2}$, but $f(x)=x^2-2$ on all real numbers is not one-to-one, so it has no inverse there.",
-   "write": "$f(x)=x^2-2$ is not one-to-one on $\\mathbb{R}$, so restrict to $x\\ge0$ first. Then $f^{-1}(x)=\\sqrt{x+2}$."
+   "write": "$f(x)=x^2-2$ is not one-to-one on $\\mathbb{R}$, so restrict it first, for example to $x\\ge0$. In the exam the function usually comes with a domain that already makes it one-to-one."
   },
   {
    "id": "inv-domain",
    "seek": 635,
    "kind": "omission",
-   "section": "wording",
-   "title": "The video does not give the domain of an inverse",
-   "text": "It finds $h^{-1}(x)=x^2-1$ but does not say where that function is defined.",
-   "write": "$h^{-1}(x)=x^2-1$ for $x\\ge0$, because the domain of $h^{-1}$ is the range of $h$."
+   "section": "exam",
+   "title": "The video does not give the domain or range of an inverse",
+   "text": "It finds $h^{-1}(x)=x^2-1$ but does not say where that function is defined or what its range is.",
+   "write": "The domain of $h^{-1}$ is the range of $h$ ($x\\ge0$) and its range is the domain of $h$ ($y\\ge-1$). Many questions say the domain is not required, but others ask you to write it down."
   }
  ],
  "sections": [
@@ -204,7 +214,7 @@
    "notes": [
     {
      "label": "Wording check.",
-     "text": "The video finds $f^{-1}(x)=\\sqrt{x+2}$ for $f(x)=x^2-2$ without restricting the domain first. A function needs an inverse to be one-to-one, so on an exam write $x\\ge0$ before you swap. The syllabus lists domain restriction for inverse functions."
+     "text": "The video finds $f^{-1}(x)=\\sqrt{x+2}$ for $f(x)=x^2-2$ without restricting the domain first. A function needs to be one-to-one to have an inverse. Exam questions usually give a domain that already works, and often say the domain of the inverse is not required. If you are given a function like this one, state a restriction such as $x\\ge0$ before you swap."
     }
    ]
   },
@@ -317,11 +327,46 @@
    ]
   },
   {
-   "id": "wording",
-   "type": "wording",
-   "tab": "Wording",
-   "kicker": "Exam wording",
-   "title": "Write it so it earns credit",
+   "id": "exam",
+   "type": "exam",
+   "tab": "In the exam",
+   "kicker": "Exam guidance",
+   "title": "What the exam asks and where the marks go",
+   "codes": [
+    "AHL 2.7",
+    "SL 2.2"
+   ],
+   "asks": [
+    "Find an expression for $f^{-1}(x)$ from a formula, usually on Paper 1. The question often says the domain is not required. The function is often rational, exponential, or logarithmic, not only a quadratic.",
+    "Find the range of $f$ from a given domain, using the end values and any asymptote. The range of $f^{-1}$ is then the domain of $f$.",
+    "Find an inverse value such as $f^{-1}(10)$ in a context, then say what it means in a sentence.",
+    "Sketch $f^{-1}$ by reflecting the graph of $f$ in the line $y=x$, or complete a table of inverse values by swapping inputs and outputs.",
+    "Solve $f(x)=f^{-1}(x)$ by sketching both graphs and finding the intersection.",
+    "Write $f\\circ g$ and $g\\circ f$ in a context, say which order matches the situation, and compare the results."
+   ],
+   "marks": [
+    {
+     "label": "Finding an inverse",
+     "text": "Usually 3 marks: (M1) for isolating $x$ or $y$, M1 for switching $x$ and $y$ (it can be seen anywhere), and A1 for the expression."
+    },
+    {
+     "label": "The range",
+     "text": "A1 for both end values and A1 for a correct interval. Using a strict inequality where the end value is included, or the other way round, loses a mark."
+    },
+    {
+     "label": "Range of the inverse",
+     "text": "The range of $f^{-1}$ is the domain of $f$, with the same kind of inequality. It is usually 1 or 2 marks, and some markschemes say not to follow through an earlier error here."
+    },
+    {
+     "label": "An inverse value in context",
+     "text": "M1 for writing $f(x)=$ the value (a sketch showing the intersection also earns it), A1 for the value, and A1 for a sentence in context. A sentence that states the converse is condoned."
+    },
+    {
+     "label": "Comparing composites",
+     "text": "M1 for discussing the order in which the steps happen, and R1 for a reason or the numbers that show it. The A1 conclusion is not awarded without the R1."
+    }
+   ],
+   "gdc": "The GDC is allowed on every paper. To find $f^{-1}(a)$ without algebra, graph $f$ and the line $y=a$ and find the intersection. To solve $f(x)=f^{-1}(x)$, graph both and find where they meet. A sketch that shows the intersection earns the method mark.",
    "traps": [
     {
      "kind": "Common trap",
@@ -332,62 +377,127 @@
     },
     {
      "kind": "Exam wording",
-     "title": "An inverse needs a restricted domain",
-     "weak": "$f^{-1}(x)=\\sqrt{x+2}$",
-     "better": "$f(x)=x^2-2$ is not one-to-one on $\\mathbb{R}$, so restrict to $x\\ge0$. Then $f^{-1}(x)=\\sqrt{x+2}$ for $x\\ge-2$.",
+     "title": "An inverse needs a one-to-one function",
+     "weak": "$f^{-1}(x)=\\sqrt{x+2}$ for $f(x)=x^2-2$, with no domain stated.",
+     "better": "$f(x)=x^2-2$ is not one-to-one on $\\mathbb{R}$, so give it a restricted domain first, such as $x\\ge0$. If the question already gives a domain, use that one.",
      "seek": 596
     },
     {
      "kind": "Common trap",
      "title": "The inverse is not a reciprocal",
      "weak": "$f^{-1}(x)=\\dfrac{1}{x^2-2}$",
-     "better": "$f^{-1}$ is the inverse function, found by swapping $x$ and $y$. The reciprocal $\\dfrac{1}{f(x)}$ is a different function.",
+     "better": "$f^{-1}$ is the inverse function, found by switching $x$ and $y$. The reciprocal $\\dfrac{1}{f(x)}$ is a different function.",
      "seek": 567
     },
     {
      "kind": "Exam wording",
-     "title": "Include the end point of a domain",
+     "title": "Strict or not strict",
      "weak": "The domain of $h$ is $x>-1$.",
-     "better": "Domain: $x\\ge-1$, because $h(-1)=\\sqrt{0}=0$ is defined. Range: $y\\ge0$.",
+     "better": "Domain: $x\\ge-1$, because $h(-1)=\\sqrt{0}=0$ is defined. Range: $y\\ge0$. The wrong kind of inequality loses an A mark.",
      "seek": 366
     },
     {
      "kind": "Exam wording",
-     "title": "State the domain of the inverse",
-     "weak": "$h^{-1}(x)=x^2-1$",
-     "better": "$h^{-1}(x)=x^2-1$ for $x\\ge0$, because the domain of $h^{-1}$ is the range of $h$.",
+     "title": "Domain and range swap",
+     "weak": "The range of $h^{-1}$ is $y\\ge0$.",
+     "better": "The range of $h^{-1}$ is the domain of $h$: $y\\ge-1$. The domain of $h^{-1}$ is the range of $h$: $x\\ge0$.",
      "seek": 635
+    },
+    {
+     "kind": "Exam wording",
+     "title": "Give 3 significant figures",
+     "weak": "$x=5.4$",
+     "better": "$x=5.37$, to 3 significant figures. Keep the full calculator value until the last step."
     }
    ]
   },
   {
-   "id": "frq",
-   "type": "frq",
-   "tab": "Written",
-   "kicker": "Written response",
-   "title": "Write a full response",
-   "prompt": "The functions $f$ and $g$ are defined by $f(x)=(x+1)^2-3$ and $g(x)=2x-5$, for $x\\in\\mathbb{R}$.",
-   "note": "Give exact answers unless the question says otherwise. Show your working.",
+   "id": "question",
+   "type": "question",
+   "tab": "Exam question",
+   "kicker": "Practice",
+   "title": "Try an exam-style question",
+   "paper": "Paper 1 style",
+   "gdc": true,
+   "total": 9,
+   "prompt": "A function is defined by $f(x)=4+\\dfrac{6}{x-1}$ for $x>1$.",
    "parts": [
-    "(a) Find $(g\\circ f)(x)$, giving your answer in the form $ax^2+bx+c$.",
-    "(b) Explain why $f$ has no inverse on $\\mathbb{R}$, and give the largest domain of the form $x\\ge k$ on which $f$ does have an inverse.",
-    "(c) For this restricted domain, find $f^{-1}(x)$ and state its domain.",
-    "(d) Solve $(f\\circ g)(x)=13$."
+    {
+     "text": "(a) Find the range of $f$.",
+     "marks": 2
+    },
+    {
+     "text": "(b) Find an expression for $f^{-1}(x)$. The domain is not required.",
+     "marks": 3
+    },
+    {
+     "text": "(c) Write down the domain and the range of $f^{-1}$.",
+     "marks": 2
+    },
+    {
+     "text": "(d) Solve $f(x)=f^{-1}(x)$.",
+     "marks": 2
+    }
    ],
-   "sample": [
-    "(a) $(g\\circ f)(x)=2\\left((x+1)^2-3\\right)-5=2x^2+4x-9$.",
-    "(b) $f(0)=f(-2)=-2$, so two different inputs give the same output. $f$ is not one-to-one, so it has no inverse on $\\mathbb{R}$. The vertex is at $x=-1$, so $f$ is one-to-one for $x\\ge-1$.",
-    "(c) Let $y=(x+1)^2-3$ and swap: $x=(y+1)^2-3$, so $(y+1)^2=x+3$. On $x\\ge-1$ the inverse has $y\\ge-1$, so $y+1=\\sqrt{x+3}$ and $f^{-1}(x)=-1+\\sqrt{x+3}$. The domain is $x\\ge-3$, the range of $f$.",
-    "(d) $(f\\circ g)(x)=(2x-5+1)^2-3=(2x-4)^2-3$. Setting this equal to 13 gives $(2x-4)^2=16$, so $2x-4=\\pm4$ and $x=0$ or $x=4$."
+   "markscheme": [
+    {
+     "part": "(a)",
+     "lines": [
+      {
+       "text": "recognizes that $\\dfrac{6}{x-1}>0$ for $x>1$, or the horizontal asymptote $y=4$",
+       "mark": "(M1)"
+      },
+      {
+       "text": "$f(x)>4$",
+       "mark": "A1"
+      }
+     ]
+    },
+    {
+     "part": "(b)",
+     "lines": [
+      {
+       "text": "an attempt to isolate $x$ (or $y$ if switched): $x-1=\\dfrac{6}{y-4}$",
+       "mark": "(M1)"
+      },
+      {
+       "text": "switching $x$ and $y$ (seen anywhere)",
+       "mark": "M1"
+      },
+      {
+       "text": "$f^{-1}(x)=1+\\dfrac{6}{x-4}$ (or $\\dfrac{x+2}{x-4}$)",
+       "mark": "A1"
+      }
+     ]
+    },
+    {
+     "part": "(c)",
+     "lines": [
+      {
+       "text": "the domain of $f^{-1}$ is $x>4$, the range of $f$",
+       "mark": "A1"
+      },
+      {
+       "text": "the range of $f^{-1}$ is $f^{-1}(x)>1$, the domain of $f$",
+       "mark": "A1"
+      }
+     ]
+    },
+    {
+     "part": "(d)",
+     "lines": [
+      {
+       "text": "a sketch of $f$ and $f^{-1}$ showing the intersection, or the equation $f(x)=x$",
+       "mark": "(M1)"
+      },
+      {
+       "text": "$x=5.37$ $(5.37228\\ldots)$",
+       "mark": "A1"
+      }
+     ]
+    }
    ],
-   "checklist": [
-    "(a) Puts $f(x)$ inside $g$, not the other way round, and simplifies to $2x^2+4x-9$.",
-    "(b) Gives two inputs with the same output (or uses the horizontal line test) and says $f$ is not one-to-one.",
-    "(b) States $x\\ge-1$ from the vertex.",
-    "(c) Swaps $x$ and $y$, solves for $y$, and chooses the positive root because $y\\ge-1$.",
-    "(c) States the domain $x\\ge-3$ using the range of $f$.",
-    "(d) Puts $g$ inside $f$ and finds both solutions, $x=0$ and $x=4$."
-   ]
+   "note": "Work it on paper first. The GDC is allowed: graph $f$, $f^{-1}$ and $y=x$ to check part (d)."
   }
  ],
  "footer": "Built from the video's auto-generated captions. Practice questions are newly written.",
@@ -404,7 +514,7 @@
    },
    {
     "kind": "placement",
-    "text": "Syllabus codes SL 2.2 and AHL 2.7. The video covers function notation, domain and range (SL 2.2) as well as composite and inverse functions (AHL 2.7). The identity (f o f^-1)(x)=x and the rows for g, p, and the x<=0 branch of f are not in the video; they come from the syllabus guidance."
+    "text": "The exam section uses statistics from the IB question bank (HL applications and interpretation questions, 2021 to 2025) and a reading of the markschemes for this topic; no question text or question numbers are shown. The exam-style question and its markscheme are newly written. Syllabus codes SL 2.2 and AHL 2.7. The video covers function notation, domain and range (SL 2.2) as well as composite and inverse functions (AHL 2.7). The identity (f o f^-1)(x)=x and the rows for g, p, and the x<=0 branch of f are not in the video; they come from the syllabus guidance."
    },
    {
     "kind": "caption",
