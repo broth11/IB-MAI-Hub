@@ -75,19 +75,41 @@
    "t": 596,
    "type": "Procedure",
    "title": "Swap $x$ and $y$, then solve for $y$",
-   "text": "The first step is always to swap $x$ and $y$. Then use algebra to make $y$ the subject."
+   "text": "The first step is always to swap $x$ and $y$. Then use algebra to make $y$ the subject.",
+   "correction": "restrict"
   },
   {
    "t": 635,
    "type": "Worked example",
    "title": "The inverse of $h$",
-   "text": "From $y=\\sqrt{x+1}$: swap, square both sides, subtract 1. $h^{-1}(x)=x^2-1$."
+   "text": "From $y=\\sqrt{x+1}$: swap, square both sides, subtract 1. $h^{-1}(x)=x^2-1$.",
+   "correction": "inv-domain"
   },
   {
    "t": 691,
    "type": "Key idea",
    "title": "The inverse is a reflection",
    "text": "The graph of $f^{-1}$ is the graph of $f$ reflected in the line $y=x$."
+  }
+ ],
+ "corrections": [
+  {
+   "id": "restrict",
+   "seek": 596,
+   "kind": "omission",
+   "section": "inverse-check",
+   "title": "The video inverts $x^2-2$ without restricting the domain",
+   "text": "It swaps and solves to get $\\sqrt{x+2}$, but $f(x)=x^2-2$ on all real numbers is not one-to-one, so it has no inverse there.",
+   "write": "$f(x)=x^2-2$ is not one-to-one on $\\mathbb{R}$, so restrict to $x\\ge0$ first. Then $f^{-1}(x)=\\sqrt{x+2}$."
+  },
+  {
+   "id": "inv-domain",
+   "seek": 635,
+   "kind": "omission",
+   "section": "wording",
+   "title": "The video does not give the domain of an inverse",
+   "text": "It finds $h^{-1}(x)=x^2-1$ but does not say where that function is defined.",
+   "write": "$h^{-1}(x)=x^2-1$ for $x\\ge0$, because the domain of $h^{-1}$ is the range of $h$."
   }
  ],
  "sections": [

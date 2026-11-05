@@ -32,6 +32,18 @@ Any string may contain `$...$` math. Times (`t`, `seek`) are whole seconds into 
 
 `type` is a short label: Concept, Definition, Key idea, Principle, Procedure, Formula, Worked example, Calculator, Exam wording, Exam question, Design, Visual, Reference, Overview. Moments must be in time order.
 
+## `corrections` (optional, top level) and a moment's `correction`
+
+```json
+"corrections": [
+  { "id": "restrict", "seek": 596, "kind": "omission", "section": "inverse-check",
+    "title": "The video inverts $x^2-2$ without restricting the domain",
+    "text": "It finds $f^{-1}(x)=\\sqrt{x+2}$ for $f(x)=x^2-2$ on all real numbers, but $f$ is not one-to-one there.",
+    "write": "$f(x)=x^2-2$ is not one-to-one on $\\mathbb{R}$, so restrict to $x\\ge0$ first. Then $f^{-1}(x)=\\sqrt{x+2}$." } ]
+```
+
+Drawn as a box under the video ("Before you rely on this video") and as a badge on any key moment that carries `"correction": "<id>"`. `kind` is `omission` (the video leaves out something the guidance or exam requires; students see "Not in the video") or `error` (the video says something wrong; students see "Correction"). Reserve `error` for genuine errors. `text` says neutrally what the video does, `write` is the exam-ready wording, `section` (optional) is the id of the section that teaches it and gets a "Go to" link. Aim for 3 or fewer. Notation slips and caption errors are not corrections; put them in `review.flags`.
+
 ## Every section
 
 ```json

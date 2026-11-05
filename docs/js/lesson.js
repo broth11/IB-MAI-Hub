@@ -44,12 +44,35 @@ function sectionHtml(sec, isLast, ctx) {
   return `<section id="s-${esc(sec.id)}" class="${classes}"><div class="sec-grid"><div class="sec-side">${header}${side}</div>${body}</div></section>`;
 }
 
+// Corrections: things a student should know the video does not say (omission) or says wrongly (error).
+const CORR_LABEL = { omission: 'Not in the video', error: 'Correction' };
+function corrBadge(L, id) {
+  const c = (L.corrections || []).find((x) => x.id === id);
+  return c ? `<span class="corr-badge corr-${esc(c.kind)}">${CORR_LABEL[c.kind] || 'Note'}</span>` : '';
+}
+function correctionsHtml(L) {
+  const cs = L.corrections || [];
+  if (!cs.length) return '';
+  return `<div class="corrections"><div class="corr-head">Before you rely on this video</div>${cs.map((c) => {
+    const sec = c.section ? L.sections.find((s) => s.id === c.section) : null;
+    return `
+    <div class="corr">
+      <div class="corr-top"><span class="corr-badge corr-${esc(c.kind)}">${CORR_LABEL[c.kind] || 'Note'}</span>
+        <button class="btn btn-ghost" data-seek="${c.seek}">${fmtTime(c.seek)}</button></div>
+      <div class="corr-title">${tex(c.title)}</div>
+      <div class="corr-text">${tex(c.text)}</div>
+      <div class="corr-write"><b>Write:</b> ${tex(c.write)}</div>
+      ${sec ? `<button class="link-btn" data-sec-tab="${esc(sec.id)}">Go to ${esc(sec.tab)}</button>` : ''}
+    </div>`;
+  }).join('')}</div>`;
+}
+
 function lessonHtml(L, ctx) {
   const moments = L.moments.map((m) => `
     <button class="moment" data-seek="${m.t}">
       <span class="time">${fmtTime(m.t)}</span>
       <span class="body">
-        <span class="eyebrow">${esc(m.type)}</span>
+        <span class="eyebrow">${esc(m.type)}</span>${m.correction ? corrBadge(L, m.correction) : ''}
         <span class="mtitle">${tex(m.title)}</span>
         <span class="mtext">${tex(m.text)}</span>
       </span>
@@ -72,6 +95,7 @@ function lessonHtml(L, ctx) {
             <iframe id="yt" referrerpolicy="strict-origin-when-cross-origin" src="${yt}" title="${esc(L.videoTitle)}"
               allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
           </div>
+          ${correctionsHtml(L)}
           <div class="video-note">Select a key moment to seek the video. If the player shows error 153, open it on YouTube. Source: <a href="https://www.youtube.com/watch?v=${esc(L.videoId)}" target="_blank" rel="noopener">youtube.com/watch?v=${esc(L.videoId)}</a></div>
         </div>
         <div class="moments-col">

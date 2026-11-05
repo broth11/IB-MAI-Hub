@@ -14,6 +14,8 @@ Set up on 2026-11-05 from the AP Statistics Hub template.
 
 `docs/data/lessons/209.json`, Domain & Range, Composite, Inverse (SL 2.2 and AHL 2.7). Sections: a decision check (does the function have an inverse?), the composite and inverse method, exam wording traps, and a written response. No GDC section yet (no captures for this topic). The video inverts f(x)=x^2-2 without restricting the domain; the page adds the restriction and the domain of the inverse, and says so in the flags. Values were computed with sympy; the page check passes. On the branch `lesson/ahl-2-7`; merging the pull request publishes it.
 
+The page also uses the new `corrections` box (two "Not in the video" entries: the missing domain restriction at 9:56 and the missing domain of an inverse at 10:35). A GDC section for it (graph a function and its inverse, check the reflection in y = x, Zoom Square) is planned but not built; see `notes/gdc-209-capture-plan.md`. An inverse explorer is planned.
+
 Engine fixes made while building it: the response box placeholder no longer says "statistical symbols"; a `frq` section can set its own `note`.
 
 ## Home page is organized by syllabus code

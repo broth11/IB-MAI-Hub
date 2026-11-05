@@ -160,6 +160,26 @@ def main():
     for j, m in enumerate(ms):
         need(m, ["t", "type", "title", "text"], f"moments[{j}]")
 
+    cids = set()
+    sec_ids = {s.get("id") for s in L.get("sections", [])}
+    for j, c in enumerate(L.get("corrections", [])):
+        w = f"corrections[{j}]"
+        need(c, ["id", "seek", "kind", "title", "text", "write"], w)
+        if c.get("kind") not in ("error", "omission"):
+            err(f"{w}: kind must be 'error' or 'omission'")
+        if c.get("kind") == "error":
+            warn(f"{w}: kind 'error' says the video is wrong; reserve it for genuine errors and use 'omission' for things the video leaves out")
+        if c.get("id") in cids:
+            err(f"{w}: duplicate id '{c.get('id')}'")
+        cids.add(c.get("id"))
+        if c.get("section") and c["section"] not in sec_ids:
+            err(f"{w}: section '{c['section']}' does not exist")
+    if len(L.get("corrections", [])) > 4:
+        warn(f"{len(L['corrections'])} corrections (aim for 3 or fewer; students should not be told to distrust a mostly good video)")
+    for j, m in enumerate(ms):
+        if m.get("correction") and m["correction"] not in cids:
+            err(f"moments[{j}]: correction '{m['correction']}' is not in corrections")
+
     ids = [s.get("id") for s in L.get("sections", [])]
     if len(ids) != len(set(ids)):
         err("section ids are not unique")
