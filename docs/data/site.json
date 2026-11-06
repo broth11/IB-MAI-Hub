@@ -6,7 +6,7 @@
  "home": {
   "headline": "Study by IB syllabus code, then jump back to the moment that explains it.",
   "lede": "Every study page pairs the video with its key moments, a method checklist, exam wording, common traps, an interactive visual and practice questions.",
-  "pilot": "Rows are IB syllabus codes. Red rows have no video; amber rows are mentioned only briefly in a video. One study page is live so far: Domain & Range, Composite, Inverse (AHL 2.7). Every other video is listed with its transcript only."
+  "pilot": "Rows are IB syllabus codes. Red rows have no video; amber rows are mentioned only briefly in a video. One study page is live so far: Domain & Range, Composite, Inverse (AHL 2.7). Every other video is listed with its transcript only. Three syllabus-code pages are in pilot: SL 4.4, SL 4.10 and AHL 4.13 (click the code title)."
  },
  "units": [
   {
@@ -140,5 +140,101 @@
    "H₁"
   ]
  ],
- "frqNote": "Practice box for typed written responses. Typing shortcuts: x-bar, mu, sigma, sqrt(), x^2, >=, <=. Show your working, state the GDC result, and give the final answer to 3 significant figures unless the question says otherwise."
+ "frqNote": "Practice box for typed written responses. Typing shortcuts: x-bar, mu, sigma, sqrt(), x^2, >=, <=. Show your working, state the GDC result, and give the final answer to 3 significant figures unless the question says otherwise.",
+ "codePage": {
+  "note": "Section order and Revise-mode visibility for code pages (agreed by Ben, review round 1, 6 Nov 2026).",
+  "sections": [
+   {
+    "key": "video",
+    "tab": "Video",
+    "kicker": "Watch",
+    "title": "Video",
+    "revise": false
+   },
+   {
+    "key": "ican",
+    "tab": "I can",
+    "kicker": "Check yourself",
+    "title": "I can…",
+    "revise": true
+   },
+   {
+    "key": "ku",
+    "tab": "Key ideas",
+    "kicker": "Understand",
+    "title": "Key understandings",
+    "revise": true
+   },
+   {
+    "key": "visuals",
+    "tab": "Visuals",
+    "kicker": "See it",
+    "title": "Key visuals",
+    "revise": false
+   },
+   {
+    "key": "map",
+    "tab": "Map",
+    "kicker": "Where it fits",
+    "title": "Where it fits in the course",
+    "revise": false
+   },
+   {
+    "key": "misc",
+    "tab": "Traps",
+    "kicker": "Avoid",
+    "title": "Misconceptions",
+    "revise": true
+   },
+   {
+    "key": "terms",
+    "tab": "Wording",
+    "kicker": "Write it",
+    "title": "Command terms and answer wording",
+    "revise": true
+   },
+   {
+    "key": "formula",
+    "tab": "Booklet",
+    "kicker": "Formula booklet",
+    "title": "What the formula booklet gives you",
+    "revise": true
+   },
+   {
+    "key": "gdc",
+    "tab": "GDC",
+    "kicker": "Calculator",
+    "title": "GDC steps",
+    "revise": true
+   },
+   {
+    "key": "worked",
+    "tab": "Example",
+    "kicker": "Model solution",
+    "title": "Worked example",
+    "revise": true
+   },
+   {
+    "key": "kq",
+    "tab": "Why?",
+    "kicker": "Explain why",
+    "title": "Key questions",
+    "revise": true
+   },
+   {
+    "key": "history",
+    "tab": "History",
+    "kicker": "Background",
+    "title": "History note",
+    "revise": false
+   },
+   {
+    "key": "explorer",
+    "tab": "Explorer",
+    "kicker": "Explore",
+    "title": "Explorer",
+    "revise": false
+   }
+  ]
+ }
 }

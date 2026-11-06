@@ -1,0 +1,362 @@
+{
+ "code": "AHL 4.13",
+ "slug": "ahl-4-13",
+ "title": "Non-linear regression and R squared",
+ "level": "AHL",
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 408,
+    "title": "Coefficient of Determination",
+    "videoId": "lEaSZuBHta8",
+    "partial": false
+   },
+   {
+    "n": 409,
+    "title": "Non-Linear Regression",
+    "videoId": "R7MZCpcS3fI",
+    "partial": false
+   }
+  ]
+ },
+ "ican": [
+  {
+   "id": "ahl413-ican-1",
+   "text": "I can choose a regression model from the shape of a scatter diagram and the context.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-ican-2",
+   "text": "I can find a non-linear model on my GDC and write it as an equation in the question's variables.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-ican-3",
+   "text": "I can find $R^2$ and interpret it as a percentage of the variation explained.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-ican-4",
+   "text": "I can calculate $SS_{res}$ from a table of observed and predicted values.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-ican-5",
+   "text": "I can compare two models with $R^2$ or $SS_{res}$ and give a reason from the context.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-ican-6",
+   "text": "I can turn a linearised equation, such as $\\ln y=m\\ln x+c$, back into a model for $y$.",
+   "status": "approved"
+  }
+ ],
+ "ku": [
+  {
+   "id": "ahl413-ku-1",
+   "text": "The GDC fits a least-squares curve for linear, quadratic, cubic, exponential, power, and sine models. The shape of the data and the context decide which to try.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-ku-2",
+   "text": "A residual is observed minus predicted. The sum of square residuals, $SS_{res}$, measures how far the data are from the model: smaller is a closer fit to the same data.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-ku-3",
+   "text": "$R^2$ is the proportion of the variation in $y$ that the model accounts for. For a linear model, $R^2=r^2$.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-ku-4",
+   "text": "A high $R^2$ alone does not choose a model. Check how the model behaves in context: outside the data, at $t=0$, and in the long run.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-ku-6",
+   "text": "Logarithms straighten some curves: if $\\ln y$ against $x$ is linear, the model is exponential; if $\\ln y$ against $\\ln x$ is linear, it is a power model.",
+   "status": "approved"
+  }
+ ],
+ "visuals": [
+  {
+   "id": "ahl413-vis-1",
+   "text": "The views data with a linear and an exponential fit, residuals drawn as squares. Caption: the exponential model's squares are tiny; that is $SS_{res}$.",
+   "status": "approved",
+   "figure": null
+  },
+  {
+   "id": "ahl413-vis-2",
+   "text": "Two bars: total variation $SS_{tot}$ and leftover variation $SS_{res}$. Caption: $R^2$ is the part of the bar the model explains.",
+   "status": "approved",
+   "figure": null
+  },
+  {
+   "id": "ahl413-vis-3",
+   "text": "A quadratic and a logistic model on population data, extended past the data. Caption: high $R^2$, but only one makes sense in the long run.",
+   "status": "approved",
+   "figure": null
+  },
+  {
+   "id": "ahl413-vis-4",
+   "text": "The views data replotted as $\\ln V$ against $t$. Caption: the curve becomes a straight line.",
+   "status": "approved",
+   "figure": null
+  }
+ ],
+ "map": {
+  "id": "ahl413-map",
+  "needs": [
+   [
+    "SL 4.4",
+    "Linear regression and $r$"
+   ],
+   [
+    "SL 2.5",
+    "Linear, quadratic, exponential models"
+   ],
+   [
+    "AHL 2.9",
+    "Logistic, sinusoidal, logarithmic models"
+   ]
+  ],
+  "leadsTo": [
+   [
+    "AHL 2.10",
+    "Linearising with logarithms"
+   ],
+   [
+    "SL 2.6",
+    "Testing and reflecting on a model"
+   ]
+  ],
+  "withIn": [
+   [
+    "SL 1.3",
+    "Geometric sequences (syllabus link)"
+   ]
+  ],
+  "status": "draft"
+ },
+ "misc": [
+  {
+   "id": "ahl413-misc-1",
+   "weak": "\"$R^2=0.86$, so the model is 86% accurate.\"",
+   "better": "About 86% of the variation in $y$ is explained by $x$.",
+   "status": "approved",
+   "evidence": "The syllabus defines $R^2$ as a proportion of variability; markschemes credit the percentage-of-variation wording or a comparison with 1."
+  },
+  {
+   "id": "ahl413-misc-2",
+   "weak": "\"The quadratic has the higher $R^2$, so it is the best model.\"",
+   "better": "The quadratic fits these data more closely, but check the context: it predicts a negative population before the data begin, so it is not realistic there.",
+   "status": "approved",
+   "evidence": "Syllabus guidance: $R^2$ by itself is not a good way to choose between models. Markschemes reward a contextual reason against a model."
+  },
+  {
+   "id": "ahl413-misc-3",
+   "weak": "Comparing $R^2$ for the exponential model with $r$ for the linear model.",
+   "better": "Compare like with like: $R^2$ with $r^2$ (or $R$ with $r$).",
+   "status": "approved",
+   "evidence": "A markscheme gave the reasoning mark only for an unambiguous comparison of $R^2$ with $r^2$."
+  },
+  {
+   "id": "ahl413-misc-4",
+   "weak": "Using two values from the data table to find a doubling time or rate.",
+   "better": "Use the model equation, since the question asks what the model predicts.",
+   "status": "approved",
+   "evidence": "Markschemes give no credit for a doubling time worked out from table values instead of the model."
+  },
+  {
+   "id": "ahl413-misc-5",
+   "weak": "Fitting the model to the raw variable when the question defines a shifted one, such as years since 1900 or temperature above room temperature.",
+   "better": "Read how each variable is defined and transform the data before the regression.",
+   "status": "approved",
+   "evidence": "Markschemes have penalised or adjusted marks when the shift was not applied."
+  },
+  {
+   "id": "ahl413-misc-6",
+   "weak": "Forgetting to square residuals, or using predicted minus observed and then dropping negatives.",
+   "better": "$SS_{res}=\\sum(y_{\\text{observed}}-y_{\\text{model}})^2$: square every residual, then add.",
+   "status": "approved",
+   "evidence": "Calculating a squared residual is a method mark in markschemes that ask for $SS_{res}$."
+  }
+ ],
+ "terms": [
+  {
+   "id": "ahl413-term-1",
+   "term": "Find (a model)",
+   "text": "Give the full equation with coefficients to 3 s.f., in the question's variables.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-term-2",
+   "term": "Comment on",
+   "text": "Make a judgement and back it with a value or the context, for example \"$R^2=0.988$ is close to 1, so a good fit\".",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-term-3",
+   "term": "Suggest",
+   "text": "A reasonable idea from the context, such as why a model fails for large $t$.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-term-4",
+   "term": "Hence",
+   "text": "Use the model just found; another method may score nothing.",
+   "status": "approved"
+  }
+ ],
+ "formula": [
+  {
+   "id": "ahl413-form-1",
+   "text": "Nothing for this code is in the formula booklet. Models and $R^2$ come from the GDC.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-form-2",
+   "text": "$R^2=1-\\dfrac{SS_{res}}{SS_{tot}}$ may help understanding but is not examined.",
+   "status": "approved"
+  }
+ ],
+ "gdc": [
+  {
+   "id": "ahl413-gdc-1",
+   "text": "Enter $x$ in List 1 and $y$ in List 2; check SET as for linear regression.",
+   "verified": true,
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-gdc-2",
+   "text": "Quadratic: [F2] CALC, [F3] REG, [F3] X². Read $a$, $b$, $c$ and $R^2$.",
+   "verified": false,
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-gdc-3",
+   "text": "Exponential, power, sine, logistic: [F3] REG then the next page of the menu ([F6] ▷) for Exp, Pwr, Sin, Lgst.",
+   "verified": false,
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-gdc-4",
+   "text": "Exponential has two forms on the fx-CG50 ($ae^{bx}$ and $ab^x$); pick the one the question uses.",
+   "verified": false,
+   "status": "approved"
+  }
+ ],
+ "worked": {
+  "id": "ahl413-we",
+  "prompt": "A video's total views, $V$, are recorded at the end of each day, $t$, after it is posted.",
+  "table": [
+   [
+    "$t$",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   [
+    "$V$",
+    "120",
+    "190",
+    "310",
+    "480",
+    "790",
+    "1240",
+    "2010"
+   ]
+  ],
+  "parts": [
+   {
+    "label": "(a)",
+    "q": "Find an exponential model of the form $V=ab^t$.",
+    "marks": 2,
+    "a": "$V=74.8\\times1.60^t$",
+    "m": "A1A1"
+   },
+   {
+    "label": "(b)",
+    "q": "Write down $R^2$ for this model and interpret it.",
+    "marks": 2,
+    "a": "$R^2=0.9999$; about 99.99% of the variation in views, $V$, is explained by the number of days, $t$.",
+    "m": "A1R1"
+   },
+   {
+    "label": "(c)",
+    "q": "For a linear model, $R^2=0.867$. State which model fits better, with a reason.",
+    "marks": 1,
+    "a": "Exponential: its $R^2$ is closer to 1, and the views grow by about the same factor each day.",
+    "m": "R1"
+   },
+   {
+    "label": "(d)",
+    "q": "Use the exponential model to estimate the views at the end of day 10, and comment on the estimate.",
+    "marks": 3,
+    "a": "$V\\approx8170$ (M1A1). This is an extrapolation, and views cannot keep growing by 60% a day forever, so the estimate may be too high (R1).",
+    "m": "(M1)A1R1"
+   }
+  ],
+  "status": "approved"
+ },
+ "kq": [
+  {
+   "id": "ahl413-kq-2",
+   "q": "Why might the model with the lower $R^2$ be the better choice?",
+   "model": "It may behave sensibly in context, for example level off at a carrying capacity, while the higher-$R^2$ model predicts something impossible outside the data.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-kq-3",
+   "q": "What does $SS_{res}=0$ mean, and why is it rarely good news with real data?",
+   "model": "The model passes through every point. Real data contain noise, so a model that fits every point exactly is usually chasing the noise and predicts badly.",
+   "status": "approved"
+  },
+  {
+   "id": "ahl413-kq-4",
+   "q": "Why does a straight line on a graph of $\\ln y$ against $x$ point to an exponential model?",
+   "model": "If $y=ab^x$ then $\\ln y=\\ln a+x\\ln b$, which is linear in $x$ with gradient $\\ln b$ and intercept $\\ln a$.",
+   "status": "approved"
+  }
+ ],
+ "history": [
+  {
+   "id": "ahl413-hist-1",
+   "text": "Adrien-Marie Legendre published the method of least squares in 1805, in an appendix to a book on comet orbits. In 1809 Carl Friedrich Gauss wrote that he had used it since 1795, which began one of the most famous priority disputes in mathematics.",
+   "sources": [
+    [
+     "MacTutor (St Andrews): Legendre",
+     "https://mathshistory.st-andrews.ac.uk/BEA/legendre_bea.pdf"
+    ],
+    [
+     "Stigler, Gauss and the invention of least squares",
+     "https://economia.uniroma2.it/corso/asset/YTo0OntzOjI6ImlkIjtzOjQ6IjI2OTIiO3M6MzoiaWRhIjtzOjU6IjgxNDkzIjtzOjI6ImVtIjtOO3M6MToiYyI7czo1OiJjMDhmZCI7fQ=="
+    ]
+   ],
+   "status": "approved"
+  }
+ ],
+ "explorers": [
+  {
+   "id": "ahl413-exp-1",
+   "name": "Choose the model",
+   "spec": "Buttons for data sets 1 to 5. Students pick a model (linear, quadratic, cubic, exponential, power, sine, logistic) and see the regression curve with $R^2$, $SS_{res}$, and MSE. A Reveal button shows the best model and why.",
+   "suggest": "Use MSE as the GDC shows it (MSe). The reveal should give a context reason, not only the highest $R^2$.",
+   "status": "approved",
+   "built": false
+  },
+  {
+   "id": "ahl413-exp-2",
+   "name": "Linearising data",
+   "spec": "An ln($x$) button logs every $x$-value and rescales the $x$-axis; an ln($y$) button does the same for $y$. Students see an exponential set straighten with ln($y$) only, and a power set straighten with both, with the fitted line and its equation shown.",
+   "suggest": "Pairs with AHL 2.10, so the same explorer could appear on that page.",
+   "status": "approved",
+   "built": false
+  }
+ ]
+}

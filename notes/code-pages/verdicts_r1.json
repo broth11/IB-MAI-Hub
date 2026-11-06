@@ -1,0 +1,1063 @@
+{
+ "hub": "IB-MAI-Hub",
+ "pilot": "Topic 4 correlation and regression",
+ "round": 1,
+ "exported": "2026-11-06T04:02:43.984Z",
+ "summary": {
+  "total": 163,
+  "agree": 121,
+  "revise": 4,
+  "cut": 6,
+  "unmarked": 32
+ },
+ "verdicts": [
+  {
+   "id": "struct-video",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Video with timestamped key moments | learn=true revise=false"
+  },
+  {
+   "id": "struct-ican",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can… checklist | learn=true revise=true"
+  },
+  {
+   "id": "struct-ku",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Key understandings | learn=true revise=true"
+  },
+  {
+   "id": "struct-visuals",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Key visuals (carousel with commentary) | learn=true revise=false"
+  },
+  {
+   "id": "struct-map",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Where it fits (mind map) | learn=true revise=false"
+  },
+  {
+   "id": "struct-misc",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Misconceptions (weak answer, better answer) | learn=true revise=true"
+  },
+  {
+   "id": "struct-exam",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "cut",
+   "note": "",
+   "text": "How the IB assesses it | learn=true revise=true"
+  },
+  {
+   "id": "struct-terms",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Command terms and answer wording | learn=true revise=true"
+  },
+  {
+   "id": "struct-formula",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Formula booklet pointer | learn=true revise=true"
+  },
+  {
+   "id": "struct-gdc",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "GDC steps (fx-CG50) | learn=true revise=true"
+  },
+  {
+   "id": "struct-worked",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Worked example (model solution) | learn=true revise=true"
+  },
+  {
+   "id": "struct-kq",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Key questions (explain why) | learn=true revise=true"
+  },
+  {
+   "id": "struct-history",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "History note | learn=true revise=false"
+  },
+  {
+   "id": "struct-explorer",
+   "code": "ALL",
+   "section": "structure",
+   "verdict": "agree",
+   "note": "",
+   "text": "Explorer | learn=true revise=false"
+  },
+  {
+   "id": "sl44-ican-1",
+   "code": "SL 4.4",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can describe a scatter diagram by direction, strength, form, and any outliers."
+  },
+  {
+   "id": "sl44-ican-2",
+   "code": "SL 4.4",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can draw a line of best fit by eye through the mean point."
+  },
+  {
+   "id": "sl44-ican-3",
+   "code": "SL 4.4",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can find $r$ and the regression line on my GDC and write them to 3 significant figures, as an equation in the question's variables."
+  },
+  {
+   "id": "sl44-ican-4",
+   "code": "SL 4.4",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can interpret $r$, the gradient, and the intercept in the context of the question, with units."
+  },
+  {
+   "id": "sl44-ican-5",
+   "code": "SL 4.4",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can use the regression line to predict, and say whether the prediction is reliable and why."
+  },
+  {
+   "id": "sl44-ican-6",
+   "code": "SL 4.4",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can explain why correlation does not show causation, using the context."
+  },
+  {
+   "id": "sl44-ku-1",
+   "code": "SL 4.4",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "Pearson's $r$ measures the strength and direction of a <b>linear</b> relationship only. It runs from $-1$ to $1$, and its value says nothing"
+  },
+  {
+   "id": "sl44-ku-2",
+   "code": "SL 4.4",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "A strong correlation shows that two variables move together, not that one causes the other. A third variable, or coincidence, can produce th"
+  },
+  {
+   "id": "sl44-ku-3",
+   "code": "SL 4.4",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "The regression line of $y$ on $x$ makes the sum of the squared vertical distances from the points as small as possible. It always passes thr"
+  },
+  {
+   "id": "sl44-ku-4",
+   "code": "SL 4.4",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "In $y=ax+b$, the gradient $a$ is the change in $y$ for each one-unit increase in $x$, in context and with units. The intercept $b$ is the pr"
+  },
+  {
+   "id": "sl44-ku-5",
+   "code": "SL 4.4",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "A prediction is trustworthy only when $|r|$ is strong and the $x$-value lies inside the data (interpolation). Predicting outside the data (e"
+  },
+  {
+   "id": "sl44-ku-6",
+   "code": "SL 4.4",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "The $y$-on-$x$ line predicts $y$ from $x$. It is the wrong tool for predicting $x$ from a given $y$."
+  },
+  {
+   "id": "sl44-vis-1",
+   "code": "SL 4.4",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "Scatter of the revision data with the mean point marked and the regression line through it. Caption: the line is pinned at $(\\bar{x},\\bar{y}"
+  },
+  {
+   "id": "sl44-vis-2",
+   "code": "SL 4.4",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "Four small scatters with the same $r$ but very different shapes (one curved, one with an outlier). Caption: always look at the picture befor"
+  },
+  {
+   "id": "sl44-vis-3",
+   "code": "SL 4.4",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "The same line with vertical residual segments drawn. Caption: least squares makes these vertical gaps, squared, as small as possible."
+  },
+  {
+   "id": "sl44-vis-4",
+   "code": "SL 4.4",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "The line extended past the data, with the data range shaded. Caption: inside is interpolation; outside is extrapolation and the line gives a"
+  },
+  {
+   "id": "sl44-vis-5",
+   "code": "SL 4.4",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "A three-box diagram: temperature pointing to both ice-cream sales and swimming accidents. Caption: correlation without causation."
+  },
+  {
+   "id": "sl44-map",
+   "code": "SL 4.4",
+   "section": "map",
+   "verdict": "agree",
+   "note": "",
+   "text": "needs SL 2.1,SL 4.3 leads SL 4.10,AHL 4.13,AHL 4.18,AHL 2.10 with SL 2.5,SL 2.6"
+  },
+  {
+   "id": "sl44-misc-1",
+   "code": "SL 4.4",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: \"$r=0.15$, so there is no relationship between the variables.\" | better: There is very weak linear correlation. The variables could st"
+  },
+  {
+   "id": "sl44-misc-2",
+   "code": "SL 4.4",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: \"$r=0.95$, so more revision causes higher scores.\" | better: There is strong positive linear correlation between revision time and sco"
+  },
+  {
+   "id": "sl44-misc-3",
+   "code": "SL 4.4",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: Using the $y$-on-$x$ line to estimate $x$ from a given $y$. | better: Use the $x$-on-$y$ line (swap the lists on the GDC), or state th"
+  },
+  {
+   "id": "sl44-misc-4",
+   "code": "SL 4.4",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: Predicting at an $x$-value far outside the data and trusting the answer. | better: Note that the value is outside the data range, so t"
+  },
+  {
+   "id": "sl44-misc-5",
+   "code": "SL 4.4",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: Writing the regression result as \"$3.72x+41.7$\", or truncating $0.8539$ to $0.853$. | better: Write a full equation in the question's "
+  },
+  {
+   "id": "sl44-misc-6",
+   "code": "SL 4.4",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: \"The gradient 3.72 means the score is 3.72.\" | better: On average, the score increases by about 3.72 marks for each extra hour of revi"
+  },
+  {
+   "id": "sl44-term-1",
+   "code": "SL 4.4",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Write down: Read the value from the GDC; no working is needed, but the value must be correct to 3 s.f."
+  },
+  {
+   "id": "sl44-term-2",
+   "code": "SL 4.4",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Interpret: Say what the value means for these variables, in context: name both variables, the direction, and the units."
+  },
+  {
+   "id": "sl44-term-3",
+   "code": "SL 4.4",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "State / Give a reason: One clear reason tied to the data or context, such as \"the $x$-value is outside the data range\"."
+  },
+  {
+   "id": "sl44-term-4",
+   "code": "SL 4.4",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Explain / Justify: A reason that refers to the value, for example \"since $r=0.854$ is close to 1, the line is suitable for prediction\"."
+  },
+  {
+   "id": "sl44-form-1",
+   "code": "SL 4.4",
+   "section": "formula",
+   "verdict": "agree",
+   "note": "",
+   "text": "Nothing for this code is in the formula booklet. Find $r$ and the line with the GDC."
+  },
+  {
+   "id": "sl44-form-2",
+   "code": "SL 4.4",
+   "section": "formula",
+   "verdict": "agree",
+   "note": "",
+   "text": "When a question needs a critical value of $r$, the question gives it."
+  },
+  {
+   "id": "sl44-gdc-1",
+   "code": "SL 4.4",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "Open Statistics: [MENU] [2]. Enter $x$ in List 1 and $y$ in List 2."
+  },
+  {
+   "id": "sl44-gdc-2",
+   "code": "SL 4.4",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "Check the lists: [F2] CALC, [F6] SET: 2Var XList = List1, 2Var YList = List2, then [EXIT]."
+  },
+  {
+   "id": "sl44-gdc-3",
+   "code": "SL 4.4",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "Regression: [F3] REG, [F1] X, [F1] ax+b. Read $a$, $b$, $r$ and $r^2$."
+  },
+  {
+   "id": "sl44-we",
+   "code": "SL 4.4",
+   "section": "worked",
+   "verdict": "agree",
+   "note": "",
+   "text": "Eight students recorded their revision time, $h$ hours, and their test score, $S$ (out of 100). (a) Find Pearson's product-moment correlatio"
+  },
+  {
+   "id": "sl44-kq-1",
+   "code": "SL 4.4",
+   "section": "kq",
+   "verdict": "agree",
+   "note": "",
+   "text": "Why can $r$ be close to 0 even when $y$ depends strongly on $x$? | Because $r$ only measures how close the points are to a straight line. A "
+  },
+  {
+   "id": "sl44-kq-3",
+   "code": "SL 4.4",
+   "section": "kq",
+   "verdict": "agree",
+   "note": "",
+   "text": "A town finds $r=0.9$ between ice-cream sales and swimming accidents. Why should it not ban ice cream? | Both rise in hot weather. Temperatur"
+  },
+  {
+   "id": "sl44-kq-4",
+   "code": "SL 4.4",
+   "section": "kq",
+   "verdict": "agree",
+   "note": "",
+   "text": "Why does the regression line always pass through $(\\bar{x},\\bar{y})$? | The least-squares line balances the points above and below it, so th"
+  },
+  {
+   "id": "sl44-hist-1",
+   "code": "SL 4.4",
+   "section": "history",
+   "verdict": "agree",
+   "note": "",
+   "text": "The word regression comes from Francis Galton. In 1886 he compared the heights of adult children with their parents' average height and foun"
+  },
+  {
+   "id": "sl44-hist-2",
+   "code": "SL 4.4",
+   "section": "history",
+   "verdict": "agree",
+   "note": "",
+   "text": "Karl Pearson published his correlation coefficient in 1896, building on Galton's ideas and on earlier work by the French physicist Auguste B"
+  },
+  {
+   "id": "sl44-hist-3",
+   "code": "SL 4.4",
+   "section": "history",
+   "verdict": "agree",
+   "note": "",
+   "text": "Galton and Pearson both promoted eugenics. The tools they built outlived that purpose, and the history is a good case for the TOK question o"
+  },
+  {
+   "id": "sl-4-4-explorer",
+   "code": "SL 4.4",
+   "section": "explorer",
+   "verdict": "revise",
+   "note": "Yes, a slider for the r-value that also shows xbar,ybar on the line of best fit. \n",
+   "text": "explorer wanted?"
+  },
+  {
+   "id": "sl-4-10-videos",
+   "code": "SL 4.10",
+   "section": "video",
+   "verdict": "agree",
+   "note": "",
+   "text": "videos: 406"
+  },
+  {
+   "id": "sl410-ican-1",
+   "code": "SL 4.10",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can rank two variables in the same direction and average the ranks of tied values."
+  },
+  {
+   "id": "sl410-ican-2",
+   "code": "SL 4.10",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can find $r_s$ on my GDC by finding $r$ for the two lists of ranks."
+  },
+  {
+   "id": "sl410-ican-3",
+   "code": "SL 4.10",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can interpret $r_s$ in context, as an association between the ranks."
+  },
+  {
+   "id": "sl410-ican-4",
+   "code": "SL 4.10",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can give a mathematical reason to choose $r_s$ over $r$, or $r$ over $r_s$."
+  },
+  {
+   "id": "sl410-ican-5",
+   "code": "SL 4.10",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can decide whether changing one data value changes $r_s$."
+  },
+  {
+   "id": "sl410-ku-1",
+   "code": "SL 4.10",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "Spearman's $r_s$ is Pearson's $r$ calculated on the ranks of the data instead of the values."
+  },
+  {
+   "id": "sl410-ku-2",
+   "code": "SL 4.10",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "$r_s$ measures how <b>monotonic</b> a relationship is: whether $y$ always rises (or always falls) as $x$ rises, straight line or not."
+  },
+  {
+   "id": "sl410-ku-3",
+   "code": "SL 4.10",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "Tied values share the average of the ranks they would take. Two values tied for 5th and 6th both get rank 5.5."
+  },
+  {
+   "id": "sl410-ku-4",
+   "code": "SL 4.10",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "$r_s$ is less sensitive to outliers than $r$, because an extreme value can only move to the end of the ranking."
+  },
+  {
+   "id": "sl410-ku-5",
+   "code": "SL 4.10",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "Changing a value without changing its rank leaves $r_s$ unchanged."
+  },
+  {
+   "id": "sl410-ku-6",
+   "code": "SL 4.10",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "Use $r$ for a linear relationship between measurements. Use $r_s$ for ranked data, a curved but monotonic pattern, or data with outliers."
+  },
+  {
+   "id": "sl410-vis-1",
+   "code": "SL 4.10",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "The typing data: a curved, decreasing scatter. Caption: $r=-0.899$ but $r_s=-0.994$; the pattern is monotonic, not linear."
+  },
+  {
+   "id": "sl410-vis-2",
+   "code": "SL 4.10",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "The same scatter plotted as rank against rank. Caption: ranking straightens a monotonic pattern."
+  },
+  {
+   "id": "sl410-vis-3",
+   "code": "SL 4.10",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "One point dragged far out as an outlier, with $r$ and $r_s$ before and after. Caption: $r$ moves a lot, $r_s$ barely moves."
+  },
+  {
+   "id": "sl410-vis-4",
+   "code": "SL 4.10",
+   "section": "visuals",
+   "verdict": "cut",
+   "note": "",
+   "text": "A U-shaped scatter. Caption: neither coefficient sees this pattern; both are near 0."
+  },
+  {
+   "id": "sl410-misc-1",
+   "code": "SL 4.10",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: \"$r_s=-0.994$, so there is a strong negative linear correlation between practice hours and errors.\" | better: $r_s=-0.994$ shows a str"
+  },
+  {
+   "id": "sl410-misc-2",
+   "code": "SL 4.10",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: Giving two tied values the same lower rank (both 5), then carrying on from 6. | better: Average the ranks they would take: both get 5."
+  },
+  {
+   "id": "sl410-misc-3",
+   "code": "SL 4.10",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: Ranking one variable from largest to smallest and the other from smallest to largest. | better: Rank both variables in the same direct"
+  },
+  {
+   "id": "sl410-misc-4",
+   "code": "SL 4.10",
+   "section": "misc",
+   "verdict": "cut",
+   "note": "",
+   "text": "weak: Using $r_s=1-\\dfrac{6\\sum d^2}{n(n^2-1)}$ when there are tied ranks. | better: Find $r$ for the two rank lists on the GDC. The $\\sum d"
+  },
+  {
+   "id": "sl410-misc-5",
+   "code": "SL 4.10",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: \"An outlier will change $r_s$ a lot.\" | better: An outlier changes $r_s$ only through its rank, so $r_s$ is less affected than $r$."
+  },
+  {
+   "id": "sl410-term-1",
+   "code": "SL 4.10",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Complete: Fill in the ranks as given in the table layout; ties averaged."
+  },
+  {
+   "id": "sl410-term-2",
+   "code": "SL 4.10",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Interpret: Name both variables, the direction, and refer to their ranks."
+  },
+  {
+   "id": "sl410-term-3",
+   "code": "SL 4.10",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Suggest / Explain: One mathematical reason, such as non-linear pattern or an outlier, tied to these data."
+  },
+  {
+   "id": "sl410-form-1",
+   "code": "SL 4.10",
+   "section": "formula",
+   "verdict": "agree",
+   "note": "",
+   "text": "Nothing for this code is in the formula booklet. Find $r_s$ with the GDC."
+  },
+  {
+   "id": "sl410-form-2",
+   "code": "SL 4.10",
+   "section": "formula",
+   "verdict": "cut",
+   "note": "",
+   "text": "The $\\sum d^2$ formula is not in the syllabus. It can be used only when there are no ties."
+  },
+  {
+   "id": "sl410-gdc-1",
+   "code": "SL 4.10",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "Rank both variables by hand, averaging ties. Enter the ranks in List 3 and List 4."
+  },
+  {
+   "id": "sl410-gdc-2",
+   "code": "SL 4.10",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "[F2] CALC, [F6] SET: 2Var XList = List3, 2Var YList = List4, [EXIT]."
+  },
+  {
+   "id": "sl410-gdc-3",
+   "code": "SL 4.10",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "[F3] REG, [F1] X, [F1] ax+b. The value of $r$ shown is $r_s$."
+  },
+  {
+   "id": "sl410-gdc-4",
+   "code": "SL 4.10",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "The fx-CG50 has no built-in Spearman's function, so ranking is always by hand."
+  },
+  {
+   "id": "sl410-we",
+   "code": "SL 4.10",
+   "section": "worked",
+   "verdict": "agree",
+   "note": "",
+   "text": "A typing teacher records the hours of practice, $h$, and the number of errors, $E$, in a test for eight students. (a) Rank both variables fr"
+  },
+  {
+   "id": "sl410-kq-1",
+   "code": "SL 4.10",
+   "section": "kq",
+   "verdict": "agree",
+   "note": "",
+   "text": "The top score in a data set is lowered by 20, but it is still the top score. Why does $r_s$ not change? | $r_s$ depends only on the ranks. T"
+  },
+  {
+   "id": "sl410-kq-2",
+   "code": "SL 4.10",
+   "section": "kq",
+   "verdict": "agree",
+   "note": "",
+   "text": "Describe data where $r_s=1$ but $r<1$. | Any relationship that always increases but is curved, such as $y=x^2$ for positive $x$. The ranks m"
+  },
+  {
+   "id": "sl410-kq-3",
+   "code": "SL 4.10",
+   "section": "kq",
+   "verdict": "agree",
+   "note": "",
+   "text": "Why does a U-shaped relationship give $r_s$ close to 0? | The pattern falls then rises, so it is not monotonic. High ranks of $x$ pair with "
+  },
+  {
+   "id": "sl410-hist-1",
+   "code": "SL 4.10",
+   "section": "history",
+   "verdict": "agree",
+   "note": "",
+   "text": "Charles Spearman, an English psychologist, introduced his rank method in 1904 in \"The proof and measurement of association between two thing"
+  },
+  {
+   "id": "sl-4-10-explorer",
+   "code": "SL 4.10",
+   "section": "explorer",
+   "verdict": "revise",
+   "note": "perhaps a explorer where points can be added, then both the r and r_s values are calculated. student can toggle 'linear relationship' and see the line of best fit. they can toggle monotonic relationship and see the points connected in order to form an increasing, decreasing, or neither relationship.",
+   "text": "explorer wanted?"
+  },
+  {
+   "id": "ahl-4-13-videos",
+   "code": "AHL 4.13",
+   "section": "video",
+   "verdict": "agree",
+   "note": "",
+   "text": "videos: 408,409"
+  },
+  {
+   "id": "ahl413-ican-1",
+   "code": "AHL 4.13",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can choose a regression model from the shape of a scatter diagram and the context."
+  },
+  {
+   "id": "ahl413-ican-2",
+   "code": "AHL 4.13",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can find a non-linear model on my GDC and write it as an equation in the question's variables."
+  },
+  {
+   "id": "ahl413-ican-3",
+   "code": "AHL 4.13",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can find $R^2$ and interpret it as a percentage of the variation explained."
+  },
+  {
+   "id": "ahl413-ican-4",
+   "code": "AHL 4.13",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can calculate $SS_{res}$ from a table of observed and predicted values."
+  },
+  {
+   "id": "ahl413-ican-5",
+   "code": "AHL 4.13",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can compare two models with $R^2$ or $SS_{res}$ and give a reason from the context."
+  },
+  {
+   "id": "ahl413-ican-6",
+   "code": "AHL 4.13",
+   "section": "ican",
+   "verdict": "agree",
+   "note": "",
+   "text": "I can turn a linearised equation, such as $\\ln y=m\\ln x+c$, back into a model for $y$."
+  },
+  {
+   "id": "ahl413-ku-1",
+   "code": "AHL 4.13",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "The GDC fits a least-squares curve for linear, quadratic, cubic, exponential, power, and sine models. The shape of the data and the context "
+  },
+  {
+   "id": "ahl413-ku-2",
+   "code": "AHL 4.13",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "A residual is observed minus predicted. The sum of square residuals, $SS_{res}$, measures how far the data are from the model: smaller is a "
+  },
+  {
+   "id": "ahl413-ku-3",
+   "code": "AHL 4.13",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "$R^2$ is the proportion of the variation in $y$ that the model accounts for. For a linear model, $R^2=r^2$."
+  },
+  {
+   "id": "ahl413-ku-4",
+   "code": "AHL 4.13",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "A high $R^2$ alone does not choose a model. Check how the model behaves in context: outside the data, at $t=0$, and in the long run."
+  },
+  {
+   "id": "ahl413-ku-5",
+   "code": "AHL 4.13",
+   "section": "ku",
+   "verdict": "cut",
+   "note": "",
+   "text": "Adding terms (linear to quadratic to cubic) can never lower $R^2$ on the same data, so $R^2$ cannot fairly compare models with different num"
+  },
+  {
+   "id": "ahl413-ku-6",
+   "code": "AHL 4.13",
+   "section": "ku",
+   "verdict": "agree",
+   "note": "",
+   "text": "Logarithms straighten some curves: if $\\ln y$ against $x$ is linear, the model is exponential; if $\\ln y$ against $\\ln x$ is linear, it is a"
+  },
+  {
+   "id": "ahl413-vis-1",
+   "code": "AHL 4.13",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "The views data with a linear and an exponential fit, residuals drawn as squares. Caption: the exponential model's squares are tiny; that is "
+  },
+  {
+   "id": "ahl413-vis-2",
+   "code": "AHL 4.13",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "Two bars: total variation $SS_{tot}$ and leftover variation $SS_{res}$. Caption: $R^2$ is the part of the bar the model explains."
+  },
+  {
+   "id": "ahl413-vis-3",
+   "code": "AHL 4.13",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "A quadratic and a logistic model on population data, extended past the data. Caption: high $R^2$, but only one makes sense in the long run."
+  },
+  {
+   "id": "ahl413-vis-4",
+   "code": "AHL 4.13",
+   "section": "visuals",
+   "verdict": "agree",
+   "note": "",
+   "text": "The views data replotted as $\\ln V$ against $t$. Caption: the curve becomes a straight line."
+  },
+  {
+   "id": "ahl413-misc-1",
+   "code": "AHL 4.13",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: \"$R^2=0.86$, so the model is 86% accurate.\" | better: About 86% of the variation in $y$ is explained by the model."
+  },
+  {
+   "id": "ahl413-misc-2",
+   "code": "AHL 4.13",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: \"The quadratic has the higher $R^2$, so it is the best model.\" | better: The quadratic fits these data more closely, but check the con"
+  },
+  {
+   "id": "ahl413-misc-3",
+   "code": "AHL 4.13",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: Comparing $R^2$ for the exponential model with $r$ for the linear model. | better: Compare like with like: $R^2$ with $r^2$ (or $R$ wi"
+  },
+  {
+   "id": "ahl413-misc-4",
+   "code": "AHL 4.13",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: Using two values from the data table to find a doubling time or rate. | better: Use the model equation, since the question asks what t"
+  },
+  {
+   "id": "ahl413-misc-5",
+   "code": "AHL 4.13",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: Fitting the model to the raw variable when the question defines a shifted one, such as years since 1900 or temperature above room temp"
+  },
+  {
+   "id": "ahl413-misc-6",
+   "code": "AHL 4.13",
+   "section": "misc",
+   "verdict": "agree",
+   "note": "",
+   "text": "weak: Forgetting to square residuals, or using predicted minus observed and then dropping negatives. | better: $SS_{res}=\\sum(y_{\\text{obser"
+  },
+  {
+   "id": "ahl413-term-1",
+   "code": "AHL 4.13",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Find (a model): Give the full equation with coefficients to 3 s.f., in the question's variables."
+  },
+  {
+   "id": "ahl413-term-2",
+   "code": "AHL 4.13",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Comment on: Make a judgement and back it with a value or the context, for example \"$R^2=0.988$ is close to 1, so a good fit\"."
+  },
+  {
+   "id": "ahl413-term-3",
+   "code": "AHL 4.13",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Suggest: A reasonable idea from the context, such as why a model fails for large $t$."
+  },
+  {
+   "id": "ahl413-term-4",
+   "code": "AHL 4.13",
+   "section": "terms",
+   "verdict": "agree",
+   "note": "",
+   "text": "Hence: Use the model just found; another method may score nothing."
+  },
+  {
+   "id": "ahl413-form-1",
+   "code": "AHL 4.13",
+   "section": "formula",
+   "verdict": "agree",
+   "note": "",
+   "text": "Nothing for this code is in the formula booklet. Models and $R^2$ come from the GDC."
+  },
+  {
+   "id": "ahl413-form-2",
+   "code": "AHL 4.13",
+   "section": "formula",
+   "verdict": "agree",
+   "note": "",
+   "text": "$R^2=1-\\dfrac{SS_{res}}{SS_{tot}}$ may help understanding but is not examined."
+  },
+  {
+   "id": "ahl413-gdc-1",
+   "code": "AHL 4.13",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "Enter $x$ in List 1 and $y$ in List 2; check SET as for linear regression."
+  },
+  {
+   "id": "ahl413-gdc-2",
+   "code": "AHL 4.13",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "Quadratic: [F2] CALC, [F3] REG, [F3] X². Read $a$, $b$, $c$ and $R^2$."
+  },
+  {
+   "id": "ahl413-gdc-3",
+   "code": "AHL 4.13",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "Exponential, power, sine, logistic: [F3] REG then the next page of the menu ([F6] ▷) for Exp, Pwr, Sin, Lgst."
+  },
+  {
+   "id": "ahl413-gdc-4",
+   "code": "AHL 4.13",
+   "section": "gdc",
+   "verdict": "agree",
+   "note": "",
+   "text": "Exponential has two forms on the fx-CG50 ($ae^{bx}$ and $ab^x$); pick the one the question uses."
+  },
+  {
+   "id": "ahl413-we",
+   "code": "AHL 4.13",
+   "section": "worked",
+   "verdict": "revise",
+   "note": "; almost all of the variation in views is explained by the exponential model. A1R1. this is not how i understood it. I would say '99.99 percent of the change in Views is explained by the change in days (t). '",
+   "text": "A video's total views, $V$, are recorded at the end of each day, $t$, after it is posted. (a) Find an exponential model of the form $V=ab^t$"
+  },
+  {
+   "id": "ahl413-kq-1",
+   "code": "AHL 4.13",
+   "section": "kq",
+   "verdict": "cut",
+   "note": "",
+   "text": "Why can a quadratic model never have a lower $R^2$ than a linear model on the same data? | A linear model is a quadratic with $a=0$. The qua"
+  },
+  {
+   "id": "ahl413-kq-2",
+   "code": "AHL 4.13",
+   "section": "kq",
+   "verdict": "agree",
+   "note": "",
+   "text": "Why might the model with the lower $R^2$ be the better choice? | It may behave sensibly in context, for example level off at a carrying capa"
+  },
+  {
+   "id": "ahl413-kq-3",
+   "code": "AHL 4.13",
+   "section": "kq",
+   "verdict": "agree",
+   "note": "",
+   "text": "What does $SS_{res}=0$ mean, and why is it rarely good news with real data? | The model passes through every point. Real data contain noise,"
+  },
+  {
+   "id": "ahl413-kq-4",
+   "code": "AHL 4.13",
+   "section": "kq",
+   "verdict": "agree",
+   "note": "",
+   "text": "Why does a straight line on a graph of $\\ln y$ against $x$ point to an exponential model? | If $y=ab^x$ then $\\ln y=\\ln a+x\\ln b$, which is "
+  },
+  {
+   "id": "ahl413-hist-1",
+   "code": "AHL 4.13",
+   "section": "history",
+   "verdict": "agree",
+   "note": "",
+   "text": "Adrien-Marie Legendre published the method of least squares in 1805, in an appendix to a book on comet orbits. In 1809 Carl Friedrich Gauss "
+  },
+  {
+   "id": "ahl-4-13-explorer",
+   "code": "AHL 4.13",
+   "section": "explorer",
+   "verdict": "revise",
+   "note": "a few buttons that let studetns choice data set 1,2,3,4,5 etc. they then can select different funcitons to see the regression curve, R^2, SS_{res}, MSE. then reveal the best model. a second explorer could focus on linearizing data and scales. a ln(x) button could log all x-scales to pull the axis in. same for ln(y) which could log the y-scale and values. this would empasise what is happening when we linearize data. ",
+   "text": "explorer wanted?"
+  }
+ ]
+}

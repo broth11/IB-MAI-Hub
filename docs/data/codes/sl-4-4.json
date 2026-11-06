@@ -1,0 +1,426 @@
+{
+ "code": "SL 4.4",
+ "slug": "sl-4-4",
+ "title": "Correlation and linear regression",
+ "level": "SL",
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 405,
+    "title": "Independent & Dependent Variables, Scatter Plots",
+    "videoId": "YN5ysmoeZls",
+    "partial": false
+   },
+   {
+    "n": 406,
+    "title": "Correlation: Pearson's & Spearman's",
+    "videoId": "EyMHz5k4SU0",
+    "partial": true
+   },
+   {
+    "n": 407,
+    "title": "Line of Regression Equation (& Reliability)",
+    "videoId": "biyosVy8it4",
+    "partial": false
+   }
+  ]
+ },
+ "ican": [
+  {
+   "id": "sl44-ican-1",
+   "text": "I can describe a scatter diagram by direction, strength, form, and any outliers.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ican-2",
+   "text": "I can draw a line of best fit by eye through the mean point.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ican-3",
+   "text": "I can find $r$ and the regression line on my GDC and write them to 3 significant figures, as an equation in the question's variables.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ican-4",
+   "text": "I can interpret $r$, the gradient, and the intercept in the context of the question, with units.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ican-5",
+   "text": "I can use the regression line to predict, and say whether the prediction is reliable and why.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ican-6",
+   "text": "I can explain why correlation does not show causation, using the context.",
+   "status": "approved"
+  }
+ ],
+ "ku": [
+  {
+   "id": "sl44-ku-1",
+   "text": "Pearson's $r$ measures the strength and direction of a linear relationship only. It runs from $-1$ to $1$, and its value says nothing about a curved pattern.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ku-2",
+   "text": "A strong correlation shows that two variables move together, not that one causes the other. A third variable, or coincidence, can produce the same pattern.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ku-3",
+   "text": "The regression line of $y$ on $x$ makes the sum of the squared vertical distances from the points as small as possible. It always passes through the mean point $(\\bar{x},\\bar{y})$.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ku-4",
+   "text": "In $y=ax+b$, the gradient $a$ is the change in $y$ for each one-unit increase in $x$, in context and with units. The intercept $b$ is the predicted $y$ when $x=0$, which is often outside the data and meaningless.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ku-5",
+   "text": "A prediction is trustworthy only when $|r|$ is strong and the $x$-value lies inside the data (interpolation). Predicting outside the data (extrapolation) is unreliable.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-ku-6",
+   "text": "The $y$-on-$x$ line predicts $y$ from $x$. It is the wrong tool for predicting $x$ from a given $y$.",
+   "status": "approved"
+  }
+ ],
+ "visuals": [
+  {
+   "id": "sl44-vis-1",
+   "text": "Scatter of the revision data with the mean point marked and the regression line through it. Caption: the line is pinned at $(\\bar{x},\\bar{y})$.",
+   "status": "approved",
+   "figure": null
+  },
+  {
+   "id": "sl44-vis-2",
+   "text": "Four small scatters with the same $r$ but very different shapes (one curved, one with an outlier). Caption: always look at the picture before trusting $r$.",
+   "status": "approved",
+   "figure": null
+  },
+  {
+   "id": "sl44-vis-3",
+   "text": "The same line with vertical residual segments drawn. Caption: least squares makes these vertical gaps, squared, as small as possible.",
+   "status": "approved",
+   "figure": null
+  },
+  {
+   "id": "sl44-vis-4",
+   "text": "The line extended past the data, with the data range shaded. Caption: inside is interpolation; outside is extrapolation and the line gives an impossible score.",
+   "status": "approved",
+   "figure": null
+  },
+  {
+   "id": "sl44-vis-5",
+   "text": "A three-box diagram: temperature pointing to both ice-cream sales and swimming accidents. Caption: correlation without causation.",
+   "status": "approved",
+   "figure": null
+  }
+ ],
+ "map": {
+  "id": "sl44-map",
+  "needs": [
+   [
+    "SL 2.1",
+    "Gradient and intercept of a straight line"
+   ],
+   [
+    "SL 4.3",
+    "Mean of a data set"
+   ]
+  ],
+  "leadsTo": [
+   [
+    "SL 4.10",
+    "Spearman's rank correlation"
+   ],
+   [
+    "AHL 4.13",
+    "Non-linear regression and $R^2$"
+   ],
+   [
+    "AHL 4.18",
+    "Testing whether $\\rho=0$"
+   ],
+   [
+    "AHL 2.10",
+    "Linearising data with logarithms"
+   ]
+  ],
+  "withIn": [
+   [
+    "SL 2.5",
+    "Modelling with functions"
+   ],
+   [
+    "SL 2.6",
+    "Modelling skills"
+   ]
+  ],
+  "status": "approved"
+ },
+ "misc": [
+  {
+   "id": "sl44-misc-1",
+   "weak": "\"$r=0.15$, so there is no relationship between the variables.\"",
+   "better": "There is very weak linear correlation. The variables could still be related in a non-linear way, so look at the scatter diagram.",
+   "status": "approved",
+   "evidence": "Syllabus guidance: $r$ is only meaningful for linear relationships. Markschemes credit \"$r$ only measures linear correlation\" as a reason."
+  },
+  {
+   "id": "sl44-misc-2",
+   "weak": "\"$r=0.95$, so more revision causes higher scores.\"",
+   "better": "There is strong positive linear correlation between revision time and score. This does not show that revision causes the higher scores.",
+   "status": "approved",
+   "evidence": "Correlation versus causation is named in the syllabus guidance and is a common one-mark \"explain\" or \"give a reason\" part."
+  },
+  {
+   "id": "sl44-misc-3",
+   "weak": "Using the $y$-on-$x$ line to estimate $x$ from a given $y$.",
+   "better": "Use the $x$-on-$y$ line (swap the lists on the GDC), or state that the $y$-on-$x$ line is not reliable for this.",
+   "status": "approved",
+   "evidence": "Syllabus guidance. One markscheme awards a mark for saying it is unreliable to use the $y$-on-$x$ equation to estimate $x$."
+  },
+  {
+   "id": "sl44-misc-4",
+   "weak": "Predicting at an $x$-value far outside the data and trusting the answer.",
+   "better": "Note that the value is outside the data range, so the prediction is an extrapolation and may not be reliable.",
+   "status": "approved",
+   "evidence": "The danger of extrapolation is in the syllabus guidance and is credited as a reason in markschemes."
+  },
+  {
+   "id": "sl44-misc-5",
+   "weak": "Writing the regression result as \"$3.72x+41.7$\", or truncating $0.8539$ to $0.853$.",
+   "better": "Write a full equation in the question's variables, such as $S=3.72h+41.7$, and round correctly to 3 s.f.",
+   "status": "approved",
+   "evidence": "Markschemes often hold back an answer mark when the result is not an equation, and some reserve a mark for the correct variables. Truncated or wrongly rounded values can lose the answer mark."
+  },
+  {
+   "id": "sl44-misc-6",
+   "weak": "\"The gradient 3.72 means the score is 3.72.\"",
+   "better": "On average, the score increases by about 3.72 marks for each extra hour of revision.",
+   "status": "approved",
+   "evidence": "Interpreting a parameter needs the rate, both variables, and units. Markschemes accept \"rate of change\" wording."
+  }
+ ],
+ "terms": [
+  {
+   "id": "sl44-term-1",
+   "term": "Write down",
+   "text": "Read the value from the GDC; no working is needed, but the value must be correct to 3 s.f.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-term-2",
+   "term": "Interpret",
+   "text": "Say what the value means for these variables, in context: name both variables, the direction, and the units.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-term-3",
+   "term": "State / Give a reason",
+   "text": "One clear reason tied to the data or context, such as \"the $x$-value is outside the data range\".",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-term-4",
+   "term": "Explain / Justify",
+   "text": "A reason that refers to the value, for example \"since $r=0.854$ is close to 1, the line is suitable for prediction\".",
+   "status": "approved"
+  }
+ ],
+ "formula": [
+  {
+   "id": "sl44-form-1",
+   "text": "Nothing for this code is in the formula booklet. Find $r$ and the line with the GDC.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-form-2",
+   "text": "When a question needs a critical value of $r$, the question gives it.",
+   "status": "approved"
+  }
+ ],
+ "gdc": [
+  {
+   "id": "sl44-gdc-1",
+   "text": "Open Statistics: [MENU] [2]. Enter $x$ in List 1 and $y$ in List 2.",
+   "verified": true,
+   "status": "approved"
+  },
+  {
+   "id": "sl44-gdc-2",
+   "text": "Check the lists: [F2] CALC, [F6] SET: 2Var XList = List1, 2Var YList = List2, then [EXIT].",
+   "verified": true,
+   "status": "approved"
+  },
+  {
+   "id": "sl44-gdc-3",
+   "text": "Regression: [F3] REG, [F1] X, [F1] ax+b. Read $a$, $b$, $r$ and $r^2$.",
+   "verified": true,
+   "status": "approved"
+  },
+  {
+   "id": "sl44-gdc-4",
+   "text": "Predict: in Run-Matrix, type the $x$-value, then [OPTN] [F5] STAT [F2] $\\hat{y}$ [EXE]. It uses the last regression.",
+   "verified": true,
+   "status": "draft"
+  },
+  {
+   "id": "sl44-gdc-5",
+   "text": "$x$ on $y$: in SET, swap the lists (XList = List2, YList = List1), then REG again. Put the lists back afterwards.",
+   "verified": true,
+   "status": "draft"
+  }
+ ],
+ "worked": {
+  "id": "sl44-we",
+  "prompt": "Eight students recorded their revision time, $h$ hours, and their test score, $S$ (out of 100).",
+  "table": [
+   [
+    "$h$",
+    "2",
+    "3",
+    "5",
+    "6",
+    "8",
+    "9",
+    "11",
+    "12"
+   ],
+   [
+    "$S$",
+    "48",
+    "55",
+    "58",
+    "66",
+    "70",
+    "77",
+    "80",
+    "88"
+   ]
+  ],
+  "parts": [
+   {
+    "label": "(a)",
+    "q": "Find Pearson's product-moment correlation coefficient, $r$.",
+    "marks": 2,
+    "a": "$r=0.988$ $(0.988348\\ldots)$",
+    "m": "A2"
+   },
+   {
+    "label": "(b)",
+    "q": "Find the equation of the regression line of $S$ on $h$.",
+    "marks": 2,
+    "a": "$S=3.72h+41.7$",
+    "m": "A1A1"
+   },
+   {
+    "label": "(c)",
+    "q": "Interpret the gradient in context.",
+    "marks": 1,
+    "a": "On average, the score rises by about 3.72 marks for each extra hour of revision.",
+    "m": "R1"
+   },
+   {
+    "label": "(d)",
+    "q": "Use your line to estimate the score of a student who revised for 10 hours.",
+    "marks": 2,
+    "a": "$3.72\\times10+41.7$, so $S\\approx78.9$",
+    "m": "(M1)A1"
+   },
+   {
+    "label": "(e)",
+    "q": "Comment on using the line for a student who revised for 20 hours.",
+    "marks": 1,
+    "a": "Not reliable: 20 is outside the data range (extrapolation). The line gives 116, which is more than the maximum score of 100.",
+    "m": "R1"
+   }
+  ],
+  "status": "approved"
+ },
+ "kq": [
+  {
+   "id": "sl44-kq-1",
+   "q": "Why can $r$ be close to 0 even when $y$ depends strongly on $x$?",
+   "model": "Because $r$ only measures how close the points are to a straight line. A strong curved pattern, such as a U shape, can give $r$ near 0.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-kq-2",
+   "q": "Why is the $y$-on-$x$ line not the best line for predicting $x$ from $y$?",
+   "model": "It is chosen to make the vertical (y) errors small. Predicting $x$ needs the horizontal errors small, which gives a different line unless $r=\\pm1$.",
+   "status": "draft"
+  },
+  {
+   "id": "sl44-kq-3",
+   "q": "A town finds $r=0.9$ between ice-cream sales and swimming accidents. Why should it not ban ice cream?",
+   "model": "Both rise in hot weather. Temperature is a third variable that drives both, so the correlation does not show that ice cream causes accidents.",
+   "status": "approved"
+  },
+  {
+   "id": "sl44-kq-4",
+   "q": "Why does the regression line always pass through $(\\bar{x},\\bar{y})$?",
+   "model": "The least-squares line balances the points above and below it, so the residuals sum to zero. That only happens when the line goes through the mean point.",
+   "status": "approved"
+  }
+ ],
+ "history": [
+  {
+   "id": "sl44-hist-1",
+   "text": "The word regression comes from Francis Galton. In 1886 he compared the heights of adult children with their parents' average height and found that children of very tall or very short parents tended to be closer to the average. He called this \"regression towards mediocrity\"; today we say regression towards the mean.",
+   "sources": [
+    [
+     "Galton (1886), Regression Towards Mediocrity in Hereditary Stature",
+     "https://zenodo.org/record/1449548/files/article.pdf"
+    ],
+    [
+     "Bland (2017), Regression toward the mean, SAGE",
+     "https://eprints.whiterose.ac.uk/id/eprint/118488/"
+    ]
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "sl44-hist-2",
+   "text": "Karl Pearson published his correlation coefficient in 1896, building on Galton's ideas and on earlier work by the French physicist Auguste Bravais.",
+   "sources": [
+    [
+     "Britannica: Pearson's correlation coefficient",
+     "https://www.britannica.com/topic/Pearsons-correlation-coefficient"
+    ]
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "sl44-hist-3",
+   "text": "Galton and Pearson both promoted eugenics. The tools they built outlived that purpose, and the history is a good case for the TOK question of how knowledge is used.",
+   "sources": [
+    [
+     "Britannica: Pearson's correlation coefficient (Galton as eugenicist)",
+     "https://www.britannica.com/topic/Pearsons-correlation-coefficient"
+    ],
+    [
+     "Variances (2026), history of correlation (Pearson and eugenics, in French)",
+     "https://variances.eu/wp-content/uploads/2026/04/Variances-Correlation-VF.pdf"
+    ]
+   ],
+   "status": "approved"
+  }
+ ],
+ "explorers": [
+  {
+   "id": "sl44-exp-1",
+   "name": "Correlation slider",
+   "spec": "A slider sets the target $r$ from $-1$ to $1$. The page draws a scatter with that correlation, its regression line, and the mean point $(\\bar{x},\\bar{y})$ marked on the line. Readouts: $r$, the equation $y=ax+b$, $\\bar{x}$, and $\\bar{y}$.",
+   "suggest": "A New data button keeps $r$ but redraws the points, so students see the line always passes through the mean point.",
+   "status": "approved",
+   "built": false
+  }
+ ]
+}

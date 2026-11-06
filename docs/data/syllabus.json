@@ -268,7 +268,8 @@
    "code": "SL 4.4",
    "level": "SL",
    "topic": 4,
-   "title": "Correlation and linear regression"
+   "title": "Correlation and linear regression",
+   "page": "sl-4-4"
   },
   {
    "code": "SL 4.5",
@@ -304,7 +305,8 @@
    "code": "SL 4.10",
    "level": "SL",
    "topic": 4,
-   "title": "Spearman's rank correlation"
+   "title": "Spearman's rank correlation",
+   "page": "sl-4-10"
   },
   {
    "code": "SL 4.11",
@@ -322,7 +324,8 @@
    "code": "AHL 4.13",
    "level": "AHL",
    "topic": 4,
-   "title": "Non-linear regression and R squared"
+   "title": "Non-linear regression and R squared",
+   "page": "ahl-4-13"
   },
   {
    "code": "AHL 4.14",

@@ -39,7 +39,7 @@ function codeRow(c, map) {
   return `
     <div class="syl-row${cls}">
       <span class="code">${esc(c.code)}</span>
-      <span class="name">${esc(c.title)}</span>
+      <span class="name">${c.page ? `<a class="code-link" href="code.html?c=${esc(c.page)}">${esc(c.title)}</a>` : esc(c.title)}</span>
       <div class="vids">${vids.map((v) => videoItem(v, c.code)).join('')}${tag}</div>
     </div>`;
 }

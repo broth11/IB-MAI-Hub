@@ -1,0 +1,321 @@
+{
+ "code": "SL 4.10",
+ "slug": "sl-4-10",
+ "title": "Spearman's rank correlation",
+ "level": "SL",
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 406,
+    "title": "Correlation: Pearson's & Spearman's",
+    "videoId": "EyMHz5k4SU0",
+    "partial": false
+   }
+  ]
+ },
+ "ican": [
+  {
+   "id": "sl410-ican-1",
+   "text": "I can rank two variables in the same direction and average the ranks of tied values.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-ican-2",
+   "text": "I can find $r_s$ on my GDC by finding $r$ for the two lists of ranks.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-ican-3",
+   "text": "I can interpret $r_s$ in context, as an association between the ranks.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-ican-4",
+   "text": "I can give a mathematical reason to choose $r_s$ over $r$, or $r$ over $r_s$.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-ican-5",
+   "text": "I can decide whether changing one data value changes $r_s$.",
+   "status": "approved"
+  }
+ ],
+ "ku": [
+  {
+   "id": "sl410-ku-1",
+   "text": "Spearman's $r_s$ is Pearson's $r$ calculated on the ranks of the data instead of the values.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-ku-2",
+   "text": "$r_s$ measures how monotonic a relationship is: whether $y$ always rises (or always falls) as $x$ rises, straight line or not.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-ku-3",
+   "text": "Tied values share the average of the ranks they would take. Two values tied for 5th and 6th both get rank 5.5.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-ku-4",
+   "text": "$r_s$ is less sensitive to outliers than $r$, because an extreme value can only move to the end of the ranking.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-ku-5",
+   "text": "Changing a value without changing its rank leaves $r_s$ unchanged.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-ku-6",
+   "text": "Use $r$ for a linear relationship between measurements. Use $r_s$ for ranked data, a curved but monotonic pattern, or data with outliers.",
+   "status": "approved"
+  }
+ ],
+ "visuals": [
+  {
+   "id": "sl410-vis-1",
+   "text": "The typing data: a curved, decreasing scatter. Caption: $r=-0.899$ but $r_s=-0.994$; the pattern is monotonic, not linear.",
+   "status": "approved",
+   "figure": null
+  },
+  {
+   "id": "sl410-vis-2",
+   "text": "The same scatter plotted as rank against rank. Caption: ranking straightens a monotonic pattern.",
+   "status": "approved",
+   "figure": null
+  },
+  {
+   "id": "sl410-vis-3",
+   "text": "One point dragged far out as an outlier, with $r$ and $r_s$ before and after. Caption: $r$ moves a lot, $r_s$ barely moves.",
+   "status": "approved",
+   "figure": null
+  }
+ ],
+ "map": {
+  "id": "sl410-map",
+  "needs": [
+   [
+    "SL 4.4",
+    "Pearson's correlation"
+   ],
+   [
+    "SL 4.1",
+    "Outliers"
+   ]
+  ],
+  "leadsTo": [
+   [
+    "AHL 4.12",
+    "Reliability and validity"
+   ],
+   [
+    "AHL 4.18",
+    "Testing correlation"
+   ]
+  ],
+  "withIn": [
+   [
+    "SL 4.4",
+    "Choosing between $r$ and $r_s$"
+   ]
+  ],
+  "status": "draft"
+ },
+ "misc": [
+  {
+   "id": "sl410-misc-1",
+   "weak": "\"$r_s=-0.994$, so there is a strong negative linear correlation between practice hours and errors.\"",
+   "better": "$r_s=-0.994$ shows a strong negative association between the ranks: students who practise more tend to make fewer errors.",
+   "status": "approved",
+   "evidence": "Markschemes have refused interpretations that are not stated in terms of the ranks, and have said \"strong positive\" alone is not enough."
+  },
+  {
+   "id": "sl410-misc-2",
+   "weak": "Giving two tied values the same lower rank (both 5), then carrying on from 6.",
+   "better": "Average the ranks they would take: both get 5.5, and the next value is 7.",
+   "status": "approved",
+   "evidence": "Syllabus guidance: if data items are equal, ranks are averaged."
+  },
+  {
+   "id": "sl410-misc-3",
+   "weak": "Ranking one variable from largest to smallest and the other from smallest to largest.",
+   "better": "Rank both variables in the same direction. Reversing one ranking flips the sign of $r_s$.",
+   "status": "approved",
+   "evidence": "Reversing only one ranking gives the wrong sign, and markschemes take a mark off for a missing negative sign."
+  },
+  {
+   "id": "sl410-misc-5",
+   "weak": "\"An outlier will change $r_s$ a lot.\"",
+   "better": "An outlier changes $r_s$ only through its rank, so $r_s$ is less affected than $r$.",
+   "status": "approved",
+   "evidence": "Syllabus guidance; also credited as a reason for choosing Spearman's."
+  }
+ ],
+ "terms": [
+  {
+   "id": "sl410-term-1",
+   "term": "Complete",
+   "text": "Fill in the ranks as given in the table layout; ties averaged.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-term-2",
+   "term": "Interpret",
+   "text": "Name both variables, the direction, and refer to their ranks.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-term-3",
+   "term": "Suggest / Explain",
+   "text": "One mathematical reason, such as non-linear pattern or an outlier, tied to these data.",
+   "status": "approved"
+  }
+ ],
+ "formula": [
+  {
+   "id": "sl410-form-1",
+   "text": "Nothing for this code is in the formula booklet. Find $r_s$ with the GDC.",
+   "status": "approved"
+  }
+ ],
+ "gdc": [
+  {
+   "id": "sl410-gdc-1",
+   "text": "Rank both variables by hand, averaging ties. Enter the ranks in List 3 and List 4.",
+   "verified": true,
+   "status": "approved"
+  },
+  {
+   "id": "sl410-gdc-2",
+   "text": "[F2] CALC, [F6] SET: 2Var XList = List3, 2Var YList = List4, [EXIT].",
+   "verified": true,
+   "status": "approved"
+  },
+  {
+   "id": "sl410-gdc-3",
+   "text": "[F3] REG, [F1] X, [F1] ax+b. The value of $r$ shown is $r_s$.",
+   "verified": true,
+   "status": "approved"
+  },
+  {
+   "id": "sl410-gdc-4",
+   "text": "The fx-CG50 has no built-in Spearman's function, so ranking is always by hand.",
+   "verified": false,
+   "status": "approved"
+  },
+  {
+   "id": "sl410-gdc-5",
+   "text": "Put back: set 2Var XList = List1 and 2Var YList = List2.",
+   "verified": true,
+   "status": "draft"
+  }
+ ],
+ "worked": {
+  "id": "sl410-we",
+  "prompt": "A typing teacher records the hours of practice, $h$, and the number of errors, $E$, in a test for eight students.",
+  "table": [
+   [
+    "$h$",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "8",
+    "10"
+   ],
+   [
+    "$E$",
+    "30",
+    "22",
+    "17",
+    "17",
+    "12",
+    "10",
+    "9",
+    "8"
+   ]
+  ],
+  "parts": [
+   {
+    "label": "(a)",
+    "q": "Rank both variables from smallest to largest.",
+    "marks": 2,
+    "a": "$h$: 1, 2, 3, 4, 5, 6, 7, 8. $E$: 8, 7, 5.5, 5.5, 4, 3, 2, 1 (the two 17s share rank 5.5).",
+    "m": "A1A1"
+   },
+   {
+    "label": "(b)",
+    "q": "Find Spearman's rank correlation coefficient, $r_s$.",
+    "marks": 2,
+    "a": "$r_s=-0.994$ $(-0.994030\\ldots)$",
+    "m": "A2"
+   },
+   {
+    "label": "(c)",
+    "q": "Interpret this value in context.",
+    "marks": 1,
+    "a": "Strong negative association between the ranks: students who practise more tend to make fewer errors.",
+    "m": "R1"
+   },
+   {
+    "label": "(d)",
+    "q": "Pearson's $r$ for these data is $-0.899$. Suggest why $r_s$ is the better measure here.",
+    "marks": 1,
+    "a": "The errors fall quickly at first and then level off, so the pattern is curved but always decreasing. $r_s$ measures a monotonic relationship; $r$ only a linear one.",
+    "m": "R1"
+   }
+  ],
+  "status": "approved"
+ },
+ "kq": [
+  {
+   "id": "sl410-kq-1",
+   "q": "The top score in a data set is lowered by 20, but it is still the top score. Why does $r_s$ not change?",
+   "model": "$r_s$ depends only on the ranks. The value changed, but its rank did not, so every rank and $r_s$ stay the same.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-kq-2",
+   "q": "Describe data where $r_s=1$ but $r<1$.",
+   "model": "Any relationship that always increases but is curved, such as $y=x^2$ for positive $x$. The ranks match perfectly, but the points are not on a straight line.",
+   "status": "approved"
+  },
+  {
+   "id": "sl410-kq-3",
+   "q": "Why does a U-shaped relationship give $r_s$ close to 0?",
+   "model": "The pattern falls then rises, so it is not monotonic. High ranks of $x$ pair with both high and low ranks of $y$, and the effect cancels.",
+   "status": "approved"
+  }
+ ],
+ "history": [
+  {
+   "id": "sl410-hist-1",
+   "text": "Charles Spearman, an English psychologist, introduced his rank method in 1904 in \"The proof and measurement of association between two things\", written while he was still a graduate student. The same year he published his theory of general intelligence.",
+   "sources": [
+    [
+     "Spearman (1904), American Journal of Psychology 15(1), doi:10.2307/1412159",
+     "https://bibbase.org/network/publication/spearman-theproofandmeasurementofassociationbetweentwothings-1904"
+    ],
+    [
+     "Revelle, Charles Spearman (profile)",
+     "https://www.personality-project.org/revelle/publications/spearman.pdf"
+    ]
+   ],
+   "status": "approved"
+  }
+ ],
+ "explorers": [
+  {
+   "id": "sl410-exp-1",
+   "name": "Pearson versus Spearman",
+   "spec": "Students click to add or drag points. The page shows $r$ and $r_s$ live. A Linear toggle draws the line of best fit. A Monotonic toggle joins the points in $x$ order and labels the pattern increasing, decreasing, or neither.",
+   "suggest": "Optionally show the rank table beside the plot, so students see that dragging a point without passing a neighbour leaves $r_s$ unchanged.",
+   "status": "approved",
+   "built": false
+  }
+ ]
+}
