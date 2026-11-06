@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Turn the reviewed pilot content into code-page data files.
 
-Usage: export_code_pages.py <pilot.json> <verdicts_r1.json> [<verdicts_r2.json> ...] <repo>
+Usage: export_code_pages.py <pilot.json> <verdicts_r1.json> [<verdicts_r2.json> ...] <repo> [--moments <moments.json>]
 
 An item is approved when its latest verdict is "agree". An item marked agree in an
 earlier round but listed in a later round's "changed" list needs a fresh agree.
@@ -12,6 +12,9 @@ field to the matching codes in docs/data/syllabus.json.
 import json, re, sys, pathlib
 
 args = sys.argv[1:]
+moments = {}
+if "--moments" in args:
+    i = args.index("--moments"); moments = json.load(open(args[i + 1])); del args[i:i + 2]
 pilot = json.load(open(args[0])); repo = pathlib.Path(args[-1]); rounds = args[1:-1]
 changed = set(pilot.get("changed", []))
 verdict = {}
@@ -49,7 +52,12 @@ lessons = {l["n"]: l for l in json.load(open(repo / "docs/data/lessons.json"))["
 report = []
 for c in pilot["codes"]:
     S = c["sections"]
-    vids = [dict(n=v["n"], title=lessons[v["n"]]["title"], videoId=lessons[v["n"]]["videoId"], partial=v.get("partial", False)) for v in c["videos"]]
+    M = moments.get("videos", {})
+    vids = [dict(n=v["n"], title=lessons[v["n"]]["title"], videoId=lessons[v["n"]]["videoId"], partial=v.get("partial", False),
+                 moments=M.get(str(v["n"]), {}).get("moments", []), notes=M.get(str(v["n"]), {}).get("notes", [])) for v in c["videos"]]
+    for v in vids:
+        ts = [m["t"] for m in v["moments"]]
+        assert ts == sorted(ts), f"moments out of order in {v['n']}"
     worked = one(S["worked"])
     for p in worked["parts"]:
         p["m"] = re.sub(r"\s*\(.*\)$", "", p["m"])  # keep the mark codes, drop review notes
@@ -57,7 +65,7 @@ for c in pilot["codes"]:
     for g in gdc: g.pop("flag", None)
     out = {
         "code": c["code"], "slug": c["slug"], "title": c["title"], "level": c["level"],
-        "videos": {"status": status(c["slug"] + "-videos"), "items": vids},
+        "videos": {"status": status(c["slug"] + "-videos"), "items": vids, "sharedNote": moments.get("sharedNote")},
         "ican": lst(S["ican"]), "ku": lst(S["ku"]),
         "visuals": [dict(v, figure=None) for v in lst(S["visuals"])],
         "map": one(S["map"]),
@@ -71,5 +79,5 @@ for c in pilot["codes"]:
         if row["code"] == c["code"]: row["page"] = c["slug"]
     n_app = json.dumps(out).count('"status": "approved"'); n_dr = json.dumps(out).count('"status": "draft"')
     report.append(f"{c['code']}: {n_app} approved, {n_dr} draft")
-json.dump(syl, open(repo / "docs/data/syllabus.json", "w"), indent=1, ensure_ascii=False)
+json.dump(syl, open(repo / "docs/data/syllabus.json", "w"), indent=1, ensure_ascii=False); open(repo / "docs/data/syllabus.json", "a").write("\n")
 print("\n".join(report))

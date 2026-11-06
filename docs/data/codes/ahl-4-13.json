@@ -10,15 +10,198 @@
     "n": 408,
     "title": "Coefficient of Determination",
     "videoId": "lEaSZuBHta8",
-    "partial": false
+    "partial": false,
+    "moments": [
+     {
+      "t": 3,
+      "type": "Overview",
+      "title": "Coefficient of determination",
+      "text": "An HL-only idea in bivariate statistics, taught through five key concepts."
+     },
+     {
+      "t": 42,
+      "type": "Definition",
+      "title": "What $R^2$ means",
+      "text": "The proportion of the variation in $y$ that the model explains, with $x$ as the input."
+     },
+     {
+      "t": 54,
+      "type": "Worked example",
+      "title": "Ice-cream sales",
+      "text": "A corner shop records temperature and ice-cream sales on four days."
+     },
+     {
+      "t": 142,
+      "type": "Visual",
+      "title": "Scatter and line",
+      "text": "The points sit close to the regression line: a strong positive pattern."
+     },
+     {
+      "t": 190,
+      "type": "Key idea",
+      "title": "Link to $r$",
+      "text": "For a linear model, $R^2$ is the square of the correlation coefficient $r$."
+     },
+     {
+      "t": 205,
+      "type": "Exam wording",
+      "title": "Interpreting $R^2=0.93$",
+      "text": "93% of the variation in ice-cream sales is explained by the variation in temperature."
+     },
+     {
+      "t": 250,
+      "type": "Key idea",
+      "title": "A lower $R^2$",
+      "text": "$R^2=0.5$ would mean only half of the variation in $y$ is explained by $x$."
+     },
+     {
+      "t": 295,
+      "type": "Concept",
+      "title": "How the line is chosen",
+      "text": "The calculator picks the line that makes the sum of squared residuals as small as possible."
+     },
+     {
+      "t": 344,
+      "type": "Definition",
+      "title": "Residual",
+      "text": "The vertical gap between a data point's $y$ and the line's predicted $\\hat{y}$."
+     },
+     {
+      "t": 372,
+      "type": "Key idea",
+      "title": "Why square them",
+      "text": "Positive and negative residuals would cancel, so each residual is squared before adding."
+     },
+     {
+      "t": 406,
+      "type": "Key idea",
+      "title": "$SS_{res}=0$",
+      "text": "Every point lies on the line: a perfect fit."
+     },
+     {
+      "t": 430,
+      "type": "Concept",
+      "title": "Total sum of squares",
+      "text": "$SS_{tot}$ squares the gaps from the mean line $\\bar{y}$, as a scale for $SS_{res}$."
+     },
+     {
+      "t": 486,
+      "type": "Formula",
+      "title": "$R^2$ from the sums",
+      "text": "$R^2=1-\\dfrac{SS_{res}}{SS_{tot}}$. This helps understanding but is not examined."
+     },
+     {
+      "t": 520,
+      "type": "Exam wording",
+      "title": "In the exam",
+      "text": "Find $R^2$ on the calculator; questions may ask you to calculate $SS_{res}$ or compare models."
+     }
+    ],
+    "notes": []
    },
    {
     "n": 409,
     "title": "Non-Linear Regression",
     "videoId": "R7MZCpcS3fI",
-    "partial": false
+    "partial": false,
+    "moments": [
+     {
+      "t": 3,
+      "type": "Overview",
+      "title": "Non-linear regression",
+      "text": "HL only: fitting curves when the data are not linear."
+     },
+     {
+      "t": 62,
+      "type": "Reference",
+      "title": "The model types",
+      "text": "Know the form and the shape of each model so you can match a scatter diagram to one."
+     },
+     {
+      "t": 88,
+      "type": "Worked example",
+      "title": "Exhibition visitors",
+      "text": "Guests per day after an exhibition opens: high at first, then falling and levelling off."
+     },
+     {
+      "t": 185,
+      "type": "Procedure",
+      "title": "Look first",
+      "text": "Draw the scatter diagram before choosing a model."
+     },
+     {
+      "t": 230,
+      "type": "Procedure",
+      "title": "Try a model",
+      "text": "Overlay an exponential regression and check by eye that it follows the points."
+     },
+     {
+      "t": 259,
+      "type": "Worked example",
+      "title": "The exponential model",
+      "text": "Guests $\\approx166\\times0.93^{d}$, where $d$ is days after opening."
+     },
+     {
+      "t": 269,
+      "type": "Key idea",
+      "title": "Comparing models",
+      "text": "Compare the $R^2$ values of the models you try."
+     },
+     {
+      "t": 331,
+      "type": "Worked example",
+      "title": "Linear against exponential",
+      "text": "Linear $R^2=0.91$, exponential $R^2=0.97$."
+     },
+     {
+      "t": 345,
+      "type": "Exam wording",
+      "title": "Read the question",
+      "text": "Questions often name the model to use; if not, choose one and justify it."
+     },
+     {
+      "t": 371,
+      "type": "Concept",
+      "title": "Linearising",
+      "text": "Taking logarithms of the data can turn a curve into a straight line."
+     },
+     {
+      "t": 416,
+      "type": "Calculator",
+      "title": "A log column",
+      "text": "Make a new list of $\\log G$ values on the calculator instead of typing each one (TI-Nspire shown)."
+     },
+     {
+      "t": 510,
+      "type": "Visual",
+      "title": "The straightened data",
+      "text": "$\\log G$ against $d$ is close to linear."
+     },
+     {
+      "t": 536,
+      "type": "Worked example",
+      "title": "The linear form",
+      "text": "$\\log G=0.03d+2.22$: a straight line in $\\log G$, not in $G$."
+     }
+    ],
+    "notes": [
+     {
+      "kind": "omission",
+      "title": "Choosing by $R^2$ alone",
+      "text": "The video chooses the model with the higher $R^2$.",
+      "write": "Also check the model makes sense in context: outside the data, at the start, and in the long run.",
+      "section": "misc"
+     }
+    ]
    }
-  ]
+  ],
+  "sharedNote": {
+   "kind": "note",
+   "title": "Different calculator",
+   "text": "These videos use a TI-Nspire. The keys and menus are different on the Casio fx-CG50.",
+   "write": "Follow the GDC steps section on this page for the fx-CG50.",
+   "section": "gdc"
+  }
  },
  "ican": [
   {

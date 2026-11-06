@@ -10,21 +10,233 @@
     "n": 405,
     "title": "Independent & Dependent Variables, Scatter Plots",
     "videoId": "YN5ysmoeZls",
-    "partial": false
+    "partial": false,
+    "moments": [
+     {
+      "t": 18,
+      "type": "Overview",
+      "title": "Two variables",
+      "text": "Bivariate statistics: each individual gives two measurements, so we look for a relationship between them."
+     },
+     {
+      "t": 48,
+      "type": "Definition",
+      "title": "Independent and dependent",
+      "text": "The independent (input) variable is $x$; the dependent (output) variable is $y$."
+     },
+     {
+      "t": 70,
+      "type": "Key idea",
+      "title": "The question to ask",
+      "text": "Does $x$ influence $y$? A growing child's height and age is the classic example."
+     },
+     {
+      "t": 126,
+      "type": "Worked example",
+      "title": "Teachers' experience and scores",
+      "text": "Eight teachers: years of experience against a performance score out of 100."
+     },
+     {
+      "t": 226,
+      "type": "Key idea",
+      "title": "Which variable goes where",
+      "text": "The independent variable always goes on the horizontal axis and the dependent variable on the vertical axis."
+     },
+     {
+      "t": 254,
+      "type": "Procedure",
+      "title": "Plotting the points",
+      "text": "Each teacher becomes one point: years across, score up."
+     },
+     {
+      "t": 307,
+      "type": "Visual",
+      "title": "Reading the trend",
+      "text": "The points rise from low left to high right, and a line of best fit summarises that trend."
+     },
+     {
+      "t": 341,
+      "type": "Overview",
+      "title": "What comes next",
+      "text": "Measuring the strength of the trend (correlation) and finding the line's equation (regression)."
+     }
+    ],
+    "notes": []
    },
    {
     "n": 406,
     "title": "Correlation: Pearson's & Spearman's",
     "videoId": "EyMHz5k4SU0",
-    "partial": true
+    "partial": true,
+    "moments": [
+     {
+      "t": 6,
+      "type": "Overview",
+      "title": "Two correlation coefficients",
+      "text": "Pearson's product-moment correlation coefficient $r$, and Spearman's rank correlation coefficient $r_s$."
+     },
+     {
+      "t": 74,
+      "type": "Key idea",
+      "title": "Is the trend strong?",
+      "text": "A line of best fit shows a trend; correlation measures how strong it is."
+     },
+     {
+      "t": 104,
+      "type": "Concept",
+      "title": "Direction",
+      "text": "Positive: $y$ rises as $x$ rises. Negative: $y$ falls, as with coffee sales on hotter days."
+     },
+     {
+      "t": 159,
+      "type": "Concept",
+      "title": "Strength",
+      "text": "Strength is how close the points lie to the line: strong, moderate, or weak."
+     },
+     {
+      "t": 214,
+      "type": "Reference",
+      "title": "Rough bands for $r$",
+      "text": "A rule of thumb: about 0.75 to 1 strong, 0.5 to 0.75 moderate, 0.1 to 0.5 weak; the same for negative values."
+     },
+     {
+      "t": 261,
+      "type": "Calculator",
+      "title": "Finding $r$",
+      "text": "Enter $x$ and $y$ as two lists and run a two-variable statistics calculation (TI-Nspire shown)."
+     },
+     {
+      "t": 324,
+      "type": "Worked example",
+      "title": "$r=0.854$",
+      "text": "Strong positive correlation between years of teaching and performance score."
+     },
+     {
+      "t": 347,
+      "type": "Definition",
+      "title": "Spearman's $r_s$",
+      "text": "The same correlation calculation, but on the ranks of the data instead of the values."
+     },
+     {
+      "t": 380,
+      "type": "Procedure",
+      "title": "Ranking",
+      "text": "Rank each variable from 1 to 8. Either direction works, as long as both variables use the same one."
+     },
+     {
+      "t": 415,
+      "type": "Visual",
+      "title": "Plotting the ranks",
+      "text": "Rank against rank: not a perfect 1-1, 2-2 pattern, but close."
+     },
+     {
+      "t": 487,
+      "type": "Worked example",
+      "title": "$r_s=0.814$",
+      "text": "Enter the ranks as the data and repeat the two-variable calculation."
+     }
+    ],
+    "notes": [
+     {
+      "kind": "omission",
+      "title": "Tied values",
+      "text": "The example has no tied values, so the video does not show how to rank them.",
+      "write": "Give tied values the average of the ranks they would take, for example 5.5 and 5.5.",
+      "section": "ku"
+     }
+    ]
    },
    {
     "n": 407,
     "title": "Line of Regression Equation (& Reliability)",
     "videoId": "biyosVy8it4",
-    "partial": false
+    "partial": false,
+    "moments": [
+     {
+      "t": 2,
+      "type": "Overview",
+      "title": "The regression line",
+      "text": "Finding the equation of the line of best fit, then judging whether its estimates are reliable."
+     },
+     {
+      "t": 61,
+      "type": "Key idea",
+      "title": "Recap",
+      "text": "$r=0.854$ showed a strong positive relationship, so a line is a sensible model."
+     },
+     {
+      "t": 145,
+      "type": "Formula",
+      "title": "Gradient-intercept form",
+      "text": "$y=mx+c$: $m$ is the gradient (rise over run) and $c$ is the $y$-intercept."
+     },
+     {
+      "t": 225,
+      "type": "Calculator",
+      "title": "Linear regression",
+      "text": "The calculator's linear regression gives the gradient and intercept directly (TI-Nspire shown)."
+     },
+     {
+      "t": 247,
+      "type": "Reference",
+      "title": "Letters differ",
+      "text": "Calculators label the constant differently; it is still the $y$-intercept."
+     },
+     {
+      "t": 287,
+      "type": "Worked example",
+      "title": "The equation",
+      "text": "Score $=3.62\\times$ years $+54.2$."
+     },
+     {
+      "t": 317,
+      "type": "Worked example",
+      "title": "A prediction",
+      "text": "For 10 years of teaching the line estimates a score of 90.4."
+     },
+     {
+      "t": 353,
+      "type": "Key idea",
+      "title": "Reliability check 1",
+      "text": "Is the correlation strong? A weak $r$ means the line does not represent the data."
+     },
+     {
+      "t": 384,
+      "type": "Key idea",
+      "title": "Reliability check 2",
+      "text": "Is the new $x$-value inside the data range, here 3.4 to 11 years?"
+     },
+     {
+      "t": 425,
+      "type": "Definition",
+      "title": "Interpolation",
+      "text": "Estimating inside the data range with a strong correlation: a reliable estimate."
+     },
+     {
+      "t": 431,
+      "type": "Definition",
+      "title": "Extrapolation",
+      "text": "Estimating outside the range is unreliable: 25 years gives 144.7, more than the maximum score of 100."
+     }
+    ],
+    "notes": [
+     {
+      "kind": "omission",
+      "title": "IB letters",
+      "text": "The video writes the line as $y=mx+c$.",
+      "write": "The IB writes the regression line as $y=ax+b$, with gradient $a$ and intercept $b$.",
+      "section": "ku"
+     }
+    ]
    }
-  ]
+  ],
+  "sharedNote": {
+   "kind": "note",
+   "title": "Different calculator",
+   "text": "These videos use a TI-Nspire. The keys and menus are different on the Casio fx-CG50.",
+   "write": "Follow the GDC steps section on this page for the fx-CG50.",
+   "section": "gdc"
+  }
  },
  "ican": [
   {

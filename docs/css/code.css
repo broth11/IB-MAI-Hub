@@ -15,7 +15,9 @@
 .vid-tab { font: inherit; font-size: 14px; padding: 6px 12px; border: 1px solid var(--color-divider); background: transparent; cursor: pointer; }
 .vid-tab.is-on { border-color: var(--color-accent); color: var(--color-accent-700); font-weight: 600; }
 .vid-tab .also { font-size: 11px; opacity: 0.7; }
-.code-sec .video-frame { max-width: 860px; }
+.code-sec > .code-video { max-width: none; padding: 0; border-bottom: 0; }
+.code-video .video-col { top: 190px; }
+.mm-h { margin: 0 0 8px; font-size: 18px; }
 
 .ican { list-style: none; padding: 0; margin: 0; }
 .ican li { border-top: 1px solid var(--color-divider); }
@@ -85,3 +87,4 @@ a.bubble:hover { background: var(--color-accent-100); }
 .code-page .lesson-head { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
 .code-page .lesson-head h1 { max-width: 640px; }
 .mode-switch { max-width: 240px; }
+.corr-badge.corr-note { color: #334; background: var(--color-surface); border-color: var(--color-neutral-500); }

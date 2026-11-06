@@ -1,0 +1,79 @@
+{
+ "source": "Timestamps read from the Topic 4 transcripts (YouTube auto-captions; 406 and 407 Whisper), 6 Nov 2026. Wording is paraphrased.",
+ "sharedNote": {"kind": "note", "title": "Different calculator", "text": "These videos use a TI-Nspire. The keys and menus are different on the Casio fx-CG50.", "write": "Follow the GDC steps section on this page for the fx-CG50.", "section": "gdc"},
+ "videos": {
+  "405": {"moments": [
+   {"t": 18, "type": "Overview", "title": "Two variables", "text": "Bivariate statistics: each individual gives two measurements, so we look for a relationship between them."},
+   {"t": 48, "type": "Definition", "title": "Independent and dependent", "text": "The independent (input) variable is $x$; the dependent (output) variable is $y$."},
+   {"t": 70, "type": "Key idea", "title": "The question to ask", "text": "Does $x$ influence $y$? A growing child's height and age is the classic example."},
+   {"t": 126, "type": "Worked example", "title": "Teachers' experience and scores", "text": "Eight teachers: years of experience against a performance score out of 100."},
+   {"t": 226, "type": "Key idea", "title": "Which variable goes where", "text": "The independent variable always goes on the horizontal axis and the dependent variable on the vertical axis."},
+   {"t": 254, "type": "Procedure", "title": "Plotting the points", "text": "Each teacher becomes one point: years across, score up."},
+   {"t": 307, "type": "Visual", "title": "Reading the trend", "text": "The points rise from low left to high right, and a line of best fit summarises that trend."},
+   {"t": 341, "type": "Overview", "title": "What comes next", "text": "Measuring the strength of the trend (correlation) and finding the line's equation (regression)."}
+  ]},
+  "406": {"moments": [
+   {"t": 6, "type": "Overview", "title": "Two correlation coefficients", "text": "Pearson's product-moment correlation coefficient $r$, and Spearman's rank correlation coefficient $r_s$."},
+   {"t": 74, "type": "Key idea", "title": "Is the trend strong?", "text": "A line of best fit shows a trend; correlation measures how strong it is."},
+   {"t": 104, "type": "Concept", "title": "Direction", "text": "Positive: $y$ rises as $x$ rises. Negative: $y$ falls, as with coffee sales on hotter days."},
+   {"t": 159, "type": "Concept", "title": "Strength", "text": "Strength is how close the points lie to the line: strong, moderate, or weak."},
+   {"t": 214, "type": "Reference", "title": "Rough bands for $r$", "text": "A rule of thumb: about 0.75 to 1 strong, 0.5 to 0.75 moderate, 0.1 to 0.5 weak; the same for negative values."},
+   {"t": 261, "type": "Calculator", "title": "Finding $r$", "text": "Enter $x$ and $y$ as two lists and run a two-variable statistics calculation (TI-Nspire shown)."},
+   {"t": 324, "type": "Worked example", "title": "$r=0.854$", "text": "Strong positive correlation between years of teaching and performance score."},
+   {"t": 347, "type": "Definition", "title": "Spearman's $r_s$", "text": "The same correlation calculation, but on the ranks of the data instead of the values."},
+   {"t": 380, "type": "Procedure", "title": "Ranking", "text": "Rank each variable from 1 to 8. Either direction works, as long as both variables use the same one."},
+   {"t": 415, "type": "Visual", "title": "Plotting the ranks", "text": "Rank against rank: not a perfect 1-1, 2-2 pattern, but close."},
+   {"t": 487, "type": "Worked example", "title": "$r_s=0.814$", "text": "Enter the ranks as the data and repeat the two-variable calculation."}
+  ], "notes": [
+   {"kind": "omission", "title": "Tied values", "text": "The example has no tied values, so the video does not show how to rank them.", "write": "Give tied values the average of the ranks they would take, for example 5.5 and 5.5.", "section": "ku"}
+  ]},
+  "407": {"moments": [
+   {"t": 2, "type": "Overview", "title": "The regression line", "text": "Finding the equation of the line of best fit, then judging whether its estimates are reliable."},
+   {"t": 61, "type": "Key idea", "title": "Recap", "text": "$r=0.854$ showed a strong positive relationship, so a line is a sensible model."},
+   {"t": 145, "type": "Formula", "title": "Gradient-intercept form", "text": "$y=mx+c$: $m$ is the gradient (rise over run) and $c$ is the $y$-intercept."},
+   {"t": 225, "type": "Calculator", "title": "Linear regression", "text": "The calculator's linear regression gives the gradient and intercept directly (TI-Nspire shown)."},
+   {"t": 247, "type": "Reference", "title": "Letters differ", "text": "Calculators label the constant differently; it is still the $y$-intercept."},
+   {"t": 287, "type": "Worked example", "title": "The equation", "text": "Score $=3.62\\times$ years $+54.2$."},
+   {"t": 317, "type": "Worked example", "title": "A prediction", "text": "For 10 years of teaching the line estimates a score of 90.4."},
+   {"t": 353, "type": "Key idea", "title": "Reliability check 1", "text": "Is the correlation strong? A weak $r$ means the line does not represent the data."},
+   {"t": 384, "type": "Key idea", "title": "Reliability check 2", "text": "Is the new $x$-value inside the data range, here 3.4 to 11 years?"},
+   {"t": 425, "type": "Definition", "title": "Interpolation", "text": "Estimating inside the data range with a strong correlation: a reliable estimate."},
+   {"t": 431, "type": "Definition", "title": "Extrapolation", "text": "Estimating outside the range is unreliable: 25 years gives 144.7, more than the maximum score of 100."}
+  ], "notes": [
+   {"kind": "omission", "title": "IB letters", "text": "The video writes the line as $y=mx+c$.", "write": "The IB writes the regression line as $y=ax+b$, with gradient $a$ and intercept $b$.", "section": "ku"}
+  ]},
+  "408": {"moments": [
+   {"t": 3, "type": "Overview", "title": "Coefficient of determination", "text": "An HL-only idea in bivariate statistics, taught through five key concepts."},
+   {"t": 42, "type": "Definition", "title": "What $R^2$ means", "text": "The proportion of the variation in $y$ that the model explains, with $x$ as the input."},
+   {"t": 54, "type": "Worked example", "title": "Ice-cream sales", "text": "A corner shop records temperature and ice-cream sales on four days."},
+   {"t": 142, "type": "Visual", "title": "Scatter and line", "text": "The points sit close to the regression line: a strong positive pattern."},
+   {"t": 190, "type": "Key idea", "title": "Link to $r$", "text": "For a linear model, $R^2$ is the square of the correlation coefficient $r$."},
+   {"t": 205, "type": "Exam wording", "title": "Interpreting $R^2=0.93$", "text": "93% of the variation in ice-cream sales is explained by the variation in temperature."},
+   {"t": 250, "type": "Key idea", "title": "A lower $R^2$", "text": "$R^2=0.5$ would mean only half of the variation in $y$ is explained by $x$."},
+   {"t": 295, "type": "Concept", "title": "How the line is chosen", "text": "The calculator picks the line that makes the sum of squared residuals as small as possible."},
+   {"t": 344, "type": "Definition", "title": "Residual", "text": "The vertical gap between a data point's $y$ and the line's predicted $\\hat{y}$."},
+   {"t": 372, "type": "Key idea", "title": "Why square them", "text": "Positive and negative residuals would cancel, so each residual is squared before adding."},
+   {"t": 406, "type": "Key idea", "title": "$SS_{res}=0$", "text": "Every point lies on the line: a perfect fit."},
+   {"t": 430, "type": "Concept", "title": "Total sum of squares", "text": "$SS_{tot}$ squares the gaps from the mean line $\\bar{y}$, as a scale for $SS_{res}$."},
+   {"t": 486, "type": "Formula", "title": "$R^2$ from the sums", "text": "$R^2=1-\\dfrac{SS_{res}}{SS_{tot}}$. This helps understanding but is not examined."},
+   {"t": 520, "type": "Exam wording", "title": "In the exam", "text": "Find $R^2$ on the calculator; questions may ask you to calculate $SS_{res}$ or compare models."}
+  ]},
+  "409": {"moments": [
+   {"t": 3, "type": "Overview", "title": "Non-linear regression", "text": "HL only: fitting curves when the data are not linear."},
+   {"t": 62, "type": "Reference", "title": "The model types", "text": "Know the form and the shape of each model so you can match a scatter diagram to one."},
+   {"t": 88, "type": "Worked example", "title": "Exhibition visitors", "text": "Guests per day after an exhibition opens: high at first, then falling and levelling off."},
+   {"t": 185, "type": "Procedure", "title": "Look first", "text": "Draw the scatter diagram before choosing a model."},
+   {"t": 230, "type": "Procedure", "title": "Try a model", "text": "Overlay an exponential regression and check by eye that it follows the points."},
+   {"t": 259, "type": "Worked example", "title": "The exponential model", "text": "Guests $\\approx166\\times0.93^{d}$, where $d$ is days after opening."},
+   {"t": 269, "type": "Key idea", "title": "Comparing models", "text": "Compare the $R^2$ values of the models you try."},
+   {"t": 331, "type": "Worked example", "title": "Linear against exponential", "text": "Linear $R^2=0.91$, exponential $R^2=0.97$."},
+   {"t": 345, "type": "Exam wording", "title": "Read the question", "text": "Questions often name the model to use; if not, choose one and justify it."},
+   {"t": 371, "type": "Concept", "title": "Linearising", "text": "Taking logarithms of the data can turn a curve into a straight line."},
+   {"t": 416, "type": "Calculator", "title": "A log column", "text": "Make a new list of $\\log G$ values on the calculator instead of typing each one (TI-Nspire shown)."},
+   {"t": 510, "type": "Visual", "title": "The straightened data", "text": "$\\log G$ against $d$ is close to linear."},
+   {"t": 536, "type": "Worked example", "title": "The linear form", "text": "$\\log G=0.03d+2.22$: a straight line in $\\log G$, not in $G$."}
+  ], "notes": [
+   {"kind": "omission", "title": "Choosing by $R^2$ alone", "text": "The video chooses the model with the higher $R^2$.", "write": "Also check the model makes sense in context: outside the data, at the start, and in the long run.", "section": "misc"}
+  ]}
+ }
+}

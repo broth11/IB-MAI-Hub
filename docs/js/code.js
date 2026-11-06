@@ -2,7 +2,8 @@
 // Learn mode shows every section; Revise mode shows only the sections marked revise in site.json codePage.
 // Only items with status "approved" are shown; drafts stay in the data until Ben approves them.
 import './tex-text.js';
-import { esc, tex, getJSON, $, $$ } from './util.js';
+import { esc, tex, fmtTime, getJSON, $, $$ } from './util.js';
+import { seekVideo } from './video.js';
 import { renderTopbar } from './shell.js';
 
 const ok = (arr) => (arr || []).filter((x) => x.status === 'approved');
@@ -17,13 +18,28 @@ function keyed(t) {
 }
 
 const R = {
-  video(C) {
+  video(C, ctx) {
     if (C.videos.status !== 'approved' || !C.videos.items.length) return '';
-    const v = C.videos.items;
-    return `<div class="vid-tabs">${v.map((x, i) => `<button class="vid-tab${i ? '' : ' is-on'}" data-vid="${i}">${esc(x.title)}${x.partial ? ' <span class="also">part</span>' : ''}</button>`).join('')}</div>
-      <div class="video-frame"><iframe id="yt" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/${esc(v[0].videoId)}?rel=0&modestbranding=1"
-        title="${esc(v[0].title)}" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
-      <div class="video-note">Videos by Revision Village. Timestamped key moments are coming.</div>`;
+    const v = C.videos.items; const cur = v[ctx.vid || 0];
+    const tabs = v.length > 1 ? `<div class="vid-tabs">${v.map((x, i) => `<button class="vid-tab${x === cur ? ' is-on' : ''}" data-vid="${i}">${esc(x.title)}${x.partial ? ' <span class="also">part</span>' : ''}</button>`).join('')}</div>` : '';
+    const notes = [...(C.videos.sharedNote ? [C.videos.sharedNote] : []), ...(cur.notes || [])];
+    const LBL = { omission: 'Not in the video', error: 'Correction' };
+    const notesHtml = notes.length ? `<div class="corrections"><div class="corr-head">Before you rely on this video</div>${notes.map((c) => `
+      <div class="corr"><span class="corr-badge corr-${esc(c.kind)}">${LBL[c.kind] || 'Note'}</span>
+        <div class="corr-title">${tex(c.title)}</div><div class="corr-text">${tex(c.text)}</div>
+        <div class="corr-write"><b>Write:</b> ${tex(c.write)}</div>
+        ${c.section && ctx.shown.has(c.section) ? `<button class="link-btn" data-sec-tab="${esc(c.section)}">Go to ${esc(ctx.tabName[c.section])}</button>` : ''}</div>`).join('')}</div>` : '';
+    const moments = (cur.moments || []).map((m) => `
+      <button class="moment" data-seek="${m.t}"><span class="time">${fmtTime(m.t)}</span>
+        <span class="body"><span class="eyebrow">${esc(m.type)}</span><span class="mtitle">${tex(m.title)}</span><span class="mtext">${tex(m.text)}</span></span></button>`).join('');
+    return `${tabs}<div class="video-sec code-video">
+      <div class="video-col"><div class="video-frame"><iframe id="yt" referrerpolicy="strict-origin-when-cross-origin"
+        src="https://www.youtube.com/embed/${esc(cur.videoId)}?enablejsapi=1&rel=0&modestbranding=1" title="${esc(cur.title)}"
+        allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+        ${notesHtml}
+        <div class="video-note">Select a key moment to jump the video there. Video by Revision Village: <a href="https://www.youtube.com/watch?v=${esc(cur.videoId)}" target="_blank" rel="noopener">open on YouTube</a>.</div></div>
+      ${moments ? `<div class="moments-col"><h3 class="mm-h">Key moments</h3><div class="moments-box">${moments}</div></div>` : ''}
+    </div>`;
   },
   ican(C) {
     const items = ok(C.ican); if (!items.length) return '';
@@ -99,6 +115,8 @@ const R = {
 
 function pageHtml(C, ctx, mode) {
   const secs = ctx.site.codePage.sections.filter((s) => mode === 'learn' || s.revise);
+  ctx.tabName = Object.fromEntries(secs.map((s) => [s.key, s.tab]));
+  ctx.shown = new Set(secs.filter((s) => s.key !== 'video' && R[s.key](C, ctx)).map((s) => s.key));
   const rendered = secs.map((s) => ({ s, html: R[s.key](C, ctx) })).filter((x) => x.html);
   const body = rendered.map(({ s, html }) => `
     <section id="s-${s.key}" class="sec code-sec">
@@ -151,7 +169,7 @@ async function main() {
     const slug = new URLSearchParams(location.search).get('c') || '';
     if (!/^[a-z0-9-]+$/.test(slug)) throw new Error('No syllabus code chosen.');
     const C = await getJSON(`data/codes/${slug}.json`).catch(() => { throw new Error('This syllabus code does not have a page yet.'); });
-    const ctx = { site, syl };
+    const ctx = { site, syl, vid: 0 };
     const unit = Number(C.code.split(' ')[1].split('.')[0]);
     let mode = store.get('codeMode', 'learn');
     document.title = `${C.code} ${C.title} | ${site.course}`;
@@ -168,11 +186,14 @@ async function main() {
       if (t) { const el = document.getElementById('s-' + t.dataset.secTab); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - bar.offsetHeight - 8, behavior: 'smooth' }); return; }
       const r = e.target.closest('[data-reveal]');
       if (r) { const a = document.getElementById(r.dataset.reveal); a.hidden = !a.hidden; r.textContent = a.hidden ? 'Show solution' : 'Hide solution'; return; }
+      const sk = e.target.closest('[data-seek]');
+      if (sk) { seekVideo(Number(sk.dataset.seek)); const f = $('#yt'); if (f && f.getBoundingClientRect().top < bar.offsetHeight) f.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
       const v = e.target.closest('[data-vid]');
       if (v) {
-        const x = C.videos.items[Number(v.dataset.vid)];
-        $('#yt').src = `https://www.youtube.com/embed/${x.videoId}?rel=0&modestbranding=1`;
-        $$('.vid-tab').forEach((b) => b.classList.toggle('is-on', b === v));
+        ctx.vid = Number(v.dataset.vid);
+        const sec = document.getElementById('s-video');
+        sec.querySelectorAll('.vid-tabs, .video-sec').forEach((n) => n.remove());
+        sec.insertAdjacentHTML('beforeend', R.video(C, ctx));
       }
     });
   } catch (e) {

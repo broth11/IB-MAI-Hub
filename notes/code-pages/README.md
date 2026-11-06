@@ -29,12 +29,15 @@ Order and Revise-mode visibility live in `docs/data/site.json` under `codePage.s
 1. Claude drafts every statement from Ben's resources (transcripts, question bank, syllabus, Haese) with `content_<batch>.py`. Every number is computed in code.
 2. `build_review.py` makes a review artifact: Agree, Revise (with a note) or Cut per statement, exported as a verdicts JSON.
 3. Claude applies the verdicts, lists changed items in `changed`, and runs the next round; approved items are hidden in later rounds.
-4. `.claude/skills/video-study-site/scripts/export_code_pages.py <pilot.json> <verdicts_r1.json> [<verdicts_r2.json> ...] .` writes the code-page data. Each item carries `status`; the page shows only `approved`. Cut items never reach the data.
+4. `.claude/skills/video-study-site/scripts/export_code_pages.py <pilot.json> <verdicts_r1.json> [<verdicts_r2.json> ...] . --moments notes/code-pages/moments-topic4.json` writes the code-page data. Each item carries `status`; the page shows only `approved`. Cut items never reach the data.
 
 ## Not built yet
 
 - **Visuals.** The carousel stories are approved, but no figures are drawn. A visual shows only once its `figure` path is set.
 - **Explorers.** Four specs are approved (SL 4.4 correlation slider; SL 4.10 Pearson versus Spearman; AHL 4.13 choose the model, and linearising data). Each needs a discussion before it is built. Nothing renders until then.
 - **GDC screens.** Steps are text with keycaps. Steps not yet checked on the emulator show "Key names still to be checked"; captures come with the `gdc-online-deck` workflow.
-- **Key moments.** Videos are embedded without timestamps; key moments come from the `video-study-site` skill.
 - **Drafts still waiting for Ben:** SL 4.4 GDC steps 4 and 5 and key question 2; SL 4.10 GDC "put back" step and its mind map; AHL 4.13 mind map.
+
+## Video section
+
+Key moments and the notes box under each video come from `moments-topic4.json` (timestamps read from the Topic 4 transcripts; wording paraphrased). Every video in Topic 4 uses a TI-Nspire, so one shared note sends students to the fx-CG50 GDC steps. Per-video notes flag what a video leaves out (tied ranks in 406, the IB's $y=ax+b$ letters in 407, choosing a model by $R^2$ alone in 409). Caption slips are not shown to students: 408's captions write "r s" for $R^2$ throughout.

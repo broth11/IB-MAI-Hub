@@ -10,9 +10,93 @@
     "n": 406,
     "title": "Correlation: Pearson's & Spearman's",
     "videoId": "EyMHz5k4SU0",
-    "partial": false
+    "partial": false,
+    "moments": [
+     {
+      "t": 6,
+      "type": "Overview",
+      "title": "Two correlation coefficients",
+      "text": "Pearson's product-moment correlation coefficient $r$, and Spearman's rank correlation coefficient $r_s$."
+     },
+     {
+      "t": 74,
+      "type": "Key idea",
+      "title": "Is the trend strong?",
+      "text": "A line of best fit shows a trend; correlation measures how strong it is."
+     },
+     {
+      "t": 104,
+      "type": "Concept",
+      "title": "Direction",
+      "text": "Positive: $y$ rises as $x$ rises. Negative: $y$ falls, as with coffee sales on hotter days."
+     },
+     {
+      "t": 159,
+      "type": "Concept",
+      "title": "Strength",
+      "text": "Strength is how close the points lie to the line: strong, moderate, or weak."
+     },
+     {
+      "t": 214,
+      "type": "Reference",
+      "title": "Rough bands for $r$",
+      "text": "A rule of thumb: about 0.75 to 1 strong, 0.5 to 0.75 moderate, 0.1 to 0.5 weak; the same for negative values."
+     },
+     {
+      "t": 261,
+      "type": "Calculator",
+      "title": "Finding $r$",
+      "text": "Enter $x$ and $y$ as two lists and run a two-variable statistics calculation (TI-Nspire shown)."
+     },
+     {
+      "t": 324,
+      "type": "Worked example",
+      "title": "$r=0.854$",
+      "text": "Strong positive correlation between years of teaching and performance score."
+     },
+     {
+      "t": 347,
+      "type": "Definition",
+      "title": "Spearman's $r_s$",
+      "text": "The same correlation calculation, but on the ranks of the data instead of the values."
+     },
+     {
+      "t": 380,
+      "type": "Procedure",
+      "title": "Ranking",
+      "text": "Rank each variable from 1 to 8. Either direction works, as long as both variables use the same one."
+     },
+     {
+      "t": 415,
+      "type": "Visual",
+      "title": "Plotting the ranks",
+      "text": "Rank against rank: not a perfect 1-1, 2-2 pattern, but close."
+     },
+     {
+      "t": 487,
+      "type": "Worked example",
+      "title": "$r_s=0.814$",
+      "text": "Enter the ranks as the data and repeat the two-variable calculation."
+     }
+    ],
+    "notes": [
+     {
+      "kind": "omission",
+      "title": "Tied values",
+      "text": "The example has no tied values, so the video does not show how to rank them.",
+      "write": "Give tied values the average of the ranks they would take, for example 5.5 and 5.5.",
+      "section": "ku"
+     }
+    ]
    }
-  ]
+  ],
+  "sharedNote": {
+   "kind": "note",
+   "title": "Different calculator",
+   "text": "These videos use a TI-Nspire. The keys and menus are different on the Casio fx-CG50.",
+   "write": "Follow the GDC steps section on this page for the fx-CG50.",
+   "section": "gdc"
+  }
  },
  "ican": [
   {
