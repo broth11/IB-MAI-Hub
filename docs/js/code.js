@@ -21,7 +21,7 @@ const R = {
   video(C, ctx) {
     if (C.videos.status !== 'approved' || !C.videos.items.length) return '';
     const v = C.videos.items; const cur = v[ctx.vid || 0];
-    const tabs = v.length > 1 ? `<div class="vid-tabs">${v.map((x, i) => `<button class="vid-tab${x === cur ? ' is-on' : ''}" data-vid="${i}">${esc(x.title)}${x.partial ? ' <span class="also">part</span>' : ''}</button>`).join('')}</div>` : '';
+    const tabs = v.length > 1 ? `<div class="vid-row" role="tablist">${v.map((x, i) => `<button class="vid-tab${x === cur ? ' is-on' : ''}" data-vid="${i}" role="tab">${esc(x.title)}${x.partial ? ' <span class="also">(part)</span>' : ''}</button>`).join('')}</div>` : '';
     const notes = [...(C.videos.sharedNote ? [C.videos.sharedNote] : []), ...(cur.notes || [])];
     const LBL = { omission: 'Not in the video', error: 'Correction' };
     const notesHtml = notes.length ? `<div class="corrections"><div class="corr-head">Before you rely on this video</div>${notes.map((c) => `
@@ -32,14 +32,14 @@ const R = {
     const moments = (cur.moments || []).map((m) => `
       <button class="moment" data-seek="${m.t}"><span class="time">${fmtTime(m.t)}</span>
         <span class="body"><span class="eyebrow">${esc(m.type)}</span><span class="mtitle">${tex(m.title)}</span><span class="mtext">${tex(m.text)}</span></span></button>`).join('');
-    return `${tabs}<div class="video-sec code-video">
+    return `<div class="code-video-wrap">${tabs}<div class="video-sec code-video">
       <div class="video-col"><div class="video-frame"><iframe id="yt" referrerpolicy="strict-origin-when-cross-origin"
         src="https://www.youtube.com/embed/${esc(cur.videoId)}?enablejsapi=1&rel=0&modestbranding=1" title="${esc(cur.title)}"
         allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
         ${notesHtml}
         <div class="video-note">Select a key moment to jump the video there. Video by Revision Village: <a href="https://www.youtube.com/watch?v=${esc(cur.videoId)}" target="_blank" rel="noopener">open on YouTube</a>.</div></div>
-      ${moments ? `<div class="moments-col"><h3 class="mm-h">Key moments</h3><div class="moments-box">${moments}</div></div>` : ''}
-    </div>`;
+      ${moments ? `<div class="moments-col"><div class="mm-h">Key moments</div><div class="moments-box">${moments}</div></div>` : ''}
+    </div></div>`;
   },
   ican(C) {
     const items = ok(C.ican); if (!items.length) return '';
@@ -121,7 +121,7 @@ function pageHtml(C, ctx, mode) {
   const body = rendered.map(({ s, html }) => `
     <section id="s-${s.key}" class="sec code-sec">
       <div class="kicker">${esc(s.kicker || '')}</div>
-      <h2>${esc(s.title)}</h2>${html}
+      <h2>${esc(s.title)}</h2><div class="code-mod">${html}</div>
     </section>`).join('');
   return {
     tabs: rendered.map(({ s }) => ({ id: s.key, label: s.tab })),
@@ -176,14 +176,17 @@ async function main() {
     const draw = () => {
       const P = pageHtml(C, ctx, mode);
       bar.innerHTML = renderTopbar({ site, activeUnit: unit, crumb: `Topic ${unit} › ${C.code} ${C.title}`, sections: P.tabs, toggleAll: false });
-      app.innerHTML = P.html; wire(C);
+      app.innerHTML = P.html; wire(C); setBar();
     };
+    // Modules size themselves to the screen below the sticky bar (CSS var --bar).
+    const setBar = () => document.documentElement.style.setProperty('--bar', bar.offsetHeight + 'px');
+    window.addEventListener('resize', setBar);
     draw();
     document.addEventListener('click', (e) => {
       const m = e.target.closest('[data-mode]');
       if (m) { mode = m.dataset.mode; store.set('codeMode', mode); draw(); return; }
       const t = e.target.closest('[data-sec-tab]');
-      if (t) { const el = document.getElementById('s-' + t.dataset.secTab); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - bar.offsetHeight - 8, behavior: 'smooth' }); return; }
+      if (t) { const el = document.getElementById('s-' + t.dataset.secTab); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - bar.offsetHeight, behavior: 'smooth' }); return; }
       const r = e.target.closest('[data-reveal]');
       if (r) { const a = document.getElementById(r.dataset.reveal); a.hidden = !a.hidden; r.textContent = a.hidden ? 'Show solution' : 'Hide solution'; return; }
       const sk = e.target.closest('[data-seek]');
@@ -192,8 +195,7 @@ async function main() {
       if (v) {
         ctx.vid = Number(v.dataset.vid);
         const sec = document.getElementById('s-video');
-        sec.querySelectorAll('.vid-tabs, .video-sec').forEach((n) => n.remove());
-        sec.insertAdjacentHTML('beforeend', R.video(C, ctx));
+        sec.querySelector('.code-video-wrap').outerHTML = R.video(C, ctx);
       }
     });
   } catch (e) {

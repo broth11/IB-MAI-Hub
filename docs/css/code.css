@@ -1,7 +1,10 @@
 /* Code pages (code.html). Uses the Modernist tokens; only the parts lesson pages do not already style. */
-.code-sec { padding: 32px 0; }
-.code-sec h2 { margin: 6px 0 16px; font-size: 26px; line-height: 1.1; }
-.code-sec > * { max-width: 860px; }
+/* Each section jumps flush under the sticky bar, and its module fits the screen below it (as in the AP Statistics Hub).
+   Long lists continue below the fold and are reached by scrolling. */
+.code-sec { padding: 24px 0 32px; scroll-margin-top: var(--bar, 150px); }
+.code-sec h2 { margin: 4px 0 14px; font-size: 24px; line-height: 1.1; }
+.code-mod { max-width: 860px; }
+#s-video .code-mod { max-width: none; }
 .code-sec .small-note { margin-top: 10px; }
 
 
@@ -11,13 +14,19 @@
 .mode-btn.is-on { background: var(--color-text); color: var(--color-bg); }
 .mode-switch .small-note { flex-basis: 100%; margin-top: 6px; }
 
-.vid-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-.vid-tab { font: inherit; font-size: 14px; padding: 6px 12px; border: 1px solid var(--color-divider); background: transparent; cursor: pointer; }
-.vid-tab.is-on { border-color: var(--color-accent); color: var(--color-accent-700); font-weight: 600; }
-.vid-tab .also { font-size: 11px; opacity: 0.7; }
-.code-sec > .code-video { max-width: none; padding: 0; border-bottom: 0; }
-.code-video .video-col { top: 190px; }
-.mm-h { margin: 0 0 8px; font-size: 18px; }
+/* The video buttons always sit on one row above the player; on a narrow screen the row scrolls sideways. */
+.vid-row { display: flex; flex-wrap: nowrap; gap: 6px; margin-bottom: 10px; overflow-x: auto; }
+.vid-tab { flex: none; font: inherit; font-size: 13px; line-height: 1.2; white-space: nowrap; padding: 6px 10px; border: 1px solid var(--color-divider); background: transparent; cursor: pointer; }
+.vid-tab:hover { background: color-mix(in srgb, var(--color-accent) 8%, transparent); }
+.vid-tab.is-on { border-color: var(--color-accent); color: var(--color-accent-700); font-weight: 700; }
+.vid-tab .also { font-size: 11px; font-weight: 400; opacity: 0.7; }
+.code-video { padding: 0; border-bottom: 0; gap: 28px; }
+/* The player is as wide as the column allows, but never taller than the screen below the bar and the section heading. */
+.code-video .video-col { position: static; flex: 3 1 480px; }
+.code-video .video-frame { width: min(100%, calc((100dvh - var(--bar, 150px) - 150px) * 16 / 9)); }
+.code-video .moments-col { flex: 2 1 300px; max-height: calc(100dvh - var(--bar, 150px) - 150px); display: flex; flex-direction: column; }
+.code-video .moments-box { max-height: none; flex: 1 1 auto; min-height: 160px; overflow-y: auto; }
+.mm-h { margin: 0 0 8px; font-size: 18px; font-weight: 700; }
 
 .ican { list-style: none; padding: 0; margin: 0; }
 .ican li { border-top: 1px solid var(--color-divider); }
@@ -88,3 +97,14 @@ a.bubble:hover { background: var(--color-accent-100); }
 .code-page .lesson-head h1 { max-width: 640px; }
 .mode-switch { max-width: 240px; }
 .corr-badge.corr-note { color: #334; background: var(--color-surface); border-color: var(--color-neutral-500); }
+
+/* The last section can always scroll flush under the bar. */
+.code-page .code-sec:last-of-type { min-height: calc(100dvh - var(--bar, 150px)); box-sizing: border-box; border-bottom: 0; }
+/* Tighter cards and parts so these modules fit a laptop screen. */
+.misc { gap: 8px; }
+.misc-card > div { padding: 8px 12px; font-size: 14px; line-height: 1.4; }
+.misc-card .eyebrow { margin-bottom: 2px; }
+.wpart { padding: 4px 0 4px 12px; margin: 6px 0; }
+.wpart .btn-ghost { font-size: 13px; padding-block: 2px; min-height: 0; }
+.worked p { margin-bottom: 8px; }
+.data-row { margin-bottom: 8px; }
