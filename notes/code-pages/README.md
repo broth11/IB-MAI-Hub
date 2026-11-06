@@ -34,10 +34,13 @@ Order and Revise-mode visibility live in `docs/data/site.json` under `codePage.s
 ## Not built yet
 
 - **Visuals.** The carousel stories are approved, but no figures are drawn. A visual shows only once its `figure` path is set.
-- **Explorers.** Four specs are approved (SL 4.4 correlation slider; SL 4.10 Pearson versus Spearman; AHL 4.13 choose the model, and linearising data). Each needs a discussion before it is built. Nothing renders until then.
 - **GDC screens.** Steps are text with keycaps. Steps not yet checked on the emulator show "Key names still to be checked"; captures come with the `gdc-online-deck` workflow.
 - **Drafts still waiting for Ben:** SL 4.4 GDC steps 4 and 5 and key question 2; SL 4.10 GDC "put back" step and its mind map; AHL 4.13 mind map.
 
 ## Video section
 
 Key moments and the notes box under each video come from `moments-topic4.json` (timestamps read from the Topic 4 transcripts; wording paraphrased). Every video in Topic 4 uses a TI-Nspire, so one shared note sends students to the fx-CG50 GDC steps. Per-video notes flag what a video leaves out (tied ranks in 406, the IB's $y=ax+b$ letters in 407, choosing a model by $R^2$ alone in 409). Caption slips are not shown to students: 408's captions write "r s" for $R^2$ throughout.
+
+## Explorers (built 6 Nov 2026)
+
+The four approved specs are built: `correlation-slider` (SL 4.4), `pearson-spearman` (SL 4.10), `model-choice` and `linearise` (AHL 4.13). Their data and settings are in `explorers-topic4.json`, made by `explorer_data.py` (seeded noise, so the numbers repeat). `explorer-check.json` holds the values each preset should show; the page values matched for every preset of `correlation-slider`, `pearson-spearman` and `linearise`, and for every linear, polynomial, exponential and power fit in `model-choice`. Sine and logistic fits are iterative: on the taxi, ball, pendulum and tide sets the page's optimum differs from scipy's, and on taxi and pendulum the page finds the better fit (higher $R^2$). The taxi sine fit has $R^2=0.994$: a very long period that mimics a line, a good case for "a high $R^2$ alone does not choose a model".

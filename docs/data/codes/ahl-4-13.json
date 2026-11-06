@@ -531,7 +531,224 @@
    "spec": "Buttons for data sets 1 to 5. Students pick a model (linear, quadratic, cubic, exponential, power, sine, logistic) and see the regression curve with $R^2$, $SS_{res}$, and MSE. A Reveal button shows the best model and why.",
    "suggest": "Use MSE as the GDC shows it (MSe). The reveal should give a context reason, not only the highest $R^2$.",
    "status": "approved",
-   "built": false
+   "built": true,
+   "config": {
+    "id": "ahl413-exp-1",
+    "explorer": "model-choice",
+    "intro": "Pick a data set, then try models. Each fit shows $R^2$, $SS_{res}$, and the MSE. Decide which model you would use before you press Reveal.",
+    "sets": [
+     {
+      "key": "taxi",
+      "label": "Taxi fares",
+      "xv": "d",
+      "yv": "C",
+      "xname": "distance, $d$ (km)",
+      "yname": "fare, $C$ (baht)",
+      "x": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       5.0,
+       6.0,
+       7.0,
+       8.0
+      ],
+      "y": [
+       44.02,
+       50.23,
+       53.35,
+       63.37,
+       67.42,
+       73.04,
+       81.43,
+       88.4
+      ],
+      "best": "linear",
+      "reason": "The fare grows by about the same amount for each extra kilometre, so a straight line fits, and a fixed starting fare explains the intercept. The curved models add parameters but barely lower $SS_{res}$."
+     },
+     {
+      "key": "ball",
+      "label": "Thrown ball",
+      "xv": "t",
+      "yv": "h",
+      "xname": "time, $t$ (s)",
+      "yname": "height, $h$ (m)",
+      "x": [
+       0.0,
+       0.2,
+       0.4,
+       0.6,
+       0.8,
+       1.0,
+       1.2,
+       1.4,
+       1.6,
+       1.8,
+       2.0
+      ],
+      "y": [
+       1.121,
+       3.146,
+       4.297,
+       5.238,
+       5.78,
+       5.843,
+       5.371,
+       4.884,
+       3.588,
+       2.346,
+       0.2518
+      ],
+      "best": "quadratic",
+      "reason": "Under gravity the height rises, peaks, and falls symmetrically: a quadratic. The cubic fits about as closely, but its extra term has no physical meaning."
+     },
+     {
+      "key": "views",
+      "label": "Video views",
+      "xv": "t",
+      "yv": "V",
+      "xname": "day, $t$",
+      "yname": "total views, $V$",
+      "x": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       5.0,
+       6.0,
+       7.0
+      ],
+      "y": [
+       120,
+       190,
+       310,
+       480,
+       790,
+       1240,
+       2010
+      ],
+      "best": "exponential",
+      "reason": "The views grow by about the same factor (about 1.6) each day, which is exponential growth. A cubic can follow these seven points, but it would turn down outside them."
+     },
+     {
+      "key": "pendulum",
+      "label": "Pendulum",
+      "xv": "L",
+      "yv": "T",
+      "xname": "length, $L$ (m)",
+      "yname": "period, $T$ (s)",
+      "x": [
+       0.2,
+       0.4,
+       0.6,
+       0.8,
+       1.0,
+       1.2,
+       1.5,
+       1.8,
+       2.0
+      ],
+      "y": [
+       0.9,
+       1.234,
+       1.537,
+       1.821,
+       2.014,
+       2.177,
+       2.451,
+       2.698,
+       2.853
+      ],
+      "best": "power",
+      "reason": "A power model $T=aL^b$ with $b$ close to 0.5 matches the physics: the period grows with the square root of the length, and $T=0$ when $L=0$."
+     },
+     {
+      "key": "tide",
+      "label": "Tide height",
+      "xv": "t",
+      "yv": "h",
+      "xname": "time, $t$ (hours)",
+      "yname": "water depth, $h$ (m)",
+      "x": [
+       0.0,
+       2.0,
+       4.0,
+       6.0,
+       8.0,
+       10.0,
+       12.0,
+       14.0,
+       16.0,
+       18.0,
+       20.0,
+       22.0,
+       24.0
+      ],
+      "y": [
+       4.147,
+       5.157,
+       4.502,
+       2.764,
+       1.087,
+       1.503,
+       3.389,
+       5.037,
+       4.711,
+       3.323,
+       1.324,
+       1.291,
+       2.82
+      ],
+      "best": "sine",
+      "reason": "Tides rise and fall in a repeating cycle, about every 12.5 hours. Only the sine model repeats; every polynomial runs off to infinity outside the data."
+     },
+     {
+      "key": "plant",
+      "label": "Seedling height",
+      "xv": "w",
+      "yv": "H",
+      "xname": "week, $w$",
+      "yname": "height, $H$ (cm)",
+      "x": [
+       0.0,
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       5.0,
+       6.0,
+       7.0,
+       8.0,
+       9.0,
+       10.0,
+       11.0,
+       12.0,
+       13.0,
+       14.0
+      ],
+      "y": [
+       2.865,
+       2.959,
+       6.148,
+       9.048,
+       13.76,
+       18.92,
+       27.38,
+       35.36,
+       42.13,
+       49.55,
+       53.95,
+       56.31,
+       58.52,
+       57.6,
+       59.59
+      ],
+      "best": "logistic",
+      "reason": "The plant grows slowly, then quickly, then levels off near its full height of about 60 cm. The logistic model has that ceiling; the cubic scores a similar $R^2$ but would keep growing, or shrink, after week 14."
+     }
+    ]
+   }
   },
   {
    "id": "ahl413-exp-2",
@@ -539,7 +756,109 @@
    "spec": "An ln($x$) button logs every $x$-value and rescales the $x$-axis; an ln($y$) button does the same for $y$. Students see an exponential set straighten with ln($y$) only, and a power set straighten with both, with the fitted line and its equation shown.",
    "suggest": "Pairs with AHL 2.10, so the same explorer could appear on that page.",
    "status": "approved",
-   "built": false
+   "built": true,
+   "config": {
+    "id": "ahl413-exp-2",
+    "explorer": "linearise",
+    "intro": "Take logs of one or both variables and watch the axes pull in. When the points fall on a straight line, the line's equation turns back into the model.",
+    "sets": [
+     {
+      "key": "exp",
+      "label": "Video views",
+      "sub": "Exponential",
+      "xv": "t",
+      "yv": "V",
+      "xname": "day, $t$",
+      "yname": "views, $V$",
+      "x": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       5.0,
+       6.0,
+       7.0
+      ],
+      "y": [
+       120,
+       190,
+       310,
+       480,
+       790,
+       1240,
+       2010
+      ],
+      "straight": "y",
+      "story": "Total views of a video at the end of each day after it was posted. Which log button makes the points line up?"
+     },
+     {
+      "key": "pow",
+      "label": "Pendulum",
+      "sub": "Power",
+      "xv": "L",
+      "yv": "T",
+      "xname": "length, $L$ (m)",
+      "yname": "period, $T$ (s)",
+      "x": [
+       0.2,
+       0.4,
+       0.6,
+       0.8,
+       1.0,
+       1.2,
+       1.5,
+       1.8,
+       2.0
+      ],
+      "y": [
+       0.9,
+       1.234,
+       1.537,
+       1.821,
+       2.014,
+       2.177,
+       2.451,
+       2.698,
+       2.853
+      ],
+      "straight": "xy",
+      "story": "The period of a pendulum for nine lengths of string. This one needs both buttons."
+     },
+     {
+      "key": "log",
+      "label": "Vocabulary",
+      "sub": "Logarithmic",
+      "xv": "m",
+      "yv": "W",
+      "xname": "study time, $m$ (minutes)",
+      "yname": "words remembered, $W$",
+      "x": [
+       1.0,
+       2.0,
+       4.0,
+       7.0,
+       10.0,
+       15.0,
+       20.0,
+       30.0,
+       40.0
+      ],
+      "y": [
+       6.004,
+       16.21,
+       24.79,
+       30.66,
+       36.73,
+       41.54,
+       46.73,
+       53.07,
+       56.52
+      ],
+      "straight": "x",
+      "story": "Words a student remembers after studying a list for different lengths of time. Here only one of the logs helps."
+     }
+    ]
+   }
   }
  ]
 }

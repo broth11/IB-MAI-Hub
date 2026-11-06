@@ -399,7 +399,170 @@
    "spec": "Students click to add or drag points. The page shows $r$ and $r_s$ live. A Linear toggle draws the line of best fit. A Monotonic toggle joins the points in $x$ order and labels the pattern increasing, decreasing, or neither.",
    "suggest": "Optionally show the rank table beside the plot, so students see that dragging a point without passing a neighbour leaves $r_s$ unchanged.",
    "status": "approved",
-   "built": false
+   "built": true,
+   "config": {
+    "id": "sl410-exp-1",
+    "explorer": "pearson-spearman",
+    "intro": "Click the grid to add a point; drag a point to move it. Compare Pearson's $r$, which measures a straight line, with Spearman's $r_s$, which only asks whether the pattern always rises or always falls.",
+    "presets": [
+     {
+      "label": "Linear",
+      "sub": "straight-line pattern",
+      "pts": [
+       [
+        1,
+        1.6
+       ],
+       [
+        2,
+        2.1
+       ],
+       [
+        3,
+        3.4
+       ],
+       [
+        4,
+        3.6
+       ],
+       [
+        5,
+        5.0
+       ],
+       [
+        6,
+        5.4
+       ],
+       [
+        7,
+        6.9
+       ],
+       [
+        8,
+        7.3
+       ]
+      ],
+      "story": "A straight-line pattern: $r$ and $r_s$ are both close to 1."
+     },
+     {
+      "label": "Curved",
+      "sub": "typing practice",
+      "pts": [
+       [
+        1,
+        9.0
+       ],
+       [
+        2,
+        6.6
+       ],
+       [
+        3,
+        5.1
+       ],
+       [
+        4,
+        5.1
+       ],
+       [
+        5,
+        3.6
+       ],
+       [
+        6,
+        3.0
+       ],
+       [
+        8,
+        2.7
+       ],
+       [
+        10,
+        2.4
+       ]
+      ],
+      "story": "Hours of typing practice (across) and errors in a test (up), as on the SL 4.10 worked example. Always decreasing, but curved."
+     },
+     {
+      "label": "Outlier",
+      "sub": "one extreme point",
+      "pts": [
+       [
+        1,
+        1.0
+       ],
+       [
+        2,
+        1.4
+       ],
+       [
+        3,
+        1.9
+       ],
+       [
+        4,
+        2.3
+       ],
+       [
+        5,
+        2.6
+       ],
+       [
+        6,
+        3.1
+       ],
+       [
+        7,
+        3.5
+       ],
+       [
+        8,
+        9.6
+       ]
+      ],
+      "story": "Seven points on a rising line and one extreme point. $r$ drops because the point is far from the line; $r_s$ stays at 1 because the point is still ranked last. Drag it below its neighbours and watch $r_s$ move."
+     },
+     {
+      "label": "U shape",
+      "sub": "not monotonic",
+      "pts": [
+       [
+        1,
+        8.0
+       ],
+       [
+        2,
+        5.6
+       ],
+       [
+        3,
+        3.7
+       ],
+       [
+        4,
+        2.6
+       ],
+       [
+        5,
+        2.5
+       ],
+       [
+        6,
+        3.6
+       ],
+       [
+        7,
+        5.4
+       ],
+       [
+        8,
+        7.9
+       ]
+      ],
+      "story": "Falls, then rises. Neither coefficient sees this pattern."
+     }
+    ]
+   }
   }
  ]
 }

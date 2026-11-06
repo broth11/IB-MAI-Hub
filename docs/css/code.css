@@ -108,3 +108,34 @@ a.bubble:hover { background: var(--color-accent-100); }
 .wpart .btn-ghost { font-size: 13px; padding-block: 2px; min-height: 0; }
 .worked p { margin-bottom: 8px; }
 .data-row { margin-bottom: 8px; }
+
+/* Explorers on code pages: the whole explorer fits the screen below the bar; a compact line of intro and story above it. */
+#s-explorer .code-mod { max-width: none; }
+#s-explorer h2 { margin-bottom: 8px; }
+.ex-head { display: flex; flex-wrap: wrap; gap: 2px 20px; align-items: baseline; margin-bottom: 8px; font-size: 13.5px; line-height: 1.4; }
+.ex-title { font-weight: 800; font-size: 15px; }
+.ex-head .side-copy { flex: 1 1 420px; margin: 0; }
+.ex-head .side-story { flex: 1 1 300px; display: flex; gap: 8px; align-items: baseline; margin: 0; padding: 0; border: 0; }
+.ex-head .side-story .kicker { flex: none; }
+.ex-head .side-story .text { font-size: 13.5px; }
+#s-explorer .explorer { height: calc(100dvh - var(--bar, 150px) - 160px); min-height: 470px; gap: 8px; }
+#s-explorer .has-tabs .explorer { height: calc(100dvh - var(--bar, 150px) - 200px); }
+#s-explorer .ex-note { min-height: 36px; font-size: 13.5px; }
+#s-explorer .ex-stat { padding: 6px 12px; }
+#s-explorer .ex-stat .value { font-size: 22px; }
+#s-explorer .ex-stat .value.small { font-size: 16px; }
+#s-explorer .ex-presets .btn { padding-block: 5px; }
+.ex-cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)) !important; }
+.ex-cols-7 { grid-template-columns: repeat(7, minmax(0, 1fr)) !important; }
+.ex-presets .btn[aria-pressed=true] { border-color: var(--color-accent); color: var(--color-accent-700); }
+.mc-foot { flex: none; display: flex; gap: 12px; align-items: center; justify-content: space-between; }
+.mc-table { overflow-x: auto; flex: 1 1 auto; }
+.mc-t { font-size: 12.5px; border-collapse: collapse; }
+.mc-t th, .mc-t td { padding: 2px 8px; border: 1px solid var(--color-divider); text-align: center; white-space: nowrap; }
+.mc-t th.is-best { background: var(--color-accent); color: #fff; }
+.ex-note.is-reveal { background: var(--color-accent-100); padding: 4px 12px; text-align: left; }
+@media (max-width: 900px) {
+  #s-explorer .explorer, #s-explorer .has-tabs .explorer { height: auto; min-height: 560px; }
+  .ex-presets.ex-cols-6, .ex-actions.ex-cols-7 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .mc-foot { flex-direction: column; align-items: stretch; }
+}

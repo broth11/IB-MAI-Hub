@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Turn the reviewed pilot content into code-page data files.
 
-Usage: export_code_pages.py <pilot.json> <verdicts_r1.json> [<verdicts_r2.json> ...] <repo> [--moments <moments.json>]
+Usage: export_code_pages.py <pilot.json> <verdicts_r1.json> [<verdicts_r2.json> ...] <repo> [--moments <moments.json>] [--explorers <explorers.json>]
 
 An item is approved when its latest verdict is "agree". An item marked agree in an
 earlier round but listed in a later round's "changed" list needs a fresh agree.
@@ -15,6 +15,9 @@ args = sys.argv[1:]
 moments = {}
 if "--moments" in args:
     i = args.index("--moments"); moments = json.load(open(args[i + 1])); del args[i:i + 2]
+excfg = {}
+if "--explorers" in args:
+    i = args.index("--explorers"); excfg = json.load(open(args[i + 1])); del args[i:i + 2]
 pilot = json.load(open(args[0])); repo = pathlib.Path(args[-1]); rounds = args[1:-1]
 changed = set(pilot.get("changed", []))
 verdict = {}
@@ -46,6 +49,12 @@ def lst(arr):
 def one(x):
     y = clean(dict(x)); y["status"] = status(x["id"]); return y
 
+def explorer(code, e):
+    """An approved explorer spec plus its page config; built when its module exists in docs/js/explorers."""
+    cfg = next((x for x in excfg.get(code, []) if x["id"] == e["id"]), None)
+    built = bool(cfg) and (repo / "docs/js/explorers" / f"{cfg['explorer']}.js").exists()
+    return dict(e, built=built, config=cfg) if built else dict(e, built=False)
+
 codes_dir = repo / "docs/data/codes"; codes_dir.mkdir(parents=True, exist_ok=True)
 syl = json.load(open(repo / "docs/data/syllabus.json"))
 lessons = {l["n"]: l for l in json.load(open(repo / "docs/data/lessons.json"))["lessons"]}
@@ -72,7 +81,7 @@ for c in pilot["codes"]:
         "misc": [{k: v for k, v in m.items() if k != "why"} | {"evidence": plain(m["why"])} for m in lst(S["misc"])],
         "terms": lst(S["terms"]), "formula": lst(S["formula"]), "gdc": gdc,
         "worked": worked, "kq": lst(S["kq"]), "history": lst(S["history"]),
-        "explorers": [dict(e, built=False) for e in lst(S.get("explorers", []))],
+        "explorers": [explorer(c["code"], e) for e in lst(S.get("explorers", []))],
     }
     json.dump(out, open(codes_dir / f"{c['slug']}.json", "w"), indent=1, ensure_ascii=False)
     for row in syl["codes"]:

@@ -108,8 +108,13 @@ const R = {
     return `<div class="history">${items.map((x) => `<p>${tex(x.text)}</p>`).join('')}
       <div class="small-note">Sources: ${[...new Map(items.flatMap((x) => x.sources).map((s) => [s[1], s])).values()].map((s) => `<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>`).join(' · ')}</div></div>`;
   },
-  explorer(C) {
-    return ''; // explorers are specified (C.explorers) but not built yet
+  explorer(C, ctx) {
+    const ex = ok(C.explorers).filter((x) => x.built && ctx.explorers[x.config.explorer]);
+    if (!ex.length) return '';
+    const cur = Math.min(ctx.ex || 0, ex.length - 1), x = ex[cur], mod = ctx.explorers[x.config.explorer];
+    const sec = { ...x.config, id: x.id };
+    const tabs = ex.length > 1 ? `<div class="vid-row">${ex.map((e, i) => `<button class="vid-tab${i === cur ? ' is-on' : ''}" data-ex="${i}">${esc(e.name)}</button>`).join('')}</div>` : '';
+    return `${tabs}<div class="ex-wrap${ex.length > 1 ? ' has-tabs' : ''}" data-ex-mount="${cur}"><div class="ex-head">${ex.length > 1 ? '' : `<div class="ex-title">${esc(x.name)}</div>`}${mod.renderSide ? mod.renderSide(sec, ctx) : ''}</div>${mod.render(sec, ctx)}</div>`;
   },
 };
 
@@ -142,6 +147,24 @@ function pageHtml(C, ctx, mode) {
   };
 }
 
+function mountExplorers(C, ctx) {
+  const box = document.querySelector('[data-ex-mount]'); if (!box) return;
+  const ex = ok(C.explorers).filter((x) => x.built && ctx.explorers[x.config.explorer]);
+  const x = ex[Number(box.dataset.exMount)];
+  try { ctx.explorers[x.config.explorer].mount(box, { ...x.config, id: x.id }, ctx); }
+  catch (e) { box.insertAdjacentHTML('beforeend', `<div class="error">${esc(e.message)}</div>`); }
+}
+
+async function loadExplorers(C) {
+  const out = {};
+  for (const x of ok(C.explorers).filter((e) => e.built && e.config)) {
+    const name = x.config.explorer;
+    if (!/^[a-z0-9-]+$/.test(name) || out[name]) continue;
+    try { out[name] = await import(`./explorers/${name}.js`); } catch (e) { console.error(e); }
+  }
+  return out;
+}
+
 function wire(C) {
   const count = () => {
     const boxes = $$('[data-ican]'); const n = boxes.filter((b) => b.checked).length;
@@ -169,14 +192,14 @@ async function main() {
     const slug = new URLSearchParams(location.search).get('c') || '';
     if (!/^[a-z0-9-]+$/.test(slug)) throw new Error('No syllabus code chosen.');
     const C = await getJSON(`data/codes/${slug}.json`).catch(() => { throw new Error('This syllabus code does not have a page yet.'); });
-    const ctx = { site, syl, vid: 0 };
+    const ctx = { site, syl, vid: 0, ex: 0, explorers: await loadExplorers(C) };
     const unit = Number(C.code.split(' ')[1].split('.')[0]);
     let mode = store.get('codeMode', 'learn');
     document.title = `${C.code} ${C.title} | ${site.course}`;
     const draw = () => {
       const P = pageHtml(C, ctx, mode);
       bar.innerHTML = renderTopbar({ site, activeUnit: unit, crumb: `Topic ${unit} › ${C.code} ${C.title}`, sections: P.tabs, toggleAll: false });
-      app.innerHTML = P.html; wire(C); setBar();
+      app.innerHTML = P.html; wire(C); setBar(); mountExplorers(C, ctx);
     };
     // Modules size themselves to the screen below the sticky bar (CSS var --bar).
     const setBar = () => document.documentElement.style.setProperty('--bar', bar.offsetHeight + 'px');
@@ -189,6 +212,12 @@ async function main() {
       if (t) { const el = document.getElementById('s-' + t.dataset.secTab); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - bar.offsetHeight, behavior: 'smooth' }); return; }
       const r = e.target.closest('[data-reveal]');
       if (r) { const a = document.getElementById(r.dataset.reveal); a.hidden = !a.hidden; r.textContent = a.hidden ? 'Show solution' : 'Hide solution'; return; }
+      const xb = e.target.closest('[data-ex]');
+      if (xb) {
+        ctx.ex = Number(xb.dataset.ex);
+        const sec = document.getElementById('s-explorer');
+        sec.querySelector('.code-mod').innerHTML = R.explorer(C, ctx); mountExplorers(C, ctx); return;
+      }
       const sk = e.target.closest('[data-seek]');
       if (sk) { seekVideo(Number(sk.dataset.seek)); const f = $('#yt'); if (f && f.getBoundingClientRect().top < bar.offsetHeight) f.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
       const v = e.target.closest('[data-vid]');
