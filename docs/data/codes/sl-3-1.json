@@ -1,0 +1,306 @@
+{
+  "code": "SL 3.1",
+  "slug": "sl-3-1",
+  "title": "3D distance, volume and surface area",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 301,
+        "title": "Geometry of 3D Shapes",
+        "videoId": "-5Vj8ACGkCc",
+        "partial": true,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Geometry of 3D shapes",
+            "text": "The presenter introduces the topic and the importance of finding formulas in the AI formula booklet."
+          },
+          {
+            "t": 21,
+            "type": "Reference",
+            "title": "Find the relevant formula",
+            "text": "The presenter distinguishes prior-learning formulas from formulas in the geometry section."
+          },
+          {
+            "t": 43,
+            "type": "Concept",
+            "title": "Recognise common solids",
+            "text": "The overview names familiar solids including prisms, cylinders, pyramids, spheres, hemispheres and cones."
+          },
+          {
+            "t": 71,
+            "type": "Procedure",
+            "title": "Identify, select, substitute",
+            "text": "Identify the solid, locate an appropriate formula and substitute its measurements."
+          },
+          {
+            "t": 84,
+            "type": "Example",
+            "title": "Identify a sphere and its radius",
+            "text": "The sphere is used to illustrate finding a radius before substituting it into a volume formula."
+          },
+          {
+            "t": 110,
+            "type": "Concept",
+            "title": "Surface area and volume",
+            "text": "The presenter distinguishes surface area from volume."
+          },
+          {
+            "t": 129,
+            "type": "Concept",
+            "title": "Use square and cubic units",
+            "text": "For dimensions in metres, surface area uses square metres and volume uses cubic metres."
+          },
+          {
+            "t": 145,
+            "type": "Overview",
+            "title": "Next step: practise",
+            "text": "The overview ends by recommending practice with 3D geometry questions."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "This is an overview",
+            "text": "The video introduces solids, formulas and units. It does not demonstrate 3D coordinate distance and midpoint, angles between lines or planes, or a worked composite-solid problem. The study page develops those skills.",
+            "write": "Identify the relevant right triangle and explain the dimensions used."
+          },
+          {
+            "kind": "watch",
+            "title": "Using the timeline",
+            "text": "These times are based on the captions; playback and diagrams have not been independently verified.",
+            "write": "Check the diagram and the dimensions before choosing a formula."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-3-1-ican-1",
+      "status": "approved",
+      "text": "I can find the distance and midpoint between two points in three dimensions."
+    },
+    {
+      "id": "sl-3-1-ican-2",
+      "status": "approved",
+      "text": "I can identify a right triangle in a solid and use it to find a length or angle."
+    },
+    {
+      "id": "sl-3-1-ican-3",
+      "status": "approved",
+      "text": "I can find the angle between a line and a plane using the line’s perpendicular projection onto that plane."
+    },
+    {
+      "id": "sl-3-1-ican-4",
+      "status": "approved",
+      "text": "I can calculate and interpret volume and exposed surface area for a single solid or a combination of solids."
+    },
+    {
+      "id": "sl-3-1-ican-5",
+      "status": "approved",
+      "text": "I can distinguish radius, perpendicular height and slant height, and use appropriate units."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-3-1-ku-1",
+      "status": "approved",
+      "text": "For points $A(x_1,y_1,z_1)$ and $B(x_2,y_2,z_2)$, find coordinate differences. The distance is $AB=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$. This is Pythagoras applied twice."
+    },
+    {
+      "id": "sl-3-1-ku-2",
+      "status": "approved",
+      "text": "The midpoint averages the coordinates: $M=(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2},\\frac{z_1+z_2}{2})$. Each coordinate is halfway between the corresponding coordinates of the endpoints."
+    },
+    {
+      "id": "sl-3-1-ku-3",
+      "status": "approved",
+      "text": "For a cuboid with perpendicular edge lengths $a,b,c$, a face diagonal is $\\sqrt{a^2+b^2}$. Pair that diagonal with the perpendicular third edge to obtain a space diagonal $\\sqrt{a^2+b^2+c^2}$."
+    },
+    {
+      "id": "sl-3-1-ku-4",
+      "status": "approved",
+      "text": "The angle between intersecting lines is formed at their intersection. Draw the lines in the same plane and use a suitable right triangle when one is available. If a question specifies an acute angle, select the acute angle."
+    },
+    {
+      "id": "sl-3-1-ku-5",
+      "status": "approved",
+      "text": "To find the angle between a line and a plane, project the line segment perpendicularly onto the plane. The required angle is between the line and its projection, from $0^\\circ$ to $90^\\circ$. If the line is perpendicular to the plane, the angle is $90^\\circ$ and its projection is a point."
+    },
+    {
+      "id": "sl-3-1-ku-6",
+      "status": "approved",
+      "text": "Volume measures occupied space. Add the volumes of non-overlapping solids, or subtract a removed volume from the original. The perpendicular height is measured at right angles to the base, not along a sloping edge."
+    },
+    {
+      "id": "sl-3-1-ku-7",
+      "status": "approved",
+      "text": "Surface area counts the exposed outside surfaces. For joined solids, exclude the contact faces; for an open container, exclude the missing face. Curved area and total area are different quantities."
+    },
+    {
+      "id": "sl-3-1-ku-8",
+      "status": "approved",
+      "text": "A cone with radius $r$ and perpendicular height $h$ has slant height $\\ell=\\sqrt{r^2+h^2}$. Its curved surface area uses $\\ell$, while its volume uses $h$. A right pyramid likewise needs the relevant face slant height for its triangular faces."
+    },
+    {
+      "id": "sl-3-1-ku-9",
+      "status": "approved",
+      "text": "Use consistent length units before calculating. Length, area and volume have units such as $\\text{cm}$, $\\text{cm}^2$ and $\\text{cm}^3$. Keep exact expressions until the final rounding step."
+    }
+  ],
+  "misc": [
+    {
+      "id": "sl-3-1-misc-1",
+      "status": "approved",
+      "weak": "Use the slant height in the cone volume formula.",
+      "better": "Use perpendicular height in $V=\\frac13\\pi r^2h$. The slant height belongs in the curved-area formula."
+    },
+    {
+      "id": "sl-3-1-misc-2",
+      "status": "approved",
+      "weak": "Add the whole surface area of both joined solids.",
+      "better": "Remove both contact faces from the total because the joined faces are internal."
+    },
+    {
+      "id": "sl-3-1-misc-3",
+      "status": "approved",
+      "weak": "The angle between a line and a plane is its angle with the perpendicular to the plane.",
+      "better": "Use the angle with the perpendicular projection onto the plane. For a non-perpendicular line the angle with the perpendicular is its complement."
+    },
+    {
+      "id": "sl-3-1-misc-4",
+      "status": "approved",
+      "weak": "The midpoint is half of the distance between the points.",
+      "better": "The midpoint is a point. Average each pair of coordinates to find its position."
+    },
+    {
+      "id": "sl-3-1-misc-5",
+      "status": "approved",
+      "weak": "A $6$ cm diameter is a $6$ cm radius.",
+      "better": "Radius is half the diameter, so the radius is $3$ cm."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-3-1-terms-1",
+      "status": "approved",
+      "term": "Perpendicular height",
+      "text": "The shortest distance from the vertex to the base plane for a pyramid or cone."
+    },
+    {
+      "id": "sl-3-1-terms-2",
+      "status": "approved",
+      "term": "Slant height",
+      "text": "The distance along the sloping face from the vertex to the appropriate point on its base; distinguish it from perpendicular height."
+    },
+    {
+      "id": "sl-3-1-terms-3",
+      "status": "approved",
+      "term": "Projection onto a plane",
+      "text": "The image obtained by dropping points perpendicularly onto the plane."
+    },
+    {
+      "id": "sl-3-1-terms-4",
+      "status": "approved",
+      "term": "Surface area",
+      "text": "The area of the specified surfaces. Decide whether the question includes all faces or only exposed faces."
+    },
+    {
+      "id": "sl-3-1-terms-5",
+      "status": "approved",
+      "term": "Midpoint",
+      "text": "The point halfway along the line segment joining the two endpoints."
+    }
+  ],
+  "formula": [
+    {
+      "id": "sl-3-1-formula-1",
+      "status": "approved",
+      "text": "For a prism or cylinder, $V=Ah$, where $A$ is base area and $h$ is perpendicular height. For a pyramid or cone, $V=\\frac13Ah$."
+    },
+    {
+      "id": "sl-3-1-formula-2",
+      "status": "approved",
+      "text": "Sphere: $V=\\frac43\\pi r^3$ and $A=4\\pi r^2$. A hemisphere has half the sphere’s volume and curved area; add its circular base if it is exposed."
+    },
+    {
+      "id": "sl-3-1-formula-3",
+      "status": "approved",
+      "text": "Right circular cone: curved area $A=\\pi r\\ell$, where $\\ell$ is slant height. A closed cone also has base area $\\pi r^2$."
+    },
+    {
+      "id": "sl-3-1-formula-4",
+      "status": "approved",
+      "text": "The distance and midpoint formulas use corresponding coordinates; draw a right triangle if a needed length is not given directly."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A closed storage tank consists of a vertical right circular cylinder of radius $3$ m and height $8$ m, topped by a hemisphere of the same radius. The two circular faces at their join are internal. Separately, a straight support runs from $A=(0,0,0)$ to $B=(6,8,12)$ in a coordinate system measured in metres. The horizontal ground plane is $z=0$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find the tank’s exact capacity and its capacity to three significant figures.",
+        "marks": 3,
+        "a": "Cylinder: $\\pi(3)^2(8)=72\\pi$. Hemisphere: $\\frac12(\\frac43\\pi(3)^3)=18\\pi$. Total capacity is $90\\pi\\text{ m}^3\\approx283\\text{ m}^3$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find the exact outside surface area of the tank, including its flat bottom.",
+        "marks": 3,
+        "a": "The curved cylinder has area $2\\pi(3)(8)=48\\pi$. The curved hemisphere has area $\\frac12(4\\pi(3)^2)=18\\pi$. The bottom has area $\\pi(3)^2=9\\pi$. The join is internal, so the outside area is $75\\pi\\text{ m}^2$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Find the support’s length and the coordinates of its midpoint.",
+        "marks": 3,
+        "a": "$AB=\\sqrt{6^2+8^2+12^2}=\\sqrt{244}=2\\sqrt{61}\\text{ m}\\approx15.6\\text{ m}$. Average corresponding coordinates: $M=(3,4,6)$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Find the angle between the support and the ground plane.",
+        "marks": 3,
+        "a": "The perpendicular projection of $B$ onto the ground is $P=(6,8,0)$. In right triangle $APB$, $AP=\\sqrt{6^2+8^2}=10$ m and $PB=12$ m. Thus $\\tan\\theta=12/10$, so $\\theta=\\tan^{-1}(1.2)\\approx50.2^\\circ$. This is the angle between $AB$ and its projection $AP$.",
+        "m": "M1 M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-3-1-kq-1",
+      "status": "approved",
+      "q": "Why is the projection used for a line–plane angle?",
+      "model": "It lies in the plane and forms the right triangle needed to compare the line with its horizontal component. The angle between the line and that projection is the line–plane angle."
+    },
+    {
+      "id": "sl-3-1-kq-2",
+      "status": "approved",
+      "q": "Why are the circular faces at a join omitted from outside area?",
+      "model": "They lie inside the composite solid rather than on its exposed boundary. They contribute no outside surface area."
+    },
+    {
+      "id": "sl-3-1-kq-3",
+      "status": "approved",
+      "q": "Why does a cone’s area need a different height from its volume?",
+      "model": "Volume depends on perpendicular height above the base. The curved surface stretches along the sloping side, so its area depends on slant height."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
