@@ -23,7 +23,7 @@ const R = {
     if (!C.videos.items.length) return '<div class="small-note">No matching video has been mapped to this syllabus code yet.</div>';
     const v = C.videos.items; const cur = v[ctx.vid || 0];
     const tabs = v.length > 1 ? `<div class="vid-row" role="tablist">${v.map((x, i) => `<button class="vid-tab${x === cur ? ' is-on' : ''}" data-vid="${i}" role="tab">${esc(x.title)}${x.partial ? ' <span class="also">(part)</span>' : ''}</button>`).join('')}</div>` : '';
-    const partialNotice = v.every((item) => item.partial) ? '<div class="small-note">The linked video mentions this code only briefly.</div>' : '';
+    const partialNotice = v.every((item) => item.partial) ? '<div class="small-note">Each linked video covers part of this syllabus code.</div>' : '';
     const notes = [...(C.videos.sharedNote ? [C.videos.sharedNote] : []), ...(cur.notes || [])];
     const LBL = { omission: 'Not in the video', error: 'Correction' };
     const notesHtml = notes.length ? `<div class="corrections"><div class="corr-head">Before you rely on this video</div>${notes.map((c) => `

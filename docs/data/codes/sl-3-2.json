@@ -1,0 +1,419 @@
+{
+  "code": "SL 3.2",
+  "slug": "sl-3-2",
+  "title": "Right-angled and non-right-angled trigonometry",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 303,
+        "title": "Right Angled Trig (Sin/Cos/Tan)",
+        "videoId": "lTqJF64KIS4",
+        "partial": true,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "Right-triangle ratios",
+            "text": "Sine, cosine and tangent connect side lengths and angles in a right triangle."
+          },
+          {
+            "t": 53,
+            "type": "Concept",
+            "title": "Identify the three sides",
+            "text": "Label the hypotenuse opposite the right angle, then identify the opposite and adjacent sides relative to the chosen angle."
+          },
+          {
+            "t": 99,
+            "type": "Formula",
+            "title": "Connect labels to ratios",
+            "text": "Use SOH CAH TOA to match the side labels to sine, cosine or tangent."
+          },
+          {
+            "t": 154,
+            "type": "Example",
+            "title": "Extract a triangle from a pyramid",
+            "text": "The first example isolates a right triangle and asks for the length $VM$."
+          },
+          {
+            "t": 189,
+            "type": "Method",
+            "title": "Choose tangent",
+            "text": "The unknown side is opposite the $75^\\circ$ angle and the known side is adjacent."
+          },
+          {
+            "t": 236,
+            "type": "Calculation",
+            "title": "Solve for the length",
+            "text": "The setup is $\\tan 75^\\circ=VM/2$, giving $VM\\approx7.46$ cm in degree mode."
+          },
+          {
+            "t": 299,
+            "type": "Example",
+            "title": "Find an angle in a pyramid",
+            "text": "The second example asks for the angle between a sloping edge and the vertical height."
+          },
+          {
+            "t": 334,
+            "type": "Method",
+            "title": "Select cosine",
+            "text": "The given sides are adjacent to the angle and the hypotenuse."
+          },
+          {
+            "t": 362,
+            "type": "Calculation",
+            "title": "Use inverse cosine",
+            "text": "From $\\cos\\theta=5/8$, use inverse cosine to obtain approximately $51.3^\\circ$."
+          },
+          {
+            "t": 435,
+            "type": "Overview",
+            "title": "Review and practise",
+            "text": "The presenter reviews finding a side or an angle and recommends practice."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Sides depend on the chosen angle",
+            "text": "Opposite and adjacent swap when you switch between the two acute angles. The hypotenuse remains opposite the right angle.",
+            "write": "Identify the reference angle before naming the sides."
+          }
+        ]
+      },
+      {
+        "n": 304,
+        "title": "Sine & Cosine Rules, Area of a Triangle",
+        "videoId": "81KyaQrjz9M",
+        "partial": true,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Beyond right triangles",
+            "text": "The presenter introduces the sine rule, cosine rule and area formula."
+          },
+          {
+            "t": 74,
+            "type": "Concept",
+            "title": "Pair opposite sides and angles",
+            "text": "Label each side with the lowercase letter corresponding to its opposite angle."
+          },
+          {
+            "t": 144,
+            "type": "Method",
+            "title": "When the sine rule helps",
+            "text": "A known angle and its opposite side form a useful pair."
+          },
+          {
+            "t": 179,
+            "type": "Example",
+            "title": "Sine rule to find a side",
+            "text": "Set up an equation involving the $30^\\circ$ and $100^\\circ$ angles and their opposite sides."
+          },
+          {
+            "t": 237,
+            "type": "Example",
+            "title": "Sine rule to find an angle",
+            "text": "A second side–angle setup is introduced. The numerical triangle in this example is impossible; see the correction below."
+          },
+          {
+            "t": 315,
+            "type": "Method",
+            "title": "Cosine rule for a side",
+            "text": "Use two sides and the included angle to form an equation for the opposite side."
+          },
+          {
+            "t": 365,
+            "type": "Calculation",
+            "title": "Set up the side calculation",
+            "text": "Substitute sides $40$ and $50$ and the included angle $30^\\circ$ into the cosine rule."
+          },
+          {
+            "t": 419,
+            "type": "Method",
+            "title": "Cosine rule for an angle",
+            "text": "Use all three sides and place the square of the side opposite the requested angle in the subtraction."
+          },
+          {
+            "t": 483,
+            "type": "Calculation",
+            "title": "Check the denominator",
+            "text": "The diagram uses adjacent sides $50$ and $45$; the written denominator uses $40$ instead of $45$."
+          },
+          {
+            "t": 528,
+            "type": "Formula",
+            "title": "Area from two sides and included angle",
+            "text": "The area formula uses the two sides adjacent to the specified angle and the sine of that angle."
+          },
+          {
+            "t": 601,
+            "type": "Overview",
+            "title": "Review and practise",
+            "text": "The presenter closes by reviewing the three methods and suggesting practice."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "error",
+            "title": "The sine-rule angle example cannot form a triangle",
+            "text": "Near 4:40, the diagram places a side of $40$ cm opposite $60^\\circ$ and a side of $60$ cm opposite $\\theta$. The setup gives $\\sin\\theta=60\\sin60^\\circ/40\\approx1.30$, which is impossible for a real angle.",
+            "write": "Check that the sine value lies between $-1$ and $1$; these measurements do not describe a triangle."
+          },
+          {
+            "kind": "error",
+            "title": "Correct the cosine-rule denominator",
+            "text": "Around 8:34, the diagram has sides $50$, $45$ and $30$ cm. The angle is opposite $30$ cm, but the written denominator uses $2(50)(40)$.",
+            "write": "Use $\\cos\\theta=\\frac{50^2+45^2-30^2}{2(50)(45)}$."
+          },
+          {
+            "kind": "watch",
+            "title": "A formula beyond non-right triangles",
+            "text": "The sine rule, cosine rule and $\\frac12ab\\sin C$ also apply to right triangles. For $C=90^\\circ$ the cosine rule becomes Pythagoras’ theorem.",
+            "write": "Choose a method that fits the information supplied."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-3-2-ican-1",
+      "status": "approved",
+      "text": "I can label the hypotenuse, opposite and adjacent sides relative to a chosen acute angle."
+    },
+    {
+      "id": "sl-3-2-ican-2",
+      "status": "approved",
+      "text": "I can use sine, cosine or tangent to find an unknown side or angle in a right triangle."
+    },
+    {
+      "id": "sl-3-2-ican-3",
+      "status": "approved",
+      "text": "I can choose and apply the sine or cosine rule when the given measurements support it."
+    },
+    {
+      "id": "sl-3-2-ican-4",
+      "status": "approved",
+      "text": "I can find a triangle’s area using two sides and their included angle."
+    },
+    {
+      "id": "sl-3-2-ican-5",
+      "status": "approved",
+      "text": "I can check angle mode, opposite side–angle pairs, units and the reasonableness of an answer."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-3-2-ku-1",
+      "status": "approved",
+      "text": "In a right triangle the hypotenuse is opposite the right angle. Relative to an acute angle $\\theta$, the opposite side lies across from it and the adjacent side touches it but is not the hypotenuse."
+    },
+    {
+      "id": "sl-3-2-ku-2",
+      "status": "approved",
+      "text": "The ratios are $\\sin\\theta=\\frac{\\text{opposite}}{\\text{hypotenuse}}$, $\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}$ and $\\tan\\theta=\\frac{\\text{opposite}}{\\text{adjacent}}$. Choose the ratio containing the known side and the unknown side."
+    },
+    {
+      "id": "sl-3-2-ku-3",
+      "status": "approved",
+      "text": "To find an acute angle, form a ratio and apply the appropriate inverse function. For example, $\\cos\\theta=5/8$ gives $\\theta=\\cos^{-1}(5/8)\\approx51.3^\\circ$ in degree mode. Inverse cosine here is a function, not a reciprocal."
+    },
+    {
+      "id": "sl-3-2-ku-4",
+      "status": "approved",
+      "text": "In triangle $ABC$, side $a$ is opposite angle $A$, and similarly for $b,B$ and $c,C$. Label the diagram before applying a rule. All angles in a non-degenerate triangle are positive and sum to $180^\\circ$."
+    },
+    {
+      "id": "sl-3-2-ku-5",
+      "status": "approved",
+      "text": "Use the sine rule $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}$ when a complete opposite side–angle pair and another relevant measurement are known. Choose the two fractions that contain the known values and the desired unknown."
+    },
+    {
+      "id": "sl-3-2-ku-6",
+      "status": "approved",
+      "text": "Use the cosine rule $c^2=a^2+b^2-2ab\\cos C$ to find a side when two sides and their included angle are known. When all three sides are known, rearrange to $\\cos C=\\frac{a^2+b^2-c^2}{2ab}$ to find the angle opposite $c$."
+    },
+    {
+      "id": "sl-3-2-ku-7",
+      "status": "approved",
+      "text": "For two sides $a,b$ and their included angle $C$, the area is $K=\\frac12ab\\sin C$. This follows from $K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}$, because the height relative to base $a$ is $b\\sin C$."
+    },
+    {
+      "id": "sl-3-2-ku-8",
+      "status": "approved",
+      "text": "Check triangle feasibility: positive side lengths must satisfy the triangle inequalities, and a calculated sine or cosine of a real angle must lie between $-1$ and $1$. Interpret answers in the context, with length or square units as appropriate."
+    },
+    {
+      "id": "sl-3-2-ku-9",
+      "status": "approved",
+      "text": "The local AI syllabus guidance excludes the ambiguous case of the sine rule from SL 3.2. The rules above still require matching opposite sides and angles correctly."
+    }
+  ],
+  "misc": [
+    {
+      "id": "sl-3-2-misc-1",
+      "status": "approved",
+      "weak": "Use the side next to the right angle as the hypotenuse.",
+      "better": "The hypotenuse is opposite the right angle and is the longest side in a non-degenerate right triangle."
+    },
+    {
+      "id": "sl-3-2-misc-2",
+      "status": "approved",
+      "weak": "Match angle $A$ with adjacent side $a$.",
+      "better": "Side $a$ is opposite angle $A$. Pair each side with its opposite angle in the sine rule."
+    },
+    {
+      "id": "sl-3-2-misc-3",
+      "status": "approved",
+      "weak": "Use any two sides with any angle in $\\frac12ab\\sin C$.",
+      "better": "$C$ must be the included angle between $a$ and $b$."
+    },
+    {
+      "id": "sl-3-2-misc-4",
+      "status": "approved",
+      "weak": "For angle $C$, subtract $a^2$ in the cosine-rule numerator.",
+      "better": "Subtract the square of the side opposite the required angle: $c^2$."
+    },
+    {
+      "id": "sl-3-2-misc-5",
+      "status": "approved",
+      "weak": "Use $\\sin^{-1}(x)$ as $1/\\sin(x)$.",
+      "better": "$\\sin^{-1}$ denotes inverse sine. It finds an angle from a ratio; $1/\\sin(x)$ is the reciprocal."
+    },
+    {
+      "id": "sl-3-2-misc-6",
+      "status": "approved",
+      "weak": "A calculator result of $\\sin\\theta=1.30$ gives an angle.",
+      "better": "No real angle has sine greater than $1$. Recheck the data and the side–angle pairs."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-3-2-terms-1",
+      "status": "approved",
+      "term": "Included angle",
+      "text": "The angle formed where the two specified sides meet."
+    },
+    {
+      "id": "sl-3-2-terms-2",
+      "status": "approved",
+      "term": "Opposite pair",
+      "text": "An angle and the side directly across from it, such as $A$ and $a$."
+    },
+    {
+      "id": "sl-3-2-terms-3",
+      "status": "approved",
+      "term": "Inverse trigonometric function",
+      "text": "A function used to find an angle from a trigonometric ratio. Use the angle unit requested."
+    },
+    {
+      "id": "sl-3-2-terms-4",
+      "status": "approved",
+      "term": "Perpendicular height",
+      "text": "The distance from a vertex to the line containing the chosen base, measured at a right angle."
+    }
+  ],
+  "formula": [
+    {
+      "id": "sl-3-2-formula-1",
+      "status": "approved",
+      "text": "Right triangle: $\\sin\\theta=O/H$, $\\cos\\theta=A/H$ and $\\tan\\theta=O/A$, where $O,A,H$ are the opposite, adjacent and hypotenuse lengths relative to $\\theta$."
+    },
+    {
+      "id": "sl-3-2-formula-2",
+      "status": "approved",
+      "text": "Sine rule: $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}$, with each side opposite its matching capital-letter angle."
+    },
+    {
+      "id": "sl-3-2-formula-3",
+      "status": "approved",
+      "text": "Cosine rule: $c^2=a^2+b^2-2ab\\cos C$ and $\\cos C=\\frac{a^2+b^2-c^2}{2ab}$."
+    },
+    {
+      "id": "sl-3-2-formula-4",
+      "status": "approved",
+      "text": "Area: $K=\\frac12ab\\sin C$, where $C$ is included between sides $a$ and $b$."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A triangular garden has vertices $A$, $B$ and $C$, with $AB=10$ m, $AC=7$ m and included angle $\\angle BAC=60^\\circ$. Let $D$ be the foot of the perpendicular from $C$ to the side $AB$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find $AD$ and the perpendicular height $CD$.",
+        "marks": 3,
+        "a": "In right triangle $ACD$, $AC=7$ is the hypotenuse. Thus $AD=7\\cos60^\\circ=3.5$ m and $CD=7\\sin60^\\circ=\\frac{7\\sqrt3}{2}$ m $\\approx6.06$ m. Since $0<AD<10$, $D$ lies on segment $AB$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find the length of $BC$ exactly and to three significant figures.",
+        "marks": 3,
+        "a": "Using the cosine rule with included angle $A$: $BC^2=10^2+7^2-2(10)(7)\\cos60^\\circ=79$. Hence $BC=\\sqrt{79}$ m $\\approx8.89$ m. As a check, $DB=10-3.5=6.5$ and $BC^2=DB^2+CD^2=79$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Find the area of the garden.",
+        "marks": 2,
+        "a": "$K=\\frac12(10)(7)\\sin60^\\circ=\\frac{35\\sqrt3}{2}\\text{ m}^2\\approx30.3\\text{ m}^2$. Equivalently, use base $AB$ and height $CD$ from part (a).",
+        "m": "M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Find the size of angle $ABC$. Explain why your result is reasonable.",
+        "marks": 3,
+        "a": "In right triangle $BCD$, $\\tan B=CD/DB=\\frac{7\\sqrt3}{13}$, so $B=\\tan^{-1}(7\\sqrt3/13)\\approx43.0^\\circ$. The remaining angle is approximately $77.0^\\circ$, and $B$ is opposite the shortest side, $AC=7$ m, so $B$ should be the smallest angle.",
+        "m": "M1 A1 R1"
+      },
+      {
+        "label": "e",
+        "q": "Use the sine rule to calculate $BC$ from angles $A$ and $B$ and compare with part (b).",
+        "marks": 3,
+        "a": "First, $C=180^\\circ-60^\\circ-B\\approx76.9961^\\circ$. Match opposite pairs: $BC/\\sin60^\\circ=7/\\sin B$. Therefore $BC=7\\sin60^\\circ/\\sin B\\approx8.89$ m, consistent with part (b). Use the unrounded $B$ in the calculation.",
+        "m": "M1 M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-3-2-kq-1",
+      "status": "approved",
+      "q": "Why must the angle in the area formula be included between the two sides?",
+      "model": "Taking one side as a base, the other side and their included angle determine the perpendicular height. A different angle would need a different matching side for that height."
+    },
+    {
+      "id": "sl-3-2-kq-2",
+      "status": "approved",
+      "q": "Why does the cosine rule reduce to Pythagoras in a right triangle?",
+      "model": "When $C=90^\\circ$, $\\cos C=0$, so $c^2=a^2+b^2$."
+    },
+    {
+      "id": "sl-3-2-kq-3",
+      "status": "approved",
+      "q": "Why does inverse sine not mean divide by sine?",
+      "model": "Inverse sine reverses sine over its principal interval to return an angle from a ratio. A reciprocal instead divides $1$ by a numerical sine value."
+    },
+    {
+      "id": "sl-3-2-kq-4",
+      "status": "approved",
+      "q": "How can side lengths help check angles?",
+      "model": "In a triangle, the longer side is opposite the larger angle. If a result reverses this order, check the side–angle labels and calculations."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}

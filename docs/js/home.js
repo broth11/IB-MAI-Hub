@@ -24,7 +24,7 @@ function byCode(index) {
 const hasFull = (map, code) => (map[code] || []).some((v) => !v.partial);
 
 function videoItem({ l, partial }, code, page) {
-  const note = partial ? '<span class="also">brief mention only</span>'
+  const note = partial ? '<span class="also">partial coverage</span>'
     : (l.syllabus || [])[0] !== code ? '<span class="also">also covers this</span>' : '';
   const href = l.status === 'live' ? `lesson.html?v=${l.n}`
     : page ? `code.html?c=${encodeURIComponent(page)}&v=${encodeURIComponent(l.videoId)}` : '';
