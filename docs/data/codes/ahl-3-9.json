@@ -1,0 +1,361 @@
+{
+  "code": "AHL 3.9",
+  "slug": "ahl-3-9",
+  "title": "Matrix transformations",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 310,
+        "title": "Geometric Transformations",
+        "videoId": "dI4tgxwz2Ig",
+        "partial": true,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "Transform points and shapes",
+            "text": "The presenter introduces 2D geometric transformations and their images."
+          },
+          {
+            "t": 38,
+            "type": "Concept",
+            "title": "Four transformation types",
+            "text": "Reflections, stretches or enlargements, rotations and translations are introduced."
+          },
+          {
+            "t": 120,
+            "type": "Formula",
+            "title": "Matrix and translation vector",
+            "text": "The general form combines a $2\\times2$ matrix with a translation vector."
+          },
+          {
+            "t": 185,
+            "type": "Visual",
+            "title": "Reflect a point",
+            "text": "The presenter illustrates reflection in a line."
+          },
+          {
+            "t": 227,
+            "type": "Visual",
+            "title": "Stretch and enlarge a shape",
+            "text": "The discussion distinguishes stretches from equal scaling in both directions."
+          },
+          {
+            "t": 291,
+            "type": "Visual",
+            "title": "Rotate about the origin",
+            "text": "A rotation moves a point through a specified angle about the origin."
+          },
+          {
+            "t": 337,
+            "type": "Visual",
+            "title": "Translate a point",
+            "text": "A translation moves a point horizontally and vertically."
+          },
+          {
+            "t": 370,
+            "type": "Method",
+            "title": "Build a transformation from formulas",
+            "text": "The presenter refers to formulas for constructing a matrix or translation vector."
+          },
+          {
+            "t": 400,
+            "type": "Example",
+            "title": "Transform a triangle vertex",
+            "text": "The example applies a matrix and a translation to one vertex."
+          },
+          {
+            "t": 463,
+            "type": "Calculation",
+            "title": "Read the image coordinate",
+            "text": "The worked vertex has image $(-1,4)$ according to the video’s example."
+          },
+          {
+            "t": 489,
+            "type": "Formula",
+            "title": "Area scale and determinant",
+            "text": "The area of the image is the original area multiplied by the absolute determinant."
+          },
+          {
+            "t": 552,
+            "type": "Calculation",
+            "title": "Compute a determinant",
+            "text": "The example obtains determinant $3$ and uses it to scale an illustrative area."
+          },
+          {
+            "t": 598,
+            "type": "Overview",
+            "title": "Review and practise",
+            "text": "The presenter reviews the transformation matrix, translation and area scale."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "Composition and iteration need further practice",
+            "text": "The video introduces the affine form and determinant but does not work through matrix composition or iterative fractal generation. The page develops these topics.",
+            "write": "For column vectors, the rightmost transformation acts first."
+          },
+          {
+            "kind": "watch",
+            "title": "Coordinate and calculator detail",
+            "text": "The video’s worked example depends on the matrix and vector shown on screen. Timestamps and numerical details are caption-derived; playback has not been independently verified.",
+            "write": "Multiply the matrix by the original column vector before adding the translation."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-3-9-ican-1",
+      "status": "approved",
+      "text": "I can transform a point or shape using a matrix and translation vector."
+    },
+    {
+      "id": "ahl-3-9-ican-2",
+      "status": "approved",
+      "text": "I can identify and construct matrices for standard reflections, stretches, enlargements and rotations about the origin."
+    },
+    {
+      "id": "ahl-3-9-ican-3",
+      "status": "approved",
+      "text": "I can compose transformations in the correct order and combine their translations."
+    },
+    {
+      "id": "ahl-3-9-ican-4",
+      "status": "approved",
+      "text": "I can use the determinant to find an area scale factor and interpret a zero or negative determinant."
+    },
+    {
+      "id": "ahl-3-9-ican-5",
+      "status": "approved",
+      "text": "I can apply an iterative rule and explain how repeated contractions can generate a fractal."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-9-ku-1",
+      "status": "approved",
+      "text": "Use column vectors throughout: $\\mathbf{x}=\\binom{x}{y}$. An affine transformation has the form $\\mathbf{x}\\mapsto A\\mathbf{x}+\\mathbf{b}$, where $A$ is $2\\times2$ and $\\mathbf{b}$ is a translation column. Apply $A$ first, then add $\\mathbf{b}$."
+    },
+    {
+      "id": "ahl-3-9-ku-2",
+      "status": "approved",
+      "text": "The columns of $A$ are the images of the basis vectors $\\binom10$ and $\\binom01$ under the linear part. A translation moves the origin, so subtract the image of the origin when recovering these columns from an affine transformation."
+    },
+    {
+      "id": "ahl-3-9-ku-3",
+      "status": "approved",
+      "text": "Reflection in the $x$-axis has matrix $\\begin{pmatrix}1&0\\\\0&-1\\end{pmatrix}$; reflection in the $y$-axis has $\\begin{pmatrix}-1&0\\\\0&1\\end{pmatrix}$; reflection in $y=x$ swaps the coordinates."
+    },
+    {
+      "id": "ahl-3-9-ku-4",
+      "status": "approved",
+      "text": "A horizontal stretch by factor $a$ and vertical stretch by factor $b$ has matrix $\\begin{pmatrix}a&0\\\\0&b\\end{pmatrix}$. Equal factors give an enlargement about the origin; a negative factor reverses the corresponding coordinate."
+    },
+    {
+      "id": "ahl-3-9-ku-5",
+      "status": "approved",
+      "text": "An anticlockwise rotation through $\\theta$ about the origin has matrix $\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}$. A clockwise rotation through a positive angle uses $-\\theta$. Check the angle mode and the image of $(1,0)$."
+    },
+    {
+      "id": "ahl-3-9-ku-6",
+      "status": "approved",
+      "text": "If $T_1(\\mathbf{x})=A\\mathbf{x}+\\mathbf{b}$ is followed by $T_2(\\mathbf{x})=B\\mathbf{x}+\\mathbf{c}$, then $T_2(T_1(\\mathbf{x}))=BA\\mathbf{x}+B\\mathbf{b}+\\mathbf{c}$. The rightmost matrix acts first; the earlier translation is transformed too."
+    },
+    {
+      "id": "ahl-3-9-ku-7",
+      "status": "approved",
+      "text": "For any planar region with finite area, an affine map scales area by $|\\det A|$. A negative determinant reverses orientation, a positive determinant preserves it when nonzero, and determinant zero collapses area to zero. Translation does not affect area."
+    },
+    {
+      "id": "ahl-3-9-ku-8",
+      "status": "approved",
+      "text": "An inverse transformation exists exactly when $\\det A\\ne0$. Solve $\\mathbf{y}=A\\mathbf{x}+\\mathbf{b}$ as $\\mathbf{x}=A^{-1}(\\mathbf{y}-\\mathbf{b})$; subtract the translation before applying the inverse matrix."
+    },
+    {
+      "id": "ahl-3-9-ku-9",
+      "status": "approved",
+      "text": "An iterative rule repeatedly uses the preceding output, for example $\\mathbf{x}_{n+1}=A\\mathbf{x}_n+\\mathbf{b}$. A fractal construction can instead repeatedly apply several contractions to a set and take their union. The rule, starting set and iteration count determine the result."
+    },
+    {
+      "id": "ahl-3-9-ku-10",
+      "status": "approved",
+      "text": "For example, applying three half-scale copies to a triangle at its three corners produces three smaller triangles at each stage. After $n$ stages there are $3^n$ copies, each with area factor $(1/4)^n$; the total area factor is $(3/4)^n$ when their interiors do not overlap."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-9-misc-1",
+      "status": "approved",
+      "weak": "In $BA\\mathbf{x}$, apply $B$ first.",
+      "better": "With column vectors, $A$ acts first and $B$ acts on its result."
+    },
+    {
+      "id": "ahl-3-9-misc-2",
+      "status": "approved",
+      "weak": "A translation can be represented by a $2\\times2$ matrix acting alone on every point.",
+      "better": "A linear matrix fixes the origin. A nonzero translation requires an added vector in the given affine form."
+    },
+    {
+      "id": "ahl-3-9-misc-3",
+      "status": "approved",
+      "weak": "A negative determinant means the image has negative area.",
+      "better": "Area is multiplied by $|\\det A|$. The sign describes orientation for a non-singular map."
+    },
+    {
+      "id": "ahl-3-9-misc-4",
+      "status": "approved",
+      "weak": "Compose $A\\mathbf{x}+\\mathbf{b}$ then $B\\mathbf{x}+\\mathbf{c}$ as $BA\\mathbf{x}+\\mathbf{b}+\\mathbf{c}$.",
+      "better": "The second matrix also acts on the first translation: $BA\\mathbf{x}+B\\mathbf{b}+\\mathbf{c}$."
+    },
+    {
+      "id": "ahl-3-9-misc-5",
+      "status": "approved",
+      "weak": "A matrix with determinant zero has an inverse.",
+      "better": "A zero determinant means the map collapses area and is singular; it has no inverse matrix."
+    },
+    {
+      "id": "ahl-3-9-misc-6",
+      "status": "approved",
+      "weak": "A $90^\\circ$ anticlockwise rotation maps $(1,0)$ to $(0,-1)$.",
+      "better": "It maps $(1,0)$ to $(0,1)$ in standard Cartesian axes."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-9-terms-1",
+      "status": "approved",
+      "term": "Image",
+      "text": "The point or shape resulting from the transformation."
+    },
+    {
+      "id": "ahl-3-9-terms-2",
+      "status": "approved",
+      "term": "Composition",
+      "text": "Applying transformations in sequence; the order affects the result."
+    },
+    {
+      "id": "ahl-3-9-terms-3",
+      "status": "approved",
+      "term": "Translation vector",
+      "text": "The displacement added to the output of the matrix part."
+    },
+    {
+      "id": "ahl-3-9-terms-4",
+      "status": "approved",
+      "term": "Determinant",
+      "text": "A scalar associated with a square matrix. Its absolute value gives the planar area scale factor."
+    },
+    {
+      "id": "ahl-3-9-terms-5",
+      "status": "approved",
+      "term": "Iteration",
+      "text": "Repeated application of a rule, using an earlier result as the next input."
+    },
+    {
+      "id": "ahl-3-9-terms-6",
+      "status": "approved",
+      "term": "Contraction",
+      "text": "A transformation that reduces distances by a factor less than one; repeated contractions can be used in fractal constructions."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-9-formula-1",
+      "status": "approved",
+      "text": "Affine form: $\\mathbf{x}\\mapsto A\\mathbf{x}+\\mathbf{b}$ for column vectors."
+    },
+    {
+      "id": "ahl-3-9-formula-2",
+      "status": "approved",
+      "text": "Anticlockwise rotation: $R(\\theta)=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}$."
+    },
+    {
+      "id": "ahl-3-9-formula-3",
+      "status": "approved",
+      "text": "If $A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$, then $\\det A=ad-bc$ and image area is $|\\det A|$ times original area."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A transformation sends $\\binom{x}{y}$ to $A\\binom{x}{y}+\\binom31$, where $A=\\begin{pmatrix}0&-2\\\\1&0\\end{pmatrix}$. Triangle $PQR$ has vertices $P=(0,0)$, $Q=(2,0)$ and $R=(0,1)$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find the image of each vertex and the area of the image.",
+        "marks": 4,
+        "a": "The coordinate rule is $(x,y)\\mapsto(3-2y,x+1)$. Hence $P\\mapsto(3,1)$, $Q\\mapsto(3,3)$ and $R\\mapsto(1,1)$. The original area is $\\frac12(2)(1)=1$ square unit. Since $\\det A=2$, image area is $2$ square units. The image is also a right triangle with legs of length $2$.",
+        "m": "M1 A1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Describe the linear part as a composition of a rotation and a stretch. State the order.",
+        "marks": 3,
+        "a": "First rotate $90^\\circ$ anticlockwise using $R=\\begin{pmatrix}0&-1\\\\1&0\\end{pmatrix}$, then stretch horizontally by factor $2$ using $S=\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}$. Indeed $SR=A$. The translation $(3,1)$ is applied after those linear steps.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Starting from $(1,2)$, find the next three points when the whole affine transformation is iterated.",
+        "marks": 3,
+        "a": "Use $(x,y)\\mapsto(3-2y,x+1)$ repeatedly: $(1,2)\\mapsto(-1,2)\\mapsto(-1,0)\\mapsto(3,0)$. The translation is included at every iteration.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Find the fixed point of the transformation.",
+        "marks": 3,
+        "a": "Set $x=3-2y$ and $y=x+1$. Substitution gives $x=3-2(x+1)$, so $3x=1$ and $x=1/3$. Then $y=4/3$. The fixed point is $(1/3,4/3)$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "e",
+        "q": "A separate construction begins with a triangle of area $12$ square units. At each stage it is replaced by three half-scale copies with non-overlapping interiors. Find the total area after two stages.",
+        "marks": 2,
+        "a": "Each half-scale copy has area factor $(1/2)^2=1/4$, so the total area factor per stage is $3/4$. After two stages, the area is $12(3/4)^2=6.75$ square units.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-9-kq-1",
+      "status": "approved",
+      "q": "Why is the order of matrix multiplication important?",
+      "model": "Each transformation acts on the result of the preceding one, and matrix multiplication is generally not commutative. The rightmost matrix acts first on a column vector."
+    },
+    {
+      "id": "ahl-3-9-kq-2",
+      "status": "approved",
+      "q": "Why does translation not change area?",
+      "model": "Every point moves by the same displacement. The shape and its lengths and area are unchanged."
+    },
+    {
+      "id": "ahl-3-9-kq-3",
+      "status": "approved",
+      "q": "Why is the area factor an absolute value?",
+      "model": "A negative determinant indicates an orientation reversal, but geometric area is nonnegative. The magnitude gives the scale factor."
+    },
+    {
+      "id": "ahl-3-9-kq-4",
+      "status": "approved",
+      "q": "Why does half-scale copying multiply area by one quarter per copy?",
+      "model": "Both independent length dimensions are halved, so the area scale is $(1/2)(1/2)=1/4$."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
