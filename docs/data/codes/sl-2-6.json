@@ -11,29 +11,69 @@
     {
       "id": "sl-2-6-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for modelling skills."
+      "text": "I can define variables and units, identify assumptions and construct a model for a situation."
     },
     {
       "id": "sl-2-6-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can use data and contextual information to choose and test a model."
+    },
+    {
+      "id": "sl-2-6-ican-3",
+      "status": "approved",
+      "text": "I can calculate and interpret residuals and use their pattern to evaluate a model."
+    },
+    {
+      "id": "sl-2-6-ican-4",
+      "status": "approved",
+      "text": "I can distinguish interpolation from extrapolation and explain the limitations of a prediction."
+    },
+    {
+      "id": "sl-2-6-ican-5",
+      "status": "approved",
+      "text": "I can revise a model when evidence or changing conditions make its assumptions questionable."
     }
   ],
   "ku": [
     {
       "id": "sl-2-6-ku-1",
       "status": "approved",
-      "text": "Define variables and units before building a model."
+      "text": "Start with a question and define the input, output and units. State the period or range of inputs for which the model is intended."
     },
     {
       "id": "sl-2-6-ku-2",
       "status": "approved",
-      "text": "Compare predictions with observations and consider residuals, restrictions and assumptions."
+      "text": "Translate the situation into assumptions: for example, a linear model assumes a constant change per unit of input. Check whether the assumptions are plausible in the context."
     },
     {
       "id": "sl-2-6-ku-3",
       "status": "approved",
-      "text": "A model is an approximation; extrapolation outside the observed data may be unreliable."
+      "text": "Choose a model using the shape and structure of the data and what is known about the situation. A line suggests constant additive change, while equal ratios suggest exponential change."
+    },
+    {
+      "id": "sl-2-6-ku-4",
+      "status": "approved",
+      "text": "A residual is observed value minus predicted value. A positive residual means the model underpredicts; a negative residual means it overpredicts."
+    },
+    {
+      "id": "sl-2-6-ku-5",
+      "status": "approved",
+      "text": "Inspect residuals across the input range. A systematic curved pattern or changing spread may indicate a poor model even if some individual predictions are close."
+    },
+    {
+      "id": "sl-2-6-ku-6",
+      "status": "approved",
+      "text": "Interpolation uses inputs within the observed range; extrapolation goes beyond it. Neither is guaranteed accurate, and extrapolation relies more heavily on assumptions continuing to hold."
+    },
+    {
+      "id": "sl-2-6-ku-7",
+      "status": "approved",
+      "text": "Compare predictions with new observations when available. Revise the model or restrict its domain if the evidence suggests that the relationship changes."
+    },
+    {
+      "id": "sl-2-6-ku-8",
+      "status": "approved",
+      "text": "Interpret a prediction in its units and context. Consider rounding, physical limits and whether fractional outputs make sense."
     }
   ],
   "visuals": [],
@@ -47,37 +87,101 @@
     {
       "id": "sl-2-6-misc-1",
       "status": "approved",
-      "weak": "Treating a good fit within the data range as proof of reliable extrapolation",
-      "better": "Check assumptions and explain why behavior may change outside the data."
+      "weak": "A residual of $-2$ means the model predicted two units too little.",
+      "better": "With observed minus predicted, $-2$ means the prediction was two units too high."
+    },
+    {
+      "id": "sl-2-6-misc-2",
+      "status": "approved",
+      "weak": "A model matches the observed data, so it must be valid forever.",
+      "better": "The conditions that produced the data may change; justify the domain and be cautious with extrapolation."
+    },
+    {
+      "id": "sl-2-6-misc-3",
+      "status": "approved",
+      "weak": "Small residuals prove a model is correct.",
+      "better": "Small residuals support fit to these observations but do not establish causation or guarantee future performance."
+    },
+    {
+      "id": "sl-2-6-misc-4",
+      "status": "approved",
+      "weak": "A prediction between two observations is exact.",
+      "better": "Interpolation is an estimate. Measurements and the assumed shape both introduce uncertainty."
     }
   ],
   "terms": [
     {
       "id": "sl-2-6-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Residual",
+      "text": "Observed output minus predicted output for the same input."
     },
     {
       "id": "sl-2-6-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Interpolation",
+      "text": "Estimating within the range of inputs represented in the data."
+    },
+    {
+      "id": "sl-2-6-terms-3",
+      "status": "approved",
+      "term": "Extrapolation",
+      "text": "Predicting beyond the observed input range."
+    },
+    {
+      "id": "sl-2-6-terms-4",
+      "status": "approved",
+      "term": "Assumption",
+      "text": "A condition treated as true for the purpose of constructing or applying a model."
+    },
+    {
+      "id": "sl-2-6-terms-5",
+      "status": "approved",
+      "term": "Validation",
+      "text": "Checking how well a model performs against observations, ideally including data not used to construct it."
     }
   ],
   "formula": [],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "A model predicts 42 items while 38 are observed. Find observed minus predicted and interpret it.",
+    "prompt": "A teacher measures the depth of water in a tank. At times $t=0,1,2,3$ minutes, the observed depths are respectively $12,18,23,30$ cm. Consider the model $d=12+6t$, where $d$ is the predicted depth in centimetres.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "a",
+        "q": "Interpret both parameters and state the assumption behind the model.",
+        "marks": 3,
+        "a": "The model predicts an initial depth of $12$ cm and an increase of $6$ cm per minute. It assumes that depth increases at a constant rate over the period considered.",
+        "m": "A1 A1 R1"
+      },
+      {
+        "label": "b",
+        "q": "Find the residual at $t=2$ and interpret it.",
         "marks": 2,
-        "a": "The residual is $38-42=-4$: the model overpredicts by 4 items.",
+        "a": "The predicted depth is $12+6(2)=24$ cm. Observed minus predicted is $23-24=-1$ cm: the model overpredicts by $1$ cm.",
         "m": "M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Estimate the depth at $t=2.5$ and explain whether this is interpolation or extrapolation.",
+        "marks": 2,
+        "a": "$d=12+6(2.5)=27$ cm. This is interpolation because $2.5$ minutes lies within the observed range from $0$ to $3$ minutes.",
+        "m": "A1 R1"
+      },
+      {
+        "label": "d",
+        "q": "Predict the depth after 10 minutes and explain a limitation.",
+        "marks": 3,
+        "a": "The formula predicts $d=72$ cm. This is extrapolation beyond the observed range. It may be unreliable if, for example, the tank fills to its capacity or the inflow rate changes.",
+        "m": "M1 A1 R1"
+      },
+      {
+        "label": "e",
+        "q": "What further evidence would help evaluate the model?",
+        "marks": 2,
+        "a": "Collect more depth measurements, including at times not used to choose the model, and compare observed and predicted depths. A systematic residual pattern could indicate that the constant-rate assumption is unsuitable.",
+        "m": "R1 R1"
       }
     ]
   },
@@ -85,8 +189,20 @@
     {
       "id": "sl-2-6-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Check assumptions and explain why behavior may change outside the data."
+      "q": "What does a negative residual mean?",
+      "model": "With the convention observed minus predicted, the observation is below the model’s prediction."
+    },
+    {
+      "id": "sl-2-6-kq-2",
+      "status": "approved",
+      "q": "Why might an apparently accurate model be unsuitable for a distant prediction?",
+      "model": "A fit to past observations does not ensure that the relationship, constraints or operating conditions remain the same beyond the observed range."
+    },
+    {
+      "id": "sl-2-6-kq-3",
+      "status": "approved",
+      "q": "What is the next step when residuals show a systematic pattern?",
+      "model": "Investigate the pattern and context, consider a different model or a restricted domain, and test the revision against additional data."
     }
   ],
   "history": [],
