@@ -1,0 +1,315 @@
+{
+  "code": "AHL 3.11",
+  "slug": "ahl-3-11",
+  "title": "Vector equation of a line",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 312,
+        "title": "Vector Equation of a Line",
+        "videoId": "x8LFS-0F75s",
+        "partial": false,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "A line through two points",
+            "text": "The presenter introduces a line passing through two points in three dimensions."
+          },
+          {
+            "t": 33,
+            "type": "Connection",
+            "title": "Point and direction",
+            "text": "Compare the point-and-direction idea with a familiar equation of a straight line."
+          },
+          {
+            "t": 81,
+            "type": "Formula",
+            "title": "The vector equation",
+            "text": "In $\\mathbf r=\\mathbf a+t\\mathbf b$, identify a position vector, a direction vector and a parameter."
+          },
+          {
+            "t": 137,
+            "type": "Concept",
+            "title": "Position vectors",
+            "text": "Coordinates can be represented as vectors from the origin."
+          },
+          {
+            "t": 169,
+            "type": "Method",
+            "title": "Find a direction vector",
+            "text": "Subtract the position of the first point from the second to obtain a vector parallel to the line."
+          },
+          {
+            "t": 219,
+            "type": "Calculation",
+            "title": "Subtract coordinates",
+            "text": "The example obtains direction $(4,2,-5)$."
+          },
+          {
+            "t": 257,
+            "type": "Calculation",
+            "title": "Write the vector equation",
+            "text": "Use a point on the line with the direction vector."
+          },
+          {
+            "t": 298,
+            "type": "Method",
+            "title": "Parametric coordinates",
+            "text": "A chosen parameter value gives a point by evaluating each component."
+          },
+          {
+            "t": 355,
+            "type": "Overview",
+            "title": "Practice and intersections",
+            "text": "The video recommends practice and previews intersections of lines."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Parameter versus time",
+            "text": "The parameter describes positions on a line. It represents time only when the context explicitly defines it as time.",
+            "write": "State the parameter domain and units when the context requires them."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "Timestamps follow captions; playback and the on-screen coordinates have not been independently verified.",
+            "write": "Check every component of the direction vector by subtracting the starting point from the ending point."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-3-11-ican-1",
+      "status": "approved",
+      "text": "I can write the vector equation of a line from two distinct points or from a point and nonzero direction."
+    },
+    {
+      "id": "ahl-3-11-ican-2",
+      "status": "approved",
+      "text": "I can convert between vector and parametric forms in two or three dimensions."
+    },
+    {
+      "id": "ahl-3-11-ican-3",
+      "status": "approved",
+      "text": "I can test whether a point lies on a line by checking one consistent parameter across all components."
+    },
+    {
+      "id": "ahl-3-11-ican-4",
+      "status": "approved",
+      "text": "I can recognize equivalent line equations and restrict a parameter to represent a ray or segment."
+    },
+    {
+      "id": "ahl-3-11-ican-5",
+      "status": "approved",
+      "text": "I can distinguish a geometric line parameter from time in a motion context."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-11-ku-1",
+      "status": "approved",
+      "text": "A line in two or three dimensions can be written $\\mathbf r=\\mathbf a+\\lambda\\mathbf d$, where $\\mathbf a$ is the position vector of a point on the line, $\\mathbf d\\ne\\mathbf0$ is a direction vector and $\\lambda\\in\\mathbb R$ for the whole line."
+    },
+    {
+      "id": "ahl-3-11-ku-2",
+      "status": "approved",
+      "text": "For distinct points $A$ and $B$, choose $\\mathbf a=\\overrightarrow{OA}$ and $\\mathbf d=\\overrightarrow{AB}=\\mathbf b-\\mathbf a$. Any nonzero scalar multiple of $\\mathbf d$ is another valid direction vector."
+    },
+    {
+      "id": "ahl-3-11-ku-3",
+      "status": "approved",
+      "text": "If $\\mathbf a=(a_1,a_2,a_3)$ and $\\mathbf d=(d_1,d_2,d_3)$, the parametric equations are $x=a_1+\\lambda d_1$, $y=a_2+\\lambda d_2$ and $z=a_3+\\lambda d_3$. The same parameter appears in all three."
+    },
+    {
+      "id": "ahl-3-11-ku-4",
+      "status": "approved",
+      "text": "To test whether $P$ lies on the line, solve a component equation for $\\lambda$ where the direction component is nonzero, then substitute that same value into every remaining component. If a direction component is zero, the corresponding coordinate must match the fixed coordinate."
+    },
+    {
+      "id": "ahl-3-11-ku-5",
+      "status": "approved",
+      "text": "Different equations can describe the same line: choose another point on it and any nonzero multiple of the direction. To establish equivalence, check that the directions are parallel and a point from one line lies on the other."
+    },
+    {
+      "id": "ahl-3-11-ku-6",
+      "status": "approved",
+      "text": "With $\\mathbf d=\\mathbf b-\\mathbf a$, the segment from $A$ to $B$ has $0\\leq\\lambda\\leq1$ and the ray starting at $A$ towards $B$ has $\\lambda\\geq0$. If the direction is rescaled, the parameter values for $B$ and the segment bounds must be rescaled too."
+    },
+    {
+      "id": "ahl-3-11-ku-7",
+      "status": "approved",
+      "text": "For an intersection of two lines, use independent parameters and equate corresponding components. A consistent pair yields an intersection point; an inconsistent system does not. In three dimensions nonparallel lines can be skew and fail to intersect."
+    },
+    {
+      "id": "ahl-3-11-ku-8",
+      "status": "approved",
+      "text": "A parameter is not automatically time or distance. If a motion model defines $t$ as time, the direction coefficient is velocity only when its units and linear model support that interpretation."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-11-misc-1",
+      "status": "approved",
+      "weak": "Use the endpoint $B$ as the direction vector.",
+      "better": "A direction vector is a displacement such as $\\mathbf b-\\mathbf a$, unless the given vector is explicitly a direction."
+    },
+    {
+      "id": "ahl-3-11-misc-2",
+      "status": "approved",
+      "weak": "The same point can use different parameter values in different components.",
+      "better": "A point on a line must satisfy all component equations using one common parameter value."
+    },
+    {
+      "id": "ahl-3-11-misc-3",
+      "status": "approved",
+      "weak": "A line and segment have the same unrestricted parameter domain.",
+      "better": "A full line uses all real parameters; a segment requires bounds tied to the chosen direction vector."
+    },
+    {
+      "id": "ahl-3-11-misc-4",
+      "status": "approved",
+      "weak": "Any two nonparallel lines in three dimensions intersect.",
+      "better": "They may be skew. Solve all three component equations to check consistency."
+    },
+    {
+      "id": "ahl-3-11-misc-5",
+      "status": "approved",
+      "weak": "The direction vector must have magnitude one.",
+      "better": "Any nonzero scalar multiple gives the same line; normalizing is optional unless requested."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-11-terms-1",
+      "status": "approved",
+      "term": "Position vector",
+      "text": "A vector from the origin to a point on the line."
+    },
+    {
+      "id": "ahl-3-11-terms-2",
+      "status": "approved",
+      "term": "Direction vector",
+      "text": "A nonzero vector parallel to the line."
+    },
+    {
+      "id": "ahl-3-11-terms-3",
+      "status": "approved",
+      "term": "Parameter",
+      "text": "A variable whose value selects a point from a parametrized set."
+    },
+    {
+      "id": "ahl-3-11-terms-4",
+      "status": "approved",
+      "term": "Parametric equations",
+      "text": "Equations expressing each coordinate using the same parameter."
+    },
+    {
+      "id": "ahl-3-11-terms-5",
+      "status": "approved",
+      "term": "Skew lines",
+      "text": "Nonparallel lines in three-dimensional space that do not intersect."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-11-formula-1",
+      "status": "approved",
+      "text": "Vector line: $\\mathbf r=\\mathbf a+\\lambda\\mathbf d$, where $\\mathbf d\\ne\\mathbf0$ and $\\lambda\\in\\mathbb R$."
+    },
+    {
+      "id": "ahl-3-11-formula-2",
+      "status": "approved",
+      "text": "Parametric form: $x=a_1+\\lambda d_1$, $y=a_2+\\lambda d_2$, and in three dimensions $z=a_3+\\lambda d_3$."
+    },
+    {
+      "id": "ahl-3-11-formula-3",
+      "status": "approved",
+      "text": "For points $A$ and $B$, $\\overrightarrow{AB}=\\mathbf b-\\mathbf a$."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "In three-dimensional space, let $A=(1,-1,2)$ and $B=(5,1,0)$. Consider the line through $A$ and $B$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find a vector equation of the line and write its parametric equations.",
+        "marks": 3,
+        "a": "$\\overrightarrow{AB}=(4,2,-2)=2(2,1,-1)$. One equation is $\\mathbf r=(1,-1,2)+\\lambda(2,1,-1)$, $\\lambda\\in\\mathbb R$. Thus $x=1+2\\lambda$, $y=-1+\\lambda$ and $z=2-\\lambda$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Determine whether $C=(7,2,-1)$ and $D=(3,0,2)$ lie on the line.",
+        "marks": 3,
+        "a": "For $C$, the first component gives $\\lambda=3$; the other components give $y=2$, $z=-1$, so $C$ lies on the line. For $D$, the first component gives $\\lambda=1$, which predicts $z=1$, not $2$. Therefore $D$ is not on the line.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Using the equation from part (a), give the parameter range for the segment from $A$ to $B$.",
+        "marks": 2,
+        "a": "$A$ occurs at $\\lambda=0$. Since $B-A=2(2,1,-1)$, $B$ occurs at $\\lambda=2$. The segment is $0\\leq\\lambda\\leq2$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Show that $\\mathbf r=(7,2,-1)+\\mu(-4,-2,2)$ represents the same line.",
+        "marks": 2,
+        "a": "The new starting point is $C$, which lies on the original line, and $(-4,-2,2)=-2(2,1,-1)$ is a nonzero multiple of its direction. Therefore the two equations represent the same full line.",
+        "m": "M1 R1"
+      },
+      {
+        "label": "e",
+        "q": "A second line is $\\mathbf r=(3,0,1)+\\mu(1,-1,2)$. Find its intersection with the original line.",
+        "marks": 3,
+        "a": "Equate components: $1+2\\lambda=3+\\mu$, $-1+\\lambda=-\\mu$ and $2-\\lambda=1+2\\mu$. The first two give $\\lambda=1$, $\\mu=0$; these also satisfy the third. The intersection is $(3,0,1)$.",
+        "m": "M1 M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-11-kq-1",
+      "status": "approved",
+      "q": "Why do different direction vectors describe the same line?",
+      "model": "Any nonzero scalar multiple is parallel to the original direction. The parameter changes its scale or sign to reach the same points."
+    },
+    {
+      "id": "ahl-3-11-kq-2",
+      "status": "approved",
+      "q": "Why must the same parameter work in every coordinate?",
+      "model": "The parameter selects a single point on the line. Different values in different coordinates would mix components of different points."
+    },
+    {
+      "id": "ahl-3-11-kq-3",
+      "status": "approved",
+      "q": "Why can two nonparallel lines in space fail to meet?",
+      "model": "They can pass in different planes without sharing a point. Equating all three coordinates tests whether one consistent pair of parameters exists."
+    },
+    {
+      "id": "ahl-3-11-kq-4",
+      "status": "approved",
+      "q": "Why do segment bounds depend on the chosen direction?",
+      "model": "Rescaling the direction rescales the parameter needed to reach an endpoint. Calculate the parameter values of both endpoints for the particular equation."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
