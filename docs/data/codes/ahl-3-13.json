@@ -1,0 +1,444 @@
+{
+  "code": "AHL 3.13",
+  "slug": "ahl-3-13",
+  "title": "Scalar and vector products",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 313,
+        "title": "Scalar Product & Angle Between Two Vectors",
+        "videoId": "cb_i734CJNQ",
+        "partial": true,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "Dot product and angle",
+            "text": "The presenter introduces the scalar product and the angle between vectors."
+          },
+          {
+            "t": 18,
+            "type": "Example",
+            "title": "Write vectors in components",
+            "text": "Two three-dimensional vectors are represented using basis vectors or columns."
+          },
+          {
+            "t": 57,
+            "type": "Method",
+            "title": "Multiply corresponding components",
+            "text": "Form the dot product by multiplying matching components and adding."
+          },
+          {
+            "t": 104,
+            "type": "Calculation",
+            "title": "Evaluate the scalar product",
+            "text": "The example gives $15-8-2=5$."
+          },
+          {
+            "t": 128,
+            "type": "Concept",
+            "title": "Sign and angle",
+            "text": "The sign of a dot product gives information about the angle between nonzero vectors."
+          },
+          {
+            "t": 224,
+            "type": "Concept",
+            "title": "Zero dot product",
+            "text": "For nonzero vectors, a zero dot product indicates perpendicular directions."
+          },
+          {
+            "t": 268,
+            "type": "Formula",
+            "title": "Connect dot product and cosine",
+            "text": "Relate the product to magnitudes and the cosine of the angle."
+          },
+          {
+            "t": 365,
+            "type": "Calculation",
+            "title": "Find both magnitudes",
+            "text": "The presenter calculates the lengths needed in the angle formula."
+          },
+          {
+            "t": 425,
+            "type": "Method",
+            "title": "Solve for the angle",
+            "text": "Use inverse cosine and the correct angle setting."
+          },
+          {
+            "t": 496,
+            "type": "Calculation",
+            "title": "Check the angle",
+            "text": "The example’s angle is approximately $78.5^\\circ$."
+          },
+          {
+            "t": 508,
+            "type": "Overview",
+            "title": "Review",
+            "text": "The video recaps products, magnitudes and angles."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Zero vectors and angle endpoints",
+            "text": "The sign rules for an angle require both vectors to be nonzero. A positive dot product also includes the case of the same direction, angle $0^\\circ$.",
+            "write": "A zero vector has zero dot product with every vector but no defined direction or angle."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "Times and numerical details follow captions; playback and the calculator screen have not been independently verified.",
+            "write": "Use degree mode if an angle is requested in degrees."
+          }
+        ]
+      },
+      {
+        "n": 314,
+        "title": "Vector Product",
+        "videoId": "70LMKk6Mfd8",
+        "partial": true,
+        "moments": [
+          {
+            "t": 4,
+            "type": "Overview",
+            "title": "The cross product",
+            "text": "The presenter introduces the vector product and contrasts it with a scalar product."
+          },
+          {
+            "t": 68,
+            "type": "Method",
+            "title": "Set up a determinant",
+            "text": "Enter the two vectors in the chosen order under the basis vectors."
+          },
+          {
+            "t": 115,
+            "type": "Calculation",
+            "title": "Calculate the first component",
+            "text": "Expand the determinant to obtain the $\\mathbf i$ component."
+          },
+          {
+            "t": 168,
+            "type": "Calculation",
+            "title": "Keep the middle sign",
+            "text": "The $\\mathbf j$ cofactor has a minus sign."
+          },
+          {
+            "t": 216,
+            "type": "Calculation",
+            "title": "Complete the product",
+            "text": "The example produces $(2,-3,1)$."
+          },
+          {
+            "t": 237,
+            "type": "Concept",
+            "title": "Order changes the sign",
+            "text": "Reversing the order gives the opposite cross-product vector."
+          },
+          {
+            "t": 256,
+            "type": "Visual",
+            "title": "Perpendicular direction",
+            "text": "The presenter introduces the right-hand rule for orientation."
+          },
+          {
+            "t": 377,
+            "type": "Concept",
+            "title": "Reverse the order",
+            "text": "Changing the order reverses the normal direction."
+          },
+          {
+            "t": 425,
+            "type": "Application",
+            "title": "Triangle and parallelogram area",
+            "text": "Use the magnitude of the product; the triangle has half the corresponding parallelogram area."
+          },
+          {
+            "t": 488,
+            "type": "Overview",
+            "title": "Practice",
+            "text": "The presenter closes with a recommendation to practise."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Normal to the plane",
+            "text": "For nonparallel three-dimensional vectors, the nonzero cross product is perpendicular to the plane they span, not a vector lying in that plane. Parallel vectors have zero cross product, which does not determine a unique unit normal.",
+            "write": "Check perpendicularity by taking the dot product with each original vector."
+          },
+          {
+            "kind": "omission",
+            "title": "Vector components need further study",
+            "text": "The two videos do not work through scalar and perpendicular components in detail. This page develops those formulas and distinguishes a scalar component from a projection vector.",
+            "write": "The signed scalar component of $\\mathbf u$ along $\\mathbf v$ is $(\\mathbf u\\cdot\\mathbf v)/|\\mathbf v|$ for $\\mathbf v\\ne\\mathbf0$."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "Times and displayed values follow captions; playback and diagrams have not been independently verified.",
+            "write": "Check cross-product order and the middle component’s sign."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-3-13-ican-1",
+      "status": "approved",
+      "text": "I can calculate a dot product, find an angle between nonzero vectors and test perpendicularity."
+    },
+    {
+      "id": "ahl-3-13-ican-2",
+      "status": "approved",
+      "text": "I can distinguish the directed vector angle from the acute angle between lines."
+    },
+    {
+      "id": "ahl-3-13-ican-3",
+      "status": "approved",
+      "text": "I can calculate a cross product in three dimensions, interpret its orientation and verify it is perpendicular to both vectors."
+    },
+    {
+      "id": "ahl-3-13-ican-4",
+      "status": "approved",
+      "text": "I can use the cross-product magnitude for parallelogram and triangle areas."
+    },
+    {
+      "id": "ahl-3-13-ican-5",
+      "status": "approved",
+      "text": "I can find signed scalar and vector projections and the magnitude of a perpendicular component."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-13-ku-1",
+      "status": "approved",
+      "text": "For $\\mathbf u=(u_1,u_2,u_3)$ and $\\mathbf v=(v_1,v_2,v_3)$, the scalar product is $\\mathbf u\\cdot\\mathbf v=u_1v_1+u_2v_2+u_3v_3$. The result is a scalar."
+    },
+    {
+      "id": "ahl-3-13-ku-2",
+      "status": "approved",
+      "text": "For nonzero vectors, $\\mathbf u\\cdot\\mathbf v=|\\mathbf u||\\mathbf v|\\cos\\theta$, where $0\\leq\\theta\\leq\\pi$ is the angle between their directions. Divide by the magnitudes and use inverse cosine."
+    },
+    {
+      "id": "ahl-3-13-ku-3",
+      "status": "approved",
+      "text": "For nonzero vectors, a zero dot product means perpendicular directions. A positive product means an angle less than $90^\\circ$, including $0^\\circ$; a negative product means an angle greater than $90^\\circ$, including $180^\\circ$. A zero vector has no defined angle."
+    },
+    {
+      "id": "ahl-3-13-ku-4",
+      "status": "approved",
+      "text": "Lines have no preferred direction. The smaller angle between two lines with nonzero direction vectors satisfies $\\cos\\phi=|\\mathbf u\\cdot\\mathbf v|/(|\\mathbf u||\\mathbf v|)$, where $0\\leq\\phi\\leq90^\\circ$."
+    },
+    {
+      "id": "ahl-3-13-ku-5",
+      "status": "approved",
+      "text": "The three-dimensional cross product is $\\mathbf u\\times\\mathbf v=(u_2v_3-u_3v_2,\\;u_3v_1-u_1v_3,\\;u_1v_2-u_2v_1)$. It is a vector perpendicular to both inputs."
+    },
+    {
+      "id": "ahl-3-13-ku-6",
+      "status": "approved",
+      "text": "For nonparallel nonzero vectors, the right-hand rule chooses its direction and $|\\mathbf u\\times\\mathbf v|=|\\mathbf u||\\mathbf v|\\sin\\theta$. Reversing the order changes its sign. If the vectors are parallel or either is zero, the product is zero and it does not define a unit normal."
+    },
+    {
+      "id": "ahl-3-13-ku-7",
+      "status": "approved",
+      "text": "The magnitude of the cross product is the area of the parallelogram generated by the two vectors; half of it is the area of the corresponding triangle. Area is nonnegative and has square units when the vectors are lengths."
+    },
+    {
+      "id": "ahl-3-13-ku-8",
+      "status": "approved",
+      "text": "For $\\mathbf v\\ne\\mathbf0$, the signed scalar component of $\\mathbf u$ in the direction of $\\mathbf v$ is $(\\mathbf u\\cdot\\mathbf v)/|\\mathbf v|$. A negative value means the component points opposite the chosen direction."
+    },
+    {
+      "id": "ahl-3-13-ku-9",
+      "status": "approved",
+      "text": "The vector projection of $\\mathbf u$ onto $\\mathbf v$ is $\\operatorname{proj}_{\\mathbf v}\\mathbf u=\\frac{\\mathbf u\\cdot\\mathbf v}{|\\mathbf v|^2}\\mathbf v$. Subtract it from $\\mathbf u$ to obtain the perpendicular component vector."
+    },
+    {
+      "id": "ahl-3-13-ku-10",
+      "status": "approved",
+      "text": "The magnitude of the perpendicular component is $|\\mathbf u\\times\\mathbf v|/|\\mathbf v|$ in three dimensions. A unit normal to the plane is $(\\mathbf u\\times\\mathbf v)/|\\mathbf u\\times\\mathbf v|$ only when the cross product is nonzero."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-13-misc-1",
+      "status": "approved",
+      "weak": "$\\mathbf u\\cdot\\mathbf v=0$ proves perpendicular directions even if $\\mathbf u=\\mathbf0$.",
+      "better": "Both vectors must be nonzero to define an angle or a direction."
+    },
+    {
+      "id": "ahl-3-13-misc-2",
+      "status": "approved",
+      "weak": "The cross product is a scalar.",
+      "better": "The cross product is a vector; its magnitude is a scalar."
+    },
+    {
+      "id": "ahl-3-13-misc-3",
+      "status": "approved",
+      "weak": "Switching the cross-product order changes nothing.",
+      "better": "$\\mathbf v\\times\\mathbf u=-(\\mathbf u\\times\\mathbf v)$."
+    },
+    {
+      "id": "ahl-3-13-misc-4",
+      "status": "approved",
+      "weak": "The cross product of parallel vectors gives a unit normal.",
+      "better": "It is the zero vector, which cannot be normalized."
+    },
+    {
+      "id": "ahl-3-13-misc-5",
+      "status": "approved",
+      "weak": "The angle between two lines must equal the obtuse angle between their chosen direction vectors.",
+      "better": "Reverse one direction if necessary and report the smaller line angle."
+    },
+    {
+      "id": "ahl-3-13-misc-6",
+      "status": "approved",
+      "weak": "A scalar component is the same object as a vector projection.",
+      "better": "The scalar component is signed and numerical; the projection vector also specifies direction."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-13-terms-1",
+      "status": "approved",
+      "term": "Scalar product",
+      "text": "The dot product, a scalar obtained from two vectors."
+    },
+    {
+      "id": "ahl-3-13-terms-2",
+      "status": "approved",
+      "term": "Vector product",
+      "text": "The cross product, a three-dimensional vector perpendicular to both inputs."
+    },
+    {
+      "id": "ahl-3-13-terms-3",
+      "status": "approved",
+      "term": "Unit normal",
+      "text": "A vector of magnitude one perpendicular to a specified plane; its orientation must be stated."
+    },
+    {
+      "id": "ahl-3-13-terms-4",
+      "status": "approved",
+      "term": "Scalar component",
+      "text": "The signed magnitude of a vector along a chosen direction."
+    },
+    {
+      "id": "ahl-3-13-terms-5",
+      "status": "approved",
+      "term": "Vector projection",
+      "text": "The vector part of one vector parallel to another."
+    },
+    {
+      "id": "ahl-3-13-terms-6",
+      "status": "approved",
+      "term": "Angle between lines",
+      "text": "The smaller angle between their directions, independent of which way each direction vector is chosen."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-13-formula-1",
+      "status": "approved",
+      "text": "Dot product: $\\mathbf u\\cdot\\mathbf v=\\sum u_iv_i=|\\mathbf u||\\mathbf v|\\cos\\theta$ for nonzero vectors."
+    },
+    {
+      "id": "ahl-3-13-formula-2",
+      "status": "approved",
+      "text": "Cross-product magnitude: $|\\mathbf u\\times\\mathbf v|=|\\mathbf u||\\mathbf v|\\sin\\theta$."
+    },
+    {
+      "id": "ahl-3-13-formula-3",
+      "status": "approved",
+      "text": "For $\\mathbf v\\ne\\mathbf0$, the signed scalar component of $\\mathbf u$ along $\\mathbf v$ is $(\\mathbf u\\cdot\\mathbf v)/|\\mathbf v|$; the perpendicular component magnitude is $|\\mathbf u\\times\\mathbf v|/|\\mathbf v|$."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Two sides of a parallelogram are represented by $\\mathbf u=(2,1,2)$ m and $\\mathbf v=(1,2,2)$ m, with their tails at the same point.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find the scalar product and the angle between the vectors.",
+        "marks": 3,
+        "a": "$\\mathbf u\\cdot\\mathbf v=2(1)+1(2)+2(2)=8$. Both magnitudes are $3$ m, so $\\cos\\theta=8/9$ and $\\theta=\\cos^{-1}(8/9)\\approx27.3^\\circ$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find $\\mathbf u\\times\\mathbf v$ and verify that it is perpendicular to both vectors.",
+        "marks": 3,
+        "a": "$\\mathbf u\\times\\mathbf v=(1(2)-2(2),2(1)-2(2),2(2)-1(1))=(-2,-2,3)$. Its dot products with $\\mathbf u$ and $\\mathbf v$ are both $0$, verifying perpendicularity.",
+        "m": "M1 A1 R1"
+      },
+      {
+        "label": "c",
+        "q": "Find the parallelogram area and the area of a triangle formed by these sides.",
+        "marks": 2,
+        "a": "The product has magnitude $\\sqrt{(-2)^2+(-2)^2+3^2}=\\sqrt{17}$. The parallelogram area is $\\sqrt{17}\\text{ m}^2$ and the triangle area is $\\sqrt{17}/2\\text{ m}^2$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Find the signed scalar component and vector projection of $\\mathbf u$ in the direction of $\\mathbf v$.",
+        "marks": 3,
+        "a": "The scalar component is $8/|\\mathbf v|=8/3$ m. The vector projection is $\\frac{8}{9}(1,2,2)$ m. The scalar and the vector answer describe different quantities.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "e",
+        "q": "Find the magnitude of the component of $\\mathbf u$ perpendicular to $\\mathbf v$ and a unit normal in the direction of $\\mathbf u\\times\\mathbf v$.",
+        "marks": 3,
+        "a": "The perpendicular component magnitude is $|\\mathbf u\\times\\mathbf v|/|\\mathbf v|=\\sqrt{17}/3$ m. The requested unit normal is $(-2,-2,3)/\\sqrt{17}$. Reversing the cross-product order would reverse this normal.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "f",
+        "q": "Find the angle between the lines directed by $\\mathbf u$ and $-\\mathbf v$.",
+        "marks": 2,
+        "a": "The angle between the chosen directed vectors is about $152.7^\\circ$, but a line has no preferred direction. The smaller angle between the lines is therefore $180^\\circ-152.7^\\circ\\approx27.3^\\circ$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-13-kq-1",
+      "status": "approved",
+      "q": "Why does a zero dot product indicate perpendicularity only for nonzero vectors?",
+      "model": "The angle formula requires defined directions and nonzero magnitudes. The zero vector gives a zero product but has no defined angle."
+    },
+    {
+      "id": "ahl-3-13-kq-2",
+      "status": "approved",
+      "q": "Why does swapping the cross-product order reverse the result?",
+      "model": "The right-hand-rule orientation reverses when the ordered pair is reversed; the magnitude remains the same."
+    },
+    {
+      "id": "ahl-3-13-kq-3",
+      "status": "approved",
+      "q": "Why is a triangle’s area half the cross-product magnitude?",
+      "model": "The magnitude gives the base times perpendicular height of the parallelogram spanned by the vectors. A matching triangle occupies half of it."
+    },
+    {
+      "id": "ahl-3-13-kq-4",
+      "status": "approved",
+      "q": "Why can the scalar component be negative?",
+      "model": "It records signed amount along the chosen direction. A negative component points opposite that direction; its magnitude is nonnegative."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
