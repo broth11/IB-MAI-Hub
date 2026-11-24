@@ -203,7 +203,7 @@
         "label": "c",
         "q": "Find the time and distance of closest approach for $0\\leq t\\leq6$.",
         "marks": 4,
-        "a": "$\\overrightarrow{AB}(t)=(10-3t,t)$. Thus $D^2=(10-3t)^2+t^2=10t^2-60t+100=10(t-3)^2+10$. The minimum occurs at $t=3$ s, inside the interval, and the closest distance is $\\sqrt{10}\\approx3.16$ m. The completed square also shows that both endpoints give larger values.",
+        "a": "$\\overrightarrow{AB}(t)=(10-3t,t)$. Thus $D^2=(10-3t)^2+t^2$. Completing the square gives $D^2=10(t-3)^2+10$. The minimum occurs at $t=3$ s, inside the interval, and the closest distance is $\\sqrt{10}\\approx3.16$ m. The completed square also shows that both endpoints give larger values.",
         "m": "M1 M1 A1 A1"
       },
       {

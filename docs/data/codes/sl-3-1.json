@@ -109,7 +109,7 @@
     {
       "id": "sl-3-1-ku-1",
       "status": "approved",
-      "text": "For points $A(x_1,y_1,z_1)$ and $B(x_2,y_2,z_2)$, find coordinate differences. The distance is $AB=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$. This is Pythagoras applied twice."
+      "text": "For points $A(x_1,y_1,z_1)$ and $B(x_2,y_2,z_2)$, let $\\Delta x=x_2-x_1$, $\\Delta y=y_2-y_1$ and $\\Delta z=z_2-z_1$. The distance is $AB=\\sqrt{(\\Delta x)^2+(\\Delta y)^2+(\\Delta z)^2}$. This is Pythagoras applied twice."
     },
     {
       "id": "sl-3-1-ku-2",
@@ -262,7 +262,7 @@
         "label": "c",
         "q": "Find the support’s length and the coordinates of its midpoint.",
         "marks": 3,
-        "a": "$AB=\\sqrt{6^2+8^2+12^2}=\\sqrt{244}=2\\sqrt{61}\\text{ m}\\approx15.6\\text{ m}$. Average corresponding coordinates: $M=(3,4,6)$.",
+        "a": "$AB=\\sqrt{6^2+8^2+12^2}=\\sqrt{244}$ m. Thus $AB=2\\sqrt{61}\\text{ m}\\approx15.6\\text{ m}$. Average corresponding coordinates: $M=(3,4,6)$.",
         "m": "M1 A1 A1"
       },
       {

@@ -374,7 +374,7 @@
         "label": "c",
         "q": "Find the area of the garden.",
         "marks": 2,
-        "a": "$K=\\frac12(10)(7)\\sin60^\\circ=\\frac{35\\sqrt3}{2}\\text{ m}^2\\approx30.3\\text{ m}^2$. Equivalently, use base $AB$ and height $CD$ from part (a).",
+        "a": "$K=\\frac12(10)(7)\\sin60^\\circ$. This gives $K=\\frac{35\\sqrt3}{2}\\text{ m}^2\\approx30.3\\text{ m}^2$. Equivalently, use base $AB$ and height $CD$ from part (a).",
         "m": "M1 A1"
       },
       {

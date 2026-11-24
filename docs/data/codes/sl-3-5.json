@@ -253,7 +253,7 @@
     {
       "id": "sl-3-5-formula-4",
       "status": "approved",
-      "text": "Equidistance alternative: $(x-x_1)^2+(y-y_1)^2=(x-x_2)^2+(y-y_2)^2$."
+      "text": "Equidistance alternative: set $d_A^2=d_B^2$, where $d_A^2=(x-x_1)^2+(y-y_1)^2$ and $d_B^2=(x-x_2)^2+(y-y_2)^2$."
     }
   ],
   "gdc": [],

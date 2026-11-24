@@ -269,7 +269,7 @@
         "label": "c",
         "q": "Find the exact area of the path and its area to three significant figures.",
         "marks": 3,
-        "a": "Subtract the inner sector from the outer sector: $A=\\frac12(8^2-3^2)(5\\pi/6)=275\\pi/12\\text{ m}^2\\approx72.0\\text{ m}^2$.",
+        "a": "Subtract the inner sector from the outer sector: $A=\\frac12(8^2-3^2)(5\\pi/6)$. Thus $A=\\frac{275\\pi}{12}\\text{ m}^2\\approx72.0\\text{ m}^2$.",
         "m": "M1 M1 A1"
       },
       {

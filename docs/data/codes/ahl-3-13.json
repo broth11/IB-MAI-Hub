@@ -235,7 +235,7 @@
     {
       "id": "ahl-3-13-ku-5",
       "status": "approved",
-      "text": "The three-dimensional cross product is $\\mathbf u\\times\\mathbf v=(u_2v_3-u_3v_2,\\;u_3v_1-u_1v_3,\\;u_1v_2-u_2v_1)$. It is a vector perpendicular to both inputs."
+      "text": "The three-dimensional cross product has components $u_2v_3-u_3v_2$, $u_3v_1-u_1v_3$ and $u_1v_2-u_2v_1$, in that order. The resulting vector is perpendicular to both inputs."
     },
     {
       "id": "ahl-3-13-ku-6",
@@ -373,7 +373,7 @@
         "label": "b",
         "q": "Find $\\mathbf u\\times\\mathbf v$ and verify that it is perpendicular to both vectors.",
         "marks": 3,
-        "a": "$\\mathbf u\\times\\mathbf v=(1(2)-2(2),2(1)-2(2),2(2)-1(1))=(-2,-2,3)$. Its dot products with $\\mathbf u$ and $\\mathbf v$ are both $0$, verifying perpendicularity.",
+        "a": "The three components are $1(2)-2(2)=-2$, $2(1)-2(2)=-2$ and $2(2)-1(1)=3$. Therefore $\\mathbf u\\times\\mathbf v=(-2,-2,3)$. Its dot products with $\\mathbf u$ and $\\mathbf v$ are both $0$, verifying perpendicularity.",
         "m": "M1 A1 R1"
       },
       {

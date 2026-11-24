@@ -317,7 +317,7 @@
         "label": "b",
         "q": "Use Kruskal’s algorithm to find an MST.",
         "marks": 3,
-        "a": "List edges in increasing order: $CD(1),AB(2),BC(3),AC(4),AD(5),BD(6)$. Select $CD$, then $AB$, then $BC$: none creates a cycle and all four vertices are connected. Stop with total weight $1+2+3=6$ km.",
+        "a": "List the edges in increasing order: $CD(1)$, $AB(2)$, $BC(3)$, $AC(4)$, $AD(5)$, $BD(6)$. Select $CD$, then $AB$, then $BC$: none creates a cycle and all four vertices are connected. Stop with total weight $1+2+3=6$ km.",
         "m": "M1 M1 A1"
       },
       {
