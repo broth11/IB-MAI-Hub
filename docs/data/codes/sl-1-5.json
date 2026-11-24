@@ -9,84 +9,225 @@
   },
   "ican": [
     {
-      "id": "sl-1-5-ican-1",
+      "id": "sl15-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for laws of exponents and introduction to logarithms."
+      "text": "I can simplify products, quotients and powers involving integer exponents, stating any restrictions on variables."
     },
     {
-      "id": "sl-1-5-ican-2",
+      "id": "sl15-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can interpret zero and negative exponents and rewrite a result with positive exponents."
+    },
+    {
+      "id": "sl15-ican-3",
+      "status": "approved",
+      "text": "I can convert between exponential and logarithmic statements and identify the base, exponent and argument."
+    },
+    {
+      "id": "sl15-ican-4",
+      "status": "approved",
+      "text": "I can evaluate common logarithms and natural logarithms using technology and check that the argument is positive."
+    },
+    {
+      "id": "sl15-ican-5",
+      "status": "approved",
+      "text": "I can use logarithms to solve an exponential equation and check the answer by substitution."
     }
   ],
   "ku": [
     {
-      "id": "sl-1-5-ku-1",
+      "id": "sl15-ku-1",
       "status": "approved",
-      "text": "For positive bases, $a^ma^n=a^{m+n}$ and $a^m/a^n=a^{m-n}$."
+      "text": "For integer exponents, products with a common base satisfy $a^m a^n=a^{m+n}$; quotients satisfy $a^m/a^n=a^{m-n}$ when the expressions are defined and the divisor is nonzero."
     },
     {
-      "id": "sl-1-5-ku-2",
+      "id": "sl15-ku-2",
       "status": "approved",
-      "text": "Also $(a^m)^n=a^{mn}$ and $a^{-n}=1/a^n$ for $a\\ne0$."
+      "text": "A power raised to another integer power satisfies $(a^m)^n=a^{mn}$. Apply powers to every factor: $(ab)^n=a^nb^n$ whenever the expressions are defined."
     },
     {
-      "id": "sl-1-5-ku-3",
+      "id": "sl15-ku-3",
       "status": "approved",
-      "text": "$\\log_a b=c$ means $a^c=b$, with $a>0$, $a\\ne1$ and $b>0$."
+      "text": "For $a\\ne0$, $a^0=1$ and $a^{-n}=1/a^n$. A negative exponent gives a reciprocal; it does not by itself make the answer negative."
+    },
+    {
+      "id": "sl15-ku-4",
+      "status": "approved",
+      "text": "The statement $a^x=b$ is equivalent to $\\log_a b=x$ when $a>0$, $a\\ne1$ and $b>0$. The logarithm is the exponent needed on the base to obtain $b$."
+    },
+    {
+      "id": "sl15-ku-5",
+      "status": "approved",
+      "text": "$\\log x$ denotes the base-10 logarithm here; $\\ln x=\\log_e x$. Both are defined for positive real inputs, and the inverse relationships are $10^{\\log x}=x$ and $e^{\\ln x}=x$ for $x>0$."
+    },
+    {
+      "id": "sl15-ku-6",
+      "status": "approved",
+      "text": "Calculator values are approximations. Keep extra digits until the final answer and verify an exponential solution by substitution. The laws for combining logarithms are developed in AHL 1.9."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "sl15-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.1",
+        "Standard form and powers of ten"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 1.9",
+        "Laws of logarithms"
+      ],
+      [
+        "AHL 1.10",
+        "Rational exponents"
+      ],
+      [
+        "AHL 2.10",
+        "Logarithmic scaling and linearisation"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 1.4",
+        "Compound growth and depreciation"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "sl-1-5-misc-1",
+      "id": "sl15-misc-1",
       "status": "approved",
-      "weak": "Adding powers when the bases are different",
-      "better": "The product rule applies directly only to powers with the same base."
+      "weak": "$a^m+a^n=a^{m+n}$.",
+      "better": "The rule $a^ma^n=a^{m+n}$ applies to multiplication, not addition. For example, $2^2+2^3=12$, while $2^5=32$."
+    },
+    {
+      "id": "sl15-misc-2",
+      "status": "approved",
+      "weak": "$2x^{-3}=-2x^3$.",
+      "better": "For $x\\ne0$, $2x^{-3}=2/x^3$. The negative exponent makes the factor reciprocal."
+    },
+    {
+      "id": "sl15-misc-3",
+      "status": "approved",
+      "weak": "$(2x)^4=2x^4$.",
+      "better": "The exponent applies to both factors: $(2x)^4=2^4x^4=16x^4$."
+    },
+    {
+      "id": "sl15-misc-4",
+      "status": "approved",
+      "weak": "$\\log 0=0$.",
+      "better": "A real logarithm requires a positive argument. No power of 10 equals zero, so $\\log 0$ is undefined."
+    },
+    {
+      "id": "sl15-misc-5",
+      "status": "approved",
+      "weak": "$\\log(100)=2$ means $2^{10}=100$.",
+      "better": "The base is 10: $\\log_{10}100=2$ means $10^2=100$."
+    },
+    {
+      "id": "sl15-misc-6",
+      "status": "approved",
+      "weak": "$\\ln x$ and $\\log x$ are the same function.",
+      "better": "$\\ln x$ has base $e$; $\\log x$ denotes base 10 here. Their values generally differ."
     }
   ],
   "terms": [
     {
-      "id": "sl-1-5-terms-1",
+      "id": "sl15-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Simplify",
+      "text": "Apply the relevant exponent laws, present the expression in the requested form and state any restrictions."
     },
     {
-      "id": "sl-1-5-terms-2",
+      "id": "sl15-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Evaluate using technology",
+      "text": "Select the correct logarithm base, enter the whole argument and round only the final result as requested."
+    },
+    {
+      "id": "sl15-term-3",
+      "status": "approved",
+      "term": "Solve",
+      "text": "Find the unknown, respect the domain and check by substituting into the original equation."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "sl15-formula-1",
+      "status": "approved",
+      "text": "The formula booklet gives the equivalence $a^x=b\\Longleftrightarrow x=\\log_a b$ for $a>0$, $a\\ne1$ and $b>0$."
+    },
+    {
+      "id": "sl15-formula-2",
+      "status": "approved",
+      "text": "This standard introduces integer exponent laws and logarithms in bases 10 and $e$. The logarithm product, quotient and power laws are addressed in AHL 1.9."
+    }
+  ],
   "gdc": [],
   "worked": {
+    "id": "sl15-worked",
     "status": "approved",
-    "prompt": "Simplify $2^3\\cdot2^{-5}$ and solve $\\log_2 x=4$.",
+    "prompt": "Work with integer exponents and logarithms. Assume $x\\ne0$ where it appears.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Simplify $\\dfrac{(2x)^4x^{-3}}{4}$, giving the answer with positive exponents.",
         "marks": 2,
-        "a": "$2^{-2}=\\frac14$ and $x=2^4=16$.",
+        "a": "$(2x)^4=16x^4$, so $\\dfrac{16x^4x^{-3}}4=4x$ for $x\\ne0$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Write $\\log_{10}(0.001)=-3$ as an exponential statement.",
+        "marks": 1,
+        "a": "$10^{-3}=0.001$.",
+        "m": "A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Evaluate $\\ln 12$ to 3 significant figures.",
+        "marks": 1,
+        "a": "$\\ln12=2.484906\\ldots\\approx2.48$.",
+        "m": "A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Solve $e^t=12$, giving $t$ to 3 significant figures.",
+        "marks": 2,
+        "a": "Apply the natural logarithm: $t=\\ln12\\approx2.48$. Check with the unrounded value: $e^{\\ln12}=12$.",
         "m": "M1 A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "sl-1-5-kq-1",
+      "id": "sl15-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "The product rule applies directly only to powers with the same base."
+      "q": "Why is $a^{-3}$ a reciprocal instead of a negative number?",
+      "model": "For $a\\ne0$, the quotient rule gives $a^3a^{-3}=a^0=1$. Therefore $a^{-3}=1/a^3$."
+    },
+    {
+      "id": "sl15-kq-2",
+      "status": "approved",
+      "q": "Why must the argument of a real logarithm be positive?",
+      "model": "For a positive base, every real power is positive. Consequently a logarithm cannot ask for an exponent that produces zero or a negative value."
+    },
+    {
+      "id": "sl15-kq-3",
+      "status": "approved",
+      "q": "Why is $a^0=1$ restricted to a nonzero base?",
+      "model": "The exponent law gives $a^n/a^n=a^0=1$, but this quotient is defined only if $a^n\\ne0$. In this context $0^0$ is not defined."
+    },
+    {
+      "id": "sl15-kq-4",
+      "status": "approved",
+      "q": "What does $\\log_{10}(0.01)=-2$ mean?",
+      "model": "It says the power of 10 needed to produce $0.01$ is $-2$: $10^{-2}=0.01$."
     }
   ],
   "history": [],
