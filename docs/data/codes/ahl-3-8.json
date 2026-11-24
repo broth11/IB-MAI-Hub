@@ -1,0 +1,343 @@
+{
+  "code": "AHL 3.8",
+  "slug": "ahl-3-8",
+  "title": "Unit circle, identities and trigonometric equations",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 308,
+        "title": "Unit Circle & Trig Ratios",
+        "videoId": "WBt7Bm0WoCc",
+        "partial": true,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "Special triangles and the unit circle",
+            "text": "The video introduces exact ratios and their connection to the unit circle."
+          },
+          {
+            "t": 38,
+            "type": "Example",
+            "title": "A 45-degree triangle",
+            "text": "A $45^\\circ$ right triangle gives $\\sin45^\\circ=1/\\sqrt2$."
+          },
+          {
+            "t": 86,
+            "type": "Example",
+            "title": "Cosine of 30 degrees",
+            "text": "The second special triangle gives $\\cos30^\\circ=\\sqrt3/2$."
+          },
+          {
+            "t": 117,
+            "type": "Example",
+            "title": "Tangent of 60 degrees",
+            "text": "Use opposite over adjacent to obtain $\\tan60^\\circ=\\sqrt3$."
+          },
+          {
+            "t": 149,
+            "type": "Concept",
+            "title": "Points on the unit circle",
+            "text": "A circle centred at the origin has radius one; the horizontal and vertical coordinates vary with angle."
+          },
+          {
+            "t": 194,
+            "type": "Concept",
+            "title": "Sine as vertical coordinate",
+            "text": "At $30^\\circ$, the vertical coordinate is $1/2$."
+          },
+          {
+            "t": 267,
+            "type": "Concept",
+            "title": "Cosine as horizontal coordinate",
+            "text": "At $30^\\circ$, the horizontal coordinate is $\\sqrt3/2$."
+          },
+          {
+            "t": 308,
+            "type": "Example",
+            "title": "Sine in other quadrants",
+            "text": "Reference angles and coordinate signs give the sine of $150^\\circ$, $210^\\circ$ and $330^\\circ$."
+          },
+          {
+            "t": 390,
+            "type": "Method",
+            "title": "Signs in the four quadrants",
+            "text": "Use the signs of $x$ and $y$ and the ratio $y/x$ to understand the signs of sine, cosine and tangent."
+          },
+          {
+            "t": 464,
+            "type": "Overview",
+            "title": "Review and practise",
+            "text": "The presenter summarises special-angle ratios and quadrant signs."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "This video covers part of AHL 3.8",
+            "text": "It develops special triangles, unit-circle coordinates and signs. The identity, graphical equations, ambiguous sine-rule case and graph connection need further study on this page.",
+            "write": "Use $(\\cos\\theta,\\sin\\theta)$ and check the interval and quadrant."
+          },
+          {
+            "kind": "watch",
+            "title": "Exact values and assessment",
+            "text": "The video emphasises exact special-angle values and non-calculator examinations. The local AI HL syllabus states that knowledge of exact trigonometric values will not be assessed, though they can aid understanding. Follow the current examination instructions on calculator use.",
+            "write": "Use exact values when helpful; interpret the syllabus and question requirements."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "Timestamps follow captions; playback and the diagrams have not been independently checked.",
+            "write": "Verify the angle and coordinate signs in the diagram."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-3-8-ican-1",
+      "status": "approved",
+      "text": "I can use unit-circle coordinates to interpret sine and cosine for angles in different quadrants."
+    },
+    {
+      "id": "ahl-3-8-ican-2",
+      "status": "approved",
+      "text": "I can apply $\\sin^2\\theta+\\cos^2\\theta=1$ and $\\tan\\theta=\\sin\\theta/\\cos\\theta$ with their restrictions."
+    },
+    {
+      "id": "ahl-3-8-ican-3",
+      "status": "approved",
+      "text": "I can explain how the unit circle generates the sine and cosine graphs."
+    },
+    {
+      "id": "ahl-3-8-ican-4",
+      "status": "approved",
+      "text": "I can solve a trigonometric equation graphically on a finite interval and check all solutions."
+    },
+    {
+      "id": "ahl-3-8-ican-5",
+      "status": "approved",
+      "text": "I can identify and solve the ambiguous sine-rule case when two triangles are possible."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-8-ku-1",
+      "status": "approved",
+      "text": "On the circle $x^2+y^2=1$ centred at the origin, the terminal point for angle $\\theta$ in standard position is $(\\cos\\theta,\\sin\\theta)$. Positive angles turn anticlockwise from the positive $x$-axis; negative angles turn clockwise."
+    },
+    {
+      "id": "ahl-3-8-ku-2",
+      "status": "approved",
+      "text": "The identity $\\cos^2\\theta+\\sin^2\\theta=1$ follows by substituting the unit-circle coordinates into $x^2+y^2=1$. It holds for every real angle."
+    },
+    {
+      "id": "ahl-3-8-ku-3",
+      "status": "approved",
+      "text": "$\\tan\\theta=\\sin\\theta/\\cos\\theta$ only where $\\cos\\theta\\ne0$. In particular tangent is undefined at $\\theta=\\pi/2+k\\pi$, for integer $k$."
+    },
+    {
+      "id": "ahl-3-8-ku-4",
+      "status": "approved",
+      "text": "Sine is the vertical coordinate and cosine is the horizontal coordinate. Their signs depend on the quadrant; tangent has the sign of their quotient. On an axis, use the actual coordinates rather than a quadrant mnemonic."
+    },
+    {
+      "id": "ahl-3-8-ku-5",
+      "status": "approved",
+      "text": "To obtain the sine graph, plot the vertical coordinate of the unit-circle point against the angle; cosine uses the horizontal coordinate. Each repeats after $2\\pi$ radians, while tangent repeats after $\\pi$ where defined."
+    },
+    {
+      "id": "ahl-3-8-ku-6",
+      "status": "approved",
+      "text": "To solve $f(x)=g(x)$ graphically on a finite interval, graph both sides in the same angle mode, choose a window showing the entire interval, and find every intersection. Include endpoints if they satisfy the equation and avoid points where a function is undefined."
+    },
+    {
+      "id": "ahl-3-8-ku-7",
+      "status": "approved",
+      "text": "When using inverse sine, the calculator returns a principal value. A supplementary angle may have the same sine. Check all relevant solutions against the stated interval and the original equation, including any excluded points."
+    },
+    {
+      "id": "ahl-3-8-ku-8",
+      "status": "approved",
+      "text": "In the ambiguous sine-rule situation, two sides and an angle opposite one of them can produce zero, one or two triangles. If $\\sin B=b\\sin A/a=q$ with $0<q<1$, test both $B_1=\\sin^{-1}q$ and $B_2=180^\\circ-B_1$. Keep only angles for which $A+B<180^\\circ$."
+    },
+    {
+      "id": "ahl-3-8-ku-9",
+      "status": "approved",
+      "text": "If $q>1$ there is no real angle $B$ and hence no triangle; if $q=1$, $B=90^\\circ$ is the sole candidate. For $0<q<1$, the angle-sum test decides whether one or both candidates make a triangle."
+    },
+    {
+      "id": "ahl-3-8-ku-10",
+      "status": "approved",
+      "text": "The local AI syllabus states exact trigonometric values will not be assessed, although special-angle values can illuminate the unit circle. Decimal solutions should be rounded as requested and obtained using the correct angle mode."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-8-misc-1",
+      "status": "approved",
+      "weak": "The unit-circle point is $(\\sin\\theta,\\cos\\theta)$.",
+      "better": "The horizontal coordinate is cosine and the vertical coordinate is sine: $(\\cos\\theta,\\sin\\theta)$."
+    },
+    {
+      "id": "ahl-3-8-misc-2",
+      "status": "approved",
+      "weak": "$\\tan\\theta$ exists at every angle.",
+      "better": "It is undefined when $\\cos\\theta=0$ because its denominator is zero."
+    },
+    {
+      "id": "ahl-3-8-misc-3",
+      "status": "approved",
+      "weak": "A calculator’s inverse sine result is always the only solution.",
+      "better": "Sine can have multiple solutions in a finite interval. Inspect the graph and test the relevant angles."
+    },
+    {
+      "id": "ahl-3-8-misc-4",
+      "status": "approved",
+      "weak": "Both supplementary sine-rule angles always give valid triangles.",
+      "better": "Each candidate must leave a positive third angle, so check $A+B<180^\\circ$."
+    },
+    {
+      "id": "ahl-3-8-misc-5",
+      "status": "approved",
+      "weak": "A graphing window that shows one crossing proves there is only one solution.",
+      "better": "Display and search the entire stated interval, including relevant endpoints and separate branches."
+    },
+    {
+      "id": "ahl-3-8-misc-6",
+      "status": "approved",
+      "weak": "The sine-rule ambiguous case is excluded from the whole AI HL syllabus.",
+      "better": "It is excluded from SL 3.2 but explicitly included in AHL 3.8."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-8-terms-1",
+      "status": "approved",
+      "term": "Unit circle",
+      "text": "The circle centred at the origin with radius one."
+    },
+    {
+      "id": "ahl-3-8-terms-2",
+      "status": "approved",
+      "term": "Principal value",
+      "text": "The value returned by an inverse trigonometric function within its chosen principal range."
+    },
+    {
+      "id": "ahl-3-8-terms-3",
+      "status": "approved",
+      "term": "Finite interval",
+      "text": "The specified set of inputs over which all valid solutions must be found, with endpoint inclusion respected."
+    },
+    {
+      "id": "ahl-3-8-terms-4",
+      "status": "approved",
+      "term": "Ambiguous case",
+      "text": "A sine-rule situation in which the supplied measurements can allow more than one triangle."
+    },
+    {
+      "id": "ahl-3-8-terms-5",
+      "status": "approved",
+      "term": "Identity",
+      "text": "An equation true for all values in its domain."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-8-formula-1",
+      "status": "approved",
+      "text": "Unit circle: $(x,y)=(\\cos\\theta,\\sin\\theta)$ and $\\sin^2\\theta+\\cos^2\\theta=1$."
+    },
+    {
+      "id": "ahl-3-8-formula-2",
+      "status": "approved",
+      "text": "Tangent: $\\tan\\theta=\\sin\\theta/\\cos\\theta$, where $\\cos\\theta\\ne0$."
+    },
+    {
+      "id": "ahl-3-8-formula-3",
+      "status": "approved",
+      "text": "Sine rule: $a/\\sin A=b/\\sin B=c/\\sin C$, with each side opposite the corresponding angle."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A point $P$ lies on the unit circle in quadrant II and has vertical coordinate $3/5$. Separately, triangle $ABC$ has $A=30^\\circ$, $a=7$ cm and $b=10$ cm, where each lowercase side is opposite its corresponding uppercase angle.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find $\\sin\\theta$, $\\cos\\theta$ and $\\tan\\theta$ for the angle of $P$ in standard position.",
+        "marks": 3,
+        "a": "$\\sin\\theta=3/5$. From $x^2+(3/5)^2=1$, $x=\\pm4/5$. Quadrant II has negative $x$, so $\\cos\\theta=-4/5$ and $\\tan\\theta=(3/5)/(-4/5)=-3/4$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Solve $\\sin x=0.6$ for $0\\leq x\\leq2\\pi$, using a graph or suitable technology. Give answers to three decimal places.",
+        "marks": 3,
+        "a": "In radian mode graph $y=\\sin x$ and $y=0.6$ over the whole interval. The two intersections have inputs $x\\approx0.644$ and $x\\approx2.498$ radians. Both endpoints have sine zero, so neither is a solution.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "For triangle $ABC$, find all possible values of $B$ and $C$.",
+        "marks": 4,
+        "a": "The sine rule gives $\\sin B=10\\sin30^\\circ/7=5/7$. In degree mode, $B_1=\\sin^{-1}(5/7)\\approx45.585^\\circ$ and $B_2=180^\\circ-B_1\\approx134.415^\\circ$. Both satisfy $30^\\circ+B<180^\\circ$. The corresponding $C$ values are $104.415^\\circ$ and $15.585^\\circ$, respectively.",
+        "m": "M1 M1 A1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Find the corresponding values of side $c$ and explain why there are two answers.",
+        "marks": 3,
+        "a": "For each valid triangle, $c/\\sin C=7/\\sin30^\\circ=14$. Thus $c\\approx13.6$ cm for $C\\approx104.415^\\circ$, or $c\\approx3.76$ cm for $C\\approx15.585^\\circ$. The two supplementary candidates for $B$ both leave a positive angle $C$, so both triangles satisfy the given data.",
+        "m": "M1 A1 R1"
+      },
+      {
+        "label": "e",
+        "q": "State whether $\\tan x$ is defined at $x=\\pi/2$ and explain.",
+        "marks": 1,
+        "a": "It is undefined because $\\cos(\\pi/2)=0$, so $\\sin x/\\cos x$ would require division by zero.",
+        "m": "R1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-8-kq-1",
+      "status": "approved",
+      "q": "Why does the Pythagorean identity hold on the unit circle?",
+      "model": "The coordinates satisfy $x^2+y^2=1$. Substituting $x=\\cos\\theta$ and $y=\\sin\\theta$ gives the identity."
+    },
+    {
+      "id": "ahl-3-8-kq-2",
+      "status": "approved",
+      "q": "Why can a sine equation have two solutions in a turn?",
+      "model": "Two unit-circle points can have the same vertical coordinate while having opposite horizontal coordinates. Their angles can be supplementary."
+    },
+    {
+      "id": "ahl-3-8-kq-3",
+      "status": "approved",
+      "q": "Why do both ambiguous-case candidates need an angle-sum check?",
+      "model": "A supplementary angle has the same sine, but it does not necessarily leave a positive third angle in the triangle."
+    },
+    {
+      "id": "ahl-3-8-kq-4",
+      "status": "approved",
+      "q": "Why might a graphing calculator miss a solution?",
+      "model": "The window, interval, angle mode or search range may hide an intersection. Inspect the entire specified interval and test endpoints and domain restrictions."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
