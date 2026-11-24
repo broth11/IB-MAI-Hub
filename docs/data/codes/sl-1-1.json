@@ -13,34 +13,70 @@
         "partial": false,
         "moments": [
           {
-            "t": 42,
-            "type": "Definition",
-            "title": "Why use standard form?",
-            "text": "Write very large or very small values compactly as a coefficient multiplied by a power of 10."
+            "t": 13,
+            "type": "Overview",
+            "title": "When is this useful?",
+            "text": "A final result may need to be expressed in scientific notation, particularly for very large or very small values."
           },
           {
-            "t": 75,
+            "t": 42,
+            "type": "Definition",
+            "title": "A compact representation",
+            "text": "Scientific notation writes a number using a coefficient and a power of ten, avoiding long strings of zeros."
+          },
+          {
+            "t": 71,
+            "type": "Transition",
+            "title": "Two contrasting examples",
+            "text": "The presenter moves from the definition to a large number and then a small number."
+          },
+          {
+            "t": 79,
             "type": "Worked example",
-            "title": "A large number",
-            "text": "Moving the decimal point five places gives $457000=4.57\\times10^5$."
+            "title": "Start with 457,000",
+            "text": "The decimal point of the integer is understood to be to the right of its last digit."
+          },
+          {
+            "t": 97,
+            "type": "Procedure",
+            "title": "Choose the coefficient",
+            "text": "Move the decimal point until the coefficient is between 1 and 10: $457000$ becomes $4.57$ after five places."
+          },
+          {
+            "t": 137,
+            "type": "Worked example",
+            "title": "Choose the exponent",
+            "text": "The original number is large, so the exponent is positive: $457000=4.57\\times10^5$."
           },
           {
             "t": 167,
             "type": "Worked example",
-            "title": "A small number",
-            "text": "A positive value smaller than 1 has a negative power of 10."
+            "title": "Convert a small number",
+            "text": "The second coefficient is $5.82$. Moving the decimal point three places gives $0.00582=5.82\\times10^{-3}$."
           },
           {
-            "t": 223,
+            "t": 203,
+            "type": "Transition",
+            "title": "A question requiring standard form",
+            "text": "The presenter moves to a question that specifies the form of the answer and asks for three significant figures."
+          },
+          {
+            "t": 231,
             "type": "Reference",
-            "title": "The required form",
-            "text": "Use $a\\times10^k$, where $1\\leq a<10$ and $k$ is an integer."
+            "title": "Interpret the notation",
+            "text": "The requested form is $a\\times10^k$, where $1\\le a<10$ and $k$ is an integer."
           },
           {
             "t": 250,
             "type": "Worked example",
-            "title": "Converting a decimal",
-            "text": "$0.0286=2.86\\times10^{-2}$."
+            "title": "Convert the value",
+            "text": "For $0.0286$, use the coefficient $2.86$. The decimal point moves two places and the exponent is negative, giving $2.86\\times10^{-2}$."
+          },
+          {
+            "t": 277,
+            "type": "Conclusion",
+            "title": "State the result",
+            "text": "The final result is $2.86\\times10^{-2}$, with three significant figures."
           }
         ],
         "notes": []
@@ -51,17 +87,22 @@
     {
       "id": "sl11-ican-1",
       "status": "approved",
-      "text": "I can convert positive numbers between decimal notation and standard form."
+      "text": "I can identify the coefficient and exponent in standard form and check their allowed values."
     },
     {
       "id": "sl11-ican-2",
       "status": "approved",
-      "text": "I can calculate with numbers in standard form and give the answer in standard form."
+      "text": "I can convert positive numbers between decimal notation and standard form."
     },
     {
       "id": "sl11-ican-3",
       "status": "approved",
-      "text": "I can round an answer in standard form to a specified number of significant figures."
+      "text": "I can calculate with numbers in standard form, including addition, multiplication and division."
+    },
+    {
+      "id": "sl11-ican-4",
+      "status": "approved",
+      "text": "I can report a result in standard form to the requested number of significant figures and include units."
     }
   ],
   "ku": [
@@ -84,14 +125,39 @@
       "id": "sl11-ku-4",
       "status": "approved",
       "text": "To add or subtract, first express the quantities using the same power of 10, then combine coefficients."
+    },
+    {
+      "id": "sl11-ku-5",
+      "status": "approved",
+      "text": "For positive numbers written with normalized coefficients, compare the exponents first. If the exponents are equal, compare the coefficients."
+    },
+    {
+      "id": "sl11-ku-6",
+      "status": "approved",
+      "text": "When rounding makes the coefficient 10, renormalize. For example, $9.999\\times10^3$ to 3 significant figures is $1.00\\times10^4$."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
+    "id": "sl11-map",
     "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "leadsTo": [
+      [
+        "SL 1.6",
+        "Significant figures and approximation"
+      ],
+      [
+        "SL 1.5",
+        "Powers and laws of exponents"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 3.1",
+        "Very large and small measurements"
+      ]
+    ],
+    "status": "approved"
   },
   "misc": [
     {
@@ -111,6 +177,18 @@
       "status": "approved",
       "weak": "$(2\\times10^3)+(3\\times10^4)=5\\times10^7$.",
       "better": "Addition requires matching powers: $0.2\\times10^4+3\\times10^4=3.2\\times10^4$."
+    },
+    {
+      "id": "sl11-misc-4",
+      "status": "approved",
+      "weak": "$0.00070=7\\times10^{-4}$ is always enough to show the original precision.",
+      "better": "If two significant figures are intended, write $7.0\\times10^{-4}$. The trailing zero records the stated precision."
+    },
+    {
+      "id": "sl11-misc-5",
+      "status": "approved",
+      "weak": "$9.999\\times10^3$ rounds to $10.0\\times10^3$ in standard form.",
+      "better": "Normalize the coefficient after rounding: $1.00\\times10^4$ to 3 significant figures."
     }
   ],
   "terms": [
@@ -153,6 +231,13 @@
         "marks": 2,
         "a": "$(2.74\\times10^{-12})(3\\times10^6)=8.22\\times10^{-6}$ g.",
         "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "A second sample has a mass of $1.40\\times10^{-6}$ g. Find the combined mass in standard form.",
+        "marks": 2,
+        "a": "$8.22\\times10^{-6}+1.40\\times10^{-6}=9.62\\times10^{-6}$ g.",
+        "m": "M1 A1"
       }
     ]
   },
@@ -168,6 +253,18 @@
       "status": "approved",
       "q": "Why must $24\\times10^3$ be rewritten?",
       "model": "Its coefficient is 24, outside the standard-form interval. The equivalent standard form is $2.4\\times10^4$."
+    },
+    {
+      "id": "sl11-kq-3",
+      "status": "approved",
+      "q": "How can two equivalent expressions show different stated precision?",
+      "model": "$7\\times10^{-4}$ and $7.0\\times10^{-4}$ have the same numerical value, but the second explicitly shows two significant figures."
+    },
+    {
+      "id": "sl11-kq-4",
+      "status": "approved",
+      "q": "Why can you add coefficients directly only after matching powers of ten?",
+      "model": "The powers of ten determine the place value of each coefficient. Once the powers match, the coefficients count the same-sized units."
     }
   ],
   "history": [],
