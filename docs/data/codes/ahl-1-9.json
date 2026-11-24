@@ -9,84 +9,219 @@
   },
   "ican": [
     {
-      "id": "ahl-1-9-ican-1",
+      "id": "ahl19-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for laws of logarithms."
+      "text": "I can expand a logarithm of a product, quotient or power using the correct law."
     },
     {
-      "id": "ahl-1-9-ican-2",
+      "id": "ahl19-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can combine logarithmic terms into one logarithm when their bases match and arguments are positive."
+    },
+    {
+      "id": "ahl19-ican-3",
+      "status": "approved",
+      "text": "I can state the domain of an expression containing logarithms before solving an equation."
+    },
+    {
+      "id": "ahl19-ican-4",
+      "status": "approved",
+      "text": "I can solve and check a logarithmic equation, rejecting values outside the original domain."
+    },
+    {
+      "id": "ahl19-ican-5",
+      "status": "approved",
+      "text": "I can distinguish a logarithmic law from an invalid operation on a sum or difference."
     }
   ],
   "ku": [
     {
-      "id": "ahl-1-9-ku-1",
+      "id": "ahl19-ku-1",
       "status": "approved",
-      "text": "For $a>0$ and $a\\ne1$, $\\log_a(xy)=\\log_a x+\\log_a y$ for $x,y>0$."
+      "text": "For $a>0$, $a\\ne1$ and $x,y>0$, the product law is $\\log_a(xy)=\\log_a x+\\log_a y$."
     },
     {
-      "id": "ahl-1-9-ku-2",
+      "id": "ahl19-ku-2",
       "status": "approved",
-      "text": "$\\log_a(x/y)=\\log_a x-\\log_a y$ and $\\log_a(x^k)=k\\log_a x$ for $x>0$."
+      "text": "For the same restrictions, the quotient law is $\\log_a(x/y)=\\log_a x-\\log_a y$."
     },
     {
-      "id": "ahl-1-9-ku-3",
+      "id": "ahl19-ku-3",
       "status": "approved",
-      "text": "Change of base: $\\log_a x=\\ln x/\\ln a$. State and check logarithm domains."
+      "text": "For $x>0$, the power law is $\\log_a(x^m)=m\\log_a x$. Apply the laws only where the original expressions are defined; in particular, $\\log(x^2)=2\\log|x|$ for $x\\ne0$."
+    },
+    {
+      "id": "ahl19-ku-4",
+      "status": "approved",
+      "text": "The syllabus guidance uses bases 10 and $e$ in exam questions. Here $\\log x$ means $\\log_{10}x$, and $\\ln x$ means $\\log_e x$."
+    },
+    {
+      "id": "ahl19-ku-5",
+      "status": "approved",
+      "text": "When solving an equation, first require every argument in the original expression to be positive. Combining logarithms can yield algebraic candidates that fail this original domain."
+    },
+    {
+      "id": "ahl19-ku-6",
+      "status": "approved",
+      "text": "A logarithm of a sum is not a sum of logarithms: there is no general law $\\log(x+y)=\\log x+\\log y$."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "ahl19-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.5",
+        "Exponents and the definition of logarithms"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 2.10",
+        "Logarithmic scaling and linearisation"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 1.4",
+        "Exponential growth and compound interest"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "ahl-1-9-misc-1",
+      "id": "ahl19-misc-1",
       "status": "approved",
-      "weak": "Writing $\\log(x+y)=\\log x+\\log y$",
-      "better": "The sum law applies to the logarithm of a product, not a sum."
+      "weak": "$\\log(x+y)=\\log x+\\log y$.",
+      "better": "The product law concerns $\\log(xy)$, not $\\log(x+y)$. For example, $\\log(1+9)=1$, while $\\log1+\\log9\\ne1$."
+    },
+    {
+      "id": "ahl19-misc-2",
+      "status": "approved",
+      "weak": "$\\ln(x^2)=2\\ln x$ for every nonzero real $x$.",
+      "better": "For $x\\ne0$, $\\ln(x^2)=2\\ln|x|$. The expression $2\\ln x$ is defined only for $x>0$."
+    },
+    {
+      "id": "ahl19-misc-3",
+      "status": "approved",
+      "weak": "$\\log x-\\log y=\\log(y/x)$.",
+      "better": "The order is preserved: $\\log x-\\log y=\\log(x/y)$ for $x,y>0$."
+    },
+    {
+      "id": "ahl19-misc-4",
+      "status": "approved",
+      "weak": "After solving $\\log x+\\log(x-3)=1$, both algebraic roots are valid.",
+      "better": "The original arguments require $x>3$, so the negative algebraic root must be rejected."
+    },
+    {
+      "id": "ahl19-misc-5",
+      "status": "approved",
+      "weak": "$\\log(2x)=2\\log x$.",
+      "better": "$\\log(2x)=\\log2+\\log x$ for $x>0$. The expression $2\\log x$ equals $\\log(x^2)$ when $x>0$."
     }
   ],
   "terms": [
     {
-      "id": "ahl-1-9-terms-1",
+      "id": "ahl19-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Expand",
+      "text": "Apply product, quotient and power laws to rewrite a logarithm as a sum or difference, respecting the domain."
     },
     {
-      "id": "ahl-1-9-terms-2",
+      "id": "ahl19-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Write as a single logarithm",
+      "text": "Combine terms with the same base using the laws, and ensure each original argument is positive."
+    },
+    {
+      "id": "ahl19-term-3",
+      "status": "approved",
+      "term": "Solve",
+      "text": "State the original domain, solve the transformed equation and check all candidates in the original expression."
     }
   ],
-  "formula": [],
-  "gdc": [],
+  "formula": [
+    {
+      "id": "ahl19-formula-1",
+      "status": "approved",
+      "text": "For $a>0$, $a\\ne1$ and $x,y>0$, the booklet gives $\\log_a(xy)=\\log_a x+\\log_a y$, $\\log_a(x/y)=\\log_a x-\\log_a y$ and $\\log_a(x^m)=m\\log_a x$."
+    }
+  ],
+  "gdc": [
+    {
+      "id": "ahl19-gdc-1",
+      "status": "approved",
+      "text": "For a base-10 logarithm, use [LOG] followed by the argument, then [EXE]. For a natural logarithm, use [LN] followed by the argument, then [EXE].",
+      "verified": true
+    },
+    {
+      "id": "ahl19-gdc-2",
+      "status": "approved",
+      "text": "Use the solver or a graph to check an equation numerically, but enforce the original logarithm domain before accepting a result.",
+      "verified": true
+    }
+  ],
   "worked": {
+    "id": "ahl19-worked",
     "status": "approved",
-    "prompt": "Solve $\\log_2 x+\\log_2(x-2)=3$.",
+    "prompt": "Assume $x>0$ where needed and use $\\log$ for base 10.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Write $\\ln12-\\ln3$ as a single logarithm and evaluate it to 3 significant figures.",
         "marks": 2,
-        "a": "The domain is $x>2$. Then $x(x-2)=8$, giving $x=4$ or $-2$; only $x=4$ is valid.",
+        "a": "$\\ln12-\\ln3=\\ln(12/3)=\\ln4\\approx1.39$.",
         "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Expand $\\log(100x^2)$ in terms of $\\log x$.",
+        "marks": 2,
+        "a": "Since $x>0$, $\\log(100x^2)=\\log100+\\log(x^2)=2+2\\log x$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Solve $\\log x+\\log(x-3)=1$.",
+        "marks": 3,
+        "a": "The original arguments require $x>3$. Combine to get $\\log[x(x-3)]=1$, so $x(x-3)=10$. Thus $(x-5)(x+2)=0$. Only $x=5$ satisfies $x>3$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Explain why $x=-2$ cannot be accepted in part (c).",
+        "marks": 1,
+        "a": "At $x=-2$, both $x$ and $x-3$ are negative, so the logarithms in the original equation are not real.",
+        "m": "R1"
       }
     ]
   },
   "kq": [
     {
-      "id": "ahl-1-9-kq-1",
+      "id": "ahl19-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "The sum law applies to the logarithm of a product, not a sum."
+      "q": "Why does multiplying arguments add their logarithms?",
+      "model": "If $x=a^u$ and $y=a^v$, then $xy=a^{u+v}$. Taking base-$a$ logarithms gives $\\log_a(xy)=u+v=\\log_a x+\\log_a y$."
+    },
+    {
+      "id": "ahl19-kq-2",
+      "status": "approved",
+      "q": "Why can combining logarithms introduce an invalid algebraic root?",
+      "model": "The combined product may be positive when both original factors are negative. The original separate logarithms still require each argument to be positive."
+    },
+    {
+      "id": "ahl19-kq-3",
+      "status": "approved",
+      "q": "Why is $\\ln(x^2)=2\\ln|x|$ for $x\\ne0$?",
+      "model": "Because $x^2=|x|^2$ and $|x|>0$, so the power law applies to the positive quantity $|x|$."
+    },
+    {
+      "id": "ahl19-kq-4",
+      "status": "approved",
+      "q": "Why does the order matter when subtracting logarithms?",
+      "model": "Subtraction corresponds to division in the same order: the first argument is the numerator and the second is the denominator."
     }
   ],
   "history": [],
