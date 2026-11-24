@@ -94,7 +94,7 @@ const R = {
   worked(C) {
     const W = C.worked; if (W.status !== 'approved') return '';
     return `<div class="worked"><p>${tex(W.prompt)}</p>
-      ${W.table.length ? `<div class="table-wrap"><table class="table data-row">${W.table.map((r) => `<tr>${r.map((c, i) => (i ? `<td>${tex(c)}</td>` : `<th>${tex(c)}</th>`)).join('')}</tr>`).join('')}</table></div>
+      ${W.table.length ? `<div class="table-wrap"><table class="table data-row">${W.table.map((r) => `<tr>${r.map((c, i) => (i ? `<td>${tex(c)}</td>` : `<th>${tex(c)}</th>`)).join('')}</tr>`).join('')}</table></div>` : ''}
       ${W.parts.map((p, i) => `<div class="wpart"><div class="wq"><b>${esc(p.label)}</b> ${tex(p.q)} <span class="marks">[${p.marks}]</span></div>
         <button class="btn btn-ghost" data-reveal="w${i}">Show solution</button>
         <div class="wa" id="w${i}" hidden>${tex(p.a)} <span class="mcode">${esc(p.m)}</span></div></div>`).join('')}
