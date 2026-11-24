@@ -31,7 +31,7 @@
             "text": "Keep the hundredths digit and inspect the next digit. Since it is 1, the result is $62562.34$."
           },
           {
-            "t": 118,
+            "t": 78,
             "type": "Key idea",
             "title": "The first discarded digit",
             "text": "A first discarded digit of 0 to 4 leaves the last retained digit unchanged; 5 to 9 rounds it up."
