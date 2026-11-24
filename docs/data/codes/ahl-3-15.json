@@ -1,0 +1,367 @@
+{
+  "code": "AHL 3.15",
+  "slug": "ahl-3-15",
+  "title": "Adjacency matrices and walks",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 315,
+        "title": "Graph Theory",
+        "videoId": "fTASH0uqQxg",
+        "partial": true,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "A network overview",
+            "text": "The video introduces graph theory through networks."
+          },
+          {
+            "t": 74,
+            "type": "Definition",
+            "title": "Vertices and edges",
+            "text": "Identify vertices, edges and degree in the illustrated graph."
+          },
+          {
+            "t": 105,
+            "type": "Concept",
+            "title": "Directed and undirected",
+            "text": "Arrows affect which direction an edge may be traversed."
+          },
+          {
+            "t": 140,
+            "type": "Concept",
+            "title": "Weighted and unweighted",
+            "text": "A weight can represent a cost or time rather than a count."
+          },
+          {
+            "t": 226,
+            "type": "Concept",
+            "title": "Subgraphs and routes",
+            "text": "The presenter names route types but refers learners elsewhere for their definitions."
+          },
+          {
+            "t": 291,
+            "type": "Method",
+            "title": "Adjacency tables",
+            "text": "The video introduces tables and matrices for direct connections."
+          },
+          {
+            "t": 326,
+            "type": "Method",
+            "title": "Rows are from, columns are to",
+            "text": "The illustrated table uses the starting vertex for the row and the ending vertex for the column."
+          },
+          {
+            "t": 365,
+            "type": "Calculation",
+            "title": "From table to matrix",
+            "text": "The presenter enters the one-step adjacency matrix."
+          },
+          {
+            "t": 394,
+            "type": "Method",
+            "title": "Two-step walks",
+            "text": "A matrix square counts two-step connections; repeated vertices or edges are allowed in a walk."
+          },
+          {
+            "t": 416,
+            "type": "Method",
+            "title": "Three-step walks",
+            "text": "The cube counts three-step walks under the same adjacency convention."
+          },
+          {
+            "t": 437,
+            "type": "Application",
+            "title": "Minimum spanning trees",
+            "text": "The overview turns to connecting vertices at minimum weight."
+          },
+          {
+            "t": 520,
+            "type": "Application",
+            "title": "Edge and vertex routes",
+            "text": "The video introduces postman and travelling-salesman contexts; see the correction."
+          },
+          {
+            "t": 627,
+            "type": "Overview",
+            "title": "Review",
+            "text": "The video closes with an overview and practice recommendation."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "Transition matrices need further study",
+            "text": "The video illustrates adjacency matrices and powers but does not construct a transition matrix or develop all walk-counting cases. These are explained on this page.",
+            "write": "Distinguish the adjacency count, an edge weight and a transition probability."
+          },
+          {
+            "kind": "error",
+            "title": "Routing statement later in the video",
+            "text": "A shortest closed Chinese postman route covers every edge at least once and may repeat edges; it is not always possible to traverse each edge exactly once.",
+            "write": "Matrix powers count walks, not necessarily paths or optimal routes."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "Times follow captions; playback and the displayed matrix have not been independently verified.",
+            "write": "Check which index represents the starting vertex before reading an entry."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-3-15-ican-1",
+      "status": "approved",
+      "text": "I can construct an adjacency matrix for a directed or undirected graph using a stated row–column convention."
+    },
+    {
+      "id": "ahl-3-15-ican-2",
+      "status": "approved",
+      "text": "I can use matrix powers to count walks of exactly $k$ edges and sums of powers for a range of lengths."
+    },
+    {
+      "id": "ahl-3-15-ican-3",
+      "status": "approved",
+      "text": "I can distinguish a walk count from a weighted adjacency table or shortest-path calculation."
+    },
+    {
+      "id": "ahl-3-15-ican-4",
+      "status": "approved",
+      "text": "I can construct a transition matrix from a graph and a stated probability rule."
+    },
+    {
+      "id": "ahl-3-15-ican-5",
+      "status": "approved",
+      "text": "I can interpret a matrix entry and check the convention, direction and treatment of zero-step walks."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-15-ku-1",
+      "status": "approved",
+      "text": "Fix an order of vertices and a convention before constructing a matrix. Here $A_{ij}$ is the number of directed edges from vertex $i$ to vertex $j$; for a simple graph it is $0$ or $1$. An undirected simple graph gives a symmetric matrix."
+    },
+    {
+      "id": "ahl-3-15-ku-2",
+      "status": "approved",
+      "text": "Under this row-from, column-to convention, the $(i,j)$ entry of $A^k$ is the number of walks of exactly $k$ edges from $i$ to $j$. A walk may repeat vertices and edges. For a directed graph, every step must follow the arrow."
+    },
+    {
+      "id": "ahl-3-15-ku-3",
+      "status": "approved",
+      "text": "The entry of $A^2$ is $(A^2)_{ij}=\\sum_h A_{ih}A_{hj}$. Each term counts choices of a first step from $i$ to $h$ followed by a step from $h$ to $j$. This extends to higher powers."
+    },
+    {
+      "id": "ahl-3-15-ku-4",
+      "status": "approved",
+      "text": "For walks of lengths from $1$ through $k$, use $A+A^2+\\cdots+A^k$. If zero-step walks are included, add $I=A^0$: there is one zero-step walk from each vertex to itself and none between distinct vertices."
+    },
+    {
+      "id": "ahl-3-15-ku-5",
+      "status": "approved",
+      "text": "A weighted adjacency table records the specified weight for each direct edge, such as time or cost. A dash can denote no edge. A zero weight is not automatically the same as no edge if zero-cost edges are allowed."
+    },
+    {
+      "id": "ahl-3-15-ku-6",
+      "status": "approved",
+      "text": "Ordinary powers of a weighted matrix do not generally give shortest travel costs. Matrix multiplication combines entries by multiplication and addition; shortest-route calculations require a different operation or algorithm."
+    },
+    {
+      "id": "ahl-3-15-ku-7",
+      "status": "approved",
+      "text": "A transition matrix requires a probability model. With equally likely outgoing edges, divide each edge count by the out-degree of its source. Other probability rules must be specified rather than inferred from arbitrary cost weights."
+    },
+    {
+      "id": "ahl-3-15-ku-8",
+      "status": "approved",
+      "text": "For column probability vectors, define $P_{ij}=P(\\text{next}=i\\mid\\text{current}=j)$. Each column sums to one and $\\mathbf p_{n+1}=P\\mathbf p_n$. This is the transpose orientation of the row-from adjacency matrix used above."
+    },
+    {
+      "id": "ahl-3-15-ku-9",
+      "status": "approved",
+      "text": "If a source has no outgoing edges, an equal-outgoing transition rule cannot be applied without an additional convention. Strong connectivity guarantees a positive out-degree for each vertex in a nontrivial directed graph."
+    },
+    {
+      "id": "ahl-3-15-ku-10",
+      "status": "approved",
+      "text": "When counting paths, trails or shortest routes, do not substitute a walk count without checking the additional restrictions. Matrix powers count all walks of the specified length."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-15-misc-1",
+      "status": "approved",
+      "weak": "$(A^3)_{ij}$ counts routes of up to three edges.",
+      "better": "It counts walks of exactly three edges. Add powers for a range of lengths."
+    },
+    {
+      "id": "ahl-3-15-misc-2",
+      "status": "approved",
+      "weak": "A three-step walk cannot revisit a vertex.",
+      "better": "Walks may repeat vertices and edges unless a question imposes additional restrictions."
+    },
+    {
+      "id": "ahl-3-15-misc-3",
+      "status": "approved",
+      "weak": "A cost-weighted adjacency matrix squared gives shortest two-edge costs.",
+      "better": "Ordinary matrix multiplication does not implement shortest-path minimisation."
+    },
+    {
+      "id": "ahl-3-15-misc-4",
+      "status": "approved",
+      "weak": "Every adjacency matrix is symmetric.",
+      "better": "A directed graph generally produces a nonsymmetric matrix under a fixed ordering."
+    },
+    {
+      "id": "ahl-3-15-misc-5",
+      "status": "approved",
+      "weak": "Normalize arbitrary travel costs to obtain movement probabilities without any assumption.",
+      "better": "A probability rule must be given. Equal outgoing choices are one possible model, not an automatic consequence of costs."
+    },
+    {
+      "id": "ahl-3-15-misc-6",
+      "status": "approved",
+      "weak": "Add $I$ to count only walks that actually move.",
+      "better": "$I$ counts zero-step walks. Include it only when length zero is allowed."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-15-terms-1",
+      "status": "approved",
+      "term": "Adjacency matrix",
+      "text": "A matrix recording direct connections under a specified vertex order and row–column convention."
+    },
+    {
+      "id": "ahl-3-15-terms-2",
+      "status": "approved",
+      "term": "Walk",
+      "text": "A sequence of adjacent vertices and traversed edges; vertices and edges may repeat."
+    },
+    {
+      "id": "ahl-3-15-terms-3",
+      "status": "approved",
+      "term": "Walk length",
+      "text": "The number of edges traversed, counting repeated traversals."
+    },
+    {
+      "id": "ahl-3-15-terms-4",
+      "status": "approved",
+      "term": "Weighted adjacency table",
+      "text": "A table recording an edge’s specified weight rather than just the existence or count of a connection."
+    },
+    {
+      "id": "ahl-3-15-terms-5",
+      "status": "approved",
+      "term": "Transition matrix",
+      "text": "A matrix of one-step movement probabilities under a specified orientation and probability rule."
+    },
+    {
+      "id": "ahl-3-15-terms-6",
+      "status": "approved",
+      "term": "Zero-step walk",
+      "text": "A walk that stays at its starting vertex and traverses no edges."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-15-formula-1",
+      "status": "approved",
+      "text": "Under the row-from adjacency convention, $(A^k)_{ij}$ counts walks of exactly $k$ edges from $i$ to $j$."
+    },
+    {
+      "id": "ahl-3-15-formula-2",
+      "status": "approved",
+      "text": "For lengths $0$ through $k$, use $I+A+\\cdots+A^k$."
+    },
+    {
+      "id": "ahl-3-15-formula-3",
+      "status": "approved",
+      "text": "For column probability vectors, $P_{ij}=P(\\text{next}=i\\mid\\text{current}=j)$ and $\\mathbf p_{n+1}=P\\mathbf p_n$."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A directed network has vertices $A,B,C$ and arcs $A\\to B$, $A\\to C$, $B\\to C$, $C\\to A$ and $C\\to B$. Their respective travel times are $2,5,3,4,1$ minutes. Use vertex order $A,B,C$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Construct the unweighted adjacency matrix using rows as starting vertices and columns as destinations.",
+        "marks": 2,
+        "a": "$A=\\begin{pmatrix}0&1&1\\\\0&0&1\\\\1&1&0\\end{pmatrix}$. For example, $A_{AC}=1$ because there is an arc from $A$ to $C$, while $A_{BA}=0$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find $A^2$ and interpret its entry in row $A$, column $C$.",
+        "marks": 3,
+        "a": "$A^2=\\begin{pmatrix}1&1&1\\\\1&1&0\\\\0&1&2\\end{pmatrix}$. The entry $(A^2)_{AC}=1$ counts one walk of exactly two arcs from $A$ to $C$: $A\\to B\\to C$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "How many walks of one, two or three arcs go from $A$ to $C$?",
+        "marks": 3,
+        "a": "The corresponding entries of $A$, $A^2$ and $A^3$ are $1,1,2$. Therefore $(A+A^2+A^3)_{AC}=4$. The three-step walks are $A\\to C\\to A\\to C$ and $A\\to C\\to B\\to C$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Write the weighted adjacency table as a matrix, using a dash for no direct arc.",
+        "marks": 2,
+        "a": "With rows from and columns to, the direct travel-time table is $\\begin{pmatrix}-&2&5\\\\-&-&3\\\\4&1&-\\end{pmatrix}$ minutes. These are edge weights, not walk counts or transition probabilities.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "e",
+        "q": "At each vertex, suppose each outgoing arc is equally likely. Construct a column-stochastic transition matrix and find the distribution after two steps from $A$.",
+        "marks": 4,
+        "a": "The out-degrees are $2,1,2$. With columns as current vertices and rows as next vertices, $P=\\begin{pmatrix}0&0&1/2\\\\1/2&0&1/2\\\\1/2&1&0\\end{pmatrix}$. Each column sums to $1$. From $\\mathbf p_0=(1,0,0)^T$, $P^2\\mathbf p_0=(1/4,1/4,1/2)^T$.",
+        "m": "M1 A1 M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-15-kq-1",
+      "status": "approved",
+      "q": "Why does a matrix power count walks?",
+      "model": "Each multiplication sums over possible intermediate vertices. Products count ways to combine consecutive edges, and the sum collects all such choices."
+    },
+    {
+      "id": "ahl-3-15-kq-2",
+      "status": "approved",
+      "q": "Why does a walk count not give a path count automatically?",
+      "model": "A walk may repeat vertices and edges; a path has additional restrictions. Matrix powers include repeated-route cases."
+    },
+    {
+      "id": "ahl-3-15-kq-3",
+      "status": "approved",
+      "q": "Why does the transition matrix here have columns summing to one?",
+      "model": "Each column represents a current vertex, and the probabilities of its possible next vertices sum to one. A row-stochastic convention is also possible if used consistently."
+    },
+    {
+      "id": "ahl-3-15-kq-4",
+      "status": "approved",
+      "q": "Why can a weighted table not be normalized into probabilities without context?",
+      "model": "Weights such as travel time express costs, not likelihoods. The problem must specify how choices depend on them."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
