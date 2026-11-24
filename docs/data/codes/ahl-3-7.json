@@ -1,0 +1,326 @@
+{
+  "code": "AHL 3.7",
+  "slug": "ahl-3-7",
+  "title": "Radians",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 306,
+        "title": "Degrees v Radians",
+        "videoId": "8L5DL8khheA",
+        "partial": true,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "Two ways to measure an angle",
+            "text": "The presenter introduces degrees and radians."
+          },
+          {
+            "t": 36,
+            "type": "Concept",
+            "title": "One complete turn",
+            "text": "A revolution is $360^\\circ$ or $2\\pi$ radians."
+          },
+          {
+            "t": 70,
+            "type": "Definition",
+            "title": "One radian",
+            "text": "An angle of one radian subtends an arc with length equal to the radius."
+          },
+          {
+            "t": 97,
+            "type": "Method",
+            "title": "Converting angle measures",
+            "text": "The video introduces conversion between degrees and radians."
+          },
+          {
+            "t": 114,
+            "type": "Notation",
+            "title": "Writing radians",
+            "text": "Discuss ways radians may be written, including the symbol rad."
+          },
+          {
+            "t": 164,
+            "type": "Application",
+            "title": "Triangles and sectors",
+            "text": "The presenter compares where degree and radian measures may appear."
+          },
+          {
+            "t": 206,
+            "type": "Application",
+            "title": "Unit circle and identities",
+            "text": "Radians are linked to trigonometric ratios and the unit circle."
+          },
+          {
+            "t": 229,
+            "type": "Application",
+            "title": "Trigonometric graphs",
+            "text": "The presenter connects radian measures with graphs of trigonometric functions."
+          },
+          {
+            "t": 261,
+            "type": "Calculator",
+            "title": "Check the angle mode",
+            "text": "The video demonstrates changing angle settings on the calculator shown."
+          },
+          {
+            "t": 308,
+            "type": "Overview",
+            "title": "Review",
+            "text": "The video closes with a reminder to use the correct angle mode."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "Sector calculations need further practice",
+            "text": "The video introduces the radian and discusses sectors but does not work through arc-length or sector-area calculations in radians. This page develops those methods.",
+            "write": "For $\\theta$ in radians, use $s=r\\theta$ and $A=\\frac12r^2\\theta$."
+          },
+          {
+            "kind": "watch",
+            "title": "Radians and units",
+            "text": "The radian is a dimensionless angle unit because it is the ratio of two lengths. Writing rad is useful when distinguishing radians from degrees.",
+            "write": "$\\pi/3\\text{ rad}=60^\\circ$."
+          },
+          {
+            "kind": "watch",
+            "title": "Calculator model and timeline",
+            "text": "The video shows a different calculator model. Its menu steps should not be assumed to apply to the Casio fx-CG50. Timestamps are caption-derived; playback has not been independently verified.",
+            "write": "Check the angle setting for the calculator you are using."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-3-7-ican-1",
+      "status": "approved",
+      "text": "I can define a radian using the ratio of arc length to radius."
+    },
+    {
+      "id": "ahl-3-7-ican-2",
+      "status": "approved",
+      "text": "I can convert between degrees and radians, using exact multiples of $\\pi$ where appropriate."
+    },
+    {
+      "id": "ahl-3-7-ican-3",
+      "status": "approved",
+      "text": "I can calculate an arc length or sector area from an angle in radians."
+    },
+    {
+      "id": "ahl-3-7-ican-4",
+      "status": "approved",
+      "text": "I can rearrange the radian formulas to find an unknown angle or radius."
+    },
+    {
+      "id": "ahl-3-7-ican-5",
+      "status": "approved",
+      "text": "I can solve problems involving a sector or an annular sector and distinguish its arc lengths, area and perimeter."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-7-ku-1",
+      "status": "approved",
+      "text": "One radian is the central angle subtending an arc whose length equals the radius. More generally, for arc length $s$ and radius $r>0$, the numerical radian measure is $\\theta=s/r$."
+    },
+    {
+      "id": "ahl-3-7-ku-2",
+      "status": "approved",
+      "text": "A full revolution has arc length $2\\pi r$, giving $2\\pi$ radians. Therefore $180^\\circ=\\pi$ radians and $360^\\circ=2\\pi$ radians."
+    },
+    {
+      "id": "ahl-3-7-ku-3",
+      "status": "approved",
+      "text": "To convert degrees to radians multiply by $\\pi/180$. To convert radians to degrees multiply by $180/\\pi$. For example, $150^\\circ=5\\pi/6$ radians and $3\\pi/4$ radians $=135^\\circ$."
+    },
+    {
+      "id": "ahl-3-7-ku-4",
+      "status": "approved",
+      "text": "For a sector of radius $r$ and central angle $\\theta$ measured in radians, arc length is $s=r\\theta$ and area is $A=\\frac12r^2\\theta$. These come from multiplying the full circumference and area by the fraction $\\theta/(2\\pi)$."
+    },
+    {
+      "id": "ahl-3-7-ku-5",
+      "status": "approved",
+      "text": "The radian formulas require the numerical radian measure, not a degree value. If an angle is given in degrees, convert it first or use the degree formulas from SL 3.4."
+    },
+    {
+      "id": "ahl-3-7-ku-6",
+      "status": "approved",
+      "text": "The full perimeter of an ordinary sector is $2r+r\\theta$. Arc length refers only to the curved part. For an annular sector with outer radius $R$, inner radius $r$ and $0<r<R$, area is $\\frac12(R^2-r^2)\\theta$ and full perimeter is $R\\theta+r\\theta+2(R-r)$."
+    },
+    {
+      "id": "ahl-3-7-ku-7",
+      "status": "approved",
+      "text": "For an ordinary sector with known arc $s$ and angle $\\theta>0$, $r=s/\\theta$. If radius and area are known, $\\theta=2A/r^2$. The angle is in radians in these rearrangements."
+    },
+    {
+      "id": "ahl-3-7-ku-8",
+      "status": "approved",
+      "text": "Arc lengths are measured in length units and sector areas in square units. Keep exact multiples of $\\pi$ until the final approximation. Check angle mode before evaluating trigonometric functions."
+    },
+    {
+      "id": "ahl-3-7-ku-9",
+      "status": "approved",
+      "text": "Radian measure is dimensionless because $s/r$ is a ratio of lengths. The symbol rad remains useful to make the intended angular measure explicit."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-7-misc-1",
+      "status": "approved",
+      "weak": "A full revolution is $\\pi$ radians.",
+      "better": "A full revolution is $2\\pi$ radians; a half-turn is $\\pi$ radians."
+    },
+    {
+      "id": "ahl-3-7-misc-2",
+      "status": "approved",
+      "weak": "Use $s=r\\theta$ with $\\theta=150$ for an angle of $150^\\circ$.",
+      "better": "Convert first: $150^\\circ=5\\pi/6$ radians."
+    },
+    {
+      "id": "ahl-3-7-misc-3",
+      "status": "approved",
+      "weak": "The sector area is $\\frac12r\\theta$.",
+      "better": "The correct formula is $A=\\frac12r^2\\theta$, with $\\theta$ in radians."
+    },
+    {
+      "id": "ahl-3-7-misc-4",
+      "status": "approved",
+      "weak": "The perimeter of an annular sector is only its outer arc.",
+      "better": "Include both arcs and the two straight radial sides."
+    },
+    {
+      "id": "ahl-3-7-misc-5",
+      "status": "approved",
+      "weak": "Multiply radians by $\\pi/180$ to get degrees.",
+      "better": "Multiply radians by $180/\\pi$ to get degrees."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-7-terms-1",
+      "status": "approved",
+      "term": "Radian",
+      "text": "An angle unit based on arc length divided by radius. One radian subtends an arc equal in length to its radius."
+    },
+    {
+      "id": "ahl-3-7-terms-2",
+      "status": "approved",
+      "term": "Central angle",
+      "text": "An angle whose vertex is at the centre of a circle."
+    },
+    {
+      "id": "ahl-3-7-terms-3",
+      "status": "approved",
+      "term": "Annular sector",
+      "text": "A region between two concentric circular arcs and two radial line segments."
+    },
+    {
+      "id": "ahl-3-7-terms-4",
+      "status": "approved",
+      "term": "Exact value",
+      "text": "A value such as $5\\pi/6$ that retains $\\pi$ rather than replacing it with a rounded decimal."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-7-formula-1",
+      "status": "approved",
+      "text": "Conversion: $180^\\circ=\\pi\\text{ rad}$; multiply degrees by $\\pi/180$ to obtain radians."
+    },
+    {
+      "id": "ahl-3-7-formula-2",
+      "status": "approved",
+      "text": "For $\\theta$ in radians: $s=r\\theta$ and $A=\\frac12r^2\\theta$."
+    },
+    {
+      "id": "ahl-3-7-formula-3",
+      "status": "approved",
+      "text": "For concentric radii $R>r>0$, annular-sector area is $\\frac12(R^2-r^2)\\theta$."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A decorative path is an annular sector between two concentric circles of radii $8$ m and $3$ m. Its central angle is $5\\pi/6$ radians. Both straight radial sides are included in the boundary.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Convert the central angle to degrees.",
+        "marks": 2,
+        "a": "$\\frac{5\\pi}{6}\\times\\frac{180}{\\pi}=150^\\circ$. The angle is between a quarter-turn and a half-turn, which is consistent.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find the exact lengths of the outer and inner arcs.",
+        "marks": 2,
+        "a": "Use $s=r\\theta$. The outer arc is $8(5\\pi/6)=20\\pi/3$ m; the inner arc is $3(5\\pi/6)=5\\pi/2$ m.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Find the exact area of the path and its area to three significant figures.",
+        "marks": 3,
+        "a": "Subtract the inner sector from the outer sector: $A=\\frac12(8^2-3^2)(5\\pi/6)=275\\pi/12\\text{ m}^2\\approx72.0\\text{ m}^2$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Find the exact total perimeter of the path.",
+        "marks": 2,
+        "a": "Add both arcs and the two radial sides, each of length $8-3=5$ m: $P=20\\pi/3+5\\pi/2+10=55\\pi/6+10$ m.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "e",
+        "q": "A different sector has radius $8$ m and arc length $12$ m. Find its angle in radians and its area.",
+        "marks": 3,
+        "a": "$\\theta=s/r=12/8=3/2$ radians. Then $A=\\frac12(8^2)(3/2)=48\\text{ m}^2$.",
+        "m": "M1 A1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-7-kq-1",
+      "status": "approved",
+      "q": "Why is a complete turn $2\\pi$ radians?",
+      "model": "The circumference is $2\\pi r$, so the ratio of the full arc length to the radius is $2\\pi r/r=2\\pi$."
+    },
+    {
+      "id": "ahl-3-7-kq-2",
+      "status": "approved",
+      "q": "Why does $s=r\\theta$ require radians?",
+      "model": "Radian measure is defined by $\\theta=s/r$. Rearranging gives $s=r\\theta$ directly; a degree measure needs a conversion factor."
+    },
+    {
+      "id": "ahl-3-7-kq-3",
+      "status": "approved",
+      "q": "Why is the annular-sector area a difference?",
+      "model": "The path is the outer sector with the smaller, concentric sector removed. Both sectors have the same central angle."
+    },
+    {
+      "id": "ahl-3-7-kq-4",
+      "status": "approved",
+      "q": "When do calculator angle settings matter?",
+      "model": "They matter when evaluating a trigonometric function or inverse function unless the calculator entry explicitly specifies an angle unit. Check the setting for the measurement in the question."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
