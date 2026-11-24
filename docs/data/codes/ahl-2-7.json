@@ -13,25 +13,100 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Domain & Range, Composite, Inverse."
+            "t": 16,
+            "type": "Concept",
+            "title": "Three ways to write a function",
+            "text": "$f(x)=x^2-2$, $f: x\\mapsto x^2-2$ and $y=x^2-2$ all describe the same rule. Use whichever your textbook uses."
           },
           {
-            "t": 70,
+            "t": 76,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Evaluate by substitution",
+            "text": "$f(3)=7$, $g(-2)=1$ and $h(24)=5$. Find the function, then substitute the input for $x$."
           },
           {
-            "t": 371,
-            "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "t": 164,
+            "type": "Definition",
+            "title": "Domain and range",
+            "text": "The domain is the set of possible inputs ($x$ values). The range is the set of possible outputs ($y$ values)."
+          },
+          {
+            "t": 208,
+            "type": "Worked example",
+            "title": "Domain and range of a quadratic",
+            "text": "$f(x)=x^2-2$ goes left and right forever, so $x\\in\\mathbb{R}$. It bottoms out at $-2$, so $y\\ge-2$."
+          },
+          {
+            "t": 321,
+            "type": "Worked example",
+            "title": "A straight line",
+            "text": "$g(x)=x+3$ goes on forever in every direction, so both domain and range are all real numbers."
+          },
+          {
+            "t": 366,
+            "type": "Worked example",
+            "title": "A square root function",
+            "text": "$h(x)=\\sqrt{x+1}$ starts at $x=-1$ and only gives non-negative outputs: domain $x\\ge-1$, range $y\\ge0$."
+          },
+          {
+            "t": 454,
+            "type": "Definition",
+            "title": "A composite is a function of a function",
+            "text": "In $f\\circ g$, the output of $g$ becomes the input of $f$."
+          },
+          {
+            "t": 491,
+            "type": "Worked example",
+            "title": "Find $f\\circ g$",
+            "text": "Write $f$, and where it has $x$, put in $g(x)=x+3$. The result is $(x+3)^2-2$."
+          },
+          {
+            "t": 532,
+            "type": "Worked example",
+            "title": "Find $g\\circ f$",
+            "text": "Start with $g$ and put $f(x)$ where $x$ was: $x^2-2+3=x^2+1$. A different order gives a different function."
+          },
+          {
+            "t": 567,
+            "type": "Procedure",
+            "title": "Inverse functions and their notation",
+            "text": "The inverse of $f$ is written $f^{-1}$. Start from $y=f(x)$."
+          },
+          {
+            "t": 596,
+            "type": "Procedure",
+            "title": "Swap $x$ and $y$, then solve for $y$",
+            "text": "The first step is always to swap $x$ and $y$. Then use algebra to make $y$ the subject."
+          },
+          {
+            "t": 635,
+            "type": "Worked example",
+            "title": "The inverse of $h$",
+            "text": "From $y=\\sqrt{x+1}$: swap, square both sides, subtract 1. $h^{-1}(x)=x^2-1$."
+          },
+          {
+            "t": 691,
+            "type": "Key idea",
+            "title": "The inverse is a reflection",
+            "text": "The graph of $f^{-1}$ is the graph of $f$ reflected in the line $y=x$."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "Restricting the quadratic domain",
+            "text": "The video finds a square-root inverse for $f(x)=x^2-2$ without first restricting the original domain. On all real numbers the function is not one-to-one.",
+            "write": "Restrict to $x\\ge0$ to obtain $f^{-1}(x)=\\sqrt{x+2}$ with domain $x\\ge-2$; choosing $x\\le0$ gives the negative branch.",
+            "section": "ku"
+          },
+          {
+            "kind": "omission",
+            "title": "Domain of an inverse",
+            "text": "The video finds an inverse for $h(x)=\\sqrt{x+1}$ but does not explicitly state its domain.",
+            "write": "The original range is $[0,\\infty)$, so $h^{-1}(x)=x^2-1$ has domain $x\\ge0$.",
+            "section": "ku"
+          }
+        ]
       }
     ]
   },
@@ -39,29 +114,64 @@
     {
       "id": "ahl-2-7-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for composite and inverse functions."
+      "text": "I can form and evaluate composite functions in the correct order."
     },
     {
       "id": "ahl-2-7-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can determine the domain of a composite by checking both functions."
+    },
+    {
+      "id": "ahl-2-7-ican-3",
+      "status": "approved",
+      "text": "I can decide when a function has an inverse and restrict its domain when necessary."
+    },
+    {
+      "id": "ahl-2-7-ican-4",
+      "status": "approved",
+      "text": "I can find an inverse and state its domain and range."
+    },
+    {
+      "id": "ahl-2-7-ican-5",
+      "status": "approved",
+      "text": "I can check inverse relationships and interpret the reflection in the line $y=x$."
     }
   ],
   "ku": [
     {
       "id": "ahl-2-7-ku-1",
       "status": "approved",
-      "text": "The composite $(f\\circ g)(x)=f(g(x))$ applies $g$ first, then $f$."
+      "text": "$(f\\circ g)(x)=f(g(x))$: apply $g$ first and then apply $f$ to the result. In general $f\\circ g$ and $g\\circ f$ are different."
     },
     {
       "id": "ahl-2-7-ku-2",
       "status": "approved",
-      "text": "To find an inverse, first ensure the function is one-to-one on its domain, then swap input and output and solve."
+      "text": "For $f(g(x))$ to exist, $x$ must be in the domain of $g$ and $g(x)$ must be in the domain of $f$. Derive the domain before cancelling or simplifying expressions."
     },
     {
       "id": "ahl-2-7-ku-3",
       "status": "approved",
-      "text": "The domain of the inverse equals the range of the original function."
+      "text": "A function has an inverse function on a given domain when it is one-to-one there. Graphically, every horizontal line meets its graph at most once."
+    },
+    {
+      "id": "ahl-2-7-ku-4",
+      "status": "approved",
+      "text": "To find an inverse, write $y=f(x)$, interchange $x$ and $y$, and solve for $y$. Select a branch consistent with the original domain."
+    },
+    {
+      "id": "ahl-2-7-ku-5",
+      "status": "approved",
+      "text": "The domain of $f^{-1}$ is the range of $f$; the range of $f^{-1}$ is the domain of $f$. Their graphs are reflections in $y=x$."
+    },
+    {
+      "id": "ahl-2-7-ku-6",
+      "status": "approved",
+      "text": "The inverse undoes the function on the appropriate domains: $f^{-1}(f(x))=x$ for $x$ in the domain of $f$, and $f(f^{-1}(x))=x$ for $x$ in the range of $f$."
+    },
+    {
+      "id": "ahl-2-7-ku-7",
+      "status": "approved",
+      "text": "$f^{-1}(x)$ denotes the inverse function, not the reciprocal $1/f(x)$. Also, $\\sqrt{x^2}=|x|$ for real $x$."
     }
   ],
   "visuals": [],
@@ -75,37 +185,94 @@
     {
       "id": "ahl-2-7-misc-1",
       "status": "approved",
-      "weak": "Reading $f\\circ g$ as apply $f$ first",
-      "better": "Work from the inner function outward."
+      "weak": "$f(g(x))$ means apply $f$ before $g$.",
+      "better": "Evaluate the inner function first: $x\\to g(x)\\to f(g(x))$."
+    },
+    {
+      "id": "ahl-2-7-misc-2",
+      "status": "approved",
+      "weak": "Simplifying a composite gives $x$, so every real input is allowed.",
+      "better": "Check the original inner and outer domains; algebraic cancellation does not restore excluded inputs."
+    },
+    {
+      "id": "ahl-2-7-misc-3",
+      "status": "approved",
+      "weak": "Every quadratic has an inverse function on all real numbers.",
+      "better": "A quadratic is not one-to-one on all real numbers. Restrict its domain to one side of its vertex before finding an inverse function."
+    },
+    {
+      "id": "ahl-2-7-misc-4",
+      "status": "approved",
+      "weak": "$\\sqrt{x^2}=x$ for all real $x$.",
+      "better": "The principal square root is nonnegative, so $\\sqrt{x^2}=|x|$."
+    },
+    {
+      "id": "ahl-2-7-misc-5",
+      "status": "approved",
+      "weak": "The inverse has the same domain as the original.",
+      "better": "The inverse domain is the original range and the inverse range is the original domain."
     }
   ],
   "terms": [
     {
       "id": "ahl-2-7-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Composite function",
+      "text": "The result of applying one function to the output of another, subject to both domain conditions."
     },
     {
       "id": "ahl-2-7-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "One-to-one",
+      "text": "A function is one-to-one if different inputs cannot give the same output."
+    },
+    {
+      "id": "ahl-2-7-terms-3",
+      "status": "approved",
+      "term": "Inverse function",
+      "text": "A function that reverses a one-to-one function, with domain equal to the original range."
+    },
+    {
+      "id": "ahl-2-7-terms-4",
+      "status": "approved",
+      "term": "Principal square root",
+      "text": "The nonnegative square root; for example, $\\sqrt{x^2}=|x|$."
     }
   ],
   "formula": [],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "Let $f(x)=2x+1$ and $g(x)=x^2$. Find $(f\\circ g)(x)$ and $f^{-1}(x)$.",
+    "prompt": "Let $f(x)=\\sqrt{x-1}$ with domain $x\\geq1$, and $g(x)=x^2+1$ with domain $x\\in\\mathbb R$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
-        "marks": 2,
-        "a": "$(f\\circ g)(x)=2x^2+1$ and $f^{-1}(x)=(x-1)/2$.",
-        "m": "M1 A1"
+        "label": "a",
+        "q": "Find $(f\\circ g)(x)$ and its domain.",
+        "marks": 3,
+        "a": "$f(g(x))=\\sqrt{(x^2+1)-1}=\\sqrt{x^2}=|x|$. Since $g(x)=x^2+1\\geq1$ for every real $x$, the domain is $\\mathbb R$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find $(g\\circ f)(x)$ and its domain. Compare it with part (a).",
+        "marks": 3,
+        "a": "$g(f(x))=(\\sqrt{x-1})^2+1=x$ for $x\\geq1$. The original input must lie in the domain of $f$. Although $|x|$ and $x$ agree for $x\\geq1$, the two composites have different domains and are therefore different functions.",
+        "m": "M1 A1 R1"
+      },
+      {
+        "label": "c",
+        "q": "Find $f^{-1}$, stating its domain and range.",
+        "marks": 3,
+        "a": "Put $y=\\sqrt{x-1}$, so $x=y^2+1$ with $y\\geq0$. After interchanging variables, $f^{-1}(x)=x^2+1$ for $x\\geq0$. Its range is $[1,\\infty)$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Explain why $g$ has no inverse function on $\\mathbb R$, then give an inverse if its domain is restricted to $x\\geq0$.",
+        "marks": 3,
+        "a": "$g(2)=g(-2)=5$, so $g$ is not one-to-one on $\\mathbb R$. On $x\\geq0$ it is one-to-one and its inverse is $g^{-1}(x)=\\sqrt{x-1}$ for $x\\geq1$.",
+        "m": "R1 M1 A1"
       }
     ]
   },
@@ -113,8 +280,20 @@
     {
       "id": "ahl-2-7-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Work from the inner function outward."
+      "q": "How do you find a composite’s domain?",
+      "model": "Require the input to be valid for the inner function and require its output to be valid for the outer function. Keep both restrictions after simplification."
+    },
+    {
+      "id": "ahl-2-7-kq-2",
+      "status": "approved",
+      "q": "Why does a quadratic need a restricted domain to have an inverse function?",
+      "model": "On its full real domain, points equally far from the vertex have the same output. Restricting to one side makes the function one-to-one."
+    },
+    {
+      "id": "ahl-2-7-kq-3",
+      "status": "approved",
+      "q": "How are a function and its inverse connected graphically?",
+      "model": "Swap input and output coordinates: $(a,b)$ on the function corresponds to $(b,a)$ on the inverse, reflecting the graph in $y=x$."
     }
   ],
   "history": [],
