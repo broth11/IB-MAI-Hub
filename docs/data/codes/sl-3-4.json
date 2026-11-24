@@ -61,7 +61,7 @@
             "text": "Multiply the area of the full circle by $140/360$."
           },
           {
-            "t": 274,
+            "t": 290,
             "type": "Calculation",
             "title": "Square the radius",
             "text": "The presenter corrects the written expression to include the squared radius and gives the area as approximately $15.0$ square metres."
@@ -281,7 +281,7 @@
         "label": "c",
         "q": "A straight chord joins $A$ and $B$. Find the area between this chord and the minor arc.",
         "marks": 3,
-        "a": "Triangle $AOB$ has area $\\frac12(12)(12)\\sin150^\\circ=36\\text{ m}^2$. The minor segment area is therefore $60\\pi-36\\text{ m}^2\\approx152\\text{ m}^2$.",
+        "a": "Triangle $AOB$ has area $\\frac12(12)(12)\\sin150^\\circ=36\\text{ m}^2$. The minor segment area is therefore $(60\\pi-36)\\text{ m}^2\\approx152\\text{ m}^2$.",
         "m": "M1 M1 A1"
       },
       {
