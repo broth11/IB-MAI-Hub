@@ -13,25 +13,94 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Loans & Amortization."
+            "t": 15,
+            "type": "Context",
+            "title": "A loan and its repayments",
+            "text": "A borrower receives principal and repays the lender over time, usually with interest."
           },
           {
-            "t": 74,
+            "t": 57,
+            "type": "Definition",
+            "title": "Amortization",
+            "text": "The video calls the process of paying down the loan through regular payments amortization."
+          },
+          {
+            "t": 73,
+            "type": "Visual",
+            "title": "Payment, interest and principal",
+            "text": "A bar chart breaks a fixed regular payment into its interest component and the amount that reduces principal."
+          },
+          {
+            "t": 126,
+            "type": "Concept",
+            "title": "Why interest is initially high",
+            "text": "Interest is calculated on the outstanding balance. A relatively large balance produces a larger interest charge at the same periodic rate."
+          },
+          {
+            "t": 187,
+            "type": "Concept",
+            "title": "How the payment mix changes",
+            "text": "If equal payments reduce the balance, each interest charge falls and more of a fixed payment goes toward reducing principal."
+          },
+          {
+            "t": 233,
+            "type": "Transition",
+            "title": "Solve a loan with the finance solver",
+            "text": "The presenter moves from the general explanation to a personal-loan example."
+          },
+          {
+            "t": 258,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Loan terms",
+            "text": "The example borrows 5000 dollars at a nominal annual rate of 8%, compounded monthly, to be repaid over two years with monthly payments."
           },
           {
-            "t": 252,
+            "t": 290,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "The calculator shown",
+            "text": "The video opens the finance solver on a TI-Nspire. The Casio fx-CG50 uses different menus."
+          },
+          {
+            "t": 315,
+            "type": "Procedure",
+            "title": "Enter the known values",
+            "text": "The setup uses 24 payment periods, 8% annual interest, a present value of 5000, a final loan balance of zero, and 12 payments and compounding periods per year."
+          },
+          {
+            "t": 376,
+            "type": "Decision",
+            "title": "Payment timing",
+            "text": "The video assumes end-of-month repayments for the example."
+          },
+          {
+            "t": 394,
+            "type": "Worked example",
+            "title": "Read the payment",
+            "text": "The solver gives a negative monthly payment of approximately 226 dollars, indicating money leaving the borrower's account under the chosen sign convention."
+          },
+          {
+            "t": 423,
+            "type": "Check",
+            "title": "Estimate total repaid",
+            "text": "The presenter multiplies the rounded payment by 24 and compares the total with the amount borrowed. Rounding each payment affects this estimate."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Rounded payment and total interest",
+            "text": "The video rounds the monthly payment to 226 dollars before estimating the total repaid. That is a useful approximation but changes the interest estimate.",
+            "write": "Before payment rounding, the mathematical payment is approximately 226.136 dollars and the corresponding total interest is approximately 427.27 dollars. Actual schedules depend on the lender's rounding and final-payment rules.",
+            "section": "ku"
+          },
+          {
+            "kind": "note",
+            "title": "Calculator in the video",
+            "text": "The demonstration uses a TI-Nspire, so the menu path differs from the Casio fx-CG50.",
+            "write": "Use the same financial inputs and check the cash-flow signs, frequencies and end-of-period setting on the fx-CG50.",
+            "section": "gdc"
+          }
+        ]
       },
       {
         "n": 109,
@@ -40,25 +109,88 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Annuities."
+            "t": 13,
+            "type": "Definition",
+            "title": "The retirement annuity example",
+            "text": "The video introduces an annuity as an arrangement that provides regular payments after an initial investment."
           },
           {
-            "t": 124,
+            "t": 85,
+            "type": "Context",
+            "title": "Payments and the provider",
+            "text": "The presenter discusses the payment stream and gives an illustrative explanation of the provider's return."
+          },
+          {
+            "t": 126,
+            "type": "Visual",
+            "title": "Fixed annual payments",
+            "text": "A diagram illustrates an initial annuity and fixed annual withdrawals; the account balance changes over time."
+          },
+          {
+            "t": 166,
+            "type": "Transition",
+            "title": "A numerical annuity question",
+            "text": "The presenter moves to a finance-solver example with an initial investment and equal annual withdrawals."
+          },
+          {
+            "t": 176,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Identify the annuity terms",
+            "text": "The example starts with 500000 dollars, a 6% annual rate and 30 annual payments."
           },
           {
-            "t": 167,
+            "t": 218,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "The calculator shown",
+            "text": "The example opens the finance solver on a TI-Nspire and enters the annuity information."
+          },
+          {
+            "t": 238,
+            "type": "Procedure",
+            "title": "Enter periods, rate and present value",
+            "text": "Use 30 annual payment periods and a 6% annual rate. From the investor's cash-flow perspective, the initial investment is negative."
+          },
+          {
+            "t": 289,
+            "type": "Procedure",
+            "title": "Set the remaining values",
+            "text": "The video sets the future balance to zero and the annual payment and compounding frequencies to one."
+          },
+          {
+            "t": 315,
+            "type": "Decision",
+            "title": "Beginning-of-year payments",
+            "text": "For its example, the video assumes payments at the beginning of each year. This is important when comparing its result with an end-of-year problem."
+          },
+          {
+            "t": 335,
+            "type": "Worked example",
+            "title": "Read the annual withdrawal",
+            "text": "With beginning-of-year payments, the solver gives approximately 34268 dollars per year."
+          },
+          {
+            "t": 382,
+            "type": "Extension",
+            "title": "Other possible unknowns",
+            "text": "Similar questions can ask for a required initial value or interest rate instead of the periodic payment."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Payment timing differs from IB exam convention",
+            "text": "The video assumes payments at the beginning of each year in its example. The syllabus guidance says exam questions use end-of-period payments.",
+            "write": "Use the timing stated in the question. For the video's figures, beginning-of-year payments are about 34268.35 dollars; end-of-year payments are about 36324.46 dollars.",
+            "section": "ku"
+          },
+          {
+            "kind": "note",
+            "title": "Calculator in the video",
+            "text": "The demonstration uses a TI-Nspire, not the Casio fx-CG50.",
+            "write": "Transfer the financial inputs and sign convention to your calculator; check its payment timing before solving.",
+            "section": "gdc"
+          }
+        ]
       },
       {
         "n": 110,
@@ -69,112 +201,322 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Finance Solver (TVM Solver)."
-          },
-          {
-            "t": 49,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "title": "What a finance solver does",
+            "text": "A time-value-of-money solver relates present value, future value, payments, interest and timing."
           },
           {
             "t": 77,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Opening the solver",
+            "text": "The video demonstrates the TI-Nspire menu. The Casio fx-CG50 uses different menus."
           },
           {
-            "t": 109,
-            "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "t": 97,
+            "type": "Definition",
+            "title": "Number of periods",
+            "text": "$N$ counts payment periods in the setup shown. For monthly payments over two years, $N=24$."
+          },
+          {
+            "t": 122,
+            "type": "Definition",
+            "title": "Annual interest rate",
+            "text": "The presenter enters the stated nominal annual rate as a percentage in the calculator field."
+          },
+          {
+            "t": 144,
+            "type": "Definition",
+            "title": "Present value",
+            "text": "Present value is the amount at the start of the financial arrangement."
+          },
+          {
+            "t": 185,
+            "type": "Key idea",
+            "title": "Cash-flow signs",
+            "text": "The video uses a consistent point of view: cash received is positive and cash paid out is negative."
+          },
+          {
+            "t": 226,
+            "type": "Definition",
+            "title": "Payment per period",
+            "text": "The payment field is the amount per payment period, with its sign indicating direction of cash flow."
+          },
+          {
+            "t": 252,
+            "type": "Definition",
+            "title": "Future value",
+            "text": "Future value is the amount at the end. A fully repaid loan has a remaining balance of zero."
+          },
+          {
+            "t": 273,
+            "type": "Definition",
+            "title": "Payments per year",
+            "text": "Monthly, quarterly and annual payments correspond to 12, 4 and 1 payment periods per year."
+          },
+          {
+            "t": 306,
+            "type": "Definition",
+            "title": "Compounding periods per year",
+            "text": "Compounding frequency may differ from payment frequency. Enter each field from the terms of the question."
+          },
+          {
+            "t": 334,
+            "type": "Decision",
+            "title": "Beginning or end of period",
+            "text": "Choose whether each payment occurs at the beginning or end of its payment period; timing affects the result."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Calculator shown in the video",
+            "text": "The video demonstrates a TI-Nspire. Field names and menus can differ on the Casio fx-CG50.",
+            "write": "Keep the same cash-flow sign convention and check the payment and compounding frequencies on your calculator."
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "sl-1-7-ican-1",
+      "id": "sl17-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for amortization and annuities."
+      "text": "I can distinguish loan principal, interest, repayment and outstanding balance."
     },
     {
-      "id": "sl-1-7-ican-2",
+      "id": "sl17-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can set up and solve a loan or annuity using a finance solver, with consistent cash-flow signs."
+    },
+    {
+      "id": "sl17-ican-3",
+      "status": "approved",
+      "text": "I can distinguish the nominal annual interest rate, payment frequency and compounding frequency."
+    },
+    {
+      "id": "sl17-ican-4",
+      "status": "approved",
+      "text": "I can interpret the effect of end-of-period versus beginning-of-period payments."
+    },
+    {
+      "id": "sl17-ican-5",
+      "status": "approved",
+      "text": "I can calculate total repayments or withdrawals and explain how rounding and final-payment rules affect the result."
+    },
+    {
+      "id": "sl17-ican-6",
+      "status": "approved",
+      "text": "I can check a finance-solver answer using a balance recurrence or a reasonableness check."
     }
   ],
   "ku": [
     {
-      "id": "sl-1-7-ku-1",
+      "id": "sl17-ku-1",
       "status": "approved",
-      "text": "Amortization repays a loan through payments that cover interest and reduce the principal."
+      "text": "A repayment on a reducing-balance loan covers interest charged on the outstanding balance; the rest reduces the principal. For fixed payments at a fixed periodic rate, a falling balance reduces the interest component over time."
     },
     {
-      "id": "sl-1-7-ku-2",
+      "id": "sl17-ku-2",
       "status": "approved",
-      "text": "An annuity is a series of equal payments at regular intervals. The timing of payments changes the value."
+      "text": "If the payment $P$ is made at the end of each period and the rate is $i$ per period, the loan balance follows $B_{n+1}=B_n(1+i)-P$. If a payment does not cover interest, the balance can increase."
     },
     {
-      "id": "sl-1-7-ku-3",
+      "id": "sl17-ku-3",
       "status": "approved",
-      "text": "For finance calculations, match the interest rate, compounding periods and payment frequency, and check the sign convention."
+      "text": "An annuity consists of a regular stream of payments. In a withdrawal annuity, investment growth and withdrawals together determine the balance; do not assume every annuity must finish at zero unless the question says so."
+    },
+    {
+      "id": "sl17-ku-4",
+      "status": "approved",
+      "text": "In a finance solver, $N$ is the number of payment periods, $PV$ the starting value, $PMT$ the payment per period and $FV$ the value at the end. Enter the stated nominal annual rate and set both payments per year and compounding periods per year."
+    },
+    {
+      "id": "sl17-ku-5",
+      "status": "approved",
+      "text": "Set the sign convention from one person's viewpoint. For a borrower, money received may be positive and repayments negative; for an investor, the initial investment may be negative and withdrawals positive. Reversing all signs consistently is also valid."
+    },
+    {
+      "id": "sl17-ku-6",
+      "status": "approved",
+      "text": "Payment timing matters: beginning-of-period payments have more time to earn interest than end-of-period payments. The syllabus guidance states that exam questions use end-of-period payments; follow the question's explicit timing in other contexts."
+    },
+    {
+      "id": "sl17-ku-7",
+      "status": "approved",
+      "text": "Keep unrounded calculator values through intermediate steps. When actual payments are rounded to cents, the final payment may need adjustment. State whether a total uses a rounded payment or the unrounded model."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "sl17-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.3",
+        "Geometric sequences and series"
+      ],
+      [
+        "SL 1.4",
+        "Compound interest"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "SL 2.5",
+        "Exponential models"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 1.6",
+        "Rounding and approximation"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "sl-1-7-misc-1",
+      "id": "sl17-misc-1",
       "status": "approved",
-      "weak": "Subtracting the payment before adding interest when payment is at the end",
-      "better": "Apply interest first for an end-of-period payment."
+      "weak": "A 3-year loan with monthly payments has $N=3$.",
+      "better": "The solver's number of monthly payment periods is $N=3\\times12=36$."
+    },
+    {
+      "id": "sl17-misc-2",
+      "status": "approved",
+      "weak": "Payments per year and compounding periods per year are always equal.",
+      "better": "Read each frequency from the question. They can be different and need separate inputs."
+    },
+    {
+      "id": "sl17-misc-3",
+      "status": "approved",
+      "weak": "Enter both a loan received and payments made as positive cash flows.",
+      "better": "Use opposite signs for money entering and leaving the same person's account."
+    },
+    {
+      "id": "sl17-misc-4",
+      "status": "approved",
+      "weak": "For an end-of-month payment, subtract the payment before adding that month's interest.",
+      "better": "In the basic end-of-period model, apply interest to the opening balance, then subtract the payment."
+    },
+    {
+      "id": "sl17-misc-5",
+      "status": "approved",
+      "weak": "The video's annuity result can be used unchanged if the payments switch from the start to the end of each year.",
+      "better": "The payment timing changes the value; reset the solver and recalculate."
+    },
+    {
+      "id": "sl17-misc-6",
+      "status": "approved",
+      "weak": "Multiply a payment rounded to the nearest dollar by the number of periods to obtain the exact total interest.",
+      "better": "That gives an estimate. Use unrounded values for the mathematical model, and follow any specified payment-rounding and final-payment rules."
     }
   ],
   "terms": [
     {
-      "id": "sl-1-7-terms-1",
+      "id": "sl17-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Find the repayment",
+      "text": "Identify the number of payment periods, nominal annual rate, principal, final balance, frequencies and payment timing; use a consistent sign convention."
     },
     {
-      "id": "sl-1-7-terms-2",
+      "id": "sl17-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find the outstanding balance",
+      "text": "Specify the point in time and whether it is before or after that period's payment."
+    },
+    {
+      "id": "sl17-terms-3",
+      "status": "approved",
+      "term": "Find total interest",
+      "text": "For a fully repaid loan with the stated payment schedule, subtract the amount borrowed from the total paid. Account for rounding and any different final payment."
     }
   ],
   "formula": [],
-  "gdc": [],
+  "gdc": [
+    {
+      "id": "sl17-gdc-1",
+      "status": "approved",
+      "text": "Open Financial: [MENU] [ln] (icon C), then [F2] CMPD.",
+      "verified": true
+    },
+    {
+      "id": "sl17-gdc-2",
+      "status": "approved",
+      "text": "Enter the known values in $n$, I%, PV, PMT, FV, P/Y and C/Y. Use the negative key for money flowing in the opposite direction.",
+      "verified": true
+    },
+    {
+      "id": "sl17-gdc-3",
+      "status": "approved",
+      "text": "Check the end-of-period payment setting and the payment and compounding frequencies before solving. The exact setting sequence should be checked on your calculator.",
+      "verified": false
+    },
+    {
+      "id": "sl17-gdc-4",
+      "status": "approved",
+      "text": "From the list, select the unknown using [F1] $n$, [F2] I%, [F3] PV, [F4] PMT or [F5] FV. [F1] REPEAT returns to the list.",
+      "verified": true
+    }
+  ],
   "worked": {
+    "id": "sl17-worked",
     "status": "approved",
-    "prompt": "A loan balance is $1000$. It earns 1% interest over a month and then a payment of $100$ is made. Find the new balance.",
+    "prompt": "A borrower receives a loan of 12000 dollars at a nominal annual interest rate of 6%, compounded monthly. The loan is to be repaid by equal end-of-month payments over 3 years. Assume no fees.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "State the solver inputs for the number of payments, annual rate, present value, future balance and frequencies.",
+        "marks": 3,
+        "a": "$N=36$, $I\\%=6$, $PV=+12000$, $FV=0$, $P/Y=12$ and $C/Y=12$. Select end-of-period payments and solve for $PMT$.",
+        "m": "M1 A2"
+      },
+      {
+        "label": "(b)",
+        "q": "Find the monthly payment, correct to the nearest cent.",
         "marks": 2,
-        "a": "Interest is $10$, so the new balance is $1000+10-100=910$.",
+        "a": "The solver gives $PMT\\approx-365.063249$. From the borrower's perspective the payment is 365.06 dollars per month to the nearest cent.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Using the unrounded payment, find the balance just after the twelfth payment.",
+        "marks": 2,
+        "a": "Use the solver for the remaining 24 payments or apply the monthly balance recurrence. The balance is approximately 8236.87 dollars.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Estimate the total interest using the unrounded mathematical payment.",
+        "marks": 2,
+        "a": "$36(365.063249\\ldots)-12000=1142.2769\\ldots$, or 1142.28 dollars. A schedule using rounded payments may have a different final payment.",
         "m": "M1 A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "sl-1-7-kq-1",
+      "id": "sl17-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Apply interest first for an end-of-period payment."
+      "q": "Why can the interest component decrease while the total payment remains fixed?",
+      "model": "The interest rate is applied to a smaller outstanding balance each period. If the payment is fixed and the loan is reducing, more of each payment goes toward principal."
+    },
+    {
+      "id": "sl17-kq-2",
+      "status": "approved",
+      "q": "What happens if a payment is less than the interest charged for a period?",
+      "model": "The payment does not cover the interest, so in the simple balance recurrence the outstanding balance increases."
+    },
+    {
+      "id": "sl17-kq-3",
+      "status": "approved",
+      "q": "Why does the same annuity have different payments in beginning and end modes?",
+      "model": "Payments at the beginning and end occur at different times and accumulate or remain invested for different lengths of time. A change in timing changes their present value."
+    },
+    {
+      "id": "sl17-kq-4",
+      "status": "approved",
+      "q": "Why might 36 rounded payments fail to leave a balance of exactly zero?",
+      "model": "The exact mathematical payment may lie between cent values. Rounding each payment changes the balance, so a lender may adjust the final payment."
     }
   ],
   "history": [],
