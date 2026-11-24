@@ -1,0 +1,349 @@
+{
+  "code": "AHL 3.10",
+  "slug": "ahl-3-10",
+  "title": "Vectors",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 311,
+        "title": "Vectors Basics",
+        "videoId": "MMnTi7XWgco",
+        "partial": true,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "Vectors as directed quantities",
+            "text": "The presenter introduces magnitude and direction using movement as a context."
+          },
+          {
+            "t": 60,
+            "type": "Concept",
+            "title": "Scalar and vector examples",
+            "text": "Contrast distance and speed with displacement and velocity."
+          },
+          {
+            "t": 97,
+            "type": "Example",
+            "title": "Directed sides of a parallelogram",
+            "text": "The diagram assigns vectors to directed journeys between vertices."
+          },
+          {
+            "t": 150,
+            "type": "Concept",
+            "title": "Reversing a vector",
+            "text": "The reverse journey has the same magnitude and opposite direction."
+          },
+          {
+            "t": 192,
+            "type": "Example",
+            "title": "Opposite sides of a parallelogram",
+            "text": "Use equal lengths and directions to express other directed sides."
+          },
+          {
+            "t": 264,
+            "type": "Example",
+            "title": "Reverse and translate a side",
+            "text": "The discussion identifies reversed vectors and equal directed sides."
+          },
+          {
+            "t": 304,
+            "type": "Method",
+            "title": "Add head to tail",
+            "text": "Combine two successive displacements to travel from $P$ to $R$."
+          },
+          {
+            "t": 350,
+            "type": "Example",
+            "title": "Two routes to the same point",
+            "text": "Express a displacement using two different head-to-tail routes."
+          },
+          {
+            "t": 404,
+            "type": "Overview",
+            "title": "Review",
+            "text": "The video closes by recommending practice with vector diagrams."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "Components and unit vectors need further study",
+            "text": "The video concentrates on directed segments and vector addition. It does not develop three-dimensional components, magnitude or normalization in detail.",
+            "write": "Find a displacement by subtracting starting coordinates from ending coordinates."
+          },
+          {
+            "kind": "watch",
+            "title": "Vector notation",
+            "text": "Bold type or an arrow can denote a vector. A hat is often reserved for a unit vector, so interpret it according to the notation defined in the question.",
+            "write": "For nonzero $\\mathbf{v}$, $\\hat{\\mathbf{v}}=\\mathbf{v}/|\\mathbf{v}|$ is a unit vector."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline and caption limitations",
+            "text": "Timestamps follow captions. Playback and the diagram were not independently verified, and captions can omit minus signs.",
+            "write": "Check the direction of each arrow before adding or reversing a vector."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-3-10-ican-1",
+      "status": "approved",
+      "text": "I can distinguish scalar quantities from vectors and represent a vector using directed segments or components."
+    },
+    {
+      "id": "ahl-3-10-ican-2",
+      "status": "approved",
+      "text": "I can add, subtract and scale vectors geometrically and component by component."
+    },
+    {
+      "id": "ahl-3-10-ican-3",
+      "status": "approved",
+      "text": "I can find a displacement from two position vectors and interpret the direction of subtraction."
+    },
+    {
+      "id": "ahl-3-10-ican-4",
+      "status": "approved",
+      "text": "I can calculate magnitude, normalize a nonzero vector and rescale it to a specified magnitude."
+    },
+    {
+      "id": "ahl-3-10-ican-5",
+      "status": "approved",
+      "text": "I can express a three-dimensional vector in column form or in terms of $\\mathbf{i},\\mathbf{j},\\mathbf{k}$."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-10-ku-1",
+      "status": "approved",
+      "text": "A scalar has magnitude only; examples include distance, speed and mass. A vector has magnitude and direction; displacement and velocity are examples. The zero vector has magnitude zero and no defined direction."
+    },
+    {
+      "id": "ahl-3-10-ku-2",
+      "status": "approved",
+      "text": "A directed segment $\\overrightarrow{AB}$ describes displacement from $A$ to $B$. Equal vectors have equal magnitude and direction even if drawn at different locations. Reversing the direction gives $\\overrightarrow{BA}=-\\overrightarrow{AB}$."
+    },
+    {
+      "id": "ahl-3-10-ku-3",
+      "status": "approved",
+      "text": "If $\\mathbf{a}=\\overrightarrow{OA}$ and $\\mathbf{b}=\\overrightarrow{OB}$ are position vectors, then $\\overrightarrow{AB}=\\mathbf{b}-\\mathbf{a}$. Subtract the starting position from the ending position."
+    },
+    {
+      "id": "ahl-3-10-ku-4",
+      "status": "approved",
+      "text": "Add vectors head to tail: $\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}$. Componentwise, add or subtract corresponding entries. Subtracting $\\mathbf{v}$ is the same as adding $-\\mathbf{v}$."
+    },
+    {
+      "id": "ahl-3-10-ku-5",
+      "status": "approved",
+      "text": "For a scalar $k$, multiplying $\\mathbf{v}$ by $k$ scales its magnitude by $|k|$. If $k>0$ the direction is unchanged; if $k<0$ it reverses. If $k=0$, the result is the zero vector."
+    },
+    {
+      "id": "ahl-3-10-ku-6",
+      "status": "approved",
+      "text": "In three dimensions, $\\mathbf{v}=\\begin{pmatrix}v_1\\\\v_2\\\\v_3\\end{pmatrix}=v_1\\mathbf{i}+v_2\\mathbf{j}+v_3\\mathbf{k}$, where $\\mathbf{i},\\mathbf{j},\\mathbf{k}$ are unit vectors along the positive coordinate axes."
+    },
+    {
+      "id": "ahl-3-10-ku-7",
+      "status": "approved",
+      "text": "The magnitude is $|\\mathbf{v}|=\\sqrt{v_1^2+v_2^2+v_3^2}$. It is a nonnegative scalar, not a vector; its units match the units of the components."
+    },
+    {
+      "id": "ahl-3-10-ku-8",
+      "status": "approved",
+      "text": "For $\\mathbf{v}\\ne\\mathbf0$, the unit vector in its direction is $\\hat{\\mathbf{v}}=\\mathbf{v}/|\\mathbf{v}|$. To give that direction a specified magnitude $s\\geq0$, use $s\\hat{\\mathbf{v}}$. The zero vector cannot be normalized."
+    },
+    {
+      "id": "ahl-3-10-ku-9",
+      "status": "approved",
+      "text": "A position vector locates a point relative to the origin; a displacement relates two points. A vector describes a change, so its coordinate components are not automatically the coordinates of the final position."
+    },
+    {
+      "id": "ahl-3-10-ku-10",
+      "status": "approved",
+      "text": "For motion with constant velocity $\\mathbf{v}$, displacement over time $t$ is $t\\mathbf{v}$. Include compatible time and distance units when interpreting a resultant."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-10-misc-1",
+      "status": "approved",
+      "weak": "$\\overrightarrow{AB}=\\mathbf{a}-\\mathbf{b}$.",
+      "better": "Subtract initial position from final position: $\\overrightarrow{AB}=\\mathbf{b}-\\mathbf{a}$."
+    },
+    {
+      "id": "ahl-3-10-misc-2",
+      "status": "approved",
+      "weak": "Equal-length arrows are always equal vectors.",
+      "better": "They must also have the same direction."
+    },
+    {
+      "id": "ahl-3-10-misc-3",
+      "status": "approved",
+      "weak": "The magnitude of $(3,4)$ is $(5,0)$.",
+      "better": "Magnitude is the scalar $5$, not a vector."
+    },
+    {
+      "id": "ahl-3-10-misc-4",
+      "status": "approved",
+      "weak": "The unit vector in the direction of $\\mathbf0$ is $\\mathbf0$.",
+      "better": "Division by $|\\mathbf0|=0$ is undefined, and the zero vector has no direction."
+    },
+    {
+      "id": "ahl-3-10-misc-5",
+      "status": "approved",
+      "weak": "Multiplying a vector by $-2$ changes its length to a negative number.",
+      "better": "Its magnitude doubles and its direction reverses. Magnitude is never negative."
+    },
+    {
+      "id": "ahl-3-10-misc-6",
+      "status": "approved",
+      "weak": "A position vector and any displacement with the same endpoint are the same.",
+      "better": "A position vector starts at the origin; a displacement depends on both its starting point and ending point."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-10-terms-1",
+      "status": "approved",
+      "term": "Scalar",
+      "text": "A quantity described by magnitude without direction."
+    },
+    {
+      "id": "ahl-3-10-terms-2",
+      "status": "approved",
+      "term": "Vector",
+      "text": "A quantity with magnitude and direction, represented for example by a directed segment or a component column."
+    },
+    {
+      "id": "ahl-3-10-terms-3",
+      "status": "approved",
+      "term": "Position vector",
+      "text": "The vector from the origin to a point."
+    },
+    {
+      "id": "ahl-3-10-terms-4",
+      "status": "approved",
+      "term": "Displacement",
+      "text": "The directed change in position from an initial point to a final point."
+    },
+    {
+      "id": "ahl-3-10-terms-5",
+      "status": "approved",
+      "term": "Magnitude",
+      "text": "The nonnegative length of a vector."
+    },
+    {
+      "id": "ahl-3-10-terms-6",
+      "status": "approved",
+      "term": "Unit vector",
+      "text": "A vector of magnitude one, often used to specify direction."
+    },
+    {
+      "id": "ahl-3-10-terms-7",
+      "status": "approved",
+      "term": "Resultant",
+      "text": "The vector sum of two or more vectors."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-10-formula-1",
+      "status": "approved",
+      "text": "Displacement: $\\overrightarrow{AB}=\\mathbf{b}-\\mathbf{a}$ for position vectors $\\mathbf{a}$ and $\\mathbf{b}$."
+    },
+    {
+      "id": "ahl-3-10-formula-2",
+      "status": "approved",
+      "text": "Magnitude in three dimensions: $|\\mathbf{v}|=\\sqrt{v_1^2+v_2^2+v_3^2}$."
+    },
+    {
+      "id": "ahl-3-10-formula-3",
+      "status": "approved",
+      "text": "For $\\mathbf{v}\\ne\\mathbf0$, the unit vector in its direction is $\\mathbf{v}/|\\mathbf{v}|$."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A drone moves in a three-dimensional coordinate system measured in metres. Its initial position is $A=(1,-2,3)$ and a target is at $B=(5,1,-1)$. Let $\\mathbf{a}$ and $\\mathbf{b}$ be their position vectors.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find $\\overrightarrow{AB}$ in component form and in terms of $\\mathbf{i},\\mathbf{j},\\mathbf{k}$.",
+        "marks": 2,
+        "a": "Subtract start from finish: $\\overrightarrow{AB}=\\mathbf{b}-\\mathbf{a}=(5-1,1-(-2),-1-3)=(4,3,-4)$. Thus $\\overrightarrow{AB}=4\\mathbf{i}+3\\mathbf{j}-4\\mathbf{k}$ m.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find the distance from $A$ to $B$ and a unit vector in that direction.",
+        "marks": 3,
+        "a": "$|\\overrightarrow{AB}|=\\sqrt{4^2+3^2+(-4)^2}=\\sqrt{41}$ m. Since this is nonzero, the unit direction is $(4,3,-4)/\\sqrt{41}$. Its magnitude is $1$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "The drone travels in this direction at constant speed $7$ m/s. Find its velocity vector and the time needed to reach $B$.",
+        "marks": 3,
+        "a": "Scale the unit direction: $\\mathbf{v}=\\frac7{\\sqrt{41}}(4,3,-4)$ m/s. The path length is $\\sqrt{41}$ m, so $t=\\sqrt{41}/7\\approx0.915$ s.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "d",
+        "q": "A second displacement is $\\mathbf{w}=(-2,1,2)$ m. Find the resultant of $\\overrightarrow{AB}$ followed by $\\mathbf{w}$ and its magnitude.",
+        "marks": 3,
+        "a": "$\\overrightarrow{AB}+\\mathbf{w}=(4,3,-4)+(-2,1,2)=(2,4,-2)$ m. Its magnitude is $\\sqrt{4+16+4}=2\\sqrt6$ m. The final position would be $B+\\mathbf{w}=(3,2,1)$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "e",
+        "q": "Find a unit vector opposite to the resultant in part (d).",
+        "marks": 2,
+        "a": "The opposite resultant is $(-2,-4,2)$. Divide by its magnitude $2\\sqrt6$ to obtain $(-1,-2,1)/\\sqrt6$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-10-kq-1",
+      "status": "approved",
+      "q": "Why is the displacement from $A$ to $B$ equal to $\\mathbf{b}-\\mathbf{a}$?",
+      "model": "Travelling from the origin to $A$ and then from $A$ to $B$ gives $\\mathbf{a}+\\overrightarrow{AB}=\\mathbf{b}$. Rearranging gives the result."
+    },
+    {
+      "id": "ahl-3-10-kq-2",
+      "status": "approved",
+      "q": "Why does dividing by magnitude give a unit vector?",
+      "model": "For nonzero $\\mathbf{v}$, scaling by $1/|\\mathbf{v}|$ changes its magnitude to $|\\mathbf{v}|/|\\mathbf{v}|=1$ while preserving its direction."
+    },
+    {
+      "id": "ahl-3-10-kq-3",
+      "status": "approved",
+      "q": "Why can two equal vectors be drawn in different places?",
+      "model": "A free vector records magnitude and direction, not a unique starting location. Directed segments with the same magnitude and direction represent the same vector."
+    },
+    {
+      "id": "ahl-3-10-kq-4",
+      "status": "approved",
+      "q": "Why can the zero vector not be normalized?",
+      "model": "Its magnitude is zero, so the normalization formula would divide by zero. It also has no defined direction."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
