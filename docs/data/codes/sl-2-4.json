@@ -15,23 +15,66 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Intersection of Two Lines."
+            "title": "Intersection of two lines",
+            "text": "Find the common point using a simultaneous-equation solver and then by graphing."
           },
           {
-            "t": 41,
+            "t": 16,
+            "type": "Model",
+            "title": "Identify the common point",
+            "text": "The intersection lies on both lines, so its coordinates satisfy both equations."
+          },
+          {
+            "t": 48,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Set up the system solver",
+            "text": "Choose two equations in the variables $x$ and $y$."
           },
           {
-            "t": 193,
-            "type": "Visual",
-            "title": "Graph discussion",
-            "text": "The presenter discusses a graph."
+            "t": 94,
+            "type": "Calculator",
+            "title": "Enter both equations",
+            "text": "Enter $y=\\frac23x+2$ and $y=-x+5$ into the system."
+          },
+          {
+            "t": 120,
+            "type": "Result",
+            "title": "Read and check the solution",
+            "text": "The calculator returns $x=1.8$ and $y=3.2$, giving $(1.8,3.2)$."
+          },
+          {
+            "t": 143,
+            "type": "Calculator",
+            "title": "Graph the same equations",
+            "text": "Enter the right-hand sides as two functions and display both lines."
+          },
+          {
+            "t": 190,
+            "type": "Calculator",
+            "title": "Find their intersection on the graph",
+            "text": "Select the intersection tool, then bracket the crossing with bounds on either side."
+          },
+          {
+            "t": 229,
+            "type": "Result",
+            "title": "Compare both methods",
+            "text": "The graphing method gives the same ordered pair as the system solver."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Meaning of the solution",
+            "text": "At the intersection, the formulas give the same output for the same input. The coordinates satisfy both equations.",
+            "write": "$\\frac23(1.8)+2=3.2$ and $-1.8+5=3.2$."
+          },
+          {
+            "kind": "watch",
+            "title": "Calculator model",
+            "text": "The demonstration uses a TI-Nspire. Equivalent tools may be in different menus on another calculator.",
+            "write": "Use both coordinates as a check."
+          }
+        ]
       },
       {
         "n": 207,
@@ -42,23 +85,78 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Plotting Functions & Analysis Tools."
+            "title": "Plotting and analysing a function",
+            "text": "The presenter introduces graphing and the calculator’s graph-analysis tools."
           },
           {
-            "t": 46,
+            "t": 43,
+            "type": "Model",
+            "title": "A cannonball’s height",
+            "text": "A height–time graph is used to ask about maximum height, landing time, initial height and when the ball reaches a given height."
+          },
+          {
+            "t": 106,
+            "type": "Graph",
+            "title": "Enter the quadratic model",
+            "text": "Enter $h(t)=-2t^2+20t+8$, using the calculator’s graph variable in place of $t$."
+          },
+          {
+            "t": 156,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "The first window hides the graph’s features",
+            "text": "The default view is too narrow to show the maximum and landing point; change the viewing window."
           },
           {
-            "t": 153,
-            "type": "Visual",
-            "title": "Graph discussion",
-            "text": "The presenter discusses a graph."
+            "t": 190,
+            "type": "Calculator",
+            "title": "Zoom and set useful bounds",
+            "text": "Zoom out and adjust the horizontal and vertical bounds to display the parabola’s important features."
+          },
+          {
+            "t": 264,
+            "type": "Model",
+            "title": "Maximum height",
+            "text": "The maximum is $(5,58)$: after $5$ seconds the height is $58$ metres."
+          },
+          {
+            "t": 329,
+            "type": "Model",
+            "title": "Landing time from a zero",
+            "text": "Find the positive zero, approximately $10.4$ seconds. The negative zero lies outside the real-world time interval."
+          },
+          {
+            "t": 389,
+            "type": "Model",
+            "title": "Initial height",
+            "text": "The vertical intercept is $(0,8)$, so the ball starts $8$ metres above ground."
+          },
+          {
+            "t": 451,
+            "type": "Model",
+            "title": "Intersect with a horizontal line",
+            "text": "Graph $y=40$ and find the first intersection at $(2,40)$. The second intersection is $(8,40)$, on the way down."
+          },
+          {
+            "t": 514,
+            "type": "Overview",
+            "title": "Review the features",
+            "text": "The presenter revisits the maximum, zero, vertical intercept and intersection as answers to questions about the model."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Window versus domain",
+            "text": "A window such as $-5\\leq t\\leq15$ helps display the full curve. It does not mean negative time or time after the ball lands is physically meaningful.",
+            "write": "For this model the meaningful interval is approximately $0\\leq t\\leq10.4$."
+          },
+          {
+            "kind": "watch",
+            "title": "One height can occur twice",
+            "text": "The height $40$ m occurs at $t=2$ and $t=8$ seconds. Read the question carefully: the first time is $2$ seconds, while both times answer when the height is $40$ m.",
+            "write": "$-2t^2+20t+8=40$ gives $t=2$ or $t=8$."
+          }
+        ]
       }
     ]
   },
@@ -66,29 +164,59 @@
     {
       "id": "sl-2-4-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for key features of graphs."
+      "text": "I can identify intercepts, maxima, minima and intersections from a graph or equation."
     },
     {
       "id": "sl-2-4-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can describe where a function increases or decreases and distinguish local from absolute extrema."
+    },
+    {
+      "id": "sl-2-4-ican-3",
+      "status": "approved",
+      "text": "I can interpret coordinates, units and domain restrictions in context."
+    },
+    {
+      "id": "sl-2-4-ican-4",
+      "status": "approved",
+      "text": "I can use an intersection to solve an equation and check whether all relevant solutions have been found."
     }
   ],
   "ku": [
     {
       "id": "sl-2-4-ku-1",
       "status": "approved",
-      "text": "A graph may have intercepts, turning points and asymptotes, subject to its domain."
+      "text": "Intercepts occur where a graph meets an axis. Solve $f(x)=0$ for $x$-intercepts and calculate $f(0)$ for the $y$-intercept if $0$ belongs to the domain."
     },
     {
       "id": "sl-2-4-ku-2",
       "status": "approved",
-      "text": "A local maximum is higher than nearby values; it need not be the absolute maximum on the whole domain."
+      "text": "A maximum or minimum point is an ordered pair. The maximum or minimum value is its output coordinate; the input coordinate says where it occurs."
     },
     {
       "id": "sl-2-4-ku-3",
       "status": "approved",
-      "text": "Read coordinates with appropriate accuracy and interpret features in context."
+      "text": "A local extremum is highest or lowest compared with nearby domain values. An absolute extremum is highest or lowest over the entire domain. Endpoints can be absolute extrema even without a turn."
+    },
+    {
+      "id": "sl-2-4-ku-4",
+      "status": "approved",
+      "text": "A function increases over an interval when larger inputs give larger outputs, and decreases when larger inputs give smaller outputs. Read intervals along the input axis."
+    },
+    {
+      "id": "sl-2-4-ku-5",
+      "status": "approved",
+      "text": "An intersection of $y=f(x)$ and $y=g(x)$ satisfies both equations. Its input solves $f(x)=g(x)$; the point includes the common output."
+    },
+    {
+      "id": "sl-2-4-ku-6",
+      "status": "approved",
+      "text": "A graph can have several intersections or none. A calculator window may hide a feature, and numerical coordinates are often approximations."
+    },
+    {
+      "id": "sl-2-4-ku-7",
+      "status": "approved",
+      "text": "Domain restrictions can remove roots, intersections or turning points from a model. Interpret remaining points using the quantities and units in the question."
     }
   ],
   "visuals": [],
@@ -102,37 +230,88 @@
     {
       "id": "sl-2-4-misc-1",
       "status": "approved",
-      "weak": "Calling the vertex coordinate $x=2$ the minimum value",
-      "better": "The minimum value is the $y$-coordinate, $3$."
+      "weak": "At $(2,9)$ the maximum is $2$.",
+      "better": "The maximum value is $9$, attained at input $2$."
+    },
+    {
+      "id": "sl-2-4-misc-2",
+      "status": "approved",
+      "weak": "An intersection of $f$ and $g$ solves $f(x)=0$.",
+      "better": "It solves $f(x)=g(x)$. It is a root of either function only if the shared output is zero."
+    },
+    {
+      "id": "sl-2-4-misc-3",
+      "status": "approved",
+      "weak": "A turning point must be the absolute maximum or minimum.",
+      "better": "Compare its output with all other relevant values, including endpoints and other turning points."
+    },
+    {
+      "id": "sl-2-4-misc-4",
+      "status": "approved",
+      "weak": "The graph shows only one intersection in the current window.",
+      "better": "Examine the relevant domain and use algebra or a solver to check for others."
     }
   ],
   "terms": [
     {
       "id": "sl-2-4-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Local maximum",
+      "text": "An output at least as large as outputs at nearby inputs in the domain."
     },
     {
       "id": "sl-2-4-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Absolute minimum",
+      "text": "The smallest output attained across the entire domain under consideration."
+    },
+    {
+      "id": "sl-2-4-terms-3",
+      "status": "approved",
+      "term": "Root",
+      "text": "An input where the function equals zero. Its associated graph point is an $x$-intercept."
+    },
+    {
+      "id": "sl-2-4-terms-4",
+      "status": "approved",
+      "term": "Intersection",
+      "text": "A common point of two graphs. Its coordinates satisfy both equations."
     }
   ],
   "formula": [],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "State the vertex and minimum of $f(x)=(x-2)^2+3$.",
+    "prompt": "Consider $f(x)=-(x-2)^2+9$ on the restricted domain $0\\leq x\\leq5$, and the line $g(x)=x+3$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "a",
+        "q": "Find the maximum point, maximum value and intervals of increase and decrease.",
+        "marks": 3,
+        "a": "The vertex form gives the maximum point $(2,9)$ and maximum value $9$. The function increases on $[0,2]$ and decreases on $[2,5]$.",
+        "m": "A1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find the intercepts of the restricted graph of $f$.",
+        "marks": 3,
+        "a": "$f(0)=5$, giving $(0,5)$. For roots, $(x-2)^2=9$, so $x=-1$ or $x=5$. Only $x=5$ is in the stated domain, giving $(5,0)$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Find the intersections of the two graphs within the domain.",
+        "marks": 4,
+        "a": "Set $-(x-2)^2+9=x+3$, giving $x^2-3x-2=0$. Thus $x=\\frac{3\\pm\\sqrt{17}}2$. Only $\\frac{3+\\sqrt{17}}2\\approx3.56$ lies in $[0,5]$. The intersection is approximately $(3.56,6.56)$.",
+        "m": "M1 M1 A1 A1"
+      },
+      {
+        "label": "d",
+        "q": "State the absolute minimum of $f$ on the given domain and explain why it is not a turning point.",
         "marks": 2,
-        "a": "The vertex is $(2,3)$ and the minimum value is $3$.",
-        "m": "M1 A1"
+        "a": "The minimum value is $0$ at $x=5$. This is the right endpoint of the restricted domain; the curve does not turn there.",
+        "m": "A1 R1"
       }
     ]
   },
@@ -140,8 +319,20 @@
     {
       "id": "sl-2-4-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "The minimum value is the $y$-coordinate, $3$."
+      "q": "What is the difference between an extremum point and an extremum value?",
+      "model": "The point includes the input and output, for example $(2,9)$. The maximum value is $9$ and it occurs at input $2$."
+    },
+    {
+      "id": "sl-2-4-kq-2",
+      "status": "approved",
+      "q": "How does a restricted domain change graph features?",
+      "model": "Keep only points with permitted inputs. An algebraic root or intersection can disappear, and an endpoint can become an absolute maximum or minimum."
+    },
+    {
+      "id": "sl-2-4-kq-3",
+      "status": "approved",
+      "q": "Why is an intersection an equation solution?",
+      "model": "At a shared point the outputs are equal at the same input, so its input satisfies $f(x)=g(x)$."
     }
   ],
   "history": [],
