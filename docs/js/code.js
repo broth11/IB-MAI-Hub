@@ -194,7 +194,9 @@ async function main() {
     const slug = new URLSearchParams(location.search).get('c') || '';
     if (!/^[a-z0-9-]+$/.test(slug)) throw new Error('No syllabus code chosen.');
     const C = await getJSON(`data/codes/${slug}.json`).catch(() => { throw new Error('This syllabus code does not have a page yet.'); });
-    const ctx = { site, syl, vid: 0, ex: 0, explorers: await loadExplorers(C) };
+    const requestedVideo = new URLSearchParams(location.search).get('v');
+    const videoIndex = (C.videos.items || []).findIndex((video) => video.videoId === requestedVideo);
+    const ctx = { site, syl, vid: Math.max(videoIndex, 0), ex: 0, explorers: await loadExplorers(C) };
     const unit = Number(C.code.split(' ')[1].split('.')[0]);
     let mode = store.get('codeMode', 'learn');
     document.title = `${C.code} ${C.title} | ${site.course}`;
