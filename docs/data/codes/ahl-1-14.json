@@ -15,23 +15,73 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Introduction to Matrices."
+            "title": "Applications and matrix notation",
+            "text": "The presenter introduces matrices and mentions applications to transformations, probability and differential equations."
           },
           {
-            "t": 144,
+            "t": 82,
+            "type": "Definition",
+            "title": "Rows and columns",
+            "text": "Matrix order is written as number of rows by number of columns; the examples include $2\\times2$ and $2\\times3$ matrices."
+          },
+          {
+            "t": 131,
+            "type": "Procedure",
+            "title": "Addition and subtraction",
+            "text": "Matrices must have the same order, and corresponding entries are added or subtracted."
+          },
+          {
+            "t": 211,
+            "type": "Procedure",
+            "title": "Scalar multiplication",
+            "text": "Multiply each matrix entry by the scalar; the example multiplies matrix $A$ by 3."
+          },
+          {
+            "t": 265,
+            "type": "Decision",
+            "title": "When is a matrix product defined?",
+            "text": "The number of columns of the first matrix must equal the number of rows of the second; the outer dimensions determine the result's order."
+          },
+          {
+            "t": 325,
+            "type": "Procedure",
+            "title": "Row by column",
+            "text": "For each entry of $AB$, combine a row of $A$ with a column of $B$ by multiplying matching entries and adding."
+          },
+          {
+            "t": 427,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Complete the product",
+            "text": "The video obtains $AB=\\begin{pmatrix}16&6\\\\18&11\\end{pmatrix}$ for its example."
           },
           {
-            "t": 457,
+            "t": 458,
             "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "title": "Determinant of a 2-by-2 matrix",
+            "text": "For the example $A=\\begin{pmatrix}4&2\\\\5&3\\end{pmatrix}$, $\\det A=4(3)-2(5)=2$."
+          },
+          {
+            "t": 524,
+            "type": "Procedure",
+            "title": "Find the inverse",
+            "text": "The presenter applies the 2-by-2 inverse formula using the determinant, swaps the diagonal entries and changes the signs of the other two."
+          },
+          {
+            "t": 612,
+            "type": "Reference",
+            "title": "Matrix terminology",
+            "text": "The video finishes with column, row, square, zero and identity matrices."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "When an inverse does not exist",
+            "text": "The example's determinant is nonzero, so its inverse exists. The video does not demonstrate the singular case.",
+            "write": "A square matrix is invertible exactly when its determinant is nonzero. If $\\det A=0$, $A^{-1}$ does not exist.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 116,
@@ -42,20 +92,56 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Solving Simultaneous Equations using Matrices."
+            "title": "Using matrices for systems",
+            "text": "The video presents a matrix method for simultaneous equations. Matrix inverses are higher-level content; a calculator's simultaneous-equation solver also meets the SL technology requirement."
           },
           {
-            "t": 140,
+            "t": 39,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Translate two orders into equations",
+            "text": "Let $c$ and $t$ be the prices of coffee and tea. The orders give $5c+3t=16.25$ and $2c+8t=15$."
           },
           {
-            "t": 400,
+            "t": 80,
+            "type": "Procedure",
+            "title": "Write the system in matrix form",
+            "text": "The presenter arranges coefficients, unknowns and totals into $A\\mathbf{x}=\\mathbf{b}$."
+          },
+          {
+            "t": 146,
+            "type": "Transition",
+            "title": "From scalar algebra to matrices",
+            "text": "The presenter compares solving $3x=12$ with the matrix equation, then explains why a matrix inverse is used."
+          },
+          {
+            "t": 217,
+            "type": "Concept",
+            "title": "Multiply by the inverse on the left",
+            "text": "Pre-multiplying both sides by $A^{-1}$ produces $A^{-1}A\\mathbf{x}=A^{-1}\\mathbf{b}$, provided $A$ is invertible."
+          },
+          {
+            "t": 299,
+            "type": "Concept",
+            "title": "Use the identity matrix",
+            "text": "Since $A^{-1}A=I$ and $I\\mathbf{x}=\\mathbf{x}$, the solution is $\\mathbf{x}=A^{-1}\\mathbf{b}$."
+          },
+          {
+            "t": 357,
+            "type": "Worked example",
+            "title": "Apply the matrix method",
+            "text": "Use the coefficient matrix from the two orders and multiply its inverse by the column of totals."
+          },
+          {
+            "t": 388,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Evaluate the matrix expression",
+            "text": "The calculator gives $c=2.50$ and $t=1.25$; these values satisfy both original order equations."
+          },
+          {
+            "t": 445,
+            "type": "Conclusion",
+            "title": "Extend the method",
+            "text": "The presenter explains that the same approach can be used with larger invertible coefficient matrices."
           }
         ],
         "notes": []
@@ -69,106 +155,280 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Matrices."
+            "title": "Matrix tools on the calculator",
+            "text": "The presenter demonstrates matrix creation and operations on a TI-Nspire."
           },
           {
-            "t": 64,
+            "t": 22,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Create a matrix",
+            "text": "A 2-by-2 matrix is entered and stored for later use."
           },
           {
-            "t": 125,
-            "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "t": 122,
+            "type": "Calculator",
+            "title": "Arithmetic operations",
+            "text": "The stored matrix is reused for addition, subtraction, multiplication and a power."
+          },
+          {
+            "t": 169,
+            "type": "Calculator",
+            "title": "Determinant and inverse",
+            "text": "The video finds the determinant and then uses the inverse operation on the stored matrix."
+          },
+          {
+            "t": 209,
+            "type": "Transition",
+            "title": "Eigenvalues and eigenvectors",
+            "text": "The final portion moves to calculator commands for eigenvalues and eigenvectors, which connect to AHL 1.15."
+          },
+          {
+            "t": 249,
+            "type": "Key idea",
+            "title": "Interpreting an eigenvector",
+            "text": "The presenter notes that a calculator may return a different scalar multiple of an eigenvector."
+          },
+          {
+            "t": 306,
+            "type": "Conclusion",
+            "title": "Continue practising",
+            "text": "The video recommends practising entry, storage and operations with matrices."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Calculator shown",
+            "text": "This demonstration uses a TI-Nspire. Its menus and commands differ from the Casio fx-CG50.",
+            "write": "Use the correct matrix editor and operation commands for your calculator, and check dimensions and output.",
+            "section": "ku"
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "ahl-1-14-ican-1",
+      "id": "ahl114-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for matrices."
+      "text": "I can identify the order and entries of a matrix, and distinguish row, column, square, zero and identity matrices."
     },
     {
-      "id": "ahl-1-14-ican-2",
+      "id": "ahl114-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can add and subtract matrices of the same order and multiply a matrix by a scalar."
+    },
+    {
+      "id": "ahl114-ican-3",
+      "status": "approved",
+      "text": "I can determine whether a matrix product exists, find its order and calculate it by hand or with technology."
+    },
+    {
+      "id": "ahl114-ican-4",
+      "status": "approved",
+      "text": "I can find a 2-by-2 determinant and inverse, and determine whether an inverse exists."
+    },
+    {
+      "id": "ahl114-ican-5",
+      "status": "approved",
+      "text": "I can represent a system as $A\\mathbf{x}=\\mathbf{b}$ and solve it using an inverse or technology."
+    },
+    {
+      "id": "ahl114-ican-6",
+      "status": "approved",
+      "text": "I can interpret matrix products in context and explain why multiplication order matters."
     }
   ],
   "ku": [
     {
-      "id": "ahl-1-14-ku-1",
+      "id": "ahl114-ku-1",
       "status": "approved",
-      "text": "Matrix addition requires the same dimensions."
+      "text": "An $m\\times n$ matrix has $m$ rows and $n$ columns. Matrices can be added or subtracted only when their orders match; scalar multiplication acts on every entry."
     },
     {
-      "id": "ahl-1-14-ku-2",
+      "id": "ahl114-ku-2",
       "status": "approved",
-      "text": "For $AB$ to exist, the number of columns of $A$ must equal the number of rows of $B$."
+      "text": "If $A$ has order $m\\times n$ and $B$ has order $n\\times p$, $AB$ exists and has order $m\\times p$. Each entry is a row-by-column sum."
     },
     {
-      "id": "ahl-1-14-ku-3",
+      "id": "ahl114-ku-3",
       "status": "approved",
-      "text": "Matrix multiplication is generally not commutative. When an inverse exists, $A^{-1}A=I$."
+      "text": "Matrix multiplication is associative and distributive when the products are defined, but it is generally not commutative: $AB$ need not equal $BA$, and one product may be undefined."
+    },
+    {
+      "id": "ahl114-ku-4",
+      "status": "approved",
+      "text": "The identity matrix satisfies $AI=IA=A$ when dimensions match. A zero matrix has every entry equal to zero."
+    },
+    {
+      "id": "ahl114-ku-5",
+      "status": "approved",
+      "text": "For $A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$, $\\det A=ad-bc$. If $ad-bc\\ne0$, $A^{-1}=\\dfrac1{ad-bc}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}$."
+    },
+    {
+      "id": "ahl114-ku-6",
+      "status": "approved",
+      "text": "A square matrix with zero determinant is singular and has no inverse. When $A$ is invertible, $A^{-1}A=AA^{-1}=I$."
+    },
+    {
+      "id": "ahl114-ku-7",
+      "status": "approved",
+      "text": "For an invertible coefficient matrix, $A\\mathbf{x}=\\mathbf{b}$ has solution $\\mathbf{x}=A^{-1}\\mathbf{b}$. Matrix order matters: multiply the inverse on the left."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "ahl114-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.8",
+        "Solving linear systems"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 1.15",
+        "Eigenvalues, eigenvectors and powers"
+      ],
+      [
+        "AHL 4.19",
+        "Transition matrices"
+      ]
+    ],
+    "withIn": [
+      [
+        "AHL 3.9",
+        "Matrix transformations"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "ahl-1-14-misc-1",
+      "id": "ahl114-misc-1",
       "status": "approved",
-      "weak": "Multiplying corresponding entries to find a matrix product",
-      "better": "Each product entry comes from a row of the first matrix and a column of the second."
+      "weak": "If $A$ is $2\\times3$ and $B$ is $3\\times4$, $AB$ is $3\\times3$.",
+      "better": "The inner dimensions match, and the result uses the outer dimensions: $AB$ is $2\\times4$."
+    },
+    {
+      "id": "ahl114-misc-2",
+      "status": "approved",
+      "weak": "Matrix multiplication means multiplying corresponding entries.",
+      "better": "Each entry of $AB$ is a row-by-column sum."
+    },
+    {
+      "id": "ahl114-misc-3",
+      "status": "approved",
+      "weak": "$AB=BA$ for all square matrices.",
+      "better": "Matrix multiplication is generally not commutative; calculate both orders or use an appropriate counterexample."
+    },
+    {
+      "id": "ahl114-misc-4",
+      "status": "approved",
+      "weak": "A square matrix always has an inverse.",
+      "better": "Its determinant must be nonzero. A square matrix with determinant zero is singular."
+    },
+    {
+      "id": "ahl114-misc-5",
+      "status": "approved",
+      "weak": "The solution of $A\\mathbf{x}=\\mathbf{b}$ is $\\mathbf{b}A^{-1}$.",
+      "better": "Multiply by the inverse on the left: $\\mathbf{x}=A^{-1}\\mathbf{b}$."
     }
   ],
   "terms": [
     {
-      "id": "ahl-1-14-terms-1",
+      "id": "ahl114-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "State the order",
+      "text": "Give rows first, then columns."
     },
     {
-      "id": "ahl-1-14-terms-2",
+      "id": "ahl114-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Calculate a product",
+      "text": "Check the inner dimensions, calculate row-by-column entries and report the resulting order."
+    },
+    {
+      "id": "ahl114-term-3",
+      "status": "approved",
+      "term": "Find the inverse",
+      "text": "Check that the determinant is nonzero; then apply the appropriate formula or technology and verify with the identity matrix."
+    },
+    {
+      "id": "ahl114-term-4",
+      "status": "approved",
+      "term": "Solve using matrices",
+      "text": "Identify the unknown vector, write a consistent coefficient matrix and interpret the entries of the solution."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "ahl114-form-1",
+      "status": "approved",
+      "text": "For a $2\\times2$ matrix $A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$, the booklet gives $\\det A=ad-bc$ and $A^{-1}=\\dfrac1{ad-bc}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}$ when $ad-bc\\ne0$."
+    }
+  ],
   "gdc": [],
   "worked": {
+    "id": "ahl114-worked",
     "status": "approved",
-    "prompt": "Find $AB$ for $A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$ and $B=\\begin{pmatrix}2&0\\\\3&1\\end{pmatrix}$.",
+    "prompt": "Let $A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix}$, $B=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$ and $\\mathbf b=\\begin{pmatrix}11\\\\7\\end{pmatrix}$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find $AB$ and $BA$ and compare them.",
+        "marks": 3,
+        "a": "$AB=\\begin{pmatrix}2&5\\\\1&3\\end{pmatrix}$ and $BA=\\begin{pmatrix}4&3\\\\1&1\\end{pmatrix}$. They are not equal.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find $\\det A$ and $A^{-1}$.",
         "marks": 2,
-        "a": "$AB=\\begin{pmatrix}8&2\\\\3&1\\end{pmatrix}$.",
+        "a": "$\\det A=2(1)-1(1)=1$, so $A^{-1}=\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}$.",
         "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Solve $A\\mathbf{x}=\\mathbf b$.",
+        "marks": 2,
+        "a": "$\\mathbf{x}=A^{-1}\\mathbf b=\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}\\begin{pmatrix}11\\\\7\\end{pmatrix}=\\begin{pmatrix}4\\\\3\\end{pmatrix}$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Check the solution by multiplying $A\\mathbf{x}$.",
+        "marks": 1,
+        "a": "$A\\begin{pmatrix}4\\\\3\\end{pmatrix}=\\begin{pmatrix}11\\\\7\\end{pmatrix}=\\mathbf b$.",
+        "m": "A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "ahl-1-14-kq-1",
+      "id": "ahl114-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Each product entry comes from a row of the first matrix and a column of the second."
+      "q": "Why must the inner dimensions match for a matrix product?",
+      "model": "Each entry pairs a row of the first matrix with a column of the second. These lists need the same number of entries to form the row-by-column sum."
+    },
+    {
+      "id": "ahl114-kq-2",
+      "status": "approved",
+      "q": "Why does a zero determinant prevent use of the 2-by-2 inverse formula?",
+      "model": "The formula divides by the determinant, so it is undefined when the determinant is zero. Such a matrix is singular and has no inverse."
+    },
+    {
+      "id": "ahl114-kq-3",
+      "status": "approved",
+      "q": "Why is an inverse multiplied on the left in $A\\mathbf{x}=\\mathbf{b}$?",
+      "model": "The inverse is next to $A$ on the left: $A^{-1}A\\mathbf{x}=I\\mathbf{x}$. Matrix multiplication order cannot generally be reversed."
+    },
+    {
+      "id": "ahl114-kq-4",
+      "status": "approved",
+      "q": "What is the role of the identity matrix?",
+      "model": "It leaves a compatible matrix or vector unchanged under multiplication, analogous to multiplication by 1."
     }
   ],
   "history": [],
