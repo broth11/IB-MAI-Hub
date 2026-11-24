@@ -79,6 +79,12 @@
             "title": "Sides depend on the chosen angle",
             "text": "Opposite and adjacent swap when you switch between the two acute angles. The hypotenuse remains opposite the right angle.",
             "write": "Identify the reference angle before naming the sides."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "The timestamps are based on the captions; this video has not been checked against playback.",
+            "write": "Use the labelled diagram when choosing the ratio."
           }
         ]
       },
@@ -116,7 +122,7 @@
             "t": 237,
             "type": "Example",
             "title": "Sine rule to find an angle",
-            "text": "A second side–angle setup is introduced. The numerical triangle in this example is impossible; see the correction below."
+            "text": "A second side–angle setup is introduced. The numerical triangle is impossible; see the correction beside the video."
           },
           {
             "t": 315,
@@ -137,7 +143,7 @@
             "text": "Use all three sides and place the square of the side opposite the requested angle in the subtraction."
           },
           {
-            "t": 483,
+            "t": 514,
             "type": "Calculation",
             "title": "Check the denominator",
             "text": "The diagram uses adjacent sides $50$ and $45$; the written denominator uses $40$ instead of $45$."
@@ -173,6 +179,12 @@
             "title": "A formula beyond non-right triangles",
             "text": "The sine rule, cosine rule and $\\frac12ab\\sin C$ also apply to right triangles. For $C=90^\\circ$ the cosine rule becomes Pythagoras’ theorem.",
             "write": "Choose a method that fits the information supplied."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "The timeline follows the captions. The two correction examples were checked against the on-screen diagrams; the remaining moments were not playback-verified.",
+            "write": "Check the measurements and their side–angle pairs."
           }
         ]
       }
