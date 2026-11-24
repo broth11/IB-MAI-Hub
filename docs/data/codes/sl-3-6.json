@@ -1,0 +1,374 @@
+{
+  "code": "SL 3.6",
+  "slug": "sl-3-6",
+  "title": "Voronoi diagrams",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 307,
+        "title": "Voronoi Diagrams",
+        "videoId": "LOxlRQqHjs4",
+        "partial": true,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Sites, edges and regions",
+            "text": "The presenter introduces the diagram and its terminology."
+          },
+          {
+            "t": 26,
+            "type": "Definition",
+            "title": "Name the sites",
+            "text": "Fixed locations are called sites; boundaries separate their regions."
+          },
+          {
+            "t": 49,
+            "type": "Definition",
+            "title": "Cells and intersections",
+            "text": "Identify regions or cells and points where edges meet."
+          },
+          {
+            "t": 97,
+            "type": "Concept",
+            "title": "A cell identifies the nearest site",
+            "text": "Locations inside a cell are closest to its site."
+          },
+          {
+            "t": 141,
+            "type": "Example",
+            "title": "Pizza shops and nearest locations",
+            "text": "Use the region containing a location to identify the nearest shop."
+          },
+          {
+            "t": 181,
+            "type": "Concept",
+            "title": "Points on an edge",
+            "text": "A point on the illustrated edge is equally close to the two adjacent sites."
+          },
+          {
+            "t": 204,
+            "type": "Method",
+            "title": "Edges and perpendicular bisectors",
+            "text": "The presenter relates an edge to the perpendicular bisector of its sites."
+          },
+          {
+            "t": 301,
+            "type": "Application",
+            "title": "Interpreting a partly completed diagram",
+            "text": "A missing boundary or a nearest-site question can be approached using the diagram."
+          },
+          {
+            "t": 342,
+            "type": "Method",
+            "title": "Nearest-neighbour interpolation",
+            "text": "Estimate a value at a new location by using the observed value at its nearest site."
+          },
+          {
+            "t": 357,
+            "type": "Example",
+            "title": "Estimate pizza sales",
+            "text": "The video illustrates an estimate using the observed average at the nearest shop."
+          },
+          {
+            "t": 449,
+            "type": "Concept",
+            "title": "Largest empty circle",
+            "text": "The presenter introduces a circle with no site in its interior."
+          },
+          {
+            "t": 518,
+            "type": "Application",
+            "title": "Choose a location far from sites",
+            "text": "A maximum nearest-site distance can model a facility far from existing sites."
+          },
+          {
+            "t": 555,
+            "type": "Caution",
+            "title": "Check the allowed region",
+            "text": "The video suggests testing intersections. That conclusion needs the restrictions described in the note below."
+          },
+          {
+            "t": 591,
+            "type": "Overview",
+            "title": "Review and practise",
+            "text": "The presenter closes by recommending contextual Voronoi questions."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "Adding a site needs further work",
+            "text": "The video introduces cells and boundaries but does not show the full effect of adding a site or work through a cell-area calculation. These are developed on this page.",
+            "write": "Compare the new site with every existing site and retain only nearest-site boundaries."
+          },
+          {
+            "kind": "error",
+            "title": "The largest empty circle is not always centred at an intersection",
+            "text": "The video says the centre will always be at an intersection. Without a bounded region, the maximum can be unbounded. In a bounded region, a boundary point can be optimal. The local syllabus guidance specifies examination questions where the solution is at an intersection of three edges.",
+            "write": "State the allowed region and assumptions, and check boundary candidates unless the question restricts the solution."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "Times are based on captions. Playback and on-screen diagrams have not been independently verified.",
+            "write": "Use the labelled sites and the stated distance model."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-3-6-ican-1",
+      "status": "approved",
+      "text": "I can identify sites, cells, edges and vertices and interpret a cell in context."
+    },
+    {
+      "id": "sl-3-6-ican-2",
+      "status": "approved",
+      "text": "I can find and restrict a boundary using perpendicular bisectors and nearest-site comparisons."
+    },
+    {
+      "id": "sl-3-6-ican-3",
+      "status": "approved",
+      "text": "I can update a diagram when a site is added and calculate a cell area in a stated bounded region."
+    },
+    {
+      "id": "sl-3-6-ican-4",
+      "status": "approved",
+      "text": "I can use nearest-neighbour interpolation and explain its assumptions and limitations."
+    },
+    {
+      "id": "sl-3-6-ican-5",
+      "status": "approved",
+      "text": "I can compare candidate locations for a largest-empty-circle problem, including domain boundaries when required."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-3-6-ku-1",
+      "status": "approved",
+      "text": "A site is a fixed location. Its Voronoi cell consists of all points at least as close to that site as to every other site. In the interior, it is the unique nearest site; on a shared edge, two or more sites tie for nearest."
+    },
+    {
+      "id": "sl-3-6-ku-2",
+      "status": "approved",
+      "text": "In the usual planar Euclidean model, an edge separating two distinct sites lies on their perpendicular bisector. The whole bisector is not automatically an edge: retain only points no farther from those two sites than from any other site."
+    },
+    {
+      "id": "sl-3-6-ku-3",
+      "status": "approved",
+      "text": "A Voronoi vertex is a point where edges meet. At an ordinary three-site vertex, the point is equally distant from those three nearest sites. Other sites must be no closer. Special configurations can have four or more sites tied."
+    },
+    {
+      "id": "sl-3-6-ku-4",
+      "status": "approved",
+      "text": "To locate a point, compare distances or squared distances to all sites. Squared distances preserve order because distances are nonnegative. A tie means the point is on a shared boundary, not strictly inside one cell."
+    },
+    {
+      "id": "sl-3-6-ku-5",
+      "status": "approved",
+      "text": "To add a site, compare its distance with each old site. Its new cell is the intersection of the corresponding nearer-or-equal half-planes, clipped to the domain if one is given. Existing cells lose points where the new site is closer; keep only valid edge portions."
+    },
+    {
+      "id": "sl-3-6-ku-6",
+      "status": "approved",
+      "text": "For a bounded diagram, find a cell’s vertices in order, including intersections with the domain boundary, then use geometric decomposition or a coordinate-area method. State square units and avoid including regions assigned to another site."
+    },
+    {
+      "id": "sl-3-6-ku-7",
+      "status": "approved",
+      "text": "Nearest-neighbour interpolation assigns a location the recorded value of its nearest site. On a tie, specify a tie-breaking rule or report the ambiguity. The estimate assumes the nearest measurement is informative; spatial proximity alone does not establish accuracy."
+    },
+    {
+      "id": "sl-3-6-ku-8",
+      "status": "approved",
+      "text": "The largest-empty-circle or maximin location maximises the distance to the nearest site over an allowed set of centres. In a bounded region, possible maxima include relevant Voronoi vertices, intersections with the region boundary and domain corners. Compare their nearest-site distances."
+    },
+    {
+      "id": "sl-3-6-ku-9",
+      "status": "approved",
+      "text": "In the local AI syllabus guidance, examination questions specify a solution at an intersection of three edges. That is a question-specific restriction, not a general theorem. With no bounded domain, a finite largest empty circle need not exist."
+    },
+    {
+      "id": "sl-3-6-ku-10",
+      "status": "approved",
+      "text": "The meaning of distance matters. A diagram based on straight-line Euclidean distance need not identify the quickest route when roads, obstacles or travel times matter."
+    }
+  ],
+  "misc": [
+    {
+      "id": "sl-3-6-misc-1",
+      "status": "approved",
+      "weak": "Every point on the bisector of two sites is a Voronoi edge.",
+      "better": "A third site may be closer. Keep only points where the tied pair are nearest."
+    },
+    {
+      "id": "sl-3-6-misc-2",
+      "status": "approved",
+      "weak": "The nearest site to a point on an edge is unique.",
+      "better": "The adjoining sites tie there; at a vertex three or more can tie."
+    },
+    {
+      "id": "sl-3-6-misc-3",
+      "status": "approved",
+      "weak": "The largest empty circle must always have its centre at a Voronoi vertex.",
+      "better": "Check the allowed region. A boundary or corner can be optimal, and an unrestricted plane need not have a finite optimum."
+    },
+    {
+      "id": "sl-3-6-misc-4",
+      "status": "approved",
+      "weak": "Nearest-neighbour interpolation averages all site values.",
+      "better": "Use the value at the nearest site, with an explicit rule for ties."
+    },
+    {
+      "id": "sl-3-6-misc-5",
+      "status": "approved",
+      "weak": "When a new site is added, draw its entire pairwise bisectors as edges.",
+      "better": "Restrict each bisector to points where the new site and its neighbour are jointly closest to all sites."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-3-6-terms-1",
+      "status": "approved",
+      "term": "Site",
+      "text": "A fixed location used to define a nearest-site region."
+    },
+    {
+      "id": "sl-3-6-terms-2",
+      "status": "approved",
+      "term": "Cell",
+      "text": "The set of locations nearest to a given site, including ties on its boundary under the closed-cell convention."
+    },
+    {
+      "id": "sl-3-6-terms-3",
+      "status": "approved",
+      "term": "Edge",
+      "text": "A boundary portion where neighbouring sites tie for nearest."
+    },
+    {
+      "id": "sl-3-6-terms-4",
+      "status": "approved",
+      "term": "Vertex",
+      "text": "A point where Voronoi edges meet, usually equidistant from three nearest sites."
+    },
+    {
+      "id": "sl-3-6-terms-5",
+      "status": "approved",
+      "term": "Nearest-neighbour interpolation",
+      "text": "Estimating a value using the recorded value at the nearest site."
+    },
+    {
+      "id": "sl-3-6-terms-6",
+      "status": "approved",
+      "term": "Largest empty circle",
+      "text": "A circle whose interior contains no site, chosen with the largest radius among permitted centres."
+    }
+  ],
+  "formula": [
+    {
+      "id": "sl-3-6-formula-1",
+      "status": "approved",
+      "text": "Compare sites $A$ and $B$ at $(x,y)$ by comparing their squared distances: $(x-x_A)^2+(y-y_A)^2$ and $(x-x_B)^2+(y-y_B)^2$."
+    },
+    {
+      "id": "sl-3-6-formula-2",
+      "status": "approved",
+      "text": "Their pairwise bisector satisfies $d_A^2=d_B^2$. Retain only the portion where no other site is closer."
+    },
+    {
+      "id": "sl-3-6-formula-3",
+      "status": "approved",
+      "text": "For a chosen centre $P$, the radius of the largest circle centred at $P$ with no site in its interior is $\\min_i d(P,S_i)$."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A square study area is $0\\leq x\\leq8$, $0\\leq y\\leq8$, with distances in kilometres. Three monitoring sites are $A=(2,2)$, $B=(6,2)$ and $C=(4,6)$. Their rainfall readings are $60$, $75$ and $90$ mm, respectively. Use straight-line distance.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find the pairwise bisectors and their common intersection.",
+        "marks": 4,
+        "a": "The midpoint of $AB$ is $(4,2)$ and $AB$ is horizontal, so its bisector is $x=4$. Equating squared distances gives the other two bisectors $y=5.5-\\frac{x}{2}$ for $A,C$ and $y=1.5+\\frac{x}{2}$ for $B,C$. They meet at $V=(4,3.5)$. At $V$ all three squared distances are $6.25$, so this is a three-site Voronoi vertex.",
+        "m": "M1 A1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Describe the boundaries of the cell for $C$ within the square and find its area.",
+        "marks": 4,
+        "a": "$C$ is at least as close as $A$ when $y\\geq5.5-x/2$ and at least as close as $B$ when $y\\geq1.5+x/2$. Thus its lower boundary runs from $(0,5.5)$ to $(4,3.5)$ to $(8,5.5)$; the top is $y=8$. Divide the cell into two trapezia with parallel vertical sides $2.5$ and $4.5$ km and width $4$ km. Each has area $\\frac12(2.5+4.5)(4)=14\\text{ km}^2$, so the total is $28\\text{ km}^2$.",
+        "m": "M1 M1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Estimate rainfall at $P=(4,5)$ using nearest-neighbour interpolation.",
+        "marks": 2,
+        "a": "$PC=1$ km while $PA=PB=\\sqrt{13}$ km. The nearest site is $C$, so the nearest-neighbour estimate is $90$ mm. It is an estimate based on the chosen method, not a measured value at $P$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "A new site $D=(4,2)$ is added. Describe the three new edges of its cell inside the square.",
+        "marks": 4,
+        "a": "The $A,D$ bisector is $x=3$ and the $B,D$ bisector is $x=5$. The $C,D$ bisector is $y=4$. Comparing all four sites restricts the new cell to $3\\leq x\\leq5$ and $0\\leq y\\leq4$. Its new inter-site edges are $x=3$ for $0\\leq y\\leq4$, $x=5$ for $0\\leq y\\leq4$ and $y=4$ for $3\\leq x\\leq5$. The side on $y=0$ is the study-area boundary.",
+        "m": "M1 A1 A1 A1"
+      },
+      {
+        "label": "e",
+        "q": "Find the new area of the cell for $C$ after adding $D$.",
+        "marks": 2,
+        "a": "The new constraint for $C$ is $y\\geq4$. It removes from the old cell the triangle with vertices $(3,4)$, $(4,3.5)$ and $(5,4)$, of area $\\frac12(2)(0.5)=0.5\\text{ km}^2$. The new area is $28-0.5=27.5\\text{ km}^2$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "f",
+        "q": "Before adding $D$, compare $V$ with the corner $K=(0,8)$ as centres for an empty circle. Does this example show why domain boundaries matter?",
+        "marks": 3,
+        "a": "At $V$, the nearest-site distance is $2.5$ km. At $K$, the squared distances to $A,B,C$ are $40,72,20$, so the nearest site is $C$ and the radius is $\\sqrt{20}$ km. Since $\\sqrt{20}>2.5$, $V$ is not the best of these two candidates. A boundary candidate can be better than an interior Voronoi vertex; this comparison alone does not prove the global optimum.",
+        "m": "M1 A1 R1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-3-6-kq-1",
+      "status": "approved",
+      "q": "Why must a bisector be tested against the other sites?",
+      "model": "It shows a tie between two sites, but another site may be nearer. A Voronoi edge requires the tied sites to be nearest as well."
+    },
+    {
+      "id": "sl-3-6-kq-2",
+      "status": "approved",
+      "q": "Why does adding a site change existing cells?",
+      "model": "Locations closer to the new site than their former nearest site move into the new cell. The remaining portions keep their nearest old site."
+    },
+    {
+      "id": "sl-3-6-kq-3",
+      "status": "approved",
+      "q": "Why do domain boundaries matter for the largest empty circle?",
+      "model": "A centre restricted to a bounded region can be farthest from all sites on the region boundary or at a corner. The candidates depend on the allowed region."
+    },
+    {
+      "id": "sl-3-6-kq-4",
+      "status": "approved",
+      "q": "What does nearest-neighbour interpolation assume?",
+      "model": "It uses the nearest site’s value as a local estimate. It assumes proximity is a useful guide; an edge tie or sharp local variation may make the estimate less reliable."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
