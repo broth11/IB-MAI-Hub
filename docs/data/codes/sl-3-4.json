@@ -1,0 +1,338 @@
+{
+  "code": "SL 3.4",
+  "slug": "sl-3-4",
+  "title": "Arc length and sector area",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 305,
+        "title": "Length of an Arc, Area of a Sector (Circles)",
+        "videoId": "X8fusiFvWkY",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Arcs and sectors",
+            "text": "The presenter introduces the length of an arc and the area of a sector."
+          },
+          {
+            "t": 31,
+            "type": "Concept",
+            "title": "A sector is part of a circle",
+            "text": "Compare the full circle and a sector with the same radius."
+          },
+          {
+            "t": 68,
+            "type": "Definition",
+            "title": "Arc length versus sector area",
+            "text": "Identify the curved outer boundary and the area enclosed by the sector."
+          },
+          {
+            "t": 100,
+            "type": "Example",
+            "title": "A rotating sprinkler",
+            "text": "A sprinkler has radius $3.5$ m and sweeps a central angle of $140^\\circ$."
+          },
+          {
+            "t": 126,
+            "type": "Method",
+            "title": "Set up the arc length",
+            "text": "Multiply the full circumference by $140/360$."
+          },
+          {
+            "t": 180,
+            "type": "Calculation",
+            "title": "Evaluate the arc length",
+            "text": "The outer arc is approximately $8.55$ m."
+          },
+          {
+            "t": 191,
+            "type": "Concept",
+            "title": "Why the fraction works",
+            "text": "The sector angle determines the same fraction of a circumference as it does of a full turn."
+          },
+          {
+            "t": 242,
+            "type": "Method",
+            "title": "Set up the sector area",
+            "text": "Multiply the area of the full circle by $140/360$."
+          },
+          {
+            "t": 274,
+            "type": "Calculation",
+            "title": "Square the radius",
+            "text": "The presenter corrects the written expression to include the squared radius and gives the area as approximately $15.0$ square metres."
+          },
+          {
+            "t": 305,
+            "type": "Overview",
+            "title": "When an extra step is needed",
+            "text": "The closing discussion notes that a radius or angle may need to be found before using the sector formulas."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Square the radius for area",
+            "text": "In the sector-area example, the presenter corrects a missing square while working. Use the corrected expression.",
+            "write": "$A=\\frac{140}{360}\\pi(3.5)^2\\approx15.0\\text{ m}^2$."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "The timestamps are derived from captions. Playback and the on-screen diagram have not been independently verified.",
+            "write": "Confirm the central angle and radius before substituting."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-3-4-ican-1",
+      "status": "approved",
+      "text": "I can identify a sector’s radius, central angle, arc and perimeter."
+    },
+    {
+      "id": "sl-3-4-ican-2",
+      "status": "approved",
+      "text": "I can find an arc length or sector area using a central angle measured in degrees."
+    },
+    {
+      "id": "sl-3-4-ican-3",
+      "status": "approved",
+      "text": "I can solve for an unknown radius or central angle from an arc length or sector area."
+    },
+    {
+      "id": "sl-3-4-ican-4",
+      "status": "approved",
+      "text": "I can distinguish a sector from a segment and account for all boundaries when finding perimeter."
+    },
+    {
+      "id": "sl-3-4-ican-5",
+      "status": "approved",
+      "text": "I can apply the formulas to a context, use suitable units and check my result against the whole circle."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-3-4-ku-1",
+      "status": "approved",
+      "text": "A sector is the region bounded by two radii and the arc joining their endpoints. Its central angle is measured at the centre of the circle; the arc is only the curved part of its boundary."
+    },
+    {
+      "id": "sl-3-4-ku-2",
+      "status": "approved",
+      "text": "If the central angle is $\\theta^\\circ$, the sector occupies a fraction $\\theta/360$ of a full circle. For a radius $r$, arc length is $s=\\frac{\\theta}{360}(2\\pi r)$ and sector area is $A=\\frac{\\theta}{360}\\pi r^2$."
+    },
+    {
+      "id": "sl-3-4-ku-3",
+      "status": "approved",
+      "text": "The same fraction applies to circumference and area for the same angle, but circumference is proportional to $r$ whereas area is proportional to $r^2$. Arc length has length units and area has square units."
+    },
+    {
+      "id": "sl-3-4-ku-4",
+      "status": "approved",
+      "text": "The perimeter of an ordinary sector includes its arc and two radii: $P=s+2r$. A question about a curved boundary alone asks for $s$, not the whole sector perimeter."
+    },
+    {
+      "id": "sl-3-4-ku-5",
+      "status": "approved",
+      "text": "When given an arc length and radius, rearrange to $\\theta=\\frac{360s}{2\\pi r}$. When given sector area and radius, use $\\theta=\\frac{360A}{\\pi r^2}$. The resulting angle is in degrees."
+    },
+    {
+      "id": "sl-3-4-ku-6",
+      "status": "approved",
+      "text": "A segment is bounded by a chord and an arc. For a minor segment, subtract the area of the triangle formed by the two radii and chord from the corresponding minor-sector area. The triangle area is $\\frac12r^2\\sin\\theta$ for $0^\\circ<\\theta<180^\\circ$."
+    },
+    {
+      "id": "sl-3-4-ku-7",
+      "status": "approved",
+      "text": "For a major sector, use the specified reflex central angle or subtract the minor-sector measure from the whole circle. Check that a major sector occupies more than half the circle."
+    },
+    {
+      "id": "sl-3-4-ku-8",
+      "status": "approved",
+      "text": "Radians are not required for SL 3.4 in the local syllabus. If using $s=r\\theta$ or $A=\\frac12r^2\\theta$, the numerical value of $\\theta$ must be in radians; the degree formulas above avoid that conversion."
+    },
+    {
+      "id": "sl-3-4-ku-9",
+      "status": "approved",
+      "text": "Check that the chosen angle matches the region, all measurements use compatible units and the result is less than the full circumference or full area for a sector smaller than a full turn."
+    }
+  ],
+  "misc": [
+    {
+      "id": "sl-3-4-misc-1",
+      "status": "approved",
+      "weak": "The perimeter of the sector is just its arc length.",
+      "better": "For the full sector boundary, add both radii: $P=s+2r$."
+    },
+    {
+      "id": "sl-3-4-misc-2",
+      "status": "approved",
+      "weak": "Use the diameter as $r$ in the sector formula.",
+      "better": "The radius is half the diameter. Convert before applying the formula."
+    },
+    {
+      "id": "sl-3-4-misc-3",
+      "status": "approved",
+      "weak": "Use $\\frac{\\theta}{360}\\pi r$ for sector area.",
+      "better": "The full-circle area is $\\pi r^2$, so multiply that by the sector fraction."
+    },
+    {
+      "id": "sl-3-4-misc-4",
+      "status": "approved",
+      "weak": "A central angle of $240^\\circ$ gives the minor sector.",
+      "better": "It gives the major sector. The other central angle is $120^\\circ$."
+    },
+    {
+      "id": "sl-3-4-misc-5",
+      "status": "approved",
+      "weak": "Use $s=r\\theta$ with $\\theta=150$ degrees.",
+      "better": "That formula needs radians. In degrees, use $s=\\frac{150}{360}(2\\pi r)$."
+    },
+    {
+      "id": "sl-3-4-misc-6",
+      "status": "approved",
+      "weak": "A sector and a segment are the same region.",
+      "better": "A sector is bounded by two radii and an arc. A segment is bounded by a chord and an arc."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-3-4-terms-1",
+      "status": "approved",
+      "term": "Central angle",
+      "text": "An angle whose vertex is at the centre of the circle."
+    },
+    {
+      "id": "sl-3-4-terms-2",
+      "status": "approved",
+      "term": "Arc",
+      "text": "A portion of the circle’s circumference."
+    },
+    {
+      "id": "sl-3-4-terms-3",
+      "status": "approved",
+      "term": "Sector",
+      "text": "The region between two radii and their connecting arc."
+    },
+    {
+      "id": "sl-3-4-terms-4",
+      "status": "approved",
+      "term": "Chord",
+      "text": "A line segment joining two points on a circle."
+    },
+    {
+      "id": "sl-3-4-terms-5",
+      "status": "approved",
+      "term": "Circular segment",
+      "text": "A region bounded by a chord and the corresponding arc."
+    },
+    {
+      "id": "sl-3-4-terms-6",
+      "status": "approved",
+      "term": "Perimeter",
+      "text": "The total length around the stated region, including straight and curved boundaries."
+    }
+  ],
+  "formula": [
+    {
+      "id": "sl-3-4-formula-1",
+      "status": "approved",
+      "text": "For a central angle $\\theta$ measured in degrees: $s=\\frac{\\theta}{360}(2\\pi r)$ and $A=\\frac{\\theta}{360}\\pi r^2$."
+    },
+    {
+      "id": "sl-3-4-formula-2",
+      "status": "approved",
+      "text": "For a sector bounded by two radii and the arc, $P=2r+s$."
+    },
+    {
+      "id": "sl-3-4-formula-3",
+      "status": "approved",
+      "text": "For a minor segment with central angle $\\theta$, subtract the triangle area $\\frac12r^2\\sin\\theta$ from the sector area."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A circular garden has centre $O$ and radius $12$ m. Two straight paths run along radii $OA$ and $OB$, forming a minor central angle $\\angle AOB=150^\\circ$. The region between the two radii and the minor arc is planted with flowers.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find the exact length of the minor arc $AB$ and its value to three significant figures.",
+        "marks": 2,
+        "a": "The sector fraction is $150/360=5/12$. Thus $s=\\frac5{12}(2\\pi)(12)=10\\pi$ m $\\approx31.4$ m.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find the area of the flower sector and the length of its full perimeter.",
+        "marks": 3,
+        "a": "$A=\\frac5{12}\\pi(12)^2=60\\pi\\text{ m}^2\\approx188\\text{ m}^2$. The boundary consists of the arc and both radii, so $P=10\\pi+24$ m $\\approx55.4$ m.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "A straight chord joins $A$ and $B$. Find the area between this chord and the minor arc.",
+        "marks": 3,
+        "a": "Triangle $AOB$ has area $\\frac12(12)(12)\\sin150^\\circ=36\\text{ m}^2$. The minor segment area is therefore $60\\pi-36\\text{ m}^2\\approx152\\text{ m}^2$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Find the area of the rest of the circular garden, outside the flower sector.",
+        "marks": 2,
+        "a": "The full circle has area $144\\pi\\text{ m}^2$. Subtract the flower sector: $144\\pi-60\\pi=84\\pi\\text{ m}^2\\approx264\\text{ m}^2$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "e",
+        "q": "A second sector with the same radius has an arc length of $8\\pi$ m. Find its central angle in degrees.",
+        "marks": 2,
+        "a": "Set $8\\pi=\\frac{\\theta}{360}(24\\pi)$. The arc is one third of the full circumference, so $\\theta=120^\\circ$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-3-4-kq-1",
+      "status": "approved",
+      "q": "Why do the degree formulas use the fraction $\\theta/360$?",
+      "model": "Equal central angles divide a circle into equal proportions. A sector with angle $\\theta$ occupies $\\theta/360$ of the full turn, circumference and area."
+    },
+    {
+      "id": "sl-3-4-kq-2",
+      "status": "approved",
+      "q": "Why does sector perimeter include more than the arc?",
+      "model": "The region’s boundary also includes the two straight radii that connect the arc endpoints to the centre."
+    },
+    {
+      "id": "sl-3-4-kq-3",
+      "status": "approved",
+      "q": "How can the area of a minor circular segment be found?",
+      "model": "Subtract the area of the triangle between the two radii and the chord from the area of the matching minor sector."
+    },
+    {
+      "id": "sl-3-4-kq-4",
+      "status": "approved",
+      "q": "Why does doubling the radius quadruple sector area for a fixed angle?",
+      "model": "The sector fraction stays fixed, while the whole-circle area contains $r^2$. Doubling $r$ multiplies the area by four."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
