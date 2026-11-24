@@ -13,19 +13,80 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
+            "t": 1,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Transformations of Functions."
+            "title": "Start with a known point",
+            "text": "Use $(2,2)$ on $y=f(x)$ to track what each transformation does to coordinates."
           },
           {
-            "t": 160,
-            "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "t": 43,
+            "type": "Concept",
+            "title": "Translations",
+            "text": "A translation shifts every point horizontally or vertically."
+          },
+          {
+            "t": 79,
+            "type": "Example",
+            "title": "Horizontal shift right",
+            "text": "For $f(x-2)$, the point $(2,2)$ moves to $(4,2)$."
+          },
+          {
+            "t": 156,
+            "type": "Example",
+            "title": "Vertical shift up",
+            "text": "For $f(x)+3$, the point $(2,2)$ moves to $(2,5)$."
+          },
+          {
+            "t": 216,
+            "type": "Example",
+            "title": "Combine translations",
+            "text": "For $f(x+1)+4$, move the original point left $1$ and up $4$ to $(1,6)$."
+          },
+          {
+            "t": 287,
+            "type": "Concept",
+            "title": "Vertical stretch",
+            "text": "For $3f(x)$, multiply every output by $3$; $(2,2)$ moves to $(2,6)$."
+          },
+          {
+            "t": 353,
+            "type": "Concept",
+            "title": "Horizontal scale factor",
+            "text": "For $f(2x)$, halve each input coordinate; $(2,2)$ moves to $(1,2)$."
+          },
+          {
+            "t": 416,
+            "type": "Concept",
+            "title": "Reflection in the horizontal axis",
+            "text": "For $-f(x)$, negate the output coordinate; $(2,2)$ moves to $(2,-2)$."
+          },
+          {
+            "t": 483,
+            "type": "Concept",
+            "title": "Reflection in the vertical axis",
+            "text": "For $f(-x)$, negate the input coordinate; $(2,2)$ moves to $(-2,2)$."
+          },
+          {
+            "t": 533,
+            "type": "Overview",
+            "title": "Review transformation cues",
+            "text": "The presenter summarises the inside/outside distinction, stretches and reflections."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Horizontal scale is reciprocal",
+            "text": "To preserve the old input $u$ in $f(bx)$, solve $bx=u$. The new coordinate is $u/b$, so a factor of $2$ inside produces a horizontal scale factor of $1/2$.",
+            "write": "$(u,v)\\mapsto(u/b,v)$ for $b\\ne0$."
+          },
+          {
+            "kind": "watch",
+            "title": "Follow a point for combinations",
+            "text": "For $y=a f(b(x-h))+k$, solve $b(x-h)=u$ for the new input and apply the output changes to $v$.",
+            "write": "$(u,v)\\mapsto(h+u/b,av+k)$."
+          }
+        ]
       }
     ]
   },
@@ -33,29 +94,54 @@
     {
       "id": "ahl-2-8-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for transformations of graphs."
+      "text": "I can describe horizontal and vertical translations, stretches and reflections."
     },
     {
       "id": "ahl-2-8-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can map points through individual and combined transformations."
+    },
+    {
+      "id": "ahl-2-8-ican-3",
+      "status": "approved",
+      "text": "I can determine transformed domain, range and key features."
+    },
+    {
+      "id": "ahl-2-8-ican-4",
+      "status": "approved",
+      "text": "I can write an equation for a transformed graph and explain the effect of transformation order."
     }
   ],
   "ku": [
     {
       "id": "ahl-2-8-ku-1",
       "status": "approved",
-      "text": "$y=f(x)+k$ shifts the graph vertically by $k$."
+      "text": "For $y=f(x-h)+k$, each point $(u,v)$ maps to $(u+h,v+k)$: translate right $h$ and up $k$, using signed values."
     },
     {
       "id": "ahl-2-8-ku-2",
       "status": "approved",
-      "text": "$y=f(x-h)$ shifts the graph horizontally right by $h$."
+      "text": "For $y=af(x)$, each output is multiplied by $a$. If $a<0$, the graph is also reflected in the $x$-axis; distances from that axis scale by $|a|$."
     },
     {
       "id": "ahl-2-8-ku-3",
       "status": "approved",
-      "text": "$y=af(x)$ scales output values by $a$; a negative $a$ also reflects in the $x$-axis."
+      "text": "For $y=f(bx)$ with $b\\ne0$, each input coordinate is divided by $b$. The horizontal scale factor is $1/|b|$, with reflection in the $y$-axis if $b<0$."
+    },
+    {
+      "id": "ahl-2-8-ku-4",
+      "status": "approved",
+      "text": "For $y=af(b(x-h))+k$, an original point $(u,v)$ maps to $(h+u/b,av+k)$, provided $b\\ne0$. This rule handles translation, scale and reflection together."
+    },
+    {
+      "id": "ahl-2-8-ku-5",
+      "status": "approved",
+      "text": "Transform endpoints and other key points to find a new domain and range. Reverse the order of inequality endpoints when multiplying by a negative number."
+    },
+    {
+      "id": "ahl-2-8-ku-6",
+      "status": "approved",
+      "text": "Order matters for transformations on the same axis. For example, $2(f(x)+3)=2f(x)+6$ is not generally the same as $2f(x)+3$."
     }
   ],
   "visuals": [],
@@ -69,37 +155,82 @@
     {
       "id": "ahl-2-8-misc-1",
       "status": "approved",
-      "weak": "Reading $f(x-3)$ as a shift left by 3",
-      "better": "The input that produces the old value occurs 3 units to the right."
+      "weak": "$f(x-3)$ moves the graph left $3$.",
+      "better": "The same input to $f$ now occurs when the new input is $3$ larger, so the graph moves right $3$."
+    },
+    {
+      "id": "ahl-2-8-misc-2",
+      "status": "approved",
+      "weak": "$f(2x)$ doubles every $x$-coordinate.",
+      "better": "Each old input is produced by half as large a new input, so horizontal coordinates are halved."
+    },
+    {
+      "id": "ahl-2-8-misc-3",
+      "status": "approved",
+      "weak": "$-f(x)$ reflects in the $y$-axis.",
+      "better": "It negates outputs and reflects in the $x$-axis. $f(-x)$ reflects in the $y$-axis."
+    },
+    {
+      "id": "ahl-2-8-misc-4",
+      "status": "approved",
+      "weak": "Apply a vertical shift before scaling without checking the equation.",
+      "better": "For $af(x)+k$, scale outputs by $a$ first, then add $k$."
     }
   ],
   "terms": [
     {
       "id": "ahl-2-8-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Translation",
+      "text": "A shift of every point through the same horizontal and vertical displacement."
     },
     {
       "id": "ahl-2-8-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Reflection",
+      "text": "A mirror transformation. Reflection in the $x$-axis negates outputs; reflection in the $y$-axis negates inputs."
+    },
+    {
+      "id": "ahl-2-8-terms-3",
+      "status": "approved",
+      "term": "Scale factor",
+      "text": "A multiplier applied to distances from an axis. For $f(bx)$ the horizontal scale factor is $1/|b|$."
     }
   ],
   "formula": [],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "Describe how $y=(x-3)^2+2$ is obtained from $y=x^2$.",
+    "prompt": "A function $f$ has domain $[-2,4]$ and range $[1,5]$. The point $(2,3)$ lies on its graph. Define $g(x)=-2f(3(x-1))+4$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "a",
+        "q": "Describe a sequence of transformations from $y=f(x)$ to $y=g(x)$.",
+        "marks": 3,
+        "a": "Horizontally compress by a factor of $\\frac13$, then translate right $1$. Reflect in the $x$-axis and stretch vertically by a factor of $2$, then translate up $4$.",
+        "m": "A1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find the image of $(2,3)$.",
         "marks": 2,
-        "a": "Translate the graph 3 units right and 2 units up.",
+        "a": "The point rule is $(u,v)\\mapsto(1+u/3,-2v+4)$. Thus $(2,3)$ maps to $(\\frac53,-2)$.",
         "m": "M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Find the domain and range of $g$.",
+        "marks": 4,
+        "a": "For the domain, $-2\\leq3(x-1)\\leq4$, giving $\\frac13\\leq x\\leq\\frac73$. For the range, $1\\leq f\\leq5$ maps under $-2f+4$ to $-6\\leq g\\leq2$. The endpoints reverse under multiplication by $-2$.",
+        "m": "M1 A1 M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Explain why $-2(f(3(x-1))+4)$ gives a different vertical translation.",
+        "marks": 2,
+        "a": "Expanding gives $-2f(3(x-1))-8$. The $+4$ is inside the multiplication, so the final shift is down $8$, not up $4$.",
+        "m": "M1 R1"
       }
     ]
   },
@@ -107,8 +238,20 @@
     {
       "id": "ahl-2-8-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "The input that produces the old value occurs 3 units to the right."
+      "q": "Why does $f(2x)$ compress horizontally?",
+      "model": "To produce the old input $u$, solve $2x=u$, giving the new input $u/2$. Every horizontal coordinate is halved."
+    },
+    {
+      "id": "ahl-2-8-kq-2",
+      "status": "approved",
+      "q": "How can you check the direction of a horizontal shift?",
+      "model": "Choose an original input $u$ and solve the new inside expression for the input that gives $u$."
+    },
+    {
+      "id": "ahl-2-8-kq-3",
+      "status": "approved",
+      "q": "Why can the order of transformations matter?",
+      "model": "Scaling also scales an earlier translation on the same axis. Follow points or expand the expression to check the order."
     }
   ],
   "history": [],
