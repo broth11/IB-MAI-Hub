@@ -1,0 +1,344 @@
+{
+  "code": "SL 3.5",
+  "slug": "sl-3-5",
+  "title": "Perpendicular bisectors",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 204,
+        "title": "Perpendicular Bisectors",
+        "videoId": "WNS59fjZTIU",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "From straight lines to Voronoi diagrams",
+            "text": "The presenter introduces perpendicular bisectors and their application to Voronoi diagrams."
+          },
+          {
+            "t": 27,
+            "type": "Definition",
+            "title": "Perpendicular and bisector",
+            "text": "A perpendicular bisector crosses a segment at its midpoint and at a right angle."
+          },
+          {
+            "t": 85,
+            "type": "Connection",
+            "title": "A boundary between sites",
+            "text": "A perpendicular bisector is introduced as a building block for a Voronoi diagram."
+          },
+          {
+            "t": 121,
+            "type": "Example",
+            "title": "Plan the line equation",
+            "text": "The example finds the midpoint and perpendicular gradient before forming the line equation."
+          },
+          {
+            "t": 168,
+            "type": "Method",
+            "title": "Average the coordinates",
+            "text": "The presenter uses midpoint coordinates to find where the bisector passes through the segment."
+          },
+          {
+            "t": 233,
+            "type": "Calculation",
+            "title": "Midpoint of the example",
+            "text": "The midpoint is $(1,2)$ for the illustrated endpoints."
+          },
+          {
+            "t": 284,
+            "type": "Method",
+            "title": "Find the segment gradient",
+            "text": "The gradient calculation gives $1/2$ for the original segment."
+          },
+          {
+            "t": 337,
+            "type": "Calculation",
+            "title": "Take the negative reciprocal",
+            "text": "After a spoken correction, the perpendicular gradient is $-2$."
+          },
+          {
+            "t": 364,
+            "type": "Method",
+            "title": "Use point–slope form",
+            "text": "Use the midpoint, not an endpoint, with the perpendicular gradient."
+          },
+          {
+            "t": 431,
+            "type": "Calculation",
+            "title": "Simplify the equation",
+            "text": "The presenter writes the bisector as $y=-2x+4$."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "A correction in the video",
+            "text": "The presenter briefly says $-1/2$ for the perpendicular gradient, then corrects it to $-2$.",
+            "write": "The negative reciprocal of $1/2$ is $-2$."
+          },
+          {
+            "kind": "omission",
+            "title": "Horizontal and vertical segments",
+            "text": "The gradient method in this example uses finite nonzero slopes. A horizontal segment has a vertical perpendicular bisector; a vertical segment has a horizontal one.",
+            "write": "Use $x=x_M$ for a horizontal segment and $y=y_M$ for a vertical segment."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "The timestamps are based on captions; playback and the on-screen work have not been independently verified.",
+            "write": "Check the midpoint and the perpendicular direction in the diagram."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-3-5-ican-1",
+      "status": "approved",
+      "text": "I can find the midpoint of a segment from its endpoint coordinates."
+    },
+    {
+      "id": "sl-3-5-ican-2",
+      "status": "approved",
+      "text": "I can find a perpendicular bisector from two points or from a line and a known midpoint."
+    },
+    {
+      "id": "sl-3-5-ican-3",
+      "status": "approved",
+      "text": "I can handle horizontal and vertical segments without dividing by zero."
+    },
+    {
+      "id": "sl-3-5-ican-4",
+      "status": "approved",
+      "text": "I can test whether a point lies on a perpendicular bisector using equal distances."
+    },
+    {
+      "id": "sl-3-5-ican-5",
+      "status": "approved",
+      "text": "I can explain how a perpendicular bisector separates points nearer to one site from points nearer to the other."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-3-5-ku-1",
+      "status": "approved",
+      "text": "The perpendicular bisector of a segment passes through its midpoint and meets the segment at $90^\\circ$. These are two separate conditions: a line satisfying only one is not necessarily the bisector."
+    },
+    {
+      "id": "sl-3-5-ku-2",
+      "status": "approved",
+      "text": "For distinct endpoints $A(x_1,y_1)$ and $B(x_2,y_2)$, the midpoint is $M=(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2})$."
+    },
+    {
+      "id": "sl-3-5-ku-3",
+      "status": "approved",
+      "text": "When the original segment has finite nonzero gradient $m$, a perpendicular line has gradient $-1/m$. Find $m=(y_2-y_1)/(x_2-x_1)$, then use the midpoint in $y-y_M=m_\\perp(x-x_M)$."
+    },
+    {
+      "id": "sl-3-5-ku-4",
+      "status": "approved",
+      "text": "If the segment is horizontal, its bisector is the vertical line $x=x_M$. If the segment is vertical, its bisector is the horizontal line $y=y_M$. Vertical lines do not have a finite gradient, so the negative-reciprocal calculation does not apply directly."
+    },
+    {
+      "id": "sl-3-5-ku-5",
+      "status": "approved",
+      "text": "If a segment’s line equation and midpoint are given, extract the segment direction from the equation, find a perpendicular direction and use the supplied midpoint. Confirm the stated midpoint lies on the stated line."
+    },
+    {
+      "id": "sl-3-5-ku-6",
+      "status": "approved",
+      "text": "Every point on the perpendicular bisector is equally distant from the two endpoints. Conversely, a point equally distant from two distinct endpoints lies on their perpendicular bisector. This provides a second method: set the two squared distances equal and simplify."
+    },
+    {
+      "id": "sl-3-5-ku-7",
+      "status": "approved",
+      "text": "The bisector divides the plane into two half-planes. Points on one side are closer to one endpoint; points on the other are closer to the other. To decide which, test a point or compare squared distances."
+    },
+    {
+      "id": "sl-3-5-ku-8",
+      "status": "approved",
+      "text": "For more than two sites, a Voronoi edge is only the part of a pairwise bisector on which those sites are tied for nearest. Other sites may cut off part of the full line."
+    },
+    {
+      "id": "sl-3-5-ku-9",
+      "status": "approved",
+      "text": "The endpoints must be distinct. If they coincide, there is no unique segment direction and every point is equally distant from the two identical locations."
+    }
+  ],
+  "misc": [
+    {
+      "id": "sl-3-5-misc-1",
+      "status": "approved",
+      "weak": "The perpendicular bisector passes through endpoint $A$.",
+      "better": "It passes through the midpoint, which generally differs from either endpoint."
+    },
+    {
+      "id": "sl-3-5-misc-2",
+      "status": "approved",
+      "weak": "The perpendicular gradient of $2/3$ is $-2/3$.",
+      "better": "Take the negative reciprocal: $-3/2$."
+    },
+    {
+      "id": "sl-3-5-misc-3",
+      "status": "approved",
+      "weak": "A line through the midpoint automatically bisects at a right angle.",
+      "better": "The line must also be perpendicular to the segment."
+    },
+    {
+      "id": "sl-3-5-misc-4",
+      "status": "approved",
+      "weak": "A vertical segment has a vertical perpendicular bisector.",
+      "better": "Its perpendicular bisector is horizontal: $y=y_M$."
+    },
+    {
+      "id": "sl-3-5-misc-5",
+      "status": "approved",
+      "weak": "Every point on a pairwise bisector is always a Voronoi edge.",
+      "better": "A third site may be closer. Only retain portions where the tied sites are nearest."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-3-5-terms-1",
+      "status": "approved",
+      "term": "Perpendicular",
+      "text": "Meeting at a right angle."
+    },
+    {
+      "id": "sl-3-5-terms-2",
+      "status": "approved",
+      "term": "Bisector",
+      "text": "An object that divides a segment or angle into two equal parts."
+    },
+    {
+      "id": "sl-3-5-terms-3",
+      "status": "approved",
+      "term": "Midpoint",
+      "text": "The point halfway along a segment; average corresponding endpoint coordinates."
+    },
+    {
+      "id": "sl-3-5-terms-4",
+      "status": "approved",
+      "term": "Locus",
+      "text": "The set of points satisfying a specified condition. Equal distance from two distinct fixed points defines their perpendicular bisector."
+    },
+    {
+      "id": "sl-3-5-terms-5",
+      "status": "approved",
+      "term": "Negative reciprocal",
+      "text": "For a nonzero gradient $m$, the number $-1/m$."
+    }
+  ],
+  "formula": [
+    {
+      "id": "sl-3-5-formula-1",
+      "status": "approved",
+      "text": "Midpoint: $M=(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2})$."
+    },
+    {
+      "id": "sl-3-5-formula-2",
+      "status": "approved",
+      "text": "For a finite, nonzero segment gradient $m$, the perpendicular gradient is $-1/m$."
+    },
+    {
+      "id": "sl-3-5-formula-3",
+      "status": "approved",
+      "text": "Point–slope form: $y-y_M=m_\\perp(x-x_M)$. A vertical bisector instead has equation $x=x_M$."
+    },
+    {
+      "id": "sl-3-5-formula-4",
+      "status": "approved",
+      "text": "Equidistance alternative: $(x-x_1)^2+(y-y_1)^2=(x-x_2)^2+(y-y_2)^2$."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Two monitoring stations have coordinates $A=(2,-1)$ and $B=(8,3)$ on a plane map. One coordinate unit represents one kilometre.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find the midpoint and the gradient of $AB$.",
+        "marks": 2,
+        "a": "$M=(\\frac{2+8}{2},\\frac{-1+3}{2})=(5,1)$. The gradient is $(3-(-1))/(8-2)=4/6=2/3$.",
+        "m": "A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find the equation of the perpendicular bisector of $AB$.",
+        "marks": 3,
+        "a": "The perpendicular gradient is $-3/2$. Using $(5,1)$ gives $y-1=-\\frac32(x-5)$, or $y=-\\frac32x+\\frac{17}{2}$. It passes through the midpoint and has a perpendicular direction.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Show that $P=(3,4)$ is equally far from the two stations.",
+        "marks": 2,
+        "a": "$PA^2=(3-2)^2+(4+1)^2=26$ and $PB^2=(3-8)^2+(4-3)^2=26$. Both distances are $\\sqrt{26}$ km, so $P$ is equidistant; it also satisfies the line equation.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Determine which station is closer to $Q=(6,4)$.",
+        "marks": 2,
+        "a": "$QA^2=4^2+5^2=41$ and $QB^2=(-2)^2+1^2=5$. Since $5<41$, station $B$ is closer. Comparing squared distances is sufficient because distances are nonnegative.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "e",
+        "q": "A different segment lies on $2x-3y=-8$ and has midpoint $(-1,2)$. Find its perpendicular bisector.",
+        "marks": 3,
+        "a": "The midpoint satisfies $2(-1)-3(2)=-8$. Rearranging the segment line gives gradient $2/3$, so its perpendicular gradient is $-3/2$. Through $(-1,2)$ the bisector is $y-2=-\\frac32(x+1)$, or $y=-\\frac32x+\\frac12$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "f",
+        "q": "Find the perpendicular bisector of the segment joining $(1,4)$ and $(7,4)$.",
+        "marks": 1,
+        "a": "The midpoint is $(4,4)$ and the segment is horizontal, so its perpendicular bisector is the vertical line $x=4$.",
+        "m": "A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-3-5-kq-1",
+      "status": "approved",
+      "q": "Why are points on the perpendicular bisector equally distant from the endpoints?",
+      "model": "The midpoint divides the segment into equal halves. The two right triangles formed with a point on the bisector share one leg and have equal other legs, so their hypotenuses are equal."
+    },
+    {
+      "id": "sl-3-5-kq-2",
+      "status": "approved",
+      "q": "Why is the midpoint used in point–slope form?",
+      "model": "It is a known point on the perpendicular bisector. An endpoint of the original segment is generally not on that line."
+    },
+    {
+      "id": "sl-3-5-kq-3",
+      "status": "approved",
+      "q": "Why can squared distances be compared instead of distances?",
+      "model": "Distances are nonnegative, and squaring preserves their order. The square root is unnecessary when deciding which is closer."
+    },
+    {
+      "id": "sl-3-5-kq-4",
+      "status": "approved",
+      "q": "Why might only part of a bisector appear on a Voronoi diagram?",
+      "model": "Another site may be closer along part of the bisector. A Voronoi edge keeps only locations where the tied sites are nearest."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
