@@ -179,6 +179,11 @@
       "id": "sl12-ican-5",
       "status": "approved",
       "text": "I can use an arithmetic model in context and interpret its assumptions."
+    },
+    {
+      "id": "sl12-ican-6",
+      "status": "approved",
+      "text": "I can use an approximate common difference to model imperfectly arithmetic data and make a qualified prediction."
     }
   ],
   "ku": [
@@ -211,6 +216,16 @@
       "id": "sl12-ku-6",
       "status": "approved",
       "text": "When a context asks for the first term exceeding a target, solve the inequality and choose the smallest permitted integer. Check that term and its predecessor."
+    },
+    {
+      "id": "sl12-ku-7",
+      "status": "approved",
+      "text": "Simple interest adds the same amount each year when the rate and original principal are fixed: $A=P(1+rt)$ for principal $P$, annual decimal rate $r$ and $t$ years. This differs from compound interest on a changing balance."
+    },
+    {
+      "id": "sl12-ku-8",
+      "status": "approved",
+      "text": "A real data set may not have exactly equal differences. Estimate a reasonable common difference, explain the modelling choice and recognise that predictions are approximate."
     }
   ],
   "visuals": [],
@@ -270,6 +285,12 @@
       "status": "approved",
       "weak": "A negative common difference means the terms form a geometric sequence.",
       "better": "A constant difference can be negative. A geometric sequence has a constant ratio."
+    },
+    {
+      "id": "sl12-misc-6",
+      "status": "approved",
+      "weak": "Simple interest at 3% of the principal each year is modelled by $A=P(1.03)^t$.",
+      "better": "That expression models annual compounding. Simple interest at 3% of the original principal is $A=P(1+0.03t)$."
     }
   ],
   "terms": [
@@ -336,6 +357,13 @@
         "q": "Find the first row with more than 250 seats.",
         "marks": 2,
         "a": "$120+15(n-1)>250$ gives $n>9.666\\ldots$. The first permitted integer is $n=10$; row 9 has 240 seats and row 10 has 255.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(e)",
+        "q": "In a separate experiment, four consecutive measurements are 2.0, 5.1, 8.0 and 11.2. Use the average change between the first and fourth measurements to predict the fifth.",
+        "marks": 2,
+        "a": "There are three intervals, so the average change is $(11.2-2.0)/3=3.0666\\ldots$. Adding this to the fourth value gives approximately 14.3. Because the observed differences are not equal, this is a model-based estimate.",
         "m": "M1 A1"
       }
     ]
