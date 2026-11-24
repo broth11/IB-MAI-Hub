@@ -1,0 +1,175 @@
+{
+  "code": "SL 1.1",
+  "slug": "sl-1-1",
+  "title": "Standard form",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 102,
+        "title": "Scientific Notation",
+        "videoId": "Ams7KIaMdc4",
+        "partial": false,
+        "moments": [
+          {
+            "t": 42,
+            "type": "Definition",
+            "title": "Why use standard form?",
+            "text": "Write very large or very small values compactly as a coefficient multiplied by a power of 10."
+          },
+          {
+            "t": 75,
+            "type": "Worked example",
+            "title": "A large number",
+            "text": "Moving the decimal point five places gives $457000=4.57\\times10^5$."
+          },
+          {
+            "t": 167,
+            "type": "Worked example",
+            "title": "A small number",
+            "text": "A positive value smaller than 1 has a negative power of 10."
+          },
+          {
+            "t": 223,
+            "type": "Reference",
+            "title": "The required form",
+            "text": "Use $a\\times10^k$, where $1\\leq a<10$ and $k$ is an integer."
+          },
+          {
+            "t": 250,
+            "type": "Worked example",
+            "title": "Converting a decimal",
+            "text": "$0.0286=2.86\\times10^{-2}$."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl11-ican-1",
+      "status": "approved",
+      "text": "I can convert positive numbers between decimal notation and standard form."
+    },
+    {
+      "id": "sl11-ican-2",
+      "status": "approved",
+      "text": "I can calculate with numbers in standard form and give the answer in standard form."
+    },
+    {
+      "id": "sl11-ican-3",
+      "status": "approved",
+      "text": "I can round an answer in standard form to a specified number of significant figures."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl11-ku-1",
+      "status": "approved",
+      "text": "Standard form is $a\\times10^k$, where $1\\leq a<10$ and $k$ is an integer. For negative numbers, put a minus sign in front of the standard-form magnitude."
+    },
+    {
+      "id": "sl11-ku-2",
+      "status": "approved",
+      "text": "For a positive number greater than or equal to 10, $k$ is positive. For a positive number between 0 and 1, $k$ is negative. Numbers from 1 up to 10 have $k=0$."
+    },
+    {
+      "id": "sl11-ku-3",
+      "status": "approved",
+      "text": "For multiplication, multiply coefficients and add exponents. For division, divide coefficients and subtract exponents. Renormalize the result if the coefficient is outside $[1,10)$."
+    },
+    {
+      "id": "sl11-ku-4",
+      "status": "approved",
+      "text": "To add or subtract, first express the quantities using the same power of 10, then combine coefficients."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "sl11-misc-1",
+      "status": "approved",
+      "weak": "$32.4\\times10^5$ is in standard form.",
+      "better": "The coefficient must be less than 10. Write $3.24\\times10^6$."
+    },
+    {
+      "id": "sl11-misc-2",
+      "status": "approved",
+      "weak": "$0.0042=4.2\\times10^3$.",
+      "better": "The original positive number is less than 1, so $0.0042=4.2\\times10^{-3}$."
+    },
+    {
+      "id": "sl11-misc-3",
+      "status": "approved",
+      "weak": "$(2\\times10^3)+(3\\times10^4)=5\\times10^7$.",
+      "better": "Addition requires matching powers: $0.2\\times10^4+3\\times10^4=3.2\\times10^4$."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl11-terms-1",
+      "status": "approved",
+      "term": "Write in standard form",
+      "text": "Give the coefficient and power of 10, with the coefficient in the required range."
+    },
+    {
+      "id": "sl11-terms-2",
+      "status": "approved",
+      "term": "Calculate",
+      "text": "Use the calculator and report the requested accuracy, keeping extra digits during working."
+    }
+  ],
+  "formula": [
+    {
+      "id": "sl11-formula-1",
+      "status": "approved",
+      "text": "Use the exponent laws when multiplying or dividing powers of 10. Check the formula booklet for the exact permitted rules."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A bacterium has a mass of $0.00000000000274$ g. A sample contains exactly $3\\times10^6$ bacteria of this mass.",
+    "table": [],
+    "parts": [
+      {
+        "label": "(a)",
+        "q": "Write the mass of one bacterium in standard form.",
+        "marks": 1,
+        "a": "$2.74\\times10^{-12}$ g",
+        "m": "A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find the total mass in standard form.",
+        "marks": 2,
+        "a": "$(2.74\\times10^{-12})(3\\times10^6)=8.22\\times10^{-6}$ g.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl11-kq-1",
+      "status": "approved",
+      "q": "Why is $6.1\\times10^{-4}$ smaller than 1?",
+      "model": "$10^{-4}=1/10000$, so multiplying 6.1 by it gives $0.00061$."
+    },
+    {
+      "id": "sl11-kq-2",
+      "status": "approved",
+      "q": "Why must $24\\times10^3$ be rewritten?",
+      "model": "Its coefficient is 24, outside the standard-form interval. The equivalent standard form is $2.4\\times10^4$."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

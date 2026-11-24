@@ -6,7 +6,7 @@
  "home": {
   "headline": "Study by IB syllabus code, then jump back to the moment that explains it.",
   "lede": "Every study page pairs the video with its key moments, a method checklist, exam wording, common traps, an interactive visual and practice questions.",
-  "pilot": "Rows are IB syllabus codes. Red rows have no video; amber rows are mentioned only briefly in a video. One study page is live so far: Domain & Range, Composite, Inverse (AHL 2.7). Every other video is listed with its transcript only. Three syllabus-code pages are in pilot: SL 4.4, SL 4.10 and AHL 4.13 (click the code title)."
+  "pilot": "Rows are IB syllabus codes. Red rows have no video; amber rows are mentioned only briefly. Study pages are available for SL 1.1, AHL 2.7, SL 4.4, SL 4.10 and AHL 4.13."
  },
  "units": [
   {
