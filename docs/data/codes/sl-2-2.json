@@ -13,19 +13,69 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
+            "t": 24,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Functions: Overview & Types."
+            "title": "What the video will cover",
+            "text": "The presenter introduces functions, input and output variables, notation and types of model."
           },
           {
-            "t": 85,
+            "t": 40,
+            "type": "Concept",
+            "title": "Input and output",
+            "text": "A function relates an allowed input to an output; the independent variable supplies the input."
+          },
+          {
+            "t": 86,
+            "type": "Context",
+            "title": "A child's height over time",
+            "text": "The example assumes a child is 50 cm at birth and 200 cm at age 15 to build a simple model."
+          },
+          {
+            "t": 129,
+            "type": "Procedure",
+            "title": "Choose variables and axes",
+            "text": "Age is the input and height is the output. The function notation $H(a)$ represents height at age $a$."
+          },
+          {
+            "t": 196,
+            "type": "Visual",
+            "title": "A linear model",
+            "text": "The presenter sketches a straight-line model from 50 cm at birth to 200 cm at age 15 and notes that real growth may not be linear."
+          },
+          {
+            "t": 247,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Form the function",
+            "text": "The assumed rate is 150 cm over 15 years, or 10 cm per year, giving $H(a)=10a+50$."
+          },
+          {
+            "t": 305,
+            "type": "Worked example",
+            "title": "Evaluate a function",
+            "text": "Substituting $a=10$ gives $H(10)=150$ cm in the model."
+          },
+          {
+            "t": 328,
+            "type": "Reference",
+            "title": "Types of functions",
+            "text": "The presenter briefly surveys linear, quadratic, exponential, logarithmic, sinusoidal and logistic models."
+          },
+          {
+            "t": 387,
+            "type": "Extension",
+            "title": "A piecewise model",
+            "text": "To represent a change after age 15, the presenter suggests joining a linear growth rule to a constant-height rule."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Function and model",
+            "text": "The child-height line is an illustrative assumption. The presenter notes that real growth can vary.",
+            "write": "A function assigns exactly one output to each allowed input. A model should be interpreted only over a suitable domain.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 209,
@@ -34,108 +84,325 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Domain & Range, Composite, Inverse."
+            "t": 16,
+            "type": "Concept",
+            "title": "Three ways to write a function",
+            "text": "$f(x)=x^2-2$, $f: x\\mapsto x^2-2$ and $y=x^2-2$ all describe the same rule. Use whichever your textbook uses."
           },
           {
-            "t": 70,
+            "t": 76,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Evaluate by substitution",
+            "text": "$f(3)=7$, $g(-2)=1$ and $h(24)=5$. Find the function, then substitute the input for $x$."
           },
           {
-            "t": 371,
-            "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "t": 164,
+            "type": "Definition",
+            "title": "Domain and range",
+            "text": "The domain is the set of possible inputs ($x$ values). The range is the set of possible outputs ($y$ values)."
+          },
+          {
+            "t": 208,
+            "type": "Worked example",
+            "title": "Domain and range of a quadratic",
+            "text": "$f(x)=x^2-2$ goes left and right forever, so $x\\in\\mathbb{R}$. It bottoms out at $-2$, so $y\\ge-2$."
+          },
+          {
+            "t": 321,
+            "type": "Worked example",
+            "title": "A straight line",
+            "text": "$g(x)=x+3$ goes on forever in every direction, so both domain and range are all real numbers."
+          },
+          {
+            "t": 366,
+            "type": "Worked example",
+            "title": "A square root function",
+            "text": "$h(x)=\\sqrt{x+1}$ starts at $x=-1$ and only gives non-negative outputs: domain $x\\ge-1$, range $y\\ge0$."
+          },
+          {
+            "t": 454,
+            "type": "Definition",
+            "title": "A composite is a function of a function",
+            "text": "In $f\\circ g$, the output of $g$ becomes the input of $f$."
+          },
+          {
+            "t": 491,
+            "type": "Worked example",
+            "title": "Find $f\\circ g$",
+            "text": "Write $f$, and where it has $x$, put in $g(x)=x+3$. The result is $(x+3)^2-2$."
+          },
+          {
+            "t": 532,
+            "type": "Worked example",
+            "title": "Find $g\\circ f$",
+            "text": "Start with $g$ and put $f(x)$ where $x$ was: $x^2-2+3=x^2+1$. A different order gives a different function."
+          },
+          {
+            "t": 567,
+            "type": "Procedure",
+            "title": "Inverse functions and their notation",
+            "text": "The inverse of $f$ is written $f^{-1}$. Start from $y=f(x)$."
+          },
+          {
+            "t": 596,
+            "type": "Procedure",
+            "title": "Swap $x$ and $y$, then solve for $y$",
+            "text": "The first step is always to swap $x$ and $y$. Then use algebra to make $y$ the subject."
+          },
+          {
+            "t": 635,
+            "type": "Worked example",
+            "title": "The inverse of $h$",
+            "text": "From $y=\\sqrt{x+1}$: swap, square both sides, subtract 1. $h^{-1}(x)=x^2-1$."
+          },
+          {
+            "t": 691,
+            "type": "Key idea",
+            "title": "The inverse is a reflection",
+            "text": "The graph of $f^{-1}$ is the graph of $f$ reflected in the line $y=x$."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "Restricting the quadratic domain",
+            "text": "The video finds a square-root inverse for $f(x)=x^2-2$ without first restricting the original domain. On all real numbers the function is not one-to-one.",
+            "write": "Restrict to $x\\ge0$ to obtain $f^{-1}(x)=\\sqrt{x+2}$ with domain $x\\ge-2$; choosing $x\\le0$ gives the negative branch.",
+            "section": "ku"
+          },
+          {
+            "kind": "omission",
+            "title": "Domain of an inverse",
+            "text": "The video finds an inverse for $h(x)=\\sqrt{x+1}$ but does not explicitly state its domain.",
+            "write": "The original range is $[0,\\infty)$, so $h^{-1}(x)=x^2-1$ has domain $x\\ge0$.",
+            "section": "ku"
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "sl-2-2-ican-1",
+      "id": "sl22-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for functions, domain, range and inverse."
+      "text": "I can explain what it means for a relation to be a function and use function notation."
     },
     {
-      "id": "sl-2-2-ican-2",
+      "id": "sl22-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can evaluate a function and interpret input and output in context."
+    },
+    {
+      "id": "sl22-ican-3",
+      "status": "approved",
+      "text": "I can find a function's domain and range using algebra, a graph or stated restrictions."
+    },
+    {
+      "id": "sl22-ican-4",
+      "status": "approved",
+      "text": "I can explain when an inverse function exists and interpret it as reversing the original function."
+    },
+    {
+      "id": "sl22-ican-5",
+      "status": "approved",
+      "text": "I can relate the graph and domain of an inverse to the graph and range of the original function."
+    },
+    {
+      "id": "sl22-ican-6",
+      "status": "approved",
+      "text": "I can select a reasonable domain for a mathematical model and explain limitations."
     }
   ],
   "ku": [
     {
-      "id": "sl-2-2-ku-1",
+      "id": "sl22-ku-1",
       "status": "approved",
-      "text": "A function assigns exactly one output to each input in its domain."
+      "text": "A function assigns exactly one output to each input in its stated domain. Different inputs may share an output; that does not prevent the relation from being a function."
     },
     {
-      "id": "sl-2-2-ku-2",
+      "id": "sl22-ku-2",
       "status": "approved",
-      "text": "The range is the set of outputs actually obtained from the stated domain."
+      "text": "The domain is the set of allowed inputs. The range is the set of outputs actually produced by those inputs, which may be narrower than the function's codomain."
     },
     {
-      "id": "sl-2-2-ku-3",
+      "id": "sl22-ku-3",
       "status": "approved",
-      "text": "An inverse function reverses input and output when the original function is one-to-one on its domain."
+      "text": "When finding a real-valued domain, check restrictions such as a nonzero denominator and a nonnegative square-root radicand, then apply any restriction stated by the question or context."
+    },
+    {
+      "id": "sl22-ku-4",
+      "status": "approved",
+      "text": "$f^{-1}$ reverses $f$ when $f$ is one-to-one on its domain. A function that is not one-to-one may become invertible after an appropriate domain restriction."
+    },
+    {
+      "id": "sl22-ku-5",
+      "status": "approved",
+      "text": "The domain of $f^{-1}$ is the range of $f$, and its range is the domain of $f$. Their graphs are reflections in $y=x$ when the axes have the same scale."
+    },
+    {
+      "id": "sl22-ku-6",
+      "status": "approved",
+      "text": "Solving $f(x)=b$ asks for an input that produces $b$; where the inverse exists and $b$ lies in its domain, this input is $f^{-1}(b)$."
+    },
+    {
+      "id": "sl22-ku-7",
+      "status": "approved",
+      "text": "For a model, use the context to restrict inputs and interpret outputs. A formula can produce numbers outside the range where its assumptions are reasonable."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "sl22-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 2.1",
+        "Equations and graphs of lines"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 2.7",
+        "Composite and inverse functions"
+      ],
+      [
+        "SL 2.5",
+        "Functions as models"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 2.3",
+        "Sketching graphs"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "sl-2-2-misc-1",
+      "id": "sl22-misc-1",
       "status": "approved",
-      "weak": "Taking a square root as the inverse of $x^2$ on all real inputs",
-      "better": "Restrict the original domain to make the function one-to-one."
+      "weak": "If two inputs have the same output, the relation is not a function.",
+      "better": "A function can map different inputs to the same output. It fails to be a function if one allowed input has more than one output."
+    },
+    {
+      "id": "sl22-misc-2",
+      "status": "approved",
+      "weak": "The domain of $\\sqrt{10-2x}$ is all real numbers.",
+      "better": "Require $10-2x\\ge0$, giving $x\\le5$."
+    },
+    {
+      "id": "sl22-misc-3",
+      "status": "approved",
+      "weak": "The range of a function is always the set of all real numbers.",
+      "better": "The range consists only of outputs actually produced on the stated domain. For $\\sqrt{10-2x}$ it is $[0,\\infty)$."
+    },
+    {
+      "id": "sl22-misc-4",
+      "status": "approved",
+      "weak": "$f^{-1}(x)$ means $1/f(x)$.",
+      "better": "$f^{-1}$ denotes the inverse function; $1/f(x)$ is a reciprocal where defined."
+    },
+    {
+      "id": "sl22-misc-5",
+      "status": "approved",
+      "weak": "$f(x)=x^2-2$ has inverse $\\sqrt{x+2}$ on all real inputs.",
+      "better": "The original function is not one-to-one on $\\mathbb R$. Restrict its domain, for example to $x\\ge0$, before using that inverse branch."
+    },
+    {
+      "id": "sl22-misc-6",
+      "status": "approved",
+      "weak": "The inverse has the same domain as the original function.",
+      "better": "The inverse domain is the original range, and the inverse range is the original domain."
     }
   ],
   "terms": [
     {
-      "id": "sl-2-2-terms-1",
+      "id": "sl22-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Evaluate",
+      "text": "Replace the input variable with the stated value, then calculate the output."
     },
     {
-      "id": "sl-2-2-terms-2",
+      "id": "sl22-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find the domain",
+      "text": "Identify all permitted inputs using algebraic and contextual restrictions; include or exclude endpoints correctly."
+    },
+    {
+      "id": "sl22-term-3",
+      "status": "approved",
+      "term": "Find the range",
+      "text": "Determine all outputs produced on the stated domain and express them clearly."
+    },
+    {
+      "id": "sl22-term-4",
+      "status": "approved",
+      "term": "Find or interpret an inverse",
+      "text": "Check one-to-one behaviour, exchange input and output, and give the relevant domain and interpretation."
     }
   ],
   "formula": [],
   "gdc": [],
   "worked": {
+    "id": "sl22-worked",
     "status": "approved",
-    "prompt": "For $f(x)=x^2$ with $x\\ge0$, state its range and inverse.",
+    "prompt": "Consider the real-valued function $f(x)=\\sqrt{10-2x}$ on its largest real domain.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find $f(3)$.",
+        "marks": 1,
+        "a": "$f(3)=\\sqrt{10-6}=2$.",
+        "m": "A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find the domain and range of $f$.",
         "marks": 2,
-        "a": "The range is $[0,\\infty)$ and $f^{-1}(x)=\\sqrt x$ for $x\\ge0$.",
+        "a": "Require $10-2x\\ge0$, so the domain is $x\\le5$. The square root is nonnegative and can grow without bound, so the range is $f(x)\\ge0$.",
+        "m": "A1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Solve $f(x)=4$ and explain what the result means.",
+        "marks": 2,
+        "a": "$\\sqrt{10-2x}=4$ gives $10-2x=16$, so $x=-3$. The input $-3$ produces the output 4; substitution verifies it.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Find $f^{-1}(x)$ and state its domain.",
+        "marks": 2,
+        "a": "Swap $x$ and $y$ in $y=\\sqrt{10-2x}$ and solve: $f^{-1}(x)=(10-x^2)/2$. Its domain is $x\\ge0$, the original range.",
         "m": "M1 A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "sl-2-2-kq-1",
+      "id": "sl22-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Restrict the original domain to make the function one-to-one."
+      "q": "Why is $x^2$ a function but not one-to-one on all real numbers?",
+      "model": "Every input has one output, so it is a function. However, $2$ and $-2$ both produce 4, so it is not one-to-one on $\\mathbb R$."
+    },
+    {
+      "id": "sl22-kq-2",
+      "status": "approved",
+      "q": "Why must the inverse of a square-root function have a restricted domain?",
+      "model": "Its inputs are outputs of the original square-root function, and those outputs are nonnegative."
+    },
+    {
+      "id": "sl22-kq-3",
+      "status": "approved",
+      "q": "Why can a function's algebraic domain differ from its modelling domain?",
+      "model": "The formula may be mathematically defined for inputs that do not make sense in the real situation, such as negative age."
+    },
+    {
+      "id": "sl22-kq-4",
+      "status": "approved",
+      "q": "What does the graph reflection in $y=x$ tell us about an inverse?",
+      "model": "Each point $(a,b)$ on the original graph becomes $(b,a)$ on the inverse graph: inputs and outputs are exchanged."
     }
   ],
   "history": [],
