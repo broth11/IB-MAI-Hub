@@ -13,13 +13,86 @@
         "partial": true,
         "moments": [
           {
-            "t": 2,
+            "t": 3,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Non-Linear Regression."
+            "title": "From linear to nonlinear regression",
+            "text": "The presenter connects nonlinear regression with scatter plots, regression equations and the coefficient of determination."
+          },
+          {
+            "t": 60,
+            "type": "Concept",
+            "title": "Recognise model families",
+            "text": "Compare the forms and shapes of several nonlinear models with the data."
+          },
+          {
+            "t": 86,
+            "type": "Example",
+            "title": "Exhibition attendance data",
+            "text": "Introduce days after opening and the corresponding visitor counts, which decrease and begin to flatten."
+          },
+          {
+            "t": 160,
+            "type": "Calculator",
+            "title": "Enter and plot the data",
+            "text": "Enter paired data in a spreadsheet and display a scatter plot with day on the horizontal axis."
+          },
+          {
+            "t": 205,
+            "type": "Calculator",
+            "title": "Fit an exponential model",
+            "text": "The scatter plot suggests trying an exponential regression and inspecting the displayed curve."
+          },
+          {
+            "t": 264,
+            "type": "Analysis",
+            "title": "Compare regression summaries",
+            "text": "Find a coefficient of determination and compare the exponential fit with a linear fit."
+          },
+          {
+            "t": 365,
+            "type": "Concept",
+            "title": "Introduce linearisation",
+            "text": "Transform nonlinear data using logarithms to make a straight-line relationship possible."
+          },
+          {
+            "t": 405,
+            "type": "Calculator",
+            "title": "Take logarithms of the outputs",
+            "text": "For the exponential example, create a new column of base-10 logarithms of visitor counts."
+          },
+          {
+            "t": 489,
+            "type": "Graph",
+            "title": "Plot transformed data",
+            "text": "Plot $\\log_{10}(G)$ against days and fit a straight line to the transformed data."
+          },
+          {
+            "t": 540,
+            "type": "Overview",
+            "title": "Review the calculator workflow",
+            "text": "The presenter recommends practising transformed-data questions and interpreting regression models."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Partial coverage",
+            "text": "The video illustrates exponential regression and a base-10 output transformation. It does not provide a full treatment of power-model linearisation or all of the algebra below.",
+            "write": "For a power model, plot $\\log y$ against $\\log x$; for an exponential model, plot $\\log y$ against $x$."
+          },
+          {
+            "kind": "watch",
+            "title": "Check the sign on the screen",
+            "text": "The captions near the final line do not reliably preserve the slope’s sign. The attendance model decreases, so a corresponding logarithmic regression should have a negative slope; verify the actual calculator display before copying a numerical equation.",
+            "write": "For $y=ab^x$ with $0<b<1$, $\\log b<0$."
+          },
+          {
+            "kind": "watch",
+            "title": "Compare fits carefully",
+            "text": "The video uses $R^2$ to compare candidates. Check whether the calculator reports fits on the same response scale, inspect residuals and consider the model and context; a larger reported value alone does not establish the best model.",
+            "write": "A fit on $\\log y$ assesses transformed outputs."
+          }
+        ]
       }
     ]
   },
@@ -27,29 +100,69 @@
     {
       "id": "ahl-2-10-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for scaling and linearizing data with logarithms."
+      "text": "I can linearise exponential and power models using logarithm laws."
     },
     {
       "id": "ahl-2-10-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can identify which transformed variables to plot and interpret the resulting slope and intercept."
+    },
+    {
+      "id": "ahl-2-10-ican-3",
+      "status": "approved",
+      "text": "I can recover a model in the original variables from a fitted transformed line."
+    },
+    {
+      "id": "ahl-2-10-ican-4",
+      "status": "approved",
+      "text": "I can check domain restrictions and use the correct logarithm base when reversing a transformation."
+    },
+    {
+      "id": "ahl-2-10-ican-5",
+      "status": "approved",
+      "text": "I can interpret predictions and limitations in the original context."
     }
   ],
   "ku": [
     {
       "id": "ahl-2-10-ku-1",
       "status": "approved",
-      "text": "A power model $y=ax^b$ becomes $\\ln y=\\ln a+b\\ln x$ for positive $x,y$."
+      "text": "For $y=ab^x$ with $a,b>0$, taking natural logs gives $\\ln y=\\ln a+x\\ln b$. A plot of $\\ln y$ against $x$ has slope $\\ln b$ and intercept $\\ln a$."
     },
     {
       "id": "ahl-2-10-ku-2",
       "status": "approved",
-      "text": "An exponential model $y=ab^x$ becomes $\\ln y=\\ln a+x\\ln b$, with $a,b>0$."
+      "text": "If $\\ln y=mx+c$, reverse the transformation to obtain $y=e^c(e^m)^x$. Thus $a=e^c$ and $b=e^m$."
     },
     {
       "id": "ahl-2-10-ku-3",
       "status": "approved",
-      "text": "Plot the transformed variables and interpret the fitted line using the chosen axes."
+      "text": "For $y=ax^b$ with $a>0$ and $x>0$, $\\ln y=\\ln a+b\\ln x$. A plot of $\\ln y$ against $\\ln x$ has slope $b$ and intercept $\\ln a$."
+    },
+    {
+      "id": "ahl-2-10-ku-4",
+      "status": "approved",
+      "text": "The same structure works with base-10 logarithms: if $\\log_{10}y=m\\log_{10}x+c$, then $y=10^c x^m$. Match the inverse operation to the logarithm base."
+    },
+    {
+      "id": "ahl-2-10-ku-5",
+      "status": "approved",
+      "text": "Logarithms require positive arguments. For log–log plots both observed $x$ and $y$ must be positive; for a plot of $\\log y$ against $x$, the observed $y$ values must be positive."
+    },
+    {
+      "id": "ahl-2-10-ku-6",
+      "status": "approved",
+      "text": "The slope of a log–log plot is the power exponent. For an exponential model the slope of $\\ln y$ against $x$ is $\\ln b$, not $b$."
+    },
+    {
+      "id": "ahl-2-10-ku-7",
+      "status": "approved",
+      "text": "A straight pattern in transformed data can support a proposed model but does not prove it. Interpret residuals on the relevant scale and be cautious when predicting beyond the observed range."
+    },
+    {
+      "id": "ahl-2-10-ku-8",
+      "status": "approved",
+      "text": "Changing the logarithm base changes intercepts and exponential-model slopes, but the exponent obtained from a log–log plot is unchanged when the same base is used on both axes."
     }
   ],
   "visuals": [],
@@ -63,37 +176,101 @@
     {
       "id": "ahl-2-10-misc-1",
       "status": "approved",
-      "weak": "Reading the intercept of a log-transformed graph directly as $a$",
-      "better": "If the intercept is $\\ln a$, exponentiate it to recover $a$."
+      "weak": "The intercept on a $\\ln y$ graph is $a$.",
+      "better": "The intercept is $\\ln a$. Recover $a$ by applying the exponential function."
+    },
+    {
+      "id": "ahl-2-10-misc-2",
+      "status": "approved",
+      "weak": "The slope on a $\\ln y$ against $x$ graph is the growth factor.",
+      "better": "The slope is $\\ln b$, so the factor is $b=e^{\\text{slope}}$."
+    },
+    {
+      "id": "ahl-2-10-misc-3",
+      "status": "approved",
+      "weak": "Use $e^c$ to undo an intercept from a base-10 log graph.",
+      "better": "For $\\log_{10}a=c$, use $a=10^c$."
+    },
+    {
+      "id": "ahl-2-10-misc-4",
+      "status": "approved",
+      "weak": "Take $\\ln(0)$ before fitting the transformed line.",
+      "better": "Zero and negative values have no real logarithm. Check whether the transformation is valid for every observation."
+    },
+    {
+      "id": "ahl-2-10-misc-5",
+      "status": "approved",
+      "weak": "A straight log–log graph proves a power law holds for all inputs.",
+      "better": "It supports a power model over the observed range; assess residuals, context and extrapolation separately."
     }
   ],
   "terms": [
     {
       "id": "ahl-2-10-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Linearisation",
+      "text": "Transforming variables so a proposed nonlinear relationship becomes linear in the transformed variables."
     },
     {
       "id": "ahl-2-10-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Semi-log plot",
+      "text": "A plot in which one variable is represented on a logarithmic scale or transformed using a logarithm."
+    },
+    {
+      "id": "ahl-2-10-terms-3",
+      "status": "approved",
+      "term": "Log–log plot",
+      "text": "A plot involving logarithms of both variables; a power relationship becomes linear."
+    },
+    {
+      "id": "ahl-2-10-terms-4",
+      "status": "approved",
+      "term": "Back-transformation",
+      "text": "Returning from transformed variables to the original variables using the corresponding inverse operation."
     }
   ],
   "formula": [],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "A graph of $\\ln y$ against $\\ln x$ is $Y=2X+\\ln3$. Give the original model.",
+    "prompt": "A researcher models a positive quantity $y$ against time $x$. A linear regression of $Y=\\ln y$ against $x$ gives $Y=1.2-0.3x$ over the observed interval $0\\leq x\\leq5$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "a",
+        "q": "Find the exponential model in the original variables.",
+        "marks": 3,
+        "a": "$\\ln y=1.2-0.3x$ implies $y=e^{1.2-0.3x}=e^{1.2}(e^{-0.3})^x\\approx3.32(0.741)^x$.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Interpret the initial value and the change per unit of time.",
+        "marks": 3,
+        "a": "At $x=0$, the predicted initial quantity is $e^{1.2}\\approx3.32$ units. Each time unit multiplies the prediction by $e^{-0.3}\\approx0.741$, corresponding to a decrease of about $25.9\\%$ per time unit.",
+        "m": "A1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Predict $y$ when $x=4$ and identify whether this is interpolation.",
         "marks": 2,
-        "a": "$\\ln y=2\\ln x+\\ln3$, so $y=3x^2$ for $x>0$.",
+        "a": "$y=e^{1.2-0.3(4)}=e^0=1$. Since $4$ lies within the observed interval, this is interpolation.",
         "m": "M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "A different experiment yields $\\log_{10}y=1.5\\log_{10}x+0.6$ for positive $x$. Find its original power model.",
+        "marks": 3,
+        "a": "Taking powers of $10$ gives $y=10^{0.6}x^{1.5}\\approx3.98x^{1.5}$. The exponent is the transformed slope, while the coefficient is $10$ raised to the intercept.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "e",
+        "q": "Explain why the model from part (a) needs caution at $x=20$.",
+        "marks": 2,
+        "a": "Twenty lies outside the observed interval, so this is extrapolation. The fitted rate may not remain constant that far beyond the data.",
+        "m": "R1 R1"
       }
     ]
   },
@@ -101,8 +278,20 @@
     {
       "id": "ahl-2-10-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "If the intercept is $\\ln a$, exponentiate it to recover $a$."
+      "q": "Which graph helps test an exponential model?",
+      "model": "For positive outputs, plot $\\ln y$ against $x$. A straight pattern is consistent with $y=ab^x$, with slope $\\ln b$ and intercept $\\ln a$."
+    },
+    {
+      "id": "ahl-2-10-kq-2",
+      "status": "approved",
+      "q": "Which graph helps test a power model?",
+      "model": "For positive inputs and outputs, plot $\\ln y$ against $\\ln x$. Its slope estimates the exponent and its intercept estimates $\\ln a$."
+    },
+    {
+      "id": "ahl-2-10-kq-3",
+      "status": "approved",
+      "q": "Why must the logarithm base be retained in the working?",
+      "model": "The inverse of $\\ln$ is the exponential function $e^x$, while the inverse of $\\log_{10}$ is $10^x$."
     }
   ],
   "history": [],
