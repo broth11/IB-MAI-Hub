@@ -15,23 +15,67 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Solving Simultaneous Equations using Matrices."
+            "title": "Using matrices for systems",
+            "text": "The video presents a matrix method for simultaneous equations. Matrix inverses are higher-level content; a calculator's simultaneous-equation solver also meets the SL technology requirement."
           },
           {
-            "t": 140,
+            "t": 39,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Translate two orders into equations",
+            "text": "Let $c$ and $t$ be the prices of coffee and tea. The orders give $5c+3t=16.25$ and $2c+8t=15$."
           },
           {
-            "t": 400,
+            "t": 80,
+            "type": "Procedure",
+            "title": "Write the system in matrix form",
+            "text": "The presenter arranges coefficients, unknowns and totals into $A\\mathbf{x}=\\mathbf{b}$."
+          },
+          {
+            "t": 146,
+            "type": "Transition",
+            "title": "From scalar algebra to matrices",
+            "text": "The presenter compares solving $3x=12$ with the matrix equation, then explains why a matrix inverse is used."
+          },
+          {
+            "t": 217,
+            "type": "Concept",
+            "title": "Multiply by the inverse on the left",
+            "text": "Pre-multiplying both sides by $A^{-1}$ produces $A^{-1}A\\mathbf{x}=A^{-1}\\mathbf{b}$, provided $A$ is invertible."
+          },
+          {
+            "t": 299,
+            "type": "Concept",
+            "title": "Use the identity matrix",
+            "text": "Since $A^{-1}A=I$ and $I\\mathbf{x}=\\mathbf{x}$, the solution is $\\mathbf{x}=A^{-1}\\mathbf{b}$."
+          },
+          {
+            "t": 357,
+            "type": "Worked example",
+            "title": "Apply the matrix method",
+            "text": "Use the coefficient matrix from the two orders and multiply its inverse by the column of totals."
+          },
+          {
+            "t": 388,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Evaluate the matrix expression",
+            "text": "The calculator gives $c=2.50$ and $t=1.25$; these values satisfy both original order equations."
+          },
+          {
+            "t": 445,
+            "type": "Conclusion",
+            "title": "Extend the method",
+            "text": "The presenter explains that the same approach can be used with larger invertible coefficient matrices."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "SL and AHL methods",
+            "text": "This video uses matrix inverses, which are part of AHL matrix content. SL 1.8 requires technology to solve systems, but does not require this matrix method.",
+            "write": "A simultaneous-equation solver or graphical method can be used. State the values of the variables and check them in the original equations.",
+            "section": "gdc"
+          }
+        ]
       },
       {
         "n": 208,
@@ -42,100 +86,295 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Using nSolve to Solve Equations."
+            "title": "What a numerical solver does",
+            "text": "The video introduces a calculator tool for finding numerical solutions to equations."
           },
           {
-            "t": 46,
+            "t": 60,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Set the population equal to the target",
+            "text": "The first model leads to $2000=50(1.24)^t$; the unknown is the time $t$."
+          },
+          {
+            "t": 122,
+            "type": "Calculator",
+            "title": "Enter the equation and unknown",
+            "text": "The presenter uses the TI-Nspire numerical solver to solve the population equation for $t$."
+          },
+          {
+            "t": 156,
+            "type": "Worked example",
+            "title": "Interpret the result",
+            "text": "The numerical solution is about $t=17.1$ to three significant figures; the answer represents the time at which the model reaches the stated population."
+          },
+          {
+            "t": 181,
+            "type": "Transition",
+            "title": "A logarithmic example",
+            "text": "The second example models a sound level and asks for the intensity when the level is 124."
+          },
+          {
+            "t": 203,
+            "type": "Procedure",
+            "title": "Set up the logarithmic equation",
+            "text": "Substitute the target to obtain $124=10\\log_{10}I+120$ and solve for the positive intensity $I$."
+          },
+          {
+            "t": 233,
+            "type": "Worked example",
+            "title": "Solve for intensity",
+            "text": "The calculator gives $I\\approx2.51$ to three significant figures."
+          },
+          {
+            "t": 286,
+            "type": "Key idea",
+            "title": "Multiple solutions need care",
+            "text": "The video contrasts its single-solution examples with quadratic and cubic graphs where a chosen level may intersect more than once."
+          },
+          {
+            "t": 343,
+            "type": "Calculator",
+            "title": "Use a graph to investigate other solutions",
+            "text": "Graphing and intersection tools can help locate additional solutions within the relevant domain; check the window and any stated restrictions."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "error",
+            "title": "Which root does a numerical solver return?",
+            "text": "The presenter says the solver always returns the left-hand solution. This is not a general guarantee: the returned solution can depend on the calculator, starting value, interval and algorithm.",
+            "write": "A numerical solve may return only one solution. Use the graph and appropriate intervals or starting values to investigate other solutions, then check them in the original equation.",
+            "section": "ku"
+          },
+          {
+            "kind": "note",
+            "title": "Different calculator",
+            "text": "The video demonstrates a TI-Nspire; your Casio fx-CG50 has different menus.",
+            "write": "Use the fx-CG50 equation or graph tools and follow the question's domain restrictions.",
+            "section": "gdc"
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "sl-1-8-ican-1",
+      "id": "sl18-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for solving systems and polynomial equations with technology."
+      "text": "I can enter and solve a system of linear equations in up to three variables using technology."
     },
     {
-      "id": "sl-1-8-ican-2",
+      "id": "sl18-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can translate a contextual problem into equations and interpret the solution with units."
+    },
+    {
+      "id": "sl18-ican-3",
+      "status": "approved",
+      "text": "I can find all required real roots of a polynomial and distinguish roots from coordinates of intercepts."
+    },
+    {
+      "id": "sl18-ican-4",
+      "status": "approved",
+      "text": "I can use a graph, suitable search intervals and substitution to check numerical solutions."
+    },
+    {
+      "id": "sl18-ican-5",
+      "status": "approved",
+      "text": "I can state calculator results at an appropriate accuracy and respect a stated domain or context."
     }
   ],
   "ku": [
     {
-      "id": "sl-1-8-ku-1",
+      "id": "sl18-ku-1",
       "status": "approved",
-      "text": "A system can be solved graphically at intersections or numerically using a suitable calculator solver."
+      "text": "A solution to a system makes every equation true at the same time. For two linear equations in two variables, it corresponds to the intersection of their graphs when one exists."
     },
     {
-      "id": "sl-1-8-ku-2",
+      "id": "sl18-ku-2",
       "status": "approved",
-      "text": "A polynomial root is an $x$-value for which $f(x)=0$."
+      "text": "A root or zero of $f$ is an input $x$ such that $f(x)=0$. On a graph, a real root corresponds to the $x$-intercept $(x,0)$."
     },
     {
-      "id": "sl-1-8-ku-3",
+      "id": "sl18-ku-3",
       "status": "approved",
-      "text": "Graph first to identify the number and approximate location of solutions; a numerical solver may return only one solution per starting value."
+      "text": "For $f(x)=g(x)$, solutions are the $x$-coordinates of intersections between the two graphs. Solving $f(x)-g(x)=0$ is an equivalent approach on the common domain."
+    },
+    {
+      "id": "sl18-ku-4",
+      "status": "approved",
+      "text": "A polynomial can have more than one real root. A numerical solver may return only one solution and can depend on a starting guess or search interval. A graph can guide the search but may hide roots outside its window or at a tangency."
+    },
+    {
+      "id": "sl18-ku-5",
+      "status": "approved",
+      "text": "A system of equations in a context requires consistent variable order, appropriate units and an interpretation. Substitute the values into each original equation to check."
+    },
+    {
+      "id": "sl18-ku-6",
+      "status": "approved",
+      "text": "Use technology for linear systems with up to three variables and polynomial equations. The syllabus guidance states that exam systems have a unique solution; outside that setting a system can have none or infinitely many."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "sl18-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 2.1",
+        "Equations and intersections of lines"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 1.14",
+        "Systems represented by matrices"
+      ],
+      [
+        "SL 2.4",
+        "Intercepts and graph features"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 2.5",
+        "Interpreting solutions in a model"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "sl-1-8-misc-1",
+      "id": "sl18-misc-1",
       "status": "approved",
-      "weak": "Assuming one numerical root is the only root",
-      "better": "Inspect the graph and search other intervals or starting values."
+      "weak": "The calculator gave $x=1$, so it is the only root.",
+      "better": "Investigate the graph and other intervals or use a polynomial solver to find all required real roots."
+    },
+    {
+      "id": "sl18-misc-2",
+      "status": "approved",
+      "weak": "For $f(x)=g(x)$, solve $f(x)=0$.",
+      "better": "Solve $f(x)-g(x)=0$ or find the intersections of $y=f(x)$ and $y=g(x)$."
+    },
+    {
+      "id": "sl18-misc-3",
+      "status": "approved",
+      "weak": "The solution of the system is $x=5$; no value for $y$ is needed.",
+      "better": "Report both coordinates, $x=5$ and $y=3$, when both variables are requested, and interpret them in context."
+    },
+    {
+      "id": "sl18-misc-4",
+      "status": "approved",
+      "weak": "A graph that does not cross the axis in one window proves there are no roots.",
+      "better": "A root may lie outside the window or occur where the graph touches the axis. Use appropriate bounds and another method to check."
+    },
+    {
+      "id": "sl18-misc-5",
+      "status": "approved",
+      "weak": "Enter coefficients in any order as long as every number is present.",
+      "better": "Keep the same variable order in every equation and include a zero coefficient for a missing variable."
     }
   ],
   "terms": [
     {
-      "id": "sl-1-8-terms-1",
+      "id": "sl18-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Solve a system",
+      "text": "State all unknown values together, with units if applicable, and verify that they satisfy every equation."
     },
     {
-      "id": "sl-1-8-terms-2",
+      "id": "sl18-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find roots or zeros",
+      "text": "Find all real $x$-values satisfying the equation on the specified domain; express intercepts as coordinates only when requested."
+    },
+    {
+      "id": "sl18-term-3",
+      "status": "approved",
+      "term": "Interpret",
+      "text": "Relate each solution to the quantities and units in the problem and discard values that violate a stated context."
     }
   ],
   "formula": [],
-  "gdc": [],
+  "gdc": [
+    {
+      "id": "sl18-gdc-1",
+      "status": "approved",
+      "text": "From the main menu, open Equation: [MENU] [XTT] (icon A). Wait for the menu to finish drawing.",
+      "verified": true
+    },
+    {
+      "id": "sl18-gdc-2",
+      "status": "approved",
+      "text": "For a two-variable system, choose [F1] SIMUL and [F1] for two unknowns. Enter the coefficients and constants in a consistent order, pressing [EXE] after each value; choose [F1] SOLVE.",
+      "verified": true
+    },
+    {
+      "id": "sl18-gdc-3",
+      "status": "approved",
+      "text": "For a quadratic, choose [F2] POLY and [F1] for degree 2. Enter the coefficients and choose [F1] SOLVE. Scroll to see the other root.",
+      "verified": true
+    },
+    {
+      "id": "sl18-gdc-4",
+      "status": "approved",
+      "text": "For a general numerical equation, choose [F3] SOLVER, enter the equation and press [EXE]. Set a suitable start value and bounds before [F6] SOLVE; check other intervals when needed.",
+      "verified": true
+    }
+  ],
   "worked": {
+    "id": "sl18-worked",
     "status": "approved",
-    "prompt": "Solve $x^2-5x+6=0$ and check the solutions.",
+    "prompt": "A school buys notebooks and pens. Two notebooks and three pens cost 19 dollars. Three notebooks and one pen cost 12 dollars. Let $x$ be the price of a notebook and $y$ the price of a pen, in dollars.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Write a system of equations and use technology to find $x$ and $y$.",
+        "marks": 3,
+        "a": "$2x+3y=19$ and $3x+y=12$. The solution is $x=17/7\\approx2.43$ and $y=33/7\\approx4.71$.",
+        "m": "M1 A2"
+      },
+      {
+        "label": "(b)",
+        "q": "Check the solution in both equations.",
         "marks": 2,
-        "a": "$(x-2)(x-3)=0$, so $x=2$ or $x=3$. Both give zero when substituted.",
-        "m": "M1 A1"
+        "a": "$2(17/7)+3(33/7)=133/7=19$ and $3(17/7)+33/7=84/7=12$.",
+        "m": "A1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Use technology to solve $x^3-2x^2-5x+6=0$ for all real values of $x$.",
+        "marks": 3,
+        "a": "The real roots are $x=-2,1,3$. A check is $x^3-2x^2-5x+6=(x+2)(x-1)(x-3)$.",
+        "m": "M1 A2"
       }
     ]
   },
   "kq": [
     {
-      "id": "sl-1-8-kq-1",
+      "id": "sl18-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Inspect the graph and search other intervals or starting values."
+      "q": "Why can a numerical solver find only one of several roots?",
+      "model": "A numerical search follows an algorithm from a starting value or within bounds. A different interval or starting value can lead to a different root, and no single initial search guarantees all roots."
+    },
+    {
+      "id": "sl18-kq-2",
+      "status": "approved",
+      "q": "Why does an intersection solve both equations?",
+      "model": "At an intersection, the same point lies on both graphs. Its coordinates therefore satisfy both equations simultaneously."
+    },
+    {
+      "id": "sl18-kq-3",
+      "status": "approved",
+      "q": "Why might a graph touch the x-axis without crossing it?",
+      "model": "A repeated real root can produce a tangency. Looking only for sign changes can miss such a root."
+    },
+    {
+      "id": "sl18-kq-4",
+      "status": "approved",
+      "q": "Why should a contextual solution be checked even when the calculator returns it?",
+      "model": "The system may have been entered incorrectly, or a mathematically valid value may violate a stated domain or real-world restriction."
     }
   ],
   "history": [],
