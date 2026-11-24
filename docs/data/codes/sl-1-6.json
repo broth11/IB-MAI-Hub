@@ -13,19 +13,87 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
+            "t": 12,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Rounding & Significant Figures."
+            "title": "Why precision matters",
+            "text": "Questions may require a specified number of decimal places or significant figures. Keep the requested form in mind when reporting a final answer."
           },
           {
-            "t": 201,
+            "t": 43,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Start with a large number",
+            "text": "The presenter uses $62562.3418$ to compare rounding to two decimal places and three significant figures."
+          },
+          {
+            "t": 54,
+            "type": "Procedure",
+            "title": "Round to two decimal places",
+            "text": "Keep the hundredths digit and inspect the next digit. Since it is 1, the result is $62562.34$."
+          },
+          {
+            "t": 118,
+            "type": "Key idea",
+            "title": "The first discarded digit",
+            "text": "A first discarded digit of 0 to 4 leaves the last retained digit unchanged; 5 to 9 rounds it up."
+          },
+          {
+            "t": 122,
+            "type": "Definition",
+            "title": "Counting significant figures",
+            "text": "Count from the first nonzero digit. Zeros inside a number can be significant; leading zeros are not."
+          },
+          {
+            "t": 144,
+            "type": "Worked example",
+            "title": "Round to three significant figures",
+            "text": "The first three digits are 6, 2 and 5. The next digit is 6, so $62562.3418$ becomes $62600$ to 3 significant figures."
+          },
+          {
+            "t": 174,
+            "type": "Key idea",
+            "title": "Why the final zeros appear",
+            "text": "The zeros in $62600$ preserve place value. Standard form $6.26\\times10^4$ also communicates the three significant figures clearly."
+          },
+          {
+            "t": 220,
+            "type": "Worked example",
+            "title": "A small number: decimal places",
+            "text": "The second number is $0.005826$. To two decimal places the result is $0.01$, since the third decimal digit is 5."
+          },
+          {
+            "t": 251,
+            "type": "Worked example",
+            "title": "A small number: significant figures",
+            "text": "Ignore the leading zeros; the first three significant digits are 5, 8 and 2. The next digit is 6, giving $0.00583$."
+          },
+          {
+            "t": 294,
+            "type": "Transition",
+            "title": "Apply rounding in a question",
+            "text": "The presenter moves from standalone examples to a volume result that must be given at two levels of precision."
+          },
+          {
+            "t": 318,
+            "type": "Worked example",
+            "title": "Volume to two decimal places",
+            "text": "For the volume result $369.408$, the third decimal digit is 8, so rounding to two decimal places gives $369.41$."
+          },
+          {
+            "t": 340,
+            "type": "Worked example",
+            "title": "Volume to three significant figures",
+            "text": "The first three significant digits of $369.408$ are 3, 6 and 9. The next digit is 4, so the result is $369$."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Zeros and stated precision",
+            "text": "A final zero in a whole number may be a placeholder, but it can also represent a stated level of precision. Without more information the number of significant figures may be ambiguous.",
+            "write": "Use standard form to make the precision explicit: $6.26\\times10^4$ has three significant figures.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 103,
@@ -34,114 +102,267 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
+            "t": 11,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Percentage Error."
+            "title": "Comparing an estimate with an exact value",
+            "text": "Percentage error expresses the size of the error relative to the exact value."
           },
           {
-            "t": 53,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
-          },
-          {
-            "t": 90,
+            "t": 29,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Estimate and actual count",
+            "text": "The presenter estimates 450 jelly beans when the actual number is 500, then asks for the percentage error."
           },
           {
-            "t": 127,
-            "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "t": 44,
+            "type": "Formula",
+            "title": "Percentage-error formula",
+            "text": "$\\left|\\frac{\\text{approximate}-\\text{exact}}{\\text{exact}}\\right|\\times100\\%$; the absolute value makes the reported error nonnegative."
+          },
+          {
+            "t": 77,
+            "type": "Procedure",
+            "title": "Substitute the values",
+            "text": "Put 450 in the approximate-value position and 500 in both exact-value positions."
+          },
+          {
+            "t": 130,
+            "type": "Calculation",
+            "title": "Find the percentage error",
+            "text": "The signed fraction is $-0.1$; its absolute value is $0.1$, or 10%."
+          },
+          {
+            "t": 176,
+            "type": "Interpretation",
+            "title": "Compare estimates",
+            "text": "A smaller percentage error indicates an estimate closer to the exact value relative to that exact value."
+          },
+          {
+            "t": 204,
+            "type": "Transition",
+            "title": "Apply the formula in a question",
+            "text": "The presenter switches to an estimate of $0.03$ and an exact value of $0.0375$."
+          },
+          {
+            "t": 253,
+            "type": "Calculation",
+            "title": "Compute the second error",
+            "text": "$|0.03-0.0375|/0.0375\\times100\\%=20\\%$."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "error",
+            "title": "Illustrative error estimates",
+            "text": "The presenter informally suggests possible errors for estimates of 490 and 750 when the exact count is 500. Those suggested percentages are not calculated.",
+            "write": "The errors are $|490-500|/500\\times100\\%=2\\%$ and $|750-500|/500\\times100\\%=50\\%$.",
+            "section": "worked"
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "sl-1-6-ican-1",
+      "id": "sl16-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for approximation, bounds and percentage error."
+      "text": "I can round a value to a stated number of decimal places or significant figures, including very small values."
     },
     {
-      "id": "sl-1-6-ican-2",
+      "id": "sl16-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can use standard form to show the intended number of significant figures."
+    },
+    {
+      "id": "sl16-ican-3",
+      "status": "approved",
+      "text": "I can find the lower and upper bounds implied by a rounded measurement and use appropriate inequality symbols."
+    },
+    {
+      "id": "sl16-ican-4",
+      "status": "approved",
+      "text": "I can calculate absolute, relative and percentage error when the exact value is known and nonzero."
+    },
+    {
+      "id": "sl16-ican-5",
+      "status": "approved",
+      "text": "I can interpret the size of an error in context and retain sufficient precision in intermediate working."
     }
   ],
   "ku": [
     {
-      "id": "sl-1-6-ku-1",
+      "id": "sl16-ku-1",
       "status": "approved",
-      "text": "Significant figures begin with the first nonzero digit."
+      "text": "Decimal places are counted from the decimal point. Significant figures begin at the first nonzero digit and then include zeros between significant digits."
     },
     {
-      "id": "sl-1-6-ku-2",
+      "id": "sl16-ku-2",
       "status": "approved",
-      "text": "For absolute error $|x-a|$ and accepted nonzero value $x$, percentage error is $\\frac{|x-a|}{|x|}\\times100\\%$."
+      "text": "Round using the first discarded digit: 0 to 4 leaves the final retained digit unchanged; 5 to 9 increases it by one. A carry can change earlier digits: $9.995$ to 3 significant figures is $10.0$."
     },
     {
-      "id": "sl-1-6-ku-3",
+      "id": "sl16-ku-3",
       "status": "approved",
-      "text": "If rounded to the nearest unit $h$, a nonnegative measurement $a$ lies in $[a-h/2,a+h/2)$."
+      "text": "Trailing zeros after a decimal point can communicate precision: $2.50$ has 3 significant figures. A whole number such as $2500$ can be ambiguous without additional information; $2.50\\times10^3$ makes 3 significant figures explicit."
+    },
+    {
+      "id": "sl16-ku-4",
+      "status": "approved",
+      "text": "If $x$ is rounded to the nearest unit $h$ and reported as $a$, its bounds are $a-h/2\\le x<a+h/2$ under the usual half-up convention. Restrict the interval further if the context requires it."
+    },
+    {
+      "id": "sl16-ku-5",
+      "status": "approved",
+      "text": "The absolute error is $|\\text{approximate}-\\text{exact}|$. Relative error divides the absolute error by the magnitude of the nonzero exact value; percentage error multiplies that ratio by $100\\%$."
+    },
+    {
+      "id": "sl16-ku-6",
+      "status": "approved",
+      "text": "Carry unrounded values through a calculation and round the final result as requested. The difference between two rounded values can amplify a small intermediate rounding error."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "sl16-map",
+    "needs": [
+      [
+        "SL 1.1",
+        "Standard form and powers of ten"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "SL 2.6",
+        "Assessing a model and its accuracy"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 3.1",
+        "Measurements, volume and units"
+      ]
+    ],
+    "status": "approved"
   },
   "misc": [
     {
-      "id": "sl-1-6-misc-1",
+      "id": "sl16-misc-1",
       "status": "approved",
-      "weak": "Using the entire rounding unit as the margin",
-      "better": "Use half the rounding unit on each side."
+      "weak": "$0.005826$ to 3 significant figures is $0.00582$.",
+      "better": "The next digit is 6, so the third significant digit rounds up: $0.00583$."
+    },
+    {
+      "id": "sl16-misc-2",
+      "status": "approved",
+      "weak": "A length of $12.4$ cm rounded to the nearest $0.1$ cm means $12.3\\le L\\le12.5$.",
+      "better": "Half the rounding unit is $0.05$ cm, so $12.35\\le L<12.45$ cm."
+    },
+    {
+      "id": "sl16-misc-3",
+      "status": "approved",
+      "weak": "The percentage error uses the estimate as the denominator.",
+      "better": "Use the magnitude of the nonzero exact value as the denominator."
+    },
+    {
+      "id": "sl16-misc-4",
+      "status": "approved",
+      "weak": "A negative signed difference means the percentage error is negative.",
+      "better": "Use absolute value to report the size of the percentage error; separately state whether the estimate is high or low."
+    },
+    {
+      "id": "sl16-misc-5",
+      "status": "approved",
+      "weak": "$9.995$ to 3 significant figures is $10$.",
+      "better": "Write $10.0$ to communicate 3 significant figures, using the specified rounding convention."
     }
   ],
   "terms": [
     {
-      "id": "sl-1-6-terms-1",
+      "id": "sl16-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Round to decimal places",
+      "text": "Count places to the right of the decimal point and use the next digit to decide whether to round up."
     },
     {
-      "id": "sl-1-6-terms-2",
+      "id": "sl16-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Round to significant figures",
+      "text": "Start at the first nonzero digit. Keep the requested number of significant digits and use the next digit."
+    },
+    {
+      "id": "sl16-term-3",
+      "status": "approved",
+      "term": "State bounds",
+      "text": "Give the complete interval of values consistent with the stated rounding, including which endpoints are included."
+    },
+    {
+      "id": "sl16-term-4",
+      "status": "approved",
+      "term": "Calculate percentage error",
+      "text": "Identify the approximate and exact values, show the difference relative to the exact value, then report a percentage."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "sl16-formula-1",
+      "status": "approved",
+      "text": "Percentage error: $\\left|\\dfrac{\\text{approximate value}-\\text{exact value}}{\\text{exact value}}\\right|\\times100\\%$, for a nonzero exact value."
+    }
+  ],
   "gdc": [],
   "worked": {
+    "id": "sl16-worked",
     "status": "approved",
-    "prompt": "A length is recorded as $12.4$ cm to the nearest $0.1$ cm. State its bounds.",
+    "prompt": "A metal rod has an exact length of $12.376$ cm. A student records the length as $12.4$ cm, rounded to the nearest $0.1$ cm.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "State the interval of lengths that would round to $12.4$ cm.",
         "marks": 2,
-        "a": "$12.35\\le L<12.45$ cm.",
+        "a": "Half the rounding unit is $0.05$ cm. Therefore $12.35\\le L<12.45$ cm.",
         "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Calculate the percentage error in the recorded length, correct to 3 significant figures.",
+        "marks": 2,
+        "a": "$\\dfrac{|12.4-12.376|}{12.376}\\times100\\%=0.193923\\ldots\\%\\approx0.194\\%$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "State whether the recorded length is an underestimate or an overestimate.",
+        "marks": 1,
+        "a": "It is an overestimate, because $12.4>12.376$.",
+        "m": "R1"
       }
     ]
   },
   "kq": [
     {
-      "id": "sl-1-6-kq-1",
+      "id": "sl16-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Use half the rounding unit on each side."
+      "q": "Why are the final zeros in $6.26\\times10^4$ more informative than those in $62600$?",
+      "model": "The coefficient explicitly contains three significant figures. The whole-number form alone does not distinguish precision from place-value placeholders."
+    },
+    {
+      "id": "sl16-kq-2",
+      "status": "approved",
+      "q": "Why is the upper bound for a value rounded to $12.4$ cm normally excluded?",
+      "model": "With the stated half-up rounding convention, $12.45$ cm rounds to $12.5$ cm, not $12.4$ cm."
+    },
+    {
+      "id": "sl16-kq-3",
+      "status": "approved",
+      "q": "Why can two errors of the same absolute size have different percentage errors?",
+      "model": "Percentage error compares the error with the exact value. The same absolute error is a larger fraction of a smaller nonzero exact value."
+    },
+    {
+      "id": "sl16-kq-4",
+      "status": "approved",
+      "q": "Why does a nonnegative percentage error not indicate whether an estimate was too high or too low?",
+      "model": "The absolute value removes the sign. Compare the estimate with the exact value separately to state direction."
     }
   ],
   "history": [],
