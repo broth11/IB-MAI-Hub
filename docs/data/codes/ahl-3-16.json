@@ -1,0 +1,395 @@
+{
+  "code": "AHL 3.16",
+  "slug": "ahl-3-16",
+  "title": "Graph algorithms: spanning trees, Chinese postman, travelling salesman",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 315,
+        "title": "Graph Theory",
+        "videoId": "fTASH0uqQxg",
+        "partial": true,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "A graph theory overview",
+            "text": "The presenter introduces networks and their applications."
+          },
+          {
+            "t": 74,
+            "type": "Definition",
+            "title": "Vertices, edges and degrees",
+            "text": "The example identifies vertices, edges and vertex degrees."
+          },
+          {
+            "t": 105,
+            "type": "Concept",
+            "title": "Directed and undirected edges",
+            "text": "The presenter explains the meaning of arrows on edges."
+          },
+          {
+            "t": 140,
+            "type": "Concept",
+            "title": "Weights and connectivity",
+            "text": "Edge weights and connected networks are introduced."
+          },
+          {
+            "t": 226,
+            "type": "Concept",
+            "title": "Subgraphs and route names",
+            "text": "The video names walks, trails, paths, circuits and cycles without developing all definitions."
+          },
+          {
+            "t": 291,
+            "type": "Method",
+            "title": "Adjacency tables and matrices",
+            "text": "The presenter discusses adjacency data and matrix powers."
+          },
+          {
+            "t": 437,
+            "type": "Application",
+            "title": "Minimum spanning trees",
+            "text": "A minimum spanning tree connects all vertices at minimum total edge weight."
+          },
+          {
+            "t": 476,
+            "type": "Method",
+            "title": "Prim and Kruskal are named",
+            "text": "The presenter names the two MST algorithms but does not trace their steps."
+          },
+          {
+            "t": 520,
+            "type": "Application",
+            "title": "The postman context",
+            "text": "The video introduces edge coverage; see the correction on repeated edges."
+          },
+          {
+            "t": 576,
+            "type": "Application",
+            "title": "The travelling-salesman context",
+            "text": "The video introduces vertex visits and a Hamiltonian cycle; see the page for precise route rules."
+          },
+          {
+            "t": 627,
+            "type": "Overview",
+            "title": "Review and practise",
+            "text": "The presenter closes with a high-level review."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "error",
+            "title": "A postman route may repeat edges",
+            "text": "The video describes Chinese postman as using each edge exactly once. A closed postman route must use every edge at least once, and repeats are necessary when the original connected graph has odd-degree vertices.",
+            "write": "Pair odd vertices using minimum-weight paths, duplicate those paths and find an Eulerian circuit in the augmented graph."
+          },
+          {
+            "kind": "watch",
+            "title": "Hamiltonian cycle versus repeated roads",
+            "text": "A classical Hamiltonian cycle visits each vertex once before returning to its start. The video’s suggestion that edges can be repeated conflicts with that definition. In a completed distance table, expanding a virtual edge back into an original road network can revisit intermediate locations.",
+            "write": "State whether the route is a Hamiltonian cycle in the completed graph or an expanded walk in the original network."
+          },
+          {
+            "kind": "omission",
+            "title": "Algorithm traces and bounds are not developed",
+            "text": "The video names MST and routing problems but does not demonstrate Prim, Kruskal, odd-vertex pairing, nearest neighbour or the deleted-vertex lower bound. The page works through these methods.",
+            "write": "Record each algorithm’s choices and distinguish a bound from a proven optimum."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "The times follow captions; playback and on-screen network details have not been independently verified.",
+            "write": "Use the graph and weights stated in the question."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-3-16-ican-1",
+      "status": "approved",
+      "text": "I can distinguish walks, trails, paths, circuits and cycles using stated conventions."
+    },
+    {
+      "id": "ahl-3-16-ican-2",
+      "status": "approved",
+      "text": "I can test Eulerian trail and circuit conditions and distinguish them from Hamiltonian paths and cycles."
+    },
+    {
+      "id": "ahl-3-16-ican-3",
+      "status": "approved",
+      "text": "I can apply Kruskal’s and Prim’s algorithms to find a minimum spanning tree."
+    },
+    {
+      "id": "ahl-3-16-ican-4",
+      "status": "approved",
+      "text": "I can solve a closed Chinese postman problem on a connected weighted undirected graph with up to four odd vertices."
+    },
+    {
+      "id": "ahl-3-16-ican-5",
+      "status": "approved",
+      "text": "I can obtain a travelling-salesman upper bound by nearest neighbour and a lower bound by deleting a vertex."
+    },
+    {
+      "id": "ahl-3-16-ican-6",
+      "status": "approved",
+      "text": "I can explain when a route or bound proves an optimum and when further checking is needed."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-16-ku-1",
+      "status": "approved",
+      "text": "For this page, a walk may repeat vertices and edges; a trail does not repeat edges; a path does not repeat vertices. A circuit is a closed trail, and a cycle is a closed path with no repeated vertices except the initial/final vertex. Check the definitions used by a particular course or question."
+    },
+    {
+      "id": "ahl-3-16-ku-2",
+      "status": "approved",
+      "text": "An Eulerian trail uses every edge exactly once; an Eulerian circuit does so and returns to its start. For an undirected graph whose non-isolated vertices are connected, an Eulerian circuit exists if all degrees are even; an open Eulerian trail exists if exactly two degrees are odd, starting and ending at those vertices."
+    },
+    {
+      "id": "ahl-3-16-ku-3",
+      "status": "approved",
+      "text": "A Hamiltonian path visits every vertex exactly once. A Hamiltonian cycle visits every vertex once and returns to its starting vertex, which is repeated only to close the cycle. Eulerian conditions concern edges; Hamiltonian conditions concern vertices."
+    },
+    {
+      "id": "ahl-3-16-ku-4",
+      "status": "approved",
+      "text": "A spanning tree connects every vertex without cycles. For a connected weighted undirected graph, a minimum spanning tree (MST) minimises total edge weight among all spanning trees. An MST with $n$ vertices has $n-1$ edges."
+    },
+    {
+      "id": "ahl-3-16-ku-5",
+      "status": "approved",
+      "text": "Kruskal: order edges from least weight upward and add the next edge that does not create a cycle. Stop when all vertices are connected with $n-1$ edges. Ties can give more than one valid MST."
+    },
+    {
+      "id": "ahl-3-16-ku-6",
+      "status": "approved",
+      "text": "Prim: start with one vertex and repeatedly choose the least-weight edge with exactly one endpoint in the growing tree. In a weight matrix, compare entries from selected vertices to unselected vertices, ignoring unavailable or within-tree entries."
+    },
+    {
+      "id": "ahl-3-16-ku-7",
+      "status": "approved",
+      "text": "For the closed Chinese postman problem on a connected weighted undirected graph with nonnegative weights, every edge must be covered at least once and the route returns to its start. If all degrees are even, the sum of all edge weights is achievable without repeats."
+    },
+    {
+      "id": "ahl-3-16-ku-8",
+      "status": "approved",
+      "text": "When odd-degree vertices exist, find shortest-path distances between them and pair all odd vertices so the total paired distance is minimal. Duplicate the edges along those paths. The augmented connected multigraph has all even degrees, so an Eulerian circuit gives a shortest closed route. With four odd vertices, compare all three pairings."
+    },
+    {
+      "id": "ahl-3-16-ku-9",
+      "status": "approved",
+      "text": "The classical travelling salesman problem (TSP) seeks a minimum-weight Hamiltonian cycle on a weighted complete graph. The start is repeated at the end only to close the cycle. The answer is not generally an Eulerian route and need not use every edge."
+    },
+    {
+      "id": "ahl-3-16-ku-10",
+      "status": "approved",
+      "text": "Nearest neighbour starts at a chosen vertex, repeatedly visits a cheapest unvisited neighbour, then returns to the start. Its cycle gives an upper bound on the optimal tour, but the greedy method alone does not prove it is optimal. Ties and starting choice can change the result."
+    },
+    {
+      "id": "ahl-3-16-ku-11",
+      "status": "approved",
+      "text": "For a deleted-vertex lower bound, remove a chosen vertex, find an MST on the remaining graph, then add the weights of the two cheapest distinct edges incident to the deleted vertex. Any Hamiltonian cycle uses two such incident edges and leaves a spanning path on the remaining vertices, so its weight is at least this sum."
+    },
+    {
+      "id": "ahl-3-16-ku-12",
+      "status": "approved",
+      "text": "If a practical route network is incomplete, a least-distance table can define a complete graph on required stops. A Hamiltonian cycle in that table can expand to a walk in the original network that revisits intermediate vertices or edges; state the interpretation."
+    },
+    {
+      "id": "ahl-3-16-ku-13",
+      "status": "approved",
+      "text": "If a feasible tour equals a valid lower bound, it is optimal. If upper and lower bounds differ, they do not by themselves determine the optimum. Exhaustive enumeration can prove optimality for a sufficiently small graph."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-16-misc-1",
+      "status": "approved",
+      "weak": "The Chinese postman always traverses every edge exactly once.",
+      "better": "A closed postman route covers every edge at least once and repeats minimum-weight paths if odd vertices require it."
+    },
+    {
+      "id": "ahl-3-16-misc-2",
+      "status": "approved",
+      "weak": "A Hamiltonian cycle must use every edge.",
+      "better": "It visits each vertex exactly once before returning to its start; most graph edges may be unused."
+    },
+    {
+      "id": "ahl-3-16-misc-3",
+      "status": "approved",
+      "weak": "The nearest-neighbour tour is always optimal.",
+      "better": "It is a feasible tour and therefore an upper bound. Compare with a lower bound or prove optimality separately."
+    },
+    {
+      "id": "ahl-3-16-misc-4",
+      "status": "approved",
+      "weak": "A deleted-vertex lower bound is itself necessarily a valid tour.",
+      "better": "It is a bound built from an MST and two incident edges; it need not form a Hamiltonian cycle."
+    },
+    {
+      "id": "ahl-3-16-misc-5",
+      "status": "approved",
+      "weak": "Prim may choose the globally cheapest edge even if both endpoints are outside the growing tree.",
+      "better": "Prim chooses the cheapest edge crossing from the current tree to an unvisited vertex."
+    },
+    {
+      "id": "ahl-3-16-misc-6",
+      "status": "approved",
+      "weak": "Pair four odd vertices using the cheapest single pair only.",
+      "better": "Compare the total of all three complete pairings, using shortest-path distances for each pair."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-16-terms-1",
+      "status": "approved",
+      "term": "Walk, trail and path",
+      "text": "A walk may repeat edges and vertices; a trail does not repeat edges; a path does not repeat vertices under the conventions used here."
+    },
+    {
+      "id": "ahl-3-16-terms-2",
+      "status": "approved",
+      "term": "Eulerian circuit",
+      "text": "A closed trail that uses every edge exactly once."
+    },
+    {
+      "id": "ahl-3-16-terms-3",
+      "status": "approved",
+      "term": "Hamiltonian cycle",
+      "text": "A cycle that visits every vertex once before returning to its starting point."
+    },
+    {
+      "id": "ahl-3-16-terms-4",
+      "status": "approved",
+      "term": "Minimum spanning tree",
+      "text": "A spanning tree of minimum total weight."
+    },
+    {
+      "id": "ahl-3-16-terms-5",
+      "status": "approved",
+      "term": "Chinese postman route",
+      "text": "A shortest closed walk that traverses every edge at least once."
+    },
+    {
+      "id": "ahl-3-16-terms-6",
+      "status": "approved",
+      "term": "Upper and lower bounds",
+      "text": "A feasible tour gives an upper bound; a valid relaxation such as the deleted-vertex construction gives a lower bound."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-16-formula-1",
+      "status": "approved",
+      "text": "For a connected undirected graph, a closed Eulerian circuit requires every vertex degree to be even; an open Eulerian trail requires exactly two odd vertices."
+    },
+    {
+      "id": "ahl-3-16-formula-2",
+      "status": "approved",
+      "text": "Closed postman weight $=$ total original edge weight $+$ minimum total shortest-path weight pairing the odd vertices."
+    },
+    {
+      "id": "ahl-3-16-formula-3",
+      "status": "approved",
+      "text": "Deleted-vertex TSP lower bound $=$ MST weight on remaining vertices $+$ weights of the two cheapest distinct incident edges at the deleted vertex."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A connected, undirected, weighted complete network has vertices $A,B,C,D$. Its edge weights are $AB=2$, $AC=4$, $AD=5$, $BC=3$, $BD=6$ and $CD=1$. Weights represent kilometres.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Determine whether the original graph has an Eulerian trail or circuit.",
+        "marks": 2,
+        "a": "Each vertex has degree $3$, so there are four odd vertices. The graph is connected but has neither an Eulerian circuit nor an Eulerian trail using every edge exactly once.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Use Kruskal’s algorithm to find an MST.",
+        "marks": 3,
+        "a": "List edges in increasing order: $CD(1),AB(2),BC(3),AC(4),AD(5),BD(6)$. Select $CD$, then $AB$, then $BC$: none creates a cycle and all four vertices are connected. Stop with total weight $1+2+3=6$ km.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Use Prim’s algorithm from $A$ and record the available choices.",
+        "marks": 3,
+        "a": "From $\\{A\\}$, choose $AB(2)$ from $AB,AC,AD$. From $\\{A,B\\}$, the least crossing edge is $BC(3)$; from $\\{A,B,C\\}$, it is $CD(1)$. The resulting tree has weight $6$ km. In a weight matrix these are the minimum entries from selected rows to unselected columns at each stage.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Find the minimum weight of a closed Chinese postman route and give one such route.",
+        "marks": 5,
+        "a": "All four vertices are odd. The shortest-path pairings are $(AB,CD)$: $2+1=3$; $(AC,BD)$: $4+4=8$, using $B-C-D$ for the shortest $BD$ route; and $(AD,BC)$: $5+3=8$. Duplicate $AB$ and $CD$. The original edge sum is $21$, so the minimum closed route has weight $21+3=24$ km. One route is $A-B-A-C-B-D-C-D-A$; it covers every original edge, repeats $AB$ and $CD$, and returns to $A$.",
+        "m": "M1 M1 A1 M1 A1"
+      },
+      {
+        "label": "e",
+        "q": "Apply nearest neighbour from $A$ to obtain a TSP upper bound.",
+        "marks": 2,
+        "a": "Choose $A\\to B$ (2), then $B\\to C$ (3), then $C\\to D$ (1), and return $D\\to A$ (5). The feasible cycle $A-B-C-D-A$ has weight $11$ km, an upper bound for the optimal tour.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "f",
+        "q": "Find a deleted-vertex lower bound by deleting $A$. Does it prove the nearest-neighbour tour is optimal?",
+        "marks": 3,
+        "a": "On $B,C,D$, an MST uses $CD(1)$ and $BC(3)$, total $4$. The two cheapest edges incident to $A$ are $AB(2)$ and $AC(4)$. The lower bound is $4+2+4=10$ km. Since $10<11$, the two bounds alone do not prove that the tour of weight $11$ is optimal.",
+        "m": "M1 A1 R1"
+      },
+      {
+        "label": "g",
+        "q": "Determine the exact optimal TSP weight by checking the distinct tours from $A$, up to reversal.",
+        "marks": 3,
+        "a": "The three distinct tours have weights $A-B-C-D-A: 2+3+1+5=11$, $A-B-D-C-A: 2+6+1+4=13$, and $A-C-B-D-A: 4+3+6+5=18$ km. Hence the optimal weight is $11$ km; here the nearest-neighbour tour happens to be optimal.",
+        "m": "M1 M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-16-kq-1",
+      "status": "approved",
+      "q": "Why are odd vertices paired for a closed postman route?",
+      "model": "A closed Eulerian route requires even degree at every vertex. Duplicating a path changes the parity of its two endpoints and changes intermediate degrees by two, so pairing odd vertices makes all degrees even."
+    },
+    {
+      "id": "ahl-3-16-kq-2",
+      "status": "approved",
+      "q": "Why does nearest neighbour give an upper bound?",
+      "model": "It produces a feasible tour. The minimum over all feasible tours cannot exceed the weight of that particular tour."
+    },
+    {
+      "id": "ahl-3-16-kq-3",
+      "status": "approved",
+      "q": "Why is the deleted-vertex construction a lower bound?",
+      "model": "Any Hamiltonian tour uses two edges at the deleted vertex, at least as costly as its two cheapest. Removing the vertex leaves a spanning path whose weight is at least that of an MST."
+    },
+    {
+      "id": "ahl-3-16-kq-4",
+      "status": "approved",
+      "q": "Why do equal upper and lower bounds prove optimality?",
+      "model": "The optimum is at least the lower bound and at most the weight of the feasible upper-bound tour. If these agree, the optimum must equal both."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
