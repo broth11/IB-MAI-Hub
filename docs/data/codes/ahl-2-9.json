@@ -1,0 +1,143 @@
+{
+  "code": "AHL 2.9",
+  "slug": "ahl-2-9",
+  "title": "Further models: logistic, logarithmic, piecewise",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 206,
+        "title": "Functions: Overview & Types",
+        "videoId": "gp42GXm-BzE",
+        "partial": true,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Functions: Overview & Types."
+          },
+          {
+            "t": 85,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 309,
+        "title": "Graphs of Trig Functions",
+        "videoId": "3rAsO8GGsWY",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Graphs of Trig Functions."
+          },
+          {
+            "t": 45,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 84,
+            "type": "Formula",
+            "title": "Formula discussion",
+            "text": "The presenter discusses a formula."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-2-9-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for further models: logistic, logarithmic, piecewise."
+    },
+    {
+      "id": "ahl-2-9-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-2-9-ku-1",
+      "status": "approved",
+      "text": "A logarithmic model is defined only where its logarithm argument is positive."
+    },
+    {
+      "id": "ahl-2-9-ku-2",
+      "status": "approved",
+      "text": "A logistic model can approach an upper limiting value; interpret that limit in context."
+    },
+    {
+      "id": "ahl-2-9-ku-3",
+      "status": "approved",
+      "text": "For periodic models, identify the midline, amplitude, period and phase shift, and use consistent angle units."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "ahl-2-9-misc-1",
+      "status": "approved",
+      "weak": "Treating the multiplier inside sine as the period",
+      "better": "For $\\sin(bx)$ in radians, the period is $2\\pi/|b|$."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-2-9-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "ahl-2-9-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "For $y=4+3\\sin(2x)$, with $x$ in radians, find the midline, amplitude and period.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "The midline is $y=4$, amplitude $3$ and period $2\\pi/2=\\pi$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-2-9-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "For $\\sin(bx)$ in radians, the period is $2\\pi/|b|$."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

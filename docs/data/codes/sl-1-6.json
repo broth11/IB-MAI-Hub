@@ -1,0 +1,149 @@
+{
+  "code": "SL 1.6",
+  "slug": "sl-1-6",
+  "title": "Approximation, bounds and percentage error",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 101,
+        "title": "Rounding & Significant Figures",
+        "videoId": "xYGuJqBJEGc",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Rounding & Significant Figures."
+          },
+          {
+            "t": 201,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 103,
+        "title": "Percentage Error",
+        "videoId": "dTgC73P4R84",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Percentage Error."
+          },
+          {
+            "t": 53,
+            "type": "Formula",
+            "title": "Formula discussion",
+            "text": "The presenter discusses a formula."
+          },
+          {
+            "t": 90,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 127,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-1-6-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for approximation, bounds and percentage error."
+    },
+    {
+      "id": "sl-1-6-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-1-6-ku-1",
+      "status": "approved",
+      "text": "Significant figures begin with the first nonzero digit."
+    },
+    {
+      "id": "sl-1-6-ku-2",
+      "status": "approved",
+      "text": "For absolute error $|x-a|$ and accepted nonzero value $x$, percentage error is $\\frac{|x-a|}{|x|}\\times100\\%$."
+    },
+    {
+      "id": "sl-1-6-ku-3",
+      "status": "approved",
+      "text": "If rounded to the nearest unit $h$, a nonnegative measurement $a$ lies in $[a-h/2,a+h/2)$."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "sl-1-6-misc-1",
+      "status": "approved",
+      "weak": "Using the entire rounding unit as the margin",
+      "better": "Use half the rounding unit on each side."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-1-6-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "sl-1-6-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A length is recorded as $12.4$ cm to the nearest $0.1$ cm. State its bounds.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "$12.35\\le L<12.45$ cm.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-1-6-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Use half the rounding unit on each side."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

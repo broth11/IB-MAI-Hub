@@ -1,0 +1,143 @@
+{
+  "code": "SL 1.8",
+  "slug": "sl-1-8",
+  "title": "Solving systems and polynomial equations with technology",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 116,
+        "title": "Solving Simultaneous Equations using Matrices",
+        "videoId": "ROMBkTGUKT0",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Solving Simultaneous Equations using Matrices."
+          },
+          {
+            "t": 140,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 400,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 208,
+        "title": "GDC Tips: Using nSolve to Solve Equations",
+        "videoId": "4GlgeLdiu9s",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on GDC Tips: Using nSolve to Solve Equations."
+          },
+          {
+            "t": 46,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-1-8-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for solving systems and polynomial equations with technology."
+    },
+    {
+      "id": "sl-1-8-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-1-8-ku-1",
+      "status": "approved",
+      "text": "A system can be solved graphically at intersections or numerically using a suitable calculator solver."
+    },
+    {
+      "id": "sl-1-8-ku-2",
+      "status": "approved",
+      "text": "A polynomial root is an $x$-value for which $f(x)=0$."
+    },
+    {
+      "id": "sl-1-8-ku-3",
+      "status": "approved",
+      "text": "Graph first to identify the number and approximate location of solutions; a numerical solver may return only one solution per starting value."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "sl-1-8-misc-1",
+      "status": "approved",
+      "weak": "Assuming one numerical root is the only root",
+      "better": "Inspect the graph and search other intervals or starting values."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-1-8-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "sl-1-8-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Solve $x^2-5x+6=0$ and check the solutions.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "$(x-2)(x-3)=0$, so $x=2$ or $x=3$. Both give zero when substituted.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-1-8-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Inspect the graph and search other intervals or starting values."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

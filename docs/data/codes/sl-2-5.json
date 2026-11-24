@@ -1,0 +1,143 @@
+{
+  "code": "SL 2.5",
+  "slug": "sl-2-5",
+  "title": "Modelling with standard functions",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 206,
+        "title": "Functions: Overview & Types",
+        "videoId": "gp42GXm-BzE",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Functions: Overview & Types."
+          },
+          {
+            "t": 85,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 309,
+        "title": "Graphs of Trig Functions",
+        "videoId": "3rAsO8GGsWY",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Graphs of Trig Functions."
+          },
+          {
+            "t": 45,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 84,
+            "type": "Formula",
+            "title": "Formula discussion",
+            "text": "The presenter discusses a formula."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-2-5-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for modelling with standard functions."
+    },
+    {
+      "id": "sl-2-5-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-2-5-ku-1",
+      "status": "approved",
+      "text": "Choose a function by the shape and context of the data, not just by a calculator fit."
+    },
+    {
+      "id": "sl-2-5-ku-2",
+      "status": "approved",
+      "text": "A linear model has constant additive change; an exponential model has a constant multiplicative factor over equal intervals."
+    },
+    {
+      "id": "sl-2-5-ku-3",
+      "status": "approved",
+      "text": "Interpret parameters with units and consider whether predictions lie within the observed range."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "sl-2-5-misc-1",
+      "status": "approved",
+      "weak": "Using $500+50t$ for repeated percentage growth",
+      "better": "Each percentage increase is applied to the current population."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-2-5-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "sl-2-5-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A population starts at 500 and increases by 10% each year. Write a model and find the value after two years.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "$P(t)=500(1.1)^t$, so $P(2)=605$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-2-5-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Each percentage increase is applied to the current population."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

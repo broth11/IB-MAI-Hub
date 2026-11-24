@@ -1,0 +1,110 @@
+{
+  "code": "AHL 2.10",
+  "slug": "ahl-2-10",
+  "title": "Scaling and linearizing data with logarithms",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 409,
+        "title": "Non-Linear Regression",
+        "videoId": "R7MZCpcS3fI",
+        "partial": true,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Non-Linear Regression."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-2-10-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for scaling and linearizing data with logarithms."
+    },
+    {
+      "id": "ahl-2-10-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-2-10-ku-1",
+      "status": "approved",
+      "text": "A power model $y=ax^b$ becomes $\\ln y=\\ln a+b\\ln x$ for positive $x,y$."
+    },
+    {
+      "id": "ahl-2-10-ku-2",
+      "status": "approved",
+      "text": "An exponential model $y=ab^x$ becomes $\\ln y=\\ln a+x\\ln b$, with $a,b>0$."
+    },
+    {
+      "id": "ahl-2-10-ku-3",
+      "status": "approved",
+      "text": "Plot the transformed variables and interpret the fitted line using the chosen axes."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "ahl-2-10-misc-1",
+      "status": "approved",
+      "weak": "Reading the intercept of a log-transformed graph directly as $a$",
+      "better": "If the intercept is $\\ln a$, exponentiate it to recover $a$."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-2-10-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "ahl-2-10-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A graph of $\\ln y$ against $\\ln x$ is $Y=2X+\\ln3$. Give the original model.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "$\\ln y=2\\ln x+\\ln3$, so $y=3x^2$ for $x>0$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-2-10-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "If the intercept is $\\ln a$, exponentiate it to recover $a$."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

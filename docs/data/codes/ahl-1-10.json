@@ -1,0 +1,94 @@
+{
+  "code": "AHL 1.10",
+  "slug": "ahl-1-10",
+  "title": "Rational exponents",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": []
+  },
+  "ican": [
+    {
+      "id": "ahl-1-10-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for rational exponents."
+    },
+    {
+      "id": "ahl-1-10-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-1-10-ku-1",
+      "status": "approved",
+      "text": "For suitable real values, $a^{m/n}=\\sqrt[n]{a^m}$."
+    },
+    {
+      "id": "ahl-1-10-ku-2",
+      "status": "approved",
+      "text": "For an even root, the radicand must be nonnegative in the real numbers."
+    },
+    {
+      "id": "ahl-1-10-ku-3",
+      "status": "approved",
+      "text": "Negative exponents give reciprocals, provided the base is nonzero."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "ahl-1-10-misc-1",
+      "status": "approved",
+      "weak": "Treating $a^{m/n}$ as $a^m/n$",
+      "better": "The denominator indicates a root, not division by $n$."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-1-10-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "ahl-1-10-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Evaluate $16^{3/4}$ and $8^{-2/3}$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "$16^{3/4}=2^3=8$ and $8^{-2/3}=1/2^2=1/4$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-1-10-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "The denominator indicates a root, not division by $n$."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

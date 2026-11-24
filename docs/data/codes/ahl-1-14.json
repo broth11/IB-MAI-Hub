@@ -1,0 +1,176 @@
+{
+  "code": "AHL 1.14",
+  "slug": "ahl-1-14",
+  "title": "Matrices",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 115,
+        "title": "Introduction to Matrices",
+        "videoId": "F7IPp8K5zGY",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Introduction to Matrices."
+          },
+          {
+            "t": 144,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 457,
+            "type": "Formula",
+            "title": "Formula discussion",
+            "text": "The presenter discusses a formula."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 116,
+        "title": "Solving Simultaneous Equations using Matrices",
+        "videoId": "ROMBkTGUKT0",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Solving Simultaneous Equations using Matrices."
+          },
+          {
+            "t": 140,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 400,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 118,
+        "title": "GDC Tips: Matrices",
+        "videoId": "k3u4fPBhaRM",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on GDC Tips: Matrices."
+          },
+          {
+            "t": 64,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          },
+          {
+            "t": 125,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-1-14-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for matrices."
+    },
+    {
+      "id": "ahl-1-14-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-1-14-ku-1",
+      "status": "approved",
+      "text": "Matrix addition requires the same dimensions."
+    },
+    {
+      "id": "ahl-1-14-ku-2",
+      "status": "approved",
+      "text": "For $AB$ to exist, the number of columns of $A$ must equal the number of rows of $B$."
+    },
+    {
+      "id": "ahl-1-14-ku-3",
+      "status": "approved",
+      "text": "Matrix multiplication is generally not commutative. When an inverse exists, $A^{-1}A=I$."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "ahl-1-14-misc-1",
+      "status": "approved",
+      "weak": "Multiplying corresponding entries to find a matrix product",
+      "better": "Each product entry comes from a row of the first matrix and a column of the second."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-1-14-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "ahl-1-14-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Find $AB$ for $A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$ and $B=\\begin{pmatrix}2&0\\\\3&1\\end{pmatrix}$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "$AB=\\begin{pmatrix}8&2\\\\3&1\\end{pmatrix}$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-1-14-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Each product entry comes from a row of the first matrix and a column of the second."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

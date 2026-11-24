@@ -1,0 +1,182 @@
+{
+  "code": "SL 1.7",
+  "slug": "sl-1-7",
+  "title": "Amortization and annuities",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 108,
+        "title": "Loans & Amortization",
+        "videoId": "HtU9_eBWzRE",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Loans & Amortization."
+          },
+          {
+            "t": 74,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 252,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 109,
+        "title": "Annuities",
+        "videoId": "GH2gKGF_H8s",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Annuities."
+          },
+          {
+            "t": 124,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 167,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 110,
+        "title": "GDC Tips: Finance Solver (TVM Solver)",
+        "videoId": "15Ge9Gxd2Wk",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on GDC Tips: Finance Solver (TVM Solver)."
+          },
+          {
+            "t": 49,
+            "type": "Formula",
+            "title": "Formula discussion",
+            "text": "The presenter discusses a formula."
+          },
+          {
+            "t": 77,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          },
+          {
+            "t": 109,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-1-7-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for amortization and annuities."
+    },
+    {
+      "id": "sl-1-7-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-1-7-ku-1",
+      "status": "approved",
+      "text": "Amortization repays a loan through payments that cover interest and reduce the principal."
+    },
+    {
+      "id": "sl-1-7-ku-2",
+      "status": "approved",
+      "text": "An annuity is a series of equal payments at regular intervals. The timing of payments changes the value."
+    },
+    {
+      "id": "sl-1-7-ku-3",
+      "status": "approved",
+      "text": "For finance calculations, match the interest rate, compounding periods and payment frequency, and check the sign convention."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "sl-1-7-misc-1",
+      "status": "approved",
+      "weak": "Subtracting the payment before adding interest when payment is at the end",
+      "better": "Apply interest first for an end-of-period payment."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-1-7-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "sl-1-7-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A loan balance is $1000$. It earns 1% interest over a month and then a payment of $100$ is made. Find the new balance.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "Interest is $10$, so the new balance is $1000+10-100=910$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-1-7-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Apply interest first for an end-of-period payment."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

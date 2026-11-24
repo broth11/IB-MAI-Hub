@@ -1,0 +1,94 @@
+{
+  "code": "SL 2.6",
+  "slug": "sl-2-6",
+  "title": "Modelling skills",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": []
+  },
+  "ican": [
+    {
+      "id": "sl-2-6-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for modelling skills."
+    },
+    {
+      "id": "sl-2-6-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-2-6-ku-1",
+      "status": "approved",
+      "text": "Define variables and units before building a model."
+    },
+    {
+      "id": "sl-2-6-ku-2",
+      "status": "approved",
+      "text": "Compare predictions with observations and consider residuals, restrictions and assumptions."
+    },
+    {
+      "id": "sl-2-6-ku-3",
+      "status": "approved",
+      "text": "A model is an approximation; extrapolation outside the observed data may be unreliable."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "sl-2-6-misc-1",
+      "status": "approved",
+      "weak": "Treating a good fit within the data range as proof of reliable extrapolation",
+      "better": "Check assumptions and explain why behavior may change outside the data."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-2-6-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "sl-2-6-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A model predicts 42 items while 38 are observed. Find observed minus predicted and interpret it.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "The residual is $38-42=-4$: the model overpredicts by 4 items.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-2-6-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Check assumptions and explain why behavior may change outside the data."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

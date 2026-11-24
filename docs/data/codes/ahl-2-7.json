@@ -1,0 +1,122 @@
+{
+  "code": "AHL 2.7",
+  "slug": "ahl-2-7",
+  "title": "Composite and inverse functions",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 209,
+        "title": "Domain & Range, Composite, Inverse",
+        "videoId": "7cr7jeivCsA",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Domain & Range, Composite, Inverse."
+          },
+          {
+            "t": 70,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 371,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-2-7-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for composite and inverse functions."
+    },
+    {
+      "id": "ahl-2-7-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-2-7-ku-1",
+      "status": "approved",
+      "text": "The composite $(f\\circ g)(x)=f(g(x))$ applies $g$ first, then $f$."
+    },
+    {
+      "id": "ahl-2-7-ku-2",
+      "status": "approved",
+      "text": "To find an inverse, first ensure the function is one-to-one on its domain, then swap input and output and solve."
+    },
+    {
+      "id": "ahl-2-7-ku-3",
+      "status": "approved",
+      "text": "The domain of the inverse equals the range of the original function."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "ahl-2-7-misc-1",
+      "status": "approved",
+      "weak": "Reading $f\\circ g$ as apply $f$ first",
+      "better": "Work from the inner function outward."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-2-7-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "ahl-2-7-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Let $f(x)=2x+1$ and $g(x)=x^2$. Find $(f\\circ g)(x)$ and $f^{-1}(x)$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "$(f\\circ g)(x)=2x^2+1$ and $f^{-1}(x)=(x-1)/2$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-2-7-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Work from the inner function outward."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

@@ -19,9 +19,11 @@ function keyed(t) {
 
 const R = {
   video(C, ctx) {
-    if (C.videos.status !== 'approved' || !C.videos.items.length) return '';
+    if (C.videos.status !== 'approved') return '';
+    if (!C.videos.items.length) return '<div class="small-note">No matching video has been mapped to this syllabus code yet.</div>';
     const v = C.videos.items; const cur = v[ctx.vid || 0];
     const tabs = v.length > 1 ? `<div class="vid-row" role="tablist">${v.map((x, i) => `<button class="vid-tab${x === cur ? ' is-on' : ''}" data-vid="${i}" role="tab">${esc(x.title)}${x.partial ? ' <span class="also">(part)</span>' : ''}</button>`).join('')}</div>` : '';
+    const partialNotice = v.every((item) => item.partial) ? '<div class="small-note">The linked video mentions this code only briefly.</div>' : '';
     const notes = [...(C.videos.sharedNote ? [C.videos.sharedNote] : []), ...(cur.notes || [])];
     const LBL = { omission: 'Not in the video', error: 'Correction' };
     const notesHtml = notes.length ? `<div class="corrections"><div class="corr-head">Before you rely on this video</div>${notes.map((c) => `
@@ -32,7 +34,7 @@ const R = {
     const moments = (cur.moments || []).map((m) => `
       <button class="moment" data-seek="${m.t}"><span class="time">${fmtTime(m.t)}</span>
         <span class="body"><span class="eyebrow">${esc(m.type)}</span><span class="mtitle">${tex(m.title)}</span><span class="mtext">${tex(m.text)}</span></span></button>`).join('');
-    return `<div class="code-video-wrap">${tabs}<div class="video-sec code-video">
+    return `<div class="code-video-wrap">${partialNotice}${tabs}<div class="video-sec code-video">
       <div class="video-col"><div class="video-frame"><iframe id="yt" referrerpolicy="strict-origin-when-cross-origin"
         src="https://www.youtube.com/embed/${esc(cur.videoId)}?enablejsapi=1&rel=0&modestbranding=1" title="${esc(cur.title)}"
         allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
@@ -92,7 +94,7 @@ const R = {
   worked(C) {
     const W = C.worked; if (W.status !== 'approved') return '';
     return `<div class="worked"><p>${tex(W.prompt)}</p>
-      <div class="table-wrap"><table class="table data-row">${W.table.map((r) => `<tr>${r.map((c, i) => (i ? `<td>${tex(c)}</td>` : `<th>${tex(c)}</th>`)).join('')}</tr>`).join('')}</table></div>
+      ${W.table.length ? `<div class="table-wrap"><table class="table data-row">${W.table.map((r) => `<tr>${r.map((c, i) => (i ? `<td>${tex(c)}</td>` : `<th>${tex(c)}</th>`)).join('')}</tr>`).join('')}</table></div>
       ${W.parts.map((p, i) => `<div class="wpart"><div class="wq"><b>${esc(p.label)}</b> ${tex(p.q)} <span class="marks">[${p.marks}]</span></div>
         <button class="btn btn-ghost" data-reveal="w${i}">Show solution</button>
         <div class="wa" id="w${i}" hidden>${tex(p.a)} <span class="mcode">${esc(p.m)}</span></div></div>`).join('')}
@@ -232,3 +234,4 @@ async function main() {
   }
 }
 main();
+

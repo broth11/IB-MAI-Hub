@@ -1,0 +1,167 @@
+{
+  "code": "SL 1.4",
+  "slug": "sl-1-4",
+  "title": "Compound interest and depreciation",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 107,
+        "title": "Compound Interest & Depreciation",
+        "videoId": "H5-GPWfysto",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Compound Interest & Depreciation."
+          },
+          {
+            "t": 42,
+            "type": "Formula",
+            "title": "Formula discussion",
+            "text": "The presenter discusses a formula."
+          },
+          {
+            "t": 87,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 256,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          },
+          {
+            "t": 360,
+            "type": "Visual",
+            "title": "Graph discussion",
+            "text": "The presenter discusses a graph."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 110,
+        "title": "GDC Tips: Finance Solver (TVM Solver)",
+        "videoId": "15Ge9Gxd2Wk",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on GDC Tips: Finance Solver (TVM Solver)."
+          },
+          {
+            "t": 49,
+            "type": "Formula",
+            "title": "Formula discussion",
+            "text": "The presenter discusses a formula."
+          },
+          {
+            "t": 77,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          },
+          {
+            "t": 109,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-1-4-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for compound interest and depreciation."
+    },
+    {
+      "id": "sl-1-4-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-1-4-ku-1",
+      "status": "approved",
+      "text": "A change of $r\\%$ per period multiplies the value by $1+r/100$ for growth or $1-r/100$ for depreciation."
+    },
+    {
+      "id": "sl-1-4-ku-2",
+      "status": "approved",
+      "text": "For $n$ equal periods, $V_n=V_0(1+i)^n$ when $i$ is the rate per period."
+    },
+    {
+      "id": "sl-1-4-ku-3",
+      "status": "approved",
+      "text": "Make the interest rate and number of periods consistent."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "sl-1-4-misc-1",
+      "status": "approved",
+      "weak": "Subtracting 15% of the original value every year",
+      "better": "Percentage depreciation is applied to the value at the start of each year."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-1-4-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "sl-1-4-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "A machine worth $8000$ depreciates by 15% each year. Find its value after two years.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "$V=8000(0.85)^2=5780$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-1-4-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Percentage depreciation is applied to the value at the start of each year."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

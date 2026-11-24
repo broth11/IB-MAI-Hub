@@ -1,0 +1,155 @@
+{
+  "code": "AHL 1.15",
+  "slug": "ahl-1-15",
+  "title": "Eigenvalues and eigenvectors",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 117,
+        "title": "Eigenvalues, Eigenvectors & Matrix Powers",
+        "videoId": "jGvJNHbwseg",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Eigenvalues, Eigenvectors & Matrix Powers."
+          },
+          {
+            "t": 187,
+            "type": "Formula",
+            "title": "Formula discussion",
+            "text": "The presenter discusses a formula."
+          },
+          {
+            "t": 281,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          },
+          {
+            "t": 545,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      },
+      {
+        "n": 118,
+        "title": "GDC Tips: Matrices",
+        "videoId": "k3u4fPBhaRM",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on GDC Tips: Matrices."
+          },
+          {
+            "t": 64,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          },
+          {
+            "t": 125,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-1-15-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for eigenvalues and eigenvectors."
+    },
+    {
+      "id": "ahl-1-15-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-1-15-ku-1",
+      "status": "approved",
+      "text": "An eigenvector $v\\ne0$ of $A$ satisfies $Av=\\lambda v$."
+    },
+    {
+      "id": "ahl-1-15-ku-2",
+      "status": "approved",
+      "text": "Eigenvalues satisfy $\\det(A-\\lambda I)=0$."
+    },
+    {
+      "id": "ahl-1-15-ku-3",
+      "status": "approved",
+      "text": "For each eigenvalue, solve $(A-\\lambda I)v=0$ and choose a nonzero solution."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "ahl-1-15-misc-1",
+      "status": "approved",
+      "weak": "Calling the zero vector an eigenvector",
+      "better": "An eigenvector must be nonzero."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-1-15-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "ahl-1-15-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Find the eigenvalues and one eigenvector for each of $A=\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "The eigenvalues are $2$ and $3$, with respective eigenvectors $\\begin{pmatrix}1\\\\0\\end{pmatrix}$ and $\\begin{pmatrix}0\\\\1\\end{pmatrix}$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-1-15-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "An eigenvector must be nonzero."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

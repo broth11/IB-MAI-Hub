@@ -1,0 +1,122 @@
+{
+  "code": "SL 2.3",
+  "slug": "sl-2-3",
+  "title": "Graphs of functions and sketching",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 207,
+        "title": "GDC Tips: Plotting Functions & Analysis Tools",
+        "videoId": "xZKl1UVrF3k",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on GDC Tips: Plotting Functions & Analysis Tools."
+          },
+          {
+            "t": 46,
+            "type": "Calculator",
+            "title": "Calculator discussion",
+            "text": "The presenter discusses using a calculator."
+          },
+          {
+            "t": 153,
+            "type": "Visual",
+            "title": "Graph discussion",
+            "text": "The presenter discusses a graph."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-2-3-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for graphs of functions and sketching."
+    },
+    {
+      "id": "sl-2-3-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-2-3-ku-1",
+      "status": "approved",
+      "text": "A graph shows the points $(x,f(x))$ for inputs in the domain."
+    },
+    {
+      "id": "sl-2-3-ku-2",
+      "status": "approved",
+      "text": "A root is an $x$-intercept where $f(x)=0$; the $y$-intercept is $f(0)$ if defined."
+    },
+    {
+      "id": "sl-2-3-ku-3",
+      "status": "approved",
+      "text": "Use a suitable graphing window and check important features numerically."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "sl-2-3-misc-1",
+      "status": "approved",
+      "weak": "Assuming no root exists because it is outside the viewing window",
+      "better": "Adjust the window and use algebra or a solver to check."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-2-3-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "sl-2-3-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Find the intercepts of $y=x^2-4$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "The $x$-intercepts are $(-2,0)$ and $(2,0)$; the $y$-intercept is $(0,-4)$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-2-3-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Adjust the window and use algebra or a solver to check."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

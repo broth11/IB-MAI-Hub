@@ -1,0 +1,94 @@
+{
+  "code": "AHL 1.9",
+  "slug": "ahl-1-9",
+  "title": "Laws of logarithms",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": []
+  },
+  "ican": [
+    {
+      "id": "ahl-1-9-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for laws of logarithms."
+    },
+    {
+      "id": "ahl-1-9-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-1-9-ku-1",
+      "status": "approved",
+      "text": "For $a>0$ and $a\\ne1$, $\\log_a(xy)=\\log_a x+\\log_a y$ for $x,y>0$."
+    },
+    {
+      "id": "ahl-1-9-ku-2",
+      "status": "approved",
+      "text": "$\\log_a(x/y)=\\log_a x-\\log_a y$ and $\\log_a(x^k)=k\\log_a x$ for $x>0$."
+    },
+    {
+      "id": "ahl-1-9-ku-3",
+      "status": "approved",
+      "text": "Change of base: $\\log_a x=\\ln x/\\ln a$. State and check logarithm domains."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "ahl-1-9-misc-1",
+      "status": "approved",
+      "weak": "Writing $\\log(x+y)=\\log x+\\log y$",
+      "better": "The sum law applies to the logarithm of a product, not a sum."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-1-9-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "ahl-1-9-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Solve $\\log_2 x+\\log_2(x-2)=3$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "The domain is $x>2$. Then $x(x-2)=8$, giving $x=4$ or $-2$; only $x=4$ is valid.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-1-9-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "The sum law applies to the logarithm of a product, not a sum."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

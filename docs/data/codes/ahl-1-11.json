@@ -1,0 +1,122 @@
+{
+  "code": "AHL 1.11",
+  "slug": "ahl-1-11",
+  "title": "Sum of infinite geometric sequences",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 105,
+        "title": "Geometric Sequences & Series",
+        "videoId": "t4ovNd94tgM",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Geometric Sequences & Series."
+          },
+          {
+            "t": 42,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          },
+          {
+            "t": 139,
+            "type": "Formula",
+            "title": "Formula discussion",
+            "text": "The presenter discusses a formula."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-1-11-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for sum of infinite geometric sequences."
+    },
+    {
+      "id": "ahl-1-11-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-1-11-ku-1",
+      "status": "approved",
+      "text": "An infinite geometric series with first term $a$ and ratio $r$ converges when $|r|<1$."
+    },
+    {
+      "id": "ahl-1-11-ku-2",
+      "status": "approved",
+      "text": "Its sum is $S_\\infty=\\frac{a}{1-r}$ when it converges."
+    },
+    {
+      "id": "ahl-1-11-ku-3",
+      "status": "approved",
+      "text": "If $|r|\\ge1$ and the first term is nonzero, this geometric series does not converge."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "ahl-1-11-misc-1",
+      "status": "approved",
+      "weak": "Using the infinite-sum formula when $r=2$",
+      "better": "Check that $|r|<1$ before using the formula."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-1-11-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "ahl-1-11-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Find the sum of $12+6+3+\\cdots$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "Here $r=1/2$, so the sum is $12/(1-1/2)=24$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-1-11-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "Check that $|r|<1$ before using the formula."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}

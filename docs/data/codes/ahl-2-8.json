@@ -1,0 +1,116 @@
+{
+  "code": "AHL 2.8",
+  "slug": "ahl-2-8",
+  "title": "Transformations of graphs",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 210,
+        "title": "Transformations of Functions",
+        "videoId": "RWXU3K-0UWo",
+        "partial": false,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Introduction",
+            "text": "Start the video on Transformations of Functions."
+          },
+          {
+            "t": 160,
+            "type": "Worked example",
+            "title": "Example in the video",
+            "text": "The presenter introduces or discusses an example."
+          }
+        ],
+        "notes": []
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-2-8-ican-1",
+      "status": "approved",
+      "text": "I can explain the main ideas and use the notation for transformations of graphs."
+    },
+    {
+      "id": "ahl-2-8-ican-2",
+      "status": "approved",
+      "text": "I can apply these ideas, show my working and check the result."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-2-8-ku-1",
+      "status": "approved",
+      "text": "$y=f(x)+k$ shifts the graph vertically by $k$."
+    },
+    {
+      "id": "ahl-2-8-ku-2",
+      "status": "approved",
+      "text": "$y=f(x-h)$ shifts the graph horizontally right by $h$."
+    },
+    {
+      "id": "ahl-2-8-ku-3",
+      "status": "approved",
+      "text": "$y=af(x)$ scales output values by $a$; a negative $a$ also reflects in the $x$-axis."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "misc": [
+    {
+      "id": "ahl-2-8-misc-1",
+      "status": "approved",
+      "weak": "Reading $f(x-3)$ as a shift left by 3",
+      "better": "The input that produces the old value occurs 3 units to the right."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-2-8-terms-1",
+      "status": "approved",
+      "term": "Explain",
+      "text": "Give a reason that connects the mathematical idea to the situation."
+    },
+    {
+      "id": "ahl-2-8-terms-2",
+      "status": "approved",
+      "term": "Find",
+      "text": "Show enough working to make your method and answer clear."
+    }
+  ],
+  "formula": [],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Describe how $y=(x-3)^2+2$ is obtained from $y=x^2$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "Solution",
+        "q": "Solve the problem above.",
+        "marks": 2,
+        "a": "Translate the graph 3 units right and 2 units up.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-2-8-kq-1",
+      "status": "approved",
+      "q": "What mistake should I check for?",
+      "model": "The input that produces the old value occurs 3 units to the right."
+    }
+  ],
+  "history": [],
+  "explorers": []
+}
