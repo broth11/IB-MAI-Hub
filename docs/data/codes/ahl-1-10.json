@@ -9,84 +9,213 @@
   },
   "ican": [
     {
-      "id": "ahl-1-10-ican-1",
+      "id": "ahl110-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for rational exponents."
+      "text": "I can convert between radicals and rational exponents, identifying the root and power."
     },
     {
-      "id": "ahl-1-10-ican-2",
+      "id": "ahl110-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can simplify numerical expressions containing rational and negative exponents."
+    },
+    {
+      "id": "ahl110-ican-3",
+      "status": "approved",
+      "text": "I can apply exponent laws to algebraic expressions with rational powers under stated domain assumptions."
+    },
+    {
+      "id": "ahl110-ican-4",
+      "status": "approved",
+      "text": "I can explain why an even root requires care with negative inputs and absolute values."
+    },
+    {
+      "id": "ahl110-ican-5",
+      "status": "approved",
+      "text": "I can check an exact result using technology without replacing it with an unnecessary decimal approximation."
     }
   ],
   "ku": [
     {
-      "id": "ahl-1-10-ku-1",
+      "id": "ahl110-ku-1",
       "status": "approved",
-      "text": "For suitable real values, $a^{m/n}=\\sqrt[n]{a^m}$."
+      "text": "For $a>0$ and a positive integer $n$, $a^{1/n}=\\sqrt[n]{a}$ and $a^{m/n}=(\\sqrt[n]{a})^m=\\sqrt[n]{a^m}$ for integer $m$."
     },
     {
-      "id": "ahl-1-10-ku-2",
+      "id": "ahl110-ku-2",
       "status": "approved",
-      "text": "For an even root, the radicand must be nonnegative in the real numbers."
+      "text": "A negative rational exponent indicates a reciprocal: $a^{-m/n}=1/a^{m/n}$ for $a>0$."
     },
     {
-      "id": "ahl-1-10-ku-3",
+      "id": "ahl110-ku-3",
       "status": "approved",
-      "text": "Negative exponents give reciprocals, provided the base is nonzero."
+      "text": "For positive bases, the index laws extend to rational powers: $a^pa^q=a^{p+q}$, $a^p/a^q=a^{p-q}$ and $(a^p)^q=a^{pq}$."
+    },
+    {
+      "id": "ahl110-ku-4",
+      "status": "approved",
+      "text": "An even root of a negative real number is not real. Odd roots of negative numbers are real; for example, $\\sqrt[3]{-8}=-2$."
+    },
+    {
+      "id": "ahl110-ku-5",
+      "status": "approved",
+      "text": "The square-root symbol denotes the nonnegative principal square root. Thus $\\sqrt{x^2}=|x|$, not necessarily $x$."
+    },
+    {
+      "id": "ahl110-ku-6",
+      "status": "approved",
+      "text": "State the domain for algebraic expressions. For example, $x^{-1/2}=1/\\sqrt{x}$ is real only when $x>0$."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "ahl110-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.5",
+        "Integer exponent laws and logarithms"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 5.9",
+        "Differentiation rules"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 1.1",
+        "Powers of ten and standard form"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "ahl-1-10-misc-1",
+      "id": "ahl110-misc-1",
       "status": "approved",
-      "weak": "Treating $a^{m/n}$ as $a^m/n$",
-      "better": "The denominator indicates a root, not division by $n$."
+      "weak": "$a^{3/4}=a^3/4$.",
+      "better": "For $a>0$, $a^{3/4}=(\\sqrt[4]{a})^3$; the denominator indicates a root."
+    },
+    {
+      "id": "ahl110-misc-2",
+      "status": "approved",
+      "weak": "$16^{-3/4}=-8$.",
+      "better": "The fourth root of 16 is 2, so $16^{-3/4}=1/2^3=1/8$."
+    },
+    {
+      "id": "ahl110-misc-3",
+      "status": "approved",
+      "weak": "$\\sqrt{x^2}=x$ for every real $x$.",
+      "better": "$\\sqrt{x^2}=|x|$. For $x=-3$, the left side is 3, not $-3$."
+    },
+    {
+      "id": "ahl110-misc-4",
+      "status": "approved",
+      "weak": "$x^{-1/2}$ is defined for every nonzero real $x$.",
+      "better": "As a real expression, $x^{-1/2}=1/\\sqrt{x}$ requires $x>0$."
+    },
+    {
+      "id": "ahl110-misc-5",
+      "status": "approved",
+      "weak": "$a^{1/2}+a^{1/3}=a^{5/6}$.",
+      "better": "The exponent-addition rule applies to a product, not a sum: $a^{1/2}a^{1/3}=a^{5/6}$ for $a>0$."
     }
   ],
   "terms": [
     {
-      "id": "ahl-1-10-terms-1",
+      "id": "ahl110-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Simplify",
+      "text": "Apply the exponent laws, use exact values where possible and state any assumptions or restrictions on variables."
     },
     {
-      "id": "ahl-1-10-terms-2",
+      "id": "ahl110-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Write with positive exponents",
+      "text": "Rewrite negative powers as reciprocals and simplify, keeping the original domain restrictions."
+    },
+    {
+      "id": "ahl110-term-3",
+      "status": "approved",
+      "term": "Evaluate",
+      "text": "Find an exact value if possible; use technology to check or approximate when requested."
     }
   ],
   "formula": [],
-  "gdc": [],
+  "gdc": [
+    {
+      "id": "ahl110-gdc-1",
+      "status": "approved",
+      "text": "Enter the base, use [POW], and place a fractional exponent in parentheses. Check that a negative exponent applies to the whole exponent.",
+      "verified": false
+    },
+    {
+      "id": "ahl110-gdc-2",
+      "status": "approved",
+      "text": "For negative real bases with odd roots, calculator conventions can differ; check the expression and use the real odd root when the question calls for real values.",
+      "verified": false
+    }
+  ],
   "worked": {
+    "id": "ahl110-worked",
     "status": "approved",
-    "prompt": "Evaluate $16^{3/4}$ and $8^{-2/3}$.",
+    "prompt": "Work in the real numbers. For algebraic simplification, assume $x>0$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Evaluate $32^{3/5}$.",
         "marks": 2,
-        "a": "$16^{3/4}=2^3=8$ and $8^{-2/3}=1/2^2=1/4$.",
+        "a": "The fifth root of 32 is 2, so $32^{3/5}=2^3=8$.",
         "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Evaluate $16^{-3/4}$.",
+        "marks": 2,
+        "a": "$16^{-3/4}=1/(\\sqrt[4]{16})^3=1/2^3=1/8$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Simplify $x^{5/6}x^{-1/3}$ with a single positive exponent.",
+        "marks": 2,
+        "a": "Add the exponents: $x^{5/6-1/3}=x^{3/6}=x^{1/2}=\\sqrt{x}$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Without the assumption $x>0$, simplify $\\sqrt{x^2}$ for real $x$.",
+        "marks": 1,
+        "a": "$\\sqrt{x^2}=|x|$, since the principal square root is nonnegative.",
+        "m": "A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "ahl-1-10-kq-1",
+      "id": "ahl110-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "The denominator indicates a root, not division by $n$."
+      "q": "Why does $a^{1/3}$ represent the cube root of $a$ for $a>0$?",
+      "model": "Its cube is $(a^{1/3})^3=a$, and the positive cube root is the positive number with that property."
+    },
+    {
+      "id": "ahl110-kq-2",
+      "status": "approved",
+      "q": "Why is $(-8)^{1/3}$ real while $(-8)^{1/2}$ is not real?",
+      "model": "A real number cubed can be negative: $(-2)^3=-8$. A real number squared cannot be negative."
+    },
+    {
+      "id": "ahl110-kq-3",
+      "status": "approved",
+      "q": "Why is $\\sqrt{x^2}$ written as $|x|$?",
+      "model": "The principal square root is nonnegative, while $x$ can be negative. Both $x$ and $-x$ square to $x^2$, and $|x|$ selects the nonnegative value."
+    },
+    {
+      "id": "ahl110-kq-4",
+      "status": "approved",
+      "q": "Why does $x^{-1/2}$ require $x>0$ in the real numbers?",
+      "model": "The square root must be real, requiring $x\\ge0$, and it appears in a denominator, excluding zero. Together these give $x>0$."
     }
   ],
   "history": [],
