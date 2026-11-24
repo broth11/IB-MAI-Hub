@@ -13,108 +13,310 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Geometric Sequences & Series."
+            "t": 22,
+            "type": "Concept",
+            "title": "Arithmetic and geometric patterns",
+            "text": "Arithmetic sequences have a common difference; geometric sequences have a common ratio."
           },
           {
-            "t": 42,
+            "t": 58,
+            "type": "Notation",
+            "title": "Term labels",
+            "text": "$u_1$, $u_2$ and $u_3$ denote the first three terms; $u_n$ denotes term $n$."
+          },
+          {
+            "t": 91,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "A negative ratio",
+            "text": "For $5,-25,125,-625,\\ldots$, divide a term by the preceding nonzero term to find $r=-5$."
           },
           {
-            "t": 139,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "t": 176,
+            "type": "Key idea",
+            "title": "Alternating signs",
+            "text": "A negative ratio changes the sign at each multiplication when the terms are nonzero."
+          },
+          {
+            "t": 193,
+            "type": "Worked example",
+            "title": "A ratio between zero and one",
+            "text": "In $100,50,25,12.5,\\ldots$, each term is half its predecessor, so $r=1/2$."
+          },
+          {
+            "t": 234,
+            "type": "Worked example",
+            "title": "A negative fractional ratio",
+            "text": "The sequence $27,-9,3,-1,\\ldots$ has $r=-1/3$: signs alternate and magnitudes decrease."
+          },
+          {
+            "t": 280,
+            "type": "Transition",
+            "title": "Formulas for geometric sequences",
+            "text": "The presenter identifies the formulas for terms and sums and separates the higher-level infinite-sum formula."
+          },
+          {
+            "t": 301,
+            "type": "Worked example",
+            "title": "Find the eighth term",
+            "text": "For $u_1=2$ and $r=2$, substitute into $u_n=u_1r^{n-1}$ to obtain $u_8=256$."
+          },
+          {
+            "t": 377,
+            "type": "Definition",
+            "title": "From terms to a series",
+            "text": "The next task adds terms rather than finding one term: $S_n$ is the sum of the first $n$ terms."
+          },
+          {
+            "t": 420,
+            "type": "Reference",
+            "title": "Two equivalent finite-sum formulas",
+            "text": "For $r\\ne1$, $u_1(r^n-1)/(r-1)$ and $u_1(1-r^n)/(1-r)$ give the same sum."
+          },
+          {
+            "t": 447,
+            "type": "Worked example",
+            "title": "Sum the first ten terms",
+            "text": "With $u_1=2$ and $r=2$, $S_{10}=2(2^{10}-1)/(2-1)=2046$."
+          },
+          {
+            "t": 493,
+            "type": "Higher level",
+            "title": "An infinite geometric series",
+            "text": "The video introduces the infinite sum and contrasts shrinking terms with the increasing example."
+          },
+          {
+            "t": 534,
+            "type": "Key idea",
+            "title": "Successive partial sums",
+            "text": "For a convergent series, adding more terms can bring the partial sum increasingly close to a finite limit; it does not generally become exactly equal to the limit."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "error",
+            "title": "Condition for an infinite sum",
+            "text": "The video describes the condition as the common ratio being less than 1. That alone also includes ratios such as $-2$, which do not give a convergent nonzero geometric series.",
+            "write": "The infinite geometric series converges when $|r|<1$, or equivalently $-1<r<1$. Then $S_\\infty=u_1/(1-r)$.",
+            "section": "ku"
+          },
+          {
+            "kind": "note",
+            "title": "Exact limit versus rounded values",
+            "text": "The presenter says successive partial sums eventually stay the same. They can appear equal after rounding while still changing.",
+            "write": "For $|r|<1$, the infinite sum is the exact limit of the partial sums; a finite partial sum is generally an approximation to it.",
+            "section": "ku"
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "ahl-1-11-ican-1",
+      "id": "ahl111-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for sum of infinite geometric sequences."
+      "text": "I can determine the common ratio and decide whether an infinite geometric series converges."
     },
     {
-      "id": "ahl-1-11-ican-2",
+      "id": "ahl111-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can calculate an infinite sum when the convergence condition is met."
+    },
+    {
+      "id": "ahl111-ican-3",
+      "status": "approved",
+      "text": "I can compare a finite partial sum with the infinite limit and find the remaining sum."
+    },
+    {
+      "id": "ahl111-ican-4",
+      "status": "approved",
+      "text": "I can model a repeated process, such as rebounds, using an infinite geometric series and interpret the result."
+    },
+    {
+      "id": "ahl111-ican-5",
+      "status": "approved",
+      "text": "I can distinguish an infinite series from a sequence of its individual terms."
     }
   ],
   "ku": [
     {
-      "id": "ahl-1-11-ku-1",
+      "id": "ahl111-ku-1",
       "status": "approved",
-      "text": "An infinite geometric series with first term $a$ and ratio $r$ converges when $|r|<1$."
+      "text": "A geometric sequence has terms $u_n=u_1r^{n-1}$. The corresponding infinite series adds all these terms; its partial sum $S_n$ adds only the first $n$."
     },
     {
-      "id": "ahl-1-11-ku-2",
+      "id": "ahl111-ku-2",
       "status": "approved",
-      "text": "Its sum is $S_\\infty=\\frac{a}{1-r}$ when it converges."
+      "text": "For a nonzero first term, the infinite geometric series converges if and only if $|r|<1$. In that case $S_\\infty=\\dfrac{u_1}{1-r}$."
     },
     {
-      "id": "ahl-1-11-ku-3",
+      "id": "ahl111-ku-3",
       "status": "approved",
-      "text": "If $|r|\\ge1$ and the first term is nonzero, this geometric series does not converge."
+      "text": "The condition includes negative ratios between $-1$ and 0. Their terms alternate in sign but decrease in magnitude, and their partial sums approach a finite limit."
+    },
+    {
+      "id": "ahl111-ku-4",
+      "status": "approved",
+      "text": "For $|r|<1$, $S_n=\\dfrac{u_1(1-r^n)}{1-r}$ and $r^n\\to0$, so $S_n\\to\\dfrac{u_1}{1-r}$. A rounded partial sum can appear equal to the limit before it is exactly equal."
+    },
+    {
+      "id": "ahl111-ku-5",
+      "status": "approved",
+      "text": "For $|r|<1$, the remainder after the first $n$ terms is $S_\\infty-S_n=\\dfrac{u_1r^n}{1-r}$, or equivalently the infinite sum beginning with $u_{n+1}$."
+    },
+    {
+      "id": "ahl111-ku-6",
+      "status": "approved",
+      "text": "In a rebound-distance model, distinguish the initial fall from later upward and downward journeys. Whether a final downward journey is included depends on when the distance is measured."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "ahl111-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.3",
+        "Finite geometric sequences and series"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "SL 5.1",
+        "Limits"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 1.6",
+        "Rounding partial sums"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "ahl-1-11-misc-1",
+      "id": "ahl111-misc-1",
       "status": "approved",
-      "weak": "Using the infinite-sum formula when $r=2$",
-      "better": "Check that $|r|<1$ before using the formula."
+      "weak": "$r<1$ is sufficient for convergence.",
+      "better": "Use $|r|<1$. For example, $r=-2$ is less than 1 but a nonzero geometric series with that ratio diverges."
+    },
+    {
+      "id": "ahl111-misc-2",
+      "status": "approved",
+      "weak": "If the terms tend to zero, the partial sum must eventually stop changing.",
+      "better": "The partial sums can approach a limit while continuing to change. A rounded calculator display may hide those changes."
+    },
+    {
+      "id": "ahl111-misc-3",
+      "status": "approved",
+      "weak": "$8-4+2-1+\\cdots$ diverges because the terms alternate.",
+      "better": "Here $r=-1/2$, so $|r|<1$ and the series converges to $8/(1+1/2)=16/3$."
+    },
+    {
+      "id": "ahl111-misc-4",
+      "status": "approved",
+      "weak": "The remainder after $n$ terms is the sum starting with $u_n$.",
+      "better": "The first omitted term is $u_{n+1}=u_1r^n$."
+    },
+    {
+      "id": "ahl111-misc-5",
+      "status": "approved",
+      "weak": "For a ball dropped from height $h$, total distance is just the sum of rebound heights.",
+      "better": "Include the initial fall, then count both upward and downward journeys for each rebound when the model continues until the ball comes to rest."
     }
   ],
   "terms": [
     {
-      "id": "ahl-1-11-terms-1",
+      "id": "ahl111-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Determine whether the series converges",
+      "text": "Identify the ratio and test its magnitude against 1; explain why the condition is or is not satisfied."
     },
     {
-      "id": "ahl-1-11-terms-2",
+      "id": "ahl111-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find the infinite sum",
+      "text": "State the first term and common ratio, verify $|r|<1$ and substitute into the infinite-sum formula."
+    },
+    {
+      "id": "ahl111-term-3",
+      "status": "approved",
+      "term": "Find a remainder",
+      "text": "Identify the first omitted term and sum the remaining geometric series, or subtract the partial sum from the infinite sum."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "ahl111-formula-1",
+      "status": "approved",
+      "text": "For $|r|<1$, the formula booklet gives $S_\\infty=\\dfrac{u_1}{1-r}$."
+    },
+    {
+      "id": "ahl111-formula-2",
+      "status": "approved",
+      "text": "For $r\\ne1$, the finite geometric sum is $S_n=\\dfrac{u_1(1-r^n)}{1-r}$."
+    }
+  ],
   "gdc": [],
   "worked": {
+    "id": "ahl111-worked",
     "status": "approved",
-    "prompt": "Find the sum of $12+6+3+\\cdots$.",
+    "prompt": "A ball is dropped from a height of 10 m. After each impact it rebounds to 60% of the height from which it fell. Assume this pattern continues indefinitely and ignore all other motion.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find the sum of the first four rebound heights.",
         "marks": 2,
-        "a": "Here $r=1/2$, so the sum is $12/(1-1/2)=24$.",
+        "a": "The rebound heights form a geometric sequence with $u_1=6$ m and $r=0.6$. Thus $S_4=6(1-0.6^4)/(1-0.6)=13.056$ m.",
         "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find the total distance travelled from release until the ball lands after its fourth rebound.",
+        "marks": 2,
+        "a": "Include the initial 10 m fall and both upward and downward legs for each of the first four rebounds: $10+2(13.056)=36.112$ m.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Find the limiting total distance travelled.",
+        "marks": 2,
+        "a": "Since $|0.6|<1$, the infinite sum of rebound heights is $6/(1-0.6)=15$ m. The total distance is $10+2(15)=40$ m.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Find the remaining distance after the landing described in part (b).",
+        "marks": 1,
+        "a": "$40-36.112=3.888$ m.",
+        "m": "A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "ahl-1-11-kq-1",
+      "id": "ahl111-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Check that $|r|<1$ before using the formula."
+      "q": "Why can an infinite sum have a finite value?",
+      "model": "The finite partial sums can approach a limit. For a geometric series with $|r|<1$, the size of the remaining tail tends to zero."
+    },
+    {
+      "id": "ahl111-kq-2",
+      "status": "approved",
+      "q": "Why does a negative ratio not automatically mean divergence?",
+      "model": "A negative ratio alternates signs, but if its magnitude is less than 1, the terms shrink and the partial sums converge."
+    },
+    {
+      "id": "ahl111-kq-3",
+      "status": "approved",
+      "q": "Why is the first rebound not the original 10 m in the worked example?",
+      "model": "The original 10 m is the initial fall. The first rebound reaches 60% of it, or 6 m."
+    },
+    {
+      "id": "ahl111-kq-4",
+      "status": "approved",
+      "q": "Why are rebound heights doubled in the total-distance model?",
+      "model": "After each rebound, the ball travels up to that rebound height and then down by the same distance before the next impact."
     }
   ],
   "history": [],
