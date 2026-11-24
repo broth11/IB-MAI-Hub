@@ -13,22 +13,58 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
+            "t": 14,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Forms of Linear Lines."
+            "title": "Three forms of a straight line",
+            "text": "The presenter introduces gradient-intercept, point-gradient and general form, and explains that the requested form determines how to present the answer."
           },
           {
-            "t": 48,
+            "t": 68,
+            "type": "Definition",
+            "title": "Gradient-intercept form",
+            "text": "In $y=mx+c$, $m$ is the gradient and $c$ is the y-intercept."
+          },
+          {
+            "t": 92,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Read the intercept and gradient",
+            "text": "The example line has y-intercept 2 and rises 2 units for a run of 3, so its gradient is $2/3$."
           },
           {
-            "t": 301,
-            "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "t": 138,
+            "type": "Worked example",
+            "title": "Write the equation",
+            "text": "Substitution gives $y=\\frac23x+2$."
+          },
+          {
+            "t": 162,
+            "type": "Transition",
+            "title": "When the intercept is not given",
+            "text": "Point-gradient form is useful when a point and the gradient are known but the intercept is not immediately available."
+          },
+          {
+            "t": 198,
+            "type": "Procedure",
+            "title": "Use the point and gradient",
+            "text": "The example line passes through $(3,4)$ with gradient $2/3$, giving $y-4=\\frac23(x-3)$."
+          },
+          {
+            "t": 258,
+            "type": "Procedure",
+            "title": "Rearrange to general form",
+            "text": "Expand the brackets and collect terms on one side to obtain $-\\frac23x+y-2=0$."
+          },
+          {
+            "t": 345,
+            "type": "Worked example",
+            "title": "Remove the fraction",
+            "text": "Multiplying every term by 3 gives $-2x+3y-6=0$."
+          },
+          {
+            "t": 396,
+            "type": "Conclusion",
+            "title": "Equivalent equations",
+            "text": "The gradient-intercept and general-form equations describe the same line; give the form the question requests."
           }
         ],
         "notes": []
@@ -40,19 +76,57 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Gradients & Intercepts of Linear Lines."
+            "t": 33,
+            "type": "Definition",
+            "title": "Intercepts",
+            "text": "An x-intercept lies on the horizontal axis; a y-intercept lies on the vertical axis."
           },
           {
-            "t": 100,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "t": 69,
+            "type": "Definition",
+            "title": "Gradient as steepness",
+            "text": "The presenter introduces gradient as rise divided by run."
+          },
+          {
+            "t": 120,
+            "type": "Worked example",
+            "title": "Read two intercepts",
+            "text": "The first example passes through $(0,2)$ and $(4,0)$."
+          },
+          {
+            "t": 194,
+            "type": "Procedure",
+            "title": "Calculate the gradient",
+            "text": "Using the two points gives $(0-2)/(4-0)=-1/2$. The gradient is negative because the line falls from left to right."
+          },
+          {
+            "t": 252,
+            "type": "Worked example",
+            "title": "Find another gradient",
+            "text": "For points $(0,1)$ and $(1,3)$, the gradient is 2 and the y-intercept is 1."
+          },
+          {
+            "t": 311,
+            "type": "Procedure",
+            "title": "Find an unknown x-intercept",
+            "text": "Write $y=2x+1$, set $y=0$ and solve to obtain the x-intercept $(-1/2,0)$."
+          },
+          {
+            "t": 376,
+            "type": "Conclusion",
+            "title": "Summarise intercepts and gradient",
+            "text": "The presenter recaps intercepts and the two-point gradient formula."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "Horizontal and vertical lines",
+            "text": "The recap says a straight line has one x-intercept and one y-intercept. Horizontal and vertical lines can be exceptions.",
+            "write": "For example, $y=2$ has no x-intercept; $x=3$ has no y-intercept. The coordinate axes themselves have infinitely many intercept points on the axis they coincide with.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 203,
@@ -61,102 +135,284 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Parallel & Perpendicular Gradients."
+            "t": 21,
+            "type": "Concept",
+            "title": "Parallel lines",
+            "text": "Distinct parallel nonvertical lines have equal gradients."
           },
           {
             "t": 56,
+            "type": "Concept",
+            "title": "Perpendicular lines",
+            "text": "Perpendicular nonvertical lines with defined gradients have gradients that are negative reciprocals."
+          },
+          {
+            "t": 95,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Identify the relationships",
+            "text": "Line A has gradient 2, line B is parallel to A and line C is perpendicular to A."
+          },
+          {
+            "t": 129,
+            "type": "Worked example",
+            "title": "Find the parallel gradient",
+            "text": "Line B has gradient 2, the same as line A."
+          },
+          {
+            "t": 154,
+            "type": "Worked example",
+            "title": "Find the perpendicular gradient",
+            "text": "The negative reciprocal of 2 is $-1/2$, so line C has gradient $-1/2$."
+          },
+          {
+            "t": 185,
+            "type": "Conclusion",
+            "title": "Compare the rules",
+            "text": "Equal gradients indicate parallel nonvertical lines; a product of $-1$ indicates perpendicular nonvertical lines."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "Vertical and horizontal lines",
+            "text": "The negative-reciprocal formula assumes both gradients are defined.",
+            "write": "A vertical line has undefined gradient and is perpendicular to a horizontal line, whose gradient is zero.",
+            "section": "ku"
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "sl-2-1-ican-1",
+      "id": "sl21-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for equations of straight lines."
+      "text": "I can find a gradient from two points and interpret its sign and units."
     },
     {
-      "id": "sl-2-1-ican-2",
+      "id": "sl21-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can write and convert between gradient-intercept, point-gradient and general forms of a straight line."
+    },
+    {
+      "id": "sl21-ican-3",
+      "status": "approved",
+      "text": "I can find and interpret x- and y-intercepts, including situations where an intercept does not exist."
+    },
+    {
+      "id": "sl21-ican-4",
+      "status": "approved",
+      "text": "I can determine gradients and equations of parallel and perpendicular lines."
+    },
+    {
+      "id": "sl21-ican-5",
+      "status": "approved",
+      "text": "I can handle horizontal and vertical lines without applying a formula that divides by zero."
+    },
+    {
+      "id": "sl21-ican-6",
+      "status": "approved",
+      "text": "I can interpret the gradient and intercept of a linear model in context."
     }
   ],
   "ku": [
     {
-      "id": "sl-2-1-ku-1",
+      "id": "sl21-ku-1",
       "status": "approved",
-      "text": "The slope between two points is $m=(y_2-y_1)/(x_2-x_1)$ when $x_2\\ne x_1$."
+      "text": "For two points with $x_1\\ne x_2$, the gradient is $m=\\dfrac{y_2-y_1}{x_2-x_1}$. Preserve the same order in numerator and denominator."
     },
     {
-      "id": "sl-2-1-ku-2",
+      "id": "sl21-ku-2",
       "status": "approved",
-      "text": "A nonvertical line can be written $y=mx+c$ or $y-y_1=m(x-x_1)$."
+      "text": "A nonvertical line may be written $y=mx+c$ or $y-y_1=m(x-x_1)$. A general form is $ax+by+d=0$, where $a$ and $b$ are not both zero."
     },
     {
-      "id": "sl-2-1-ku-3",
+      "id": "sl21-ku-3",
       "status": "approved",
-      "text": "Parallel lines have equal gradients; perpendicular nonvertical lines have gradients whose product is $-1$."
+      "text": "At an x-intercept $y=0$; at a y-intercept $x=0$. Interpret each coordinate in context rather than assuming an intercept is meaningful in the domain."
+    },
+    {
+      "id": "sl21-ku-4",
+      "status": "approved",
+      "text": "Distinct parallel nonvertical lines have equal gradients. Two nonvertical lines with nonzero gradients are perpendicular when $m_1m_2=-1$."
+    },
+    {
+      "id": "sl21-ku-5",
+      "status": "approved",
+      "text": "A horizontal line $y=k$ has gradient 0. A vertical line $x=h$ has undefined gradient; every horizontal line is perpendicular to every vertical line."
+    },
+    {
+      "id": "sl21-ku-6",
+      "status": "approved",
+      "text": "For a model $y=mx+c$, the gradient describes the change in $y$ per one-unit increase in $x$, with units. The intercept is the modelled value of $y$ at $x=0$, provided that input is meaningful."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "sl21-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.8",
+        "Solving linear equations using technology"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "SL 2.2",
+        "Functions and their graphs"
+      ],
+      [
+        "SL 4.4",
+        "Linear regression"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 3.5",
+        "Perpendicular bisectors"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "sl-2-1-misc-1",
+      "id": "sl21-misc-1",
       "status": "approved",
-      "weak": "Using the same slope for a perpendicular line",
-      "better": "For nonzero $m$, the perpendicular slope is $-1/m$."
+      "weak": "The gradient between $(1,2)$ and $(5,8)$ is $(8-2)/(1-5)$.",
+      "better": "Use consistent point order: $(8-2)/(5-1)=3/2$."
+    },
+    {
+      "id": "sl21-misc-2",
+      "status": "approved",
+      "weak": "A line perpendicular to gradient $3/2$ has gradient $-3/2$.",
+      "better": "Take the negative reciprocal: $-2/3$."
+    },
+    {
+      "id": "sl21-misc-3",
+      "status": "approved",
+      "weak": "Every straight line has both an x-intercept and a y-intercept.",
+      "better": "A nonzero horizontal line has no x-intercept; a nonzero vertical line has no y-intercept. The axes themselves are special cases."
+    },
+    {
+      "id": "sl21-misc-4",
+      "status": "approved",
+      "weak": "A vertical line has gradient 0.",
+      "better": "A vertical line has undefined gradient because its horizontal change is zero. A horizontal line has gradient 0."
+    },
+    {
+      "id": "sl21-misc-5",
+      "status": "approved",
+      "weak": "A point-gradient equation $y-2=\\frac32(x-1)$ is invalid because it is not in $y=mx+c$ form.",
+      "better": "It is an equation of the line. Rearrange only when the question requests another form."
+    },
+    {
+      "id": "sl21-misc-6",
+      "status": "approved",
+      "weak": "Multiply only the fractional term when clearing denominators in an equation.",
+      "better": "Multiply every term on both sides by the same nonzero number."
     }
   ],
   "terms": [
     {
-      "id": "sl-2-1-terms-1",
+      "id": "sl21-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Find an equation",
+      "text": "Use a point and gradient, or use an intercept and gradient. Give the requested form and check the original point."
     },
     {
-      "id": "sl-2-1-terms-2",
+      "id": "sl21-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find the intercepts",
+      "text": "Set the other coordinate equal to zero; state the coordinates or values in the form requested."
+    },
+    {
+      "id": "sl21-term-3",
+      "status": "approved",
+      "term": "Interpret the gradient",
+      "text": "Describe the change in the dependent quantity for one unit of the independent quantity, including units."
+    },
+    {
+      "id": "sl21-term-4",
+      "status": "approved",
+      "term": "Parallel or perpendicular",
+      "text": "Use the appropriate gradient relationship and then a point on the required line; treat vertical and horizontal lines separately."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "sl21-formula-1",
+      "status": "approved",
+      "text": "The booklet gives $y=mx+c$, $ax+by+d=0$, $y-y_1=m(x-x_1)$ and $m=\\dfrac{y_2-y_1}{x_2-x_1}$."
+    }
+  ],
   "gdc": [],
   "worked": {
+    "id": "sl21-worked",
     "status": "approved",
-    "prompt": "Find the equation through $(1,4)$ and $(3,10)$.",
+    "prompt": "Line $L$ passes through $A(1,2)$ and $B(5,8)$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find the gradient of $L$.",
         "marks": 2,
-        "a": "The gradient is $3$, so $y-4=3(x-1)$, or $y=3x+1$.",
+        "a": "$m=\\dfrac{8-2}{5-1}=\\dfrac64=\\dfrac32$.",
         "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find an equation of $L$ in the form $ax+by+d=0$ with integer coefficients.",
+        "marks": 2,
+        "a": "$y-2=\\frac32(x-1)$, so $y=\\frac32x+\\frac12$. Multiplying by 2 and rearranging gives $3x-2y+1=0$. Any nonzero multiple is equivalent.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Find the coordinates of the intercepts of $L$.",
+        "marks": 2,
+        "a": "Set $x=0$ to get $(0,1/2)$. Set $y=0$ to obtain $x=-1/3$, so the x-intercept is $(-1/3,0)$.",
+        "m": "A1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "A line perpendicular to $L$ passes through $(2,-1)$. Find its equation.",
+        "marks": 2,
+        "a": "Its gradient is $-2/3$. Thus $y+1=-\\frac23(x-2)$, or $y=-\\frac23x+\\frac13$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(e)",
+        "q": "A separate taxi model is $C=150t+1200$, where $t$ is hours and $C$ is cost in baht. Interpret the gradient and intercept.",
+        "marks": 2,
+        "a": "The model adds 150 baht for each additional hour. At $t=0$, the model's cost is 1200 baht, the fixed starting cost in this context.",
+        "m": "R1 R1"
       }
     ]
   },
   "kq": [
     {
-      "id": "sl-2-1-kq-1",
+      "id": "sl21-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "For nonzero $m$, the perpendicular slope is $-1/m$."
+      "q": "Why does reversing both points in the gradient formula give the same result?",
+      "model": "Both the change in $y$ and the change in $x$ change sign, so their ratio remains unchanged."
+    },
+    {
+      "id": "sl21-kq-2",
+      "status": "approved",
+      "q": "Why can a vertical line not be written as $y=mx+c$ with a finite gradient?",
+      "model": "Its horizontal change is zero, so rise divided by run is undefined. Its equation has the form $x=h$."
+    },
+    {
+      "id": "sl21-kq-3",
+      "status": "approved",
+      "q": "Why do nonzero perpendicular gradients multiply to $-1$?",
+      "model": "For two nonvertical perpendicular lines the gradients are negative reciprocals: $m_2=-1/m_1$, so $m_1m_2=-1$."
+    },
+    {
+      "id": "sl21-kq-4",
+      "status": "approved",
+      "q": "Why might an intercept be mathematically correct but not meaningful in context?",
+      "model": "The intercept describes the model at an input or output of zero. That point may lie outside the model's realistic domain or have no practical interpretation."
     }
   ],
   "history": [],
