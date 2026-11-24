@@ -13,19 +13,69 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
+            "t": 24,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Functions: Overview & Types."
+            "title": "What the video will cover",
+            "text": "The presenter introduces functions, input and output variables, notation and types of model."
           },
           {
-            "t": 85,
+            "t": 40,
+            "type": "Concept",
+            "title": "Input and output",
+            "text": "A function relates an allowed input to an output; the independent variable supplies the input."
+          },
+          {
+            "t": 86,
+            "type": "Context",
+            "title": "A child's height over time",
+            "text": "The example assumes a child is 50 cm at birth and 200 cm at age 15 to build a simple model."
+          },
+          {
+            "t": 129,
+            "type": "Procedure",
+            "title": "Choose variables and axes",
+            "text": "Age is the input and height is the output. The function notation $H(a)$ represents height at age $a$."
+          },
+          {
+            "t": 196,
+            "type": "Visual",
+            "title": "A linear model",
+            "text": "The presenter sketches a straight-line model from 50 cm at birth to 200 cm at age 15 and notes that real growth may not be linear."
+          },
+          {
+            "t": 247,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Form the function",
+            "text": "The assumed rate is 150 cm over 15 years, or 10 cm per year, giving $H(a)=10a+50$."
+          },
+          {
+            "t": 305,
+            "type": "Worked example",
+            "title": "Evaluate a function",
+            "text": "Substituting $a=10$ gives $H(10)=150$ cm in the model."
+          },
+          {
+            "t": 328,
+            "type": "Reference",
+            "title": "Types of functions",
+            "text": "The presenter briefly surveys linear, quadratic, exponential, logarithmic, sinusoidal and logistic models."
+          },
+          {
+            "t": 387,
+            "type": "Extension",
+            "title": "A piecewise model",
+            "text": "To represent a change after age 15, the presenter suggests joining a linear growth rule to a constant-height rule."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Function and model",
+            "text": "The child-height line is an illustrative assumption. The presenter notes that real growth can vary.",
+            "write": "A function assigns exactly one output to each allowed input. A model should be interpreted only over a suitable domain.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 309,
@@ -34,25 +84,80 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
+            "t": 3,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Graphs of Trig Functions."
+            "title": "The general sine model",
+            "text": "Introduce $y=a\\sin(b(x-c))+d$ and the roles of the parameters."
           },
           {
-            "t": 45,
-            "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "t": 50,
+            "type": "Example",
+            "title": "Set up a sinusoidal example",
+            "text": "The example is $y=3\\sin(2(x-\\pi/4))+4$."
           },
           {
-            "t": 84,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "t": 66,
+            "type": "Concept",
+            "title": "Amplitude",
+            "text": "An amplitude of $3$ gives a distance of $3$ from the midline to either extreme; it is half the range width."
+          },
+          {
+            "t": 104,
+            "type": "Concept",
+            "title": "Midline and vertical shift",
+            "text": "The vertical shift is $4$, so the midline is $y=4$ and the extreme values are $7$ and $1$."
+          },
+          {
+            "t": 180,
+            "type": "Concept",
+            "title": "Period",
+            "text": "With $b=2$, the period is $2\\pi/2=\\pi$ radians of input."
+          },
+          {
+            "t": 233,
+            "type": "Method",
+            "title": "Mark quarter-period intervals",
+            "text": "Divide one period into four equal intervals to locate successive maximum, midline and minimum positions."
+          },
+          {
+            "t": 307,
+            "type": "Method",
+            "title": "Account for the horizontal shift",
+            "text": "The expression $(x-\\pi/4)$ shifts the reference sine curve right by $\\pi/4$."
+          },
+          {
+            "t": 323,
+            "type": "Example",
+            "title": "Plot the shifted sine points",
+            "text": "Starting from the rising midline crossing at $x=\\pi/4$, locate the maximum and subsequent points a quarter-period apart."
+          },
+          {
+            "t": 364,
+            "type": "Graph",
+            "title": "Complete the smooth curve",
+            "text": "Connect the points smoothly and extend the cycle over the displayed interval."
+          },
+          {
+            "t": 408,
+            "type": "Overview",
+            "title": "Summarise the four parameters",
+            "text": "Review amplitude, midline, period and horizontal shift in the example."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "A sine graph has no universal starting point",
+            "text": "The video uses a convenient reference point for one cycle. A sinusoid continues in both directions unless the context or domain restricts it.",
+            "write": "For this example the graph crosses its midline rising at $x=\\pi/4$ and again one period later."
+          },
+          {
+            "kind": "watch",
+            "title": "Period and amplitude are nonnegative",
+            "text": "For $a\\sin(b(x-c))+d$, use amplitude $|a|$ and period $2\\pi/|b|$ when $b\\ne0$ and the angle is in radians.",
+            "write": "A negative $a$ reflects the curve vertically about its midline."
+          }
+        ]
       }
     ]
   },
@@ -60,29 +165,59 @@
     {
       "id": "sl-2-5-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for modelling with standard functions."
+      "text": "I can choose a standard function whose behaviour is consistent with a situation."
     },
     {
       "id": "sl-2-5-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can construct and interpret linear, quadratic, exponential and periodic models."
+    },
+    {
+      "id": "sl-2-5-ican-3",
+      "status": "approved",
+      "text": "I can use a model to predict values or solve for an input and assess whether the answer is meaningful."
+    },
+    {
+      "id": "sl-2-5-ican-4",
+      "status": "approved",
+      "text": "I can explain how assumptions, domain and extrapolation limit a model."
     }
   ],
   "ku": [
     {
       "id": "sl-2-5-ku-1",
       "status": "approved",
-      "text": "Choose a function by the shape and context of the data, not just by a calculator fit."
+      "text": "A model represents a relationship using assumptions. Define the variables, units and meaningful domain before interpreting its predictions."
     },
     {
       "id": "sl-2-5-ku-2",
       "status": "approved",
-      "text": "A linear model has constant additive change; an exponential model has a constant multiplicative factor over equal intervals."
+      "text": "For equal input steps, a linear model $y=mx+c$ has a constant additive change. The slope $m$ is the change in output per unit of input."
     },
     {
       "id": "sl-2-5-ku-3",
       "status": "approved",
-      "text": "Interpret parameters with units and consider whether predictions lie within the observed range."
+      "text": "A quadratic model $y=ax^2+bx+c$ has a parabolic graph. Its vertex gives a maximum when $a<0$ or a minimum when $a>0$, subject to the model’s domain."
+    },
+    {
+      "id": "sl-2-5-ku-4",
+      "status": "approved",
+      "text": "An exponential model $y=A b^t$, with $b>0$, changes by the same factor per unit of $t$. For a rate $r$ per time unit, $b=1+r$ for growth and $b=1-r$ for decay."
+    },
+    {
+      "id": "sl-2-5-ku-5",
+      "status": "approved",
+      "text": "A sinusoidal model can represent repeated cycles. Its midline is halfway between maximum and minimum, its amplitude is half their difference, and its period is the input length of a full cycle."
+    },
+    {
+      "id": "sl-2-5-ku-6",
+      "status": "approved",
+      "text": "A close fit to observed data alone does not prove that the relationship or its assumptions will remain valid outside the data range. Interpolation and extrapolation have different levels of support."
+    },
+    {
+      "id": "sl-2-5-ku-7",
+      "status": "approved",
+      "text": "Check the meaning of a solution: time may be restricted, counts may need whole numbers and a periodic height or temperature can be reached more than once."
     }
   ],
   "visuals": [],
@@ -96,37 +231,88 @@
     {
       "id": "sl-2-5-misc-1",
       "status": "approved",
-      "weak": "Using $500+50t$ for repeated percentage growth",
-      "better": "Each percentage increase is applied to the current population."
+      "weak": "A 6% increase means add 6 each year.",
+      "better": "Multiply the current value by $1.06$ each year. Repeated percentage growth is multiplicative."
+    },
+    {
+      "id": "sl-2-5-misc-2",
+      "status": "approved",
+      "weak": "An exponential factor of $0.8$ is an 80% decrease.",
+      "better": "The value retains 80% each period, so it decreases by 20%."
+    },
+    {
+      "id": "sl-2-5-misc-3",
+      "status": "approved",
+      "weak": "The best-looking fit must predict accurately forever.",
+      "better": "Check the context, residual pattern, observation range and assumptions, especially when extrapolating."
+    },
+    {
+      "id": "sl-2-5-misc-4",
+      "status": "approved",
+      "weak": "The maximum is the amplitude of the sinusoid.",
+      "better": "Amplitude is half the difference between maximum and minimum, measured from the midline."
     }
   ],
   "terms": [
     {
       "id": "sl-2-5-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Parameter",
+      "text": "A fixed value in a model whose size determines a feature such as initial value, rate or amplitude."
     },
     {
       "id": "sl-2-5-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Interpolation",
+      "text": "Using a model to estimate within the range of the observed inputs."
+    },
+    {
+      "id": "sl-2-5-terms-3",
+      "status": "approved",
+      "term": "Extrapolation",
+      "text": "Using a model beyond the observed input range, where the assumptions may be less reliable."
+    },
+    {
+      "id": "sl-2-5-terms-4",
+      "status": "approved",
+      "term": "Period",
+      "text": "The input interval over which a repeating function completes one cycle."
     }
   ],
   "formula": [],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "A population starts at 500 and increases by 10% each year. Write a model and find the value after two years.",
+    "prompt": "A water tank contains $800$ litres at the start of an experiment. A model assumes that it loses 15% of its current volume each hour for the first 6 hours.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "a",
+        "q": "Define a model for the volume $V$ after $t$ hours and state its contextual domain.",
+        "marks": 3,
+        "a": "Each hour the tank retains $100\\%-15\\%=85\\%$ of its current volume. Thus $V(t)=800(0.85)^t$ litres for $0\\leq t\\leq6$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Estimate the volume after 3 hours.",
         "marks": 2,
-        "a": "$P(t)=500(1.1)^t$, so $P(2)=605$.",
+        "a": "$V(3)=800(0.85)^3=491.3$ litres.",
         "m": "M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Estimate when the volume first reaches 400 litres.",
+        "marks": 3,
+        "a": "Solve $800(0.85)^t=400$. Then $t=\\frac{\\ln(0.5)}{\\ln(0.85)}\\approx4.27$ hours, which lies within the model’s stated domain.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Explain why predicting the volume after 20 hours needs caution.",
+        "marks": 2,
+        "a": "Twenty hours is outside the stated six-hour interval. The constant percentage-loss assumption may cease to hold, for example if the leak rate changes with water level.",
+        "m": "R1 R1"
       }
     ]
   },
@@ -134,8 +320,20 @@
     {
       "id": "sl-2-5-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Each percentage increase is applied to the current population."
+      "q": "How can equal increases be distinguished from equal percentage increases?",
+      "model": "Compare equal input intervals: constant differences suggest a linear relationship, while constant ratios suggest an exponential one."
+    },
+    {
+      "id": "sl-2-5-kq-2",
+      "status": "approved",
+      "q": "Why should a model’s domain be stated?",
+      "model": "The expression may produce values outside the period or situation for which the assumptions make sense."
+    },
+    {
+      "id": "sl-2-5-kq-3",
+      "status": "approved",
+      "q": "How do maximum and minimum determine a sinusoid’s amplitude?",
+      "model": "Subtract the minimum from the maximum and divide by two. Their average gives the midline."
     }
   ],
   "history": [],
