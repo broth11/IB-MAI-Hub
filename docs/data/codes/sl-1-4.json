@@ -198,6 +198,11 @@
       "id": "sl14-ican-5",
       "status": "approved",
       "text": "I can use a calculator to solve for an unknown time and interpret the result as a whole number of completed periods."
+    },
+    {
+      "id": "sl14-ican-6",
+      "status": "approved",
+      "text": "I can calculate an investment's real value after allowing for inflation."
     }
   ],
   "ku": [
@@ -230,6 +235,11 @@
       "id": "sl14-ku-6",
       "status": "approved",
       "text": "In a time-value-of-money solver, use a consistent point of view for cash-flow signs, distinguish compounding frequency from payment frequency, and set payment timing when payments exist."
+    },
+    {
+      "id": "sl14-ku-7",
+      "status": "approved",
+      "text": "To express a future nominal balance in today's purchasing power, divide by the cumulative inflation factor. For a constant annual inflation rate $j$ over $t$ years, $\\text{real value}=\\text{nominal value}/(1+j)^t$."
     }
   ],
   "visuals": [],
@@ -285,6 +295,12 @@
       "status": "approved",
       "weak": "Use positive signs for both money invested and money received in the solver.",
       "better": "Use opposite signs for cash flows in opposite directions and keep the chosen point of view consistent."
+    },
+    {
+      "id": "sl14-misc-6",
+      "status": "approved",
+      "weak": "Subtract 3 percentage points from a 6% interest rate to obtain the exact real rate.",
+      "better": "For matching annual rates, the exact real growth factor is $(1.06)/(1.03)$; the 3-percentage-point difference is only an approximation."
     }
   ],
   "terms": [
@@ -344,6 +360,13 @@
         "q": "Find the first completed month when the balance exceeds 12000 dollars.",
         "marks": 2,
         "a": "Solve $10000(1.005)^n>12000$: $n>\\log(1.2)/\\log(1.005)\\approx36.56$. The first whole month is 37; checking months 36 and 37 confirms the boundary.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "If prices rise by 3% per year, find the real value of the account after two years in today's dollars, to the nearest cent.",
+        "marks": 2,
+        "a": "Divide the unrounded nominal balance by the cumulative inflation factor: $10000(1.005)^{24}/(1.03)^2=10624.5619\\ldots$, or 10624.56 dollars in today's purchasing power.",
         "m": "M1 A1"
       }
     ]
