@@ -1,0 +1,349 @@
+{
+  "code": "AHL 3.14",
+  "slug": "ahl-3-14",
+  "title": "Graph theory",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 315,
+        "title": "Graph Theory",
+        "videoId": "fTASH0uqQxg",
+        "partial": true,
+        "moments": [
+          {
+            "t": 3,
+            "type": "Overview",
+            "title": "Networks and connections",
+            "text": "The presenter introduces graph theory through connected towns and networks."
+          },
+          {
+            "t": 74,
+            "type": "Definition",
+            "title": "Vertices, edges and degree",
+            "text": "Locations are vertices; links are edges. Degree counts incident edges in the illustrated graph."
+          },
+          {
+            "t": 105,
+            "type": "Concept",
+            "title": "Directed and undirected",
+            "text": "Arrows restrict allowed travel direction; an undirected edge can be traversed either way."
+          },
+          {
+            "t": 140,
+            "type": "Concept",
+            "title": "Weights",
+            "text": "A weighted edge can represent a quantity such as travel time."
+          },
+          {
+            "t": 167,
+            "type": "Definition",
+            "title": "Connected graphs",
+            "text": "In an undirected connected graph, every vertex is reachable from every other."
+          },
+          {
+            "t": 198,
+            "type": "Definition",
+            "title": "Complete graphs",
+            "text": "A complete graph joins every pair of distinct vertices directly."
+          },
+          {
+            "t": 226,
+            "type": "Concept",
+            "title": "Subgraphs and route terminology",
+            "text": "The presenter introduces subgraphs and names several types of route."
+          },
+          {
+            "t": 291,
+            "type": "Method",
+            "title": "Adjacency tables and matrices",
+            "text": "The video introduces row-to-column adjacency information and matrix powers."
+          },
+          {
+            "t": 437,
+            "type": "Application",
+            "title": "Minimum spanning trees",
+            "text": "The presenter introduces connecting all vertices at minimum total weight."
+          },
+          {
+            "t": 520,
+            "type": "Application",
+            "title": "Edge and vertex routing",
+            "text": "The video contrasts route problems involving edges and vertices; see the corrections beside the video."
+          },
+          {
+            "t": 627,
+            "type": "Overview",
+            "title": "Review",
+            "text": "The video closes with a high-level review and practice recommendation."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "This is a broad overview",
+            "text": "The video introduces graph terminology but does not fully develop all required definitions, directed in/out degree, strong connectivity or trees. These are explained on the page.",
+            "write": "State whether the graph is directed, weighted, simple or permits loops and parallel edges."
+          },
+          {
+            "kind": "error",
+            "title": "Routing terminology later in the video",
+            "text": "The video describes the Chinese postman problem as traversing every edge exactly once. In general, a shortest closed postman route must traverse every edge at least once and may need repeated edges. A classical Hamiltonian cycle visits each vertex once before returning to its start.",
+            "write": "Check whether the task covers edges or vertices and whether repetition is permitted."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "The timestamps follow captions; playback and the on-screen network have not been independently verified.",
+            "write": "Count a loop twice in the degree of an undirected vertex."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "ahl-3-14-ican-1",
+      "status": "approved",
+      "text": "I can model a context using vertices and edges and interpret edge weights."
+    },
+    {
+      "id": "ahl-3-14-ican-2",
+      "status": "approved",
+      "text": "I can distinguish simple, complete, directed, weighted and connected graphs."
+    },
+    {
+      "id": "ahl-3-14-ican-3",
+      "status": "approved",
+      "text": "I can calculate degree, in-degree and out-degree, including loops when permitted."
+    },
+    {
+      "id": "ahl-3-14-ican-4",
+      "status": "approved",
+      "text": "I can identify a subgraph or tree and check whether a directed graph is strongly connected."
+    },
+    {
+      "id": "ahl-3-14-ican-5",
+      "status": "approved",
+      "text": "I can apply the degree sum rule and distinguish graph structure from a particular drawing."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-14-ku-1",
+      "status": "approved",
+      "text": "A graph has a set of vertices and edges. Adjacent vertices are joined by an edge; adjacent edges share a vertex. A graph models a relationship, and the interpretation of a vertex or edge depends on the context."
+    },
+    {
+      "id": "ahl-3-14-ku-2",
+      "status": "approved",
+      "text": "An undirected edge can be traversed in either direction; a directed edge has an arrow from its tail to its head. A weight may record cost, distance or time. A weight is not automatically a count of edges or a probability."
+    },
+    {
+      "id": "ahl-3-14-ku-3",
+      "status": "approved",
+      "text": "A simple graph has no loops and no parallel edges. A loop joins a vertex to itself; parallel edges are distinct edges joining the same pair. State when loops or parallel edges are allowed."
+    },
+    {
+      "id": "ahl-3-14-ku-4",
+      "status": "approved",
+      "text": "The degree of a vertex in an undirected graph is the number of incident edge ends: an ordinary incident edge contributes one and a loop contributes two. The sum of degrees is $2|E|$, including loops counted this way."
+    },
+    {
+      "id": "ahl-3-14-ku-5",
+      "status": "approved",
+      "text": "In a directed graph, in-degree counts incoming edge ends and out-degree counts outgoing edge ends. A directed loop contributes one to each. The sum of in-degrees and the sum of out-degrees both equal the number of directed edges."
+    },
+    {
+      "id": "ahl-3-14-ku-6",
+      "status": "approved",
+      "text": "An undirected graph is connected if every pair of vertices is joined by a path. A directed graph is strongly connected if every vertex can reach every other following arrow directions. Ignoring arrows can hide a failure of strong connectivity."
+    },
+    {
+      "id": "ahl-3-14-ku-7",
+      "status": "approved",
+      "text": "The complete simple undirected graph $K_n$ joins every pair of distinct vertices exactly once. Each vertex has degree $n-1$, and the total number of edges is $n(n-1)/2$."
+    },
+    {
+      "id": "ahl-3-14-ku-8",
+      "status": "approved",
+      "text": "A subgraph uses a subset of the original vertices and edges, with each selected edge retaining its endpoints. An induced subgraph on chosen vertices includes every original edge between those vertices."
+    },
+    {
+      "id": "ahl-3-14-ku-9",
+      "status": "approved",
+      "text": "A tree is a connected undirected graph with no cycles. A tree with $n$ vertices has $n-1$ edges; connectedness is essential when using this property to check a candidate."
+    },
+    {
+      "id": "ahl-3-14-ku-10",
+      "status": "approved",
+      "text": "Graphs that look different in a drawing can have the same connections. An edge crossing is not automatically a vertex unless it is marked or specified as one."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-14-misc-1",
+      "status": "approved",
+      "weak": "A loop contributes one to the degree of an undirected vertex.",
+      "better": "It contributes two edge ends, so it contributes two to the degree."
+    },
+    {
+      "id": "ahl-3-14-misc-2",
+      "status": "approved",
+      "weak": "A strongly connected directed graph only needs every vertex to have an incoming and outgoing edge.",
+      "better": "Every vertex must be reachable from every other following the arrows. Degree conditions alone are not enough."
+    },
+    {
+      "id": "ahl-3-14-misc-3",
+      "status": "approved",
+      "weak": "Any connected graph is complete.",
+      "better": "Connected means reachable by a path; complete means each distinct pair is joined by an edge."
+    },
+    {
+      "id": "ahl-3-14-misc-4",
+      "status": "approved",
+      "weak": "A graph with $n-1$ edges must be a tree.",
+      "better": "It must also be connected; otherwise a cycle and a disconnected vertex may coexist."
+    },
+    {
+      "id": "ahl-3-14-misc-5",
+      "status": "approved",
+      "weak": "A road crossing on a diagram is necessarily a graph vertex.",
+      "better": "It is a vertex only when the model indicates a connection there."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-14-terms-1",
+      "status": "approved",
+      "term": "Vertex and edge",
+      "text": "A vertex represents an object or location; an edge represents a specified relationship or connection."
+    },
+    {
+      "id": "ahl-3-14-terms-2",
+      "status": "approved",
+      "term": "Degree",
+      "text": "The number of incident edge ends at a vertex in an undirected graph."
+    },
+    {
+      "id": "ahl-3-14-terms-3",
+      "status": "approved",
+      "term": "Strongly connected",
+      "text": "Every vertex of a directed graph can reach every other by following arrows."
+    },
+    {
+      "id": "ahl-3-14-terms-4",
+      "status": "approved",
+      "term": "Complete graph",
+      "text": "A simple graph in which every pair of distinct vertices is joined by an edge."
+    },
+    {
+      "id": "ahl-3-14-terms-5",
+      "status": "approved",
+      "term": "Tree",
+      "text": "A connected undirected graph without cycles."
+    },
+    {
+      "id": "ahl-3-14-terms-6",
+      "status": "approved",
+      "term": "Subgraph",
+      "text": "A graph formed from selected vertices and edges of another graph."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-14-formula-1",
+      "status": "approved",
+      "text": "Undirected degree sum: $\\sum_{v\\in V}\\deg(v)=2|E|$, counting a loop twice."
+    },
+    {
+      "id": "ahl-3-14-formula-2",
+      "status": "approved",
+      "text": "For a directed graph, $\\sum\\deg^-(v)=\\sum\\deg^+(v)=|E|$."
+    },
+    {
+      "id": "ahl-3-14-formula-3",
+      "status": "approved",
+      "text": "A complete simple graph $K_n$ has $n(n-1)/2$ edges; a tree with $n$ vertices has $n-1$ edges."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "An undirected simple network has vertices $A,B,C,D,E$ and edges $AB,AC,BC,CD,DE,EA$. Each edge represents a two-way route.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find every vertex degree and verify the degree sum.",
+        "marks": 3,
+        "a": "The degrees are $\\deg A=3$, $\\deg B=2$, $\\deg C=3$, $\\deg D=2$ and $\\deg E=2$. Their sum is $12=2(6)$, consistent with six edges.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Is the network connected or complete? Explain.",
+        "marks": 2,
+        "a": "It is connected: $A-B-C-D-E$ reaches every vertex. It is not complete because, for example, there is no edge $AD$.",
+        "m": "R1 R1"
+      },
+      {
+        "label": "c",
+        "q": "Give a spanning tree and explain why it is a tree.",
+        "marks": 2,
+        "a": "Choose edges $AB,BC,CD,DE$. They connect all five vertices in a chain and have no cycle, so they form a spanning tree. There are $5-1=4$ edges.",
+        "m": "A1 R1"
+      },
+      {
+        "label": "d",
+        "q": "How many additional edges are needed to make this graph complete?",
+        "marks": 2,
+        "a": "$K_5$ has $5(4)/2=10$ edges. The network has six, so four more are needed: $AD,BD,BE,CE$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "e",
+        "q": "Separately, a directed graph has arcs $A\\to B$, $B\\to C$, $C\\to A$, $C\\to D$ and $D\\to C$. Find the in-degree and out-degree of $C$ and decide whether it is strongly connected.",
+        "marks": 3,
+        "a": "For $C$, incoming arcs are $B\\to C$ and $D\\to C$, so in-degree is $2$; outgoing arcs are $C\\to A$ and $C\\to D$, so out-degree is $2$. It is strongly connected: from any vertex one can reach $C$, and from $C$ one can reach every vertex following arrows.",
+        "m": "A1 A1 R1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-14-kq-1",
+      "status": "approved",
+      "q": "Why does an undirected loop count twice in degree?",
+      "model": "Both ends of the edge are incident to the same vertex. Counting edge ends therefore counts the loop twice."
+    },
+    {
+      "id": "ahl-3-14-kq-2",
+      "status": "approved",
+      "q": "Why is a complete graph connected when it has at least one vertex?",
+      "model": "Every distinct pair has a direct edge, so every vertex can reach every other."
+    },
+    {
+      "id": "ahl-3-14-kq-3",
+      "status": "approved",
+      "q": "Why is strong connectivity stronger than ignoring arrow directions?",
+      "model": "A route that exists after removing arrow restrictions might be impossible to follow in one or both directions in the directed graph."
+    },
+    {
+      "id": "ahl-3-14-kq-4",
+      "status": "approved",
+      "q": "Why does a spanning tree omit cycles?",
+      "model": "A tree is connected and acyclic. Retaining a cycle would violate its definition, even if the graph still spans all vertices."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
