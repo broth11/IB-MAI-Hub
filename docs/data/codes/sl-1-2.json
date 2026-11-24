@@ -13,28 +13,76 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Arithmetic Sequences & Series."
+            "t": 21,
+            "type": "Concept",
+            "title": "Arithmetic or geometric?",
+            "text": "An arithmetic sequence changes by a constant difference; a geometric sequence uses a constant ratio."
           },
           {
-            "t": 92,
+            "t": 50,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Identify the common difference",
+            "text": "In $-6,1,8,15,22,\\ldots$, each term is 7 more than the preceding term, so $d=7$."
+          },
+          {
+            "t": 81,
+            "type": "Notation",
+            "title": "Label the terms",
+            "text": "The presenter labels the first, second and third terms $u_1$, $u_2$ and $u_3$."
+          },
+          {
+            "t": 96,
+            "type": "Worked example",
+            "title": "A negative difference",
+            "text": "In $10,8,6,4,\\ldots$, the common difference is $d=-2$."
           },
           {
             "t": 123,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "type": "Reference",
+            "title": "Formula booklet",
+            "text": "The presenter points out the arithmetic-sequence and series formulas before using them."
           },
           {
-            "t": 211,
-            "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "t": 145,
+            "type": "Transition",
+            "title": "Finding a distant term",
+            "text": "Listing many terms is inefficient, so use the term formula to find $u_{15}$."
+          },
+          {
+            "t": 172,
+            "type": "Worked example",
+            "title": "Calculate the fifteenth term",
+            "text": "Substitute $u_1=-6$, $n=15$ and $d=7$: $u_{15}=-6+(15-1)(7)=92$."
+          },
+          {
+            "t": 239,
+            "type": "Definition",
+            "title": "From a sequence to a series",
+            "text": "The presenter switches from finding an individual term to finding the sum of a number of terms."
+          },
+          {
+            "t": 257,
+            "type": "Worked example",
+            "title": "Set up the first ten terms",
+            "text": "The task is to add the first 10 terms, from $u_1$ through $u_{10}$."
+          },
+          {
+            "t": 291,
+            "type": "Formula",
+            "title": "Use the sum formula",
+            "text": "Substitute $n=10$, $u_1=-6$ and $d=7$ into $S_n=\\frac n2[2u_1+(n-1)d]$."
+          },
+          {
+            "t": 328,
+            "type": "Worked example",
+            "title": "The sum is 255",
+            "text": "The sum of the first ten terms is $S_{10}=255$."
+          },
+          {
+            "t": 350,
+            "type": "Reference",
+            "title": "An alternative form",
+            "text": "When the first and last terms are known, use $S_n=\\frac n2(u_1+u_n)$; the presenter returns to this form near the end."
           }
         ],
         "notes": []
@@ -46,114 +94,276 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
+            "t": 25,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Sigma Notation."
+            "title": "Why use sigma notation?",
+            "text": "Sigma notation is a compact way to write the sum of a sequence of terms."
           },
           {
-            "t": 61,
+            "t": 65,
+            "type": "Definition",
+            "title": "Read the components",
+            "text": "The sigma indicates addition; the lower and upper limits specify where the index begins and ends."
+          },
+          {
+            "t": 109,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Set up the summand",
+            "text": "The first example is $\\sum_{k=1}^{4}(k+3)$."
           },
           {
-            "t": 105,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "t": 118,
+            "type": "Procedure",
+            "title": "Substitute each index",
+            "text": "Use $k=1,2,3,4$ in the expression $k+3$ and add the results."
           },
           {
-            "t": 258,
-            "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "t": 163,
+            "type": "Worked example",
+            "title": "Evaluate the sum",
+            "text": "The terms are $4,5,6,7$, giving a total of 22."
+          },
+          {
+            "t": 209,
+            "type": "Transition",
+            "title": "A different starting index",
+            "text": "The next example starts at $k=3$, not $k=1$, and ends at $k=6$."
+          },
+          {
+            "t": 225,
+            "type": "Procedure",
+            "title": "Write the four terms",
+            "text": "Substitute $k=3,4,5,6$ into $1/3^k$. Both limits are included."
+          },
+          {
+            "t": 266,
+            "type": "Worked example",
+            "title": "Evaluate the second sum",
+            "text": "$\\sum_{k=3}^{6}3^{-k}=40/729$."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Check the lower limit",
+            "text": "The first example is written from $k=1$ to $k=4$. The spoken recap is easy to confuse with a different starting value.",
+            "write": "Use the limits shown in the expression: $\\sum_{k=1}^{4}(k+3)=4+5+6+7=22$.",
+            "section": "ku"
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "sl-1-2-ican-1",
+      "id": "sl12-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for arithmetic sequences and series."
+      "text": "I can identify an arithmetic sequence and find its first term and common difference."
     },
     {
-      "id": "sl-1-2-ican-2",
+      "id": "sl12-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can use a term formula to find a term or solve for an unknown term number."
+    },
+    {
+      "id": "sl12-ican-3",
+      "status": "approved",
+      "text": "I can find a sum of consecutive arithmetic terms using an appropriate series formula."
+    },
+    {
+      "id": "sl12-ican-4",
+      "status": "approved",
+      "text": "I can read and evaluate sigma notation, including a starting index other than 1."
+    },
+    {
+      "id": "sl12-ican-5",
+      "status": "approved",
+      "text": "I can use an arithmetic model in context and interpret its assumptions."
     }
   ],
   "ku": [
     {
-      "id": "sl-1-2-ku-1",
+      "id": "sl12-ku-1",
       "status": "approved",
-      "text": "An arithmetic sequence has a constant difference $d$ between consecutive terms."
+      "text": "An arithmetic sequence has a constant difference $d=u_{n+1}-u_n$. The difference may be positive, negative or zero."
     },
     {
-      "id": "sl-1-2-ku-2",
+      "id": "sl12-ku-2",
       "status": "approved",
-      "text": "$u_n=u_1+(n-1)d$ and $S_n=\\frac n2(2u_1+(n-1)d)$."
+      "text": "Starting with $u_1$, the $n$th term is $u_n=u_1+(n-1)d$. There are $n-1$ changes between the first and $n$th terms."
     },
     {
-      "id": "sl-1-2-ku-3",
+      "id": "sl12-ku-3",
       "status": "approved",
-      "text": "$S_n$ is a sum of terms, whereas $u_n$ is a single term."
+      "text": "The first $n$ terms sum to $S_n=\\frac n2[2u_1+(n-1)d]=\\frac n2(u_1+u_n)$. The second form uses the first and last terms of the sum."
+    },
+    {
+      "id": "sl12-ku-4",
+      "status": "approved",
+      "text": "$u_n$ is one term; $S_n$ is the total of terms $u_1$ through $u_n$. To sum from $u_a$ to $u_b$, use $S_b-S_{a-1}$ or the number of terms $b-a+1$."
+    },
+    {
+      "id": "sl12-ku-5",
+      "status": "approved",
+      "text": "In $\\sum_{k=a}^{b}f(k)$, substitute each integer from $a$ through $b$ into $f(k)$ and add. The limits are inclusive."
+    },
+    {
+      "id": "sl12-ku-6",
+      "status": "approved",
+      "text": "When a context asks for the first term exceeding a target, solve the inequality and choose the smallest permitted integer. Check that term and its predecessor."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "sl12-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 2.1",
+        "Linear relationships and constant rate of change"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "SL 1.3",
+        "Geometric sequences and series"
+      ],
+      [
+        "SL 2.6",
+        "Building a model from a pattern"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 1.6",
+        "Rounding results in context"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "sl-1-2-misc-1",
+      "id": "sl12-misc-1",
       "status": "approved",
-      "weak": "Using $n$ differences from the first term",
-      "better": "Use $n-1$ differences to reach term $n$."
+      "weak": "$u_n=u_1+nd$.",
+      "better": "Starting at $u_1$, there are $n-1$ differences: $u_n=u_1+(n-1)d$."
+    },
+    {
+      "id": "sl12-misc-2",
+      "status": "approved",
+      "weak": "$S_{10}$ is the tenth term.",
+      "better": "$u_{10}$ is the tenth term; $S_{10}$ is the sum of the first ten terms."
+    },
+    {
+      "id": "sl12-misc-3",
+      "status": "approved",
+      "weak": "The sum from $k=4$ to $k=10$ contains 6 terms.",
+      "better": "Both endpoints count, so it contains $10-4+1=7$ terms."
+    },
+    {
+      "id": "sl12-misc-4",
+      "status": "approved",
+      "weak": "To calculate $u_4+\\cdots+u_{10}$, use $S_{10}-S_4$.",
+      "better": "Subtract only the first three terms: $S_{10}-S_3$."
+    },
+    {
+      "id": "sl12-misc-5",
+      "status": "approved",
+      "weak": "A negative common difference means the terms form a geometric sequence.",
+      "better": "A constant difference can be negative. A geometric sequence has a constant ratio."
     }
   ],
   "terms": [
     {
-      "id": "sl-1-2-terms-1",
+      "id": "sl12-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Find the nth term",
+      "text": "Write a formula in $n$ and check that it produces the given terms."
     },
     {
-      "id": "sl-1-2-terms-2",
+      "id": "sl12-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find the sum",
+      "text": "State which terms are included, choose the sum formula and identify the number of terms."
+    },
+    {
+      "id": "sl12-terms-3",
+      "status": "approved",
+      "term": "Find the least value",
+      "text": "Solve the inequality, then choose and check the smallest permitted integer in context."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "sl12-form-1",
+      "status": "approved",
+      "text": "Arithmetic sequence: $u_n=u_1+(n-1)d$."
+    },
+    {
+      "id": "sl12-form-2",
+      "status": "approved",
+      "text": "Arithmetic series: $S_n=\\frac n2[2u_1+(n-1)d]=\\frac n2(u_1+u_n)$. Use consistent first-term and term-number conventions."
+    }
+  ],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "An arithmetic sequence has $u_1=8$ and $d=3$. Find $u_{12}$ and $S_{12}$.",
+    "prompt": "A school hall has 120 seats in its first row. Each successive row has 15 more seats than the preceding row. There are 10 rows.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find the number of seats in the tenth row.",
         "marks": 2,
-        "a": "$u_{12}=8+11(3)=41$ and $S_{12}=\\frac{12}{2}(8+41)=294$.",
+        "a": "$u_{10}=120+9(15)=255$ seats.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find the total number of seats in the hall.",
+        "marks": 2,
+        "a": "$S_{10}=\\frac{10}{2}(120+255)=1875$ seats.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Find the total number of seats in rows 4 through 10.",
+        "marks": 2,
+        "a": "$u_4=165$. There are $10-4+1=7$ rows, so the total is $\\frac72(165+255)=1470$ seats.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Find the first row with more than 250 seats.",
+        "marks": 2,
+        "a": "$120+15(n-1)>250$ gives $n>9.666\\ldots$. The first permitted integer is $n=10$; row 9 has 240 seats and row 10 has 255.",
         "m": "M1 A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "sl-1-2-kq-1",
+      "id": "sl12-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Use $n-1$ differences to reach term $n$."
+      "q": "Why does the nth-term formula use $n-1$, not $n$?",
+      "model": "The first term is already present before any differences are added. Moving from term 1 to term $n$ requires $n-1$ steps."
+    },
+    {
+      "id": "sl12-kq-2",
+      "status": "approved",
+      "q": "Why does $S_{10}-S_3$ include row 4?",
+      "model": "$S_{10}$ includes rows 1 to 10. Subtracting $S_3$ removes only rows 1, 2 and 3."
+    },
+    {
+      "id": "sl12-kq-3",
+      "status": "approved",
+      "q": "Why is $S_n=n(u_1+u_n)/2$ valid?",
+      "model": "Pair the first term with the last, the second with the next-to-last and so on. Each pair has the same total, so the average term is $(u_1+u_n)/2$."
+    },
+    {
+      "id": "sl12-kq-4",
+      "status": "approved",
+      "q": "Does a constant difference of zero count as arithmetic?",
+      "model": "Yes. Each consecutive pair differs by the same value, $d=0$, even though the sequence does not increase or decrease."
     }
   ],
   "history": [],
