@@ -13,37 +13,81 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Compound Interest & Depreciation."
+            "t": 31,
+            "type": "Concept",
+            "title": "Growth and depreciation",
+            "text": "Compound growth and depreciation both apply a multiplier repeatedly; the resulting graphs move in opposite directions."
           },
           {
-            "t": 42,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "t": 101,
+            "type": "Context",
+            "title": "What each model represents",
+            "text": "The presenter contrasts an investment increasing in value with an asset losing value over time."
           },
           {
-            "t": 87,
+            "t": 123,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Identify the initial amount",
+            "text": "The first example invests 100 dollars for three years at a nominal annual interest rate of 5%, compounded monthly."
           },
           {
-            "t": 256,
-            "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "t": 151,
+            "type": "Procedure",
+            "title": "Identify compounding periods",
+            "text": "Monthly compounding gives 12 compounding periods per year; quarterly, semiannual and annual compounding give 4, 2 and 1."
+          },
+          {
+            "t": 220,
+            "type": "Formula",
+            "title": "Substitute the values",
+            "text": "Use $100(1+5/(100\\times12))^{12\\times3}$, with the annual rate expressed as a percentage in this version of the formula."
+          },
+          {
+            "t": 264,
+            "type": "Worked example",
+            "title": "Interpret the future value",
+            "text": "The balance is approximately 116 dollars to three significant figures. Interest earned is the final balance minus the original 100 dollars."
+          },
+          {
+            "t": 285,
+            "type": "Transition",
+            "title": "A depreciation example",
+            "text": "A car starts at 10000 dollars and loses 12% of its value each year for eight years."
+          },
+          {
+            "t": 326,
+            "type": "Worked example",
+            "title": "Apply the depreciation multiplier",
+            "text": "The factor is $0.88$ each year, so the model gives $10000(0.88)^8\\approx3596$ to the nearest dollar."
           },
           {
             "t": 360,
-            "type": "Visual",
-            "title": "Graph discussion",
-            "text": "The presenter discusses a graph."
+            "type": "Concept",
+            "title": "Why compound growth curves upward",
+            "text": "A fixed percentage of an increasing balance produces a larger absolute increase each period."
+          },
+          {
+            "t": 408,
+            "type": "Worked example",
+            "title": "Compare percentage increases",
+            "text": "An increase of 10% is 10 dollars on 100 dollars, but 100 dollars on 1000 dollars. The rate is unchanged even though the dollar change differs."
+          },
+          {
+            "t": 435,
+            "type": "Concept",
+            "title": "Why depreciation slows in absolute terms",
+            "text": "When the value falls, the same percentage is applied to a smaller base. The size of the loss can shrink even while the percentage rate stays fixed."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "A fixed rate and a changing amount",
+            "text": "Near the graph discussion, the presenter says the percentage increase changes. In the examples, the percentage rate remains fixed; the dollar amount changes as the base changes.",
+            "write": "At 10% per year, the rate stays 10%, while the dollar increase grows as the balance grows.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 110,
@@ -54,112 +98,280 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Finance Solver (TVM Solver)."
-          },
-          {
-            "t": 49,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "title": "What a finance solver does",
+            "text": "A time-value-of-money solver relates present value, future value, payments, interest and timing."
           },
           {
             "t": 77,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Opening the solver",
+            "text": "The video demonstrates the TI-Nspire menu. The Casio fx-CG50 uses different menus."
           },
           {
-            "t": 109,
-            "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "t": 97,
+            "type": "Definition",
+            "title": "Number of periods",
+            "text": "$N$ counts payment periods in the setup shown. For monthly payments over two years, $N=24$."
+          },
+          {
+            "t": 122,
+            "type": "Definition",
+            "title": "Annual interest rate",
+            "text": "The presenter enters the stated nominal annual rate as a percentage in the calculator field."
+          },
+          {
+            "t": 144,
+            "type": "Definition",
+            "title": "Present value",
+            "text": "Present value is the amount at the start of the financial arrangement."
+          },
+          {
+            "t": 185,
+            "type": "Key idea",
+            "title": "Cash-flow signs",
+            "text": "The video uses a consistent point of view: cash received is positive and cash paid out is negative."
+          },
+          {
+            "t": 226,
+            "type": "Definition",
+            "title": "Payment per period",
+            "text": "The payment field is the amount per payment period, with its sign indicating direction of cash flow."
+          },
+          {
+            "t": 252,
+            "type": "Definition",
+            "title": "Future value",
+            "text": "Future value is the amount at the end. A fully repaid loan has a remaining balance of zero."
+          },
+          {
+            "t": 273,
+            "type": "Definition",
+            "title": "Payments per year",
+            "text": "Monthly, quarterly and annual payments correspond to 12, 4 and 1 payment periods per year."
+          },
+          {
+            "t": 306,
+            "type": "Definition",
+            "title": "Compounding periods per year",
+            "text": "Compounding frequency may differ from payment frequency. Enter each field from the terms of the question."
+          },
+          {
+            "t": 334,
+            "type": "Decision",
+            "title": "Beginning or end of period",
+            "text": "Choose whether each payment occurs at the beginning or end of its payment period; timing affects the result."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Calculator shown in the video",
+            "text": "The video demonstrates a TI-Nspire. Field names and menus can differ on the Casio fx-CG50.",
+            "write": "Keep the same cash-flow sign convention and check the payment and compounding frequencies on your calculator."
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "sl-1-4-ican-1",
+      "id": "sl14-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for compound interest and depreciation."
+      "text": "I can distinguish a nominal annual rate from the rate applied each compounding period."
     },
     {
-      "id": "sl-1-4-ican-2",
+      "id": "sl14-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can model compound growth and depreciation with an appropriate multiplier and number of periods."
+    },
+    {
+      "id": "sl14-ican-3",
+      "status": "approved",
+      "text": "I can calculate interest earned separately from the final account balance."
+    },
+    {
+      "id": "sl14-ican-4",
+      "status": "approved",
+      "text": "I can interpret cash-flow signs and payment timing in a finance solver."
+    },
+    {
+      "id": "sl14-ican-5",
+      "status": "approved",
+      "text": "I can use a calculator to solve for an unknown time and interpret the result as a whole number of completed periods."
     }
   ],
   "ku": [
     {
-      "id": "sl-1-4-ku-1",
+      "id": "sl14-ku-1",
       "status": "approved",
-      "text": "A change of $r\\%$ per period multiplies the value by $1+r/100$ for growth or $1-r/100$ for depreciation."
+      "text": "For growth at rate $i$ per period, $V_n=V_0(1+i)^n$. For depreciation at rate $d$ per period, $V_n=V_0(1-d)^n$."
     },
     {
-      "id": "sl-1-4-ku-2",
+      "id": "sl14-ku-2",
       "status": "approved",
-      "text": "For $n$ equal periods, $V_n=V_0(1+i)^n$ when $i$ is the rate per period."
+      "text": "For a nominal annual rate $r$ expressed as a decimal and compounded $m$ times per year, $V=V_0(1+r/m)^{mt}$ after $t$ years, with no deposits or withdrawals."
     },
     {
-      "id": "sl-1-4-ku-3",
+      "id": "sl14-ku-3",
       "status": "approved",
-      "text": "Make the interest rate and number of periods consistent."
+      "text": "The nominal annual rate is not the effective annual rate when compounding occurs more than once a year. The effective annual rate is $(1+r/m)^m-1$."
+    },
+    {
+      "id": "sl14-ku-4",
+      "status": "approved",
+      "text": "Compound interest earned is $V-V_0$. The final balance and the interest alone answer different questions."
+    },
+    {
+      "id": "sl14-ku-5",
+      "status": "approved",
+      "text": "For fixed percentage growth, the percentage rate stays constant while the amount of each increase rises with the balance. For fixed percentage depreciation, the absolute loss decreases as a positive balance decreases."
+    },
+    {
+      "id": "sl14-ku-6",
+      "status": "approved",
+      "text": "In a time-value-of-money solver, use a consistent point of view for cash-flow signs, distinguish compounding frequency from payment frequency, and set payment timing when payments exist."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "sl14-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.3",
+        "Geometric sequences and series"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "SL 1.7",
+        "Loans, amortization and annuities"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 2.5",
+        "Exponential models"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "sl-1-4-misc-1",
+      "id": "sl14-misc-1",
       "status": "approved",
-      "weak": "Subtracting 15% of the original value every year",
-      "better": "Percentage depreciation is applied to the value at the start of each year."
+      "weak": "At 6% per year compounded monthly, use 6% every month.",
+      "better": "For a nominal annual rate of 6%, the monthly rate is $0.06/12=0.005$, or 0.5%."
+    },
+    {
+      "id": "sl14-misc-2",
+      "status": "approved",
+      "weak": "For 2 years of monthly compounding, use an exponent of 2.",
+      "better": "There are $2\\times12=24$ compounding periods, so use exponent 24."
+    },
+    {
+      "id": "sl14-misc-3",
+      "status": "approved",
+      "weak": "The interest earned is the final account balance.",
+      "better": "Subtract the initial principal from the final balance."
+    },
+    {
+      "id": "sl14-misc-4",
+      "status": "approved",
+      "weak": "A machine that depreciates by 15% annually loses 15% of its original value every year.",
+      "better": "Apply 15% to each year's current value, or multiply repeatedly by $0.85$."
+    },
+    {
+      "id": "sl14-misc-5",
+      "status": "approved",
+      "weak": "Use positive signs for both money invested and money received in the solver.",
+      "better": "Use opposite signs for cash flows in opposite directions and keep the chosen point of view consistent."
     }
   ],
   "terms": [
     {
-      "id": "sl-1-4-terms-1",
+      "id": "sl14-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Calculate the future value",
+      "text": "Identify the starting amount, periodic rate and number of periods; show the substitution and give the final amount with units."
     },
     {
-      "id": "sl-1-4-terms-2",
+      "id": "sl14-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find the interest earned",
+      "text": "Subtract the starting principal from the final balance and round as the question requires."
+    },
+    {
+      "id": "sl14-terms-3",
+      "status": "approved",
+      "term": "Find the first period exceeding a target",
+      "text": "Find the threshold, use the next whole completed period when necessary, and check that the previous period does not meet the condition."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "sl14-formula-1",
+      "status": "approved",
+      "text": "Compound growth: $V=V_0(1+r/m)^{mt}$ when $r$ is a decimal annual nominal rate, $m$ is compounding periods per year and $t$ is years."
+    },
+    {
+      "id": "sl14-formula-2",
+      "status": "approved",
+      "text": "Compound depreciation at a rate $d$ per period: $V=V_0(1-d)^n$."
+    }
+  ],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "A machine worth $8000$ depreciates by 15% each year. Find its value after two years.",
+    "prompt": "An account starts with 10000 dollars. It earns a nominal annual interest rate of 6%, compounded monthly. No further deposits or withdrawals are made.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find the balance after two years, correct to the nearest cent.",
         "marks": 2,
-        "a": "$V=8000(0.85)^2=5780$.",
+        "a": "There are 24 periods at rate $0.06/12=0.005$ per month. $V=10000(1.005)^{24}=11271.5977\\ldots$, or 11271.60 dollars.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find the interest earned over the two years.",
+        "marks": 1,
+        "a": "$11271.60-10000=1271.60$ dollars.",
+        "m": "A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Find the first completed month when the balance exceeds 12000 dollars.",
+        "marks": 2,
+        "a": "Solve $10000(1.005)^n>12000$: $n>\\log(1.2)/\\log(1.005)\\approx36.56$. The first whole month is 37; checking months 36 and 37 confirms the boundary.",
         "m": "M1 A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "sl-1-4-kq-1",
+      "id": "sl14-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Percentage depreciation is applied to the value at the start of each year."
+      "q": "Why is the exponent 24 rather than 2 for two years of monthly compounding?",
+      "model": "The rate in the bracket is a monthly rate, so the exponent counts monthly compounding periods: $2\\times12=24$."
+    },
+    {
+      "id": "sl14-kq-2",
+      "status": "approved",
+      "q": "Why does a fixed percentage rate produce different dollar increases?",
+      "model": "The percentage is applied to the current balance. As that balance grows, the same percentage represents a larger dollar amount."
+    },
+    {
+      "id": "sl14-kq-3",
+      "status": "approved",
+      "q": "Why must a calculated time of 36.56 months be interpreted in context?",
+      "model": "If interest is credited at the end of each month and the question asks for the first completed month, check the whole months on either side. The first month meeting the condition is 37."
+    },
+    {
+      "id": "sl14-kq-4",
+      "status": "approved",
+      "q": "Why do financial-solver cash flows use opposite signs?",
+      "model": "The signs encode whether money is paid out or received from the same point of view. Reversing every sign consistently gives an equivalent convention."
     }
   ],
   "history": [],
