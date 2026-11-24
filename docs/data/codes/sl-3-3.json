@@ -1,0 +1,332 @@
+{
+  "code": "SL 3.3",
+  "slug": "sl-3-3",
+  "title": "Applications of trigonometry",
+  "level": "SL",
+  "videos": {
+    "status": "approved",
+    "items": [
+      {
+        "n": 302,
+        "title": "Pythagoras' Theorem",
+        "videoId": "R7aErDjkYQw",
+        "partial": true,
+        "moments": [
+          {
+            "t": 2,
+            "type": "Overview",
+            "title": "Pythagoras in a right triangle",
+            "text": "The presenter introduces the theorem and identifies its role in geometry and trigonometry."
+          },
+          {
+            "t": 17,
+            "type": "Concept",
+            "title": "Identify the hypotenuse",
+            "text": "The side opposite the right angle is the longest side and its square equals the sum of the squares of the other sides."
+          },
+          {
+            "t": 61,
+            "type": "Method",
+            "title": "Find a missing side",
+            "text": "Choose the original or rearranged equation depending on whether the hypotenuse or a shorter side is unknown."
+          },
+          {
+            "t": 95,
+            "type": "Example",
+            "title": "Isolate a triangle in a cone",
+            "text": "The presenter introduces a cone with vertical height $20$ cm and a previously calculated radius of $6.73$ cm."
+          },
+          {
+            "t": 110,
+            "type": "Model",
+            "title": "Identify the slant height",
+            "text": "The radius and vertical height are perpendicular; the slant height is the hypotenuse."
+          },
+          {
+            "t": 160,
+            "type": "Calculation",
+            "title": "Substitute and square",
+            "text": "Set $L^2=6.73^2+20^2$, approximately $445.29$."
+          },
+          {
+            "t": 227,
+            "type": "Calculation",
+            "title": "Take the positive square root",
+            "text": "The slant height is approximately $21.1$ cm. A length is positive."
+          },
+          {
+            "t": 272,
+            "type": "Visual",
+            "title": "Squares on a 3–4–5 triangle",
+            "text": "The presenter illustrates the relation with square areas $9$, $16$ and $25$."
+          },
+          {
+            "t": 327,
+            "type": "Overview",
+            "title": "Use the length in a larger problem",
+            "text": "The video closes by connecting an intermediate length to later volume or surface-area calculations."
+          }
+        ],
+        "notes": [
+          {
+            "kind": "omission",
+            "title": "The video covers only part of SL 3.3",
+            "text": "It explains Pythagoras and a cone example. It does not teach elevation, depression, bearings or building a diagram from a contextual description.",
+            "write": "Sketch and label the information before choosing a method."
+          },
+          {
+            "kind": "watch",
+            "title": "Timeline source",
+            "text": "The timeline is based on captions; playback and the on-screen diagram have not been independently verified.",
+            "write": "Check the right angle and label the hypotenuse before substituting."
+          },
+          {
+            "kind": "watch",
+            "title": "Keep precision between steps",
+            "text": "The radius $6.73$ cm is a value from an earlier part of the video. When an unrounded result is available, retain it for later calculations.",
+            "write": "Round the final answer to the requested accuracy."
+          }
+        ]
+      }
+    ]
+  },
+  "ican": [
+    {
+      "id": "sl-3-3-ican-1",
+      "status": "approved",
+      "text": "I can translate a written situation into a labelled diagram with relevant horizontal and vertical lines."
+    },
+    {
+      "id": "sl-3-3-ican-2",
+      "status": "approved",
+      "text": "I can use Pythagoras and right-triangle trigonometry to find distances, heights and angles in context."
+    },
+    {
+      "id": "sl-3-3-ican-3",
+      "status": "approved",
+      "text": "I can identify angles of elevation and depression from the correct horizontal line."
+    },
+    {
+      "id": "sl-3-3-ican-4",
+      "status": "approved",
+      "text": "I can interpret and use three-figure bearings measured clockwise from north."
+    },
+    {
+      "id": "sl-3-3-ican-5",
+      "status": "approved",
+      "text": "I can choose sine or cosine rules for a non-right triangle and interpret the result in context."
+    }
+  ],
+  "ku": [
+    {
+      "id": "sl-3-3-ku-1",
+      "status": "approved",
+      "text": "Start a contextual problem by marking the observation points and objects. Draw a labelled horizontal at each observer, verticals where justified, the line of sight and any known distances. Add right-angle markers only where the context establishes perpendicular lines."
+    },
+    {
+      "id": "sl-3-3-ku-2",
+      "status": "approved",
+      "text": "The angle of elevation is measured upward from the observer’s horizontal line of sight. The angle of depression is measured downward from the observer’s horizontal. Neither is measured from the vertical."
+    },
+    {
+      "id": "sl-3-3-ku-3",
+      "status": "approved",
+      "text": "If two horizontal lines are parallel, a line of sight makes equal alternate interior angles with them. This lets an angle of depression at a higher observer equal the corresponding angle of elevation at the lower observer. Draw both horizontals to see why."
+    },
+    {
+      "id": "sl-3-3-ku-4",
+      "status": "approved",
+      "text": "In a right triangle, $c^2=a^2+b^2$ when $c$ is the hypotenuse. To find a shorter side, subtract its known counterpart’s square from $c^2$ before taking the positive square root."
+    },
+    {
+      "id": "sl-3-3-ku-5",
+      "status": "approved",
+      "text": "For right-triangle angles or lengths, choose sine, cosine or tangent using the sides relative to the angle. For a non-right triangle, identify an opposite side–angle pair for the sine rule, or use the cosine rule with two sides and their included angle or with all three sides."
+    },
+    {
+      "id": "sl-3-3-ku-6",
+      "status": "approved",
+      "text": "A bearing is measured clockwise from north and written using three figures, such as $090^\\circ$ for east or $225^\\circ$ for southwest. Draw a north line at the point from which the bearing is measured."
+    },
+    {
+      "id": "sl-3-3-ku-7",
+      "status": "approved",
+      "text": "To reverse a bearing, add $180^\\circ$ when the original is less than $180^\\circ$, or subtract $180^\\circ$ otherwise. For example, $040^\\circ$ reverses to $220^\\circ$. This assumes the same north direction on a plane map."
+    },
+    {
+      "id": "sl-3-3-ku-8",
+      "status": "approved",
+      "text": "On a plane map with bearing $\\theta$ and distance $d$, east and north components are $d\\sin\\theta$ and $d\\cos\\theta$. Their signs carry direction; these expressions work for any bearing when the calculator is in degrees."
+    },
+    {
+      "id": "sl-3-3-ku-9",
+      "status": "approved",
+      "text": "Check that a diagram is physically consistent and that your answer matches the requested quantity: a horizontal distance, sloping line of sight, height above ground or total height. Keep extra precision between steps and state units."
+    }
+  ],
+  "misc": [
+    {
+      "id": "sl-3-3-misc-1",
+      "status": "approved",
+      "weak": "Measure the angle of elevation upward from the vertical.",
+      "better": "Measure it upward from the horizontal at the observer."
+    },
+    {
+      "id": "sl-3-3-misc-2",
+      "status": "approved",
+      "weak": "An angle of depression is measured at the lower object.",
+      "better": "It is measured at the higher observer, from the horizontal down to the line of sight."
+    },
+    {
+      "id": "sl-3-3-misc-3",
+      "status": "approved",
+      "weak": "A bearing of $40^\\circ$ is written $40^\\circ$ and measured from east.",
+      "better": "Write $040^\\circ$ and measure clockwise from north at the starting point."
+    },
+    {
+      "id": "sl-3-3-misc-4",
+      "status": "approved",
+      "weak": "Use Pythagoras whenever three points make a triangle.",
+      "better": "First establish a right angle. Otherwise consider the sine or cosine rule."
+    },
+    {
+      "id": "sl-3-3-misc-5",
+      "status": "approved",
+      "weak": "A sloping sight distance is the horizontal ground distance.",
+      "better": "Mark the two different segments on the sketch. The sight line is a hypotenuse only in the relevant right triangle."
+    },
+    {
+      "id": "sl-3-3-misc-6",
+      "status": "approved",
+      "weak": "Add $180^\\circ$ to $240^\\circ$ and report $420^\\circ$ as a bearing.",
+      "better": "Reduce to a three-figure bearing between $000^\\circ$ and $360^\\circ$: the reverse is $060^\\circ$."
+    }
+  ],
+  "terms": [
+    {
+      "id": "sl-3-3-terms-1",
+      "status": "approved",
+      "term": "Angle of elevation",
+      "text": "Angle measured upwards from the observer’s horizontal to the line of sight."
+    },
+    {
+      "id": "sl-3-3-terms-2",
+      "status": "approved",
+      "term": "Angle of depression",
+      "text": "Angle measured downwards from the observer’s horizontal to the line of sight."
+    },
+    {
+      "id": "sl-3-3-terms-3",
+      "status": "approved",
+      "term": "Bearing",
+      "text": "Clockwise direction from north at the starting point, expressed using three figures."
+    },
+    {
+      "id": "sl-3-3-terms-4",
+      "status": "approved",
+      "term": "Horizontal distance",
+      "text": "Distance measured along a horizontal line, which can differ from the length of a sloping sight line."
+    },
+    {
+      "id": "sl-3-3-terms-5",
+      "status": "approved",
+      "term": "Line of sight",
+      "text": "The straight line from an observer to the object being viewed."
+    }
+  ],
+  "formula": [
+    {
+      "id": "sl-3-3-formula-1",
+      "status": "approved",
+      "text": "Pythagoras: $c^2=a^2+b^2$ only when $c$ is the hypotenuse of a right triangle."
+    },
+    {
+      "id": "sl-3-3-formula-2",
+      "status": "approved",
+      "text": "Right-triangle ratios: $\\sin\\theta=O/H$, $\\cos\\theta=A/H$ and $\\tan\\theta=O/A$, with side labels relative to $\\theta$."
+    },
+    {
+      "id": "sl-3-3-formula-3",
+      "status": "approved",
+      "text": "For non-right triangles, the sine and cosine rules connect each angle to its opposite side. Use $\\frac12ab\\sin C$ for area when $C$ is the angle included between $a$ and $b$."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "On level ground, points $A$, $B$ and the foot $F$ of a vertical observation tower lie in that order on a straight east–west line. Point $B$ is $80$ m due east of $A$. The top of the tower is $T$, vertically above $F$. The angles of elevation from $A$ and $B$ to $T$ are $30^\\circ$ and $45^\\circ$, respectively. Assume observers are at ground level.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Describe a labelled diagram and state the bearing of $F$ from $A$.",
+        "marks": 3,
+        "a": "Draw $A$, $B$ and $F$ left to right on a horizontal line, with $AB=80$ m. Draw $FT$ vertically above $F$, and join $A$ to $T$ and $B$ to $T$. Mark right angle $AFT$, angle $TAF=30^\\circ$ and angle $TBF=45^\\circ$. The direction from $A$ to $F$ is due east, so the bearing is $090^\\circ$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find the height of the tower and the distance from $A$ to its foot.",
+        "marks": 4,
+        "a": "Let $BF=x$ m and $FT=h$ m. From $B$, $\\tan45^\\circ=h/x$, so $h=x$. From $A$, $\\tan30^\\circ=h/(x+80)$. Hence $x/(x+80)=1/\\sqrt3$, giving $x=40(\\sqrt3+1)\\approx109.282$. The tower is approximately $109$ m high and $AF=x+80\\approx189$ m.",
+        "m": "M1 M1 A1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Find the distance from $A$ to the top of the tower.",
+        "marks": 2,
+        "a": "In right triangle $AFT$, $\\sin30^\\circ=FT/AT$, so $AT=2FT=80(\\sqrt3+1)\\approx219$ m. This is longer than the horizontal distance $AF$, as expected.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Find the angle of depression from $T$ to $B$ and the bearing of $A$ from $F$.",
+        "marks": 2,
+        "a": "The horizontal through $T$ is parallel to the ground, so the depression angle equals the elevation angle at $B$: $45^\\circ$. From $F$, $A$ is due west, so its bearing is $270^\\circ$.",
+        "m": "R1 A1"
+      },
+      {
+        "label": "e",
+        "q": "Find the angle $ABT$ and explain how triangle $ABT$ could be used to check $AT$.",
+        "marks": 3,
+        "a": "At $B$, $BA$ points west and $BF$ points east, so $\\angle ABT=180^\\circ-45^\\circ=135^\\circ$. Therefore $\\angle ATB=180^\\circ-135^\\circ-30^\\circ=15^\\circ$. The sine rule gives $AT/\\sin135^\\circ=80/\\sin15^\\circ$, so $AT\\approx219$ m, agreeing with part (c).",
+        "m": "A1 M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "sl-3-3-kq-1",
+      "status": "approved",
+      "q": "Why can the elevation and depression angles be equal?",
+      "model": "The observer horizontals are parallel and the sight line is a transversal. The two marked angles are alternate interior angles."
+    },
+    {
+      "id": "sl-3-3-kq-2",
+      "status": "approved",
+      "q": "Why must the point of departure be identified for a bearing?",
+      "model": "The north reference line is drawn at that point. Reversing the journey changes direction by $180^\\circ$."
+    },
+    {
+      "id": "sl-3-3-kq-3",
+      "status": "approved",
+      "q": "How does a sketch help select a method?",
+      "model": "It exposes right angles, opposite side–angle pairs and included angles, making it possible to choose a valid theorem and avoid confusing sight distance with ground distance."
+    },
+    {
+      "id": "sl-3-3-kq-4",
+      "status": "approved",
+      "q": "Why are intermediate values kept unrounded?",
+      "model": "Rounding early can change subsequent heights, angles and distances. Keep full calculator precision until the final requested answer."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
