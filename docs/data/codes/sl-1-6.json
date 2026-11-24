@@ -213,7 +213,7 @@
     {
       "id": "sl16-ku-4",
       "status": "approved",
-      "text": "If $x$ is rounded to the nearest unit $h$ and reported as $a$, its bounds are $a-h/2\\le x<a+h/2$ under the usual half-up convention. Restrict the interval further if the context requires it."
+      "text": "For a nonnegative measurement rounded to the nearest unit $h$ and reported as $a>0$, its bounds are $a-h/2\\le x<a+h/2$ under the usual half-up convention. Restrict the interval further if the context requires it."
     },
     {
       "id": "sl16-ku-5",
