@@ -15,17 +15,85 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Forms of Complex Numbers (Rectangular, Polar, Euler)."
+            "title": "Three forms of a complex number",
+            "text": "The video introduces Cartesian, polar and exponential representations."
           },
           {
-            "t": 246,
+            "t": 38,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Plot a Cartesian number",
+            "text": "For $z=1+\\sqrt3\\,i$, plot the point $(1,\\sqrt3)$ on the complex plane."
+          },
+          {
+            "t": 93,
+            "type": "Concept",
+            "title": "Modulus and argument",
+            "text": "Polar form uses the distance from the origin and an angle measured from the positive real axis."
+          },
+          {
+            "t": 136,
+            "type": "Procedure",
+            "title": "Find the modulus",
+            "text": "Using the right triangle, $|z|=\\sqrt{1^2+(\\sqrt3)^2}=2$."
+          },
+          {
+            "t": 189,
+            "type": "Procedure",
+            "title": "Find the argument",
+            "text": "The first-quadrant example has $\\arg z=\\pi/3$ radians."
+          },
+          {
+            "t": 255,
+            "type": "Definition",
+            "title": "What cis means",
+            "text": "$\\operatorname{cis}\\theta$ is shorthand for $\\cos\\theta+i\\sin\\theta$."
+          },
+          {
+            "t": 294,
+            "type": "Worked example",
+            "title": "Write polar form",
+            "text": "Using modulus 2 and argument $\\pi/3$, the example becomes $2\\operatorname{cis}(\\pi/3)$."
+          },
+          {
+            "t": 319,
+            "type": "Worked example",
+            "title": "Write exponential form",
+            "text": "The same complex number is $2e^{i\\pi/3}$."
+          },
+          {
+            "t": 359,
+            "type": "Concept",
+            "title": "Choose a useful form",
+            "text": "The presenter compares Cartesian form for addition and subtraction with polar or exponential form for products, quotients and powers."
+          },
+          {
+            "t": 410,
+            "type": "Transition",
+            "title": "Relate Cartesian and polar forms",
+            "text": "The video moves to a geometric explanation of the polar expression."
+          },
+          {
+            "t": 491,
+            "type": "Derivation",
+            "title": "Resolve the vector",
+            "text": "For the first-quadrant diagram, $a=r\\cos\\theta$ and $b=r\\sin\\theta$."
+          },
+          {
+            "t": 537,
+            "type": "Derivation",
+            "title": "Factor out the modulus",
+            "text": "Substitution into $a+bi$ gives $r(\\cos\\theta+i\\sin\\theta)$, written $r\\operatorname{cis}\\theta$."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Positive and negative arguments",
+            "text": "The video describes an argument as measured counterclockwise. A clockwise angle can also represent an argument, and principal arguments are often negative in the lower half-plane.",
+            "write": "Use the convention requested. For example, $-\\pi/4$ and $7\\pi/4$ describe the same direction.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 113,
@@ -36,11 +104,79 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Operations of Complex Numbers."
+            "title": "Operations and representations",
+            "text": "The video compares addition, subtraction, multiplication, division and powers in Cartesian, polar and exponential forms."
+          },
+          {
+            "t": 59,
+            "type": "Procedure",
+            "title": "Addition and subtraction",
+            "text": "In Cartesian form, add or subtract real parts and imaginary parts separately."
+          },
+          {
+            "t": 90,
+            "type": "Worked example",
+            "title": "Add two complex numbers",
+            "text": "The presenter adds $1+\\sqrt3\\,i$ and $2+2i$, obtaining $3+(2+\\sqrt3)i$."
+          },
+          {
+            "t": 162,
+            "type": "Transition",
+            "title": "Multiplication and division",
+            "text": "The video explains that several forms can be used, then starts with Cartesian multiplication."
+          },
+          {
+            "t": 202,
+            "type": "Worked example",
+            "title": "Expand the product",
+            "text": "Multiply the binomials and replace $i^2$ by $-1$, then collect real and imaginary parts."
+          },
+          {
+            "t": 311,
+            "type": "Reference",
+            "title": "Polar multiplication",
+            "text": "For nonzero complex numbers in polar form, multiply moduli and add arguments."
+          },
+          {
+            "t": 416,
+            "type": "Procedure",
+            "title": "Divide in Cartesian form",
+            "text": "Multiply numerator and denominator by the conjugate of the nonzero denominator to obtain a real denominator."
+          },
+          {
+            "t": 486,
+            "type": "Reference",
+            "title": "Polar and exponential division",
+            "text": "Divide moduli and subtract arguments; the denominator must be nonzero."
+          },
+          {
+            "t": 583,
+            "type": "Transition",
+            "title": "Powers",
+            "text": "The presenter compares repeated Cartesian multiplication with raising the modulus and multiplying the argument in polar form."
+          },
+          {
+            "t": 640,
+            "type": "Worked example",
+            "title": "Raise to the fourth power",
+            "text": "For $z=2\\operatorname{cis}(\\pi/3)$, the fourth power is $16\\operatorname{cis}(4\\pi/3)$."
+          },
+          {
+            "t": 720,
+            "type": "Extension",
+            "title": "A remark about roots",
+            "text": "The presenter briefly mentions roots at the end; solving for all complex roots requires accounting for all arguments."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Finding all complex roots",
+            "text": "The closing remark suggests that roots work exactly like taking a fractional power. A complex equation can have multiple roots, so one calculator value is not necessarily the complete solution.",
+            "write": "When solving $z^n=w$, account for all distinct arguments. Complex roots are not required in the syllabus guidance for AHL 1.13.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 114,
@@ -51,106 +187,291 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Complex Numbers."
+            "title": "Calculator settings and operations",
+            "text": "The video introduces complex-number settings, input, stored values and conversion tools on a TI-Nspire."
           },
           {
-            "t": 74,
+            "t": 42,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Choose the output format",
+            "text": "The presenter contrasts real, rectangular and polar output settings."
           },
           {
-            "t": 401,
+            "t": 70,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "A non-real calculation",
+            "text": "The presenter demonstrates why a real-only setting can reject an expression involving $\\sqrt{-1}$."
+          },
+          {
+            "t": 132,
+            "type": "Calculator",
+            "title": "Switch to polar output",
+            "text": "The video shows how the TI-Nspire can display an entered Cartesian number in polar or exponential form."
+          },
+          {
+            "t": 227,
+            "type": "Calculator",
+            "title": "Enter Cartesian, polar and exponential forms",
+            "text": "The presenter demonstrates input conventions for the three forms."
+          },
+          {
+            "t": 330,
+            "type": "Procedure",
+            "title": "Store a complex number",
+            "text": "A stored variable can be reused for later calculations and operations."
+          },
+          {
+            "t": 363,
+            "type": "Calculator",
+            "title": "Return to rectangular output",
+            "text": "The stored value is displayed in rectangular form; the video discusses decimal output."
+          },
+          {
+            "t": 433,
+            "type": "Calculator",
+            "title": "Conversion tools",
+            "text": "The presenter locates tools for conjugates, components, angle, magnitude and conversions between forms."
+          },
+          {
+            "t": 518,
+            "type": "Conclusion",
+            "title": "Keep hand methods and exact forms",
+            "text": "The presenter recommends remaining proficient with exact algebra as well as calculator approximations."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Calculator shown",
+            "text": "The video uses a TI-Nspire, so its key presses and output behaviour should not be assumed to match the Casio fx-CG50.",
+            "write": "Check the Casio complex-number and angle settings, and use the output form requested by the question."
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "ahl-1-13-ican-1",
+      "id": "ahl113-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for polar and exponential form of complex numbers."
+      "text": "I can convert between Cartesian, modulus-argument and exponential forms, using a specified argument convention."
     },
     {
-      "id": "ahl-1-13-ican-2",
+      "id": "ahl113-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can find the modulus and argument from an Argand diagram and check the correct quadrant."
+    },
+    {
+      "id": "ahl113-ican-3",
+      "status": "approved",
+      "text": "I can multiply and divide nonzero complex numbers in polar or exponential form and calculate integer powers."
+    },
+    {
+      "id": "ahl113-ican-4",
+      "status": "approved",
+      "text": "I can interpret multiplication as a rotation and scaling in the complex plane."
+    },
+    {
+      "id": "ahl113-ican-5",
+      "status": "approved",
+      "text": "I can combine sinusoidal functions with the same frequency into a single sinusoidal expression."
+    },
+    {
+      "id": "ahl113-ican-6",
+      "status": "approved",
+      "text": "I can use technology to check forms and calculations while preserving exact values when required."
     }
   ],
   "ku": [
     {
-      "id": "ahl-1-13-ku-1",
+      "id": "ahl113-ku-1",
       "status": "approved",
-      "text": "For $z=a+bi$, the modulus is $r=\\sqrt{a^2+b^2}$ and the argument is an angle from the positive real axis."
+      "text": "For $z=a+bi\\ne0$, the modulus is $r=\\sqrt{a^2+b^2}$ and an argument $\\theta$ satisfies $a=r\\cos\\theta$, $b=r\\sin\\theta$."
     },
     {
-      "id": "ahl-1-13-ku-2",
+      "id": "ahl113-ku-2",
       "status": "approved",
-      "text": "$z=r(\\cos\\theta+i\\sin\\theta)=re^{i\\theta}$ for $r>0$."
+      "text": "Polar form is $r(\\cos\\theta+i\\sin\\theta)=r\\operatorname{cis}\\theta$; exponential form is $re^{i\\theta}$. Arguments that differ by $2\\pi k$, $k\\in\\mathbb Z$, represent the same direction."
     },
     {
-      "id": "ahl-1-13-ku-3",
+      "id": "ahl113-ku-3",
       "status": "approved",
-      "text": "Use the quadrant to select an appropriate argument; arguments differ by integer multiples of $2\\pi$."
+      "text": "For $z\\ne0$, use its quadrant and the requested interval to select an argument. The number zero has modulus 0 and no defined argument."
+    },
+    {
+      "id": "ahl113-ku-4",
+      "status": "approved",
+      "text": "For $z_1=r_1e^{i\\theta_1}$ and $z_2=r_2e^{i\\theta_2}$ with nonzero $z_2$, multiplication gives $r_1r_2e^{i(\\theta_1+\\theta_2)}$ and division gives $(r_1/r_2)e^{i(\\theta_1-\\theta_2)}$."
+    },
+    {
+      "id": "ahl113-ku-5",
+      "status": "approved",
+      "text": "For an integer $n$, $z^n=r^ne^{in\\theta}$ where the expression is defined. Adjust the final angle to the requested principal-argument interval if needed."
+    },
+    {
+      "id": "ahl113-ku-6",
+      "status": "approved",
+      "text": "Multiplication by $re^{i\\theta}$ scales distances from the origin by $r$ and rotates arguments by $\\theta$."
+    },
+    {
+      "id": "ahl113-ku-7",
+      "status": "approved",
+      "text": "Sinusoids of the same frequency can be combined by adding their complex coefficients, or by expanding and collecting cosine and sine terms. The amplitude and phase of the result come from the resulting coefficients."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "ahl113-map",
+    "status": "approved",
+    "needs": [
+      [
+        "AHL 1.12",
+        "Cartesian complex numbers"
+      ],
+      [
+        "AHL 3.8",
+        "Unit circle and trigonometry"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 5.17",
+        "Complex methods in further modelling"
+      ]
+    ],
+    "withIn": [
+      [
+        "AHL 2.9",
+        "Sinusoidal functions"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "ahl-1-13-misc-1",
+      "id": "ahl113-misc-1",
       "status": "approved",
-      "weak": "Using the inverse tangent without checking the quadrant",
-      "better": "Locate the complex number on the Argand diagram before fixing the argument."
+      "weak": "$\\arg(-1+i)=\\tan^{-1}(-1)=-\\pi/4$.",
+      "better": "$-1+i$ is in quadrant II, so its principal argument is $3\\pi/4$."
+    },
+    {
+      "id": "ahl113-misc-2",
+      "status": "approved",
+      "weak": "When multiplying complex numbers in polar form, add the moduli.",
+      "better": "Multiply moduli and add arguments."
+    },
+    {
+      "id": "ahl113-misc-3",
+      "status": "approved",
+      "weak": "$z^4=r^4e^{i\\theta^4}$ for $z=re^{i\\theta}$.",
+      "better": "Raise the modulus to the fourth power and multiply the argument by 4: $z^4=r^4e^{4i\\theta}$."
+    },
+    {
+      "id": "ahl113-misc-4",
+      "status": "approved",
+      "weak": "$4\\pi/3$ cannot represent the same direction as a principal argument.",
+      "better": "Subtract $2\\pi$ to obtain the coterminal principal angle $-2\\pi/3$."
+    },
+    {
+      "id": "ahl113-misc-5",
+      "status": "approved",
+      "weak": "The argument of $z=0$ is 0.",
+      "better": "The zero vector has no direction, so its argument is undefined."
+    },
+    {
+      "id": "ahl113-misc-6",
+      "status": "approved",
+      "weak": "Two sinusoidal waves with different frequencies can always be combined into one sinusoid by adding phasors.",
+      "better": "The single-phasor method here requires the same frequency."
     }
   ],
   "terms": [
     {
-      "id": "ahl-1-13-terms-1",
+      "id": "ahl113-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Write in polar or exponential form",
+      "text": "Give the modulus and an argument in the requested interval, using radians or degrees as specified."
     },
     {
-      "id": "ahl-1-13-terms-2",
+      "id": "ahl113-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find a principal argument",
+      "text": "Locate the point's quadrant, then express the angle in the specified principal interval."
+    },
+    {
+      "id": "ahl113-term-3",
+      "status": "approved",
+      "term": "Combine sinusoidal functions",
+      "text": "Use the same frequency, combine coefficients and state the resulting amplitude and phase with an equivalent convention."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "ahl113-formula-1",
+      "status": "approved",
+      "text": "The booklet gives $z=r(\\cos\\theta+i\\sin\\theta)=r\\operatorname{cis}\\theta=re^{i\\theta}$."
+    }
+  ],
   "gdc": [],
   "worked": {
+    "id": "ahl113-worked",
     "status": "approved",
-    "prompt": "Write $1+i$ in polar exponential form using the principal argument.",
+    "prompt": "Let $z=2e^{i\\pi/3}$ and $w=3e^{-i\\pi/4}$. Use radians and the principal argument interval $(-\\pi,\\pi]$ when requested.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find $zw$ in exponential form.",
         "marks": 2,
-        "a": "The modulus is $\\sqrt2$ and the argument is $\\pi/4$, so $z=\\sqrt2e^{i\\pi/4}$.",
+        "a": "Multiply moduli and add arguments: $zw=6e^{i(\\pi/3-\\pi/4)}=6e^{i\\pi/12}$.",
         "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find $z/w$ in exponential form.",
+        "marks": 2,
+        "a": "Divide moduli and subtract arguments: $z/w=\\frac23e^{i(\\pi/3+\\pi/4)}=\\frac23e^{7i\\pi/12}$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Write $z^4$ in exponential form using a principal argument.",
+        "marks": 2,
+        "a": "$z^4=16e^{4i\\pi/3}=16e^{-2i\\pi/3}$, because $4\\pi/3-2\\pi=-2\\pi/3$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Write $\\cos t+\\cos(t+\\pi/2)$ as $R\\cos(t+\\phi)$ with $R>0$ and $0\\le\\phi<2\\pi$.",
+        "marks": 3,
+        "a": "$\\cos t+\\cos(t+\\pi/2)=\\cos t-\\sin t=\\sqrt2\\cos(t+\\pi/4)$. Thus $R=\\sqrt2$ and $\\phi=\\pi/4$.",
+        "m": "M1 A1 A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "ahl-1-13-kq-1",
+      "id": "ahl113-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Locate the complex number on the Argand diagram before fixing the argument."
+      "q": "Why do complex numbers with arguments differing by $2\\pi$ represent the same point?",
+      "model": "Sine and cosine are periodic with period $2\\pi$, so both real and imaginary coordinates are unchanged."
+    },
+    {
+      "id": "ahl113-kq-2",
+      "status": "approved",
+      "q": "Why are moduli multiplied and arguments added in a product?",
+      "model": "Multiplying by a complex number applies its scaling and rotation. Two successive scalings multiply, while their rotation angles add."
+    },
+    {
+      "id": "ahl113-kq-3",
+      "status": "approved",
+      "q": "Why must the quadrant be checked when converting from Cartesian form?",
+      "model": "The tangent ratio alone does not distinguish all quadrants. The signs of the real and imaginary coordinates determine the correct direction."
+    },
+    {
+      "id": "ahl113-kq-4",
+      "status": "approved",
+      "q": "Why does the worked sinusoidal example have amplitude $\\sqrt2$?",
+      "model": "After expansion the cosine and sine coefficients are 1 and $-1$. Their resultant amplitude is $\\sqrt{1^2+(-1)^2}=\\sqrt2$."
     }
   ],
   "history": [],
