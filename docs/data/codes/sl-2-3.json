@@ -15,23 +15,78 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Plotting Functions & Analysis Tools."
+            "title": "Plotting and analysing a function",
+            "text": "The presenter introduces graphing and the calculator’s graph-analysis tools."
           },
           {
-            "t": 46,
+            "t": 43,
+            "type": "Model",
+            "title": "A cannonball’s height",
+            "text": "A height–time graph is used to ask about maximum height, landing time, initial height and when the ball reaches a given height."
+          },
+          {
+            "t": 106,
+            "type": "Graph",
+            "title": "Enter the quadratic model",
+            "text": "Enter $h(t)=-2t^2+20t+8$, using the calculator’s graph variable in place of $t$."
+          },
+          {
+            "t": 156,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "The first window hides the graph’s features",
+            "text": "The default view is too narrow to show the maximum and landing point; change the viewing window."
           },
           {
-            "t": 153,
-            "type": "Visual",
-            "title": "Graph discussion",
-            "text": "The presenter discusses a graph."
+            "t": 190,
+            "type": "Calculator",
+            "title": "Zoom and set useful bounds",
+            "text": "Zoom out and adjust the horizontal and vertical bounds to display the parabola’s important features."
+          },
+          {
+            "t": 264,
+            "type": "Model",
+            "title": "Maximum height",
+            "text": "The maximum is $(5,58)$: after $5$ seconds the height is $58$ metres."
+          },
+          {
+            "t": 329,
+            "type": "Model",
+            "title": "Landing time from a zero",
+            "text": "Find the positive zero, approximately $10.4$ seconds. The negative zero lies outside the real-world time interval."
+          },
+          {
+            "t": 389,
+            "type": "Model",
+            "title": "Initial height",
+            "text": "The vertical intercept is $(0,8)$, so the ball starts $8$ metres above ground."
+          },
+          {
+            "t": 451,
+            "type": "Model",
+            "title": "Intersect with a horizontal line",
+            "text": "Graph $y=40$ and find the first intersection at $(2,40)$. The second intersection is $(8,40)$, on the way down."
+          },
+          {
+            "t": 514,
+            "type": "Overview",
+            "title": "Review the features",
+            "text": "The presenter revisits the maximum, zero, vertical intercept and intersection as answers to questions about the model."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "Window versus domain",
+            "text": "A window such as $-5\\leq t\\leq15$ helps display the full curve. It does not mean negative time or time after the ball lands is physically meaningful.",
+            "write": "For this model the meaningful interval is approximately $0\\leq t\\leq10.4$."
+          },
+          {
+            "kind": "watch",
+            "title": "One height can occur twice",
+            "text": "The height $40$ m occurs at $t=2$ and $t=8$ seconds. Read the question carefully: the first time is $2$ seconds, while both times answer when the height is $40$ m.",
+            "write": "$-2t^2+20t+8=40$ gives $t=2$ or $t=8$."
+          }
+        ]
       }
     ]
   },
@@ -39,29 +94,59 @@
     {
       "id": "sl-2-3-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for graphs of functions and sketching."
+      "text": "I can choose and label axes and a suitable window to sketch a function."
     },
     {
       "id": "sl-2-3-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can identify intercepts, turning points and intersections and interpret their coordinates in context."
+    },
+    {
+      "id": "sl-2-3-ican-3",
+      "status": "approved",
+      "text": "I can distinguish a function’s domain from the part displayed in a calculator window."
+    },
+    {
+      "id": "sl-2-3-ican-4",
+      "status": "approved",
+      "text": "I can restrict a model to a meaningful domain and check whether graph-based answers make sense."
     }
   ],
   "ku": [
     {
       "id": "sl-2-3-ku-1",
       "status": "approved",
-      "text": "A graph shows the points $(x,f(x))$ for inputs in the domain."
+      "text": "The graph of $y=f(x)$ consists of points $(x,f(x))$ with $x$ in the domain. Label each axis with the quantity and units where relevant."
     },
     {
       "id": "sl-2-3-ku-2",
       "status": "approved",
-      "text": "A root is an $x$-intercept where $f(x)=0$; the $y$-intercept is $f(0)$ if defined."
+      "text": "An $x$-intercept has $y=0$ and solves $f(x)=0$. The $y$-intercept is $(0,f(0))$ only if $0$ is in the domain."
     },
     {
       "id": "sl-2-3-ku-3",
       "status": "approved",
-      "text": "Use a suitable graphing window and check important features numerically."
+      "text": "A turning point is where a curve changes from increasing to decreasing or vice versa. Its coordinates give both the input and the output at the maximum or minimum."
+    },
+    {
+      "id": "sl-2-3-ku-4",
+      "status": "approved",
+      "text": "Intersections of $y=f(x)$ and $y=g(x)$ satisfy $f(x)=g(x)$. A horizontal line $y=k$ can meet a graph more than once, once or not at all."
+    },
+    {
+      "id": "sl-2-3-ku-5",
+      "status": "approved",
+      "text": "A sketch should show the correct overall shape and essential features. Label exact values when known and indicate approximations clearly; a sketch need not be drawn to scale."
+    },
+    {
+      "id": "sl-2-3-ku-6",
+      "status": "approved",
+      "text": "A viewing window is a display choice. It can hide features or show inputs outside a model’s domain. Adjust bounds and scale, then check conclusions algebraically or numerically."
+    },
+    {
+      "id": "sl-2-3-ku-7",
+      "status": "approved",
+      "text": "In a real-world model, exclude inputs and outputs that do not make sense in context, even if the algebraic function is defined there."
     }
   ],
   "visuals": [],
@@ -75,37 +160,94 @@
     {
       "id": "sl-2-3-misc-1",
       "status": "approved",
-      "weak": "Assuming no root exists because it is outside the viewing window",
-      "better": "Adjust the window and use algebra or a solver to check."
+      "weak": "The calculator shows no roots, so none exist.",
+      "better": "Check whether the viewing window includes the relevant intercepts, then use algebra or a solver."
+    },
+    {
+      "id": "sl-2-3-misc-2",
+      "status": "approved",
+      "weak": "The maximum is $16$ seconds at $3$ metres.",
+      "better": "Read the ordered pair in axis order: $(3,16)$ means $3$ seconds and $16$ metres."
+    },
+    {
+      "id": "sl-2-3-misc-3",
+      "status": "approved",
+      "weak": "The graphing window begins at $-2$, so negative time belongs to the model.",
+      "better": "The window and contextual domain are separate. Restrict time to the interval for which the model describes the situation."
+    },
+    {
+      "id": "sl-2-3-misc-4",
+      "status": "approved",
+      "weak": "A height is reached only once because the calculator found one intersection.",
+      "better": "Look for all intersections on the meaningful domain. A ball can pass the same height while rising and falling."
+    },
+    {
+      "id": "sl-2-3-misc-5",
+      "status": "approved",
+      "weak": "Join every visible part of a graph across a break.",
+      "better": "Respect restrictions, holes, endpoints and asymptotes. A viewing window does not remove a discontinuity."
     }
   ],
   "terms": [
     {
       "id": "sl-2-3-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Intercept",
+      "text": "A point where the graph meets an axis. State its coordinates, not just a number, when asked for the point."
     },
     {
       "id": "sl-2-3-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Turning point",
+      "text": "A point at which the graph changes direction locally, from increasing to decreasing or from decreasing to increasing."
+    },
+    {
+      "id": "sl-2-3-terms-3",
+      "status": "approved",
+      "term": "Viewing window",
+      "text": "The range of inputs and outputs displayed on a graphing screen; it need not equal the domain or range."
+    },
+    {
+      "id": "sl-2-3-terms-4",
+      "status": "approved",
+      "term": "Intersection",
+      "text": "A point common to two graphs; its input solves the equation obtained by setting the two outputs equal."
     }
   ],
   "formula": [],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "Find the intercepts of $y=x^2-4$.",
+    "prompt": "A ball’s height above the ground is modelled by $h(t)=-t^2+6t+7$ metres, where $t$ is the number of seconds after launch. The model applies until the ball first hits the ground.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "a",
+        "q": "Find the initial height and the time when the ball hits the ground. State the meaningful domain.",
+        "marks": 3,
+        "a": "$h(0)=7$, so the initial height is $7$ m. Solve $-t^2+6t+7=0$: $-(t-7)(t+1)=0$, giving $t=7$ or $t=-1$. Negative time is outside the situation, so landing occurs after $7$ s and the domain is $0\\leq t\\leq7$.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Find and interpret the maximum point.",
         "marks": 2,
-        "a": "The $x$-intercepts are $(-2,0)$ and $(2,0)$; the $y$-intercept is $(0,-4)$.",
+        "a": "Complete the square: $h(t)=-(t-3)^2+16$. The maximum is $(3,16)$: the ball reaches $16$ m after $3$ s.",
         "m": "M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Find all times when the ball is $12$ m high.",
+        "marks": 3,
+        "a": "Set $-t^2+6t+7=12$, so $t^2-6t+5=0$ and $(t-1)(t-5)=0$. Both $t=1$ s and $t=5$ s lie in the domain. The ball passes this height on the way up and on the way down.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Describe a labelled sketch of the model.",
+        "marks": 2,
+        "a": "Label the horizontal axis $t$ (seconds) and the vertical axis $h$ (metres). Draw only the downward-opening arc for $0\\leq t\\leq7$, through $(0,7)$, the maximum $(3,16)$ and $(7,0)$. The line $h=12$ meets it at $(1,12)$ and $(5,12)$.",
+        "m": "A1 A1"
       }
     ]
   },
@@ -113,8 +255,20 @@
     {
       "id": "sl-2-3-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Adjust the window and use algebra or a solver to check."
+      "q": "How can a graph help solve $f(x)=k$?",
+      "model": "Draw $y=f(x)$ and $y=k$, then find all intersection inputs in the relevant domain. Check whether approximate values meet the required accuracy."
+    },
+    {
+      "id": "sl-2-3-kq-2",
+      "status": "approved",
+      "q": "Why might a calculator show an extra root?",
+      "model": "It graphs the algebraic expression in the chosen window, which can include values outside the context. Check each root against the model’s meaningful domain."
+    },
+    {
+      "id": "sl-2-3-kq-3",
+      "status": "approved",
+      "q": "Why is a sketch with a labelled maximum more useful than an unlabelled curve?",
+      "model": "The shape shows the overall behaviour; the labelled point tells the reader the input where the maximum occurs and its value."
     }
   ],
   "history": [],
