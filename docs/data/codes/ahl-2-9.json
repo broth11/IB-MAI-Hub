@@ -13,46 +13,163 @@
         "partial": true,
         "moments": [
           {
-            "t": 2,
+            "t": 24,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Functions: Overview & Types."
+            "title": "What the video will cover",
+            "text": "The presenter introduces functions, input and output variables, notation and types of model."
           },
           {
-            "t": 85,
+            "t": 40,
+            "type": "Concept",
+            "title": "Input and output",
+            "text": "A function relates an allowed input to an output; the independent variable supplies the input."
+          },
+          {
+            "t": 86,
+            "type": "Context",
+            "title": "A child's height over time",
+            "text": "The example assumes a child is 50 cm at birth and 200 cm at age 15 to build a simple model."
+          },
+          {
+            "t": 129,
+            "type": "Procedure",
+            "title": "Choose variables and axes",
+            "text": "Age is the input and height is the output. The function notation $H(a)$ represents height at age $a$."
+          },
+          {
+            "t": 196,
+            "type": "Visual",
+            "title": "A linear model",
+            "text": "The presenter sketches a straight-line model from 50 cm at birth to 200 cm at age 15 and notes that real growth may not be linear."
+          },
+          {
+            "t": 247,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Form the function",
+            "text": "The assumed rate is 150 cm over 15 years, or 10 cm per year, giving $H(a)=10a+50$."
+          },
+          {
+            "t": 305,
+            "type": "Worked example",
+            "title": "Evaluate a function",
+            "text": "Substituting $a=10$ gives $H(10)=150$ cm in the model."
+          },
+          {
+            "t": 328,
+            "type": "Reference",
+            "title": "Types of functions",
+            "text": "The presenter briefly surveys linear, quadratic, exponential, logarithmic, sinusoidal and logistic models."
+          },
+          {
+            "t": 387,
+            "type": "Extension",
+            "title": "A piecewise model",
+            "text": "To represent a change after age 15, the presenter suggests joining a linear growth rule to a constant-height rule."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Function and model",
+            "text": "The child-height line is an illustrative assumption. The presenter notes that real growth can vary.",
+            "write": "A function assigns exactly one output to each allowed input. A model should be interpreted only over a suitable domain.",
+            "section": "ku"
+          },
+          {
+            "kind": "watch",
+            "title": "Coverage",
+            "text": "This overview provides background on function types; it does not teach all the logarithmic, logistic and piecewise models discussed on this page.",
+            "write": "Use the key ideas and worked example for additional model types."
+          }
+        ]
       },
       {
         "n": 309,
         "title": "Graphs of Trig Functions",
         "videoId": "3rAsO8GGsWY",
-        "partial": false,
+        "partial": true,
         "moments": [
           {
-            "t": 2,
+            "t": 3,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Graphs of Trig Functions."
+            "title": "The general sine model",
+            "text": "Introduce $y=a\\sin(b(x-c))+d$ and the roles of the parameters."
           },
           {
-            "t": 45,
-            "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "t": 50,
+            "type": "Example",
+            "title": "Set up a sinusoidal example",
+            "text": "The example is $y=3\\sin(2(x-\\pi/4))+4$."
           },
           {
-            "t": 84,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "t": 66,
+            "type": "Concept",
+            "title": "Amplitude",
+            "text": "An amplitude of $3$ gives a distance of $3$ from the midline to either extreme; it is half the range width."
+          },
+          {
+            "t": 104,
+            "type": "Concept",
+            "title": "Midline and vertical shift",
+            "text": "The vertical shift is $4$, so the midline is $y=4$ and the extreme values are $7$ and $1$."
+          },
+          {
+            "t": 180,
+            "type": "Concept",
+            "title": "Period",
+            "text": "With $b=2$, the period is $2\\pi/2=\\pi$ radians of input."
+          },
+          {
+            "t": 233,
+            "type": "Method",
+            "title": "Mark quarter-period intervals",
+            "text": "Divide one period into four equal intervals to locate successive maximum, midline and minimum positions."
+          },
+          {
+            "t": 307,
+            "type": "Method",
+            "title": "Account for the horizontal shift",
+            "text": "The expression $(x-\\pi/4)$ shifts the reference sine curve right by $\\pi/4$."
+          },
+          {
+            "t": 323,
+            "type": "Example",
+            "title": "Plot the shifted sine points",
+            "text": "Starting from the rising midline crossing at $x=\\pi/4$, locate the maximum and subsequent points a quarter-period apart."
+          },
+          {
+            "t": 364,
+            "type": "Graph",
+            "title": "Complete the smooth curve",
+            "text": "Connect the points smoothly and extend the cycle over the displayed interval."
+          },
+          {
+            "t": 408,
+            "type": "Overview",
+            "title": "Summarise the four parameters",
+            "text": "Review amplitude, midline, period and horizontal shift in the example."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "watch",
+            "title": "A sine graph has no universal starting point",
+            "text": "The video uses a convenient reference point for one cycle. A sinusoid continues in both directions unless the context or domain restricts it.",
+            "write": "For this example the graph crosses its midline rising at $x=\\pi/4$ and again one period later."
+          },
+          {
+            "kind": "watch",
+            "title": "Period and amplitude are nonnegative",
+            "text": "For $a\\sin(b(x-c))+d$, use amplitude $|a|$ and period $2\\pi/|b|$ when $b\\ne0$ and the angle is in radians.",
+            "write": "A negative $a$ reflects the curve vertically about its midline."
+          },
+          {
+            "kind": "watch",
+            "title": "Coverage",
+            "text": "This video supports sinusoidal models. It does not cover the logistic, logarithmic or piecewise models on this page.",
+            "write": "Interpret the parameters in the specific model and context."
+          }
+        ]
       }
     ]
   },
@@ -60,29 +177,64 @@
     {
       "id": "ahl-2-9-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for further models: logistic, logarithmic, piecewise."
+      "text": "I can interpret parameters and restrictions in logarithmic, logistic, sinusoidal and piecewise models."
     },
     {
       "id": "ahl-2-9-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can find outputs, solve for inputs and interpret limiting behaviour in context."
+    },
+    {
+      "id": "ahl-2-9-ican-3",
+      "status": "approved",
+      "text": "I can construct a sinusoidal model from its midline, amplitude, period and a reference point."
+    },
+    {
+      "id": "ahl-2-9-ican-4",
+      "status": "approved",
+      "text": "I can choose the appropriate branch of a piecewise model and examine its behaviour at a boundary."
+    },
+    {
+      "id": "ahl-2-9-ican-5",
+      "status": "approved",
+      "text": "I can explain limitations of a model and check the suitability of extrapolation."
     }
   ],
   "ku": [
     {
       "id": "ahl-2-9-ku-1",
       "status": "approved",
-      "text": "A logarithmic model is defined only where its logarithm argument is positive."
+      "text": "For $y=a+b\\ln(x)$, the logarithm requires $x>0$. The parameter $a$ is the modelled output at $x=1$; the effect of increasing $x$ depends on $b$."
     },
     {
       "id": "ahl-2-9-ku-2",
       "status": "approved",
-      "text": "A logistic model can approach an upper limiting value; interpret that limit in context."
+      "text": "For a logistic model $P(t)=\\frac{L}{1+Ae^{-kt}}$ with $L,A,k>0$, $L$ is the upper horizontal asymptote and $P(0)=\\frac{L}{1+A}$. The model approaches $L$ as $t$ increases but does not attain it at a finite time."
     },
     {
       "id": "ahl-2-9-ku-3",
       "status": "approved",
-      "text": "For periodic models, identify the midline, amplitude, period and phase shift, and use consistent angle units."
+      "text": "In that logistic form, $P=L/2$ when $Ae^{-kt}=1$, giving $t=\\ln(A)/k$. Interpret this time only if it lies in the contextual domain."
+    },
+    {
+      "id": "ahl-2-9-ku-4",
+      "status": "approved",
+      "text": "For $y=a\\sin(b(x-c))+d$ in radians with $b\\ne0$, the amplitude is $|a|$, midline $y=d$ and period $2\\pi/|b|$. A reference point fixes the horizontal placement."
+    },
+    {
+      "id": "ahl-2-9-ku-5",
+      "status": "approved",
+      "text": "A piecewise function uses different expressions on specified input intervals. At a boundary, use the branch whose condition includes that input; compare one-sided behaviour when investigating continuity."
+    },
+    {
+      "id": "ahl-2-9-ku-6",
+      "status": "approved",
+      "text": "A half-life model $N(t)=N_0(1/2)^{t/h}$ has $N_0$ as its initial amount and $h$ as its half-life. Each interval of length $h$ multiplies the amount by $1/2$."
+    },
+    {
+      "id": "ahl-2-9-ku-7",
+      "status": "approved",
+      "text": "State units, meaningful input ranges and assumptions. A parameter or asymptote is a feature of the model, not a guarantee about the real situation."
     }
   ],
   "visuals": [],
@@ -96,37 +248,94 @@
     {
       "id": "ahl-2-9-misc-1",
       "status": "approved",
-      "weak": "Treating the multiplier inside sine as the period",
-      "better": "For $\\sin(bx)$ in radians, the period is $2\\pi/|b|$."
+      "weak": "The period of $\\sin(2x)$ is $2$.",
+      "better": "With angles in radians the period is $2\\pi/2=\\pi$."
+    },
+    {
+      "id": "ahl-2-9-misc-2",
+      "status": "approved",
+      "weak": "The logistic upper asymptote is reached after a long but finite time.",
+      "better": "For positive $A$ and $k$, the model approaches $L$ and remains below it at every finite time."
+    },
+    {
+      "id": "ahl-2-9-misc-3",
+      "status": "approved",
+      "weak": "$\\ln(x)$ is defined for any real $x$.",
+      "better": "Its real-valued domain requires $x>0$; apply the condition to the full logarithm argument."
+    },
+    {
+      "id": "ahl-2-9-misc-4",
+      "status": "approved",
+      "weak": "At a piecewise boundary either expression can be used.",
+      "better": "Use the inequality that includes the boundary. The two formulas need not agree there."
     }
   ],
   "terms": [
     {
       "id": "ahl-2-9-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Logistic model",
+      "text": "A model that can represent growth which slows towards a limiting level."
     },
     {
       "id": "ahl-2-9-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Horizontal asymptote",
+      "text": "A horizontal line approached as the input tends toward an indicated infinite direction."
+    },
+    {
+      "id": "ahl-2-9-terms-3",
+      "status": "approved",
+      "term": "Amplitude",
+      "text": "The distance from a sinusoid’s midline to a maximum or minimum; half the difference between its extreme values."
+    },
+    {
+      "id": "ahl-2-9-terms-4",
+      "status": "approved",
+      "term": "Piecewise function",
+      "text": "A function defined by different expressions on specified portions of its domain."
+    },
+    {
+      "id": "ahl-2-9-terms-5",
+      "status": "approved",
+      "term": "Half-life",
+      "text": "The time needed for an exponentially decaying quantity to halve."
     }
   ],
   "formula": [],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "For $y=4+3\\sin(2x)$, with $x$ in radians, find the midline, amplitude and period.",
+    "prompt": "A population is modelled for $t\\geq0$ by $P(t)=\\frac{1200}{1+5e^{-0.4t}}$, where $t$ is measured in years.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "a",
+        "q": "Find the initial population and interpret the upper limiting value.",
+        "marks": 3,
+        "a": "$P(0)=1200/(1+5)=200$. As $t$ increases, $e^{-0.4t}$ approaches $0$ and $P(t)$ approaches $1200$. The model’s limiting population is $1200$; it is not reached at a finite time.",
+        "m": "M1 A1 R1"
+      },
+      {
+        "label": "b",
+        "q": "Estimate when the population reaches half the limiting value.",
+        "marks": 3,
+        "a": "Set $600=1200/(1+5e^{-0.4t})$. Then $5e^{-0.4t}=1$, so $t=\\ln(5)/0.4\\approx4.02$ years.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Estimate when the population reaches 800.",
+        "marks": 3,
+        "a": "$800=1200/(1+5e^{-0.4t})$ gives $5e^{-0.4t}=0.5$ and $e^{-0.4t}=0.1$. Thus $t=\\ln(10)/0.4\\approx5.76$ years.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Explain one limitation of projecting this model far into the future.",
         "marks": 2,
-        "a": "The midline is $y=4$, amplitude $3$ and period $2\\pi/2=\\pi$.",
-        "m": "M1 A1"
+        "a": "The limiting value and growth rate assume conditions remain consistent. Changes in habitat, resources or population movement could alter the future pattern.",
+        "m": "R1 R1"
       }
     ]
   },
@@ -134,8 +343,26 @@
     {
       "id": "ahl-2-9-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "For $\\sin(bx)$ in radians, the period is $2\\pi/|b|$."
+      "q": "How can a model represent a quantity halving every 8 years?",
+      "model": "If the initial quantity is $N_0$, one model is $N(t)=N_0(1/2)^{t/8}$, where $t$ is in years. Check that $N(8)=N_0/2$."
+    },
+    {
+      "id": "ahl-2-9-kq-2",
+      "status": "approved",
+      "q": "How can maximum 11, minimum 3 and period 12 determine a sinusoidal model?",
+      "model": "The midline is $7$, amplitude $4$ and angular coefficient $2\\pi/12=\\pi/6$ per input unit. If a maximum occurs at $t=0$, one choice is $y=7+4\\cos(\\pi t/6)$."
+    },
+    {
+      "id": "ahl-2-9-kq-3",
+      "status": "approved",
+      "q": "What must be checked at the boundary of a piecewise function?",
+      "model": "Determine which branch defines the boundary value. To test continuity, also compare the left- and right-hand limits with that value."
+    },
+    {
+      "id": "ahl-2-9-kq-4",
+      "status": "approved",
+      "q": "Why is the argument of a logarithm important?",
+      "model": "For a real-valued logarithmic model, the entire argument must be positive; solve that inequality and then apply any contextual restriction."
     }
   ],
   "history": [],
