@@ -187,6 +187,11 @@
       "id": "sl16-ican-5",
       "status": "approved",
       "text": "I can interpret the size of an error in context and retain sufficient precision in intermediate working."
+    },
+    {
+      "id": "sl16-ican-6",
+      "status": "approved",
+      "text": "I can use bounds to find a maximum percentage error in a calculated quantity."
     }
   ],
   "ku": [
@@ -219,6 +224,11 @@
       "id": "sl16-ku-6",
       "status": "approved",
       "text": "Carry unrounded values through a calculation and round the final result as requested. The difference between two rounded values can amplify a small intermediate rounding error."
+    },
+    {
+      "id": "sl16-ku-7",
+      "status": "approved",
+      "text": "For a derived quantity such as $A=\\pi r^2$, first find the possible bounds of the exact quantity from the measurement bounds. Compare the estimate with the exact value at the relevant endpoints; percentage error divides by the exact value."
     }
   ],
   "visuals": [],
@@ -274,6 +284,12 @@
       "status": "approved",
       "weak": "$9.995$ to 3 significant figures is $10$.",
       "better": "Write $10.0$ to communicate 3 significant figures, using the specified rounding convention."
+    },
+    {
+      "id": "sl16-misc-6",
+      "status": "approved",
+      "weak": "If the radius has a maximum error of 2%, the area must also have a maximum error of exactly 2%.",
+      "better": "The area depends on $r^2$. Use the radius bounds to find the area bounds, then calculate the requested error using the stated denominator."
     }
   ],
   "terms": [
@@ -336,6 +352,13 @@
         "marks": 1,
         "a": "It is an overestimate, because $12.4>12.376$.",
         "m": "R1"
+      },
+      {
+        "label": "(d)",
+        "q": "A different measurement gives a circle's radius as 2.5 cm to the nearest 0.1 cm. Using the calculated area $6.25\\pi$ as the estimate, find the maximum percentage error relative to the exact area.",
+        "marks": 3,
+        "a": "The exact radius is in $[2.45,2.55)$ cm, so the exact area lies in $[6.0025\\pi,6.5025\\pi)$. At the lower bound, the percentage error is $\\frac{6.25-6.0025}{6.0025}\\times100\\%=4.12328\\ldots\\%$. The error toward the upper bound approaches $\\frac{6.5025-6.25}{6.5025}\\times100\\%\\approx3.88\\%$, which is smaller. The maximum is therefore $4.12\\%$ to 3 significant figures.",
+        "m": "M1 M1 A1"
       }
     ]
   },
