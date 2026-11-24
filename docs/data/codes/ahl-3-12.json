@@ -1,0 +1,267 @@
+{
+  "code": "AHL 3.12",
+  "slug": "ahl-3-12",
+  "title": "Vector kinematics",
+  "level": "AHL",
+  "videos": {
+    "status": "approved",
+    "items": []
+  },
+  "ican": [
+    {
+      "id": "ahl-3-12-ican-1",
+      "status": "approved",
+      "text": "I can use $\\mathbf r=\\mathbf r_0+\\mathbf vt$ for constant-velocity motion in two or three dimensions."
+    },
+    {
+      "id": "ahl-3-12-ican-2",
+      "status": "approved",
+      "text": "I can distinguish intersecting paths from objects occupying the same position at the same time."
+    },
+    {
+      "id": "ahl-3-12-ican-3",
+      "status": "approved",
+      "text": "I can form relative position and find the time and distance of closest approach on a stated time interval."
+    },
+    {
+      "id": "ahl-3-12-ican-4",
+      "status": "approved",
+      "text": "I can obtain velocity or position componentwise for a variable-velocity model and interpret units."
+    },
+    {
+      "id": "ahl-3-12-ican-5",
+      "status": "approved",
+      "text": "I can apply time shifts and check whether a result lies in the model’s domain."
+    }
+  ],
+  "ku": [
+    {
+      "id": "ahl-3-12-ku-1",
+      "status": "approved",
+      "text": "For constant velocity, $\\mathbf r(t)=\\mathbf r_0+\\mathbf vt$. Here $\\mathbf r_0$ is initial position, $\\mathbf v$ is velocity and $t$ is elapsed time. The velocity components have units of distance per time."
+    },
+    {
+      "id": "ahl-3-12-ku-2",
+      "status": "approved",
+      "text": "The geometric path is the set of positions reached as the parameter varies; physical motion also has a time domain. An unrestricted line can include points reached before the model begins or after it ends."
+    },
+    {
+      "id": "ahl-3-12-ku-3",
+      "status": "approved",
+      "text": "For objects $A$ and $B$ measured on the same clock, relative position of $B$ from $A$ is $\\overrightarrow{AB}(t)=\\mathbf r_B(t)-\\mathbf r_A(t)$. Its magnitude is the separation at time $t$."
+    },
+    {
+      "id": "ahl-3-12-ku-4",
+      "status": "approved",
+      "text": "To test for a collision, solve $\\mathbf r_A(t)=\\mathbf r_B(t)$ using the same time in every component and check the allowed interval. The geometric paths may intersect at different times without a collision."
+    },
+    {
+      "id": "ahl-3-12-ku-5",
+      "status": "approved",
+      "text": "To find closest approach on an allowed interval, minimise $D^2(t)=|\\mathbf r_B(t)-\\mathbf r_A(t)|^2$. Squaring preserves the ordering of nonnegative distances. Compare an interior minimum with the interval endpoints; the closest distance is $\\sqrt{D^2(t)}$."
+    },
+    {
+      "id": "ahl-3-12-ku-6",
+      "status": "approved",
+      "text": "For constant relative velocity, $D^2(t)$ is a quadratic unless the relative velocity is zero. If it is zero, separation is constant. A stationary point outside the allowed interval cannot be used without checking the boundary."
+    },
+    {
+      "id": "ahl-3-12-ku-7",
+      "status": "approved",
+      "text": "For variable motion, velocity is $\\mathbf v(t)=\\mathbf r′(t)$ and acceleration is $\\mathbf a(t)=\\mathbf v′(t)$, differentiated componentwise. Speed is $|\\mathbf v(t)|$, a nonnegative scalar; it is not the velocity vector."
+    },
+    {
+      "id": "ahl-3-12-ku-8",
+      "status": "approved",
+      "text": "To recover position from a velocity function, integrate each component and determine the integration constants from an initial position. Projectile and circular motion can be modelled in this way when the stated equations and assumptions apply."
+    },
+    {
+      "id": "ahl-3-12-ku-9",
+      "status": "approved",
+      "text": "If a motion begins at clock time $a$, an elapsed-time model $\\mathbf f(u)$ can be written $\\mathbf f(t-a)$ for $t\\geq a$. Use a common clock to compare objects and specify what happens before the object starts."
+    },
+    {
+      "id": "ahl-3-12-ku-10",
+      "status": "approved",
+      "text": "Keep coordinate axes, units and parameter domains consistent. A closest approach is not necessarily a collision, and equal positions at different times are not a collision."
+    }
+  ],
+  "misc": [
+    {
+      "id": "ahl-3-12-misc-1",
+      "status": "approved",
+      "weak": "Two paths cross, so the objects collide.",
+      "better": "A collision requires the same position at the same clock time within both motion domains."
+    },
+    {
+      "id": "ahl-3-12-misc-2",
+      "status": "approved",
+      "weak": "The velocity of $B$ relative to $A$ is $\\mathbf v_A-\\mathbf v_B$.",
+      "better": "For position of $B$ relative to $A$, use $\\mathbf r_B-\\mathbf r_A$ and corresponding relative velocity $\\mathbf v_B-\\mathbf v_A$."
+    },
+    {
+      "id": "ahl-3-12-misc-3",
+      "status": "approved",
+      "weak": "The minimum of $D^2$ is the closest distance.",
+      "better": "Take the nonnegative square root to obtain $D$ after locating the minimum."
+    },
+    {
+      "id": "ahl-3-12-misc-4",
+      "status": "approved",
+      "weak": "Use a negative time even though the model starts at $t=0$.",
+      "better": "Restrict the solution to the allowed time interval and check its boundaries."
+    },
+    {
+      "id": "ahl-3-12-misc-5",
+      "status": "approved",
+      "weak": "Speed is the same as the velocity vector.",
+      "better": "Speed is the magnitude $|\\mathbf v|$; velocity has components and direction."
+    },
+    {
+      "id": "ahl-3-12-misc-6",
+      "status": "approved",
+      "weak": "A delayed object follows $\\mathbf f(t+a)$.",
+      "better": "If its elapsed time is $t-a$, use $\\mathbf f(t-a)$ after its start at clock time $a$."
+    }
+  ],
+  "terms": [
+    {
+      "id": "ahl-3-12-terms-1",
+      "status": "approved",
+      "term": "Position vector",
+      "text": "A vector from the origin to the object’s position at a specified time."
+    },
+    {
+      "id": "ahl-3-12-terms-2",
+      "status": "approved",
+      "term": "Velocity",
+      "text": "The rate of change of position, including direction."
+    },
+    {
+      "id": "ahl-3-12-terms-3",
+      "status": "approved",
+      "term": "Speed",
+      "text": "The magnitude of velocity."
+    },
+    {
+      "id": "ahl-3-12-terms-4",
+      "status": "approved",
+      "term": "Relative position",
+      "text": "The position of one object measured from the other, such as $\\mathbf r_B-\\mathbf r_A$."
+    },
+    {
+      "id": "ahl-3-12-terms-5",
+      "status": "approved",
+      "term": "Closest approach",
+      "text": "The smallest separation achieved during the permitted time interval."
+    },
+    {
+      "id": "ahl-3-12-terms-6",
+      "status": "approved",
+      "term": "Time shift",
+      "text": "A change between a common clock and an object’s elapsed-time variable."
+    }
+  ],
+  "formula": [
+    {
+      "id": "ahl-3-12-formula-1",
+      "status": "approved",
+      "text": "Constant velocity: $\\mathbf r(t)=\\mathbf r_0+\\mathbf vt$."
+    },
+    {
+      "id": "ahl-3-12-formula-2",
+      "status": "approved",
+      "text": "Relative position: $\\overrightarrow{AB}=\\mathbf r_B-\\mathbf r_A$ and separation $D=|\\overrightarrow{AB}|$."
+    },
+    {
+      "id": "ahl-3-12-formula-3",
+      "status": "approved",
+      "text": "Variable motion: $\\mathbf v=\\frac{d\\mathbf r}{dt}$, $\\mathbf a=\\frac{d\\mathbf v}{dt}$ and $\\mathbf r$ can be found by integrating velocity componentwise."
+    }
+  ],
+  "gdc": [],
+  "worked": {
+    "status": "approved",
+    "prompt": "Two robots move on level ground, with position measured in metres and a common time $t$ in seconds. For $0\\leq t\\leq6$, their positions are $\\mathbf r_A(t)=(2t,t)$ and $\\mathbf r_B(t)=(10-t,2t)$. Separately, a projectile-like model has velocity $\\mathbf v(t)=(4,6-2t)$ m/s and initial position $(0,1)$ m for $0\\leq t\\leq5$.",
+    "table": [],
+    "parts": [
+      {
+        "label": "a",
+        "q": "Find the robots’ positions at $t=2$ and their relative position $\\overrightarrow{AB}$ then.",
+        "marks": 3,
+        "a": "$\\mathbf r_A(2)=(4,2)$ m and $\\mathbf r_B(2)=(8,4)$ m. Thus $\\overrightarrow{AB}(2)=(8,4)-(4,2)=(4,2)$ m.",
+        "m": "A1 A1 A1"
+      },
+      {
+        "label": "b",
+        "q": "Determine whether the robots collide during the interval.",
+        "marks": 3,
+        "a": "Equating $x$ coordinates gives $2t=10-t$, hence $t=10/3$. Equating $y$ coordinates gives $t=2t$, hence $t=0$. No single time satisfies both, so they do not collide.",
+        "m": "M1 M1 A1"
+      },
+      {
+        "label": "c",
+        "q": "Find the time and distance of closest approach for $0\\leq t\\leq6$.",
+        "marks": 4,
+        "a": "$\\overrightarrow{AB}(t)=(10-3t,t)$. Thus $D^2=(10-3t)^2+t^2=10t^2-60t+100=10(t-3)^2+10$. The minimum occurs at $t=3$ s, inside the interval, and the closest distance is $\\sqrt{10}\\approx3.16$ m. The completed square also shows that both endpoints give larger values.",
+        "m": "M1 M1 A1 A1"
+      },
+      {
+        "label": "d",
+        "q": "Show that the robots’ geometric paths intersect, even though there is no collision.",
+        "marks": 3,
+        "a": "Use independent path parameters $u$ and $v$: $(2u,u)=(10-v,2v)$. From $u=2v$ and $2u=10-v$, $v=2$ and $u=4$, giving $(8,4)$. Robot $A$ reaches it at $4$ s and robot $B$ at $2$ s, so they are not there together. Both times lie in the stated interval.",
+        "m": "M1 A1 R1"
+      },
+      {
+        "label": "e",
+        "q": "For the separate variable-velocity model, find its position and speed at $t=3$.",
+        "marks": 3,
+        "a": "Integrating componentwise and using $\\mathbf r(0)=(0,1)$ gives $\\mathbf r(t)=(4t,1+6t-t^2)$. Thus $\\mathbf r(3)=(12,10)$ m. At $t=3$, $\\mathbf v=(4,0)$ m/s, so speed is $4$ m/s.",
+        "m": "M1 A1 A1"
+      },
+      {
+        "label": "f",
+        "q": "Find when the variable-velocity model reaches its maximum height on the stated interval.",
+        "marks": 2,
+        "a": "The height is $y(t)=1+6t-t^2=10-(t-3)^2$. Its maximum is $10$ m at $t=3$ s, which lies in $[0,5]$.",
+        "m": "M1 A1"
+      }
+    ]
+  },
+  "kq": [
+    {
+      "id": "ahl-3-12-kq-1",
+      "status": "approved",
+      "q": "Why can path intersections fail to be collisions?",
+      "model": "The paths describe locations, while collision requires both objects to be at the same location at the same time."
+    },
+    {
+      "id": "ahl-3-12-kq-2",
+      "status": "approved",
+      "q": "Why minimise squared separation?",
+      "model": "Distance is nonnegative, so squaring preserves its order. The squared distance is often easier to minimise; take the square root at the end."
+    },
+    {
+      "id": "ahl-3-12-kq-3",
+      "status": "approved",
+      "q": "Why must time boundaries be checked?",
+      "model": "An unconstrained minimum can occur before the model starts or after it ends. The actual minimum on the allowed interval can be at an endpoint."
+    },
+    {
+      "id": "ahl-3-12-kq-4",
+      "status": "approved",
+      "q": "Why are position integration constants needed?",
+      "model": "Differentiation removes constants, so many position functions share the same velocity. An initial position identifies the required trajectory."
+    }
+  ],
+  "visuals": [],
+  "map": {
+    "status": "draft",
+    "needs": [],
+    "leadsTo": [],
+    "withIn": []
+  },
+  "history": [],
+  "explorers": []
+}
