@@ -15,29 +15,98 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Eigenvalues, Eigenvectors & Matrix Powers."
+            "title": "Eigenvalues, eigenvectors and matrix powers",
+            "text": "The video focuses on using eigenvalues and eigenvectors to express powers of a matrix."
           },
           {
-            "t": 187,
+            "t": 42,
+            "type": "Visual",
+            "title": "An invariant direction",
+            "text": "A diagram compares transformed vectors. An eigenvector is mapped onto its own span, with its eigenvalue giving the scalar multiplier."
+          },
+          {
+            "t": 136,
+            "type": "Notation",
+            "title": "Labels for eigenvalues and eigenvectors",
+            "text": "The presenter labels eigenvalues with $\\lambda$ and associates each with a corresponding eigenvector."
+          },
+          {
+            "t": 189,
             "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "title": "Diagonalisation and powers",
+            "text": "For a matrix with a suitable eigenvector basis, write $M=PDP^{-1}$ and $M^n=PD^nP^{-1}$, with corresponding eigenvectors and eigenvalues in matching order."
           },
           {
-            "t": 281,
+            "t": 280,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Find eigenvalues",
+            "text": "The presenter uses a TI-Nspire to compute eigenvalues of the example matrix."
           },
           {
-            "t": 545,
+            "t": 314,
+            "type": "Procedure",
+            "title": "Characteristic equation",
+            "text": "Eigenvalues are also found by solving $\\det(\\lambda I-M)=0$."
+          },
+          {
+            "t": 366,
+            "type": "Transition",
+            "title": "Find eigenvectors",
+            "text": "For each eigenvalue, find a corresponding nonzero vector satisfying $(M-\\lambda I)\\mathbf v=\\mathbf0$."
+          },
+          {
+            "t": 382,
+            "type": "Calculator",
+            "title": "Calculator eigenvectors and inverse",
+            "text": "The video stores a calculator-generated eigenvector matrix $P$ and obtains $P^{-1}$."
+          },
+          {
+            "t": 466,
+            "type": "Procedure",
+            "title": "An eigenvector by hand",
+            "text": "Substitute the first eigenvalue into the eigenvector equation and solve for a nonzero vector."
+          },
+          {
+            "t": 521,
+            "type": "Concept",
+            "title": "Scalar multiples",
+            "text": "Nonzero scalar multiples represent equally valid eigenvectors for the same eigenvalue."
+          },
+          {
+            "t": 602,
+            "type": "Transition",
+            "title": "Assemble the power formula",
+            "text": "The presenter combines the eigenvalues, eigenvector matrix and its inverse to form an expression for $M^n$."
+          },
+          {
+            "t": 646,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Calculate a fourth power",
+            "text": "The video substitutes $n=4$ and compares diagonalisation with a direct calculator matrix power."
+          },
+          {
+            "t": 706,
+            "type": "Conclusion",
+            "title": "Why keep a formula for n?",
+            "text": "A general expression in $n$ can help analyse repeated transformations or long-term behaviour, not just one numerical power."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Conditions and matching",
+            "text": "The power formula requires an invertible eigenvector matrix. The diagonal entry and eigenvector in each corresponding position must describe the same eigenpair.",
+            "write": "For the syllabus's distinct-real-eigenvalue case, put each eigenvector in a column of $P$ and its matching eigenvalue in the same position on $D$.",
+            "section": "ku"
+          },
+          {
+            "kind": "note",
+            "title": "Sign and zero eigenvalues",
+            "text": "The opening visual focuses on stretching along a line. An eigenvalue can also be negative or zero.",
+            "write": "A negative eigenvalue reverses direction; a zero eigenvalue maps the eigenvector to the zero vector. The eigenvector itself must be nonzero.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 118,
@@ -48,106 +117,286 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Matrices."
+            "title": "Matrix tools on the calculator",
+            "text": "The presenter demonstrates matrix creation and operations on a TI-Nspire."
           },
           {
-            "t": 64,
+            "t": 22,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Create a matrix",
+            "text": "A 2-by-2 matrix is entered and stored for later use."
           },
           {
-            "t": 125,
-            "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "t": 122,
+            "type": "Calculator",
+            "title": "Arithmetic operations",
+            "text": "The stored matrix is reused for addition, subtraction, multiplication and a power."
+          },
+          {
+            "t": 169,
+            "type": "Calculator",
+            "title": "Determinant and inverse",
+            "text": "The video finds the determinant and then uses the inverse operation on the stored matrix."
+          },
+          {
+            "t": 209,
+            "type": "Transition",
+            "title": "Eigenvalues and eigenvectors",
+            "text": "The final portion moves to calculator commands for eigenvalues and eigenvectors, which connect to AHL 1.15."
+          },
+          {
+            "t": 249,
+            "type": "Key idea",
+            "title": "Interpreting an eigenvector",
+            "text": "The presenter notes that a calculator may return a different scalar multiple of an eigenvector."
+          },
+          {
+            "t": 306,
+            "type": "Conclusion",
+            "title": "Continue practising",
+            "text": "The video recommends practising entry, storage and operations with matrices."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Calculator shown",
+            "text": "This demonstration uses a TI-Nspire. Its menus and commands differ from the Casio fx-CG50.",
+            "write": "Use the correct matrix editor and operation commands for your calculator, and check dimensions and output.",
+            "section": "ku"
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "ahl-1-15-ican-1",
+      "id": "ahl115-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for eigenvalues and eigenvectors."
+      "text": "I can explain an eigenvalue and a nonzero eigenvector using $A\\mathbf v=\\lambda\\mathbf v$."
     },
     {
-      "id": "ahl-1-15-ican-2",
+      "id": "ahl115-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can form and solve the characteristic equation for a 2-by-2 matrix."
+    },
+    {
+      "id": "ahl115-ican-3",
+      "status": "approved",
+      "text": "I can find and check an eigenvector for each eigenvalue."
+    },
+    {
+      "id": "ahl115-ican-4",
+      "status": "approved",
+      "text": "I can diagonalise a 2-by-2 matrix with distinct real eigenvalues, matching eigenvectors to diagonal entries."
+    },
+    {
+      "id": "ahl115-ican-5",
+      "status": "approved",
+      "text": "I can use $A^n=PD^nP^{-1}$ and check a particular power using technology."
+    },
+    {
+      "id": "ahl115-ican-6",
+      "status": "approved",
+      "text": "I can interpret eigenvalues in a repeated-transformation context."
     }
   ],
   "ku": [
     {
-      "id": "ahl-1-15-ku-1",
+      "id": "ahl115-ku-1",
       "status": "approved",
-      "text": "An eigenvector $v\\ne0$ of $A$ satisfies $Av=\\lambda v$."
+      "text": "An eigenvector $\\mathbf v$ is nonzero and satisfies $A\\mathbf v=\\lambda\\mathbf v$. The eigenvalue $\\lambda$ is the scalar multiplier associated with that vector."
     },
     {
-      "id": "ahl-1-15-ku-2",
+      "id": "ahl115-ku-2",
       "status": "approved",
-      "text": "Eigenvalues satisfy $\\det(A-\\lambda I)=0$."
+      "text": "A negative eigenvalue reverses the direction of a nonzero eigenvector; an eigenvalue of zero maps it to the zero vector. Zero is not an eigenvector."
     },
     {
-      "id": "ahl-1-15-ku-3",
+      "id": "ahl115-ku-3",
       "status": "approved",
-      "text": "For each eigenvalue, solve $(A-\\lambda I)v=0$ and choose a nonzero solution."
+      "text": "Find eigenvalues from $\\det(A-\\lambda I)=0$. For each eigenvalue, solve $(A-\\lambda I)\\mathbf v=\\mathbf0$ and choose a nonzero vector in the solution set."
+    },
+    {
+      "id": "ahl115-ku-4",
+      "status": "approved",
+      "text": "Every nonzero scalar multiple of an eigenvector for $\\lambda$ is also an eigenvector for $\\lambda$. A calculator's normalized vector may look different from an exact integer multiple."
+    },
+    {
+      "id": "ahl115-ku-5",
+      "status": "approved",
+      "text": "When $A$ has two distinct real eigenvalues, choose corresponding eigenvectors as columns of $P$ and place their eigenvalues in the matching diagonal positions of $D$. Then $A=PDP^{-1}$ and $A^n=PD^nP^{-1}$ for nonnegative integers $n$."
+    },
+    {
+      "id": "ahl115-ku-6",
+      "status": "approved",
+      "text": "For $D=\\operatorname{diag}(\\lambda_1,\\lambda_2)$, $D^n=\\operatorname{diag}(\\lambda_1^n,\\lambda_2^n)$. Check $AP=PD$ before using the power formula."
+    },
+    {
+      "id": "ahl115-ku-7",
+      "status": "approved",
+      "text": "Preserve exact eigenvectors or sufficient calculator precision; rounding matrix entries early can make a correct power appear inaccurate."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "ahl115-map",
+    "status": "approved",
+    "needs": [
+      [
+        "AHL 1.14",
+        "Matrix multiplication, determinants and inverses"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 4.19",
+        "Repeated transition matrices"
+      ],
+      [
+        "AHL 5.17",
+        "Coupled differential equations"
+      ]
+    ],
+    "withIn": [
+      [
+        "AHL 3.9",
+        "Transformations of vectors"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "ahl-1-15-misc-1",
+      "id": "ahl115-misc-1",
       "status": "approved",
-      "weak": "Calling the zero vector an eigenvector",
-      "better": "An eigenvector must be nonzero."
+      "weak": "The zero vector is an eigenvector because $A\\mathbf0=\\lambda\\mathbf0$.",
+      "better": "Eigenvectors must be nonzero. The zero vector satisfies the equation for every scalar and identifies no eigendirection."
+    },
+    {
+      "id": "ahl115-misc-2",
+      "status": "approved",
+      "weak": "If an eigenvector has negative entries it cannot be correct.",
+      "better": "Any nonzero scalar multiple is valid, including one that reverses the sign of every entry."
+    },
+    {
+      "id": "ahl115-misc-3",
+      "status": "approved",
+      "weak": "The first column of $P$ can be paired with either diagonal entry of $D$.",
+      "better": "Match each eigenvector column to its own eigenvalue in the corresponding diagonal position."
+    },
+    {
+      "id": "ahl115-misc-4",
+      "status": "approved",
+      "weak": "A negative eigenvalue means the matrix has no real eigenvectors.",
+      "better": "A real negative eigenvalue can have real eigenvectors; it reverses their direction under the transformation."
+    },
+    {
+      "id": "ahl115-misc-5",
+      "status": "approved",
+      "weak": "Every 2-by-2 matrix can be diagonalised using two eigenvectors.",
+      "better": "Diagonalisation requires an eigenvector basis. The syllabus calculation here is restricted to distinct real eigenvalues, which provide two independent eigenvectors."
+    },
+    {
+      "id": "ahl115-misc-6",
+      "status": "approved",
+      "weak": "$A^n=PD^nP$.",
+      "better": "The correct order is $A^n=PD^nP^{-1}$."
     }
   ],
   "terms": [
     {
-      "id": "ahl-1-15-terms-1",
+      "id": "ahl115-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Find eigenvalues",
+      "text": "Form the characteristic equation and solve for the allowed eigenvalues."
     },
     {
-      "id": "ahl-1-15-terms-2",
+      "id": "ahl115-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find an eigenvector",
+      "text": "Substitute an eigenvalue into $(A-\\lambda I)\\mathbf v=\\mathbf0$, then give a nonzero solution."
+    },
+    {
+      "id": "ahl115-term-3",
+      "status": "approved",
+      "term": "Diagonalise",
+      "text": "Construct $P$ and $D$ in matching order and verify $AP=PD$ and that $P$ is invertible."
+    },
+    {
+      "id": "ahl115-term-4",
+      "status": "approved",
+      "term": "Find a matrix power",
+      "text": "Raise each diagonal entry of $D$ to the requested power, then calculate $PD^nP^{-1}$ in order."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "ahl115-formula-1",
+      "status": "approved",
+      "text": "For $A=PDP^{-1}$, the booklet gives $A^n=PD^nP^{-1}$, where the columns of $P$ are eigenvectors and $D$ is the corresponding diagonal matrix of eigenvalues."
+    }
+  ],
   "gdc": [],
   "worked": {
+    "id": "ahl115-worked",
     "status": "approved",
-    "prompt": "Find the eigenvalues and one eigenvector for each of $A=\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}$.",
+    "prompt": "Let $A=\\begin{pmatrix}3&1\\\\1&3\\end{pmatrix}$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find the eigenvalues of $A$.",
         "marks": 2,
-        "a": "The eigenvalues are $2$ and $3$, with respective eigenvectors $\\begin{pmatrix}1\\\\0\\end{pmatrix}$ and $\\begin{pmatrix}0\\\\1\\end{pmatrix}$.",
+        "a": "$\\det(A-\\lambda I)=(3-\\lambda)^2-1=(\\lambda-4)(\\lambda-2)$. Hence $\\lambda=4$ or $\\lambda=2$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find one eigenvector for each eigenvalue.",
+        "marks": 2,
+        "a": "For $\\lambda=4$, one choice is $\\begin{pmatrix}1\\\\1\\end{pmatrix}$. For $\\lambda=2$, one choice is $\\begin{pmatrix}1\\\\-1\\end{pmatrix}$. Both are nonzero and satisfy $A\\mathbf v=\\lambda\\mathbf v$.",
+        "m": "A1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Construct matrices $P$ and $D$ such that $A=PDP^{-1}$.",
+        "marks": 2,
+        "a": "A matching choice is $P=\\begin{pmatrix}1&1\\\\1&-1\\end{pmatrix}$ and $D=\\begin{pmatrix}4&0\\\\0&2\\end{pmatrix}$. Here $P^{-1}=\\frac12\\begin{pmatrix}1&1\\\\1&-1\\end{pmatrix}$.",
+        "m": "A1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Find $A^3$ using the diagonalisation.",
+        "marks": 2,
+        "a": "$A^3=P\\begin{pmatrix}64&0\\\\0&8\\end{pmatrix}P^{-1}=\\begin{pmatrix}36&28\\\\28&36\\end{pmatrix}$.",
         "m": "M1 A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "ahl-1-15-kq-1",
+      "id": "ahl115-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "An eigenvector must be nonzero."
+      "q": "Why can two eigenvectors for the same eigenvalue look different?",
+      "model": "Any nonzero scalar multiple of a particular eigenvector is another eigenvector for the same eigenvalue, so a calculator's normalized output may differ by a scale factor."
+    },
+    {
+      "id": "ahl115-kq-2",
+      "status": "approved",
+      "q": "Why must the eigenvalues in $D$ be matched to the columns of $P$?",
+      "model": "The equation $AP=PD$ means each column of $AP$ must be the corresponding column of $P$ multiplied by its own diagonal entry."
+    },
+    {
+      "id": "ahl115-kq-3",
+      "status": "approved",
+      "q": "What does a zero eigenvalue mean geometrically?",
+      "model": "A nonzero eigenvector associated with it is mapped to the zero vector by the transformation."
+    },
+    {
+      "id": "ahl115-kq-4",
+      "status": "approved",
+      "q": "Why can diagonalisation simplify a general matrix power?",
+      "model": "Powers of a diagonal matrix are found by raising its diagonal entries to the power. The matrices $P$ and $P^{-1}$ change coordinates into and out of the eigenvector basis."
     }
   ],
   "history": [],
