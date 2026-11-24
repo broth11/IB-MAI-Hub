@@ -13,25 +13,100 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Geometric Sequences & Series."
+            "t": 22,
+            "type": "Concept",
+            "title": "Arithmetic and geometric patterns",
+            "text": "Arithmetic sequences have a common difference; geometric sequences have a common ratio."
           },
           {
-            "t": 42,
+            "t": 58,
+            "type": "Notation",
+            "title": "Term labels",
+            "text": "$u_1$, $u_2$ and $u_3$ denote the first three terms; $u_n$ denotes term $n$."
+          },
+          {
+            "t": 91,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "A negative ratio",
+            "text": "For $5,-25,125,-625,\\ldots$, divide a term by the preceding nonzero term to find $r=-5$."
           },
           {
-            "t": 139,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "t": 176,
+            "type": "Key idea",
+            "title": "Alternating signs",
+            "text": "A negative ratio changes the sign at each multiplication when the terms are nonzero."
+          },
+          {
+            "t": 193,
+            "type": "Worked example",
+            "title": "A ratio between zero and one",
+            "text": "In $100,50,25,12.5,\\ldots$, each term is half its predecessor, so $r=1/2$."
+          },
+          {
+            "t": 234,
+            "type": "Worked example",
+            "title": "A negative fractional ratio",
+            "text": "The sequence $27,-9,3,-1,\\ldots$ has $r=-1/3$: signs alternate and magnitudes decrease."
+          },
+          {
+            "t": 280,
+            "type": "Transition",
+            "title": "Formulas for geometric sequences",
+            "text": "The presenter identifies the formulas for terms and sums and separates the higher-level infinite-sum formula."
+          },
+          {
+            "t": 301,
+            "type": "Worked example",
+            "title": "Find the eighth term",
+            "text": "For $u_1=2$ and $r=2$, substitute into $u_n=u_1r^{n-1}$ to obtain $u_8=256$."
+          },
+          {
+            "t": 377,
+            "type": "Definition",
+            "title": "From terms to a series",
+            "text": "The next task adds terms rather than finding one term: $S_n$ is the sum of the first $n$ terms."
+          },
+          {
+            "t": 420,
+            "type": "Reference",
+            "title": "Two equivalent finite-sum formulas",
+            "text": "For $r\\ne1$, $u_1(r^n-1)/(r-1)$ and $u_1(1-r^n)/(1-r)$ give the same sum."
+          },
+          {
+            "t": 447,
+            "type": "Worked example",
+            "title": "Sum the first ten terms",
+            "text": "With $u_1=2$ and $r=2$, $S_{10}=2(2^{10}-1)/(2-1)=2046$."
+          },
+          {
+            "t": 493,
+            "type": "Higher level",
+            "title": "An infinite geometric series",
+            "text": "The video introduces the infinite sum and contrasts shrinking terms with the increasing example."
+          },
+          {
+            "t": 534,
+            "type": "Key idea",
+            "title": "Successive partial sums",
+            "text": "For a convergent series, adding more terms can bring the partial sum increasingly close to a finite limit; it does not generally become exactly equal to the limit."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "error",
+            "title": "Condition for an infinite sum",
+            "text": "The video describes the condition as the common ratio being less than 1. That alone also includes ratios such as $-2$, which do not give a convergent nonzero geometric series.",
+            "write": "The infinite geometric series converges when $|r|<1$, or equivalently $-1<r<1$. Then $S_\\infty=u_1/(1-r)$.",
+            "section": "ku"
+          },
+          {
+            "kind": "note",
+            "title": "Exact limit versus rounded values",
+            "text": "The presenter says successive partial sums eventually stay the same. They can appear equal after rounding while still changing.",
+            "write": "For $|r|<1$, the infinite sum is the exact limit of the partial sums; a finite partial sum is generally an approximation to it.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 106,
@@ -40,114 +115,276 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
+            "t": 25,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Sigma Notation."
+            "title": "Why use sigma notation?",
+            "text": "Sigma notation is a compact way to write the sum of a sequence of terms."
           },
           {
-            "t": 61,
+            "t": 65,
+            "type": "Definition",
+            "title": "Read the components",
+            "text": "The sigma indicates addition; the lower and upper limits specify where the index begins and ends."
+          },
+          {
+            "t": 109,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "Set up the summand",
+            "text": "The first example is $\\sum_{k=1}^{4}(k+3)$."
           },
           {
-            "t": 105,
-            "type": "Formula",
-            "title": "Formula discussion",
-            "text": "The presenter discusses a formula."
+            "t": 118,
+            "type": "Procedure",
+            "title": "Substitute each index",
+            "text": "Use $k=1,2,3,4$ in the expression $k+3$ and add the results."
           },
           {
-            "t": 258,
-            "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "t": 163,
+            "type": "Worked example",
+            "title": "Evaluate the sum",
+            "text": "The terms are $4,5,6,7$, giving a total of 22."
+          },
+          {
+            "t": 209,
+            "type": "Transition",
+            "title": "A different starting index",
+            "text": "The next example starts at $k=3$, not $k=1$, and ends at $k=6$."
+          },
+          {
+            "t": 225,
+            "type": "Procedure",
+            "title": "Write the four terms",
+            "text": "Substitute $k=3,4,5,6$ into $1/3^k$. Both limits are included."
+          },
+          {
+            "t": 266,
+            "type": "Worked example",
+            "title": "Evaluate the second sum",
+            "text": "$\\sum_{k=3}^{6}3^{-k}=40/729$."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Check the lower limit",
+            "text": "The first example is written from $k=1$ to $k=4$. The spoken recap is easy to confuse with a different starting value.",
+            "write": "Use the limits shown in the expression: $\\sum_{k=1}^{4}(k+3)=4+5+6+7=22$.",
+            "section": "ku"
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "sl-1-3-ican-1",
+      "id": "sl13-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for geometric sequences and series."
+      "text": "I can identify a geometric sequence and calculate its common ratio from consecutive nonzero terms."
     },
     {
-      "id": "sl-1-3-ican-2",
+      "id": "sl13-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can find a term, first term or ratio using $u_n=u_1r^{n-1}$."
+    },
+    {
+      "id": "sl13-ican-3",
+      "status": "approved",
+      "text": "I can find a finite sum and distinguish it from a single term."
+    },
+    {
+      "id": "sl13-ican-4",
+      "status": "approved",
+      "text": "I can interpret growth, decay and alternating signs in context."
+    },
+    {
+      "id": "sl13-ican-5",
+      "status": "approved",
+      "text": "I can decide whether an infinite geometric series converges and find its sum when it does."
     }
   ],
   "ku": [
     {
-      "id": "sl-1-3-ku-1",
+      "id": "sl13-ku-1",
       "status": "approved",
-      "text": "A geometric sequence has a constant ratio $r$ between consecutive terms."
+      "text": "A geometric sequence is generated by multiplying each term by the same ratio $r$. For a nonzero term, $r=u_{n+1}/u_n$."
     },
     {
-      "id": "sl-1-3-ku-2",
+      "id": "sl13-ku-2",
       "status": "approved",
-      "text": "$u_n=u_1r^{n-1}$. For $r\\ne1$, $S_n=u_1(1-r^n)/(1-r)$."
+      "text": "$u_n=u_1r^{n-1}$ because reaching term $n$ from the first term requires $n-1$ multiplications."
     },
     {
-      "id": "sl-1-3-ku-3",
+      "id": "sl13-ku-3",
       "status": "approved",
-      "text": "For $r=1$, every term is $u_1$, so $S_n=nu_1$."
+      "text": "For $r\\ne1$, $S_n=u_1(1-r^n)/(1-r)$. If $r=1$, $S_n=nu_1$."
+    },
+    {
+      "id": "sl13-ku-4",
+      "status": "approved",
+      "text": "If $r<0$ and $u_1\\ne0$, successive terms alternate in sign. Their magnitudes decrease when $|r|<1$ and increase when $|r|>1$."
+    },
+    {
+      "id": "sl13-ku-5",
+      "status": "approved",
+      "text": "A nonzero geometric series has a finite infinite sum only when $|r|<1$. In that case $S_\\infty=u_1/(1-r)$; this is a limit, not the result of adding a finite number of terms."
+    },
+    {
+      "id": "sl13-ku-6",
+      "status": "approved",
+      "text": "A sum from $u_a$ to $u_b$ can be found as $S_b-S_{a-1}$; it includes $b-a+1$ terms."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "sl13-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.2",
+        "Sequence notation and finite series"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 1.11",
+        "Infinite geometric series"
+      ],
+      [
+        "SL 1.4",
+        "Compound interest and depreciation"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 2.5",
+        "Exponential models"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "sl-1-3-misc-1",
+      "id": "sl13-misc-1",
       "status": "approved",
-      "weak": "Using a common difference for a geometric sequence",
-      "better": "Check the ratio of successive terms rather than their differences."
+      "weak": "$u_n=u_1r^n$ for a sequence starting at $u_1$.",
+      "better": "Use $u_n=u_1r^{n-1}$. Substitution of $n=1$ should return $u_1$."
+    },
+    {
+      "id": "sl13-misc-2",
+      "status": "approved",
+      "weak": "The sequence $5,-25,125$ has $r=5$.",
+      "better": "Divide successive terms: $r=-25/5=-5$, so the signs alternate."
+    },
+    {
+      "id": "sl13-misc-3",
+      "status": "approved",
+      "weak": "$r<1$ is enough for an infinite geometric series to converge.",
+      "better": "Check $|r|<1$. For example $r=-2$ is less than 1 but its nonzero terms do not approach zero."
+    },
+    {
+      "id": "sl13-misc-4",
+      "status": "approved",
+      "weak": "A formula with denominator $1-r$ works when $r=1$.",
+      "better": "The denominator is zero at $r=1$. The terms are constant, so $S_n=nu_1$."
+    },
+    {
+      "id": "sl13-misc-5",
+      "status": "approved",
+      "weak": "The sum from term 4 to term 10 is $S_{10}-S_4$.",
+      "better": "Subtract only terms 1 to 3: $S_{10}-S_3$."
     }
   ],
   "terms": [
     {
-      "id": "sl-1-3-terms-1",
+      "id": "sl13-terms-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Find the common ratio",
+      "text": "Divide a term by the previous nonzero term and check the ratio is consistent."
     },
     {
-      "id": "sl-1-3-terms-2",
+      "id": "sl13-terms-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find the sum",
+      "text": "Identify the first term and the number of terms, then use an applicable finite-sum expression."
+    },
+    {
+      "id": "sl13-terms-3",
+      "status": "approved",
+      "term": "Determine convergence",
+      "text": "Test the magnitude of the ratio before applying the infinite-sum formula."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "sl13-form-1",
+      "status": "approved",
+      "text": "Term: $u_n=u_1r^{n-1}$. Finite sum for $r\\ne1$: $S_n=u_1(1-r^n)/(1-r)$."
+    },
+    {
+      "id": "sl13-form-2",
+      "status": "approved",
+      "text": "Higher level: for $|r|<1$, $S_\\infty=u_1/(1-r)$."
+    }
+  ],
   "gdc": [],
   "worked": {
     "status": "approved",
-    "prompt": "The first term is 5 and the common ratio is 2. Find $u_6$ and $S_6$.",
+    "prompt": "A ball is dropped from a height of $2$ m. Each rebound reaches $60\\%$ of the previous height. Let $u_n$ be the height of rebound $n$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find $u_1$ and the common ratio.",
         "marks": 2,
-        "a": "$u_6=5(2^5)=160$ and $S_6=5(2^6-1)/(2-1)=315$.",
+        "a": "The first rebound reaches $u_1=2(0.6)=1.2$ m and $r=0.6$.",
+        "m": "A1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find the height of the fourth rebound.",
+        "marks": 2,
+        "a": "$u_4=1.2(0.6)^3=0.2592$ m, or $0.259$ m to 3 significant figures.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Find the sum of the heights of the first four rebounds.",
+        "marks": 2,
+        "a": "$S_4=1.2(1-0.6^4)/(1-0.6)=2.6112$ m, or $2.61$ m to 3 significant figures.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Find the infinite sum of the rebound heights. Explain what this sum represents.",
+        "marks": 2,
+        "a": "Since $|0.6|<1$, $S_\\infty=1.2/(1-0.6)=3$ m. This adds the maximum heights reached on rebound; it is not the total distance travelled.",
         "m": "M1 A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "sl-1-3-kq-1",
+      "id": "sl13-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Check the ratio of successive terms rather than their differences."
+      "q": "Why does $u_n$ contain $r^{n-1}$ rather than $r^n$?",
+      "model": "$u_1$ is already the first term. Reaching term $n$ takes $n-1$ multiplications by $r$."
+    },
+    {
+      "id": "sl13-kq-2",
+      "status": "approved",
+      "q": "Why does $r=-2$ fail the infinite-sum test even though $-2<1$?",
+      "model": "Its magnitude is 2. Unless the first term is zero, the magnitudes of the terms grow and do not approach zero."
+    },
+    {
+      "id": "sl13-kq-3",
+      "status": "approved",
+      "q": "Why is an infinite sum not usually equal to a finite partial sum?",
+      "model": "The infinite sum is the limit as the number of terms grows. For a nonzero geometric sequence with $0<|r|<1$, a finite remainder generally remains."
+    },
+    {
+      "id": "sl13-kq-4",
+      "status": "approved",
+      "q": "Why is the sum of rebound heights not the ball's total distance?",
+      "model": "It counts the upward rebound heights once each. Total distance also includes the initial fall and the subsequent downward journeys."
     }
   ],
   "history": [],
