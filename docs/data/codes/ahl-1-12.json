@@ -13,19 +13,75 @@
         "partial": false,
         "moments": [
           {
-            "t": 2,
-            "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Introduction to Complex Numbers."
+            "t": 7,
+            "type": "Problem",
+            "title": "A quadratic without real roots",
+            "text": "The video starts with $x^2-2x+4=0$. Its negative discriminant means it has no real solutions."
           },
           {
-            "t": 300,
+            "t": 65,
+            "type": "Concept",
+            "title": "Extend beyond the real numbers",
+            "text": "Complex numbers allow the negative discriminant to yield two complex roots."
+          },
+          {
+            "t": 92,
+            "type": "Procedure",
+            "title": "Work with the negative square root",
+            "text": "The expression $\\sqrt{-12}$ is written as $2\\sqrt3\\,i$, where $i^2=-1$."
+          },
+          {
+            "t": 140,
+            "type": "Definition",
+            "title": "Introduce the imaginary unit",
+            "text": "The imaginary unit satisfies $i^2=-1$; here it is used to express the square root of a negative real number."
+          },
+          {
+            "t": 195,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "The complex roots",
+            "text": "The solutions simplify to $1+\\sqrt3\\,i$ and $1-\\sqrt3\\,i$."
+          },
+          {
+            "t": 214,
+            "type": "Visual",
+            "title": "A graph and complex roots",
+            "text": "The real graph does not cross the real $x$-axis. The presenter refers to a separate visualization of the complex roots."
+          },
+          {
+            "t": 289,
+            "type": "Definition",
+            "title": "Cartesian form",
+            "text": "A complex number is written $z=a+bi$, with real part $a$ and imaginary part $b$."
+          },
+          {
+            "t": 337,
+            "type": "Worked example",
+            "title": "Real and imaginary parts",
+            "text": "For $z=1+\\sqrt3\\,i$, $\\operatorname{Re}(z)=1$ and $\\operatorname{Im}(z)=\\sqrt3$."
+          },
+          {
+            "t": 378,
+            "type": "Transition",
+            "title": "The complex plane",
+            "text": "The presenter introduces the Argand diagram as a way to represent a complex number geometrically."
+          },
+          {
+            "t": 436,
+            "type": "Procedure",
+            "title": "Plot the point",
+            "text": "Use the real part for the horizontal coordinate and imaginary part for the vertical coordinate; $1+\\sqrt3\\,i$ is represented by $(1,\\sqrt3)$."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Complex roots and x-intercepts",
+            "text": "At the start, roots and x-intercepts are discussed together. Non-real complex roots are not x-intercepts of the usual real graph.",
+            "write": "A real x-intercept corresponds to a real root. A quadratic can have complex roots while its real graph has no x-intercepts.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 113,
@@ -36,11 +92,79 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on Operations of Complex Numbers."
+            "title": "Operations and representations",
+            "text": "The video compares addition, subtraction, multiplication, division and powers in Cartesian, polar and exponential forms."
+          },
+          {
+            "t": 59,
+            "type": "Procedure",
+            "title": "Addition and subtraction",
+            "text": "In Cartesian form, add or subtract real parts and imaginary parts separately."
+          },
+          {
+            "t": 90,
+            "type": "Worked example",
+            "title": "Add two complex numbers",
+            "text": "The presenter adds $1+\\sqrt3\\,i$ and $2+2i$, obtaining $3+(2+\\sqrt3)i$."
+          },
+          {
+            "t": 162,
+            "type": "Transition",
+            "title": "Multiplication and division",
+            "text": "The video explains that several forms can be used, then starts with Cartesian multiplication."
+          },
+          {
+            "t": 202,
+            "type": "Worked example",
+            "title": "Expand the product",
+            "text": "Multiply the binomials and replace $i^2$ by $-1$, then collect real and imaginary parts."
+          },
+          {
+            "t": 311,
+            "type": "Reference",
+            "title": "Polar multiplication",
+            "text": "For nonzero complex numbers in polar form, multiply moduli and add arguments."
+          },
+          {
+            "t": 416,
+            "type": "Procedure",
+            "title": "Divide in Cartesian form",
+            "text": "Multiply numerator and denominator by the conjugate of the nonzero denominator to obtain a real denominator."
+          },
+          {
+            "t": 486,
+            "type": "Reference",
+            "title": "Polar and exponential division",
+            "text": "Divide moduli and subtract arguments; the denominator must be nonzero."
+          },
+          {
+            "t": 583,
+            "type": "Transition",
+            "title": "Powers",
+            "text": "The presenter compares repeated Cartesian multiplication with raising the modulus and multiplying the argument in polar form."
+          },
+          {
+            "t": 640,
+            "type": "Worked example",
+            "title": "Raise to the fourth power",
+            "text": "For $z=2\\operatorname{cis}(\\pi/3)$, the fourth power is $16\\operatorname{cis}(4\\pi/3)$."
+          },
+          {
+            "t": 720,
+            "type": "Extension",
+            "title": "A remark about roots",
+            "text": "The presenter briefly mentions roots at the end; solving for all complex roots requires accounting for all arguments."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Finding all complex roots",
+            "text": "The closing remark suggests that roots work exactly like taking a fractional power. A complex equation can have multiple roots, so one calculator value is not necessarily the complete solution.",
+            "write": "When solving $z^n=w$, account for all distinct arguments. Complex roots are not required in the syllabus guidance for AHL 1.13.",
+            "section": "ku"
+          }
+        ]
       },
       {
         "n": 114,
@@ -51,106 +175,293 @@
           {
             "t": 2,
             "type": "Overview",
-            "title": "Introduction",
-            "text": "Start the video on GDC Tips: Complex Numbers."
+            "title": "Calculator settings and operations",
+            "text": "The video introduces complex-number settings, input, stored values and conversion tools on a TI-Nspire."
           },
           {
-            "t": 74,
+            "t": 42,
             "type": "Calculator",
-            "title": "Calculator discussion",
-            "text": "The presenter discusses using a calculator."
+            "title": "Choose the output format",
+            "text": "The presenter contrasts real, rectangular and polar output settings."
           },
           {
-            "t": 401,
+            "t": 70,
             "type": "Worked example",
-            "title": "Example in the video",
-            "text": "The presenter introduces or discusses an example."
+            "title": "A non-real calculation",
+            "text": "The presenter demonstrates why a real-only setting can reject an expression involving $\\sqrt{-1}$."
+          },
+          {
+            "t": 132,
+            "type": "Calculator",
+            "title": "Switch to polar output",
+            "text": "The video shows how the TI-Nspire can display an entered Cartesian number in polar or exponential form."
+          },
+          {
+            "t": 227,
+            "type": "Calculator",
+            "title": "Enter Cartesian, polar and exponential forms",
+            "text": "The presenter demonstrates input conventions for the three forms."
+          },
+          {
+            "t": 330,
+            "type": "Procedure",
+            "title": "Store a complex number",
+            "text": "A stored variable can be reused for later calculations and operations."
+          },
+          {
+            "t": 363,
+            "type": "Calculator",
+            "title": "Return to rectangular output",
+            "text": "The stored value is displayed in rectangular form; the video discusses decimal output."
+          },
+          {
+            "t": 433,
+            "type": "Calculator",
+            "title": "Conversion tools",
+            "text": "The presenter locates tools for conjugates, components, angle, magnitude and conversions between forms."
+          },
+          {
+            "t": 518,
+            "type": "Conclusion",
+            "title": "Keep hand methods and exact forms",
+            "text": "The presenter recommends remaining proficient with exact algebra as well as calculator approximations."
           }
         ],
-        "notes": []
+        "notes": [
+          {
+            "kind": "note",
+            "title": "Calculator shown",
+            "text": "The video uses a TI-Nspire, so its key presses and output behaviour should not be assumed to match the Casio fx-CG50.",
+            "write": "Check the Casio complex-number and angle settings, and use the output form requested by the question."
+          }
+        ]
       }
     ]
   },
   "ican": [
     {
-      "id": "ahl-1-12-ican-1",
+      "id": "ahl112-ican-1",
       "status": "approved",
-      "text": "I can explain the main ideas and use the notation for complex numbers in cartesian form."
+      "text": "I can use $i^2=-1$ and write a complex number in Cartesian form $a+bi$."
     },
     {
-      "id": "ahl-1-12-ican-2",
+      "id": "ahl112-ican-2",
       "status": "approved",
-      "text": "I can apply these ideas, show my working and check the result."
+      "text": "I can identify the real part, imaginary part, conjugate, modulus and argument of a complex number."
+    },
+    {
+      "id": "ahl112-ican-3",
+      "status": "approved",
+      "text": "I can add, subtract, multiply and divide complex numbers in Cartesian form, by hand and with technology."
+    },
+    {
+      "id": "ahl112-ican-4",
+      "status": "approved",
+      "text": "I can plot complex numbers and their conjugates on an Argand diagram."
+    },
+    {
+      "id": "ahl112-ican-5",
+      "status": "approved",
+      "text": "I can solve a real-coefficient quadratic with a negative discriminant and check its complex roots."
+    },
+    {
+      "id": "ahl112-ican-6",
+      "status": "approved",
+      "text": "I can use technology to evaluate integer powers in Cartesian form and check the output mode."
     }
   ],
   "ku": [
     {
-      "id": "ahl-1-12-ku-1",
+      "id": "ahl112-ku-1",
       "status": "approved",
-      "text": "Write a complex number as $z=a+bi$ with $i^2=-1$."
+      "text": "$i^2=-1$. For $z=a+bi$ with real $a,b$, $\\operatorname{Re}(z)=a$ and $\\operatorname{Im}(z)=b$. The imaginary part is the real coefficient $b$, not $bi$."
     },
     {
-      "id": "ahl-1-12-ku-2",
+      "id": "ahl112-ku-2",
       "status": "approved",
-      "text": "The conjugate of $a+bi$ is $a-bi$, and $z\\overline z=a^2+b^2$."
+      "text": "The conjugate of $z=a+bi$ is $\\overline z=a-bi$. On an Argand diagram it reflects $z$ in the real axis, and $z\\overline z=a^2+b^2=|z|^2$."
     },
     {
-      "id": "ahl-1-12-ku-3",
+      "id": "ahl112-ku-3",
       "status": "approved",
-      "text": "Plot $z$ at $(a,b)$ on an Argand diagram."
+      "text": "The modulus is $|z|=\\sqrt{a^2+b^2}$. For nonzero $z$, an argument is an angle from the positive real axis to the position vector; account for the quadrant. The argument of zero is undefined."
+    },
+    {
+      "id": "ahl112-ku-4",
+      "status": "approved",
+      "text": "Add and subtract real and imaginary components separately. For products, expand and replace $i^2$ by $-1$."
+    },
+    {
+      "id": "ahl112-ku-5",
+      "status": "approved",
+      "text": "For a nonzero complex denominator, multiply the numerator and denominator by its conjugate; the resulting denominator is real and positive."
+    },
+    {
+      "id": "ahl112-ku-6",
+      "status": "approved",
+      "text": "For a quadratic with real coefficients and negative discriminant, the roots are a non-real conjugate pair. They are not real x-intercepts of the graph."
+    },
+    {
+      "id": "ahl112-ku-7",
+      "status": "approved",
+      "text": "Use Cartesian output for $a+bi$ when requested. Calculator settings and angle units affect displays; keep exact values when the question asks for them."
     }
   ],
   "visuals": [],
   "map": {
-    "status": "draft",
-    "needs": [],
-    "leadsTo": [],
-    "withIn": []
+    "id": "ahl112-map",
+    "status": "approved",
+    "needs": [
+      [
+        "SL 1.8",
+        "Polynomial equations and roots"
+      ]
+    ],
+    "leadsTo": [
+      [
+        "AHL 1.13",
+        "Polar and exponential forms"
+      ]
+    ],
+    "withIn": [
+      [
+        "SL 2.3",
+        "Graphs and intercepts"
+      ]
+    ]
   },
   "misc": [
     {
-      "id": "ahl-1-12-misc-1",
+      "id": "ahl112-misc-1",
       "status": "approved",
-      "weak": "Changing the real part when finding the conjugate",
-      "better": "Keep the real part and reverse the sign of the imaginary part."
+      "weak": "For $z=3-4i$, $\\operatorname{Im}(z)=-4i$.",
+      "better": "The imaginary part is the real coefficient: $\\operatorname{Im}(z)=-4$."
+    },
+    {
+      "id": "ahl112-misc-2",
+      "status": "approved",
+      "weak": "$i^2=1$.",
+      "better": "By definition $i^2=-1$; this sign changes the real part when multiplying."
+    },
+    {
+      "id": "ahl112-misc-3",
+      "status": "approved",
+      "weak": "The conjugate of $3-4i$ is $-3+4i$.",
+      "better": "Keep the real part and reverse only the imaginary sign: $\\overline z=3+4i$."
+    },
+    {
+      "id": "ahl112-misc-4",
+      "status": "approved",
+      "weak": "A negative discriminant means a real quadratic has no roots at all.",
+      "better": "It has no real roots, but it has two non-real complex conjugate roots."
+    },
+    {
+      "id": "ahl112-misc-5",
+      "status": "approved",
+      "weak": "The argument is always $\\tan^{-1}(b/a)$ without checking the quadrant.",
+      "better": "Use the signs of $a$ and $b$ to locate the point. The inverse tangent alone may select the wrong quadrant, and requires care when $a=0$."
+    },
+    {
+      "id": "ahl112-misc-6",
+      "status": "approved",
+      "weak": "The complex roots of a quadratic are x-intercepts on its usual real graph.",
+      "better": "Only real roots correspond to x-intercepts of the real graph."
     }
   ],
   "terms": [
     {
-      "id": "ahl-1-12-terms-1",
+      "id": "ahl112-term-1",
       "status": "approved",
-      "term": "Explain",
-      "text": "Give a reason that connects the mathematical idea to the situation."
+      "term": "Write in Cartesian form",
+      "text": "Give a single expression $a+bi$ with real $a,b$, simplifying all powers of $i$."
     },
     {
-      "id": "ahl-1-12-terms-2",
+      "id": "ahl112-term-2",
       "status": "approved",
-      "term": "Find",
-      "text": "Show enough working to make your method and answer clear."
+      "term": "Find the conjugate",
+      "text": "Reverse the sign of the imaginary part and preserve the real part."
+    },
+    {
+      "id": "ahl112-term-3",
+      "status": "approved",
+      "term": "Find the modulus and argument",
+      "text": "Use the distance from the origin for the modulus and state an appropriate angle with its convention and units."
+    },
+    {
+      "id": "ahl112-term-4",
+      "status": "approved",
+      "term": "Solve a quadratic",
+      "text": "Apply the formula or an equivalent method, simplify the complex roots and check them in the original equation."
     }
   ],
-  "formula": [],
+  "formula": [
+    {
+      "id": "ahl112-formula-1",
+      "status": "approved",
+      "text": "The booklet states the Cartesian form $z=a+bi$ and the discriminant $\\Delta=b^2-4ac$."
+    }
+  ],
   "gdc": [],
   "worked": {
+    "id": "ahl112-worked",
     "status": "approved",
-    "prompt": "For $z=3-4i$, find $\\overline z$ and $z\\overline z$.",
+    "prompt": "Let $z=3-4i$ and $w=1+2i$.",
     "table": [],
     "parts": [
       {
-        "label": "Solution",
-        "q": "Solve the problem above.",
+        "label": "(a)",
+        "q": "Find $\\operatorname{Re}(z)$, $\\operatorname{Im}(z)$, $\\overline z$ and $|z|$.",
+        "marks": 4,
+        "a": "$\\operatorname{Re}(z)=3$, $\\operatorname{Im}(z)=-4$, $\\overline z=3+4i$ and $|z|=\\sqrt{3^2+(-4)^2}=5$.",
+        "m": "A1 A1 A1 A1"
+      },
+      {
+        "label": "(b)",
+        "q": "Find $zw$ in Cartesian form.",
         "marks": 2,
-        "a": "$\\overline z=3+4i$ and $z\\overline z=25$.",
+        "a": "$(3-4i)(1+2i)=3+6i-4i-8i^2=11+2i$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(c)",
+        "q": "Find $z/w$ in Cartesian form.",
+        "marks": 2,
+        "a": "$\\dfrac{3-4i}{1+2i}=\\dfrac{(3-4i)(1-2i)}{(1+2i)(1-2i)}=\\dfrac{-5-10i}{5}=-1-2i$.",
+        "m": "M1 A1"
+      },
+      {
+        "label": "(d)",
+        "q": "Find the complex roots of $x^2-4x+13=0$.",
+        "marks": 2,
+        "a": "The discriminant is $16-52=-36$. Thus $x=(4\\pm6i)/2=2\\pm3i$.",
         "m": "M1 A1"
       }
     ]
   },
   "kq": [
     {
-      "id": "ahl-1-12-kq-1",
+      "id": "ahl112-kq-1",
       "status": "approved",
-      "q": "What mistake should I check for?",
-      "model": "Keep the real part and reverse the sign of the imaginary part."
+      "q": "Why is $z\\overline z$ always a nonnegative real number?",
+      "model": "For $z=a+bi$, $(a+bi)(a-bi)=a^2+b^2$, a sum of two nonnegative real squares."
+    },
+    {
+      "id": "ahl112-kq-2",
+      "status": "approved",
+      "q": "Why does multiplying by a conjugate help with division?",
+      "model": "The denominator $c+di$ multiplied by $c-di$ becomes $c^2+d^2$, which is real and nonzero when the original denominator is nonzero."
+    },
+    {
+      "id": "ahl112-kq-3",
+      "status": "approved",
+      "q": "Why do non-real roots of a real-coefficient quadratic occur in conjugate pairs?",
+      "model": "Conjugating the equation preserves real coefficients. If one non-real number satisfies the equation, its conjugate satisfies it too."
+    },
+    {
+      "id": "ahl112-kq-4",
+      "status": "approved",
+      "q": "Why must the quadrant be checked when finding an argument?",
+      "model": "A tangent value can correspond to angles in different quadrants. The signs of the real and imaginary coordinates determine the position of the complex number."
     }
   ],
   "history": [],
