@@ -1,0 +1,40 @@
+{
+ "code": "SL 5.7",
+ "slug": "sl-5-7",
+ "title": "Optimization",
+ "level": "SL",
+ "placeholder": true,
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 504,
+    "title": "Turning Points (Max/Min, Optimization)",
+    "videoId": "coJJVgd_GOo",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   }
+  ],
+  "sharedNote": null
+ },
+ "ican": [],
+ "ku": [],
+ "visuals": [],
+ "map": {
+  "status": "draft",
+  "needs": [],
+  "leadsTo": [],
+  "withIn": []
+ },
+ "misc": [],
+ "terms": [],
+ "formula": [],
+ "gdc": [],
+ "worked": {
+  "status": "draft"
+ },
+ "kq": [],
+ "history": [],
+ "explorers": []
+}

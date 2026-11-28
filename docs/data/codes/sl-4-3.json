@@ -1,0 +1,48 @@
+{
+ "code": "SL 4.3",
+ "slug": "sl-4-3",
+ "title": "Measures of centre and spread",
+ "level": "SL",
+ "placeholder": true,
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 401,
+    "title": "Mean, Median, Mode",
+    "videoId": "w2ktKNg8-ME",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   },
+   {
+    "n": 402,
+    "title": "Quartiles, Interquartile Range, Box & Whisker Diagrams",
+    "videoId": "PwnVr3uQKCs",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   }
+  ],
+  "sharedNote": null
+ },
+ "ican": [],
+ "ku": [],
+ "visuals": [],
+ "map": {
+  "status": "draft",
+  "needs": [],
+  "leadsTo": [],
+  "withIn": []
+ },
+ "misc": [],
+ "terms": [],
+ "formula": [],
+ "gdc": [],
+ "worked": {
+  "status": "draft"
+ },
+ "kq": [],
+ "history": [],
+ "explorers": []
+}

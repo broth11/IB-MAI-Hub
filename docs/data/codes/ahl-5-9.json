@@ -1,0 +1,48 @@
+{
+ "code": "AHL 5.9",
+ "slug": "ahl-5-9",
+ "title": "Differentiation rules",
+ "level": "AHL",
+ "placeholder": true,
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 505,
+    "title": "Further Differentiation Rules",
+    "videoId": "xVSQp_bclSM",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   },
+   {
+    "n": 506,
+    "title": "Related Rates",
+    "videoId": "loNUMHJcBSg",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   }
+  ],
+  "sharedNote": null
+ },
+ "ican": [],
+ "ku": [],
+ "visuals": [],
+ "map": {
+  "status": "draft",
+  "needs": [],
+  "leadsTo": [],
+  "withIn": []
+ },
+ "misc": [],
+ "terms": [],
+ "formula": [],
+ "gdc": [],
+ "worked": {
+  "status": "draft"
+ },
+ "kq": [],
+ "history": [],
+ "explorers": []
+}

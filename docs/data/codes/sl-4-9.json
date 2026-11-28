@@ -1,0 +1,40 @@
+{
+ "code": "SL 4.9",
+ "slug": "sl-4-9",
+ "title": "Normal distribution",
+ "level": "SL",
+ "placeholder": true,
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 415,
+    "title": "Normal Distribution",
+    "videoId": "Hkz5hKUNPcw",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   }
+  ],
+  "sharedNote": null
+ },
+ "ican": [],
+ "ku": [],
+ "visuals": [],
+ "map": {
+  "status": "draft",
+  "needs": [],
+  "leadsTo": [],
+  "withIn": []
+ },
+ "misc": [],
+ "terms": [],
+ "formula": [],
+ "gdc": [],
+ "worked": {
+  "status": "draft"
+ },
+ "kq": [],
+ "history": [],
+ "explorers": []
+}

@@ -23,12 +23,12 @@ function byCode(index) {
 
 const hasFull = (map, code) => (map[code] || []).some((v) => !v.partial);
 
-function videoItem({ l, partial }, code, page) {
+function videoItem({ l, partial }, code, page, placeholder) {
   const note = partial ? '<span class="also">partial coverage</span>'
     : (l.syllabus || [])[0] !== code ? '<span class="also">also covers this</span>' : '';
   const href = l.status === 'live' ? `lesson.html?v=${l.n}`
     : page ? `code.html?c=${encodeURIComponent(page)}&v=${encodeURIComponent(l.videoId)}` : '';
-  const label = l.status === 'live' ? 'Study page' : page ? 'View in study page' : 'No study page yet';
+  const label = l.status === 'live' ? 'Study page' : page ? (placeholder ? 'Watch video' : 'View in study page') : 'No study page yet';
   const inner = `<span class="vname">${esc(l.title)}</span>${note}<span class="status">${label}</span>`;
   return href ? `<a class="vid is-live" href="${esc(href)}">${inner}</a>` : `<div class="vid">${inner}</div>`;
 }
@@ -41,7 +41,7 @@ function codeRow(c, map) {
     <div class="syl-row${cls}">
       <span class="code">${esc(c.code)}</span>
       <span class="name">${c.page ? `<a class="code-link" href="code.html?c=${esc(c.page)}">${esc(c.title)}</a>` : esc(c.title)}</span>
-      <div class="vids">${vids.map((v) => videoItem(v, c.code, c.page)).join('')}${tag}</div>
+      <div class="vids">${vids.map((v) => videoItem(v, c.code, c.page, c.placeholder)).join('')}${tag}</div>
     </div>`;
 }
 

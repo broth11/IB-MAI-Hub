@@ -85,7 +85,9 @@ for c in pilot["codes"]:
     }
     json.dump(out, open(codes_dir / f"{c['slug']}.json", "w"), indent=1, ensure_ascii=False)
     for row in syl["codes"]:
-        if row["code"] == c["code"]: row["page"] = c["slug"]
+        if row["code"] == c["code"]:
+            row["page"] = c["slug"]
+            row.pop("placeholder", None)  # the full page replaces a video-only one
     n_app = json.dumps(out).count('"status": "approved"'); n_dr = json.dumps(out).count('"status": "draft"')
     report.append(f"{c['code']}: {n_app} approved, {n_dr} draft")
 json.dump(syl, open(repo / "docs/data/syllabus.json", "w"), indent=1, ensure_ascii=False); open(repo / "docs/data/syllabus.json", "a").write("\n")

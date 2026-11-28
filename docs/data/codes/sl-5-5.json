@@ -1,0 +1,56 @@
+{
+ "code": "SL 5.5",
+ "slug": "sl-5-5",
+ "title": "Integration and area",
+ "level": "SL",
+ "placeholder": true,
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 508,
+    "title": "Overview of Integral Calculus",
+    "videoId": "_YRc9MIhLsw",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   },
+   {
+    "n": 509,
+    "title": "Basics of Antidifferentiation",
+    "videoId": "ouuGDaIsc0c",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   },
+   {
+    "n": 510,
+    "title": "Finding Areas Under Curves",
+    "videoId": "-7sDQmvncK4",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   }
+  ],
+  "sharedNote": null
+ },
+ "ican": [],
+ "ku": [],
+ "visuals": [],
+ "map": {
+  "status": "draft",
+  "needs": [],
+  "leadsTo": [],
+  "withIn": []
+ },
+ "misc": [],
+ "terms": [],
+ "formula": [],
+ "gdc": [],
+ "worked": {
+  "status": "draft"
+ },
+ "kq": [],
+ "history": [],
+ "explorers": []
+}

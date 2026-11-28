@@ -1,0 +1,40 @@
+{
+ "code": "AHL 4.18",
+ "slug": "ahl-4-18",
+ "title": "Hypothesis tests for means and proportions, Type I and II errors",
+ "level": "AHL",
+ "placeholder": true,
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 418,
+    "title": "Hypothesis Testing",
+    "videoId": "rv6zJqoMu7o",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   }
+  ],
+  "sharedNote": null
+ },
+ "ican": [],
+ "ku": [],
+ "visuals": [],
+ "map": {
+  "status": "draft",
+  "needs": [],
+  "leadsTo": [],
+  "withIn": []
+ },
+ "misc": [],
+ "terms": [],
+ "formula": [],
+ "gdc": [],
+ "worked": {
+  "status": "draft"
+ },
+ "kq": [],
+ "history": [],
+ "explorers": []
+}

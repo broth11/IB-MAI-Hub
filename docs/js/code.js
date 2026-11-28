@@ -39,7 +39,7 @@ const R = {
         src="https://www.youtube.com/embed/${esc(cur.videoId)}?enablejsapi=1&rel=0&modestbranding=1" title="${esc(cur.title)}"
         allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
         ${notesHtml}
-        <div class="video-note">Select a key moment to jump the video there. Video by Revision Village: <a href="https://www.youtube.com/watch?v=${esc(cur.videoId)}" target="_blank" rel="noopener">open on YouTube</a>.</div></div>
+        <div class="video-note">${moments ? 'Select a key moment to jump the video there. ' : ''}Video by Revision Village: <a href="https://www.youtube.com/watch?v=${esc(cur.videoId)}" target="_blank" rel="noopener">open on YouTube</a>.</div></div>
       ${moments ? `<div class="moments-col"><div class="mm-h">Key moments</div><div class="moments-box">${moments}</div></div>` : ''}
     </div></div>`;
   },
@@ -138,12 +138,13 @@ function pageHtml(C, ctx, mode) {
       <div class="lesson-head">
         <div><div class="kicker">${esc(C.level === 'AHL' ? 'Additional higher level' : 'Standard level')}</div>
           <h1>${esc(C.code)} ${esc(C.title)}</h1></div>
-        <div class="mode-switch" role="group" aria-label="Page mode">
+        ${C.placeholder ? '' : `<div class="mode-switch" role="group" aria-label="Page mode">
           <button class="mode-btn${mode === 'learn' ? ' is-on' : ''}" data-mode="learn">Learn</button>
           <button class="mode-btn${mode === 'revise' ? ' is-on' : ''}" data-mode="revise">Revise</button>
           <div class="small-note">${mode === 'learn' ? 'Everything, in teaching order.' : 'The exam essentials only.'}</div>
-        </div>
+        </div>`}
       </div>
+      ${C.placeholder ? `<div class="small-note">The full study page for this code is coming soon. For now, here ${C.videos.items.length > 1 ? 'are the videos' : 'is the video'}.</div>` : ''}
       ${body}
     </div>`,
   };
@@ -198,7 +199,8 @@ async function main() {
     const videoIndex = (C.videos.items || []).findIndex((video) => video.videoId === requestedVideo);
     const ctx = { site, syl, vid: Math.max(videoIndex, 0), ex: 0, explorers: await loadExplorers(C) };
     const unit = Number(C.code.split(' ')[1].split('.')[0]);
-    let mode = store.get('codeMode', 'learn');
+    // Revise hides the video, so a placeholder (video only) and a link to one video (&v=) both open in Learn.
+    let mode = C.placeholder || requestedVideo ? 'learn' : store.get('codeMode', 'learn');
     document.title = `${C.code} ${C.title} | ${site.course}`;
     const draw = () => {
       const P = pageHtml(C, ctx, mode);

@@ -1,0 +1,48 @@
+{
+ "code": "AHL 5.11",
+ "slug": "ahl-5-11",
+ "title": "Integration techniques",
+ "level": "AHL",
+ "placeholder": true,
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 512,
+    "title": "Further Integration Rules",
+    "videoId": "bQtaE6GTgcg",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   },
+   {
+    "n": 513,
+    "title": "Integration by Substitution",
+    "videoId": "H2fqNLq7Lrg",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   }
+  ],
+  "sharedNote": null
+ },
+ "ican": [],
+ "ku": [],
+ "visuals": [],
+ "map": {
+  "status": "draft",
+  "needs": [],
+  "leadsTo": [],
+  "withIn": []
+ },
+ "misc": [],
+ "terms": [],
+ "formula": [],
+ "gdc": [],
+ "worked": {
+  "status": "draft"
+ },
+ "kq": [],
+ "history": [],
+ "explorers": []
+}

@@ -1,0 +1,48 @@
+{
+ "code": "AHL 5.12",
+ "slug": "ahl-5-12",
+ "title": "Area and volumes of revolution",
+ "level": "AHL",
+ "placeholder": true,
+ "videos": {
+  "status": "approved",
+  "items": [
+   {
+    "n": 514,
+    "title": "Area Enclosed by a Curve and the x or y-axis",
+    "videoId": "KjXkfxwERLA",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   },
+   {
+    "n": 515,
+    "title": "Volumes of Revolution about the x or y-axis",
+    "videoId": "jVdxyXrirhc",
+    "partial": false,
+    "moments": [],
+    "notes": []
+   }
+  ],
+  "sharedNote": null
+ },
+ "ican": [],
+ "ku": [],
+ "visuals": [],
+ "map": {
+  "status": "draft",
+  "needs": [],
+  "leadsTo": [],
+  "withIn": []
+ },
+ "misc": [],
+ "terms": [],
+ "formula": [],
+ "gdc": [],
+ "worked": {
+  "status": "draft"
+ },
+ "kq": [],
+ "history": [],
+ "explorers": []
+}

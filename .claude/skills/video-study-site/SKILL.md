@@ -148,3 +148,7 @@ Merging the PR is the approval; nothing else is needed to publish. Remove flags 
 - **Corrections.** At most about three per page, phrased neutrally ("The video inverts ... without restricting the domain"), each with an exam-ready Write line. Every correction also shows up as a table row or a trap in the teaching sections, so the box under the video is the alert and the sections are the practice.
 - **Voice.** Plain and matter-of-fact, varied sentence length, no filler sections. No em dashes. Oxford commas.
 - **Scope.** Build what the topic needs and nothing extra. Keep text the teacher wrote verbatim. A small request changes only what was asked.
+
+## Placeholder code pages
+
+`scripts/make_placeholder_pages.py <repo>` gives every syllabus code that has a video but no study page a video-only page (`"placeholder": true` in the code file and on its `syllabus.json` row). It uses the full page's slug, so links keep working when the full page replaces it. `export_code_pages.py` clears the row flag. A code page built any other way must remove both flags. Run the script again after adding videos.
